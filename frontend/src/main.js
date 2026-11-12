@@ -1014,8 +1014,9 @@ class AutomationBuilder extends HTMLElement {
   }
 
   _buildAction(action) {
-    if (action.service) {
-      const service = action.service;
+    const serviceName = action.service || action.action;
+    if (serviceName) {
+      const service = serviceName;
       const data = action.data || {};
       if (
         service === "persistent_notification.create" &&
