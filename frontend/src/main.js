@@ -1,13 +1,114 @@
 import * as Blockly from "blockly/core";
 import "blockly/blocks";
 import * as En from "blockly/msg/en";
-
-Blockly.setLocale(En);
+import * as Uk from "blockly/msg/uk";
 
 const MEDIA_PATH = "/visual_automation_builder/blockly-media/";
 
+const I18N = {
+  en: {
+    title: "Automation Builder",
+    alias: "Automation name",
+    save: "Save automation",
+    clear: "Clear",
+    status_saved: "Saved ✓",
+    status_no_trigger: "Add at least one trigger",
+    status_no_action: "Add at least one action",
+    status_error: "Error",
+    cat_triggers: "Triggers",
+    cat_conditions: "Conditions",
+    cat_actions: "Actions",
+    block_trigger_state: "When entity becomes…",
+    block_trigger_numeric: "When number is above/below…",
+    block_trigger_time: "At a specific time",
+    block_condition_state: "If entity is…",
+    block_condition_numeric: "If number is above/below…",
+    block_action_service: "Call a service",
+    block_action_delay: "Wait N seconds",
+    block_action_notify: "Send a notification",
+    block_action_choose: "If / else branch",
+    block_action_repeat: "Repeat N times",
+    when: "when",
+    becomes: "becomes",
+    at_time: "at time",
+    if: "if",
+    is: "is",
+    above: "above",
+    below: "below",
+    call_service: "call service",
+    target: "target",
+    data_json: "data JSON",
+    wait: "wait",
+    seconds: "seconds",
+    notify: "notify",
+    message: "message",
+    then: "then",
+    else: "else",
+    repeat: "repeat",
+    times: "times",
+    do: "do",
+    hint: "Click a block in the palette to add it to the canvas.",
+  },
+  uk: {
+    title: "Конструктор автоматизацій",
+    alias: "Назва автоматизації",
+    save: "Зберегти автоматизацію",
+    clear: "Очистити",
+    status_saved: "Збережено ✓",
+    status_no_trigger: "Додайте хоча б один тригер",
+    status_no_action: "Додайте хоча б одну дію",
+    status_error: "Помилка",
+    cat_triggers: "Тригери",
+    cat_conditions: "Умови",
+    cat_actions: "Дії",
+    block_trigger_state: "Коли сутність стає…",
+    block_trigger_numeric: "Коли число вище/нижче…",
+    block_trigger_time: "У вказаний час",
+    block_condition_state: "Якщо сутність…",
+    block_condition_numeric: "Якщо число вище/нижче…",
+    block_action_service: "Викликати сервіс",
+    block_action_delay: "Чекати N секунд",
+    block_action_notify: "Надіслати сповіщення",
+    block_action_choose: "Розгалуження if / else",
+    block_action_repeat: "Повторити N разів",
+    when: "коли",
+    becomes: "стає",
+    at_time: "о",
+    if: "якщо",
+    is: "це",
+    above: "вище",
+    below: "нижче",
+    call_service: "викликати сервіс",
+    target: "ціль",
+    data_json: "data JSON",
+    wait: "чекати",
+    seconds: "секунд",
+    notify: "сповістити",
+    message: "повідомлення",
+    then: "тоді",
+    else: "інакше",
+    repeat: "повторити",
+    times: "разів",
+    do: "робити",
+    hint: "Натисніть блок у палітрі, щоб додати його на полотно.",
+  },
+};
+
+let currentLang = "en";
+
+function t(key) {
+  return I18N[currentLang]?.[key] || I18N.en[key] || key;
+}
+
+function setLocaleFor(lang) {
+  currentLang = lang && lang.startsWith("uk") ? "uk" : "en";
+  Blockly.setLocale(currentLang === "uk" ? Uk : En);
+  window.__VAB_LANG = currentLang;
+}
+
 /** @type {Array<Array<string>>} */
 let entityOptions = [["(no entities)", ""]];
+window.__VAB_ENTITIES = entityOptions;
 
 function setEntityOptions(hass) {
   if (!hass || !hass.states) return;
@@ -25,8 +126,6 @@ function setEntityOptions(hass) {
   }
 }
 
-window.__VAB_ENTITIES = entityOptions;
-
 function entityDropdown() {
   return () => window.__VAB_ENTITIES || entityOptions;
 }
@@ -35,38 +134,36 @@ function defineBlocks() {
   Blockly.Blocks["vab_trigger_state"] = {
     init() {
       this.appendDummyInput()
-        .appendField("when")
+        .appendField(t("when"))
         .appendField(new Blockly.FieldDropdown(entityDropdown()), "ENTITY")
-        .appendField("becomes")
+        .appendField(t("becomes"))
         .appendField(new Blockly.FieldTextInput("on"), "STATE");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(120);
-      this.setTooltip("State trigger");
     },
   };
 
   Blockly.Blocks["vab_trigger_time"] = {
     init() {
       this.appendDummyInput()
-        .appendField("at time")
+        .appendField(t("at_time"))
         .appendField(new Blockly.FieldTextInput("08:00:00"), "TIME");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(120);
-      this.setTooltip("Time trigger (HH:MM:SS)");
     },
   };
 
   Blockly.Blocks["vab_trigger_numeric"] = {
     init() {
       this.appendDummyInput()
-        .appendField("when")
+        .appendField(t("when"))
         .appendField(new Blockly.FieldDropdown(entityDropdown()), "ENTITY")
         .appendField(
           new Blockly.FieldDropdown([
-            ["is above", "above"],
-            ["is below", "below"],
+            [t("above"), "above"],
+            [t("below"), "below"],
           ]),
           "DIR"
         )
@@ -74,66 +171,62 @@ function defineBlocks() {
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(120);
-      this.setTooltip("Numeric state trigger");
     },
   };
 
   Blockly.Blocks["vab_condition_state"] = {
     init() {
       this.appendDummyInput()
-        .appendField("if")
+        .appendField(t("if"))
         .appendField(new Blockly.FieldDropdown(entityDropdown()), "ENTITY")
-        .appendField("is")
+        .appendField(t("is"))
         .appendField(new Blockly.FieldTextInput("on"), "STATE");
       this.setOutput(true, "Condition");
       this.setColour(210);
-      this.setTooltip("State condition");
     },
   };
 
   Blockly.Blocks["vab_condition_numeric"] = {
     init() {
       this.appendDummyInput()
-        .appendField("if")
+        .appendField(t("if"))
         .appendField(new Blockly.FieldDropdown(entityDropdown()), "ENTITY")
         .appendField(
           new Blockly.FieldDropdown([
-            ["above", "above"],
-            ["below", "below"],
+            [t("above"), "above"],
+            [t("below"), "below"],
           ]),
           "DIR"
         )
         .appendField(new Blockly.FieldNumber(0), "VALUE");
       this.setOutput(true, "Condition");
       this.setColour(210);
-      this.setTooltip("Numeric condition");
     },
   };
 
   Blockly.Blocks["vab_action_service"] = {
     init() {
       this.appendDummyInput()
-        .appendField("call service")
+        .appendField(t("call_service"))
         .appendField(new Blockly.FieldTextInput("light.turn_on"), "SERVICE");
       this.appendDummyInput()
-        .appendField("target")
+        .appendField(t("target"))
         .appendField(new Blockly.FieldDropdown(entityDropdown()), "TARGET");
       this.appendDummyInput()
-        .appendField("data JSON")
+        .appendField(t("data_json"))
         .appendField(new Blockly.FieldTextInput("{}"), "DATA");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(260);
-      this.setTooltip("Call a Home Assistant service");
     },
   };
 
   Blockly.Blocks["vab_action_delay"] = {
     init() {
       this.appendDummyInput()
-        .appendField("wait")
+        .appendField(t("wait"))
         .appendField(new Blockly.FieldNumber(5, 0, 86400, 1), "DELAY")
-        .appendField("seconds");
+        .appendField(t("seconds"));
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(260);
@@ -143,10 +236,10 @@ function defineBlocks() {
   Blockly.Blocks["vab_action_notify"] = {
     init() {
       this.appendDummyInput()
-        .appendField("notify")
+        .appendField(t("notify"))
         .appendField(new Blockly.FieldTextInput("Automation"), "TITLE");
       this.appendDummyInput()
-        .appendField("message")
+        .appendField(t("message"))
         .appendField(new Blockly.FieldTextInput("Done"), "MESSAGE");
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
@@ -158,69 +251,45 @@ function defineBlocks() {
     init() {
       this.appendValueInput("CONDITION")
         .setCheck("Condition")
-        .appendField("if");
-      this.appendStatementInput("THEN").appendField("then");
-      this.appendStatementInput("ELSE").appendField("else");
+        .appendField(t("if"));
+      this.appendStatementInput("THEN").appendField(t("then"));
+      this.appendStatementInput("ELSE").appendField(t("else"));
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(290);
-      this.setTooltip("Choose / if-else branch");
     },
   };
 
   Blockly.Blocks["vab_action_repeat"] = {
     init() {
       this.appendDummyInput()
-        .appendField("repeat")
+        .appendField(t("repeat"))
         .appendField(new Blockly.FieldNumber(1, 1, 1000, 1), "COUNT")
-        .appendField("times");
-      this.appendStatementInput("DO").appendField("do");
+        .appendField(t("times"));
+      this.appendStatementInput("DO").appendField(t("do"));
       this.setPreviousStatement(true, null);
       this.setNextStatement(true, null);
       this.setColour(290);
-      this.setTooltip("Repeat actions");
     },
   };
 }
 
-function toolbox() {
-  return {
-    kind: "categoryToolbox",
-    contents: [
-      {
-        kind: "category",
-        name: "Triggers",
-        colour: "120",
-        contents: [
-          { kind: "block", type: "vab_trigger_state" },
-          { kind: "block", type: "vab_trigger_numeric" },
-          { kind: "block", type: "vab_trigger_time" },
-        ],
-      },
-      {
-        kind: "category",
-        name: "Conditions",
-        colour: "210",
-        contents: [
-          { kind: "block", type: "vab_condition_state" },
-          { kind: "block", type: "vab_condition_numeric" },
-        ],
-      },
-      {
-        kind: "category",
-        name: "Actions",
-        colour: "260",
-        contents: [
-          { kind: "block", type: "vab_action_service" },
-          { kind: "block", type: "vab_action_delay" },
-          { kind: "block", type: "vab_action_notify" },
-          { kind: "block", type: "vab_action_choose" },
-          { kind: "block", type: "vab_action_repeat" },
-        ],
-      },
-    ],
-  };
-}
+const THEME = Blockly.Theme.defineTheme("vab-dark", {
+  base: Blockly.Themes.Classic,
+  componentStyles: {
+    workspaceBackgroundColour: "#111315",
+    toolboxBackgroundColour: "#1b1d1f",
+    toolboxForegroundColour: "#e6e6e6",
+    flyoutBackgroundColour: "#202326",
+    flyoutForegroundColour: "#e6e6e6",
+    flyoutOpacity: 1,
+    scrollbarColour: "#4a4f54",
+    insertionMarkerColour: "#ffffff",
+    insertionMarkerOpacity: 0.4,
+    cursorColour: "#4fc3f7",
+  },
+  fontStyle: { family: "Roboto, Noto Sans, sans-serif", size: 11 },
+});
 
 function parseJson(text) {
   try {
@@ -338,6 +407,37 @@ function isConditionType(type) {
   return type.startsWith("vab_condition_");
 }
 
+const PALETTE = [
+  {
+    key: "cat_triggers",
+    colour: "#5aa15a",
+    blocks: [
+      { type: "vab_trigger_state", label: "block_trigger_state" },
+      { type: "vab_trigger_numeric", label: "block_trigger_numeric" },
+      { type: "vab_trigger_time", label: "block_trigger_time" },
+    ],
+  },
+  {
+    key: "cat_conditions",
+    colour: "#4a90d9",
+    blocks: [
+      { type: "vab_condition_state", label: "block_condition_state" },
+      { type: "vab_condition_numeric", label: "block_condition_numeric" },
+    ],
+  },
+  {
+    key: "cat_actions",
+    colour: "#c07a3a",
+    blocks: [
+      { type: "vab_action_service", label: "block_action_service" },
+      { type: "vab_action_delay", label: "block_action_delay" },
+      { type: "vab_action_notify", label: "block_action_notify" },
+      { type: "vab_action_choose", label: "block_action_choose" },
+      { type: "vab_action_repeat", label: "block_action_repeat" },
+    ],
+  },
+];
+
 class AutomationBuilder extends HTMLElement {
   constructor() {
     super();
@@ -348,7 +448,12 @@ class AutomationBuilder extends HTMLElement {
 
   set hass(hass) {
     this._hass = hass;
+    const lang = hass?.locale?.language || hass?.language;
+    if (lang) setLocaleFor(lang);
     setEntityOptions(hass);
+    if (this._workspace && lang && lang !== window.__VAB_LANG_APPLIED) {
+      window.__VAB_LANG_APPLIED = lang;
+    }
   }
 
   get hass() {
@@ -356,76 +461,116 @@ class AutomationBuilder extends HTMLElement {
   }
 
   connectedCallback() {
+    setLocaleFor(this._hass?.locale?.language || this._hass?.language || "en");
     this.innerHTML = `
       <style>
-        automation-builder { display: block; height: 100%; background: var(--primary-background-color); }
-        automation-builder .vab-toolbar {
-          display: flex; gap: 8px; align-items: center; padding: 8px 12px;
-          background: var(--card-background-color); border-bottom: 1px solid var(--divider-color);
-          font-family: var(--paper-font-body1_-_font-family);
+        automation-builder {
+          display: flex; flex-direction: column; height: 100%;
+          background: var(--primary-background-color); color: var(--primary-text-color);
+          font-family: var(--paper-font-body1_-_font-family, Roboto, sans-serif);
         }
-        automation-builder .vab-toolbar input {
-          flex: 0 0 260px; padding: 8px; border-radius: 6px;
+        automation-builder .vab-header {
+          display: flex; gap: 10px; align-items: center; padding: 12px 16px;
+          background: var(--card-background-color);
+          border-bottom: 1px solid var(--divider-color);
+        }
+        automation-builder .vab-title { font-size: 18px; font-weight: 600; margin-right: 8px; }
+        automation-builder .vab-header input {
+          flex: 1 1 240px; min-width: 160px; padding: 9px 12px; border-radius: 8px;
           border: 1px solid var(--divider-color);
           background: var(--secondary-background-color); color: var(--primary-text-color);
+          font-size: 14px;
         }
-        automation-builder .vab-toolbar button {
-          padding: 8px 14px; border: none; border-radius: 6px; cursor: pointer;
-          background: var(--primary-color); color: var(--text-primary-color); font-weight: 600;
+        automation-builder .vab-header button {
+          padding: 9px 16px; border: none; border-radius: 8px; cursor: pointer;
+          background: var(--primary-color); color: var(--text-primary-color);
+          font-weight: 600; font-size: 14px;
         }
-        automation-builder .vab-toolbar button.secondary { background: var(--secondary-background-color); color: var(--primary-text-color); }
-        automation-builder .vab-status { margin-left: auto; opacity: 0.8; }
-        automation-builder .vab-blockly { position: absolute; top: 53px; left: 0; right: 0; bottom: 0; }
-
-        /* Defensive: keep the Blockly toolbox visible inside HA's layout. */
-        automation-builder .blocklyToolboxDiv {
-          display: block !important;
-          width: 190px !important;
-          min-width: 190px !important;
-          background: var(--card-background-color) !important;
-          border-right: 1px solid var(--divider-color) !important;
-          color: var(--primary-text-color) !important;
+        automation-builder .vab-header button.secondary {
+          background: var(--secondary-background-color); color: var(--primary-text-color);
+          border: 1px solid var(--divider-color);
         }
-        automation-builder .blocklyTreeRow {
-          display: flex !important;
-          align-items: center !important;
-          height: 36px !important;
-          padding: 0 8px !important;
+        automation-builder .vab-status { font-size: 13px; opacity: 0.85; min-width: 120px; }
+        automation-builder .vab-body { display: flex; flex: 1; min-height: 0; }
+        automation-builder .vab-palette {
+          width: 260px; min-width: 220px; overflow-y: auto; padding: 12px;
+          background: var(--card-background-color);
+          border-right: 1px solid var(--divider-color);
         }
-        automation-builder .blocklyTreeLabel { color: var(--primary-text-color) !important; }
-        automation-builder .blocklyTreeIcon { display: inline-block !important; }
+        automation-builder .vab-cat { margin-bottom: 16px; }
+        automation-builder .vab-cat h3 {
+          margin: 0 0 8px; font-size: 13px; text-transform: uppercase;
+          letter-spacing: 0.06em; opacity: 0.7;
+        }
+        automation-builder .vab-block-btn {
+          display: flex; align-items: center; gap: 8px; width: 100%;
+          margin-bottom: 6px; padding: 9px 10px; border-radius: 8px;
+          border: 1px solid var(--divider-color); cursor: pointer;
+          background: var(--secondary-background-color); color: var(--primary-text-color);
+          text-align: left; font-size: 13px;
+        }
+        automation-builder .vab-block-btn:hover {
+          filter: brightness(1.15); border-color: var(--primary-color);
+        }
+        automation-builder .vab-dot {
+          width: 10px; height: 10px; border-radius: 50%; flex: 0 0 10px;
+        }
+        automation-builder .vab-hint {
+          font-size: 12px; opacity: 0.6; line-height: 1.4; margin-top: 12px;
+        }
+        automation-builder .vab-blockly { flex: 1; min-width: 0; position: relative; }
       </style>
-      <div class="vab-toolbar">
-        <input id="vab-alias" placeholder="Automation name" value="Visual automation" />
-        <button id="vab-save">Save automation</button>
-        <button id="vab-clear" class="secondary">Clear</button>
+      <div class="vab-header">
+        <div class="vab-title">${t("title")}</div>
+        <input id="vab-alias" placeholder="${t("alias")}" value="" />
+        <button id="vab-save">${t("save")}</button>
+        <button id="vab-clear" class="secondary">${t("clear")}</button>
         <span class="vab-status" id="vab-status"></span>
       </div>
-      <div class="vab-blockly" id="vab-blockly"></div>
+      <div class="vab-body">
+        <aside class="vab-palette">
+          ${PALETTE.map(
+            (cat) => `
+            <div class="vab-cat">
+              <h3>${t(cat.key)}</h3>
+              ${cat.blocks
+                .map(
+                  (b) => `
+                <button class="vab-block-btn" data-block="${b.type}">
+                  <span class="vab-dot" style="background:${cat.colour}"></span>
+                  <span>${t(b.label)}</span>
+                </button>`
+                )
+                .join("")}
+            </div>`
+          ).join("")}
+          <div class="vab-hint">${t("hint")}</div>
+        </aside>
+        <div class="vab-blockly" id="vab-blockly"></div>
+      </div>
     `;
 
     defineBlocks();
     setEntityOptions(this._hass);
 
     this._workspace = Blockly.inject(this.querySelector("#vab-blockly"), {
-      toolbox: toolbox(),
+      theme: THEME,
       renderer: "zelos",
       media: MEDIA_PATH,
-      grid: { spacing: 24, length: 3, colour: "#ccc", snap: true },
+      grid: { spacing: 24, length: 3, colour: "#2a2e33", snap: true },
       zoom: { controls: true, wheel: true, startScale: 0.9, maxScale: 2, minScale: 0.4 },
       trashcan: true,
+      move: { scrollbars: true, drag: true, wheel: true },
     });
     window.__VAB_WORKSPACE = this._workspace;
 
-    // Home Assistant may render custom panels inside a shadow root. Blockly
-    // injects its stylesheet into document.head, which does not cross a shadow
-    // boundary, so clone the Blockly styles into the panel's root.
     this._copyBlocklyStyles();
 
-    this._resizeObserver = new ResizeObserver(() => {
-      Blockly.svgResize(this._workspace);
-    });
-    this._resizeObserver.observe(this);
+    for (const button of this.querySelectorAll(".vab-block-btn")) {
+      button.addEventListener("click", () => {
+        this.addBlock(button.dataset.block);
+      });
+    }
 
     this.querySelector("#vab-alias").addEventListener("input", (event) => {
       this._alias = event.target.value;
@@ -437,12 +582,33 @@ class AutomationBuilder extends HTMLElement {
       this._workspace.clear();
       this.setStatus("");
     });
+
+    this._resizeObserver = new ResizeObserver(() => {
+      if (this._workspace) Blockly.svgResize(this._workspace);
+    });
+    this._resizeObserver.observe(this);
+  }
+
+  addBlock(type) {
+    const block = this._workspace.newBlock(type);
+    block.initSvg();
+    block.render();
+    const metrics = this._workspace.getMetrics();
+    block.moveBy(
+      metrics.viewLeft + 40 + Math.random() * 60,
+      metrics.viewTop + 40 + Math.random() * 60
+    );
+    block.select();
   }
 
   _copyBlocklyStyles() {
     const root = this.getRootNode();
     if (!root || root === document) return;
-    for (const id of ["blockly-common-style", "blockly-renderer-style-zelos-classic"]) {
+    for (const id of [
+      "blockly-common-style",
+      "blockly-renderer-style-zelos-classic",
+      "blockly-renderer-style-zelos",
+    ]) {
       const source = document.getElementById(id);
       if (!source || root.querySelector(`#${id}-shadow`)) continue;
       const clone = source.cloneNode(true);
@@ -473,14 +639,12 @@ class AutomationBuilder extends HTMLElement {
     for (const block of this._workspace.getTopBlocks(true)) {
       if (block.getPreviousBlock()) continue;
 
-      // A top-level value block (condition) is not part of a statement chain.
       if (isConditionType(block.type)) {
         const condition = conditionToConfig(block);
         if (condition) conditions.push(condition);
         continue;
       }
 
-      // Walk the statement chain (trigger -> actions or actions only).
       let current = block;
       while (current) {
         if (isTriggerType(current.type)) {
@@ -505,22 +669,22 @@ class AutomationBuilder extends HTMLElement {
 
   async saveAutomation() {
     if (!this._hass) {
-      this.setStatus("Not connected to Home Assistant");
+      this.setStatus(t("status_error"));
       return;
     }
     const config = this.buildAutomation();
     if (!config.trigger.length) {
-      this.setStatus("Add at least one trigger");
+      this.setStatus(t("status_no_trigger"));
       return;
     }
     if (!config.action.length) {
-      this.setStatus("Add at least one action");
+      this.setStatus(t("status_no_action"));
       return;
     }
     const id = `vab_${Date.now().toString(36)}`;
     try {
-      await this._hass.callApi(`POST`, `config/automation/config/${id}`, config);
-      this.setStatus("Saved ✓");
+      await this._hass.callApi("POST", `config/automation/config/${id}`, config);
+      this.setStatus(t("status_saved"));
       await this._hass.callService("persistent_notification", "create", {
         title: "Automation Builder",
         message: `Automation "${config.alias}" saved.`,
@@ -528,7 +692,7 @@ class AutomationBuilder extends HTMLElement {
       });
     } catch (err) {
       console.error(err);
-      this.setStatus(`Error: ${err.message || err}`);
+      this.setStatus(`${t("status_error")}: ${err.message || err}`);
     }
   }
 }
