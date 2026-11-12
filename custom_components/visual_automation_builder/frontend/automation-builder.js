@@ -19538,6 +19538,16 @@ class rD extends HTMLElement {
         automation-builder .blocklyMenuItem { color: #f5f5f5 !important; }
         automation-builder .blocklyMenuItem:hover,
         automation-builder .blocklyMenuItemHighlight { background: #2f7bd6 !important; }
+
+        /* The renderer draws a second opaque path over the block when it is
+           selected, hiding all text. Keep only a thin blue outline. */
+        automation-builder .blocklyPathSelected {
+          fill: none !important;
+          fill-opacity: 0 !important;
+          stroke: #4fc3f7 !important;
+          stroke-width: 2px !important;
+          pointer-events: none !important;
+        }
       </style>
       <div class="vab-header">
         <div class="vab-title">${U("title")}</div>
