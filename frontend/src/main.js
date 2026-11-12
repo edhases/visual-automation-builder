@@ -376,6 +376,24 @@ class AutomationBuilder extends HTMLElement {
         automation-builder .vab-toolbar button.secondary { background: var(--secondary-background-color); color: var(--primary-text-color); }
         automation-builder .vab-status { margin-left: auto; opacity: 0.8; }
         automation-builder .vab-blockly { position: absolute; top: 53px; left: 0; right: 0; bottom: 0; }
+
+        /* Defensive: keep the Blockly toolbox visible inside HA's layout. */
+        automation-builder .blocklyToolboxDiv {
+          display: block !important;
+          width: 190px !important;
+          min-width: 190px !important;
+          background: var(--card-background-color) !important;
+          border-right: 1px solid var(--divider-color) !important;
+          color: var(--primary-text-color) !important;
+        }
+        automation-builder .blocklyTreeRow {
+          display: flex !important;
+          align-items: center !important;
+          height: 36px !important;
+          padding: 0 8px !important;
+        }
+        automation-builder .blocklyTreeLabel { color: var(--primary-text-color) !important; }
+        automation-builder .blocklyTreeIcon { display: inline-block !important; }
       </style>
       <div class="vab-toolbar">
         <input id="vab-alias" placeholder="Automation name" value="Visual automation" />
@@ -399,6 +417,16 @@ class AutomationBuilder extends HTMLElement {
     });
     window.__VAB_WORKSPACE = this._workspace;
 
+    // Home Assistant may render custom panels inside a shadow root. Blockly
+    // injects its stylesheet into document.head, which does not cross a shadow
+    // boundary, so clone the Blockly styles into the panel's root.
+    this._copyBlocklyStyles();
+
+    this._resizeObserver = new ResizeObserver(() => {
+      Blockly.svgResize(this._workspace);
+    });
+    this._resizeObserver.observe(this);
+
     this.querySelector("#vab-alias").addEventListener("input", (event) => {
       this._alias = event.target.value;
     });
@@ -409,11 +437,18 @@ class AutomationBuilder extends HTMLElement {
       this._workspace.clear();
       this.setStatus("");
     });
+  }
 
-    this._resizeObserver = new ResizeObserver(() => {
-      Blockly.svgResize(this._workspace);
-    });
-    this._resizeObserver.observe(this);
+  _copyBlocklyStyles() {
+    const root = this.getRootNode();
+    if (!root || root === document) return;
+    for (const id of ["blockly-common-style", "blockly-renderer-style-zelos-classic"]) {
+      const source = document.getElementById(id);
+      if (!source || root.querySelector(`#${id}-shadow`)) continue;
+      const clone = source.cloneNode(true);
+      clone.id = `${id}-shadow`;
+      root.appendChild(clone);
+    }
   }
 
   disconnectedCallback() {
