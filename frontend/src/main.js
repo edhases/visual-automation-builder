@@ -112,9 +112,12 @@ window.__VAB_ENTITIES = entityOptions;
 
 function setEntityOptions(hass) {
   if (!hass || !hass.states) return;
-  entityOptions = Object.keys(hass.states)
-    .sort()
-    .map((id) => [id, id]);
+  entityOptions = Object.entries(hass.states)
+    .map(([id, state]) => [
+      state?.attributes?.friendly_name || id,
+      id,
+    ])
+    .sort((a, b) => a[0].localeCompare(b[0]));
   window.__VAB_ENTITIES = entityOptions;
   if (window.__VAB_WORKSPACE) {
     for (const block of window.__VAB_WORKSPACE.getAllBlocks(false)) {
@@ -519,6 +522,25 @@ class AutomationBuilder extends HTMLElement {
           font-size: 12px; opacity: 0.6; line-height: 1.4; margin-top: 12px;
         }
         automation-builder .vab-blockly { flex: 1; min-width: 0; position: relative; }
+
+        /* Readable text inside Blockly blocks on the dark theme. */
+        automation-builder .blocklyText,
+        automation-builder .blocklyDropdownText,
+        automation-builder .blocklyFlyoutLabelText { fill: #f5f5f5 !important; }
+        automation-builder .blocklyHtmlInput {
+          color: #f5f5f5 !important;
+          background: #23272b !important;
+          border: 1px solid #3a3f44 !important;
+          border-radius: 4px !important;
+        }
+        automation-builder .blocklyDropDownDiv {
+          background: #23272b !important;
+          border-color: #3a3f44 !important;
+          color: #f5f5f5 !important;
+        }
+        automation-builder .blocklyMenuItem { color: #f5f5f5 !important; }
+        automation-builder .blocklyMenuItem:hover,
+        automation-builder .blocklyMenuItemHighlight { background: #2f7bd6 !important; }
       </style>
       <div class="vab-header">
         <div class="vab-title">${t("title")}</div>
@@ -599,6 +621,7 @@ class AutomationBuilder extends HTMLElement {
       metrics.viewTop + 40 + Math.random() * 60
     );
     block.select();
+    Blockly.svgResize(this._workspace);
   }
 
   _copyBlocklyStyles() {

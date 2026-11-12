@@ -2,12 +2,12 @@ var jE = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
 function El(C) {
   return C && C.__esModule && Object.prototype.hasOwnProperty.call(C, "default") ? C.default : C;
 }
-var hl = { exports: {} }, ip = hl.exports, qE;
-function ig() {
+var hl = { exports: {} }, np = hl.exports, qE;
+function ng() {
   return qE || (qE = 1, (function(C, P) {
     (function(i, c) {
       C.exports = c();
-    })(ip, function() {
+    })(np, function() {
       var i = {}, c, ie, $e, Fe, io, Ge, ct, no, Re, oi, Qe, J, Ls, wt, ts, k, Be, G, bs, Ve, ss, fs, ne, et, ro, ii, os, ni, is, hn, ri, lo, Ce, v, dn, co, li, ci, ui, j, _n, uo, Tn, M, $n, O, L, ns, F, ao, V, Bt, ho, xt, Ut, pe, En, As, _o, Ft, To, tt, pt, rs, ai, $o, l, a, T, p, S, q, ls, Cs, hi, _h, gl, Th, di, Xe, mt, pl, _i, $h, ml, It, cs, Il, Ol, Rl, Sl, Ti, gn, Ll, bl, $i, Eo, Eh, go, gh, pn, ph, Ei, mn, mh, In, Ih, On, fl, Al, Rn, Sn, Ln, gi, Oh, po, pi, bn, Rh, Sh, Lh, Ot, re, mi, Cl, Rt, us, bh, Nl, fn, Ml, fh, yl, Ii, Ah, An, Ch, Cn, Nh, Mh, yh, mo, vh, vl, Se, Nn, kl, Mn, yn, kh, Pl, Dl, Ph, vn, Ns, kn, Dh, wl, Bl, wh, Bh, Ms, xh, Pn, Io, Oo, st, Uh, Fh, Hh, Gh, Vh, Xh, Wh, xl, ys, vs, Ul, Yh, zh, Kh, Jh, jh, qh, Zh, Qh, ed, Fl, td, as, Dn, sd, Ro, wn, Hl, Gl, Bn, xn, Vl, od, Xl, Wl, Yl, zl, Kl, Jl, jl, id, Oi, ql, Un, Fn, St, Zl, Ql, Ri, ec, tc, nd, Hn, sc, rd, ld, cd, ud, ad, So, oc, ic, Si, nc, hd, dd, rc, lc, Ht, cc, uc, _d, Td, $d, Ed, ac, gd, hc, pd, ks, Li, Gn, Vn, Ps, dc, Xn, _c, ue, md, Lo, bo, Id, Tc, Wn, fo, $c, Ds, bi, Ec, gc, Od, Rd, Sd, pc, Ld, mc, Ao, bd, fd, Ad, Cd, fi, Ic, Oc, Rc, Yn, zn, Nd, Ai, Sc, Ci, Md, yd, hs, Lc, Lt, vd, kd, bc, Pd, ws, fc, Dd, wd, Bd, xd, Ud, Ac, Fd, Hd, Kn, Gd, Vd, Cc, bt, Xd, Wd, Co, Yd, Nc, Jn, zd, Kd, Jd, Mc, jn, yc, qn, jd, qd, Zd, Qd, N, He, Le, le, ft, No, y, ae, e_, t_, s_, vc, o_, Zn, kc, Pc, Dc, wc, Mo, i_, n_, r_, yo, Bc, l_, Qn, ot, xc, vo, ut, Uc, c_, Fc, ko, u_, ds, er, Ni, Hc, a_, Gc, h_, tr, Vc, Xc, Wc, d_, Yc, __, sr, T_, $_, Mi, E_, zc, or, ir, nr, rr, Kc, g_, Jc, lr, cr, p_, ur, m_, jc, I_, _s, qc, yi, Zc, Qc, ar, eu, tu, su, ou, iu, nu, ru, lu, cu, uu, O_, R_, S_, L_, b_, f_, A_, C_, N_, au, hu, du, _u, Tu, $u, Eu, hr, vi, gu, M_, pu, mu, Iu, Ou, Ru, Su, Lu, bu, fu, Au, y_, v_, Cu, k_, P_, D_, w_, _;
       c = function(e, t, s, o) {
         if (!(e instanceof I) && typeof e != "string" || `${e}`.trim() === "") throw Error('Invalid type "' + e + '". The type must be a non-empty string or a Blockly.registry.Type.');
@@ -56,7 +56,7 @@ function ig() {
       }, oi = function(e, t) {
         Qe(), Tr = setTimeout(function() {
           t && t.handleRightClick(e);
-        }, cg);
+        }, ug);
       }, Qe = function() {
         Tr && (clearTimeout(Tr), Tr = 0);
       }, J = function() {
@@ -119,7 +119,7 @@ function ig() {
             return { x: e.deltaX * j_, y: e.deltaY * j_ };
         }
       }, ne = function() {
-        return "blockly-" + (hg++).toString(36);
+        return "blockly-" + (dg++).toString(36);
       }, et = function() {
         return Q_.genUid();
       }, ro = function(e) {
@@ -439,7 +439,7 @@ function ig() {
       }, go = function(e) {
         return gh(Hu.serializeToString(e));
       }, gh = function(e) {
-        return e.replace(Tg, (t) => `&#${t.charCodeAt(0)};`);
+        return e.replace($g, (t) => `&#${t.charCodeAt(0)};`);
       }, pn = function(e) {
         return e ? ((e instanceof Element || typeof e == "string") && (e = Al(e), e = Ih(e)), ph(e), e) : null;
       }, ph = function(e) {
@@ -531,9 +531,9 @@ function ig() {
       }, Lh = function(e, t) {
         return t.some((s) => Math.abs(s.x - e.x) <= 1 && Math.abs(s.y - e.y) <= 1);
       }, Ot = function(e, t) {
-        e.setAttribute(gg, t);
+        e.setAttribute(pg, t);
       }, re = function(e, t, s) {
-        Array.isArray(s) && (s = s.join(" ")), e.setAttribute(Eg + t, `${s}`);
+        Array.isArray(s) && (s = s.join(" ")), e.setAttribute(gg + t, `${s}`);
       }, mi = function(e) {
         return e && typeof e.saveState == "function" && typeof e.loadState == "function";
       }, Cl = function(e) {
@@ -2891,7 +2891,7 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
           return s;
         };
       }, "es8", "es3");
-      var Ts = /* @__PURE__ */ Object.create(null), lg = { typeMap: Ts }, dr = /* @__PURE__ */ Object.create(null), We = "default", I = class {
+      var Ts = /* @__PURE__ */ Object.create(null), cg = { typeMap: Ts }, dr = /* @__PURE__ */ Object.create(null), We = "default", I = class {
         constructor(e) {
           this.name = e;
         }
@@ -2900,9 +2900,9 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
         }
       };
       I.CONNECTION_CHECKER = new I("connectionChecker"), I.CONNECTION_PREVIEWER = new I("connectionPreviewer"), I.CURSOR = new I("cursor"), I.EVENT = new I("event"), I.FIELD = new I("field"), I.INPUT = new I("input"), I.RENDERER = new I("renderer"), I.TOOLBOX = new I("toolbox"), I.THEME = new I("theme"), I.TOOLBOX_ITEM = new I("toolboxItem"), I.FLYOUTS_VERTICAL_TOOLBOX = new I("flyoutsVerticalToolbox"), I.FLYOUTS_HORIZONTAL_TOOLBOX = new I("flyoutsHorizontalToolbox"), I.FLYOUT_INFLATER = new I("flyoutInflater"), I.METRICS_MANAGER = new I("metricsManager"), I.BLOCK_DRAGGER = new I("blockDragger"), I.SERIALIZER = new I("serializer"), I.ICON = new I("icon"), I.PASTER = new I("paster"), I.VARIABLE_MODEL = new I("variableModel"), I.VARIABLE_MAP = new I("variableMap");
-      var Gt = { DEFAULT: We, TEST_ONLY: lg };
+      var Gt = { DEFAULT: We, TEST_ONLY: cg };
       Gt.Type = I, Gt.getAllItems = no, Gt.getClass = Ge, Gt.getClassFromOptions = Re, Gt.getObject = ct, Gt.hasItem = io, Gt.register = c, Gt.unregister = $e;
-      var Z = /* @__PURE__ */ Object.create(null), cg = 750, B_ = "ontouchstart" in globalThis || !!(globalThis.document && document.documentElement && "ontouchstart" in document.documentElement) || !(!globalThis.navigator || !globalThis.navigator.maxTouchPoints && !globalThis.navigator.msMaxTouchPoints), _r = null, Bs = {
+      var Z = /* @__PURE__ */ Object.create(null), ug = 750, B_ = "ontouchstart" in globalThis || !!(globalThis.document && document.documentElement && "ontouchstart" in document.documentElement) || !(!globalThis.navigator || !globalThis.navigator.maxTouchPoints && !globalThis.navigator.msMaxTouchPoints), _r = null, Bs = {
         mousedown: ["pointerdown"],
         mouseenter: ["pointerenter"],
         mouseleave: ["pointerleave"],
@@ -2923,7 +2923,7 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
         const s = Nu.toUpperCase();
         x_ = t("JavaFX"), U_ = t("WebKit"), F_ = t("Gecko") && !U_, $r = t("Android"), e = globalThis.navigator && globalThis.navigator.maxTouchPoints, Er = t("iPad") || t("Macintosh") && e > 0, Mu = t("iPhone") && !Er, H_ = t("Macintosh"), G_ = Er || $r && !t("Mobile") || t("Silk"), V_ = !G_ && (Mu || $r);
       })(globalThis.navigator && globalThis.navigator.userAgent || "");
-      var ug = Nu, X_ = x_, W_ = F_, Y_ = $r, yu = Er, z_ = Mu, gr = H_, K_ = V_, ag = {
+      var ag = Nu, X_ = x_, W_ = F_, Y_ = $r, yu = Er, z_ = Mu, gr = H_, K_ = V_, hg = {
         ANDROID: Y_,
         GECKO: W_,
         IPAD: yu,
@@ -2931,7 +2931,7 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
         JavaFx: X_,
         MAC: gr,
         MOBILE: K_,
-        raw: ug
+        raw: ag
       }, J_ = 40, j_ = 125, Vt = {};
       Vt.bind = Be, Vt.conditionalBind = k, Vt.getScrollDeltaPixels = fs, Vt.isRightButton = Ve, Vt.isTargetInput = bs, Vt.mouseToSvg = ss, Vt.unbind = G;
       var g;
@@ -2942,7 +2942,7 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
         const e = Z_.length, t = [];
         for (let s = 0; s < 20; s++) t[s] = Z_.charAt(Math.random() * e);
         return t.join("");
-      } }, hg = 0, vu = { TEST_ONLY: Q_ };
+      } }, dg = 0, vu = { TEST_ONLY: Q_ };
       vu.genUid = et, vu.getNextUniqueId = ne;
       var eT = "", ki = !0, ku = 0, Pu = "ORPHANED_BLOCK", Xt = [], tT = {
         FIRE_QUEUE: Xt,
@@ -2974,7 +2974,7 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
         }
       };
       fe.ACTIVE_CLASS_NAME = "blocklyActiveFocus", fe.PASSIVE_CSS_CLASS_NAME = "blocklyPassiveFocus", fe.ACTIVE_FOCUS_NODE_CSS_SELECTOR = `.${fe.ACTIVE_CLASS_NAME}`, fe.PASSIVE_FOCUS_NODE_CSS_SELECTOR = `.${fe.PASSIVE_CSS_CLASS_NAME}`;
-      var dg = class {
+      var _g = class {
         constructor(e, t) {
           this.tree = e, this.rootShouldBeAutoTabbable = t;
         }
@@ -3003,7 +3003,7 @@ Use ` + o + " instead."), vT.has(e) || (vT.add(e), console.warn(e));
         }
         registerTree(e, t = !1) {
           if (this.ensureManagerIsUnlocked(), this.isRegistered(e)) throw Error(`Attempted to re-register already registered tree: ${e}.`);
-          this.registeredTrees.push(new dg(e, t));
+          this.registeredTrees.push(new _g(e, t));
           const s = e.getRootFocusableNode().getFocusableElement();
           if (!s.id || s.id === "null") throw Error(`Attempting to register a tree with a root element that has an invalid ID: ${e}.`);
           t && (s.tabIndex = 0);
@@ -3866,7 +3866,7 @@ input[type=number] {
         }
       }, lT = { getSizeInternal: $h }, $s = { TEST_ONLY: lT };
       $s.getBorderBox = Ol, $s.getComputedStyle = It, $s.getContainerOffsetToScrollInto = Sl, $s.getPageOffset = cs, $s.getSize = _i, $s.getViewportPageOffset = Il, $s.scrollIntoContainerView = Rl;
-      var cT = /translate\(\s*([-+\d.e]+)([ ,]\s*([-+\d.e]+)\s*)?/, uT = /transform:\s*translate(?:3d)?\(\s*([-+\d.e]+)\s*px([ ,]\s*([-+\d.e]+)\s*px)?/, _g = { XY_REGEX: cT, XY_STYLE_REGEX: uT }, Fs = { TEST_ONLY: _g };
+      var cT = /translate\(\s*([-+\d.e]+)([ ,]\s*([-+\d.e]+)\s*)?/, uT = /transform:\s*translate(?:3d)?\(\s*([-+\d.e]+)\s*px([ ,]\s*([-+\d.e]+)\s*px)?/, Tg = { XY_REGEX: cT, XY_STYLE_REGEX: uT }, Fs = { TEST_ONLY: Tg };
       Fs.getDocumentScroll = bl, Fs.getInjectionDivXY = gn, Fs.getRelativeXY = Ti, Fs.getViewportBBox = Ll, Fs.screenToWsCoordinates = $i, Fs.wsToScreenCoordinates = Eo;
       var he = class {
         constructor(e, t, s, o, n) {
@@ -4021,7 +4021,7 @@ input[type=number] {
         throw Error("XMLSerializer was not foundin the global scope and was not properly injected using injectDependencies");
       } }, { document: mr, DOMParser: xi, XMLSerializer: Ui } = globalThis;
       xi && (pr = new xi()), Ui && (Hu = new Ui());
-      var aT = "https://developers.google.com/blockly/xml", Tg = /[\x00-\x09\x0B\x0C\x0E-\x1F]/g, Po = { NAME_SPACE: aT };
+      var aT = "https://developers.google.com/blockly/xml", $g = /[\x00-\x09\x0B\x0C\x0E-\x1F]/g, Po = { NAME_SPACE: aT };
       Po.createElement = i.createElement$$module$build$src$core$utils$xml, Po.createTextNode = i.createTextNode$$module$build$src$core$utils$xml, Po.domToText = go, Po.injectDependencies = Eh, Po.textToDom = i.textToDom$$module$build$src$core$utils$xml;
       var Gu = "categoryToolbox", hT = "flyoutToolbox", B;
       (function(e) {
@@ -4136,7 +4136,7 @@ input[type=number] {
   opacity: .8;
 }
 `);
-      var TT = 100, $T = 75, ET = 50, gT = 25, $g = {
+      var TT = 100, $T = 75, ET = 50, gT = 25, Eg = {
         BLOCKS: ET,
         PROCEDURES: $T,
         VARIABLES: TT,
@@ -4179,7 +4179,7 @@ input[type=number] {
       Or.TYPE = "workspace-comment", bn(Or.TYPE, new Or());
       var Wu;
       Wu = 28, i.config$$module$build$src$core$config = { dragRadius: 5, flyoutDragRadius: 10, snapRadius: Wu, connectingSnapRadius: Wu, currentConnectionPreference: 8, bumpDelay: 250 }, i.config$$module$build$src$core$config;
-      var Eg = "aria-", gg = "role", ze;
+      var gg = "aria-", pg = "role", ze;
       (function(e) {
         e.GRID = "grid", e.GRIDCELL = "gridcell", e.GROUP = "group", e.LISTBOX = "listbox", e.MENU = "menu", e.MENUITEM = "menuitem", e.MENUITEMCHECKBOX = "menuitemcheckbox", e.OPTION = "option", e.PRESENTATION = "presentation", e.ROW = "row", e.TREE = "tree", e.TREEITEM = "treeitem", e.SEPARATOR = "separator", e.STATUS = "status";
       })(ze || (ze = {}));
@@ -4406,7 +4406,7 @@ input[type=number] {
           let e;
           (e = this.element) == null || e.remove(), this.element = null;
         }
-      }, Hi = "_TEMP_COLLAPSED_INPUT", Sr = "_TEMP_COLLAPSED_FIELD", it = "MANUALLY_DISABLED", pg = { COLLAPSED_FIELD_NAME: Sr, COLLAPSED_INPUT_NAME: Hi, MANUALLY_DISABLED: it };
+      }, Hi = "_TEMP_COLLAPSED_INPUT", Sr = "_TEMP_COLLAPSED_FIELD", it = "MANUALLY_DISABLED", mg = { COLLAPSED_FIELD_NAME: Sr, COLLAPSED_INPUT_NAME: Hi, MANUALLY_DISABLED: it };
       (function(e) {
         e[e.VALUE = 1] = "VALUE", e[e.STATEMENT = 3] = "STATEMENT", e[e.DUMMY = 5] = "DUMMY", e[e.CUSTOM = 6] = "CUSTOM", e[e.END_ROW = 7] = "END_ROW";
       })(i.inputTypes$$module$build$src$core$inputs$input_types || (i.inputTypes$$module$build$src$core$inputs$input_types = {})), i.inputTypes$$module$build$src$core$inputs$input_types;
@@ -5022,7 +5022,7 @@ children`), this.state = e;
         var t = e.ScopeType || (e.ScopeType = {});
         t.BLOCK = "block", t.WORKSPACE = "workspace", t.COMMENT = "comment", e.registry = new e();
       })(x || (x = {}));
-      var aa = x.ScopeType, Js = 50, Vo = 100, mg = { BLOCK: Js, BUBBLE: Vo }, ZT = class {
+      var aa = x.ScopeType, Js = 50, Vo = 100, Ig = { BLOCK: Js, BUBBLE: Vo }, ZT = class {
         constructor(e) {
           this.comment = e, this.startLoc = null, this.workspace = e.workspace;
         }
@@ -5735,13 +5735,13 @@ children`), this.state = e;
           const t = this.getEventWorkspace_();
           if (!this.json) throw Error("The block JSON is undefined. Either pass a block to the constructor, or call fromJson");
           if (!this.ids) throw Error("The block IDs are undefined. Either pass a block to the constructor, or call fromJson");
-          if (!Ig(t, this.ids)) if (e) ys(this.json, t);
+          if (!Og(t, this.ids)) if (e) ys(this.json, t);
           else for (e = 0; e < this.ids.length; e++) {
             const s = this.ids[e], o = t.getBlockById(s);
             o ? o.dispose(!1) : s === this.blockId && console.warn("Can't uncreate non-existent block: " + s);
           }
         }
-      }, Ig = function(e, t) {
+      }, Og = function(e, t) {
         return t.map((s) => e.getBlockById(s)).filter((s) => s && s.isShadow()).length === t.length;
       };
       c(I.EVENT, g.BLOCK_CREATE, da);
@@ -5996,7 +5996,7 @@ children`), this.state = e;
           }
           return tt(s.blockStyles, t.blockStyles), tt(s.categoryStyles, t.categoryStyles), tt(s.componentStyles, t.componentStyles), tt(s.fontStyle, t.fontStyle), t.startHats !== null && (s.startHats = t.startHats), s;
         }
-      }, Og = { colour_blocks: { colourPrimary: "20" }, list_blocks: { colourPrimary: "260" }, logic_blocks: { colourPrimary: "210" }, loop_blocks: { colourPrimary: "120" }, math_blocks: { colourPrimary: "230" }, procedure_blocks: { colourPrimary: "290" }, text_blocks: { colourPrimary: "160" }, variable_blocks: { colourPrimary: "330" }, variable_dynamic_blocks: { colourPrimary: "310" }, hat_blocks: { colourPrimary: "330", hat: "cap" } }, Rg = {
+      }, Rg = { colour_blocks: { colourPrimary: "20" }, list_blocks: { colourPrimary: "260" }, logic_blocks: { colourPrimary: "210" }, loop_blocks: { colourPrimary: "120" }, math_blocks: { colourPrimary: "230" }, procedure_blocks: { colourPrimary: "290" }, text_blocks: { colourPrimary: "160" }, variable_blocks: { colourPrimary: "330" }, variable_dynamic_blocks: { colourPrimary: "310" }, hat_blocks: { colourPrimary: "330", hat: "cap" } }, Sg = {
         colour_category: { colour: "20" },
         list_category: { colour: "260" },
         logic_category: { colour: "210" },
@@ -6006,7 +6006,7 @@ children`), this.state = e;
         text_category: { colour: "160" },
         variable_category: { colour: "330" },
         variable_dynamic_category: { colour: "310" }
-      }, Fr = new js("classic", Og, Rg), At = class {
+      }, Fr = new js("classic", Rg, Sg), At = class {
         constructor(e) {
           this.gridPattern = null, this.getMetrics = this.setMetrics = void 0;
           let t = null, s = !1;
@@ -6026,15 +6026,15 @@ children`), this.state = e;
           es === void 0 && (es = !0);
           let Pt = "https://blockly-demo.appspot.com/static/media/";
           e.media && (Pt = e.media.endsWith("/") ? e.media : e.media + "/");
-          const YE = e.oneBasedIndex, sp = e.renderer || "geras", op = e.plugins || {};
+          const YE = e.oneBasedIndex, op = e.renderer || "geras", ip = e.plugins || {};
           let hh = e.modalInputs;
           hh === void 0 && (hh = !0), this.RTL = oe, this.oneBasedIndex = YE === void 0 ? !0 : YE, this.collapse = n, this.comments = r, this.disable = u, this.readOnly = m, this.maxBlocks = e.maxBlocks || 1 / 0;
           let zE;
-          this.maxInstances = (zE = e.maxInstances) != null ? zE : null, this.modalInputs = hh, this.pathToMedia = Pt, this.hasCategories = s, this.moveOptions = At.parseMoveOptions(e, s), this.hasScrollbars = !!this.moveOptions.scrollbars, this.hasTrashcan = o, this.maxTrashcanContents = A, this.hasSounds = h, this.hasCss = es, this.horizontalLayout = K, this.languageTree = t, this.gridOptions = At.parseGridOptions(e), this.zoomOptions = At.parseZoomOptions(e), this.toolboxPosition = ye, this.theme = At.parseThemeOptions(e), this.renderer = sp;
+          this.maxInstances = (zE = e.maxInstances) != null ? zE : null, this.modalInputs = hh, this.pathToMedia = Pt, this.hasCategories = s, this.moveOptions = At.parseMoveOptions(e, s), this.hasScrollbars = !!this.moveOptions.scrollbars, this.hasTrashcan = o, this.maxTrashcanContents = A, this.hasSounds = h, this.hasCss = es, this.horizontalLayout = K, this.languageTree = t, this.gridOptions = At.parseGridOptions(e), this.zoomOptions = At.parseZoomOptions(e), this.toolboxPosition = ye, this.theme = At.parseThemeOptions(e), this.renderer = op;
           let KE;
           this.rendererOverrides = (KE = e.rendererOverrides) != null ? KE : null;
           let JE;
-          this.parentWorkspace = (JE = e.parentWorkspace) != null ? JE : null, this.plugins = op;
+          this.parentWorkspace = (JE = e.parentWorkspace) != null ? JE : null, this.plugins = ip;
         }
         static parseMoveOptions(e, t) {
           const s = e.move || {}, o = {};
@@ -6555,9 +6555,9 @@ children`), this.state = e;
           return (e = this.miniWorkspaceBubble) == null ? void 0 : e.getWorkspace();
         }
       }, i.MutatorIcon$$module$build$src$core$icons$mutator_icon.TYPE = Ee.MUTATOR, i.MutatorIcon$$module$build$src$core$icons$mutator_icon.WEIGHT = 1, i.MutatorIcon$$module$build$src$core$icons$mutator_icon;
-      var Wo = /* @__PURE__ */ Object.create(null), Sg = { allExtensions: Wo };
+      var Wo = /* @__PURE__ */ Object.create(null), Lg = { allExtensions: Wo };
       i.register$$module$build$src$core$extensions("parent_tooltip_when_inline", Qd);
-      var dt = { TEST_ONLY: Sg };
+      var dt = { TEST_ONLY: Lg };
       dt.apply = Jn, dt.buildTooltipForDropdown = i.buildTooltipForDropdown$$module$build$src$core$extensions, dt.buildTooltipWithFieldText = i.buildTooltipWithFieldText$$module$build$src$core$extensions, dt.isRegistered = Nc, dt.register = i.register$$module$build$src$core$extensions, dt.registerMixin = i.registerMixin$$module$build$src$core$extensions, dt.registerMutator = i.registerMutator$$module$build$src$core$extensions, dt.runAfterPageLoad = qd, dt.unregister = Yd;
       var Te;
       (function(e) {
@@ -6566,7 +6566,7 @@ children`), this.state = e;
       var Zt = {};
       Zt.arc = ae, Zt.curve = He, Zt.line = No, Zt.lineOnAxis = y, Zt.lineTo = ft, Zt.moveBy = le, Zt.moveTo = Le, Zt.point = N;
       var se = {};
-      se.Coordinate = R, se.KeyCodes = Te, se.Rect = D, se.Size = w, se.Svg = $, se.aria = Fi, se.array = rT, se.browserEvents = Vt, se.colour = lt, se.deprecation = kT, se.dom = be, se.extensions = dt, se.idGenerator = vu, se.math = fr, se.object = sT, se.parsing = Ki, se.string = xo, se.style = $s, se.svgMath = Fs, se.svgPaths = Zt, se.toolbox = Es, se.userAgent = ag, se.xml = Po;
+      se.Coordinate = R, se.KeyCodes = Te, se.Rect = D, se.Size = w, se.Svg = $, se.aria = Fi, se.array = rT, se.browserEvents = Vt, se.colour = lt, se.deprecation = kT, se.dom = be, se.extensions = dt, se.idGenerator = vu, se.math = fr, se.object = sT, se.parsing = Ki, se.string = xo, se.style = $s, se.svgMath = Fs, se.svgPaths = Zt, se.toolbox = Es, se.userAgent = hg, se.xml = Po;
       var Vr = class extends X {
         constructor(e, t, s, o) {
           super(e, t, s, void 0, o), this.workspace = e, this.anchor = t, this.ownerRect = s, this.owner = o, this.resizePointerMoveListener = this.resizePointerUpListener = null, this.sizeChangeListeners = [], this.locationChangeListeners = [], this.DEFAULT_SIZE = new w(160 + X.DOUBLE_BORDER, 80 + X.DOUBLE_BORDER), this.MIN_SIZE = new w(45 + X.DOUBLE_BORDER, 20 + X.DOUBLE_BORDER), this.editable = !0, L(this.svgRoot, "blocklyTextInputBubble"), this.editor = new Br(e, this.id, () => {
@@ -8965,7 +8965,7 @@ children`), this.state = e;
         isApplicable(e) {
           return e instanceof zr;
         }
-      }, Lg = class {
+      }, bg = class {
         getFirstChild(e) {
           return e.getEditor();
         }
@@ -9023,7 +9023,7 @@ children`), this.state = e;
         isApplicable(e) {
           return e instanceof z;
         }
-      }, bg = class {
+      }, fg = class {
         getFirstChild(e) {
           return null;
         }
@@ -9044,7 +9044,7 @@ children`), this.state = e;
         isApplicable(e) {
           return e instanceof wr;
         }
-      }, fg = class {
+      }, Ag = class {
         getFirstChild(e) {
           return null;
         }
@@ -9291,7 +9291,7 @@ children`), this.state = e;
         }
       };
       _t.TYPE = Ee.COMMENT, _t.WEIGHT = 3, Uc(_t.TYPE, _t);
-      var Ag = class {
+      var Cg = class {
         getFirstChild(e) {
           if (e instanceof i.MutatorIcon$$module$build$src$core$icons$mutator_icon && e.bubbleIsVisible() && i.getFocusManager$$module$build$src$core$focus_manager().getFocusedNode() === e) {
             let t, s;
@@ -9318,7 +9318,7 @@ children`), this.state = e;
         isApplicable(e) {
           return e instanceof Xo;
         }
-      }, Cg = class {
+      }, Ng = class {
         getFirstChild(e) {
           return e.view.getCommentBarButtons()[0];
         }
@@ -9363,11 +9363,11 @@ children`), this.state = e;
             new I$(),
             new m$(),
             new S$(),
-            new Ag(),
             new Cg(),
+            new Ng(),
+            new fg(),
             new bg(),
-            new Lg(),
-            new fg()
+            new Ag()
           ];
         }
         addNavigationPolicy(e) {
@@ -9705,7 +9705,7 @@ children`), this.state = e;
           else if (this.verticalScrollEnabled) this.workspace.scroll(this.workspace.scrollX, e.y);
           else throw new TypeError("Invalid state.");
         }
-      }, Ng = 5, Mg = 6, jr = class {
+      }, Mg = 5, yg = 6, jr = class {
         constructor(e, t) {
           this.creatorWorkspace = t, this.mouseDownXY = new R(0, 0), this.startWorkspace_ = this.targetBlock = this.startComment = this.startBlock = this.startIcon = this.startField = this.startBubble = null, this.hasExceededDragRadius = !1, this.boundEvents = [], this.workspaceDragger = this.dragger = null, this.dragging = !1, this.flyout = null, this.multiTouch = this.isEnding_ = this.gestureHasStarted = this.calledUpdateIsDragging = !1, this.cachedPoints = /* @__PURE__ */ new Map(), this.startDistance = this.previousScale = 0, this.currentDropdownOwner = this.isPinchZoomEnabled = null, this.mostRecentEvent = e, this.currentDragDeltaXY = new R(0, 0);
         }
@@ -9785,7 +9785,7 @@ children`), this.state = e;
         handlePinch(e) {
           var t = Array.from(this.cachedPoints.keys()), s = this.cachedPoints.get(t[0]);
           if (t = this.cachedPoints.get(t[1]), s = R.distance(s, t) / this.startDistance, this.previousScale > 0 && this.previousScale < 1 / 0) {
-            if (t = s - this.previousScale, t = t > 0 ? t * Ng : t * Mg, !this.startWorkspace_) throw Error("Cannot handle a pinch because the start workspace is undefined");
+            if (t = s - this.previousScale, t = t > 0 ? t * Mg : t * yg, !this.startWorkspace_) throw Error("Cannot handle a pinch because the start workspace is undefined");
             const o = this.startWorkspace_, n = ss(e, o.getParentSvg(), o.getInverseScreenCTM());
             o.zoom(n.x, n.y, t);
           }
@@ -9982,7 +9982,7 @@ children`), this.state = e;
           } else O($.LINE, {}, e);
           return o && o.style.setProperty("--blocklyGridPattern", `url(#${e.id})`), e;
         }
-      }, yg = class {
+      }, vg = class {
         constructor(e) {
           this.workspace = e, this.layers = /* @__PURE__ */ new Map(), (e = e.getInjectionDiv()) && (this.dragLayer = this.createDragLayer(e), this.animationLayer = this.createAnimationLayer(e)), e = this.createLayer(Js), L(e, "blocklyBlockCanvas"), e = this.createLayer(Vo), L(e, "blocklyBubbleCanvas");
         }
@@ -10281,7 +10281,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       }, qr, Pe;
       qr = "PROCEDURE", i.DEFAULT_ARG$$module$build$src$core$procedures = "x", Pe = { CATEGORY_NAME: qr, DEFAULT_ARG: i.DEFAULT_ARG$$module$build$src$core$procedures }, Pe.ObservableProcedureMap = N$, Pe.allProcedures = Ni, Pe.findLegalName = i.findLegalName$$module$build$src$core$procedures, Pe.flyoutCategory = Vc, Pe.getCallers = Yc, Pe.getDefinition = i.getDefinition$$module$build$src$core$procedures, Pe.internalFlyoutCategory = tr, Pe.isNameUsed = Gc, Pe.isProcedureBlock = ds, Pe.mutateCallers = i.mutateCallers$$module$build$src$core$procedures, Pe.mutatorOpenListener = Wc, Pe.rename = i.rename$$module$build$src$core$procedures;
-      var vg = class {
+      var kg = class {
         constructor() {
           this.NONE = 0, this.FIELD = 1, this.HAT = 2, this.ICON = 4, this.SPACER = 8, this.BETWEEN_ROW_SPACER = 16, this.IN_ROW_SPACER = 32, this.EXTERNAL_VALUE_INPUT = 64, this.INPUT = 128, this.INLINE_INPUT = 256, this.STATEMENT_INPUT = 512, this.CONNECTION = 1024, this.PREVIOUS_CONNECTION = 2048, this.NEXT_CONNECTION = 4096, this.OUTPUT_CONNECTION = 8192, this.CORNER = 16384, this.LEFT_SQUARE_CORNER = 32768, this.LEFT_ROUND_CORNER = 65536, this.RIGHT_SQUARE_CORNER = 131072, this.RIGHT_ROUND_CORNER = 262144, this.JAGGED_EDGE = 524288, this.ROW = 1048576, this.TOP_ROW = 2097152, this.BOTTOM_ROW = 4194304, this.INPUT_ROW = 8388608, this.LEFT_CORNER = this.LEFT_SQUARE_CORNER | this.LEFT_ROUND_CORNER, this.RIGHT_CORNER = this.RIGHT_SQUARE_CORNER | this.RIGHT_ROUND_CORNER, this.nextTypeValue_ = 16777216;
         }
@@ -10366,7 +10366,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         isInputRow(e) {
           return (e.type & this.INPUT_ROW) >= 1;
         }
-      }, d = new vg(), Mt = class {
+      }, d = new kg(), Mt = class {
         constructor(e) {
           this.centerline = this.xPos = this.height = this.width = 0, this.constants_ = e, this.type = d.NONE, this.notchOffset = this.constants_.NOTCH_OFFSET_LEFT;
         }
@@ -11496,7 +11496,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       qo.SCAN_ANGLE = 3;
-      var kg = 100, x$ = class {
+      var Pg = 100, x$ = class {
         constructor(e) {
           this.parentWorkspace = e, this.sounds = /* @__PURE__ */ new Map(), this.lastSound = null, this.muted = !1, window.AudioContext && (this.context = new AudioContext());
         }
@@ -11523,7 +11523,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
               var o = s.sounds.get(e);
               if (o) {
                 const u = /* @__PURE__ */ new Date();
-                if (!(s.lastSound !== null && u.getTime() - s.lastSound.getTime() < kg)) {
+                if (!(s.lastSound !== null && u.getTime() - s.lastSound.getTime() < Pg)) {
                   s.lastSound = u, s.context.state === "suspended" && (yield s.context.resume());
                   var n = s.context.createBufferSource(), r = s.context.createGain();
                   r.gain.value = t ?? 1, r.connect(s.context.destination), n.buffer = o, n.connect(r), n.addEventListener("ended", () => {
@@ -11540,7 +11540,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         getMuted() {
           return this.muted;
         }
-      }, Pg = 20, De = class extends qo {
+      }, Dg = 20, De = class extends qo {
         constructor(e) {
           super(e), this.resizeHandlerWrapper = null, this.resizesEnabled = this.visible = this.rendered = !0, this.startScrollY = this.startScrollX = this.scrollY = this.scrollX = 0, this.oldScale = this.scale = 1, this.oldLeft = this.oldTop = 0, this.inverseScreenCTM = this.targetWorkspace = this.dummyWheelListener = this.configureContextMenu = this.lastRecordedPageScroll = this.injectionDiv = this.currentGesture_ = this.toolbox = this.flyout = this.scrollbar = this.trashcan = null, this.inverseScreenCTMDirty = !0, this.highlightedBlocks = [], this.toolboxCategoryCallbacks = /* @__PURE__ */ new Map(), this.flyoutButtonCallbacks = /* @__PURE__ */ new Map(), this.cachedParentSvg = null, this.keyboardMoveInProgress = this.keyboardAccessibilityMode = !1, this.topBoundedElements = [], this.dragTargetAreas = [], this.zoomControls_ = this.layerManager = null, this.navigator = new Sa(), this.metricsManager = new (Re(
             I.METRICS_MANAGER,
@@ -11652,7 +11652,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             this.svgGroup_,
             te.LABEL,
             i.Msg$$module$build$src$core$msg.WORKSPACE_ARIA_LABEL
-          ), e && (this.svgBackground_ = O($.RECT, { height: "100%", width: "100%", class: e }, this.svgGroup_), e === "blocklyMainBackground" && this.grid ? this.svgBackground_.style.fill = "var(--blocklyGridPattern)" : this.themeManager_.subscribe(this.svgBackground_, "workspaceBackgroundColour", "fill")), this.layerManager = new yg(this), this.svgBlockCanvas_ = this.layerManager.getBlockLayer(), this.svgBubbleCanvas_ = this.layerManager.getBubbleLayer(), this.isFlyout || (k(this.svgGroup_, "pointerdown", this, this.onMouseDown, !1), this.dummyWheelListener = () => {
+          ), e && (this.svgBackground_ = O($.RECT, { height: "100%", width: "100%", class: e }, this.svgGroup_), e === "blocklyMainBackground" && this.grid ? this.svgBackground_.style.fill = "var(--blocklyGridPattern)" : this.themeManager_.subscribe(this.svgBackground_, "workspaceBackgroundColour", "fill")), this.layerManager = new vg(this), this.svgBlockCanvas_ = this.layerManager.getBlockLayer(), this.svgBubbleCanvas_ = this.layerManager.getBubbleLayer(), this.isFlyout || (k(this.svgGroup_, "pointerdown", this, this.onMouseDown, !1), this.dummyWheelListener = () => {
           }, document.body.addEventListener("wheel", this.dummyWheelListener, { passive: !0 }), k(this.svgGroup_, "wheel", this, this.onMouseWheel, !1, { passive: !1 })), this.options.hasCategories && (this.toolbox = new (Re(I.TOOLBOX, this.options, !0))(this)), this.grid && this.grid.update(this.scale), this.recordDragTargets(), (e = Re(I.CURSOR, this.options)) && this.markerManager.setCursor(new e(this)), e = this.options.parentWorkspace === null, this.renderer.createDom(this.svgGroup_, this.getTheme(), e ? this.getInjectionDiv() : void 0), i.getFocusManager$$module$build$src$core$focus_manager().registerTree(
             this,
             !!this.injectionDiv || this.isFlyout
@@ -11932,7 +11932,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           if (this.isMovable()) {
             var e = this.getMetrics(), t = e.viewWidth;
             e = e.viewHeight;
-            var s = this.getBlocksBoundingBox(), o = Pg * 2, n = s.right - s.left + o;
+            var s = this.getBlocksBoundingBox(), o = Dg * 2, n = s.right - s.left + o;
             if (s = s.bottom - s.top + o, n) {
               this.flyout && (this.horizontalLayout ? (e += this.flyout.getHeight(), s += this.flyout.getHeight() / this.scale) : (t += this.flyout.getWidth(), n += this.flyout.getWidth() / this.scale)), t /= n, e /= s, i.disable$$module$build$src$core$events$utils();
               try {
@@ -12541,7 +12541,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             e = Rn(
               s,
               new w(Zo, il + Qo),
-              Dg,
+              wg,
               G$,
               e,
               this.workspace
@@ -12580,9 +12580,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.isLidOpen !== e && (this.lidTask && clearTimeout(this.lidTask), this.isLidOpen = e, this.animateLid());
         }
         animateLid() {
-          const e = xg;
+          const e = Ug;
           var t = 1 / (e + 1);
-          this.lidOpen += this.isLidOpen ? t : -t, this.lidOpen = Math.min(Math.max(this.lidOpen, this.minOpenness), 1), this.setLidAngle(this.lidOpen * X$), t = V$ + this.lidOpen * (Ug - V$), this.svgGroup && (this.svgGroup.style.opacity = `${t}`), this.lidOpen > this.minOpenness && this.lidOpen < 1 && (this.lidTask = setTimeout(this.animateLid.bind(this), Bg / e));
+          this.lidOpen += this.isLidOpen ? t : -t, this.lidOpen = Math.min(Math.max(this.lidOpen, this.minOpenness), 1), this.setLidAngle(this.lidOpen * X$), t = V$ + this.lidOpen * (Fg - V$), this.svgGroup && (this.svgGroup.style.opacity = `${t}`), this.lidOpen > this.minOpenness && this.lidOpen < 1 && (this.lidTask = setTimeout(this.animateLid.bind(this), xg / e));
         }
         setLidAngle(e) {
           const t = this.workspace.toolboxPosition === B.RIGHT || this.workspace.horizontalLayout && this.workspace.RTL;
@@ -12615,7 +12615,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             if (!e.oldJson) throw Error("Encountered a delete event without proper oldJson");
             if (e = JSON.stringify(this.cleanBlockJson(e.oldJson)), !this.contents.includes(e)) {
               for (this.contents.unshift(e); this.contents.length > this.workspace.options.maxTrashcanContents; ) this.contents.pop();
-              this.setMinOpenness(wg);
+              this.setMinOpenness(Bg);
             }
           }
         }
@@ -12637,7 +12637,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }
           return e = JSON.parse(JSON.stringify(e)), t(e), Object.assign({}, { kind: "BLOCK" }, e);
         }
-      }, Zo = 47, il = 44, Qo = 16, G$ = 20, Dg = 20, nl = 10, Fa = 0, Ha = 32, wg = 0.1, Bg = 80, xg = 4, V$ = 0.4, Ug = 0.8, X$ = 45, on = null, nn = null, rl = void 0, Tt = {};
+      }, Zo = 47, il = 44, Qo = 16, G$ = 20, wg = 20, nl = 10, Fa = 0, Ha = 32, Bg = 0.1, xg = 80, Ug = 4, V$ = 0.4, Fg = 0.8, X$ = 45, on = null, nn = null, rl = void 0, Tt = {};
       Tt.BlockPaster = Zi, Tt.copy = lr, Tt.getLastCopiedData = cr, Tt.getLastCopiedLocation = jc, Tt.getLastCopiedWorkspace = ur, Tt.paste = _s, Tt.registry = Xu, Tt.setLastCopiedData = p_, Tt.setLastCopiedLocation = I_, Tt.setLastCopiedWorkspace = m_;
       var Rs = {};
       Rs.CollapseCommentBarButton = t$, Rs.CommentBarButton = wr, Rs.CommentEditor = Br, Rs.CommentView = Ji, Rs.DeleteCommentBarButton = o$, Rs.RenderedWorkspaceComment = jt, Rs.WorkspaceComment = xr;
@@ -12647,7 +12647,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       })($t || ($t = {})), lu();
       var Et = {};
       Et.names = $t, Et.registerCopy = tu, Et.registerCut = su, Et.registerDefaultShortcuts = lu, Et.registerDelete = Qc, Et.registerEscape = Zc, Et.registerPaste = ou, Et.registerRedo = nu, Et.registerShowContextMenu = ru, Et.registerUndo = iu;
-      var Fg = class {
+      var Hg = class {
         constructor(e, t) {
           this.procedureModelClass = e, this.parameterModelClass = t, this.priority = $T;
         }
@@ -12667,7 +12667,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           e.getProcedureMap().clear();
         }
       }, ll = {};
-      ll.ProcedureSerializer = Fg, ll.loadProcedure = uu, ll.saveProcedure = cu;
+      ll.ProcedureSerializer = Hg, ll.loadProcedure = uu, ll.saveProcedure = cu;
       var W$ = class {
         constructor() {
           this.priority = TT;
@@ -12690,7 +12690,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       Y$.VariableSerializer = W$;
       var Ga = {};
       Ga.load = R_, Ga.save = O_;
-      var Hg = { blocks: Xi, exceptions: Vs, priorities: $g, procedures: ll, registry: Vu, variables: Y$, workspaceComments: Ir, workspaces: Ga };
+      var Gg = { blocks: Xi, exceptions: Vs, priorities: Eg, procedures: ll, registry: Vu, variables: Y$, workspaceComments: Ir, workspaces: Ga };
       "Blockly" in globalThis || (globalThis.Blockly = { Msg: OT });
       var Va = "label", z$ = class {
         load(e, t) {
@@ -14547,7 +14547,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       c(I.FLYOUT_INFLATER, lh, vE);
       var cn = {};
       cn.Bubble = X, cn.MiniWorkspaceBubble = qt, cn.TextBubble = d$, cn.TextInputBubble = Vr;
-      var Gg = "WORKSPACE_AT_BLOCK_CAPACITY", ch = "block", kE = class {
+      var Vg = "WORKSPACE_AT_BLOCK_CAPACITY", ch = "block", kE = class {
         constructor() {
           this.permanentlyDisabledBlocks = /* @__PURE__ */ new Set(), this.listeners = /* @__PURE__ */ new Map(), this.capacityWrapper = this.filterFlyoutBasedOnCapacity.bind(this);
         }
@@ -14582,7 +14582,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         updateStateBasedOnCapacity(e) {
           let t, s;
           const o = (t = this.flyout) == null || (s = t.targetWorkspace) == null ? void 0 : s.isCapacityAvailable(hi(e));
-          for (; e; ) e.setDisabledReason(!o, Gg), e = e.getNextBlock();
+          for (; e; ) e.setDisabledReason(!o, Vg), e = e.getNextBlock();
         }
         addBlockListeners(e) {
           const t = [];
@@ -15059,7 +15059,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       Mi("thrasos", XE);
       var uh = {};
       uh.RenderInfo = VE, uh.Renderer = XE;
-      var Vg = {
+      var Xg = {
         colour_blocks: { colourPrimary: "#CF63CF", colourSecondary: "#C94FC9", colourTertiary: "#BD42BD" },
         list_blocks: { colourPrimary: "#9966FF", colourSecondary: "#855CD6", colourTertiary: "#774DCB" },
         logic_blocks: { colourPrimary: "#4C97FF", colourSecondary: "#4280D7", colourTertiary: "#3373CC" },
@@ -15070,7 +15070,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         variable_blocks: { colourPrimary: "#FF8C1A", colourSecondary: "#FF8000", colourTertiary: "#DB6E00" },
         variable_dynamic_blocks: { colourPrimary: "#FF8C1A", colourSecondary: "#FF8000", colourTertiary: "#DB6E00" },
         hat_blocks: { colourPrimary: "#4C97FF", colourSecondary: "#4280D7", colourTertiary: "#3373CC", hat: "cap" }
-      }, Xg = { colour_category: { colour: "#CF63CF" }, list_category: { colour: "#9966FF" }, logic_category: { colour: "#4C97FF" }, loop_category: { colour: "#0fBD8C" }, math_category: { colour: "#59C059" }, procedure_category: { colour: "#FF6680" }, text_category: { colour: "#FFBF00" }, variable_category: { colour: "#FF8C1A" }, variable_dynamic_category: { colour: "#FF8C1A" } }, Wg = new js("zelos", Vg, Xg), Yg = { Classic: Fr, Zelos: Wg }, ah = class {
+      }, Wg = { colour_category: { colour: "#CF63CF" }, list_category: { colour: "#9966FF" }, logic_category: { colour: "#4C97FF" }, loop_category: { colour: "#0fBD8C" }, math_category: { colour: "#59C059" }, procedure_category: { colour: "#FF6680" }, text_category: { colour: "#FFBF00" }, variable_category: { colour: "#FF8C1A" }, variable_dynamic_category: { colour: "#FF8C1A" } }, Yg = new js("zelos", Xg, Wg), zg = { Classic: Fr, Zelos: Yg }, ah = class {
         constructor(e, t, s) {
           this.id_ = e.toolboxitemid || ne(), this.level_ = (this.parent_ = s || null) ? this.parent_.getLevel() + 1 : 0, this.toolboxItemDef_ = e, this.parentToolbox_ = t, this.workspace_ = this.parentToolbox_.getWorkspace();
         }
@@ -15846,7 +15846,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
   outline: none;
 }
 `), c(I.TOOLBOX, We, WE);
-      var zg = "12.5.1", Kg = f.INPUT_VALUE, Jg = f.OUTPUT_VALUE, jg = f.NEXT_STATEMENT, qg = f.PREVIOUS_STATEMENT, Zg = B.TOP, Qg = B.BOTTOM, ep = B.LEFT, tp = B.RIGHT;
+      var Kg = "12.5.1", Jg = f.INPUT_VALUE, jg = f.OUTPUT_VALUE, qg = f.NEXT_STATEMENT, Zg = f.PREVIOUS_STATEMENT, Qg = B.TOP, ep = B.BOTTOM, tp = B.LEFT, sp = B.RIGHT;
       qo.prototype.newBlock = function(e, t) {
         return new Ko(this, e, t);
       }, De.prototype.newBlock = function(e, t) {
@@ -15864,12 +15864,12 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         for (let t = 0; t < e.length; t++) this.getName(e[t][0], i.Names$$module$build$src$core$names.NameType.PROCEDURE);
       };
       var E = {};
-      return E.Block = Ko, E.BlockFlyoutInflater = kE, E.BlockNavigationPolicy = p$, E.BlockSvg = z, E.Blocks = Z, E.ButtonFlyoutInflater = vE, E.COLLAPSED_FIELD_NAME = Sr, E.COLLAPSED_INPUT_NAME = Hi, E.COLLAPSE_CHARS = c$, E.CodeGenerator = i.CodeGenerator$$module$build$src$core$generator, E.CollapsibleToolboxCategory = ti, E.ComponentManager = ee, E.Connection = H, E.ConnectionChecker = B$, E.ConnectionDB = Yo, E.ConnectionNavigationPolicy = m$, E.ConnectionType = f, E.ContextMenu = ms, E.ContextMenuItems = Oe, E.ContextMenuRegistry = x, E.Css = Fu, E.DELETE_VARIABLE_ID = pa, E.DeleteArea = Yr, E.DragTarget = _$, E.DropDownDiv = ve, E.Events = b, E.Extensions = dt, E.Field = Y, E.FieldCheckbox = to, E.FieldDropdown = Me, E.FieldImage = eo, E.FieldLabel = qs, E.FieldLabelSerializable = nE, E.FieldNavigationPolicy = I$, E.FieldNumber = Ya, E.FieldTextInput = i.FieldTextInput$$module$build$src$core$field_textinput, E.FieldVariable = rn, E.Flyout = Kr, E.FlyoutButton = Ue, E.FlyoutButtonNavigationPolicy = $$, E.FlyoutItem = Jo, E.FlyoutMetricsManager = T$, E.FlyoutNavigationPolicy = E$, E.FlyoutNavigator = L$, E.FlyoutSeparator = zr, E.FlyoutSeparatorNavigationPolicy = g$, E.FocusManager = Ne, E.FocusableTreeTraverser = fe, E.Generator = i.CodeGenerator$$module$build$src$core$generator, E.Gesture = jr, E.Grid = ba, E.HorizontalFlyout = iE, E.INPUT_VALUE = Kg, E.Input = zo, E.InsertionMarkerPreviewer = tE, E.KeyboardNavigationController = f$, E.LabelFlyoutInflater = z$, E.LineCursor = fa, E.Marker = C$, E.MarkerManager = Aa, E.Menu = Yu, E.MenuItem = Rr, E.MetricsManager = Ia, E.Msg = i.Msg$$module$build$src$core$msg, E.NEXT_STATEMENT = jg, E.Names = i.Names$$module$build$src$core$names, E.Navigator = Sa, E.OPPOSITE_TYPE = Zs, E.OUTPUT_VALUE = Jg, E.Options = At, E.PREVIOUS_STATEMENT = qg, E.PROCEDURE_CATEGORY_NAME = qr, E.Procedures = Pe, E.RENAME_VARIABLE_ID = ga, E.RenderedConnection = Ae, E.Scrollbar = he, E.ScrollbarPair = La, E.SeparatorFlyoutInflater = b$, E.ShortcutItems = Et, E.ShortcutRegistry = Q, E.TOOLBOX_AT_BOTTOM = Qg, E.TOOLBOX_AT_LEFT = ep, E.TOOLBOX_AT_RIGHT = tp, E.TOOLBOX_AT_TOP = Zg, E.Theme = js, E.ThemeManager = w$, E.Themes = Yg, E.Toast = Gs, E.Toolbox = WE, E.ToolboxCategory = gt, E.ToolboxItem = ah, E.ToolboxSeparator = un, E.Tooltip = Ke, E.Touch = xs, E.Trashcan = H$, E.UnattachedFieldError = _e, E.VARIABLE_CATEGORY_NAME = qu, E.VARIABLE_DYNAMIC_CATEGORY_NAME = Da, E.VERSION = zg, E.VariableMap = F$, E.VariableModel = U$, E.Variables = de, E.VariablesDynamic = Os, E.VerticalFlyout = Wa, E.WidgetDiv = ht, E.Workspace = qo, E.WorkspaceAudio = x$, E.WorkspaceDragger = A$, E.WorkspaceNavigationPolicy = S$, E.WorkspaceSvg = De, E.Xml = ke, E.ZoomControls = _T, E.blockAnimations = qi, E.blockRendering = W, E.browserEvents = Vt, E.bubbles = cn, E.bumpObjects = Wr, E.clipboard = Tt, E.comments = Rs, E.common = me, E.config = i.config$$module$build$src$core$config, E.constants = pg, E.defineBlocksWithJsonArray = gl, E.dialog = Jt, E.dragging = ln, E.fieldRegistry = Ur, E.geras = kt, E.getFocusManager = i.getFocusManager$$module$build$src$core$focus_manager, E.getMainWorkspace = l, E.getSelected = T, E.hasBubble = as, E.hideChaff = w_, E.icons = Is, E.inject = S_, E.inputs = Ss, E.isCopyable = yi, E.isDeletable = ot, E.isDraggable = ko, E.isIcon = vc, E.isObservable = er, E.isPaster = k_, E.isRenderedElement = P_, E.isSelectable = To, E.isSerializable = mi, E.isVariableBackedParameterModel = vl, E.keyboardNavigationController = Jr, E.layers = mg, E.navigateBlock = ut, E.navigateStacks = vo, E.procedures = Pe, E.registry = Gt, E.renderManagement = br, E.serialization = Hg, E.setLocale = ju, E.setParentContainer = ls, E.svgResize = Cs, E.thrasos = uh, E.uiPosition = Hs, E.utils = se, E.zelos = vt, E.__namespace__ = i, E;
+      return E.Block = Ko, E.BlockFlyoutInflater = kE, E.BlockNavigationPolicy = p$, E.BlockSvg = z, E.Blocks = Z, E.ButtonFlyoutInflater = vE, E.COLLAPSED_FIELD_NAME = Sr, E.COLLAPSED_INPUT_NAME = Hi, E.COLLAPSE_CHARS = c$, E.CodeGenerator = i.CodeGenerator$$module$build$src$core$generator, E.CollapsibleToolboxCategory = ti, E.ComponentManager = ee, E.Connection = H, E.ConnectionChecker = B$, E.ConnectionDB = Yo, E.ConnectionNavigationPolicy = m$, E.ConnectionType = f, E.ContextMenu = ms, E.ContextMenuItems = Oe, E.ContextMenuRegistry = x, E.Css = Fu, E.DELETE_VARIABLE_ID = pa, E.DeleteArea = Yr, E.DragTarget = _$, E.DropDownDiv = ve, E.Events = b, E.Extensions = dt, E.Field = Y, E.FieldCheckbox = to, E.FieldDropdown = Me, E.FieldImage = eo, E.FieldLabel = qs, E.FieldLabelSerializable = nE, E.FieldNavigationPolicy = I$, E.FieldNumber = Ya, E.FieldTextInput = i.FieldTextInput$$module$build$src$core$field_textinput, E.FieldVariable = rn, E.Flyout = Kr, E.FlyoutButton = Ue, E.FlyoutButtonNavigationPolicy = $$, E.FlyoutItem = Jo, E.FlyoutMetricsManager = T$, E.FlyoutNavigationPolicy = E$, E.FlyoutNavigator = L$, E.FlyoutSeparator = zr, E.FlyoutSeparatorNavigationPolicy = g$, E.FocusManager = Ne, E.FocusableTreeTraverser = fe, E.Generator = i.CodeGenerator$$module$build$src$core$generator, E.Gesture = jr, E.Grid = ba, E.HorizontalFlyout = iE, E.INPUT_VALUE = Jg, E.Input = zo, E.InsertionMarkerPreviewer = tE, E.KeyboardNavigationController = f$, E.LabelFlyoutInflater = z$, E.LineCursor = fa, E.Marker = C$, E.MarkerManager = Aa, E.Menu = Yu, E.MenuItem = Rr, E.MetricsManager = Ia, E.Msg = i.Msg$$module$build$src$core$msg, E.NEXT_STATEMENT = qg, E.Names = i.Names$$module$build$src$core$names, E.Navigator = Sa, E.OPPOSITE_TYPE = Zs, E.OUTPUT_VALUE = jg, E.Options = At, E.PREVIOUS_STATEMENT = Zg, E.PROCEDURE_CATEGORY_NAME = qr, E.Procedures = Pe, E.RENAME_VARIABLE_ID = ga, E.RenderedConnection = Ae, E.Scrollbar = he, E.ScrollbarPair = La, E.SeparatorFlyoutInflater = b$, E.ShortcutItems = Et, E.ShortcutRegistry = Q, E.TOOLBOX_AT_BOTTOM = ep, E.TOOLBOX_AT_LEFT = tp, E.TOOLBOX_AT_RIGHT = sp, E.TOOLBOX_AT_TOP = Qg, E.Theme = js, E.ThemeManager = w$, E.Themes = zg, E.Toast = Gs, E.Toolbox = WE, E.ToolboxCategory = gt, E.ToolboxItem = ah, E.ToolboxSeparator = un, E.Tooltip = Ke, E.Touch = xs, E.Trashcan = H$, E.UnattachedFieldError = _e, E.VARIABLE_CATEGORY_NAME = qu, E.VARIABLE_DYNAMIC_CATEGORY_NAME = Da, E.VERSION = Kg, E.VariableMap = F$, E.VariableModel = U$, E.Variables = de, E.VariablesDynamic = Os, E.VerticalFlyout = Wa, E.WidgetDiv = ht, E.Workspace = qo, E.WorkspaceAudio = x$, E.WorkspaceDragger = A$, E.WorkspaceNavigationPolicy = S$, E.WorkspaceSvg = De, E.Xml = ke, E.ZoomControls = _T, E.blockAnimations = qi, E.blockRendering = W, E.browserEvents = Vt, E.bubbles = cn, E.bumpObjects = Wr, E.clipboard = Tt, E.comments = Rs, E.common = me, E.config = i.config$$module$build$src$core$config, E.constants = mg, E.defineBlocksWithJsonArray = gl, E.dialog = Jt, E.dragging = ln, E.fieldRegistry = Ur, E.geras = kt, E.getFocusManager = i.getFocusManager$$module$build$src$core$focus_manager, E.getMainWorkspace = l, E.getSelected = T, E.hasBubble = as, E.hideChaff = w_, E.icons = Is, E.inject = S_, E.inputs = Ss, E.isCopyable = yi, E.isDeletable = ot, E.isDraggable = ko, E.isIcon = vc, E.isObservable = er, E.isPaster = k_, E.isRenderedElement = P_, E.isSelectable = To, E.isSerializable = mi, E.isVariableBackedParameterModel = vl, E.keyboardNavigationController = Jr, E.layers = Ig, E.navigateBlock = ut, E.navigateStacks = vo, E.procedures = Pe, E.registry = Gt, E.renderManagement = br, E.serialization = Gg, E.setLocale = ju, E.setParentContainer = ls, E.svgResize = Cs, E.thrasos = uh, E.uiPosition = Hs, E.utils = se, E.zelos = vt, E.__namespace__ = i, E;
     });
   })(hl)), hl.exports;
 }
-var np = ig();
-const rp = /* @__PURE__ */ El(np), {
+var rp = ng();
+const lp = /* @__PURE__ */ El(rp), {
   Block: nD,
   BlockFlyoutInflater: rD,
   BlockNavigationPolicy: lD,
@@ -15954,9 +15954,9 @@ const rp = /* @__PURE__ */ El(np), {
   TOOLBOX_AT_LEFT: Cw,
   TOOLBOX_AT_RIGHT: Nw,
   TOOLBOX_AT_TOP: Mw,
-  Theme: lp,
+  Theme: cp,
   ThemeManager: yw,
-  Themes: cp,
+  Themes: up,
   Toast: vw,
   Toolbox: kw,
   ToolboxCategory: Pw,
@@ -16003,7 +16003,7 @@ const rp = /* @__PURE__ */ El(np), {
   hasBubble: OB,
   hideChaff: RB,
   icons: SB,
-  inject: up,
+  inject: ap,
   inputs: LB,
   isCopyable: bB,
   isDeletable: fB,
@@ -16023,19 +16023,19 @@ const rp = /* @__PURE__ */ El(np), {
   registry: FB,
   renderManagement: HB,
   serialization: GB,
-  setLocale: ap,
+  setLocale: hp,
   setParentContainer: VB,
-  svgResize: hp,
+  svgResize: ZE,
   thrasos: XB,
   uiPosition: WB,
   utils: YB,
   zelos: zB
-} = rp;
-var dl = { exports: {} }, dp = dl.exports, ZE;
+} = lp;
+var dl = { exports: {} }, dp = dl.exports, QE;
 function _p() {
-  return ZE || (ZE = 1, (function(C, P) {
+  return QE || (QE = 1, (function(C, P) {
     (function(i, c) {
-      C.exports = c(ig());
+      C.exports = c(ng());
     })(dp, function(i) {
       var c = i.__namespace__, ie = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "variables_get_dynamic", message0: "%1", args0: [{ type: "field_variable", name: "VAR", variable: "%{BKY_VARIABLES_DEFAULT_NAME}" }], output: null, style: "variable_dynamic_blocks", helpUrl: "%{BKY_VARIABLES_GET_HELPURL}", tooltip: "%{BKY_VARIABLES_GET_TOOLTIP}", extensions: ["contextMenu_variableDynamicSetterGetter"] }, { type: "variables_set_dynamic", message0: "%{BKY_VARIABLES_SET}", args0: [{
         type: "field_variable",
@@ -17332,9 +17332,9 @@ const $p = /* @__PURE__ */ El(Tp), {
   variables: tx,
   variablesDynamic: sx
 } = $p;
-var _l = { exports: {} }, Ep = _l.exports, QE;
+var _l = { exports: {} }, Ep = _l.exports, eg;
 function gp() {
-  return QE || (QE = 1, (function(C, P) {
+  return eg || (eg = 1, (function(C, P) {
     (function(i, c) {
       C.exports = c();
     })(Ep, function() {
@@ -18234,9 +18234,9 @@ const mp = /* @__PURE__ */ El(pp), {
   WORKSPACE_ARIA_LABEL: rf,
   WORKSPACE_COMMENT_DEFAULT_TEXT: nf
 }, Symbol.toStringTag, { value: "Module" }));
-var Tl = { exports: {} }, kf = Tl.exports, eg;
+var Tl = { exports: {} }, kf = Tl.exports, tg;
 function Pf() {
-  return eg || (eg = 1, (function(C, P) {
+  return tg || (tg = 1, (function(C, P) {
     (function(i, c) {
       C.exports = c();
     })(kf, function() {
@@ -19135,7 +19135,7 @@ const wf = /* @__PURE__ */ El(Df), {
   WINDOWS: CP,
   WORKSPACE_ARIA_LABEL: RP,
   WORKSPACE_COMMENT_DEFAULT_TEXT: OP
-}, Symbol.toStringTag, { value: "Module" })), JP = "/visual_automation_builder/blockly-media/", tg = {
+}, Symbol.toStringTag, { value: "Module" })), JP = "/visual_automation_builder/blockly-media/", sg = {
   en: {
     title: "Automation Builder",
     alias: "Automation name",
@@ -19226,15 +19226,21 @@ const wf = /* @__PURE__ */ El(Df), {
 let $l = "en";
 function U(C) {
   var P;
-  return ((P = tg[$l]) == null ? void 0 : P[C]) || tg.en[C] || C;
+  return ((P = sg[$l]) == null ? void 0 : P[C]) || sg.en[C] || C;
 }
-function sg(C) {
-  $l = C && C.startsWith("uk") ? "uk" : "en", ap($l === "uk" ? KP : vf), window.__VAB_LANG = $l;
+function og(C) {
+  $l = C && C.startsWith("uk") ? "uk" : "en", hp($l === "uk" ? KP : vf), window.__VAB_LANG = $l;
 }
 let si = [["(no entities)", ""]];
 window.__VAB_ENTITIES = si;
-function og(C) {
-  if (!(!C || !C.states) && (si = Object.keys(C.states).sort().map((P) => [P, P]), window.__VAB_ENTITIES = si, window.__VAB_WORKSPACE))
+function ig(C) {
+  if (!(!C || !C.states) && (si = Object.entries(C.states).map(([P, i]) => {
+    var c;
+    return [
+      ((c = i == null ? void 0 : i.attributes) == null ? void 0 : c.friendly_name) || P,
+      P
+    ];
+  }).sort((P, i) => P[0].localeCompare(i[0])), window.__VAB_ENTITIES = si, window.__VAB_WORKSPACE))
     for (const P of window.__VAB_WORKSPACE.getAllBlocks(!1)) {
       const i = P.getField && P.getField("ENTITY");
       i && i.setOptions && i.setOptions(si);
@@ -19300,8 +19306,8 @@ function jP() {
     }
   };
 }
-const qP = lp.defineTheme("vab-dark", {
-  base: cp.Classic,
+const qP = cp.defineTheme("vab-dark", {
+  base: up.Classic,
   componentStyles: {
     workspaceBackgroundColour: "#111315",
     toolboxBackgroundColour: "#1b1d1f",
@@ -19323,7 +19329,7 @@ function ZP(C) {
     return {};
   }
 }
-function ng(C) {
+function rg(C) {
   return C ? C.type === "vab_condition_state" ? {
     condition: "state",
     entity_id: C.getFieldValue("ENTITY"),
@@ -19334,7 +19340,7 @@ function ng(C) {
     [C.getFieldValue("DIR")]: Number(C.getFieldValue("VALUE") || 0)
   } : null : null;
 }
-function rg(C) {
+function lg(C) {
   if (!C) return null;
   switch (C.type) {
     case "vab_action_service": {
@@ -19354,7 +19360,7 @@ function rg(C) {
         }
       };
     case "vab_action_choose": {
-      const P = ng(C.getInputTargetBlock("CONDITION"));
+      const P = rg(C.getInputTargetBlock("CONDITION"));
       return {
         choose: [
           {
@@ -19380,7 +19386,7 @@ function dh(C) {
   const P = [];
   let i = C;
   for (; i; ) {
-    const c = rg(i);
+    const c = lg(i);
     c && P.push(c), i = i.getNextBlock();
   }
   return P;
@@ -19452,14 +19458,14 @@ class iD extends HTMLElement {
     var c;
     this._hass = P;
     const i = ((c = P == null ? void 0 : P.locale) == null ? void 0 : c.language) || (P == null ? void 0 : P.language);
-    i && sg(i), og(P), this._workspace && i && i !== window.__VAB_LANG_APPLIED && (window.__VAB_LANG_APPLIED = i);
+    i && og(i), ig(P), this._workspace && i && i !== window.__VAB_LANG_APPLIED && (window.__VAB_LANG_APPLIED = i);
   }
   get hass() {
     return this._hass;
   }
   connectedCallback() {
     var P, i, c;
-    sg(((i = (P = this._hass) == null ? void 0 : P.locale) == null ? void 0 : i.language) || ((c = this._hass) == null ? void 0 : c.language) || "en"), this.innerHTML = `
+    og(((i = (P = this._hass) == null ? void 0 : P.locale) == null ? void 0 : i.language) || ((c = this._hass) == null ? void 0 : c.language) || "en"), this.innerHTML = `
       <style>
         automation-builder {
           display: flex; flex-direction: column; height: 100%;
@@ -19516,6 +19522,25 @@ class iD extends HTMLElement {
           font-size: 12px; opacity: 0.6; line-height: 1.4; margin-top: 12px;
         }
         automation-builder .vab-blockly { flex: 1; min-width: 0; position: relative; }
+
+        /* Readable text inside Blockly blocks on the dark theme. */
+        automation-builder .blocklyText,
+        automation-builder .blocklyDropdownText,
+        automation-builder .blocklyFlyoutLabelText { fill: #f5f5f5 !important; }
+        automation-builder .blocklyHtmlInput {
+          color: #f5f5f5 !important;
+          background: #23272b !important;
+          border: 1px solid #3a3f44 !important;
+          border-radius: 4px !important;
+        }
+        automation-builder .blocklyDropDownDiv {
+          background: #23272b !important;
+          border-color: #3a3f44 !important;
+          color: #f5f5f5 !important;
+        }
+        automation-builder .blocklyMenuItem { color: #f5f5f5 !important; }
+        automation-builder .blocklyMenuItem:hover,
+        automation-builder .blocklyMenuItemHighlight { background: #2f7bd6 !important; }
       </style>
       <div class="vab-header">
         <div class="vab-title">${U("title")}</div>
@@ -19543,7 +19568,7 @@ class iD extends HTMLElement {
         </aside>
         <div class="vab-blockly" id="vab-blockly"></div>
       </div>
-    `, jP(), og(this._hass), this._workspace = up(this.querySelector("#vab-blockly"), {
+    `, jP(), ig(this._hass), this._workspace = ap(this.querySelector("#vab-blockly"), {
       theme: qP,
       renderer: "zelos",
       media: JP,
@@ -19563,7 +19588,7 @@ class iD extends HTMLElement {
     }), this.querySelector("#vab-clear").addEventListener("click", () => {
       this._workspace.clear(), this.setStatus("");
     }), this._resizeObserver = new ResizeObserver(() => {
-      this._workspace && hp(this._workspace);
+      this._workspace && ZE(this._workspace);
     }), this._resizeObserver.observe(this);
   }
   addBlock(P) {
@@ -19573,7 +19598,7 @@ class iD extends HTMLElement {
     i.moveBy(
       c.viewLeft + 40 + Math.random() * 60,
       c.viewTop + 40 + Math.random() * 60
-    ), i.select();
+    ), i.select(), ZE(this._workspace);
   }
   _copyBlocklyStyles() {
     const P = this.getRootNode();
@@ -19601,7 +19626,7 @@ class iD extends HTMLElement {
     for (const ie of this._workspace.getTopBlocks(!0)) {
       if (ie.getPreviousBlock()) continue;
       if (sD(ie.type)) {
-        const Fe = ng(ie);
+        const Fe = rg(ie);
         Fe && i.push(Fe);
         continue;
       }
@@ -19611,7 +19636,7 @@ class iD extends HTMLElement {
           const Fe = QP($e);
           Fe && P.push(Fe);
         } else if (eD($e.type)) {
-          const Fe = rg($e);
+          const Fe = lg($e);
           Fe && c.push(Fe);
         }
         $e = $e.getNextBlock();
