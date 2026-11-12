@@ -1,0 +1,13 @@
+{
+  "domain": "visual_automation_builder",
+  "name": "Visual Automation Builder",
+  "codeowners": ["@edhases"],
+  "config_flow": true,
+  "dependencies": ["http", "frontend", "panel_custom", "config", "automation", "websocket_api"],
+  "documentation": "https://github.com/edhases/visual-automation-builder",
+  "issue_tracker": "https://github.com/edhases/visual-automation-builder/issues",
+  "integration_type": "service",
+  "iot_class": "local_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}

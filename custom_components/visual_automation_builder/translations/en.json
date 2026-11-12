@@ -1,0 +1,13 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Visual Automation Builder",
+        "description": "Adds a Scratch-like visual automation editor to the Home Assistant sidebar."
+      }
+    },
+    "abort": {
+      "single_instance_allowed": "Visual Automation Builder is already configured."
+    }
+  }
+}

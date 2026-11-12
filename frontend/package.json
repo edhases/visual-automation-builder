@@ -1,0 +1,16 @@
+{
+  "name": "visual-automation-builder-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "dependencies": {
+    "blockly": "^12.5.1"
+  },
+  "devDependencies": {
+    "vite": "^6.4.6"
+  }
+}
