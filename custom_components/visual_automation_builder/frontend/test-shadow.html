@@ -18,14 +18,14 @@
   </head>
   <body>
     <div id="host"></div>
-    <script type="module" src="./automation-builder.js?v=0.1.4"></script>
+    <script type="module" src="./automation-builder.js?v=0.1.6"></script>
     <script type="module">
       const host = document.getElementById("host");
       const root = host.attachShadow({ mode: "open" });
       const el = document.createElement("automation-builder");
       el.style.cssText = "display:block;height:100%";
       root.appendChild(el);
-      el.hass = { states: {} };
+      el.hass = { states: { "light.test": { entity_id: "light.test", state: "on", attributes: { friendly_name: "Test Light" } } } };
     </script>
   </body>
 </html>

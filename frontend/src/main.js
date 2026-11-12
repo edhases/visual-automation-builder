@@ -113,11 +113,11 @@ window.__VAB_ENTITIES = entityOptions;
 function setEntityOptions(hass) {
   if (!hass || !hass.states) return;
   entityOptions = Object.entries(hass.states)
-    .map(([id, state]) => [
-      state?.attributes?.friendly_name || id,
-      id,
-    ])
+    .map(([id, state]) => [state?.attributes?.friendly_name || id, id])
     .sort((a, b) => a[0].localeCompare(b[0]));
+  if (!entityOptions.length) {
+    entityOptions = [["(no entities)", ""]];
+  }
   window.__VAB_ENTITIES = entityOptions;
   if (window.__VAB_WORKSPACE) {
     for (const block of window.__VAB_WORKSPACE.getAllBlocks(false)) {
@@ -621,7 +621,18 @@ class AutomationBuilder extends HTMLElement {
       metrics.viewTop + 40 + Math.random() * 60
     );
     block.select();
+    if (Blockly.renderManagement?.finishQueuedRenders) {
+      Blockly.renderManagement.finishQueuedRenders();
+    }
     Blockly.svgResize(this._workspace);
+    // Force a follow-up paint; without this the first render can show an
+    // empty block until the workspace receives a click/resize.
+    this._workspace.render();
+    setTimeout(() => {
+      if (!this._workspace) return;
+      this._workspace.render();
+      Blockly.svgResize(this._workspace);
+    }, 0);
   }
 
   _copyBlocklyStyles() {
