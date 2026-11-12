@@ -587,6 +587,19 @@ class AutomationBuilder extends HTMLElement {
     window.__VAB_WORKSPACE = this._workspace;
 
     this._copyBlocklyStyles();
+    this._injectGlobalStyles();
+
+    this._workspace.addChangeListener((event) => {
+      if (
+        event.type === Blockly.Events.SELECTED ||
+        event.type === Blockly.Events.CLICK
+      ) {
+        setTimeout(() => {
+          if (!this._workspace) return;
+          this._workspace.render();
+        }, 0);
+      }
+    });
 
     for (const button of this.querySelectorAll(".vab-block-btn")) {
       button.addEventListener("click", () => {
@@ -633,6 +646,32 @@ class AutomationBuilder extends HTMLElement {
       this._workspace.render();
       Blockly.svgResize(this._workspace);
     }, 0);
+  }
+
+  _injectGlobalStyles() {
+    if (document.getElementById("vab-global-style")) return;
+    const style = document.createElement("style");
+    style.id = "vab-global-style";
+    style.textContent = `
+      .blocklyDropDownDiv {
+        background: #23272b !important;
+        border-color: #3a3f44 !important;
+        color: #f5f5f5 !important;
+        max-height: 340px !important;
+        overflow-y: auto !important;
+      }
+      .blocklyMenuItem { color: #f5f5f5 !important; }
+      .blocklyMenuItem:hover, .blocklyMenuItemHighlight {
+        background: #2f7bd6 !important;
+        color: #ffffff !important;
+      }
+      .blocklyHtmlInput {
+        color: #f5f5f5 !important;
+        background: #23272b !important;
+        border: 1px solid #3a3f44 !important;
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   _copyBlocklyStyles() {

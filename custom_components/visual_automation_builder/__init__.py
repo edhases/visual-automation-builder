@@ -32,7 +32,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         webcomponent_name="automation-builder",
         sidebar_title=PANEL_TITLE,
         sidebar_icon=PANEL_ICON,
-        module_url=f"{FRONTEND_URL}/automation-builder.js?v=0.1.6",
+        module_url=f"{FRONTEND_URL}/automation-builder.js?v=0.1.7",
         require_admin=True,
         embed_iframe=False,
     )
