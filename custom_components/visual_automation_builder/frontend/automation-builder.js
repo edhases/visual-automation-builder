@@ -18443,7 +18443,7 @@ function NC(N) {
 }
 class wC extends HTMLElement {
   constructor() {
-    super(), this.attachShadow({ mode: "open" }), this._hass = void 0, this._workspace = void 0, this._alias = "Visual automation";
+    super(), this._hass = void 0, this._workspace = void 0, this._alias = "Visual automation";
   }
   set hass(x) {
     this._hass = x, q_(x);
@@ -18452,46 +18452,46 @@ class wC extends HTMLElement {
     return this._hass;
   }
   connectedCallback() {
-    this.shadowRoot.innerHTML = `
+    this.innerHTML = `
       <style>
-        :host { display: block; height: 100%; background: var(--primary-background-color); }
-        .toolbar {
+        automation-builder { display: block; height: 100%; background: var(--primary-background-color); }
+        automation-builder .vab-toolbar {
           display: flex; gap: 8px; align-items: center; padding: 8px 12px;
           background: var(--card-background-color); border-bottom: 1px solid var(--divider-color);
           font-family: var(--paper-font-body1_-_font-family);
         }
-        .toolbar input {
+        automation-builder .vab-toolbar input {
           flex: 0 0 260px; padding: 8px; border-radius: 6px;
           border: 1px solid var(--divider-color);
           background: var(--secondary-background-color); color: var(--primary-text-color);
         }
-        .toolbar button {
+        automation-builder .vab-toolbar button {
           padding: 8px 14px; border: none; border-radius: 6px; cursor: pointer;
           background: var(--primary-color); color: var(--text-primary-color); font-weight: 600;
         }
-        .toolbar button.secondary { background: var(--secondary-background-color); color: var(--primary-text-color); }
-        .status { margin-left: auto; opacity: 0.8; }
-        #blockly { position: absolute; top: 53px; left: 0; right: 0; bottom: 0; }
+        automation-builder .vab-toolbar button.secondary { background: var(--secondary-background-color); color: var(--primary-text-color); }
+        automation-builder .vab-status { margin-left: auto; opacity: 0.8; }
+        automation-builder .vab-blockly { position: absolute; top: 53px; left: 0; right: 0; bottom: 0; }
       </style>
-      <div class="toolbar">
-        <input id="alias" placeholder="Automation name" value="Visual automation" />
-        <button id="save">Save automation</button>
-        <button id="clear" class="secondary">Clear</button>
-        <span class="status" id="status"></span>
+      <div class="vab-toolbar">
+        <input id="vab-alias" placeholder="Automation name" value="Visual automation" />
+        <button id="vab-save">Save automation</button>
+        <button id="vab-clear" class="secondary">Clear</button>
+        <span class="vab-status" id="vab-status"></span>
       </div>
-      <div id="blockly"></div>
-    `, CC(), q_(this._hass), this._workspace = tT(this.shadowRoot.getElementById("blockly"), {
+      <div class="vab-blockly" id="vab-blockly"></div>
+    `, CC(), q_(this._hass), this._workspace = tT(this.querySelector("#vab-blockly"), {
       toolbox: yC(),
       renderer: "zelos",
       media: OC,
       grid: { spacing: 24, length: 3, colour: "#ccc", snap: !0 },
       zoom: { controls: !0, wheel: !0, startScale: 0.9, maxScale: 2, minScale: 0.4 },
       trashcan: !0
-    }), window.__VAB_WORKSPACE = this._workspace, this.shadowRoot.getElementById("alias").addEventListener("input", (x) => {
+    }), window.__VAB_WORKSPACE = this._workspace, this.querySelector("#vab-alias").addEventListener("input", (x) => {
       this._alias = x.target.value;
-    }), this.shadowRoot.getElementById("save").addEventListener("click", () => {
+    }), this.querySelector("#vab-save").addEventListener("click", () => {
       this.saveAutomation();
-    }), this.shadowRoot.getElementById("clear").addEventListener("click", () => {
+    }), this.querySelector("#vab-clear").addEventListener("click", () => {
       this._workspace.clear(), this.setStatus("");
     }), this._resizeObserver = new ResizeObserver(() => {
       oT(this._workspace);
@@ -18501,7 +18501,7 @@ class wC extends HTMLElement {
     this._resizeObserver && this._resizeObserver.disconnect(), this._workspace && (this._workspace.dispose(), this._workspace = void 0, window.__VAB_WORKSPACE = void 0);
   }
   setStatus(x) {
-    const n = this.shadowRoot.getElementById("status");
+    const n = this.querySelector("#vab-status");
     n && (n.textContent = x);
   }
   buildAutomation() {
