@@ -23,6 +23,9 @@ const I18N = {
     block_trigger_time: "At a specific time",
     block_condition_state: "If entity is…",
     block_condition_numeric: "If number is above/below…",
+    block_condition_and: "AND (all conditions)",
+    block_condition_or: "OR (any condition)",
+    block_action_device: "Turn a device on / off",
     block_action_service: "Call a service",
     block_action_delay: "Wait N seconds",
     block_action_notify: "Send a notification",
@@ -47,6 +50,10 @@ const I18N = {
     repeat: "repeat",
     times: "times",
     do: "do",
+    device_action: "action",
+    action_turn_on: "turn on",
+    action_turn_off: "turn off",
+    action_toggle: "toggle",
     hint: "Click a block in the palette to add it to the canvas.",
   },
   uk: {
@@ -66,6 +73,9 @@ const I18N = {
     block_trigger_time: "У вказаний час",
     block_condition_state: "Якщо сутність…",
     block_condition_numeric: "Якщо число вище/нижче…",
+    block_condition_and: "І (усі умови)",
+    block_condition_or: "АБО (будь-яка умова)",
+    block_action_device: "Увімкнути / вимкнути пристрій",
     block_action_service: "Викликати сервіс",
     block_action_delay: "Чекати N секунд",
     block_action_notify: "Надіслати сповіщення",
@@ -90,6 +100,10 @@ const I18N = {
     repeat: "повторити",
     times: "разів",
     do: "робити",
+    device_action: "дія",
+    action_turn_on: "увімкнути",
+    action_turn_off: "вимкнути",
+    action_toggle: "перемкнути",
     hint: "Натисніть блок у палітрі, щоб додати його на полотно.",
   },
 };
@@ -217,6 +231,47 @@ function defineBlocks() {
     },
   };
 
+  Blockly.Blocks["vab_condition_and"] = {
+    init() {
+      this.appendValueInput("A").setCheck("Condition").appendField("і");
+      this.appendValueInput("B").setCheck("Condition").appendField("і");
+      this.setInputsInline(true);
+      this.setOutput(true, "Condition");
+      this.setColour(210);
+    },
+  };
+
+  Blockly.Blocks["vab_condition_or"] = {
+    init() {
+      this.appendValueInput("A").setCheck("Condition").appendField("або");
+      this.appendValueInput("B").setCheck("Condition").appendField("або");
+      this.setInputsInline(true);
+      this.setOutput(true, "Condition");
+      this.setColour(210);
+    },
+  };
+
+  Blockly.Blocks["vab_action_device"] = {
+    init() {
+      this.appendDummyInput()
+        .appendField(t("target"))
+        .appendField(new Blockly.FieldDropdown(entityDropdown()), "TARGET");
+      this.appendDummyInput()
+        .appendField(t("device_action"))
+        .appendField(
+          new Blockly.FieldDropdown([
+            [t("action_turn_on"), "turn_on"],
+            [t("action_turn_off"), "turn_off"],
+            [t("action_toggle"), "toggle"],
+          ]),
+          "ACTION"
+        );
+      this.setPreviousStatement(true, null);
+      this.setNextStatement(true, null);
+      this.setColour(260);
+    },
+  };
+
   Blockly.Blocks["vab_action_service"] = {
     init() {
       this.appendDummyInput()
@@ -312,8 +367,42 @@ function parseJson(text) {
   }
 }
 
+const SERVICE_MAP = {
+  light: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  switch: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  fan: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  humidifier: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  input_boolean: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  automation: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  script: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  climate: { turn_on: "turn_on", turn_off: "turn_off" },
+  media_player: { turn_on: "turn_on", turn_off: "turn_off", toggle: "toggle" },
+  cover: { turn_on: "open_cover", turn_off: "close_cover", toggle: "toggle" },
+  lock: { turn_on: "lock", turn_off: "unlock" },
+  vacuum: { turn_on: "start", turn_off: "stop" },
+  siren: { turn_on: "turn_on", turn_off: "turn_off" },
+  button: { turn_on: "press", turn_off: "press", toggle: "press" },
+};
+
+function deviceService(entityId, action) {
+  const domain = (entityId || "").split(".")[0];
+  const mapped = SERVICE_MAP[domain]?.[action];
+  return mapped ? `${domain}.${mapped}` : `${domain}.${action}`;
+}
+
 function conditionToConfig(block) {
   if (!block) return null;
+  if (block.type === "vab_condition_and" || block.type === "vab_condition_or") {
+    const conditions = [
+      conditionToConfig(block.getInputTargetBlock("A")),
+      conditionToConfig(block.getInputTargetBlock("B")),
+    ].filter(Boolean);
+    if (!conditions.length) return null;
+    return {
+      condition: block.type === "vab_condition_and" ? "and" : "or",
+      conditions,
+    };
+  }
   if (block.type === "vab_condition_state") {
     return {
       condition: "state",
@@ -334,6 +423,15 @@ function conditionToConfig(block) {
 function actionToConfig(block) {
   if (!block) return null;
   switch (block.type) {
+    case "vab_action_device": {
+      const entity = block.getFieldValue("TARGET");
+      const action = block.getFieldValue("ACTION");
+      if (!entity) return null;
+      return {
+        service: deviceService(entity, action),
+        target: { entity_id: entity },
+      };
+    }
     case "vab_action_service": {
       const config = { service: block.getFieldValue("SERVICE") };
       const target = block.getFieldValue("TARGET");
@@ -436,12 +534,15 @@ const PALETTE = [
     blocks: [
       { type: "vab_condition_state", label: "block_condition_state" },
       { type: "vab_condition_numeric", label: "block_condition_numeric" },
+      { type: "vab_condition_and", label: "block_condition_and" },
+      { type: "vab_condition_or", label: "block_condition_or" },
     ],
   },
   {
     key: "cat_actions",
     colour: "#c07a3a",
     blocks: [
+      { type: "vab_action_device", label: "block_action_device" },
       { type: "vab_action_service", label: "block_action_service" },
       { type: "vab_action_delay", label: "block_action_delay" },
       { type: "vab_action_notify", label: "block_action_notify" },
