@@ -54,7 +54,7 @@ const I18N = {
     action_turn_on: "turn on",
     action_turn_off: "turn off",
     action_toggle: "toggle",
-    hint: "Click a block in the palette to add it to the canvas.",
+    hint: "Add triggers, conditions and actions as separate stacks. Connect actions to each other (and into if/else or repeat).",
   },
   uk: {
     title: "Конструктор автоматизацій",
@@ -104,7 +104,7 @@ const I18N = {
     action_turn_on: "увімкнути",
     action_turn_off: "вимкнути",
     action_toggle: "перемкнути",
-    hint: "Натисніть блок у палітрі, щоб додати його на полотно.",
+    hint: "Додавайте тригери, умови та дії окремими стеками. З'єднуйте дії між собою (та в if/else чи repeat).",
   },
 };
 
@@ -165,8 +165,8 @@ function defineBlocks() {
         .appendField(new Blockly.FieldDropdown(entityDropdown()), "ENTITY")
         .appendField(t("becomes"))
         .appendField(new Blockly.FieldTextInput("on"), "STATE");
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Trigger");
+      this.setNextStatement(true, "Trigger");
       this.setColour(120);
     },
   };
@@ -176,8 +176,8 @@ function defineBlocks() {
       this.appendDummyInput()
         .appendField(t("at_time"))
         .appendField(new Blockly.FieldTextInput("08:00:00"), "TIME");
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Trigger");
+      this.setNextStatement(true, "Trigger");
       this.setColour(120);
     },
   };
@@ -195,8 +195,8 @@ function defineBlocks() {
           "DIR"
         )
         .appendField(new Blockly.FieldNumber(0), "VALUE");
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Trigger");
+      this.setNextStatement(true, "Trigger");
       this.setColour(120);
     },
   };
@@ -266,8 +266,8 @@ function defineBlocks() {
           ]),
           "ACTION"
         );
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Action");
+      this.setNextStatement(true, "Action");
       this.setColour(260);
     },
   };
@@ -283,8 +283,8 @@ function defineBlocks() {
       this.appendDummyInput()
         .appendField(t("data_json"))
         .appendField(new Blockly.FieldTextInput("{}"), "DATA");
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Action");
+      this.setNextStatement(true, "Action");
       this.setColour(260);
     },
   };
@@ -295,8 +295,8 @@ function defineBlocks() {
         .appendField(t("wait"))
         .appendField(new Blockly.FieldNumber(5, 0, 86400, 1), "DELAY")
         .appendField(t("seconds"));
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Action");
+      this.setNextStatement(true, "Action");
       this.setColour(260);
     },
   };
@@ -309,8 +309,8 @@ function defineBlocks() {
       this.appendDummyInput()
         .appendField(t("message"))
         .appendField(new Blockly.FieldTextInput("Done"), "MESSAGE");
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.setPreviousStatement(true, "Action");
+      this.setNextStatement(true, "Action");
       this.setColour(260);
     },
   };
@@ -320,10 +320,10 @@ function defineBlocks() {
       this.appendValueInput("CONDITION")
         .setCheck("Condition")
         .appendField(t("if"));
-      this.appendStatementInput("THEN").appendField(t("then"));
-      this.appendStatementInput("ELSE").appendField(t("else"));
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.appendStatementInput("THEN").setCheck("Action").appendField(t("then"));
+      this.appendStatementInput("ELSE").setCheck("Action").appendField(t("else"));
+      this.setPreviousStatement(true, "Action");
+      this.setNextStatement(true, "Action");
       this.setColour(290);
     },
   };
@@ -334,9 +334,9 @@ function defineBlocks() {
         .appendField(t("repeat"))
         .appendField(new Blockly.FieldNumber(1, 1, 1000, 1), "COUNT")
         .appendField(t("times"));
-      this.appendStatementInput("DO").appendField(t("do"));
-      this.setPreviousStatement(true, null);
-      this.setNextStatement(true, null);
+      this.appendStatementInput("DO").setCheck("Action").appendField(t("do"));
+      this.setPreviousStatement(true, "Action");
+      this.setNextStatement(true, "Action");
       this.setColour(290);
     },
   };

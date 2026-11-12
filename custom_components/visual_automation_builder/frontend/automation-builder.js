@@ -19184,7 +19184,7 @@ const Uf = /* @__PURE__ */ pl(xf), {
     action_turn_on: "turn on",
     action_turn_off: "turn off",
     action_toggle: "toggle",
-    hint: "Click a block in the palette to add it to the canvas."
+    hint: "Add triggers, conditions and actions as separate stacks. Connect actions to each other (and into if/else or repeat)."
   },
   uk: {
     title: "Конструктор автоматизацій",
@@ -19234,7 +19234,7 @@ const Uf = /* @__PURE__ */ pl(xf), {
     action_turn_on: "увімкнути",
     action_turn_off: "вимкнути",
     action_toggle: "перемкнути",
-    hint: "Натисніть блок у палітрі, щоб додати його на полотно."
+    hint: "Додавайте тригери, умови та дії окремими стеками. З'єднуйте дії між собою (та в if/else чи repeat)."
   }
 };
 let El = "en";
@@ -19272,11 +19272,11 @@ function si() {
 function QP() {
   Qe.vab_trigger_state = {
     init() {
-      this.appendDummyInput().appendField(x("when")).appendField(new ts(si()), "ENTITY").appendField(x("becomes")).appendField(new oo("on"), "STATE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
+      this.appendDummyInput().appendField(x("when")).appendField(new ts(si()), "ENTITY").appendField(x("becomes")).appendField(new oo("on"), "STATE"), this.setPreviousStatement(!0, "Trigger"), this.setNextStatement(!0, "Trigger"), this.setColour(120);
     }
   }, Qe.vab_trigger_time = {
     init() {
-      this.appendDummyInput().appendField(x("at_time")).appendField(new oo("08:00:00"), "TIME"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
+      this.appendDummyInput().appendField(x("at_time")).appendField(new oo("08:00:00"), "TIME"), this.setPreviousStatement(!0, "Trigger"), this.setNextStatement(!0, "Trigger"), this.setColour(120);
     }
   }, Qe.vab_trigger_numeric = {
     init() {
@@ -19286,7 +19286,7 @@ function QP() {
           [x("below"), "below"]
         ]),
         "DIR"
-      ).appendField(new al(0), "VALUE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
+      ).appendField(new al(0), "VALUE"), this.setPreviousStatement(!0, "Trigger"), this.setNextStatement(!0, "Trigger"), this.setColour(120);
     }
   }, Qe.vab_condition_state = {
     init() {
@@ -19319,27 +19319,27 @@ function QP() {
           [x("action_toggle"), "toggle"]
         ]),
         "ACTION"
-      ), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      ), this.setPreviousStatement(!0, "Action"), this.setNextStatement(!0, "Action"), this.setColour(260);
     }
   }, Qe.vab_action_service = {
     init() {
-      this.appendDummyInput().appendField(x("call_service")).appendField(new oo("light.turn_on"), "SERVICE"), this.appendDummyInput().appendField(x("target")).appendField(new ts(si()), "TARGET"), this.appendDummyInput().appendField(x("data_json")).appendField(new oo("{}"), "DATA"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      this.appendDummyInput().appendField(x("call_service")).appendField(new oo("light.turn_on"), "SERVICE"), this.appendDummyInput().appendField(x("target")).appendField(new ts(si()), "TARGET"), this.appendDummyInput().appendField(x("data_json")).appendField(new oo("{}"), "DATA"), this.setPreviousStatement(!0, "Action"), this.setNextStatement(!0, "Action"), this.setColour(260);
     }
   }, Qe.vab_action_delay = {
     init() {
-      this.appendDummyInput().appendField(x("wait")).appendField(new al(5, 0, 86400, 1), "DELAY").appendField(x("seconds")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      this.appendDummyInput().appendField(x("wait")).appendField(new al(5, 0, 86400, 1), "DELAY").appendField(x("seconds")), this.setPreviousStatement(!0, "Action"), this.setNextStatement(!0, "Action"), this.setColour(260);
     }
   }, Qe.vab_action_notify = {
     init() {
-      this.appendDummyInput().appendField(x("notify")).appendField(new oo("Automation"), "TITLE"), this.appendDummyInput().appendField(x("message")).appendField(new oo("Done"), "MESSAGE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      this.appendDummyInput().appendField(x("notify")).appendField(new oo("Automation"), "TITLE"), this.appendDummyInput().appendField(x("message")).appendField(new oo("Done"), "MESSAGE"), this.setPreviousStatement(!0, "Action"), this.setNextStatement(!0, "Action"), this.setColour(260);
     }
   }, Qe.vab_action_choose = {
     init() {
-      this.appendValueInput("CONDITION").setCheck("Condition").appendField(x("if")), this.appendStatementInput("THEN").appendField(x("then")), this.appendStatementInput("ELSE").appendField(x("else")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(290);
+      this.appendValueInput("CONDITION").setCheck("Condition").appendField(x("if")), this.appendStatementInput("THEN").setCheck("Action").appendField(x("then")), this.appendStatementInput("ELSE").setCheck("Action").appendField(x("else")), this.setPreviousStatement(!0, "Action"), this.setNextStatement(!0, "Action"), this.setColour(290);
     }
   }, Qe.vab_action_repeat = {
     init() {
-      this.appendDummyInput().appendField(x("repeat")).appendField(new al(1, 1, 1e3, 1), "COUNT").appendField(x("times")), this.appendStatementInput("DO").appendField(x("do")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(290);
+      this.appendDummyInput().appendField(x("repeat")).appendField(new al(1, 1, 1e3, 1), "COUNT").appendField(x("times")), this.appendStatementInput("DO").setCheck("Action").appendField(x("do")), this.setPreviousStatement(!0, "Action"), this.setNextStatement(!0, "Action"), this.setColour(290);
     }
   };
 }
