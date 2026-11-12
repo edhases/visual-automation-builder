@@ -9,6 +9,11 @@ const I18N = {
   en: {
     title: "Automation Builder",
     alias: "Automation name",
+    load_automation: "Load automation",
+    new_automation: "New automation",
+    loaded: "Loaded ✓",
+    load_error: "Could not load",
+    skipped: "Some blocks were skipped (unsupported)",
     save: "Save automation",
     clear: "Clear",
     status_saved: "Saved ✓",
@@ -59,6 +64,11 @@ const I18N = {
   uk: {
     title: "Конструктор автоматизацій",
     alias: "Назва автоматизації",
+    load_automation: "Завантажити автоматизацію",
+    new_automation: "Нова автоматизація",
+    loaded: "Завантажено ✓",
+    load_error: "Не вдалося завантажити",
+    skipped: "Деякі блоки пропущено (не підтримуються)",
     save: "Зберегти автоматизацію",
     clear: "Очистити",
     status_saved: "Збережено ✓",
@@ -112,6 +122,19 @@ let currentLang = "en";
 
 function t(key) {
   return I18N[currentLang]?.[key] || I18N.en[key] || key;
+}
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, (char) => {
+    const map = {
+      "&": "&amp;",
+      "<": "&lt;",
+      ">": "&gt;",
+      '"': "&quot;",
+      "'": "&#39;",
+    };
+    return map[char];
+  });
 }
 
 function setLocaleFor(lang) {
@@ -558,6 +581,8 @@ class AutomationBuilder extends HTMLElement {
     this._hass = undefined;
     this._workspace = undefined;
     this._alias = "Visual automation";
+    this._automationId = null;
+    this._automationSignature = "";
   }
 
   set hass(hass) {
@@ -565,6 +590,7 @@ class AutomationBuilder extends HTMLElement {
     const lang = hass?.locale?.language || hass?.language;
     if (lang) setLocaleFor(lang);
     setEntityOptions(hass);
+    this._refreshAutomationList(hass);
     if (this._workspace && lang && lang !== window.__VAB_LANG_APPLIED) {
       window.__VAB_LANG_APPLIED = lang;
     }
@@ -589,11 +615,18 @@ class AutomationBuilder extends HTMLElement {
           border-bottom: 1px solid var(--divider-color);
         }
         automation-builder .vab-title { font-size: 18px; font-weight: 600; margin-right: 8px; }
-        automation-builder .vab-header input {
-          flex: 1 1 240px; min-width: 160px; padding: 9px 12px; border-radius: 8px;
+        automation-builder .vab-header input,
+        automation-builder .vab-header select {
+          padding: 9px 12px; border-radius: 8px;
           border: 1px solid var(--divider-color);
           background: var(--secondary-background-color); color: var(--primary-text-color);
           font-size: 14px;
+        }
+        automation-builder .vab-header input {
+          flex: 1 1 240px; min-width: 160px;
+        }
+        automation-builder .vab-header select {
+          flex: 0 1 240px; min-width: 180px;
         }
         automation-builder .vab-header button {
           padding: 9px 16px; border: none; border-radius: 8px; cursor: pointer;
@@ -665,6 +698,9 @@ class AutomationBuilder extends HTMLElement {
       </style>
       <div class="vab-header">
         <div class="vab-title">${t("title")}</div>
+        <select id="vab-load" title="${t("load_automation")}">
+          <option value="">${t("new_automation")}</option>
+        </select>
         <input id="vab-alias" placeholder="${t("alias")}" value="" />
         <button id="vab-save">${t("save")}</button>
         <button id="vab-clear" class="secondary">${t("clear")}</button>
@@ -735,9 +771,17 @@ class AutomationBuilder extends HTMLElement {
       this.saveAutomation();
     });
     this.querySelector("#vab-clear").addEventListener("click", () => {
-      this._workspace.clear();
-      this.setStatus("");
+      this.newAutomation();
     });
+    this.querySelector("#vab-load").addEventListener("change", (event) => {
+      const id = event.target.value;
+      if (!id) {
+        this.newAutomation();
+      } else {
+        this.loadAutomation(id);
+      }
+    });
+    this._refreshAutomationList(this._hass);
 
     this._resizeObserver = new ResizeObserver(() => {
       if (this._workspace) Blockly.svgResize(this._workspace);
@@ -767,6 +811,296 @@ class AutomationBuilder extends HTMLElement {
       this._workspace.render();
       Blockly.svgResize(this._workspace);
     }, 0);
+  }
+
+  _newBlock(type) {
+    const block = this._workspace.newBlock(type);
+    block.initSvg();
+    block.render();
+    return block;
+  }
+
+  _setField(block, name, value) {
+    try {
+      block.setFieldValue(value, name);
+    } catch (err) {
+      console.warn("VAB: could not set field", name, value, err);
+    }
+  }
+
+  _refreshAutomationList(hass) {
+    const select = this.querySelector("#vab-load");
+    if (!select || !hass?.states) return;
+    const automations = Object.entries(hass.states)
+      .filter(([id, state]) => id.startsWith("automation.") && state?.attributes?.id)
+      .map(([id, state]) => ({
+        id: state.attributes.id,
+        name: state.attributes.friendly_name || id,
+      }))
+      .sort((a, b) => a.name.localeCompare(b.name));
+    const signature = automations.map((a) => `${a.id}|${a.name}`).join("\n");
+    if (signature !== this._automationSignature) {
+      this._automationSignature = signature;
+      select.innerHTML =
+        `<option value="">${t("new_automation")}</option>` +
+        automations
+          .map(
+            (a) =>
+              `<option value="${escapeHtml(a.id)}">${escapeHtml(a.name)}</option>`
+          )
+          .join("");
+    }
+    select.value = this._automationId || "";
+  }
+
+  newAutomation() {
+    this._workspace.clear();
+    this._automationId = null;
+    this._alias = "Visual automation";
+    const input = this.querySelector("#vab-alias");
+    if (input) input.value = "";
+    const select = this.querySelector("#vab-load");
+    if (select) select.value = "";
+    this.setStatus("");
+  }
+
+  async loadAutomation(id) {
+    if (!this._hass) return;
+    this.setStatus(`${t("load_automation")}…`);
+    try {
+      const config = await this._hass.callApi(
+        "GET",
+        `config/automation/config/${id}`
+      );
+      this._workspace.clear();
+      this._automationId = id;
+      this._alias = config.alias || "Visual automation";
+      const input = this.querySelector("#vab-alias");
+      if (input) input.value = config.alias || "";
+      const skipped = this._applyAutomation(config);
+      Blockly.svgResize(this._workspace);
+      this.setStatus(skipped ? t("skipped") : t("loaded"));
+    } catch (err) {
+      console.error(err);
+      this.setStatus(`${t("load_error")}: ${err.message || err}`);
+    }
+  }
+
+  _applyAutomation(config) {
+    let skipped = 0;
+    const triggers = config.trigger || config.triggers || [];
+    let ty = 40;
+    for (const trigger of triggers) {
+      const block = this._buildTrigger(trigger);
+      if (!block) {
+        skipped++;
+        continue;
+      }
+      block.moveBy(40, ty);
+      ty += 90;
+    }
+    const conditions = config.condition || config.conditions || [];
+    let cy = 40;
+    for (const condition of conditions) {
+      const block = this._buildCondition(condition);
+      if (!block) {
+        skipped++;
+        continue;
+      }
+      block.moveBy(360, cy);
+      cy += 90;
+    }
+    const actions = config.action || config.actions || [];
+    const first = this._buildActionSequence(actions);
+    if (first) {
+      first.moveBy(680, 40);
+    } else if (actions.length) {
+      skipped++;
+    }
+    return skipped;
+  }
+
+  _buildTrigger(trigger) {
+    const platform = trigger.platform || trigger.trigger || "";
+    if (platform === "state") {
+      const block = this._newBlock("vab_trigger_state");
+      this._setField(block, "ENTITY", trigger.entity_id || "");
+      const to = Array.isArray(trigger.to) ? trigger.to[0] : trigger.to;
+      if (to !== undefined && to !== null) {
+        this._setField(block, "STATE", String(to));
+      }
+      return block;
+    }
+    if (platform === "numeric_state") {
+      const block = this._newBlock("vab_trigger_numeric");
+      this._setField(block, "ENTITY", trigger.entity_id || "");
+      const dir = trigger.above !== undefined ? "above" : "below";
+      this._setField(block, "DIR", dir);
+      this._setField(block, "VALUE", Number(trigger.above ?? trigger.below ?? 0));
+      return block;
+    }
+    if (platform === "time") {
+      const block = this._newBlock("vab_trigger_time");
+      const at = Array.isArray(trigger.at) ? trigger.at[0] : trigger.at;
+      this._setField(block, "TIME", String(at || "00:00:00"));
+      return block;
+    }
+    return null;
+  }
+
+  _buildCondition(condition) {
+    const type = condition.condition || condition.platform || "";
+    if (type === "state") {
+      const block = this._newBlock("vab_condition_state");
+      this._setField(block, "ENTITY", condition.entity_id || "");
+      const state = Array.isArray(condition.state)
+        ? condition.state[0]
+        : condition.state;
+      if (state !== undefined && state !== null) {
+        this._setField(block, "STATE", String(state));
+      }
+      return block;
+    }
+    if (type === "numeric_state") {
+      const block = this._newBlock("vab_condition_numeric");
+      this._setField(block, "ENTITY", condition.entity_id || "");
+      const dir = condition.above !== undefined ? "above" : "below";
+      this._setField(block, "DIR", dir);
+      this._setField(
+        block,
+        "VALUE",
+        Number(condition.above ?? condition.below ?? 0)
+      );
+      return block;
+    }
+    if (type === "and" || type === "or") {
+      let acc = null;
+      for (const item of condition.conditions || []) {
+        const child = this._buildCondition(item);
+        if (!child) continue;
+        if (!acc) {
+          acc = child;
+          continue;
+        }
+        const combine = this._newBlock(
+          type === "and" ? "vab_condition_and" : "vab_condition_or"
+        );
+        combine.getInput("A").connection.connect(acc.outputConnection);
+        combine.getInput("B").connection.connect(child.outputConnection);
+        acc = combine;
+      }
+      return acc;
+    }
+    return null;
+  }
+
+  _buildActionSequence(actions) {
+    let first = null;
+    let previous = null;
+    for (const action of actions || []) {
+      const block = this._buildAction(action);
+      if (!block) continue;
+      if (!first) first = block;
+      if (previous) {
+        try {
+          previous.nextConnection.connect(block.previousConnection);
+        } catch (err) {
+          console.warn("VAB: could not chain actions", err);
+        }
+      }
+      previous = block;
+    }
+    return first;
+  }
+
+  _buildAction(action) {
+    if (action.service) {
+      const service = action.service;
+      const data = action.data || {};
+      if (
+        service === "persistent_notification.create" &&
+        (data.title || data.message)
+      ) {
+        const block = this._newBlock("vab_action_notify");
+        this._setField(block, "TITLE", String(data.title || "Automation"));
+        this._setField(block, "MESSAGE", String(data.message || ""));
+        return block;
+      }
+      const block = this._newBlock("vab_action_service");
+      this._setField(block, "SERVICE", service);
+      const target =
+        action.target?.entity_id || action.data?.entity_id || "";
+      const entity = Array.isArray(target) ? target[0] : target;
+      if (entity) this._setField(block, "TARGET", entity);
+      this._setField(block, "DATA", JSON.stringify(data || {}, null, 0));
+      return block;
+    }
+    if (action.delay !== undefined) {
+      const block = this._newBlock("vab_action_delay");
+      this._setField(block, "DELAY", this._delayToSeconds(action.delay));
+      return block;
+    }
+    if (action.choose) {
+      const block = this._newBlock("vab_action_choose");
+      const option = action.choose[0];
+      if (option) {
+        const condition = this._buildCondition(
+          option.conditions || option.condition || {}
+        );
+        if (condition) {
+          block.getInput("CONDITION").connection.connect(condition.outputConnection);
+        }
+        const thenFirst = this._buildActionSequence(option.sequence || []);
+        if (thenFirst) {
+          block.getInput("THEN").connection.connect(thenFirst.previousConnection);
+        }
+      }
+      const elseFirst = this._buildActionSequence(action.default || []);
+      if (elseFirst) {
+        block.getInput("ELSE").connection.connect(elseFirst.previousConnection);
+      }
+      return block;
+    }
+    if (action.repeat) {
+      const repeat = action.repeat;
+      if (typeof repeat.count !== "number") return null;
+      const block = this._newBlock("vab_action_repeat");
+      this._setField(block, "COUNT", repeat.count);
+      const body = this._buildActionSequence(repeat.sequence || []);
+      if (body) {
+        block.getInput("DO").connection.connect(body.previousConnection);
+      }
+      return block;
+    }
+    if (action.scene) {
+      const block = this._newBlock("vab_action_service");
+      this._setField(block, "SERVICE", "scene.turn_on");
+      this._setField(block, "TARGET", action.scene);
+      this._setField(block, "DATA", "{}");
+      return block;
+    }
+    return null;
+  }
+
+  _delayToSeconds(delay) {
+    if (typeof delay === "number") return delay;
+    if (typeof delay === "string") {
+      const parts = delay.split(":").map((p) => Number(p));
+      if (parts.some((p) => Number.isNaN(p))) return 0;
+      if (parts.length === 3) return parts[0] * 3600 + parts[1] * 60 + parts[2];
+      if (parts.length === 2) return parts[0] * 60 + parts[1];
+      return parts[0] || 0;
+    }
+    if (typeof delay === "object" && delay) {
+      return (
+        (delay.days || 0) * 86400 +
+        (delay.hours || 0) * 3600 +
+        (delay.minutes || 0) * 60 +
+        (delay.seconds || 0) +
+        (delay.milliseconds || 0) / 1000
+      );
+    }
+    return 0;
   }
 
   _injectGlobalStyles() {
@@ -875,9 +1209,10 @@ class AutomationBuilder extends HTMLElement {
       this.setStatus(t("status_no_action"));
       return;
     }
-    const id = `vab_${Date.now().toString(36)}`;
+    const id = this._automationId || `vab_${Date.now().toString(36)}`;
     try {
       await this._hass.callApi("POST", `config/automation/config/${id}`, config);
+      this._automationId = id;
       this.setStatus(t("status_saved"));
       await this._hass.callService("persistent_notification", "create", {
         title: "Automation Builder",
