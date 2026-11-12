@@ -16,6 +16,8 @@ FRONTEND_DIR = Path(__file__).parent / "frontend"
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     """Set up the panel and static frontend."""
+    # FRONTEND_DIR is served as one tree, so panel translations are available
+    # at {FRONTEND_URL}/translations/<lang>.json without a second mount.
     await hass.http.async_register_static_paths(
         [
             StaticPathConfig(
@@ -32,7 +34,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         webcomponent_name="automation-builder",
         sidebar_title=PANEL_TITLE,
         sidebar_icon=PANEL_ICON,
-        module_url=f"{FRONTEND_URL}/automation-builder.js?v=0.1.13",
+        module_url=f"{FRONTEND_URL}/automation-builder.js?v=0.1.14",
         require_admin=True,
         embed_iframe=False,
     )

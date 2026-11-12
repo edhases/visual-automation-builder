@@ -59,6 +59,22 @@ The build output is written to
 `custom_components/visual_automation_builder/frontend/automation-builder.js`.
 The Blockly media files are copied to `frontend/blockly-media/`.
 
+## Adding a language
+
+Panel strings are loaded at runtime, so a new language needs no frontend build:
+
+1. Copy `custom_components/visual_automation_builder/frontend/translations/en.json`
+   to `custom_components/visual_automation_builder/frontend/translations/<code>.json`
+   (for example `de.json`).
+2. Translate the values, keeping the keys unchanged.
+3. Reload the browser. The panel requests
+   `<panel-url>/translations/<code>.json` based on `hass.locale.language` and
+   falls back to English when a file or key is missing.
+
+The language picker in the panel header lists the built-in languages plus the
+code reported by Home Assistant. To make an extra language always selectable,
+add its code to the `LANGUAGES` array in `frontend/src/main.js` and rebuild.
+
 ## Roadmap
 
 - Import existing automations into blocks.

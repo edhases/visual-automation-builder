@@ -5,123 +5,176 @@ import * as Uk from "blockly/msg/uk";
 
 const MEDIA_PATH = "/visual_automation_builder/blockly-media/";
 
-const I18N = {
-  en: {
-    title: "Automation Builder",
-    alias: "Automation name",
-    load_automation: "Load automation",
-    new_automation: "New automation",
-    loaded: "Loaded ✓",
-    load_error: "Could not load",
-    skipped: "Some blocks were skipped (unsupported)",
-    save: "Save automation",
-    clear: "Clear",
-    status_saved: "Saved ✓",
-    status_no_trigger: "Add at least one trigger",
-    status_no_action: "Add at least one action",
-    status_error: "Error",
-    cat_triggers: "Triggers",
-    cat_conditions: "Conditions",
-    cat_actions: "Actions",
-    block_trigger_state: "When entity becomes…",
-    block_trigger_numeric: "When number is above/below…",
-    block_trigger_time: "At a specific time",
-    block_condition_state: "If entity is…",
-    block_condition_numeric: "If number is above/below…",
-    block_condition_and: "AND (all conditions)",
-    block_condition_or: "OR (any condition)",
-    block_action_device: "Turn a device on / off",
-    block_action_service: "Call a service",
-    block_action_delay: "Wait N seconds",
-    block_action_notify: "Send a notification",
-    block_action_choose: "If / else branch",
-    block_action_repeat: "Repeat N times",
-    when: "when",
-    becomes: "becomes",
-    at_time: "at time",
-    if: "if",
-    is: "is",
-    above: "above",
-    below: "below",
-    call_service: "call service",
-    target: "target",
-    data_json: "data JSON",
-    wait: "wait",
-    seconds: "seconds",
-    notify: "notify",
-    message: "message",
-    then: "then",
-    else: "else",
-    repeat: "repeat",
-    times: "times",
-    do: "do",
-    device_action: "action",
-    action_turn_on: "turn on",
-    action_turn_off: "turn off",
-    action_toggle: "toggle",
-    hint: "Add triggers, conditions and actions as separate stacks. Connect actions to each other (and into if/else or repeat).",
-  },
-  uk: {
-    title: "Конструктор автоматизацій",
-    alias: "Назва автоматизації",
-    load_automation: "Завантажити автоматизацію",
-    new_automation: "Нова автоматизація",
-    loaded: "Завантажено ✓",
-    load_error: "Не вдалося завантажити",
-    skipped: "Деякі блоки пропущено (не підтримуються)",
-    save: "Зберегти автоматизацію",
-    clear: "Очистити",
-    status_saved: "Збережено ✓",
-    status_no_trigger: "Додайте хоча б один тригер",
-    status_no_action: "Додайте хоча б одну дію",
-    status_error: "Помилка",
-    cat_triggers: "Тригери",
-    cat_conditions: "Умови",
-    cat_actions: "Дії",
-    block_trigger_state: "Коли сутність стає…",
-    block_trigger_numeric: "Коли число вище/нижче…",
-    block_trigger_time: "У вказаний час",
-    block_condition_state: "Якщо сутність…",
-    block_condition_numeric: "Якщо число вище/нижче…",
-    block_condition_and: "І (усі умови)",
-    block_condition_or: "АБО (будь-яка умова)",
-    block_action_device: "Увімкнути / вимкнути пристрій",
-    block_action_service: "Викликати сервіс",
-    block_action_delay: "Чекати N секунд",
-    block_action_notify: "Надіслати сповіщення",
-    block_action_choose: "Розгалуження if / else",
-    block_action_repeat: "Повторити N разів",
-    when: "коли",
-    becomes: "стає",
-    at_time: "о",
-    if: "якщо",
-    is: "це",
-    above: "вище",
-    below: "нижче",
-    call_service: "викликати сервіс",
-    target: "ціль",
-    data_json: "data JSON",
-    wait: "чекати",
-    seconds: "секунд",
-    notify: "сповістити",
-    message: "повідомлення",
-    then: "тоді",
-    else: "інакше",
-    repeat: "повторити",
-    times: "разів",
-    do: "робити",
-    device_action: "дія",
-    action_turn_on: "увімкнути",
-    action_turn_off: "вимкнути",
-    action_toggle: "перемкнути",
-    hint: "Додавайте тригери, умови та дії окремими стеками. З'єднуйте дії між собою (та в if/else чи repeat).",
-  },
+const ASSET_VERSION = "0.1.14";
+const DEFAULT_LANGUAGE = "en";
+// Languages shipped with the integration. Extra codes (for example the one
+// reported by hass.locale.language) are tried too, so dropping a new JSON file
+// into frontend/translations/ is enough to add a language.
+const LANGUAGES = ["en", "uk"];
+const LANGUAGE_NAMES = { en: "English", uk: "Українська" };
+const LANGUAGE_STORAGE_KEY = "vab.language";
+
+// English fallback used before translations finish loading (or if fetching
+// translations fails, e.g. when the panel is opened from the file system).
+const FALLBACK_EN = {
+  title: "Automation Builder",
+  alias: "Automation name",
+  load_automation: "Load automation",
+  new_automation: "New automation",
+  loaded: "Loaded ✓",
+  load_error: "Could not load",
+  skipped: "Some blocks were skipped (unsupported)",
+  save: "Save automation",
+  clear: "Clear",
+  status_saved: "Saved ✓",
+  status_no_trigger: "Add at least one trigger",
+  status_no_action: "Add at least one action",
+  status_error: "Error",
+  cat_triggers: "Triggers",
+  cat_conditions: "Conditions",
+  cat_actions: "Actions",
+  block_trigger_state: "When entity becomes…",
+  block_trigger_numeric: "When number is above/below…",
+  block_trigger_time: "At a specific time",
+  block_condition_state: "If entity is…",
+  block_condition_numeric: "If number is above/below…",
+  block_condition_and: "AND (all conditions)",
+  block_condition_or: "OR (any condition)",
+  block_action_device: "Turn a device on / off",
+  block_action_service: "Call a service",
+  block_action_delay: "Wait N seconds",
+  block_action_notify: "Send a notification",
+  block_action_choose: "If / else branch",
+  block_action_repeat: "Repeat N times",
+  when: "when",
+  becomes: "becomes",
+  at_time: "at time",
+  if: "if",
+  is: "is",
+  above: "above",
+  below: "below",
+  and: "and",
+  or: "or",
+  call_service: "call service",
+  target: "target",
+  data_json: "data JSON",
+  wait: "wait",
+  seconds: "seconds",
+  notify: "notify",
+  message: "message",
+  then: "then",
+  else: "else",
+  repeat: "repeat",
+  times: "times",
+  do: "do",
+  device_action: "action",
+  action_turn_on: "turn on",
+  action_turn_off: "turn off",
+  action_toggle: "toggle",
+  language: "Language",
+  hint: "Add triggers, conditions and actions as separate stacks. Connect actions to each other (and into if/else or repeat).",
 };
 
-let currentLang = "en";
+// Resolved against the panel module URL, so it works under any HA base path.
+const TRANSLATIONS_BASE = new URL(
+  /* @vite-ignore */ "translations/",
+  import.meta.url
+);
+const translationCache = new Map();
+let currentLang = DEFAULT_LANGUAGE;
+let activeTranslations = { ...FALLBACK_EN };
 
+function normalizeLanguage(code) {
+  return String(code || "")
+    .trim()
+    .toLowerCase()
+    .replace(/_/g, "-");
+}
+
+function languageCandidates(code) {
+  const normalized = normalizeLanguage(code) || DEFAULT_LANGUAGE;
+  const base = normalized.split("-")[0];
+  return [...new Set([normalized, base, DEFAULT_LANGUAGE])];
+}
+
+function readStoredLanguage() {
+  try {
+    return localStorage.getItem(LANGUAGE_STORAGE_KEY) || "";
+  } catch {
+    return "";
+  }
+}
+
+function storeLanguage(code) {
+  try {
+    localStorage.setItem(LANGUAGE_STORAGE_KEY, code);
+  } catch {
+    // Storage can be unavailable (private mode, file://); ignore.
+  }
+}
+
+function preferredLanguage(hass) {
+  return normalizeLanguage(
+    readStoredLanguage() ||
+      hass?.locale?.language ||
+      hass?.language ||
+      (typeof navigator !== "undefined" ? navigator.language : "") ||
+      DEFAULT_LANGUAGE
+  );
+}
+
+function translationUrl(lang) {
+  const url = new URL(`${encodeURIComponent(lang)}.json`, TRANSLATIONS_BASE);
+  url.searchParams.set("v", ASSET_VERSION);
+  return url.href;
+}
+
+async function fetchTranslations(lang) {
+  if (translationCache.has(lang)) return translationCache.get(lang);
+  let dict = null;
+  try {
+    const response = await fetch(translationUrl(lang), { cache: "no-cache" });
+    if (response.ok) {
+      const data = await response.json();
+      if (data && typeof data === "object" && !Array.isArray(data)) dict = data;
+    }
+  } catch (err) {
+    console.warn(`VAB: could not load translations for "${lang}"`, err);
+  }
+  translationCache.set(lang, dict);
+  return dict;
+}
+
+async function resolveTranslations(lang) {
+  for (const code of languageCandidates(lang)) {
+    const dict = await fetchTranslations(code);
+    if (dict) return { code, dict };
+  }
+  return { code: DEFAULT_LANGUAGE, dict: FALLBACK_EN };
+}
+
+function applyTranslations(code, dict) {
+  currentLang = code;
+  activeTranslations = { ...FALLBACK_EN, ...dict };
+  window.__VAB_LANG = code;
+}
+
+// Synchronous by design: translations are cached in memory, so all existing
+// call sites can keep using t("key") directly.
 function t(key) {
-  return I18N[currentLang]?.[key] || I18N.en[key] || key;
+  return activeTranslations[key] ?? FALLBACK_EN[key] ?? key;
+}
+
+function availableLanguages(extra = []) {
+  const codes = [...LANGUAGES, currentLang, ...extra]
+    .map(normalizeLanguage)
+    .filter(Boolean);
+  return [...new Set(codes)].filter(
+    (code) =>
+      code === DEFAULT_LANGUAGE ||
+      !translationCache.has(code) ||
+      translationCache.get(code)
+  );
 }
 
 function escapeHtml(value) {
@@ -137,10 +190,9 @@ function escapeHtml(value) {
   });
 }
 
-function setLocaleFor(lang) {
-  currentLang = lang && lang.startsWith("uk") ? "uk" : "en";
-  Blockly.setLocale(currentLang === "uk" ? Uk : En);
-  window.__VAB_LANG = currentLang;
+function setBlocklyLocale(lang) {
+  const code = normalizeLanguage(lang);
+  Blockly.setLocale(code === "uk" || code.startsWith("uk-") ? Uk : En);
 }
 
 /** @type {Array<Array<string>>} */
@@ -256,8 +308,8 @@ function defineBlocks() {
 
   Blockly.Blocks["vab_condition_and"] = {
     init() {
-      this.appendValueInput("A").setCheck("Condition").appendField("і");
-      this.appendValueInput("B").setCheck("Condition").appendField("і");
+      this.appendValueInput("A").setCheck("Condition").appendField(t("and"));
+      this.appendValueInput("B").setCheck("Condition").appendField(t("and"));
       this.setInputsInline(true);
       this.setOutput(true, "Condition");
       this.setColour(210);
@@ -266,8 +318,8 @@ function defineBlocks() {
 
   Blockly.Blocks["vab_condition_or"] = {
     init() {
-      this.appendValueInput("A").setCheck("Condition").appendField("або");
-      this.appendValueInput("B").setCheck("Condition").appendField("або");
+      this.appendValueInput("A").setCheck("Condition").appendField(t("or"));
+      this.appendValueInput("B").setCheck("Condition").appendField(t("or"));
       this.setInputsInline(true);
       this.setOutput(true, "Condition");
       this.setColour(210);
@@ -583,16 +635,23 @@ class AutomationBuilder extends HTMLElement {
     this._alias = "Visual automation";
     this._automationId = null;
     this._automationSignature = "";
+    this._statusText = "";
+    this._manualLanguage = readStoredLanguage();
+    this._preferredLanguage = "";
+    this._langCode = DEFAULT_LANGUAGE;
+    this._languageRequest = 0;
   }
 
   set hass(hass) {
     this._hass = hass;
-    const lang = hass?.locale?.language || hass?.language;
-    if (lang) setLocaleFor(lang);
+    const lang = preferredLanguage(hass);
+    setBlocklyLocale(lang);
     setEntityOptions(hass);
     this._refreshAutomationList(hass);
-    if (this._workspace && lang && lang !== window.__VAB_LANG_APPLIED) {
-      window.__VAB_LANG_APPLIED = lang;
+    const normalized = normalizeLanguage(lang);
+    if (normalized && normalized !== this._preferredLanguage) {
+      this._preferredLanguage = normalized;
+      this._setLanguage(normalized);
     }
   }
 
@@ -601,7 +660,9 @@ class AutomationBuilder extends HTMLElement {
   }
 
   connectedCallback() {
-    setLocaleFor(this._hass?.locale?.language || this._hass?.language || "en");
+    const preferred = preferredLanguage(this._hass);
+    setBlocklyLocale(preferred);
+    this._preferredLanguage = preferred;
     this.innerHTML = `
       <style>
         automation-builder {
@@ -627,6 +688,9 @@ class AutomationBuilder extends HTMLElement {
         }
         automation-builder .vab-header select {
           flex: 0 1 240px; min-width: 180px;
+        }
+        automation-builder .vab-header select.vab-lang {
+          flex: 0 0 auto; min-width: 110px;
         }
         automation-builder .vab-header button {
           padding: 9px 16px; border: none; border-radius: 8px; cursor: pointer;
@@ -696,41 +760,16 @@ class AutomationBuilder extends HTMLElement {
           pointer-events: none !important;
         }
       </style>
-      <div class="vab-header">
-        <div class="vab-title">${t("title")}</div>
-        <select id="vab-load" title="${t("load_automation")}">
-          <option value="">${t("new_automation")}</option>
-        </select>
-        <input id="vab-alias" placeholder="${t("alias")}" value="" />
-        <button id="vab-save">${t("save")}</button>
-        <button id="vab-clear" class="secondary">${t("clear")}</button>
-        <span class="vab-status" id="vab-status"></span>
-      </div>
+      <div class="vab-header"></div>
       <div class="vab-body">
-        <aside class="vab-palette">
-          ${PALETTE.map(
-            (cat) => `
-            <div class="vab-cat">
-              <h3>${t(cat.key)}</h3>
-              ${cat.blocks
-                .map(
-                  (b) => `
-                <button class="vab-block-btn" data-block="${b.type}">
-                  <span class="vab-dot" style="background:${cat.colour}"></span>
-                  <span>${t(b.label)}</span>
-                </button>`
-                )
-                .join("")}
-            </div>`
-          ).join("")}
-          <div class="vab-hint">${t("hint")}</div>
-        </aside>
+        <aside class="vab-palette"></aside>
         <div class="vab-blockly" id="vab-blockly"></div>
       </div>
     `;
 
     defineBlocks();
     setEntityOptions(this._hass);
+    this._render();
 
     this._workspace = Blockly.inject(this.querySelector("#vab-blockly"), {
       theme: THEME,
@@ -758,22 +797,84 @@ class AutomationBuilder extends HTMLElement {
       }
     });
 
+    this._resizeObserver = new ResizeObserver(() => {
+      if (this._workspace) Blockly.svgResize(this._workspace);
+    });
+    this._resizeObserver.observe(this);
+  }
+
+  _render() {
+    const header = this.querySelector(".vab-header");
+    const palette = this.querySelector(".vab-palette");
+    if (!header || !palette) return;
+
+    const previousAlias = this.querySelector("#vab-alias");
+    const aliasValue = previousAlias ? previousAlias.value : "";
+
+    const languageOptions = availableLanguages([
+      this._manualLanguage,
+      this._preferredLanguage,
+    ])
+      .map(
+        (code) =>
+          `<option value="${escapeHtml(code)}"${
+            code === this._langCode ? " selected" : ""
+          }>${escapeHtml(LANGUAGE_NAMES[code] || code.toUpperCase())}</option>`
+      )
+      .join("");
+
+    header.innerHTML = `
+      <div class="vab-title">${t("title")}</div>
+      <select id="vab-lang" class="vab-lang" title="${t("language")}" aria-label="${t("language")}">
+        ${languageOptions}
+      </select>
+      <select id="vab-load" title="${t("load_automation")}">
+        <option value="">${t("new_automation")}</option>
+      </select>
+      <input id="vab-alias" placeholder="${t("alias")}" value="" />
+      <button id="vab-save">${t("save")}</button>
+      <button id="vab-clear" class="secondary">${t("clear")}</button>
+      <span class="vab-status" id="vab-status">${escapeHtml(this._statusText)}</span>
+    `;
+
+    palette.innerHTML = `
+      ${PALETTE.map(
+        (cat) => `
+        <div class="vab-cat">
+          <h3>${t(cat.key)}</h3>
+          ${cat.blocks
+            .map(
+              (b) => `
+            <button class="vab-block-btn" data-block="${b.type}">
+              <span class="vab-dot" style="background:${cat.colour}"></span>
+              <span>${t(b.label)}</span>
+            </button>`
+            )
+            .join("")}
+        </div>`
+      ).join("")}
+      <div class="vab-hint">${t("hint")}</div>
+    `;
+
+    const aliasInput = this.querySelector("#vab-alias");
+    if (aliasInput) aliasInput.value = aliasValue;
+
     for (const button of this.querySelectorAll(".vab-block-btn")) {
       button.addEventListener("click", () => {
         this.addBlock(button.dataset.block);
       });
     }
 
-    this.querySelector("#vab-alias").addEventListener("input", (event) => {
+    this.querySelector("#vab-alias")?.addEventListener("input", (event) => {
       this._alias = event.target.value;
     });
-    this.querySelector("#vab-save").addEventListener("click", () => {
+    this.querySelector("#vab-save")?.addEventListener("click", () => {
       this.saveAutomation();
     });
-    this.querySelector("#vab-clear").addEventListener("click", () => {
+    this.querySelector("#vab-clear")?.addEventListener("click", () => {
       this.newAutomation();
     });
-    this.querySelector("#vab-load").addEventListener("change", (event) => {
+    this.querySelector("#vab-load")?.addEventListener("change", (event) => {
       const id = event.target.value;
       if (!id) {
         this.newAutomation();
@@ -781,12 +882,39 @@ class AutomationBuilder extends HTMLElement {
         this.loadAutomation(id);
       }
     });
-    this._refreshAutomationList(this._hass);
-
-    this._resizeObserver = new ResizeObserver(() => {
-      if (this._workspace) Blockly.svgResize(this._workspace);
+    this.querySelector("#vab-lang")?.addEventListener("change", (event) => {
+      this._setLanguage(event.target.value, { persist: true });
     });
-    this._resizeObserver.observe(this);
+
+    // The selects were recreated, so refill the automation list.
+    this._automationSignature = "";
+    this._refreshAutomationList(this._hass);
+  }
+
+  async _setLanguage(code, { persist = false } = {}) {
+    const normalized = normalizeLanguage(code) || DEFAULT_LANGUAGE;
+    if (persist) {
+      this._manualLanguage = normalized;
+      storeLanguage(normalized);
+    }
+    this._preferredLanguage = normalized;
+    const requestId = ++this._languageRequest;
+    const result = await resolveTranslations(normalized);
+    if (requestId !== this._languageRequest) return;
+
+    applyTranslations(result.code, result.dict);
+    setBlocklyLocale(result.code);
+    this._langCode = result.code;
+    if (persist && result.code !== normalized) {
+      // The chosen language had no JSON file; remember what actually loaded.
+      this._manualLanguage = result.code;
+      this._preferredLanguage = result.code;
+      storeLanguage(result.code);
+    }
+    // Refresh definitions so newly added blocks use this language. Existing
+    // blocks and the workspace are intentionally left untouched.
+    defineBlocks();
+    if (this.isConnected) this._render();
   }
 
   addBlock(type) {
@@ -1156,6 +1284,7 @@ class AutomationBuilder extends HTMLElement {
   }
 
   setStatus(text) {
+    this._statusText = text;
     const status = this.querySelector("#vab-status");
     if (status) status.textContent = text;
   }
