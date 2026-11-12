@@ -2,31 +2,31 @@ var ZE = typeof globalThis < "u" ? globalThis : typeof window < "u" ? window : t
 function gl(C) {
   return C && C.__esModule && Object.prototype.hasOwnProperty.call(C, "default") ? C.default : C;
 }
-var dl = { exports: {} }, lp = dl.exports, QE;
-function lg() {
-  return QE || (QE = 1, (function(C, k) {
+var dl = { exports: {} }, cp = dl.exports, QE;
+function cg() {
+  return QE || (QE = 1, (function(C, P) {
     (function(i, c) {
       C.exports = c();
-    })(lp, function() {
-      var i = {}, c, q, $e, Fe, no, Ge, ct, ro, Re, oi, Qe, J, bs, wt, ts, P, Be, G, fs, Ve, ss, As, ne, et, lo, ii, os, ni, is, hn, ri, co, Ce, v, dn, uo, li, ci, ui, j, _n, ao, Tn, M, $n, O, L, ns, F, ho, V, Bt, _o, xt, Ut, pe, En, Cs, To, Ft, $o, tt, pt, rs, ai, Eo, l, a, T, p, S, Z, ls, Ns, hi, $h, pl, Eh, di, Xe, mt, ml, _i, gh, Il, It, cs, Ol, Rl, Sl, Ll, Ti, gn, bl, fl, $i, go, ph, po, mh, pn, Ih, Ei, mn, Oh, In, Rh, On, Al, Cl, Rn, Sn, Ln, gi, Sh, mo, pi, bn, Lh, bh, fh, Ot, re, mi, Nl, Rt, us, Ah, Ml, fn, yl, Ch, vl, Ii, Nh, An, Mh, Cn, yh, vh, kh, Io, Ph, kl, Se, Nn, Pl, Mn, yn, Dh, Dl, wl, wh, vn, Ms, kn, Bh, Bl, xl, xh, Uh, ys, Fh, Pn, Oo, Ro, st, Hh, Gh, Vh, Xh, Wh, Yh, zh, Ul, vs, ks, Fl, Kh, Jh, jh, qh, Zh, Qh, ed, td, sd, Hl, od, as, Dn, id, So, wn, Gl, Vl, Bn, xn, Xl, nd, Wl, Yl, zl, Kl, Jl, jl, ql, rd, Oi, Zl, Un, Fn, St, Ql, ec, Ri, tc, sc, ld, Hn, oc, cd, ud, ad, hd, dd, Lo, ic, nc, Si, rc, _d, Td, lc, cc, Ht, uc, ac, $d, Ed, gd, pd, hc, md, dc, Id, Ps, Li, Gn, Vn, Ds, _c, Xn, Tc, ue, Od, bo, fo, Rd, $c, Wn, Ao, Ec, ws, bi, gc, pc, Sd, Ld, bd, mc, fd, Ic, Co, Ad, Cd, Nd, Md, fi, Oc, Rc, Sc, Yn, zn, yd, Ai, Lc, Ci, vd, kd, hs, bc, Lt, Pd, Dd, fc, wd, Bs, Ac, Bd, xd, Ud, Fd, Hd, Cc, Gd, Vd, Kn, Xd, Wd, Nc, bt, Yd, zd, No, Kd, Mc, Jn, Jd, jd, qd, yc, jn, vc, qn, Zd, Qd, e_, t_, N, He, Le, le, ft, Mo, y, ae, s_, o_, i_, kc, n_, Zn, Pc, Dc, wc, Bc, yo, r_, l_, c_, vo, xc, u_, Qn, ot, Uc, ko, ut, Fc, a_, Hc, Po, h_, ds, er, Ni, Gc, d_, Vc, __, tr, Xc, Wc, Yc, T_, zc, $_, sr, E_, g_, Mi, p_, Kc, or, ir, nr, rr, Jc, m_, jc, lr, cr, I_, ur, O_, qc, R_, _s, Zc, yi, Qc, eu, ar, tu, su, ou, iu, nu, ru, lu, cu, uu, au, S_, L_, b_, f_, A_, C_, N_, M_, y_, hu, du, _u, Tu, $u, Eu, gu, hr, vi, pu, v_, mu, Iu, Ou, Ru, Su, Lu, bu, fu, Au, Cu, k_, P_, Nu, D_, w_, B_, x_, _;
+    })(cp, function() {
+      var i = {}, c, U, K, Ce, io, Ge, ct, no, Re, si, Qe, q, Ls, wt, ts, k, xe, V, bs, Ve, ss, fs, re, et, ro, oi, os, ii, is, hn, ni, lo, Ne, v, dn, co, ri, li, ci, Z, _n, uo, Tn, M, $n, O, L, ns, H, ao, X, Bt, ho, xt, Ut, pe, En, As, _o, Ft, To, tt, pt, rs, ui, $o, l, a, T, p, S, Q, ls, Cs, ai, $h, pl, Eh, hi, Xe, mt, ml, di, gh, Il, It, cs, Ol, Rl, Sl, Ll, _i, gn, bl, fl, Ti, Eo, ph, go, mh, pn, Ih, $i, mn, Oh, In, Rh, On, Al, Cl, Rn, Sn, Ln, Ei, Sh, po, gi, bn, Lh, bh, fh, Ot, le, pi, Nl, Rt, us, Ah, Ml, fn, yl, Ch, vl, mi, Nh, An, Mh, Cn, yh, vh, kh, mo, Ph, kl, Se, Nn, Pl, Mn, yn, Dh, Dl, wl, wh, vn, Ns, kn, Bh, Bl, xl, xh, Uh, Ms, Fh, Pn, Io, Oo, st, Hh, Gh, Vh, Xh, Wh, Yh, zh, Ul, ys, vs, Fl, Kh, Jh, jh, qh, Zh, Qh, ed, td, sd, Hl, od, as, Dn, id, Ro, wn, Gl, Vl, Bn, xn, Xl, nd, Wl, Yl, zl, Kl, Jl, jl, ql, rd, Ii, Zl, Un, Fn, St, Ql, ec, Oi, tc, sc, ld, Hn, oc, cd, ud, ad, hd, dd, So, ic, nc, Ri, rc, _d, Td, lc, cc, Ht, uc, ac, $d, Ed, gd, pd, hc, md, dc, Id, ks, Si, Gn, Vn, Ps, _c, Xn, Tc, ae, Od, Lo, bo, Rd, $c, Wn, fo, Ec, Ds, Li, gc, pc, Sd, Ld, bd, mc, fd, Ic, Ao, Ad, Cd, Nd, Md, bi, Oc, Rc, Sc, Yn, zn, yd, fi, Lc, Ai, vd, kd, hs, bc, Lt, Pd, Dd, fc, wd, ws, Ac, Bd, xd, Ud, Fd, Hd, Cc, Gd, Vd, Kn, Xd, Wd, Nc, bt, Yd, zd, Co, Kd, Mc, Jn, Jd, jd, qd, yc, jn, vc, qn, Zd, Qd, e_, t_, N, He, Le, ce, ft, No, y, he, s_, o_, i_, kc, n_, Zn, Pc, Dc, wc, Bc, Mo, r_, l_, c_, yo, xc, u_, Qn, ot, Uc, vo, ut, Fc, a_, Hc, ko, h_, ds, er, Ci, Gc, d_, Vc, __, tr, Xc, Wc, Yc, T_, zc, $_, sr, E_, g_, Ni, p_, Kc, or, ir, nr, rr, Jc, m_, jc, lr, cr, I_, ur, O_, qc, R_, _s, Zc, Mi, Qc, eu, ar, tu, su, ou, iu, nu, ru, lu, cu, uu, au, S_, L_, b_, f_, A_, C_, N_, M_, y_, hu, du, _u, Tu, $u, Eu, gu, hr, yi, pu, v_, mu, Iu, Ou, Ru, Su, Lu, bu, fu, Au, Cu, k_, P_, Nu, D_, w_, B_, x_, _;
       c = function(e, t, s, o) {
         if (!(e instanceof I) && typeof e != "string" || `${e}`.trim() === "") throw Error('Invalid type "' + e + '". The type must be a non-empty string or a Blockly.registry.Type.');
         if (e = `${e}`.toLowerCase(), typeof t != "string" || t.trim() === "") throw Error('Invalid name "' + t + '". The name must be a non-empty string.');
         const n = t.toLowerCase();
         if (!s) throw Error("Can not register a null value");
         let r = Ts[e], u = dr[e];
-        if (r || (r = Ts[e] = /* @__PURE__ */ Object.create(null), u = dr[e] = /* @__PURE__ */ Object.create(null)), q(e, s), !o && r[n] && r[n] !== s) throw Error('Name "' + n + '" with type "' + e + '" already registered.');
+        if (r || (r = Ts[e] = /* @__PURE__ */ Object.create(null), u = dr[e] = /* @__PURE__ */ Object.create(null)), U(e, s), !o && r[n] && r[n] !== s) throw Error('Name "' + n + '" with type "' + e + '" already registered.');
         r[n] = s, u[n] = t;
-      }, q = function(e, t) {
+      }, U = function(e, t) {
         switch (e) {
           case String(I.FIELD):
             if (typeof t.fromJson != "function") throw Error('Type "' + e + '" must have a fromJson function');
         }
-      }, $e = function(e, t) {
+      }, K = function(e, t) {
         e = `${e}`.toLowerCase(), t = t.toLowerCase();
         const s = Ts[e];
         s && s[t] ? (delete Ts[e][t], delete dr[e][t]) : console.warn("Unable to unregister [" + t + "][" + e + "] from the registry.");
-      }, Fe = function(e, t, s) {
+      }, Ce = function(e, t, s) {
         e = `${e}`.toLowerCase(), t = t.toLowerCase();
         const o = Ts[e];
         if (!o || !o[t]) {
@@ -34,13 +34,13 @@ function lg() {
           return console.warn(t), null;
         }
         return o[t];
-      }, no = function(e, t) {
+      }, io = function(e, t) {
         return e = `${e}`.toLowerCase(), t = t.toLowerCase(), (e = Ts[e]) ? !!e[t] : !1;
       }, Ge = function(e, t, s) {
-        return Fe(e, t, s);
+        return Ce(e, t, s);
       }, ct = function(e, t, s) {
-        return Fe(e, t, s);
-      }, ro = function(e, t, s) {
+        return Ce(e, t, s);
+      }, no = function(e, t, s) {
         e = `${e}`.toLowerCase();
         var o = Ts[e];
         if (!o) {
@@ -53,51 +53,51 @@ function lg() {
         return s;
       }, Re = function(e, t, s) {
         return t = t.plugins[String(e)] || We, typeof t == "function" ? t : Ge(e, t, s);
-      }, oi = function(e, t) {
+      }, si = function(e, t) {
         Qe(), Tr = setTimeout(function() {
           t && t.handleRightClick(e);
-        }, hg);
+        }, dg);
       }, Qe = function() {
         Tr && (clearTimeout(Tr), Tr = 0);
-      }, J = function() {
+      }, q = function() {
         _r = null;
-      }, bs = function(e) {
+      }, Ls = function(e) {
         return !e.type.startsWith("pointer") || e instanceof PointerEvent && ts(e);
       }, wt = function(e) {
         return `${e.pointerId}`;
       }, ts = function(e) {
         const t = wt(e);
         return _r ? _r === t : e.type === "pointerdown" ? (_r = t, !0) : !1;
-      }, P = function(e, t, s, o, n, r) {
+      }, k = function(e, t, s, o, n, r) {
         function u(m) {
-          (n || bs(m)) && (s ? o.call(s, m) : o(m));
+          (n || Ls(m)) && (s ? o.call(s, m) : o(m));
         }
         const h = [];
-        if (t in xs) for (let m = 0; m < xs[t].length; m++) {
-          const A = xs[t][m];
+        if (t in Bs) for (let m = 0; m < Bs[t].length; m++) {
+          const A = Bs[t][m];
           e.addEventListener(A, u, Object.assign({}, { capture: !1 }, r)), h.push([e, A, u]);
         }
         else e.addEventListener(t, u, Object.assign({}, { capture: !1 }, r)), h.push([e, t, u]);
         return h;
-      }, Be = function(e, t, s, o, n) {
+      }, xe = function(e, t, s, o, n) {
         function r(h) {
           s ? o.call(s, h) : o(h);
         }
         const u = [];
-        if (t in xs) for (let h = 0; h < xs[t].length; h++) {
-          const m = xs[t][h];
+        if (t in Bs) for (let h = 0; h < Bs[t].length; h++) {
+          const m = Bs[t][h];
           e.addEventListener(m, r, Object.assign({}, { capture: !1 }, n)), u.push([e, m, r]);
         }
         else e.addEventListener(t, r, Object.assign({}, { capture: !1 }, n)), u.push([e, t, r]);
         return u;
-      }, G = function(e) {
+      }, V = function(e) {
         const t = e[e.length - 1][2];
         for (; e.length; ) {
           const [s, o, n] = e.pop();
           s.removeEventListener(o, n, !1);
         }
         return t;
-      }, fs = function(e) {
+      }, bs = function(e) {
         if (e.target instanceof HTMLElement) {
           if (e.target.isContentEditable || e.target.getAttribute("data-is-text-input") === "true") return !0;
           if (e.target instanceof HTMLInputElement) return e = e.target, e.type === "text" || e.type === "number" || e.type === "email" || e.type === "password" || e.type === "search" || e.type === "tel" || e.type === "url";
@@ -109,7 +109,7 @@ function lg() {
       }, ss = function(e, t, s) {
         const o = t.createSVGPoint();
         return o.x = e.clientX, o.y = e.clientY, s || (s = t.getScreenCTM().inverse()), o.matrixTransform(s);
-      }, As = function(e) {
+      }, fs = function(e) {
         switch (e.deltaMode) {
           default:
             return { x: e.deltaX, y: e.deltaY };
@@ -118,52 +118,52 @@ function lg() {
           case 2:
             return { x: e.deltaX * Z_, y: e.deltaY * Z_ };
         }
-      }, ne = function() {
-        return "blockly-" + (Tg++).toString(36);
+      }, re = function() {
+        return "blockly-" + ($g++).toString(36);
       }, et = function() {
         return tT.genUid();
-      }, lo = function(e) {
+      }, ro = function(e) {
         return e.type === g.BLOCK_CREATE;
-      }, ii = function(e) {
+      }, oi = function(e) {
         return e.type === g.BLOCK_DELETE;
       }, os = function(e) {
         return e.type === g.BLOCK_CHANGE;
-      }, ni = function(e) {
+      }, ii = function(e) {
         return e.type === g.BLOCK_FIELD_INTERMEDIATE_CHANGE;
       }, is = function(e) {
         return e.type === g.BLOCK_MOVE;
       }, hn = function(e) {
         return e.type === g.CLICK;
-      }, ri = function(e) {
+      }, ni = function(e) {
         return e.type === g.BUBBLE_OPEN;
-      }, co = function(e) {
+      }, lo = function(e) {
         return e.type === g.VIEWPORT_CHANGE;
       }, i.setRecordUndo$$module$build$src$core$events$utils = function(e) {
-        ki = e;
-      }, Ce = function() {
-        return ki;
+        vi = e;
+      }, Ne = function() {
+        return vi;
       }, v = function(e) {
         oT.fireInternal(e);
       }, dn = function(e) {
-        if (j()) {
+        if (Z()) {
           if (!Xt.length) try {
             requestAnimationFrame(() => {
-              setTimeout(uo, 0);
+              setTimeout(co, 0);
             });
           } catch {
-            setTimeout(uo, 0);
+            setTimeout(co, 0);
           }
-          li(e);
+          ri(e);
         }
-      }, uo = function() {
-        const e = ci(Xt);
+      }, co = function() {
+        const e = li(Xt);
         Xt.length = 0;
         for (const t of e) {
           if (!t.workspaceId) continue;
           let s;
           (s = pt(t.workspaceId)) == null || s.fireChangeListener(t);
         }
-      }, li = function(e) {
+      }, ri = function(e) {
         if (os(e) && e.element === "mutation") {
           let t;
           for (t = Xt.length; t > 0; t--) {
@@ -172,23 +172,23 @@ function lg() {
           }
           Xt.splice(t, 0, e);
         } else Xt.push(e);
-      }, ci = function(e) {
+      }, li = function(e) {
         const t = [];
         for (const s of e) if (e = t[t.length - 1], !s.isNull()) if (e && e.workspaceId === s.workspaceId && e.group === s.group) if (is(s) && is(e) && s.blockId === e.blockId) {
           if (e.newParentId = s.newParentId, e.newInputName = s.newInputName, e.newCoordinate = s.newCoordinate, e.reason || s.reason) {
             let o, n;
             e.reason = Array.from(new Set(((o = e.reason) != null ? o : []).concat((n = s.reason) != null ? n : [])));
           }
-        } else os(s) && os(e) && s.blockId === e.blockId && s.element === e.element && s.name === e.name ? e.newValue = s.newValue : co(s) && co(e) ? (e.viewTop = s.viewTop, e.viewLeft = s.viewLeft, e.scale = s.scale, e.oldScale = s.oldScale) : hn(s) && ri(e) || t.push(s);
+        } else os(s) && os(e) && s.blockId === e.blockId && s.element === e.element && s.name === e.name ? e.newValue = s.newValue : lo(s) && lo(e) ? (e.viewTop = s.viewTop, e.viewLeft = s.viewLeft, e.scale = s.scale, e.oldScale = s.oldScale) : hn(s) && ni(e) || t.push(s);
         else t.push(s);
         return e = t.filter((s) => !s.isNull());
-      }, ui = function() {
+      }, ci = function() {
         for (let e = 0, t; t = Xt[e]; e++) t.recordUndo = !1;
       }, i.disable$$module$build$src$core$events$utils = function() {
         Pu++;
       }, i.enable$$module$build$src$core$events$utils = function() {
         Pu--;
-      }, j = function() {
+      }, Z = function() {
         return Pu === 0;
       }, i.getGroup$$module$build$src$core$events$utils = function() {
         return sT;
@@ -196,7 +196,7 @@ function lg() {
         oT.setGroupInternal(e);
       }, _n = function(e) {
         sT = typeof e == "boolean" ? e ? et() : "" : e;
-      }, ao = function(e) {
+      }, uo = function(e) {
         const t = [];
         e = e.getDescendants(!1);
         for (let s = 0, o; o = e[s]; s++) t[s] = o.id;
@@ -210,13 +210,13 @@ function lg() {
         if (!t) throw Error(`Event type ${e} not found in registry.`);
         return t;
       }, $n = function(e) {
-        if ((is(e) || lo(e)) && e.workspaceId) {
+        if ((is(e) || ro(e)) && e.workspaceId) {
           var t = pt(e.workspaceId);
           if (!e.blockId) throw Error("Encountered a blockEvent without a proper blockId");
           if (e = t.getBlockById(e.blockId)) {
-            const s = ki;
+            const s = vi;
             try {
-              ki = !1;
+              vi = !1;
               const o = e.getParent();
               if (o && !o.hasDisabledReason(Du)) {
                 const n = e.getDescendants(!1);
@@ -226,29 +226,29 @@ function lg() {
                   e.setDisabledReason(!0, Du), e = e.getNextBlock();
                 while (e);
             } finally {
-              ki = s;
+              vi = s;
             }
           }
         }
       }, O = function(e, t, s) {
-        e = document.createElementNS(Pi, `${e}`);
+        e = document.createElementNS(ki, `${e}`);
         for (const o in t) e.setAttribute(o, `${t[o]}`);
         return s && s.appendChild(e), e;
       }, L = function(e, t) {
         return t = t.split(" "), t.every((s) => e.classList.contains(s)) ? !1 : (e.classList.add(...t), !0);
       }, ns = function(e, t) {
         e.classList.remove(...t.split(" "));
-      }, F = function(e, t) {
+      }, H = function(e, t) {
         return t = t.split(" "), t.every((s) => !e.classList.contains(s)) ? !1 : (e.classList.remove(...t), !0);
-      }, ho = function(e, t) {
+      }, ao = function(e, t) {
         return e.classList.contains(t);
-      }, V = function(e) {
+      }, X = function(e) {
         return e && e.parentNode ? e.parentNode.removeChild(e) : null;
       }, Bt = function(e, t) {
         const s = t.nextSibling;
         if (t = t.parentNode, !t) throw Error("Reference node has no parent.");
         s ? t.insertBefore(e, s) : t.appendChild(e);
-      }, _o = function(e, t) {
+      }, ho = function(e, t) {
         e.style.transform = t, e.style["-webkit-transform"] = t;
       }, xt = function() {
         wu++, at || (at = /* @__PURE__ */ Object.create(null));
@@ -258,16 +258,16 @@ function lg() {
         const t = e.textContent + `
 ` + e.className.baseVal;
         var s;
-        return at && (s = at[t]) || (s = window.getComputedStyle(e), s = Cs(e, s.fontSize, s.fontWeight, s.fontFamily), at && (at[t] = s)), s;
+        return at && (s = at[t]) || (s = window.getComputedStyle(e), s = As(e, s.fontSize, s.fontWeight, s.fontFamily), at && (at[t] = s)), s;
       }, En = function(e, t, s, o) {
-        return Cs(e, t + "pt", s, o);
-      }, Cs = function(e, t, s, o) {
+        return As(e, t + "pt", s, o);
+      }, As = function(e, t, s, o) {
         const n = e.textContent;
         e = n + `
 ` + e.className.baseVal;
         var r;
-        return at && (r = at[e]) || (Di || (r = document.createElement("canvas"), r.className = "blocklyComputeCanvas", document.body.appendChild(r), Di = r.getContext("2d")), n && Di ? (Di.font = s + " " + t + " " + o, r = Di.measureText(n).width) : r = 0, at && (at[e] = r)), r;
-      }, To = function(e, t, s, o) {
+        return at && (r = at[e]) || (Pi || (r = document.createElement("canvas"), r.className = "blocklyComputeCanvas", document.body.appendChild(r), Pi = r.getContext("2d")), n && Pi ? (Pi.font = s + " " + t + " " + o, r = Pi.measureText(n).width) : r = 0, at && (at[e] = r)), r;
+      }, _o = function(e, t, s, o) {
         const n = document.createElement("span");
         n.style.font = s + " " + t + " " + o, n.textContent = e, e = document.createElement("div"), e.style.width = "1px", e.style.height = "0", t = document.createElement("div"), t.style.display = "flex", t.style.position = "fixed", t.style.top = "0", t.style.left = "0", t.appendChild(n), t.appendChild(e), document.body.appendChild(t), s = { height: 0, baseline: 0 };
         try {
@@ -277,31 +277,31 @@ function lg() {
         }
         return s;
       }, i.getFocusManager$$module$build$src$core$focus_manager = function() {
-        return Ne.getFocusManager();
+        return Me.getFocusManager();
       }, Ft = function(e) {
         return e && typeof e.getFocusableElement == "function" && typeof e.getFocusableTree == "function" && typeof e.onNodeFocus == "function" && typeof e.onNodeBlur == "function" && typeof e.canBeFocused == "function";
-      }, $o = function(e) {
+      }, To = function(e) {
         return Ft(e) && typeof e.id == "string" && typeof e.workspace == "object" && typeof e.select == "function" && typeof e.unselect == "function";
       }, tt = function(e, t) {
         for (const s in t) t[s] !== null && Array.isArray(t[s]) ? e[s] = tt(e[s] || [], t[s]) : e[s] = t[s] !== null && typeof t[s] == "object" ? tt(e[s] || /* @__PURE__ */ Object.create(null), t[s]) : t[s];
         return e;
       }, pt = function(e) {
-        return wi[e] || null;
+        return Di[e] || null;
       }, rs = function() {
         const e = [];
-        for (const t in wi) e.push(wi[t]);
+        for (const t in Di) e.push(Di[t]);
         return e;
-      }, ai = function(e) {
-        wi[e.id] = e;
-      }, Eo = function(e) {
-        delete wi[e.id];
+      }, ui = function(e) {
+        Di[e.id] = e;
+      }, $o = function(e) {
+        delete Di[e.id];
       }, l = function() {
         return nT;
       }, a = function(e) {
         nT = e;
       }, T = function() {
         const e = i.getFocusManager$$module$build$src$core$focus_manager().getFocusedNode();
-        return e && $o(e) ? e : null;
+        return e && To(e) ? e : null;
       }, p = function(e) {
         i.getFocusManager$$module$build$src$core$focus_manager().focusNode(e);
       }, S = function(e) {
@@ -309,11 +309,11 @@ function lg() {
         let s, o, n, r;
         const u = new (M(g.SELECTED))((s = t == null ? void 0 : t.id) != null ? s : null, (o = e == null ? void 0 : e.id) != null ? o : null, (r = (n = e == null ? void 0 : e.workspace.id) != null ? n : t == null ? void 0 : t.workspace.id) != null ? r : "");
         v(u);
-      }, Z = function() {
+      }, Q = function() {
         return rT;
       }, ls = function(e) {
         rT = e;
-      }, Ns = function(e) {
+      }, Cs = function(e) {
         for (; e.options.parentWorkspace; ) e = e.options.parentWorkspace;
         const t = e.getParentSvg(), s = e.getCachedParentSvgSize();
         var o = t.parentElement;
@@ -321,7 +321,7 @@ function lg() {
           var n = o.offsetWidth;
           o = o.offsetHeight, s.width !== n && (t.setAttribute("width", n + "px"), e.setCachedParentSvgSize(n, null)), s.height !== o && (t.setAttribute("height", o + "px"), e.setCachedParentSvgSize(null, o)), e.resize();
         }
-      }, hi = function(e, t) {
+      }, ai = function(e, t) {
         const s = /* @__PURE__ */ Object.create(null), o = e.getDescendants(!0);
         t && (e = e.getNextBlock()) && (e = o.indexOf(e), o.splice(e, o.length - e));
         for (let n = 0, r; r = o[n]; n++) s[r.type] ? s[r.type]++ : s[r.type] = 1;
@@ -349,16 +349,16 @@ function lg() {
       }, i.defineBlocks$$module$build$src$core$common = function(e) {
         for (const t of Object.keys(e)) {
           const s = e[t];
-          t in Q && console.warn(`Block definition "${t}" overwrites previous definition.`), Q[t] = s;
+          t in ee && console.warn(`Block definition "${t}" overwrites previous definition.`), ee[t] = s;
         }
-      }, di = function(e) {
+      }, hi = function(e) {
         let t = l();
         const s = i.getFocusManager$$module$build$src$core$focus_manager().getFocusedTree();
         for (const o of rs()) if (s === o) {
           t = o;
           break;
         }
-        !fs(e) && t && (!t.rendered || t.isFlyout || t.isVisible()) && ee.registry.onKeyDown(t, e);
+        !bs(e) && t && (!t.rendered || t.isFlyout || t.isVisible()) && te.registry.onKeyDown(t, e);
       }, Xe = function(e, t) {
         return t = e.indexOf(t), t === -1 ? !1 : (e.splice(t, 1), !0);
       }, mt = function(e) {
@@ -367,7 +367,7 @@ function lg() {
 ` + e;
       }, ml = function(e, t) {
         Uu || (Uu = !0, e && (e = t.replace(/[\\/]$/, ""), t = Fu.replace(/<<<PATH>>>/g, e), Fu = "", e = document.createElement("style"), e.id = "blockly-common-style", t = document.createTextNode(t), e.appendChild(t), document.head.insertBefore(e, document.head.firstChild)));
-      }, _i = function(e) {
+      }, di = function(e) {
         return uT.getSizeInternal(e);
       }, gh = function(e) {
         if (It(e, "display") !== "none") return Il(e);
@@ -396,7 +396,7 @@ function lg() {
         var o = cs(e), n = cs(t), r = Rl(t);
         const u = o.x - n.x - r.left;
         return o = o.y - n.y - r.top, n = Il(e), e = t.clientWidth - n.width, n = t.clientHeight - n.height, r = t.scrollLeft, t = t.scrollTop, s ? (r += u - e / 2, t += o - n / 2) : (r += Math.min(u, Math.max(u - e, 0)), t += Math.min(o, Math.max(o - n, 0))), new R(r, t);
-      }, Ti = function(e) {
+      }, _i = function(e) {
         const t = new R(0, 0);
         var s = e.x && e.getAttribute("x");
         const o = e.y && e.getAttribute("y");
@@ -404,7 +404,7 @@ function lg() {
       }, gn = function(e) {
         let t = 0, s = 0;
         for (; e; ) {
-          const o = Ti(e);
+          const o = _i(e);
           if (t += o.x, s += o.y, (" " + (e.getAttribute("class") || "") + " ").includes(" injectionDiv ")) break;
           e = e.parentNode;
         }
@@ -415,18 +415,18 @@ function lg() {
       }, fl = function() {
         const e = document.documentElement, t = window;
         return new R(t.pageXOffset || e.scrollLeft, t.pageYOffset || e.scrollTop);
-      }, $i = function(e, t) {
+      }, Ti = function(e, t) {
         var s = t.x;
         t = t.y;
         const o = e.getInjectionDiv().getBoundingClientRect();
         return s = new R(s - o.left, t - o.top), t = e.getOriginOffsetInPixels(), R.difference(s, t).scale(1 / e.scale);
-      }, go = function(e, t) {
+      }, Eo = function(e, t) {
         var s = t.scale(e.scale);
         t = s.x, s = s.y;
         const o = e.getInjectionDiv().getBoundingClientRect();
         return e = e.getOriginOffsetInPixels(), new R(t + o.left + e.x, s + o.top + e.y);
       }, ph = function(e) {
-        ({ document: mr = mr, DOMParser: xi = xi, XMLSerializer: Ui = Ui } = e), pr = new xi(), Gu = new Ui();
+        ({ document: mr = mr, DOMParser: Bi = Bi, XMLSerializer: xi = xi } = e), pr = new Bi(), Gu = new xi();
       }, i.createElement$$module$build$src$core$utils$xml = function(e) {
         return mr.createElementNS(dT, e);
       }, i.createTextNode$$module$build$src$core$utils$xml = function(e) {
@@ -436,17 +436,17 @@ function lg() {
         if (t && t.documentElement && !t.getElementsByTagName("parsererror").length) return t.documentElement;
         if ((t = pr.parseFromString(e, "text/html")) && t.body.firstChild && t.body.firstChild.nodeName.toLowerCase() === "xml") return t.body.firstChild;
         throw Error(`DOMParser was unable to parse: ${e}`);
-      }, po = function(e) {
+      }, go = function(e) {
         return mh(Gu.serializeToString(e));
       }, mh = function(e) {
-        return e.replace(gg, (t) => `&#${t.charCodeAt(0)};`);
+        return e.replace(pg, (t) => `&#${t.charCodeAt(0)};`);
       }, pn = function(e) {
         return e ? ((e instanceof Element || typeof e == "string") && (e = Cl(e), e = Rh(e)), Ih(e), e) : null;
       }, Ih = function(e) {
         const t = e.kind;
         if (e = e.contents, t && t !== _T && t !== Vu) throw Error("Invalid toolbox kind " + t + ". Please supply either " + _T + " or " + Vu);
         if (!e) throw Error("Toolbox must have a contents attribute.");
-      }, Ei = function(e) {
+      }, $i = function(e) {
         return e ? e.contents ? e.contents : Array.isArray(e) && e.length > 0 && !e[0].nodeType ? e : On(e) : [];
       }, mn = function(e) {
         return TT.hasCategoriesInternal(e);
@@ -485,9 +485,9 @@ function lg() {
         return t;
       }, Rn = function(e, t, s, o, n, r) {
         const u = r.scrollbar && r.scrollbar.canScrollVertically();
-        return e.horizontal === wo.LEFT ? (s = n.absoluteMetrics.left + s, u && r.RTL && (s += he.scrollbarThickness)) : (s = n.absoluteMetrics.left + n.viewMetrics.width - t.width - s, u && !r.RTL && (s -= he.scrollbarThickness)), e.vertical === Kt.TOP ? e = n.absoluteMetrics.top + o : (e = n.absoluteMetrics.top + n.viewMetrics.height - t.height - o, r.scrollbar && r.scrollbar.canScrollHorizontally() && (e -= he.scrollbarThickness)), new D(e, e + t.height, s, s + t.width);
+        return e.horizontal === Do.LEFT ? (s = n.absoluteMetrics.left + s, u && r.RTL && (s += de.scrollbarThickness)) : (s = n.absoluteMetrics.left + n.viewMetrics.width - t.width - s, u && !r.RTL && (s -= de.scrollbarThickness)), e.vertical === Kt.TOP ? e = n.absoluteMetrics.top + o : (e = n.absoluteMetrics.top + n.viewMetrics.height - t.height - o, r.scrollbar && r.scrollbar.canScrollHorizontally() && (e -= de.scrollbarThickness)), new D(e, e + t.height, s, s + t.width);
       }, Sn = function(e, t) {
-        return { horizontal: t.toolboxMetrics.position === B.LEFT || e.horizontalLayout && !e.RTL ? wo.RIGHT : wo.LEFT, vertical: t.toolboxMetrics.position === B.BOTTOM ? Kt.TOP : Kt.BOTTOM };
+        return { horizontal: t.toolboxMetrics.position === B.LEFT || e.horizontalLayout && !e.RTL ? Do.RIGHT : Do.LEFT, vertical: t.toolboxMetrics.position === B.BOTTOM ? Kt.TOP : Kt.BOTTOM };
       }, Ln = function(e, t, s, o) {
         const n = e.left, r = e.right - e.left, u = e.bottom - e.top;
         for (let h = 0; h < o.length; h++) {
@@ -495,15 +495,15 @@ function lg() {
           e.intersects(m) && (e = s === gs.UP ? m.top - u - t : m.bottom + t, e = new D(e, e + u, n, n + r), h = -1);
         }
         return e;
-      }, gi = function(e, t) {
+      }, Ei = function(e, t) {
         c(I.SERIALIZER, e, t);
       }, Sh = function(e) {
-        $e(I.SERIALIZER, e);
-      }, mo = function(e, { addCoordinates: t = !1, saveIds: s = !0 } = {}) {
+        K(I.SERIALIZER, e);
+      }, po = function(e, { addCoordinates: t = !1, saveIds: s = !0 } = {}) {
         const o = e.workspace, n = /* @__PURE__ */ Object.create(null);
         return n.height = e.getSize().height, n.width = e.getSize().width, s && (n.id = e.id), t && (t = e.getRelativeToSurfaceXY(), n.x = o.RTL ? o.getWidth() - t.x : t.x, n.y = t.y), e.getText() && (n.text = e.getText()), e.isCollapsed() && (n.collapsed = !0), e.isOwnEditable() || (n.editable = !1), e.isOwnMovable() || (n.movable = !1), e.isOwnDeletable() || (n.deletable = !1), n;
-      }, pi = function(e, t, { recordUndo: s = !1 } = {}) {
-        const o = Ce();
+      }, gi = function(e, t, { recordUndo: s = !1 } = {}) {
+        const o = Ne();
         if (i.setRecordUndo$$module$build$src$core$events$utils(s), s = t.newComment(e.id), e.text !== void 0 && s.setText(e.text), e.x !== void 0 || e.y !== void 0) {
           const r = s.getRelativeToSurfaceXY();
           let u, h = (u = e.x) != null ? u : r.x;
@@ -520,7 +520,7 @@ function lg() {
       }, bn = function(e, t) {
         c(I.PASTER, e, t);
       }, Lh = function(e) {
-        $e(I.PASTER, e);
+        K(I.PASTER, e);
       }, bh = function(e) {
         const t = e.workspace, s = e.getRelativeToSurfaceXY(), o = new R(0, 0), n = t.getTopComments(!1).filter((r) => r.id !== e.id).map((r) => r.getRelativeToSurfaceXY());
         for (; fh(R.sum(s, o), n); ) o.translate(t.RTL ? -30 : 30, 30);
@@ -531,19 +531,19 @@ function lg() {
       }, fh = function(e, t) {
         return t.some((s) => Math.abs(s.x - e.x) <= 1 && Math.abs(s.y - e.y) <= 1);
       }, Ot = function(e, t) {
-        e.setAttribute(Ig, t);
-      }, re = function(e, t, s) {
-        Array.isArray(s) && (s = s.join(" ")), e.setAttribute(mg + t, `${s}`);
-      }, mi = function(e) {
+        e.setAttribute(Og, t);
+      }, le = function(e, t, s) {
+        Array.isArray(s) && (s = s.join(" ")), e.setAttribute(Ig + t, `${s}`);
+      }, pi = function(e) {
         return e && typeof e.saveState == "function" && typeof e.loadState == "function";
       }, Nl = function(e) {
-        return Ml(e), Ah() ? (fn(), Promise.resolve()) : (Bo || (Bo = new Promise((t) => {
+        return Ml(e), Ah() ? (fn(), Promise.resolve()) : (wo || (wo = new Promise((t) => {
           ju = t, RT = window.requestAnimationFrame(() => {
             fn(), t();
           });
-        })), Bo);
+        })), wo);
       }, Rt = function() {
-        return Bo || Promise.resolve();
+        return wo || Promise.resolve();
       }, us = function(e) {
         e || window.cancelAnimationFrame(RT), fn(e), !e && ju && ju();
       }, Ah = function() {
@@ -559,7 +559,7 @@ function lg() {
         for (var n of s) o = n.getRelativeToSurfaceXY(), n.updateComponentLocations(o);
         for (const r of s) n = i.getGroup$$module$build$src$core$events$utils(), (o = Ju.get(r)) && i.setGroup$$module$build$src$core$events$utils(o), r.bumpNeighbours(), i.setGroup$$module$build$src$core$events$utils(n);
         for (const r of s) yl(r);
-        e || (Bo = null);
+        e || (wo = null);
       }, yl = function(e) {
         Lr.delete(e), Ku.delete(e), Ju.delete(e);
         for (const t of e.getChildren(!1)) yl(t);
@@ -570,7 +570,7 @@ function lg() {
           for (const t of e.getChildren(!1)) vl(t);
           e.renderEfficiently();
         }
-      }, Ii = function(e, t) {
+      }, mi = function(e, t) {
         AT(e, t);
       }, Nh = function(e = fT) {
         AT = e;
@@ -586,7 +586,7 @@ function lg() {
         kT(e, t);
       }, kh = function(e = vT) {
         kT = e;
-      }, Io = function(e) {
+      }, mo = function(e) {
         return e && typeof e.getProcedureDef == "function";
       }, Ph = function(e) {
         return e && typeof e.getProcedureCall == "function" && typeof e.renameProcedure == "function";
@@ -620,39 +620,39 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, Nn = function(e) {
         return Pl(e, !1);
       }, Pl = function(e, t = !0) {
-        return Q.variables_set || Q.variables_get || console.warn("There are no variable blocks, but there is a variable category."), t ? (Se("The XML return value of Blockly.Variables.flyoutCategory()", "v12", "v13", "the same method, but handle a return type of FlyoutItemInfo[] (JSON) instead."), Dh(e)) : (e.registerButtonCallback("CREATE_VARIABLE", function(s) {
-          Ms(s.getTargetWorkspace());
+        return ee.variables_set || ee.variables_get || console.warn("There are no variable blocks, but there is a variable category."), t ? (Se("The XML return value of Blockly.Variables.flyoutCategory()", "v12", "v13", "the same method, but handle a return type of FlyoutItemInfo[] (JSON) instead."), Dh(e)) : (e.registerButtonCallback("CREATE_VARIABLE", function(s) {
+          Ns(s.getTargetWorkspace());
         }), [{ kind: "button", text: "%{BKY_NEW_VARIABLE}", callbackkey: "CREATE_VARIABLE" }, ...yn(e, e.getVariableMap().getVariablesOfType(""), !0)]);
       }, Mn = function(e) {
         return { VAR: { name: e.getName(), type: e.getType() } };
       }, yn = function(e, t, s, o = "variables_get", n = "variables_set") {
-        s && (s = Q.math_change), e = [];
+        s && (s = ee.math_change), e = [];
         const r = t.slice(-1)[0];
-        return r && (Q[n] && e.push({ kind: "block", type: n, gap: s ? 8 : 24, fields: Mn(r) }), s && e.push({
+        return r && (ee[n] && e.push({ kind: "block", type: n, gap: s ? 8 : 24, fields: Mn(r) }), s && e.push({
           kind: "block",
           type: "math_change",
-          gap: Q[o] ? 20 : 8,
+          gap: ee[o] ? 20 : 8,
           fields: Mn(r),
           inputs: { DELTA: { shadow: { type: "math_number", fields: { NUM: 1 } } } }
-        })), Q[o] && e.push(...t.sort(Oo).map((u) => ({ kind: "block", type: o, gap: 8, fields: Mn(u) }))), e;
+        })), ee[o] && e.push(...t.sort(Io).map((u) => ({ kind: "block", type: o, gap: 8, fields: Mn(u) }))), e;
       }, Dh = function(e) {
         let t = [];
         const s = document.createElement("button");
         return s.setAttribute("text", "%{BKY_NEW_VARIABLE}"), s.setAttribute("callbackKey", "CREATE_VARIABLE"), e.registerButtonCallback("CREATE_VARIABLE", function(o) {
-          Ms(o.getTargetWorkspace());
+          Ns(o.getTargetWorkspace());
         }), t.push(s), e = Dl(e), t = t.concat(e);
       }, Dl = function(e) {
         e = e.getVariableMap().getVariablesOfType("");
         const t = [];
         if (e.length > 0) {
           var s = e[e.length - 1];
-          if (Q.variables_set) {
+          if (ee.variables_set) {
             var o = i.createElement$$module$build$src$core$utils$xml("block");
-            o.setAttribute("type", "variables_set"), o.setAttribute("gap", Q.math_change ? "8" : "24"), o.appendChild(ys(s)), t.push(o);
+            o.setAttribute("type", "variables_set"), o.setAttribute("gap", ee.math_change ? "8" : "24"), o.appendChild(Ms(s)), t.push(o);
           }
-          if (Q.math_change && (o = i.createElement$$module$build$src$core$utils$xml("block"), o.setAttribute("type", "math_change"), o.setAttribute("gap", Q.variables_get ? "20" : "8"), o.appendChild(ys(s)), s = i.textToDom$$module$build$src$core$utils$xml('<value name="DELTA"><shadow type="math_number"><field name="NUM">1</field></shadow></value>'), o.appendChild(s), t.push(o)), Q.variables_get) {
-            e.sort(Oo);
-            for (let n = 0, r; r = e[n]; n++) s = i.createElement$$module$build$src$core$utils$xml("block"), s.setAttribute("type", "variables_get"), s.setAttribute("gap", "8"), s.appendChild(ys(r)), t.push(s);
+          if (ee.math_change && (o = i.createElement$$module$build$src$core$utils$xml("block"), o.setAttribute("type", "math_change"), o.setAttribute("gap", ee.variables_get ? "20" : "8"), o.appendChild(Ms(s)), s = i.textToDom$$module$build$src$core$utils$xml('<value name="DELTA"><shadow type="math_number"><field name="NUM">1</field></shadow></value>'), o.appendChild(s), t.push(o)), ee.variables_get) {
+            e.sort(Io);
+            for (let n = 0, r; r = e[n]; n++) s = i.createElement$$module$build$src$core$utils$xml("block"), s.setAttribute("type", "variables_get"), s.setAttribute("gap", "8"), s.appendChild(Ms(r)), t.push(s);
           }
         }
         return t;
@@ -674,7 +674,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           n++, n === s.length && (n = 0, o = `${Number(o) + 1}`), e = s.charAt(n) + o;
         }
         return e;
-      }, Ms = function(e, t, s) {
+      }, Ns = function(e, t, s) {
         function o(r) {
           kn(i.Msg$$module$build$src$core$msg.NEW_VARIABLE_TITLE, r, function(u) {
             if (u) {
@@ -685,7 +685,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
                   "%2",
                   h.getType()
                 );
-                Ii(m, function() {
+                mi(m, function() {
                   o(u);
                 });
               } else e.getVariableMap().createVariable(u, n), t && t(u);
@@ -705,7 +705,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
                 h ? A = i.Msg$$module$build$src$core$msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE.replace(
                   "%1",
                   h.getName()
-                ).replace("%2", h.getType()) : m && (A = i.Msg$$module$build$src$core$msg.VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER.replace("%1", u).replace("%2", m)), Ii(A, function() {
+                ).replace("%2", h.getType()) : m && (A = i.Msg$$module$build$src$core$msg.VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER.replace("%1", u).replace("%2", m)), mi(A, function() {
                   o(u);
                 });
               } else e.getVariableMap().renameVariable(t, u), s && s(u);
@@ -737,14 +737,14 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, Uh = function(e, t, s) {
         e = e.toLowerCase(), t = t.toLowerCase(), s = s.getAllBlocks(!1);
         for (const n of s) {
-          if (!Io(n)) continue;
+          if (!mo(n)) continue;
           s = n.getProcedureDef();
           var o = s[1];
           const r = o.some((u) => u.toLowerCase() === e);
           if (o = o.some((u) => u.toLowerCase() === t), r && o) return s[0];
         }
         return null;
-      }, ys = function(e) {
+      }, Ms = function(e) {
         const t = i.createElement$$module$build$src$core$utils$xml("field");
         return t.setAttribute("name", "VAR"), t.setAttribute("id", e.getId()), t.setAttribute("variabletype", e.getType()), e = i.createTextNode$$module$build$src$core$utils$xml(e.getName()), t.appendChild(e), t;
       }, i.getOrCreateVariablePackage$$module$build$src$core$variables = function(e, t, s, o) {
@@ -770,9 +770,9 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           t.includes(n) || s.push(n);
         }
         return s;
-      }, Oo = function(e, t) {
+      }, Io = function(e, t) {
         return e.getName().localeCompare(t.getName(), void 0, { sensitivity: "base" });
-      }, Ro = function(e, t) {
+      }, Oo = function(e, t) {
         const s = [];
         e = e.getAllBlocks(!1);
         for (let o = 0; o < e.length; o++) {
@@ -782,11 +782,11 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return s;
       }, i.deleteVariable$$module$build$src$core$variables = function(e, t, s) {
         var o = t.getName();
-        const n = Ro(e, t.getId());
+        const n = Oo(e, t.getId());
         for (let r = n.length - 1; r >= 0; r--) {
           const u = n[r];
           if (u.type === "procedures_defnoreturn" || u.type === "procedures_defreturn") {
-            s = String(u.getFieldValue("NAME")), o = i.Msg$$module$build$src$core$msg.CANNOT_DELETE_VARIABLE_PROCEDURE.replace("%1", o).replace("%2", s), Ii(o);
+            s = String(u.getFieldValue("NAME")), o = i.Msg$$module$build$src$core$msg.CANNOT_DELETE_VARIABLE_PROCEDURE.replace("%1", o).replace("%2", s), mi(o);
             return;
           }
           u === s && n.splice(r, 1);
@@ -811,7 +811,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         e.saveExtraState ? (e = e.saveExtraState(s), e !== null && (t.extraState = e)) : e.mutationToDom && (e = e.mutationToDom(), e !== null && (t.extraState = Lt(e).replace(' xmlns="https://developers.google.com/blockly/xml"', "")));
       }, Xh = function(e, t, s) {
         const o = /* @__PURE__ */ Object.create(null);
-        for (const n of e.getIcons()) mi(n) && (e = n.saveState(s)) && (o[n.getType().toString()] = e);
+        for (const n of e.getIcons()) pi(n) && (e = n.saveState(s)) && (o[n.getType().toString()] = e);
         Object.keys(o).length && (t.icons = o);
       }, Wh = function(e, t, s) {
         const o = /* @__PURE__ */ Object.create(null);
@@ -833,10 +833,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         if (e = e.targetBlock(), !o && !e) return null;
         const n = /* @__PURE__ */ Object.create(null);
         return o && (n.shadow = o), e && !e.isShadow() && (n.block = st(e, { doFullSerialization: t, saveIds: s })), n;
-      }, vs = function(e, t, { recordUndo: s = !1 } = {}) {
-        return e = ks(e, t, { recordUndo: s }), t.rendered && us(), e;
-      }, ks = function(e, t, { parentConnection: s, isShadow: o = !1, recordUndo: n = !1 } = {}) {
-        const r = Ce();
+      }, ys = function(e, t, { recordUndo: s = !1 } = {}) {
+        return e = vs(e, t, { recordUndo: s }), t.rendered && us(), e;
+      }, vs = function(e, t, { parentConnection: s, isShadow: o = !1, recordUndo: n = !1 } = {}) {
+        const r = Ne();
         i.setRecordUndo$$module$build$src$core$events$utils(n), (n = i.getGroup$$module$build$src$core$events$utils()) || i.setGroup$$module$build$src$core$events$utils(!0), i.disable$$module$build$src$core$events$utils();
         const u = t.getVariableMap().getAllVariables();
         let h;
@@ -849,7 +849,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         } finally {
           i.enable$$module$build$src$core$events$utils();
         }
-        if (Kh(t, u), j() && v(new (M(g.BLOCK_CREATE))(h)), i.setGroup$$module$build$src$core$events$utils(n), i.setRecordUndo$$module$build$src$core$events$utils(r), t.rendered) {
+        if (Kh(t, u), Z() && v(new (M(g.BLOCK_CREATE))(h)), i.setGroup$$module$build$src$core$events$utils(n), i.setRecordUndo$$module$build$src$core$events$utils(r), t.rendered) {
           const m = h;
           setTimeout(() => {
             m.disposed || m.setConnectionTracking(!0);
@@ -865,7 +865,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           e
         ), Qh(n, e), ed(n, e), td(n, e), sd(n, e), od(n, t.rendered), n;
       }, Kh = function(e, t) {
-        if (j()) for (e = Pn(e, t), t = 0; t < e.length; t++) {
+        if (Z()) for (e = Pn(e, t), t = 0; t < e.length; t++) {
           const s = e[t];
           v(new (M(g.VAR_CREATE))(s));
         }
@@ -884,8 +884,8 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           if (e.getSourceBlock().isShadow() && !t.isShadow()) throw new UT(s);
           if (e.type === i.inputTypes$$module$build$src$core$inputs$input_types.VALUE) {
             var o = t.outputConnection;
-            if (!o) throw new Vi("output", t, s);
-          } else if (o = t.previousConnection, !o) throw new Vi(
+            if (!o) throw new Gi("output", t, s);
+          } else if (o = t.previousConnection, !o) throw new Gi(
             "previous",
             t,
             s
@@ -905,7 +905,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
               if (o = Ge(I.ICON, n, !1), !o) throw new FT(n, e, t);
               o = new o(e), e.addIcon(o);
             }
-            mi(o) && o.loadState(s);
+            pi(o) && o.loadState(s);
           }
         }
       }, ed = function(e, t) {
@@ -921,13 +921,13 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           var s = Object.keys(t.inputs);
           for (let o = 0; o < s.length; o++) {
             const n = s[o], r = e.getInput(n);
-            if (!r || !r.connection) throw new Vi(n, e, t);
+            if (!r || !r.connection) throw new Gi(n, e, t);
             Hl(r.connection, t.inputs[n]);
           }
         }
       }, sd = function(e, t) {
         if (t.next) {
-          if (!e.nextConnection) throw new Vi("next", e, t);
+          if (!e.nextConnection) throw new Gi("next", e, t);
           Hl(e.nextConnection, t.next);
         }
       }, Hl = function(e, t) {
@@ -943,24 +943,24 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return e * Math.PI / 180;
       }, id = function(e) {
         return e * 180 / Math.PI;
-      }, So = function(e, t, s) {
+      }, Ro = function(e, t, s) {
         if (s < e) {
           const o = s;
           s = e, e = o;
         }
         return Math.max(e, Math.min(t, s));
       }, wn = function() {
-        document.querySelector(".blocklyDropDownDiv") || (ce = document.createElement("div"), ce.className = "blocklyDropDownDiv", ce.tabIndex = -1, (Z() || document.body).appendChild(ce), Wi = document.createElement("div"), Wi.className = "blocklyDropDownContent", ce.appendChild(Wi), Mr = P(Wi, "keydown", null, di), zs = document.createElement("div"), zs.className = "blocklyDropDownArrow", ce.appendChild(zs), ce.style.opacity = "0", ce.style.transition = "transform " + Cr + "s, opacity " + Cr + "s");
+        document.querySelector(".blocklyDropDownDiv") || (ue = document.createElement("div"), ue.className = "blocklyDropDownDiv", ue.tabIndex = -1, (Q() || document.body).appendChild(ue), Xi = document.createElement("div"), Xi.className = "blocklyDropDownContent", ue.appendChild(Xi), Mr = k(Xi, "keydown", null, hi), Ys = document.createElement("div"), Ys.className = "blocklyDropDownArrow", ue.appendChild(Ys), ue.style.opacity = "0", ue.style.transition = "transform " + Cr + "s, opacity " + Cr + "s");
       }, Gl = function(e) {
         sa = e;
       }, Vl = function() {
         return ps;
       }, Bn = function() {
-        return Wi;
+        return Xi;
       }, xn = function() {
-        Mr && (G(Mr), Mr = null), ce.remove(), wn();
+        Mr && (V(Mr), Mr = null), ue.remove(), wn();
       }, Xl = function(e, t) {
-        ce.style.backgroundColor = e, ce.style.borderColor = t;
+        ue.style.backgroundColor = e, ue.style.borderColor = t;
       }, nd = function(e, t, s, o, n = !0) {
         return Kl(Yl(t), e, n, s, o);
       }, Wl = function(e, t, s, o = !0) {
@@ -978,32 +978,32 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         for (; h.options.parentWorkspace; ) h = h.options.parentWorkspace;
         return Gl(h.getParentSvg().parentNode), Jl(t, n.RTL, r, u, r, e, s, o);
       }, Jl = function(e, t, s, o, n, r, u, h) {
-        return ps = e, Ys = h || null, ce.style.direction = t ? "rtl" : "ltr", e = l(), XT = e.getRenderer().getClassName(), WT = e.getTheme().getClassName(), L(
-          ce,
+        return ps = e, Ws = h || null, ue.style.direction = t ? "rtl" : "ltr", e = l(), XT = e.getRenderer().getClassName(), WT = e.getTheme().getClassName(), L(
+          ue,
           XT
-        ), L(ce, WT), s = Ql(s, o, n, r), u && (Nr = i.getFocusManager$$module$build$src$core$focus_manager().takeEphemeralFocus(ce)), s;
+        ), L(ue, WT), s = Ql(s, o, n, r), u && (Nr = i.getFocusManager$$module$build$src$core$focus_manager().takeEphemeralFocus(ue)), s;
       }, jl = function(e, t, s, o) {
-        return e = Oi(e, s.left, s.right, o.width), { initialX: e.divX, initialY: t, finalX: e.divX, finalY: t + ea, arrowX: e.arrowX, arrowY: -9, arrowAtTop: !0, arrowVisible: !0 };
+        return e = Ii(e, s.left, s.right, o.width), { initialX: e.divX, initialY: t, finalX: e.divX, finalY: t + ea, arrowX: e.arrowX, arrowY: -9, arrowAtTop: !0, arrowVisible: !0 };
       }, ql = function(e, t, s, o) {
-        return e = Oi(e, s.left, s.right, o.width), { initialX: e.divX, initialY: t - o.height, finalX: e.divX, finalY: t - o.height - ea, arrowX: e.arrowX, arrowY: o.height - GT * 2 - Ar / 2, arrowAtTop: !1, arrowVisible: !0 };
+        return e = Ii(e, s.left, s.right, o.width), { initialX: e.divX, initialY: t - o.height, finalX: e.divX, finalY: t - o.height - ea, arrowX: e.arrowX, arrowY: o.height - GT * 2 - Ar / 2, arrowAtTop: !1, arrowVisible: !0 };
       }, rd = function(e, t, s) {
-        return e = Oi(e, t.left, t.right, s.width), { initialX: e.divX, initialY: 0, finalX: e.divX, finalY: 0, arrowAtTop: null, arrowX: null, arrowY: null, arrowVisible: !1 };
-      }, Oi = function(e, t, s, o) {
-        return t = So(t, e - o / 2, s - o), e = e - Ar / 2 - t, s = VT, e = So(s, e, o - s - Ar), { arrowX: e, divX: t };
+        return e = Ii(e, t.left, t.right, s.width), { initialX: e.divX, initialY: 0, finalX: e.divX, finalY: 0, arrowAtTop: null, arrowX: null, arrowY: null, arrowVisible: !1 };
+      }, Ii = function(e, t, s, o) {
+        return t = Ro(t, e - o / 2, s - o), e = e - Ar / 2 - t, s = VT, e = Ro(s, e, o - s - Ar), { arrowX: e, divX: t };
       }, Zl = function() {
         return !!ps;
       }, Un = function(e, t) {
         return ps === e ? (t ? St() : Fn(), !0) : !1;
       }, Fn = function() {
-        ce.style.transform = "translate(0, 0)", ce.style.opacity = "0", ta = setTimeout(function() {
+        ue.style.transform = "translate(0, 0)", ue.style.opacity = "0", ta = setTimeout(function() {
           St();
-        }, Cr * 1e3), Ys && (Ys(), Ys = null);
+        }, Cr * 1e3), Ws && (Ws(), Ws = null);
       }, St = function() {
-        Zl() && (ta && clearTimeout(ta), Ys && (Ys(), Ys = null), xn(), ps = null, l().markFocused(), Nr && (Nr(), Nr = null));
+        Zl() && (ta && clearTimeout(ta), Ws && (Ws(), Ws = null), xn(), ps = null, l().markFocused(), Nr && (Nr(), Nr = null));
       }, Ql = function(e, t, s, o) {
-        e = oa.getPositionMetrics(e, t, s, o), e.arrowVisible ? (t = e.arrowX, s = e.arrowY, o = e.arrowAtTop ? 45 : 225, zs.style.display = "", zs.style.transform = `translate(${t}px, ${s}px) rotate(${o}deg)`, zs.setAttribute("class", "blocklyDropDownArrow")) : zs.style.display = "none", t = Math.floor(e.initialX), s = Math.floor(e.initialY), o = Math.floor(e.finalX);
+        e = oa.getPositionMetrics(e, t, s, o), e.arrowVisible ? (t = e.arrowX, s = e.arrowY, o = e.arrowAtTop ? 45 : 225, Ys.style.display = "", Ys.style.transform = `translate(${t}px, ${s}px) rotate(${o}deg)`, Ys.setAttribute("class", "blocklyDropDownArrow")) : Ys.style.display = "none", t = Math.floor(e.initialX), s = Math.floor(e.initialY), o = Math.floor(e.finalX);
         const n = Math.floor(e.finalY);
-        return ce.style.left = t + "px", ce.style.top = s + "px", ce.style.display = "block", ce.style.opacity = "1", ce.style.transform = "translate(" + (o - t) + "px," + (n - s) + "px)", !!e.arrowAtTop;
+        return ue.style.left = t + "px", ue.style.top = s + "px", ue.style.display = "block", ue.style.opacity = "1", ue.style.transform = "translate(" + (o - t) + "px," + (n - s) + "px)", !!e.arrowAtTop;
       }, ec = function() {
         if (ps) {
           var e = ps.getSourceBlock();
@@ -1011,7 +1011,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           const t = e.left + (e.right - e.left) / 2;
           Ql(t, e.bottom, t, e.top);
         } else Fn();
-      }, Ri = function(e) {
+      }, Oi = function(e) {
         return e.length ? e.reduce(function(t, s) {
           return t.length < s.length ? t : s;
         }).length : 0;
@@ -1019,7 +1019,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         if (!e.length) return 0;
         if (e.length === 1) return e[0].length;
         let s = 0;
-        t = t || Ri(e);
+        t = t || Oi(e);
         let o;
         for (o = 0; o < t; o++) {
           for (var n = e[0][o], r = 1; r < e.length; r++) if (n !== e[r][o]) return s;
@@ -1031,7 +1031,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         if (!e.length) return 0;
         if (e.length === 1) return e[0].length;
         let s = 0;
-        t = t || Ri(e);
+        t = t || Oi(e);
         let o;
         for (o = 0; o < t; o++) {
           for (var n = e[0].substr(-o - 1, 1), r = 1; r < e.length; r++) if (n !== e[r].substr(-o - 1, 1)) return s;
@@ -1085,10 +1085,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, ad = function() {
         return yr;
       }, hd = function() {
-        return Yi;
+        return Wi;
       }, dd = function() {
         return ge;
-      }, Lo = function(e) {
+      }, So = function(e) {
         if (e = ic(e)) {
           for (e = e.tooltip; typeof e == "function"; ) e = e();
           if (typeof e != "string") throw Error("Tooltip function must return a string.");
@@ -1102,34 +1102,34 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         return null;
       }, nc = function() {
-        document.querySelector(".blocklyTooltipDiv") || (ge = document.createElement("div"), ge.className = "blocklyTooltipDiv", (Z() || document.body).appendChild(ge));
-      }, Si = function(e) {
-        e.mouseOverWrapper_ = Be(e, "pointerover", null, _d), e.mouseOutWrapper_ = Be(e, "pointerout", null, Td), e.addEventListener("pointermove", lc, !1);
+        document.querySelector(".blocklyTooltipDiv") || (ge = document.createElement("div"), ge.className = "blocklyTooltipDiv", (Q() || document.body).appendChild(ge));
+      }, Ri = function(e) {
+        e.mouseOverWrapper_ = xe(e, "pointerover", null, _d), e.mouseOutWrapper_ = xe(e, "pointerout", null, Td), e.addEventListener("pointermove", lc, !1);
       }, rc = function(e) {
-        e && (G(e.mouseOverWrapper_), G(e.mouseOutWrapper_), e.removeEventListener("pointermove", lc));
+        e && (V(e.mouseOverWrapper_), V(e.mouseOutWrapper_), e.removeEventListener("pointermove", lc));
       }, _d = function(e) {
-        Fo || (e = ic(e.currentTarget), rt !== e && (Ht(), zi = null, rt = e), clearTimeout(KT));
+        Uo || (e = ic(e.currentTarget), rt !== e && (Ht(), Yi = null, rt = e), clearTimeout(KT));
       }, Td = function(e) {
-        Fo || (KT = setTimeout(function() {
-          zi = rt = null, Ht();
-        }, 1), clearTimeout(Ks), Ks = 0);
+        Uo || (KT = setTimeout(function() {
+          Yi = rt = null, Ht();
+        }, 1), clearTimeout(zs), zs = 0);
       }, lc = function(e) {
-        if (rt && rt.tooltip && !Fo) if (Yi) {
+        if (rt && rt.tooltip && !Uo) if (Wi) {
           const t = ia - e.pageX;
           e = na - e.pageY, Math.sqrt(t * t + e * e) > JT && Ht();
-        } else zi !== rt && (clearTimeout(Ks), ia = e.pageX, na = e.pageY, Ks = setTimeout(pd, jT));
+        } else Yi !== rt && (clearTimeout(zs), ia = e.pageX, na = e.pageY, zs = setTimeout(pd, jT));
       }, cc = function() {
-        zi = rt = null, Ht();
+        Yi = rt = null, Ht();
       }, Ht = function() {
-        Yi && (Yi = !1, ge && (ge.style.display = "none")), Ks && (clearTimeout(Ks), Ks = 0);
+        Wi && (Wi = !1, ge && (ge.style.display = "none")), zs && (clearTimeout(zs), zs = 0);
       }, uc = function() {
-        Ht(), Fo = !0;
+        Ht(), Uo = !0;
       }, ac = function() {
-        Fo = !1;
+        Uo = !1;
       }, $d = function() {
         ge && rt && (typeof yr == "function" ? yr(ge, rt) : Ed());
       }, Ed = function() {
-        var e = Lo(rt);
+        var e = So(rt);
         e = i.wrap$$module$build$src$core$utils$string(e, zT), e = e.split(`
 `);
         for (let t = 0; t < e.length; t++) {
@@ -1143,10 +1143,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         let n = na + la;
         return n + ge.offsetHeight > s + window.scrollY && (n -= ge.offsetHeight + 2 * la), e ? o = Math.max(vr - window.scrollX, o) : o + ge.offsetWidth > t + window.scrollX - 2 * vr && (o = t - ge.offsetWidth - 2 * vr), { x: o, y: n };
       }, pd = function() {
-        if (!Fo && (zi = rt, ge)) {
+        if (!Uo && (Yi = rt, ge)) {
           ge.textContent = "", $d();
           var e = rt.RTL;
-          ge.style.direction = e ? "rtl" : "ltr", ge.style.display = "block", Yi = !0;
+          ge.style.direction = e ? "rtl" : "ltr", ge.style.display = "block", Wi = !0;
           var { x: t, y: s } = gd(e);
           ge.style.left = t + "px", ge.style.top = s + "px";
         }
@@ -1158,21 +1158,21 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return ua;
       }, Id = function(e) {
         ua = e;
-      }, Ps = function(e) {
+      }, ks = function(e) {
         e = `${e}`.toLowerCase().trim();
         var t = qT[e];
         if (t || (t = e.substring(0, 2) === "0x" ? "#" + e.substring(2) : e, t = t[0] === "#" ? t : "#" + t, /^#[0-9a-f]{6}$/.test(t))) return t;
         if (/^#[0-9a-f]{3}$/.test(t)) return ["#", t[1], t[1], t[2], t[2], t[3], t[3]].join("");
         var s = e.match(/^(?:rgb)?\s*\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*\)$/);
-        return s && (e = Number(s[1]), t = Number(s[2]), s = Number(s[3]), e >= 0 && e < 256 && t >= 0 && t < 256 && s >= 0 && s < 256) ? Li(
+        return s && (e = Number(s[1]), t = Number(s[2]), s = Number(s[3]), e >= 0 && e < 256 && t >= 0 && t < 256 && s >= 0 && s < 256) ? Si(
           e,
           t,
           s
         ) : null;
-      }, Li = function(e, t, s) {
+      }, Si = function(e, t, s) {
         return t = e << 16 | t << 8 | s, e < 16 ? "#" + (16777216 | t).toString(16).substr(1) : "#" + t.toString(16);
       }, Gn = function(e) {
-        return e = Ps(e), e ? (e = parseInt(e.substr(1), 16), [e >> 16, e >> 8 & 255, e & 255]) : [0, 0, 0];
+        return e = ks(e), e ? (e = parseInt(e.substr(1), 16), [e >> 16, e >> 8 & 255, e & 255]) : [0, 0, 0];
       }, Vn = function(e, t, s) {
         let o = 0, n = 0, r = 0;
         if (t === 0) r = n = o = s;
@@ -1201,9 +1201,9 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
               o = s, n = t, r = e;
           }
         }
-        return Li(Math.floor(o), Math.floor(n), Math.floor(r));
-      }, Ds = function(e, t, s) {
-        return e = Ps(e), !e || (t = Ps(t), !t) ? null : (e = Gn(e), t = Gn(t), Li(Math.round(t[0] + s * (e[0] - t[0])), Math.round(t[1] + s * (e[1] - t[1])), Math.round(t[2] + s * (e[2] - t[2]))));
+        return Si(Math.floor(o), Math.floor(n), Math.floor(r));
+      }, Ps = function(e, t, s) {
+        return e = ks(e), !e || (t = ks(t), !t) ? null : (e = Gn(e), t = Gn(t), Si(Math.round(t[0] + s * (e[0] - t[0])), Math.round(t[1] + s * (e[1] - t[1])), Math.round(t[2] + s * (e[2] - t[2]))));
       }, _c = function(e) {
         return Vn(e, ca, ua * 255);
       }, Xn = function(e, t, s) {
@@ -1218,8 +1218,8 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           if (r === 0) if (h === "%") (r = e.join("")) && o.push(r), e.length = 0, r = 1;
           else if (s && h === `
 `) {
-            const ie = e.join("");
-            ie && o.push(ie), e.length = 0, o.push(h);
+            const ne = e.join("");
+            ne && o.push(ne), e.length = 0, o.push(h);
           } else e.push(h);
           else if (r === 1) h === "%" ? (e.push(h), r = 0) : t && "0" <= h && h <= "9" ? (r = 2, u = h, (h = e.join("")) && o.push(h), e.length = 0) : h === "{" ? r = 3 : (e.push("%", h), r = 0);
           else if (r === 2) if ("0" <= h && h <= "9") u += h;
@@ -1234,7 +1234,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return (t = e.join("")) && m.push(t), e.length = 0, m;
       }, Tc = function(e) {
         return Xn(e, !0, !0);
-      }, ue = function(e) {
+      }, ae = function(e) {
         return typeof e != "string" ? e : (e = Xn(e, !1, !1), e.length ? String(e[0]) : "");
       }, Od = function(e) {
         let t = !0;
@@ -1244,13 +1244,13 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           s[r.slice(6, -1)] === void 0 && (console.warn("No message string for " + o[n] + " in " + e), t = !1);
         }
         return t;
-      }, bo = function(e) {
-        const t = typeof e == "string" ? ue(e) : e;
+      }, Lo = function(e) {
+        const t = typeof e == "string" ? ae(e) : e;
         var s = Number(t);
         if (!isNaN(s) && 0 <= s && s <= 360) return { hue: s, hex: Vn(s, hc(), dc() * 255) };
-        if (s = Ps(t)) return { hue: null, hex: s };
+        if (s = ks(t)) return { hue: null, hex: s };
         throw s = 'Invalid colour: "' + t + '"', e !== t && (s += ' (from "' + e + '")'), Error(s);
-      }, fo = function() {
+      }, bo = function() {
         return Je;
       }, Rd = function(e) {
         if (Je = e, e === null) {
@@ -1258,33 +1258,33 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           (t = document.querySelector("." + aa)) == null || t.remove();
         }
       }, $c = function() {
-        const e = Z() || document.body, t = document.querySelector("div." + aa);
-        t ? Je = t : (Je = document.createElement("div"), Je.className = aa, Je.tabIndex = -1), P(Je, "keydown", null, di), e.appendChild(Je);
+        const e = Q() || document.body, t = document.querySelector("div." + aa);
+        t ? Je = t : (Je = document.createElement("div"), Je.className = aa, Je.tabIndex = -1), k(Je, "keydown", null, hi), e.appendChild(Je);
       }, Wn = function(e, t, s, o, n = !0) {
-        if (Ao(), Ho = e, kr = s, s = Je) {
-          if (s.style.direction = t ? "rtl" : "ltr", s.style.display = "block", !o && e instanceof Y) {
+        if (fo(), Fo = e, kr = s, s = Je) {
+          if (s.style.direction = t ? "rtl" : "ltr", s.style.display = "block", !o && e instanceof z) {
             let h;
             o = (h = e.getSourceBlock()) == null ? void 0 : h.workspace;
           }
           var r;
           ZT = (r = o) != null ? r : null;
           var u;
-          e = (u = o) != null ? u : l(), Go = e.getRenderer().getClassName(), Vo = e.getTheme().getClassName(), Go && L(s, Go), Vo && L(s, Vo), n && (Pr = i.getFocusManager$$module$build$src$core$focus_manager().takeEphemeralFocus(s));
+          e = (u = o) != null ? u : l(), Ho = e.getRenderer().getClassName(), Go = e.getTheme().getClassName(), Ho && L(s, Ho), Go && L(s, Go), n && (Pr = i.getFocusManager$$module$build$src$core$focus_manager().takeEphemeralFocus(s));
         }
-      }, Ao = function() {
+      }, fo = function() {
         if (Ec()) {
-          Ho = null;
+          Fo = null;
           var e = Je;
-          e && (e.style.display = "none", e.style.left = "", e.style.top = "", kr && (kr(), kr = null), e.textContent = "", Go && (F(
+          e && (e.style.display = "none", e.style.left = "", e.style.top = "", kr && (kr(), kr = null), e.textContent = "", Ho && (H(
             e,
-            Go
-          ), Go = ""), Vo && (F(e, Vo), Vo = ""), l().markFocused(), Pr && (Pr(), Pr = null));
+            Ho
+          ), Ho = ""), Go && (H(e, Go), Go = ""), l().markFocused(), Pr && (Pr(), Pr = null));
         }
       }, Ec = function() {
-        return !!Ho;
-      }, ws = function(e) {
-        Ho === e && Ao();
-      }, bi = function(e) {
+        return !!Fo;
+      }, Ds = function(e) {
+        Fo === e && fo();
+      }, Li = function(e) {
         let t = ZT === null, s = e;
         for (; !t && s; ) {
           if (s === e) {
@@ -1293,7 +1293,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           }
           s = e.options.parentWorkspace;
         }
-        t && Ao();
+        t && fo();
       }, gc = function(e, t, s) {
         Je.style.left = e + "px", Je.style.top = t + "px", Je.style.height = s + "px";
       }, pc = function(e, t, s, o) {
@@ -1306,12 +1306,12 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, bd = function(e) {
         return !(e == null || !e.repositionForWindowResize);
       }, mc = function() {
-        bd(Ho) && Ho.repositionForWindowResize() || Ao();
+        bd(Fo) && Fo.repositionForWindowResize() || fo();
       }, fd = function() {
         return Dr;
       }, Ic = function(e) {
         Dr = e;
-      }, Co = function(e, t, s, o, n) {
+      }, Ao = function(e, t, s, o, n) {
         if (Wn(QT, s, Oc, o), t.length) {
           n || (e instanceof PointerEvent ? n = new R(e.clientX, e.clientY) : (console.warn("Context menu opened with keyboard but no location given"), n = new R(0, 0)));
           var r = Ad(
@@ -1320,10 +1320,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
             e,
             n
           );
-          Js = r, Cd(r, s, n), setTimeout(function() {
+          Ks = r, Cd(r, s, n), setTimeout(function() {
             r.focus();
           }, 1), Dr = null;
-        } else fi();
+        } else bi();
       }, Ad = function(e, t, s, o) {
         const n = new zu();
         n.setRole(ze.MENU);
@@ -1335,7 +1335,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           }
           const h = new Rr(u.text);
           h.setRightToLeft(t), h.setRole(ze.MENUITEM), n.addChild(h), h.setEnabled(u.enabled), u.enabled && h.onAction(function(m, A) {
-            fi(), requestAnimationFrame(() => {
+            bi(), requestAnimationFrame(() => {
               setTimeout(() => {
                 u.callback(u.scope, s, A, o);
               }, 0);
@@ -1349,32 +1349,32 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         const n = e.getSize();
         t && (s.left += n.width, s.right += n.width, o.left += n.width, o.right += n.width), pc(o, s, n, t), e.focus();
       }, Nd = function(e) {
-        var t = fo();
+        var t = bo();
         if (!t) throw Error("Attempting to create a context menu when widget div is null");
-        t = e.render(t), L(t, "blocklyContextMenu"), P(t, "contextmenu", null, Md), e.focus();
+        t = e.render(t), L(t, "blocklyContextMenu"), k(t, "contextmenu", null, Md), e.focus();
       }, Md = function(e) {
         e.preventDefault(), e.stopPropagation();
-      }, fi = function() {
-        ws(QT), Dr = null;
+      }, bi = function() {
+        Ds(QT), Dr = null;
         let e;
-        (e = Js) == null || e.dispose(), Js = null;
+        (e = Ks) == null || e.dispose(), Ks = null;
       }, Oc = function() {
-        Js && (Js.dispose(), Js = null);
+        Ks && (Ks.dispose(), Ks = null);
       }, i.callbackFactory$$module$build$src$core$contextmenu = function(e, t) {
         return () => {
           i.disable$$module$build$src$core$events$utils();
           let s;
           try {
-            s = t instanceof Element ? Bs(t, e.workspace) : ks(t, e.workspace);
+            s = t instanceof Element ? ws(t, e.workspace) : vs(t, e.workspace);
             const o = e.getRelativeToSurfaceXY();
             o.x = e.RTL ? o.x - i.config$$module$build$src$core$config.snapRadius : o.x + i.config$$module$build$src$core$config.snapRadius, o.y += i.config$$module$build$src$core$config.snapRadius * 2, s.moveBy(o.x, o.y);
           } finally {
             i.enable$$module$build$src$core$events$utils();
           }
-          return j() && !s.isShadow() && v(new (M(g.BLOCK_CREATE))(s)), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(s), s;
+          return Z() && !s.isShadow() && v(new (M(g.BLOCK_CREATE))(s)), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(s), s;
         };
       }, Rc = function() {
-        return Js;
+        return Ks;
       }, Sc = function(e, t) {
         return t = ss(t, e.getParentSvg(), e.getInverseScreenCTM()), t.x /= e.scale, t.y /= e.scale, t;
       }, Yn = function(e, t, s) {
@@ -1386,10 +1386,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         const s = i.createElement$$module$build$src$core$utils$xml("xml");
         var o = Lc(i.allUsedVarModels$$module$build$src$core$variables(e));
         o.hasChildNodes() && s.appendChild(o);
-        for (const n of e.getTopComments()) s.appendChild(Ai(n, t));
-        for (e = e.getTopBlocks(!0), o = 0; o < e.length; o++) s.appendChild(Ci(e[o], t));
+        for (const n of e.getTopComments()) s.appendChild(fi(n, t));
+        for (e = e.getTopBlocks(!0), o = 0; o < e.length; o++) s.appendChild(Ai(e[o], t));
         return s;
-      }, Ai = function(e, t = !1) {
+      }, fi = function(e, t = !1) {
         const s = i.createElement$$module$build$src$core$utils$xml("comment");
         t || s.setAttribute("id", e.id), t = e.workspace;
         const o = e.getRelativeToSurfaceXY().clone();
@@ -1401,7 +1401,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           n.appendChild(i.createTextNode$$module$build$src$core$utils$xml(o.getName())), o.getType() && n.setAttribute("type", o.getType()), n.id = o.getId(), t.appendChild(n);
         }
         return t;
-      }, Ci = function(e, t) {
+      }, Ai = function(e, t) {
         if (e.isInsertionMarker() && (e = e.getChildren(!1)[0], !e)) return new DocumentFragment();
         let s = 0;
         if (e.workspace.RTL && (s = e.workspace.getWidth()), t = hs(e, t), Nc(t)) {
@@ -1448,13 +1448,13 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           for (; s && !s.nextSibling; ) {
             o = s, s = s.parentNode;
             let n;
-            o.nodeType === Wt.TEXT_NODE && o.data.trim() === "" && ((n = s) == null ? void 0 : n.firstChild) !== o && V(o);
+            o.nodeType === Wt.TEXT_NODE && o.data.trim() === "" && ((n = s) == null ? void 0 : n.firstChild) !== o && X(o);
           }
-          s && (o = s, s = s.nextSibling, o.nodeType === Wt.TEXT_NODE && o.data.trim() === "" && V(o));
+          s && (o = s, s = s.nextSibling, o.nodeType === Wt.TEXT_NODE && o.data.trim() === "" && X(o));
         }
         return e;
       }, Lt = function(e) {
-        return po(e).replace(/<(\w+)([^<]*)\/>/g, "<$1$2></$1>");
+        return go(e).replace(/<(\w+)([^<]*)\/>/g, "<$1$2></$1>");
       }, Pd = function(e) {
         e = Lt(e).split("<");
         let t = "";
@@ -1477,17 +1477,17 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         try {
           for (let u = 0, h; h = e.childNodes[u]; u++) {
             const m = h.nodeName.toLowerCase(), A = h;
-            if (m === "block" || m === "shadow" && !Ce()) {
-              const ie = Bs(
+            if (m === "block" || m === "shadow" && !Ne()) {
+              const ne = ws(
                 A,
                 t
               );
-              o.push(ie.id);
-              let K;
-              const ye = parseInt((K = A.getAttribute("x")) != null ? K : "10", 10);
+              o.push(ne.id);
+              let j;
+              const ve = parseInt((j = A.getAttribute("x")) != null ? j : "10", 10);
               let es;
               const Pt = parseInt((es = A.getAttribute("y")) != null ? es : "10", 10);
-              isNaN(ye) || isNaN(Pt) || ie.moveBy(t.RTL ? s - ye : ye, Pt, ["create"]), r = !1;
+              isNaN(ve) || isNaN(Pt) || ne.moveBy(t.RTL ? s - ve : ve, Pt, ["create"]), r = !1;
             } else {
               if (m === "shadow") throw TypeError("Shadow block cannot be a top-level block.");
               if (m === "comment") fc(A, t);
@@ -1536,8 +1536,8 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         return e;
       }, i.domToBlock$$module$build$src$core$xml = function(e, t) {
-        return e = Bs(e, t), t.rendered && us(), e;
-      }, Bs = function(e, t) {
+        return e = ws(e, t), t.rendered && us(), e;
+      }, ws = function(e, t) {
         i.disable$$module$build$src$core$events$utils();
         var s = t.getVariableMap().getAllVariables();
         let o;
@@ -1557,7 +1557,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         } finally {
           i.enable$$module$build$src$core$events$utils();
         }
-        if (j()) {
+        if (Z()) {
           for (e = Pn(t, s), t = 0; t < e.length; t++) s = e[t], v(new (M(g.VAR_CREATE))(s));
           v(new (M(g.BLOCK_CREATE))(o));
         }
@@ -1614,12 +1614,12 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           const h = parseInt((u = o.getAttribute("w")) != null ? u : "50", 10);
           let m;
           const A = parseInt((m = o.getAttribute("h")) != null ? m : "50", 10);
-          let ie, K = parseInt((ie = o.getAttribute("x")) != null ? ie : "", 10), ye;
-          const es = parseInt((ye = o.getAttribute("y")) != null ? ye : "", 10);
+          let ne, j = parseInt((ne = o.getAttribute("x")) != null ? ne : "", 10), ve;
+          const es = parseInt((ve = o.getAttribute("y")) != null ? ve : "", 10);
           t.setCommentText(n);
           const Pt = t.getIcon(Ee.COMMENT);
           isNaN(h) || isNaN(A) || Pt.setBubbleSize(new w(h, A)), Pt.setBubbleVisible(r), setTimeout(() => {
-            isNaN(K) || isNaN(es) || (K = t.workspace.RTL ? t.workspace.getWidth() - (K + h) : K, Pt.setBubbleLocation(new R(K, es))), Pt.setBubbleVisible(r);
+            isNaN(j) || isNaN(es) || (j = t.workspace.RTL ? t.workspace.getWidth() - (j + h) : j, Pt.setBubbleLocation(new R(j, es))), Pt.setBubbleVisible(r);
           }, 1);
         }
       }, Fd = function(e, t) {
@@ -1697,19 +1697,19 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, bt = function(e, t) {
         c(I.FIELD, e, t, !0);
       }, Yd = function(e) {
-        $e(I.FIELD, e);
+        K(I.FIELD, e);
       }, i.fromJson$$module$build$src$core$field_registry = function(e) {
         return r$.fromJsonInternal(e);
       }, zd = function(e) {
         const t = ct(I.FIELD, e.type);
         return t ? t.fromJson(e) : (console.warn("Blockly could not create a field of type " + e.type + ". The field is probably not being registered. This could be because the file is not loaded, the field does not register itself (Issue #1584), or the registration is not being reached."), null);
-      }, No = function(e) {
+      }, Co = function(e) {
         return e && typeof e == "object" && "src" in e && typeof e.src == "string" && "alt" in e && typeof e.alt == "string" && "width" in e && typeof e.width == "number" && "height" in e && typeof e.height == "number";
       }, i.register$$module$build$src$core$extensions = function(e, t) {
         if (typeof e != "string" || e.trim() === "") throw Error('Error: Invalid extension name "' + e + '"');
-        if (Yo[e]) throw Error('Error: Extension "' + e + '" is already registered.');
+        if (Wo[e]) throw Error('Error: Extension "' + e + '" is already registered.');
         if (typeof t != "function") throw Error('Error: Extension "' + e + '" must be a function');
-        Yo[e] = t;
+        Wo[e] = t;
       }, i.registerMixin$$module$build$src$core$extensions = function(e, t) {
         if (!t || typeof t != "object") throw Error('Error: Mixin "' + e + '" must be a object');
         i.register$$module$build$src$core$extensions(e, function() {
@@ -1724,11 +1724,11 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           r && this.setMutator(new i.MutatorIcon$$module$build$src$core$icons$mutator_icon(o || [], this)), this.mixin(t), s && s.apply(this);
         });
       }, Kd = function(e) {
-        Mc(e) ? delete Yo[e] : console.warn('No extension mapping for name "' + e + '" found to unregister');
+        Mc(e) ? delete Wo[e] : console.warn('No extension mapping for name "' + e + '" found to unregister');
       }, Mc = function(e) {
-        return !!Yo[e];
+        return !!Wo[e];
       }, Jn = function(e, t, s) {
-        const o = Yo[e];
+        const o = Wo[e];
         if (typeof o != "function") throw Error('Error: Extension "' + e + '" not found.');
         let n;
         if (s ? Jd(e, t) : n = qn(t), o.apply(t), s) vc('Error after applying mutator "' + e + '": ', t);
@@ -1775,20 +1775,20 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return function() {
           s.includes(this.type) || (e_(this, e, t), s.push(this.type)), this.setTooltip((function() {
             const o = String(this.getFieldValue(e));
-            return ue(t[o]);
+            return ae(t[o]);
           }).bind(this));
         };
       }, e_ = function(e, t, s) {
         var o = e.getField(t);
-        if (o instanceof Me && !o.isOptionListDynamic()) {
+        if (o instanceof ye && !o.isOptionListDynamic()) {
           o = o.getOptions();
-          for (const n of o) n !== Me.SEPARATOR && ([, o] = n, s[o] === void 0 && console.warn(`No tooltip mapping for value ${o} of field ${t} of block type ${e.type}.`));
+          for (const n of o) n !== ye.SEPARATOR && ([, o] = n, s[o] === void 0 && console.warn(`No tooltip mapping for value ${o} of field ${t} of block type ${e.type}.`));
         }
       }, i.buildTooltipWithFieldText$$module$build$src$core$extensions = function(e, t) {
         return function() {
           this.setTooltip((function() {
             const s = this.getField(t);
-            return ue(e).replace("%1", s ? s.getText() : "");
+            return ae(e).replace("%1", s ? s.getText() : "");
           }).bind(this));
         };
       }, t_ = function() {
@@ -1803,15 +1803,15 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return " " + e + t.join("");
       }, Le = function(e, t) {
         return " M " + e + "," + t + " ";
-      }, le = function(e, t) {
+      }, ce = function(e, t) {
         return " m " + e + "," + t + " ";
       }, ft = function(e, t) {
         return " l " + e + "," + t + " ";
-      }, Mo = function(e) {
+      }, No = function(e) {
         return " l" + e.join("");
       }, y = function(e, t) {
         return " " + e + " " + t + " ";
-      }, ae = function(e, t, s, o) {
+      }, he = function(e, t, s, o) {
         return e + " " + s + " " + s + " " + t + o;
       }, s_ = function(e, t) {
         if (!e || !t) throw Error("Cannot connect null connections.");
@@ -1836,7 +1836,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, kc = function(e) {
         return Ft(e) && typeof e.getType == "function" && typeof e.initView == "function" && typeof e.dispose == "function" && typeof e.getWeight == "function" && typeof e.getSize == "function" && typeof e.applyColour == "function" && typeof e.hideForInsertionMarker == "function" && typeof e.updateEditable == "function" && typeof e.updateCollapsed == "function" && typeof e.isShownWhenCollapsed == "function" && typeof e.setOffsetInBlock == "function" && typeof e.onLocationChange == "function" && typeof e.onClick == "function";
       }, n_ = function(e) {
-        return kc(e) && as(e) && mi(e) && typeof e.setText == "function" && typeof e.getText == "function" && typeof e.setBubbleSize == "function" && typeof e.getBubbleSize == "function" && typeof e.setBubbleLocation == "function" && typeof e.getBubbleLocation == "function" && e.getType() === Ee.COMMENT;
+        return kc(e) && as(e) && pi(e) && typeof e.setText == "function" && typeof e.getText == "function" && typeof e.setBubbleSize == "function" && typeof e.getBubbleSize == "function" && typeof e.setBubbleLocation == "function" && typeof e.getBubbleLocation == "function" && e.getType() === Ee.COMMENT;
       }, Zn = function(e) {
         if (!(e.getDescendants(!1).length > 100)) {
           var t = e.workspace, s = e.getSvgRoot();
@@ -1848,7 +1848,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
       }, Pc = function(e, t, s, o) {
         const n = ((/* @__PURE__ */ new Date()).getTime() - o.getTime()) / 150;
-        n > 1 ? V(e) : (e.setAttribute("transform", "translate(" + (t.x + (s ? -1 : 1) * t.width / 2 * n) + "," + (t.y + t.height / 2 * n) + ") scale(" + (1 - n) + ")"), setTimeout(Pc, 10, e, t, s, o));
+        n > 1 ? X(e) : (e.setAttribute("transform", "translate(" + (t.x + (s ? -1 : 1) * t.width / 2 * n) + "," + (t.y + t.height / 2 * n) + ") scale(" + (1 - n) + ")"), setTimeout(Pc, 10, e, t, s, o));
       }, Dc = function(e) {
         var t = e.workspace;
         const s = t.scale;
@@ -1860,19 +1860,19 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
             $.ANIMATE,
             { id: "animationCircle", begin: "indefinite", attributeName: "r", dur: "150ms", from: 0, to: 25 * s },
             n
-          ), t = O($.ANIMATE, { id: "animationOpacity", begin: "indefinite", attributeName: "opacity", dur: "150ms", from: 1, to: 0 }, n), e.beginElement(), t.beginElement(), setTimeout(() => void V(n), 150);
+          ), t = O($.ANIMATE, { id: "animationOpacity", begin: "indefinite", attributeName: "opacity", dur: "150ms", from: 1, to: 0 }, n), e.beginElement(), t.beginElement(), setTimeout(() => void X(n), 150);
         }
       }, wc = function(e) {
-        if (yo(), e.workspace.getAudioManager().play("disconnect"), !(e.workspace.scale < 1)) {
+        if (Mo(), e.workspace.getAudioManager().play("disconnect"), !(e.workspace.scale < 1)) {
           var t = e.getHeightWidth().height;
-          t = Math.atan(10 / t) / Math.PI * 180, e.RTL || (t *= -1), ji = e, Bc(e, t, /* @__PURE__ */ new Date(), 0);
+          t = Math.atan(10 / t) / Math.PI * 180, e.RTL || (t *= -1), Ji = e, Bc(e, t, /* @__PURE__ */ new Date(), 0);
         }
       }, Bc = function(e, t, s, o) {
         const n = [0.66, 1, 0.66, 0, -0.66, -1, -0.66, 0];
         let r = "";
         s.getTime() + 200 > (/* @__PURE__ */ new Date()).getTime() && (r = `skewX(${Math.round(n[o % n.length] * t)})`, Xr = setTimeout(Bc, 15, e, t, s, o + 1)), e.getSvgRoot().setAttribute("transform", `${e.getTranslation()} ${r}`);
-      }, yo = function() {
-        ji && (Xr && (clearTimeout(Xr), Xr = null), ji.getSvgRoot().setAttribute("transform", ji.getTranslation()), ji = null);
+      }, Mo = function() {
+        Ji && (Xr && (clearTimeout(Xr), Xr = null), Ji.getSvgRoot().setAttribute("transform", Ji.getTranslation()), Ji = null);
       }, r_ = function(e, t) {
         e.workspace.RTL && (t.x = e.workspace.getWidth() - t.x);
         const s = e.workspace, o = i.config$$module$build$src$core$config.snapRadius, n = R.difference(t, e.getRelativeToSurfaceXY()), r = new R(0, 0), u = s.getAllBlocks(!1).filter((h) => h.id != e.id).map((h) => h.getRelativeToSurfaceXY());
@@ -1885,10 +1885,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return t.some((s) => Math.abs(s.x - e.x) <= 1 && Math.abs(s.y - e.y) <= 1);
       }, c_ = function(e, t, s) {
         return e.getConnections_(!1).some((o) => !!o.closest(s, t).connection);
-      }, vo = function(e, t, s) {
-        const o = s.getBoundingRectangle(), n = o.right - o.left, r = So(t.top, o.top, t.top + t.height - (o.bottom - o.top)) - o.top;
+      }, yo = function(e, t, s) {
+        const o = s.getBoundingRectangle(), n = o.right - o.left, r = Ro(t.top, o.top, t.top + t.height - (o.bottom - o.top)) - o.top;
         let u = t.left;
-        return t = t.left + t.width - n, e.RTL ? u = Math.min(t, u) : t = Math.max(u, t), (e = So(u, o.left, t) - o.left) || r ? (s.moveBy(e, r, ["inbounds"]), !0) : !1;
+        return t = t.left + t.width - n, e.RTL ? u = Math.min(t, u) : t = Math.max(u, t), (e = Ro(u, o.left, t) - o.left) || r ? (s.moveBy(e, r, ["inbounds"]), !0) : !1;
       }, xc = function(e) {
         return (t) => {
           var s = e.getMetricsManager();
@@ -1897,12 +1897,12 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
             if (Q_.includes((o = t.type) != null ? o : "")) {
               o = s.getScrollMetrics(!0);
               const n = u_(e, t);
-              n && (s = i.getGroup$$module$build$src$core$events$utils() || !1, i.setGroup$$module$build$src$core$events$utils(t.group), vo(
+              n && (s = i.getGroup$$module$build$src$core$events$utils() || !1, i.setGroup$$module$build$src$core$events$utils(t.group), yo(
                 e,
                 o,
                 n
               ) && !t.group && console.warn("Moved object in bounds but there was no event group. This may break undo."), i.setGroup$$module$build$src$core$events$utils(s));
-            } else co(t) && t.scale && t.oldScale && t.scale > t.oldScale && Qn(e);
+            } else lo(t) && t.scale && t.oldScale && t.scale > t.oldScale && Qn(e);
           }
         };
       }, u_ = function(e, t) {
@@ -1923,7 +1923,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         if (t.hasFixedEdges() && !e.isDragging()) {
           t = t.getScrollMetrics(!0);
           var s = e.getTopBoundedElements();
-          for (let o = 0, n; n = s[o]; o++) vo(e, t, n);
+          for (let o = 0, n; n = s[o]; o++) yo(e, t, n);
         }
       }, ot = function(e) {
         return e && typeof e.isDeletable == "function" && typeof e.dispose == "function" && typeof e.setDeleteStyle == "function";
@@ -1944,11 +1944,11 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           }
         }
         return s;
-      }, ko = function(e, t) {
+      }, vo = function(e, t) {
         const s = e.workspace.getTopBoundedElements(!0).filter((n) => Ft(n));
-        e = s.indexOf(e instanceof z ? e.getRootBlock() : e) + t;
+        e = s.indexOf(e instanceof J ? e.getRootBlock() : e) + t;
         let o = null;
-        if (e >= 0 && e < s.length ? o = s[e] : e < 0 ? o = s[s.length - 1] : e >= s.length && (o = s[0]), t < 0 && o instanceof z) {
+        if (e >= 0 && e < s.length ? o = s[e] : e < 0 ? o = s[s.length - 1] : e >= s.length && (o = s[0]), t < 0 && o instanceof J) {
           let n, r;
           return (r = (n = o.lastConnectionInStack(!1)) == null ? void 0 : n.getSourceBlock()) != null ? r : o;
         }
@@ -1956,15 +1956,15 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, ut = function(e, t) {
         var s;
         let o;
-        const n = e instanceof z ? (o = (s = e.outputConnection) == null ? void 0 : s.targetBlock()) != null ? o : e.getSurroundParent() : e.getSourceBlock();
-        return !(n instanceof z) || (s = Uc(n, t > 0), e = s.indexOf(e), e === -1) ? null : (t = e + t, t >= 0 && t < s.length ? s[t] : null);
+        const n = e instanceof J ? (o = (s = e.outputConnection) == null ? void 0 : s.targetBlock()) != null ? o : e.getSurroundParent() : e.getSourceBlock();
+        return !(n instanceof J) || (s = Uc(n, t > 0), e = s.indexOf(e), e === -1) ? null : (t = e + t, t >= 0 && t < s.length ? s[t] : null);
       }, Fc = function(e, t) {
         c(I.ICON, e.toString(), t);
       }, a_ = function(e) {
-        $e(I.ICON, e);
+        K(I.ICON, e);
       }, Hc = function(e) {
         return e && typeof e.showContextMenu == "function";
-      }, Po = function(e) {
+      }, ko = function(e) {
         return e && typeof e.getRelativeToSurfaceXY == "function" && typeof e.isMovable == "function" && typeof e.startDrag == "function" && typeof e.drag == "function" && typeof e.endDrag == "function" && typeof e.revertDrag == "function";
       }, h_ = function(e) {
         return e && typeof e.autoHide == "function";
@@ -1972,14 +1972,14 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return typeof e.getProcedureModel == "function" && typeof e.doProcedureUpdate == "function" && typeof e.isProcedureDef == "function";
       }, er = function(e) {
         return e && typeof e.startPublishing == "function" && typeof e.stopPublishing == "function";
-      }, Ni = function(e) {
+      }, Ci = function(e) {
         const t = e.getProcedureMap().getProcedures().filter((o) => !o.getReturnTypes()).map((o) => [o.getName(), o.getParameters().map((n) => n.getName()), !1]);
         e.getBlocksByType("procedures_defnoreturn", !1).forEach((o) => {
-          !ds(o) && Io(o) && t.push(o.getProcedureDef());
+          !ds(o) && mo(o) && t.push(o.getProcedureDef());
         });
         const s = e.getProcedureMap().getProcedures().filter((o) => !!o.getReturnTypes()).map((o) => [o.getName(), o.getParameters().map((n) => n.getName()), !0]);
         return e.getBlocksByType("procedures_defreturn", !1).forEach((o) => {
-          !ds(o) && Io(o) && s.push(o.getProcedureDef());
+          !ds(o) && mo(o) && s.push(o.getProcedureDef());
         }), t.sort(Gc), s.sort(Gc), [t, s];
       }, Gc = function(e, t) {
         return e[0].localeCompare(t[0], void 0, { sensitivity: "base" });
@@ -1993,7 +1993,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
       }, d_ = function(e, t, s) {
         return !Vc(e, t, s);
       }, Vc = function(e, t, s) {
-        for (const o of t.getAllBlocks(!1)) if (o !== s && Io(o) && i.Names$$module$build$src$core$names.equals(o.getProcedureDef()[0], e)) return !0;
+        for (const o of t.getAllBlocks(!1)) if (o !== s && mo(o) && i.Names$$module$build$src$core$names.equals(o.getProcedureDef()[0], e)) return !0;
         s = s && ds(s) ? s == null ? void 0 : s.getProcedureModel() : void 0;
         for (const o of t.getProcedureMap().getProcedures()) if (o !== s && i.Names$$module$build$src$core$names.equals(
           o.getName(),
@@ -2002,7 +2002,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return !1;
       }, i.rename$$module$build$src$core$procedures = function(e) {
         var t = this.getSourceBlock();
-        if (!t) throw new _e();
+        if (!t) throw new Te();
         e = e.trim();
         const s = i.findLegalName$$module$build$src$core$procedures(e, t);
         ds(t) && !t.isInsertionMarker() && t.getProcedureModel().setName(s);
@@ -2016,24 +2016,24 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         function t(r, u) {
           for (let m = 0; m < r.length; m++) {
             var h = r[m][0];
-            const A = r[m][1], ie = i.createElement$$module$build$src$core$utils$xml("block");
-            ie.setAttribute("type", u), ie.setAttribute("gap", "16");
-            const K = i.createElement$$module$build$src$core$utils$xml("mutation");
-            for (K.setAttribute("name", h), ie.appendChild(K), h = 0; h < A.length; h++) {
-              const ye = i.createElement$$module$build$src$core$utils$xml("arg");
-              ye.setAttribute("name", A[h]), K.appendChild(ye);
+            const A = r[m][1], ne = i.createElement$$module$build$src$core$utils$xml("block");
+            ne.setAttribute("type", u), ne.setAttribute("gap", "16");
+            const j = i.createElement$$module$build$src$core$utils$xml("mutation");
+            for (j.setAttribute("name", h), ne.appendChild(j), h = 0; h < A.length; h++) {
+              const ve = i.createElement$$module$build$src$core$utils$xml("arg");
+              ve.setAttribute("name", A[h]), j.appendChild(ve);
             }
-            s.push(ie);
+            s.push(ne);
           }
         }
         const s = [];
-        if (Q.procedures_defnoreturn) {
+        if (ee.procedures_defnoreturn) {
           var o = i.createElement$$module$build$src$core$utils$xml("block");
           o.setAttribute("type", "procedures_defnoreturn"), o.setAttribute("gap", "16");
           var n = i.createElement$$module$build$src$core$utils$xml("field");
           n.setAttribute("name", "NAME"), n.appendChild(i.createTextNode$$module$build$src$core$utils$xml(i.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_PROCEDURE)), o.appendChild(n), s.push(o);
         }
-        return Q.procedures_defreturn && (o = i.createElement$$module$build$src$core$utils$xml("block"), o.setAttribute("type", "procedures_defreturn"), o.setAttribute("gap", "16"), n = i.createElement$$module$build$src$core$utils$xml("field"), n.setAttribute("name", "NAME"), n.appendChild(i.createTextNode$$module$build$src$core$utils$xml(i.Msg$$module$build$src$core$msg.PROCEDURES_DEFRETURN_PROCEDURE)), o.appendChild(n), s.push(o)), Q.procedures_ifreturn && (o = i.createElement$$module$build$src$core$utils$xml("block"), o.setAttribute("type", "procedures_ifreturn"), o.setAttribute("gap", "16"), s.push(o)), s.length && s[s.length - 1].setAttribute("gap", "24"), e = Ni(e), t(e[0], "procedures_callnoreturn"), t(e[1], "procedures_callreturn"), s;
+        return ee.procedures_defreturn && (o = i.createElement$$module$build$src$core$utils$xml("block"), o.setAttribute("type", "procedures_defreturn"), o.setAttribute("gap", "16"), n = i.createElement$$module$build$src$core$utils$xml("field"), n.setAttribute("name", "NAME"), n.appendChild(i.createTextNode$$module$build$src$core$utils$xml(i.Msg$$module$build$src$core$msg.PROCEDURES_DEFRETURN_PROCEDURE)), o.appendChild(n), s.push(o)), ee.procedures_ifreturn && (o = i.createElement$$module$build$src$core$utils$xml("block"), o.setAttribute("type", "procedures_ifreturn"), o.setAttribute("gap", "16"), s.push(o)), s.length && s[s.length - 1].setAttribute("gap", "24"), e = Ci(e), t(e[0], "procedures_callnoreturn"), t(e[1], "procedures_callreturn"), s;
       }, tr = function(e) {
         return Xc(e, !1);
       }, Xc = function(e, t = !0) {
@@ -2042,7 +2042,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         if (t) return Se("The XML return value of Blockly.Procedures.flyoutCategory()", "v12", "v13", "the same method, but handle a return type of FlyoutItemInfo[] (JSON) instead."), __(e);
         const o = [];
-        return Q.procedures_defnoreturn && o.push({ kind: "block", type: "procedures_defnoreturn", gap: 16, fields: { NAME: i.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_PROCEDURE } }), Q.procedures_defreturn && o.push({ kind: "block", type: "procedures_defreturn", gap: 16, fields: { NAME: i.Msg$$module$build$src$core$msg.PROCEDURES_DEFRETURN_PROCEDURE } }), Q.procedures_ifreturn && o.push({ kind: "block", type: "procedures_ifreturn", gap: 16 }), o.length && (o[o.length - 1].gap = 24), e = Ni(e), s(e[0], "procedures_callnoreturn"), s(e[1], "procedures_callreturn"), o;
+        return ee.procedures_defnoreturn && o.push({ kind: "block", type: "procedures_defnoreturn", gap: 16, fields: { NAME: i.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_PROCEDURE } }), ee.procedures_defreturn && o.push({ kind: "block", type: "procedures_defreturn", gap: 16, fields: { NAME: i.Msg$$module$build$src$core$msg.PROCEDURES_DEFRETURN_PROCEDURE } }), ee.procedures_ifreturn && o.push({ kind: "block", type: "procedures_ifreturn", gap: 16 }), o.length && (o[o.length - 1].gap = 24), e = Ci(e), s(e[0], "procedures_callnoreturn"), s(e[1], "procedures_callreturn"), o;
       }, Wc = function(e) {
         var t = [], s = e.getBlocksByType("procedures_mutatorarg", !1);
         for (let r = 0, u; u = s[r]; r++) t.push(u.getFieldValue("NAME"));
@@ -2055,29 +2055,29 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           t
         ), t = i.createTextNode$$module$build$src$core$utils$xml(t), n.appendChild(t), o.appendChild(n), s.appendChild(o), e.updateToolbox(s);
       }, Yc = function(e) {
-        if (ri(e) && e.bubbleType === "mutator" && e.isOpen && e.blockId) {
+        if (ni(e) && e.bubbleType === "mutator" && e.isOpen && e.blockId) {
           e = pt(e.workspaceId).getBlockById(e.blockId);
           var t = e.type;
           (t === "procedures_defnoreturn" || t === "procedures_defreturn") && (e = e.getIcon(i.MutatorIcon$$module$build$src$core$icons$mutator_icon.TYPE).getWorkspace(), Wc(e), e.addChangeListener(T_));
         }
       }, T_ = function(e) {
-        (lo(e) || ii(e) || os(e) || ni(e)) && (e = pt(e.workspaceId), Wc(e));
+        (ro(e) || oi(e) || os(e) || ii(e)) && (e = pt(e.workspaceId), Wc(e));
       }, zc = function(e, t) {
         return t.getAllBlocks(!1).filter((s) => $_(s, e) || Ph(s) && i.Names$$module$build$src$core$names.equals(s.getProcedureCall(), e));
       }, $_ = function(e, t) {
         return ds(e) && !e.isProcedureDef() && e.getProcedureModel() && i.Names$$module$build$src$core$names.equals(e.getProcedureModel().getName(), t);
       }, i.mutateCallers$$module$build$src$core$procedures = function(e) {
-        const t = Ce();
+        const t = Ne();
         var s = e.getProcedureDef()[0];
         const o = e.mutationToDom(!0);
         e = zc(s, e.workspace);
         for (let r = 0, u; u = e[r]; r++) {
-          s = (s = u.mutationToDom()) && po(s), u.domToMutation && u.domToMutation(o);
+          s = (s = u.mutationToDom()) && go(s), u.domToMutation && u.domToMutation(o);
           var n = u.mutationToDom();
-          n = n && po(n), s !== n && (i.setRecordUndo$$module$build$src$core$events$utils(!1), v(new (M(g.BLOCK_CHANGE))(u, "mutation", null, s, n)), i.setRecordUndo$$module$build$src$core$events$utils(t));
+          n = n && go(n), s !== n && (i.setRecordUndo$$module$build$src$core$events$utils(!1), v(new (M(g.BLOCK_CHANGE))(u, "mutation", null, s, n)), i.setRecordUndo$$module$build$src$core$events$utils(t));
         }
       }, i.getDefinition$$module$build$src$core$procedures = function(e, t) {
-        for (const s of t.getAllBlocks(!1)) if (ds(s) && s.isProcedureDef() && i.Names$$module$build$src$core$names.equals(s.getProcedureModel().getName(), e) || Io(s) && i.Names$$module$build$src$core$names.equals(s.getProcedureDef()[0], e)) return s;
+        for (const s of t.getAllBlocks(!1)) if (ds(s) && s.isProcedureDef() && i.Names$$module$build$src$core$names.equals(s.getProcedureModel().getName(), e) || mo(s) && i.Names$$module$build$src$core$names.equals(s.getProcedureDef()[0], e)) return s;
         return null;
       }, sr = function(e) {
         return e.isDynamic;
@@ -2085,22 +2085,22 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         return e.pathDown !== void 0 && e.pathUp !== void 0;
       }, g_ = function(e) {
         return e.pathLeft !== void 0 && e.pathRight !== void 0;
-      }, Mi = function(e, t) {
+      }, Ni = function(e, t) {
         c(I.RENDERER, e, t);
       }, p_ = function(e) {
-        $e(I.RENDERER, e);
+        K(I.RENDERER, e);
       }, Kc = function(e, t, s) {
         return e = new (Ge(I.RENDERER, e))(e), e.init(t, s), e;
       }, or = function(e) {
-        Ms(e.getTargetWorkspace(), void 0, "String");
+        Ns(e.getTargetWorkspace(), void 0, "String");
       }, ir = function(e) {
-        Ms(e.getTargetWorkspace(), void 0, "Number");
+        Ns(e.getTargetWorkspace(), void 0, "Number");
       }, nr = function(e) {
-        Ms(e.getTargetWorkspace(), void 0, "Colour");
+        Ns(e.getTargetWorkspace(), void 0, "Colour");
       }, rr = function(e) {
         return Jc(e, !1);
       }, Jc = function(e, t = !0) {
-        return Q.variables_set_dynamic || Q.variables_get_dynamic || console.warn("There are no dynamic variable blocks, but there is a dynamic variable category."), t ? (Se("The XML return value of Blockly.VariablesDynamic.flyoutCategory()", "v12", "v13", "the same method, but handle a return type of FlyoutItemInfo[] (JSON) instead."), m_(e)) : (e.registerButtonCallback("CREATE_VARIABLE_STRING", or), e.registerButtonCallback("CREATE_VARIABLE_NUMBER", ir), e.registerButtonCallback("CREATE_VARIABLE_COLOUR", nr), [
+        return ee.variables_set_dynamic || ee.variables_get_dynamic || console.warn("There are no dynamic variable blocks, but there is a dynamic variable category."), t ? (Se("The XML return value of Blockly.VariablesDynamic.flyoutCategory()", "v12", "v13", "the same method, but handle a return type of FlyoutItemInfo[] (JSON) instead."), m_(e)) : (e.registerButtonCallback("CREATE_VARIABLE_STRING", or), e.registerButtonCallback("CREATE_VARIABLE_NUMBER", ir), e.registerButtonCallback("CREATE_VARIABLE_COLOUR", nr), [
           { kind: "button", text: i.Msg$$module$build$src$core$msg.NEW_STRING_VARIABLE, callbackkey: "CREATE_VARIABLE_STRING" },
           { kind: "button", text: i.Msg$$module$build$src$core$msg.NEW_NUMBER_VARIABLE, callbackkey: "CREATE_VARIABLE_NUMBER" },
           { kind: "button", text: i.Msg$$module$build$src$core$msg.NEW_COLOUR_VARIABLE, callbackkey: "CREATE_VARIABLE_COLOUR" },
@@ -2113,81 +2113,81 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         e = e.getVariableMap().getAllVariables();
         const t = [];
         if (e.length > 0) {
-          if (Q.variables_set_dynamic) {
+          if (ee.variables_set_dynamic) {
             var s = e[e.length - 1];
             const o = i.createElement$$module$build$src$core$utils$xml("block");
-            o.setAttribute("type", "variables_set_dynamic"), o.setAttribute("gap", "24"), o.appendChild(ys(s)), t.push(o);
+            o.setAttribute("type", "variables_set_dynamic"), o.setAttribute("gap", "24"), o.appendChild(Ms(s)), t.push(o);
           }
-          if (Q.variables_get_dynamic) {
-            e.sort(Oo);
-            for (let o = 0, n; n = e[o]; o++) s = i.createElement$$module$build$src$core$utils$xml("block"), s.setAttribute("type", "variables_get_dynamic"), s.setAttribute("gap", "8"), s.appendChild(ys(n)), t.push(s);
+          if (ee.variables_get_dynamic) {
+            e.sort(Io);
+            for (let o = 0, n; n = e[o]; o++) s = i.createElement$$module$build$src$core$utils$xml("block"), s.setAttribute("type", "variables_get_dynamic"), s.setAttribute("gap", "8"), s.appendChild(Ms(n)), t.push(s);
           }
         }
         return t;
       }, lr = function(e, t) {
         const s = e.toCopyData();
-        return on = s, nn = $o(e) && e.workspace instanceof De ? e.workspace : null, rl = t, s;
+        return sn = s, on = To(e) && e.workspace instanceof we ? e.workspace : null, rl = t, s;
       }, cr = function() {
-        return on;
+        return sn;
       }, I_ = function(e) {
-        on = e;
+        sn = e;
       }, ur = function() {
-        return nn;
+        return on;
       }, O_ = function(e) {
-        nn = e;
+        on = e;
       }, qc = function() {
         return rl;
       }, R_ = function(e) {
         rl = e;
       }, _s = function(e, t, s) {
-        return e && t ? Zc(e, t, s) : on && nn ? Zc(on, nn, rl) : null;
+        return e && t ? Zc(e, t, s) : sn && on ? Zc(sn, on, rl) : null;
       }, Zc = function(e, t, s) {
         let o;
         t = t.isMutator ? t : (o = t.options.parentWorkspace) != null ? o : t;
         let n, r;
         return (r = (n = ct(I.PASTER, e.paster, !1)) == null ? void 0 : n.paste(e, t, s)) != null ? r : null;
-      }, yi = function(e) {
+      }, Mi = function(e) {
         return e && typeof e.toCopyData == "function";
       }, Qc = function() {
-        ee.registry.register({ name: $t.ESCAPE, preconditionFn(e) {
+        te.registry.register({ name: $t.ESCAPE, preconditionFn(e) {
           return !e.isReadOnly();
         }, callback(e) {
           return e.hideChaff(), !0;
-        }, keyCodes: [Te.ESC] });
+        }, keyCodes: [$e.ESC] });
       }, eu = function() {
-        ee.registry.register({ name: $t.DELETE, preconditionFn(e, t) {
+        te.registry.register({ name: $t.DELETE, preconditionFn(e, t) {
           return t = t.focusedNode, !e.isReadOnly() && t != null && ot(t) && t.isDeletable() && !e.isDragging() && !i.getFocusManager$$module$build$src$core$focus_manager().ephemeralFocusTaken();
         }, callback(e, t, s, o) {
-          return t.preventDefault(), e = o.focusedNode, e instanceof z ? e.checkAndDelete() : ot(e) && e.isDeletable() && (i.setGroup$$module$build$src$core$events$utils(!0), e.dispose(), i.setGroup$$module$build$src$core$events$utils(!1)), !0;
-        }, keyCodes: [Te.DELETE, Te.BACKSPACE] });
+          return t.preventDefault(), e = o.focusedNode, e instanceof J ? e.checkAndDelete() : ot(e) && e.isDeletable() && (i.setGroup$$module$build$src$core$events$utils(!0), e.dispose(), i.setGroup$$module$build$src$core$events$utils(!1)), !0;
+        }, keyCodes: [$e.DELETE, $e.BACKSPACE] });
       }, ar = function(e) {
-        return yi(e) && ot(e) && Po(e) ? e.isCopyable ? e.isCopyable() : e instanceof z || e instanceof jt ? e.isOwnDeletable() && e.isOwnMovable() : e.isDeletable() && e.isMovable() : !1;
+        return Mi(e) && ot(e) && ko(e) ? e.isCopyable ? e.isCopyable() : e instanceof J || e instanceof jt ? e.isOwnDeletable() && e.isOwnMovable() : e.isDeletable() && e.isMovable() : !1;
       }, tu = function(e) {
         return ar(e) && ot(e) && e.isDeletable();
       }, su = function() {
-        const e = ee.registry.createSerializedKey(Te.C, [Te.CTRL_CMD]);
-        ee.registry.register({ name: $t.COPY, preconditionFn(t, s) {
+        const e = te.registry.createSerializedKey($e.C, [$e.CTRL_CMD]);
+        te.registry.register({ name: $t.COPY, preconditionFn(t, s) {
           return s = s.focusedNode, t = t.isFlyout ? t.targetWorkspace : t, !!s && !!t && !t.isDragging() && !i.getFocusManager$$module$build$src$core$focus_manager().ephemeralFocusTaken() && ar(s);
         }, callback(t, s, o, n) {
-          return s.preventDefault(), s = n.focusedNode, !s || !yi(s) || !ar(s) || (t = t.isFlyout ? t.targetWorkspace : t, !t) ? !1 : (s.workspace.isFlyout || t.hideChaff(), t = Po(s) && s.workspace == t ? s.getRelativeToSurfaceXY() : void 0, !!lr(s, t));
+          return s.preventDefault(), s = n.focusedNode, !s || !Mi(s) || !ar(s) || (t = t.isFlyout ? t.targetWorkspace : t, !t) ? !1 : (s.workspace.isFlyout || t.hideChaff(), t = ko(s) && s.workspace == t ? s.getRelativeToSurfaceXY() : void 0, !!lr(s, t));
         }, keyCodes: [e] });
       }, ou = function() {
-        const e = ee.registry.createSerializedKey(Te.X, [Te.CTRL_CMD]);
-        ee.registry.register({ name: $t.CUT, preconditionFn(t, s) {
+        const e = te.registry.createSerializedKey($e.X, [$e.CTRL_CMD]);
+        te.registry.register({ name: $t.CUT, preconditionFn(t, s) {
           return s = s.focusedNode, !!s && !t.isReadOnly() && !t.isDragging() && !i.getFocusManager$$module$build$src$core$focus_manager().ephemeralFocusTaken() && tu(s);
         }, callback(t, s, o, n) {
-          return t = n.focusedNode, !t || !tu(t) || !yi(t) ? !1 : (s = Po(t) ? t.getRelativeToSurfaceXY() : void 0, s = lr(t, s), t instanceof z ? t.checkAndDelete() : ot(t) && t.dispose(), !!s);
+          return t = n.focusedNode, !t || !tu(t) || !Mi(t) ? !1 : (s = ko(t) ? t.getRelativeToSurfaceXY() : void 0, s = lr(t, s), t instanceof J ? t.checkAndDelete() : ot(t) && t.dispose(), !!s);
         }, keyCodes: [e] });
       }, iu = function() {
-        const e = ee.registry.createSerializedKey(Te.V, [Te.CTRL_CMD]);
-        ee.registry.register({ name: $t.PASTE, preconditionFn() {
+        const e = te.registry.createSerializedKey($e.V, [$e.CTRL_CMD]);
+        te.registry.register({ name: $t.PASTE, preconditionFn() {
           var t = ur();
           return !t || !t.rendered ? !1 : (t = t.isFlyout ? t.targetWorkspace : t, !!cr() && !!t && !t.isReadOnly() && !t.isDragging() && !i.getFocusManager$$module$build$src$core$focus_manager().ephemeralFocusTaken());
         }, callback(t, s) {
           if (t = cr(), !t) return !1;
           var o = ur();
           if (!o || (o = o.isFlyout ? o.targetWorkspace : o, !o || o.isReadOnly())) return !1;
-          if (s instanceof PointerEvent) return s = $i(
+          if (s instanceof PointerEvent) return s = Ti(
             o,
             new R(s.clientX, s.clientY)
           ), !!_s(t, o, s);
@@ -2196,8 +2196,8 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           return new D(r, r + h, n, n + u).contains(s.x, s.y) ? !!_s(t, o) : (s = new R(n + u / 2, r + h / 2), !!_s(t, o, s));
         }, keyCodes: [e] });
       }, nu = function() {
-        const e = ee.registry.createSerializedKey(Te.Z, [Te.CTRL_CMD]);
-        ee.registry.register({
+        const e = te.registry.createSerializedKey($e.Z, [$e.CTRL_CMD]);
+        te.registry.register({
           name: $t.UNDO,
           preconditionFn(t) {
             return !t.isReadOnly() && !t.isDragging() && !i.getFocusManager$$module$build$src$core$focus_manager().ephemeralFocusTaken();
@@ -2208,15 +2208,15 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           keyCodes: [e]
         });
       }, ru = function() {
-        const e = ee.registry.createSerializedKey(Te.Z, [Te.CTRL_CMD, Te.SHIFT]), t = ee.registry.createSerializedKey(Te.Y, [Te.CTRL]);
-        ee.registry.register({ name: $t.REDO, preconditionFn(s) {
+        const e = te.registry.createSerializedKey($e.Z, [$e.CTRL_CMD, $e.SHIFT]), t = te.registry.createSerializedKey($e.Y, [$e.CTRL]);
+        te.registry.register({ name: $t.REDO, preconditionFn(s) {
           return !s.isDragging() && !s.isReadOnly() && !i.getFocusManager$$module$build$src$core$focus_manager().ephemeralFocusTaken();
         }, callback(s, o) {
           return s.hideChaff(), s.undo(!0), o.preventDefault(), !0;
         }, keyCodes: [e, t] });
       }, lu = function() {
-        const e = ee.registry.createSerializedKey(Te.ENTER, [Te.CTRL_CMD]);
-        ee.registry.register({ name: $t.MENU, preconditionFn: (t) => !t.isDragging(), callback: (t, s) => {
+        const e = te.registry.createSerializedKey($e.ENTER, [$e.CTRL_CMD]);
+        te.registry.register({ name: $t.MENU, preconditionFn: (t) => !t.isDragging(), callback: (t, s) => {
           if (t = i.getFocusManager$$module$build$src$core$focus_manager().getFocusedNode(), Hc(t)) {
             t.showContextMenu(s);
             let o;
@@ -2234,7 +2234,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         for (const [n, r] of s.parameters.entries()) e.insertParameter(t.loadState(r, o), n);
         return e;
       }, S_ = function(e) {
-        const t = /* @__PURE__ */ Object.create(null), s = ro(I.SERIALIZER, !0);
+        const t = /* @__PURE__ */ Object.create(null), s = no(I.SERIALIZER, !0);
         for (const o in s) {
           let n;
           const r = (n = s[o]) == null ? void 0 : n.save(e);
@@ -2242,11 +2242,11 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         return t;
       }, L_ = function(e, t, { recordUndo: s = !1 } = {}) {
-        var o = ro(I.SERIALIZER, !0);
+        var o = no(I.SERIALIZER, !0);
         if (o) {
           o = Object.entries(o).sort((r, u) => u[1].priority - r[1].priority);
-          var n = Ce();
-          i.setRecordUndo$$module$build$src$core$events$utils(s), (s = i.getGroup$$module$build$src$core$events$utils()) || i.setGroup$$module$build$src$core$events$utils(!0), xt(), t instanceof De && t.setResizesEnabled(!1);
+          var n = Ne();
+          i.setRecordUndo$$module$build$src$core$events$utils(s), (s = i.getGroup$$module$build$src$core$events$utils()) || i.setGroup$$module$build$src$core$events$utils(!0), xt(), t instanceof we && t.setResizesEnabled(!1);
           for (const [, r] of o.reverse()) {
             let u;
             (u = r) == null || u.clear(t);
@@ -2255,7 +2255,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
             let h;
             (h = u) == null || h.load(e[r], t);
           }
-          t instanceof De && t.setResizesEnabled(!0), Ut(), v(new (M(g.FINISHED_LOADING))(t)), i.setGroup$$module$build$src$core$events$utils(s), i.setRecordUndo$$module$build$src$core$events$utils(n);
+          t instanceof we && t.setResizesEnabled(!0), Ut(), v(new (M(g.FINISHED_LOADING))(t)), i.setGroup$$module$build$src$core$events$utils(s), i.setRecordUndo$$module$build$src$core$events$utils(n);
         }
       }, b_ = function(e, t) {
         let s = null;
@@ -2264,30 +2264,30 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         if (!document.contains(s) && document !== ((o = s) == null ? void 0 : o.ownerDocument)) throw Error("Error: container is not in current document");
         e = new At(t || {}), o = document.createElement("div"), L(o, "injectionDiv"), t != null && t.rtl && L(o, "blocklyRTL"), s.appendChild(o), t = f_(o, e);
         const n = A_(o, t, e);
-        return C_(n), a(n), Ns(n), o.addEventListener("focusin", function() {
+        return C_(n), a(n), Cs(n), o.addEventListener("focusin", function() {
           a(n);
-        }), P(o, "keydown", null, di), n;
+        }), k(o, "keydown", null, hi), n;
       }, f_ = function(e, t) {
         e.setAttribute("dir", "LTR"), ml(t.hasCss, t.pathToMedia);
-        const s = O($.SVG, { xmlns: Pi, "xmlns:html": Fs, "xmlns:xlink": Ye, version: "1.1", class: "blocklySvg" }, e), o = O(
+        const s = O($.SVG, { xmlns: ki, "xmlns:html": Us, "xmlns:xlink": Ye, version: "1.1", class: "blocklySvg" }, e), o = O(
           $.DEFS,
           {},
           s
         ), n = String(Math.random()).substring(2);
         return t.gridPattern = fa.createDom(n, t.gridOptions, o, e), s;
       }, A_ = function(e, t, s) {
-        s.parentWorkspace = null, s = new De(s);
+        s.parentWorkspace = null, s = new we(s);
         const o = s.options;
         s.scale = o.zoomOptions.startScale, t.appendChild(s.createDom("blocklyMainBackground", e));
         var n = s.getRenderer().getClassName();
-        return n && L(e, n), (n = s.getTheme().getClassName()) && L(e, n), !o.hasCategories && o.languageTree && (e = s.addFlyout($.SVG), Bt(e, t)), o.hasTrashcan && s.addTrashcan(), o.zoomOptions && o.zoomOptions.controls && s.addZoomControls(), s.getThemeManager().subscribe(t, "workspaceBackgroundColour", "background-color"), s.translate(0, 0), s.addChangeListener(xc(s)), Ns(s), $c(), wn(), nc(), s;
+        return n && L(e, n), (n = s.getTheme().getClassName()) && L(e, n), !o.hasCategories && o.languageTree && (e = s.addFlyout($.SVG), Bt(e, t)), o.hasTrashcan && s.addTrashcan(), o.zoomOptions && o.zoomOptions.controls && s.addZoomControls(), s.getThemeManager().subscribe(t, "workspaceBackgroundColour", "background-color"), s.translate(0, 0), s.addChangeListener(xc(s)), Cs(s), $c(), wn(), nc(), s;
       }, C_ = function(e) {
         const t = e.options;
         var s = e.getParentSvg();
-        if (P(s.parentNode, "contextmenu", null, function(o) {
-          fs(o) || o.preventDefault();
-        }), s = P(window, "resize", null, function() {
-          Ht(), e.hideComponents(!0), ec(), mc(), Ns(e), Qn(e);
+        if (k(s.parentNode, "contextmenu", null, function(o) {
+          bs(o) || o.preventDefault();
+        }), s = k(window, "resize", null, function() {
+          Ht(), e.hideComponents(!0), ec(), mc(), Cs(e), Qn(e);
         }), e.setResizeHandlerWrapper(s), N_(), t.languageTree) {
           s = e.getToolbox();
           const o = e.getFlyout(!0);
@@ -2295,10 +2295,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         t.hasTrashcan && e.trashcan.init(), t.zoomOptions && t.zoomOptions.controls && e.zoomControls_.init(), t.moveOptions && t.moveOptions.scrollbars ? (e.scrollbar = new ba(e, t.moveOptions.scrollbars === !0 || !!t.moveOptions.scrollbars.horizontal, t.moveOptions.scrollbars === !0 || !!t.moveOptions.scrollbars.vertical, "blocklyMainWorkspaceScrollbar"), e.scrollbar.resize()) : e.setMetrics({ x: 0.5, y: 0.5 }), t.hasSounds && M_(t.pathToMedia, e);
       }, N_ = function() {
-        iE || (P(document, "scroll", null, function() {
+        iE || (k(document, "scroll", null, function() {
           const e = rs();
-          for (let t = 0, s; s = e[t]; t++) s instanceof De && s.updateInverseScreenCTM();
-        }), Be(document, "touchend", null, Qe), Be(
+          for (let t = 0, s; s = e[t]; t++) s instanceof we && s.updateInverseScreenCTM();
+        }), xe(document, "touchend", null, Qe), xe(
           document,
           "touchcancel",
           null,
@@ -2399,10 +2399,10 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         e = e.getTopBlocks(!0);
         for (let s = 0; s < e.length; s++) gu(e[s], t);
         return t;
-      }, vi = function(e, t) {
+      }, yi = function(e, t) {
         t ? i.setGroup$$module$build$src$core$events$utils(t) : (i.setGroup$$module$build$src$core$events$utils(!0), t = i.getGroup$$module$build$src$core$events$utils());
         const s = e.shift();
-        s && (s.isDeadOrDying() ? vi(e, t) : (s.dispose(!1, !0), setTimeout(vi, 10, e, t))), i.setGroup$$module$build$src$core$events$utils(!1);
+        s && (s.isDeadOrDying() ? yi(e, t) : (s.dispose(!1, !0), setTimeout(yi, 10, e, t))), i.setGroup$$module$build$src$core$events$utils(!1);
       }, pu = function() {
         x.registry.register({
           displayText(e) {
@@ -2415,8 +2415,8 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
             if (e.workspace) {
               e.workspace.cancelCurrentGesture();
               var t = hr(e.workspace);
-              t.length < 2 ? vi(t) : An(i.Msg$$module$build$src$core$msg.DELETE_ALL_BLOCKS.replace("%1", String(t.length)), function(s) {
-                s && vi(t);
+              t.length < 2 ? yi(t) : An(i.Msg$$module$build$src$core$msg.DELETE_ALL_BLOCKS.replace("%1", String(t.length)), function(s) {
+                s && yi(t);
               });
             }
           },
@@ -2561,7 +2561,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           let t;
           return (t = e.workspace) != null && t.isMutator ? "hidden" : "enabled";
         }, callback: (e, t, s, o) => {
-          (e = e.workspace) && (i.setGroup$$module$build$src$core$events$utils(!0), t = new jt(e), t.moveTo($i(
+          (e = e.workspace) && (i.setGroup$$module$build$src$core$events$utils(!0), t = new jt(e), t.moveTo(Ti(
             e,
             new R(o.x, o.y)
           )), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(t), i.setGroup$$module$build$src$core$events$utils(!1));
@@ -2891,7 +2891,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           return s;
         };
       }, "es8", "es3");
-      var Ts = /* @__PURE__ */ Object.create(null), ag = { typeMap: Ts }, dr = /* @__PURE__ */ Object.create(null), We = "default", I = class {
+      var Ts = /* @__PURE__ */ Object.create(null), hg = { typeMap: Ts }, dr = /* @__PURE__ */ Object.create(null), We = "default", I = class {
         constructor(e) {
           this.name = e;
         }
@@ -2900,9 +2900,9 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
       };
       I.CONNECTION_CHECKER = new I("connectionChecker"), I.CONNECTION_PREVIEWER = new I("connectionPreviewer"), I.CURSOR = new I("cursor"), I.EVENT = new I("event"), I.FIELD = new I("field"), I.INPUT = new I("input"), I.RENDERER = new I("renderer"), I.TOOLBOX = new I("toolbox"), I.THEME = new I("theme"), I.TOOLBOX_ITEM = new I("toolboxItem"), I.FLYOUTS_VERTICAL_TOOLBOX = new I("flyoutsVerticalToolbox"), I.FLYOUTS_HORIZONTAL_TOOLBOX = new I("flyoutsHorizontalToolbox"), I.FLYOUT_INFLATER = new I("flyoutInflater"), I.METRICS_MANAGER = new I("metricsManager"), I.BLOCK_DRAGGER = new I("blockDragger"), I.SERIALIZER = new I("serializer"), I.ICON = new I("icon"), I.PASTER = new I("paster"), I.VARIABLE_MODEL = new I("variableModel"), I.VARIABLE_MAP = new I("variableMap");
-      var Gt = { DEFAULT: We, TEST_ONLY: ag };
-      Gt.Type = I, Gt.getAllItems = ro, Gt.getClass = Ge, Gt.getClassFromOptions = Re, Gt.getObject = ct, Gt.hasItem = no, Gt.register = c, Gt.unregister = $e;
-      var Q = /* @__PURE__ */ Object.create(null), hg = 750, U_ = "ontouchstart" in globalThis || !!(globalThis.document && document.documentElement && "ontouchstart" in document.documentElement) || !(!globalThis.navigator || !globalThis.navigator.maxTouchPoints && !globalThis.navigator.msMaxTouchPoints), _r = null, xs = {
+      var Gt = { DEFAULT: We, TEST_ONLY: hg };
+      Gt.Type = I, Gt.getAllItems = no, Gt.getClass = Ge, Gt.getClassFromOptions = Re, Gt.getObject = ct, Gt.hasItem = io, Gt.register = c, Gt.unregister = K;
+      var ee = /* @__PURE__ */ Object.create(null), dg = 750, U_ = "ontouchstart" in globalThis || !!(globalThis.document && document.documentElement && "ontouchstart" in document.documentElement) || !(!globalThis.navigator || !globalThis.navigator.maxTouchPoints && !globalThis.navigator.msMaxTouchPoints), _r = null, Bs = {
         mousedown: ["pointerdown"],
         mouseenter: ["pointerenter"],
         mouseleave: ["pointerleave"],
@@ -2912,8 +2912,8 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         mouseup: ["pointerup", "pointercancel"],
         touchend: ["pointerup"],
         touchcancel: ["pointercancel"]
-      }, Tr = 0, Us = { TOUCH_ENABLED: U_, TOUCH_MAP: xs };
-      Us.checkTouchIdentifier = ts, Us.clearTouchIdentifier = J, Us.getTouchIdentifierFromEvent = wt, Us.longStart = oi, Us.longStop = Qe, Us.shouldHandleEvent = bs;
+      }, Tr = 0, xs = { TOUCH_ENABLED: U_, TOUCH_MAP: Bs };
+      xs.checkTouchIdentifier = ts, xs.clearTouchIdentifier = q, xs.getTouchIdentifierFromEvent = wt, xs.longStart = si, xs.longStop = Qe, xs.shouldHandleEvent = Ls;
       var Mu, F_, H_, G_, $r, Er, yu, V_, X_, W_;
       (function(e) {
         function t(o) {
@@ -2923,7 +2923,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         const s = Mu.toUpperCase();
         F_ = t("JavaFX"), H_ = t("WebKit"), G_ = t("Gecko") && !H_, $r = t("Android"), e = globalThis.navigator && globalThis.navigator.maxTouchPoints, Er = t("iPad") || t("Macintosh") && e > 0, yu = t("iPhone") && !Er, V_ = t("Macintosh"), X_ = Er || $r && !t("Mobile") || t("Silk"), W_ = !X_ && (yu || $r);
       })(globalThis.navigator && globalThis.navigator.userAgent || "");
-      var dg = Mu, Y_ = F_, z_ = G_, K_ = $r, vu = Er, J_ = yu, gr = V_, j_ = W_, _g = {
+      var _g = Mu, Y_ = F_, z_ = G_, K_ = $r, vu = Er, J_ = yu, gr = V_, j_ = W_, Tg = {
         ANDROID: K_,
         GECKO: z_,
         IPAD: vu,
@@ -2931,9 +2931,9 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         JavaFx: Y_,
         MAC: gr,
         MOBILE: j_,
-        raw: dg
+        raw: _g
       }, q_ = 40, Z_ = 125, Vt = {};
-      Vt.bind = Be, Vt.conditionalBind = P, Vt.getScrollDeltaPixels = As, Vt.isRightButton = Ve, Vt.isTargetInput = fs, Vt.mouseToSvg = ss, Vt.unbind = G;
+      Vt.bind = xe, Vt.conditionalBind = k, Vt.getScrollDeltaPixels = fs, Vt.isRightButton = Ve, Vt.isTargetInput = bs, Vt.mouseToSvg = ss, Vt.unbind = V;
       var g;
       (function(e) {
         e.BLOCK_CREATE = "create", e.BLOCK_DELETE = "delete", e.BLOCK_CHANGE = "change", e.BLOCK_FIELD_INTERMEDIATE_CHANGE = "block_field_intermediate_change", e.BLOCK_MOVE = "move", e.VAR_CREATE = "var_create", e.VAR_DELETE = "var_delete", e.VAR_RENAME = "var_rename", e.VAR_TYPE_CHANGE = "var_type_change", e.UI = "ui", e.BLOCK_DRAG = "drag", e.SELECTED = "selected", e.CLICK = "click", e.MARKER_MOVE = "marker_move", e.BUBBLE_OPEN = "bubble_open", e.TRASHCAN_OPEN = "trashcan_open", e.TOOLBOX_ITEM_SELECT = "toolbox_item_select", e.THEME_CHANGE = "theme_change", e.VIEWPORT_CHANGE = "viewport_change", e.COMMENT_CREATE = "comment_create", e.COMMENT_DELETE = "comment_delete", e.COMMENT_CHANGE = "comment_change", e.COMMENT_MOVE = "comment_move", e.COMMENT_RESIZE = "comment_resize", e.COMMENT_DRAG = "comment_drag", e.COMMENT_COLLAPSE = "comment_collapse", e.FINISHED_LOADING = "finished_loading";
@@ -2942,28 +2942,28 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         const e = eT.length, t = [];
         for (let s = 0; s < 20; s++) t[s] = eT.charAt(Math.random() * e);
         return t.join("");
-      } }, Tg = 0, ku = { TEST_ONLY: tT };
-      ku.genUid = et, ku.getNextUniqueId = ne;
-      var sT = "", ki = !0, Pu = 0, Du = "ORPHANED_BLOCK", Xt = [], oT = {
+      } }, $g = 0, ku = { TEST_ONLY: tT };
+      ku.genUid = et, ku.getNextUniqueId = re;
+      var sT = "", vi = !0, Pu = 0, Du = "ORPHANED_BLOCK", Xt = [], oT = {
         FIRE_QUEUE: Xt,
-        enqueueEvent: li,
-        fireNow: uo,
+        enqueueEvent: ri,
+        fireNow: co,
         fireInternal: dn,
         setGroupInternal: _n
       };
       i.disable$$module$build$src$core$events$utils, i.enable$$module$build$src$core$events$utils, i.getGroup$$module$build$src$core$events$utils, i.setGroup$$module$build$src$core$events$utils, i.setRecordUndo$$module$build$src$core$events$utils;
-      var Pi = "http://www.w3.org/2000/svg", Fs = "http://www.w3.org/1999/xhtml", Ye = "http://www.w3.org/1999/xlink", Wt;
+      var ki = "http://www.w3.org/2000/svg", Us = "http://www.w3.org/1999/xhtml", Ye = "http://www.w3.org/1999/xlink", Wt;
       (function(e) {
         e[e.ELEMENT_NODE = 1] = "ELEMENT_NODE", e[e.TEXT_NODE = 3] = "TEXT_NODE", e[e.COMMENT_NODE = 8] = "COMMENT_NODE";
       })(Wt || (Wt = {}));
-      var at = null, wu = 0, Di = null, be = { HTML_NS: Fs };
-      be.NodeType = Wt, be.SVG_NS = Pi, be.XLINK_NS = Ye, be.addClass = L, be.createSvgElement = O, be.getFastTextWidth = En, be.getFastTextWidthWithSizeString = Cs, be.getTextWidth = pe, be.hasClass = ho, be.insertAfter = Bt, be.measureFontMetrics = To, be.removeClass = F, be.removeClasses = ns, be.removeNode = V, be.setCssTransform = _o, be.startTextWidthCache = xt, be.stopTextWidthCache = Ut;
+      var at = null, wu = 0, Pi = null, be = { HTML_NS: Us };
+      be.NodeType = Wt, be.SVG_NS = ki, be.XLINK_NS = Ye, be.addClass = L, be.createSvgElement = O, be.getFastTextWidth = En, be.getFastTextWidthWithSizeString = As, be.getTextWidth = pe, be.hasClass = ao, be.insertAfter = Bt, be.measureFontMetrics = _o, be.removeClass = H, be.removeClasses = ns, be.removeNode = X, be.setCssTransform = ho, be.startTextWidthCache = xt, be.stopTextWidthCache = Ut;
       var fe = class {
         static findFocusedNode(e) {
           var t = e.getRootFocusableNode();
           if (!t.canBeFocused()) return null;
           var s = t.getFocusableElement();
-          return ho(s, fe.ACTIVE_CLASS_NAME) || ho(s, fe.PASSIVE_CSS_CLASS_NAME) || (t = s.querySelector(this.ACTIVE_FOCUS_NODE_CSS_SELECTOR), (t instanceof HTMLElement || t instanceof SVGElement) && (t = fe.findFocusableNodeFor(t, e))) ? t : (s = s.querySelector(this.PASSIVE_FOCUS_NODE_CSS_SELECTOR), (s instanceof HTMLElement || s instanceof SVGElement) && (e = fe.findFocusableNodeFor(s, e)) ? e : null);
+          return ao(s, fe.ACTIVE_CLASS_NAME) || ao(s, fe.PASSIVE_CSS_CLASS_NAME) || (t = s.querySelector(this.ACTIVE_FOCUS_NODE_CSS_SELECTOR), (t instanceof HTMLElement || t instanceof SVGElement) && (t = fe.findFocusableNodeFor(t, e))) ? t : (s = s.querySelector(this.PASSIVE_FOCUS_NODE_CSS_SELECTOR), (s instanceof HTMLElement || s instanceof SVGElement) && (e = fe.findFocusableNodeFor(s, e)) ? e : null);
         }
         static findFocusableNodeFor(e, t) {
           if (!e.id || e.id === "null" || t.getNestedTrees().map((n) => fe.findFocusableNodeFor(e, n)).findIndex((n) => !!n) !== -1) return null;
@@ -2974,11 +2974,11 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
       };
       fe.ACTIVE_CLASS_NAME = "blocklyActiveFocus", fe.PASSIVE_CSS_CLASS_NAME = "blocklyPassiveFocus", fe.ACTIVE_FOCUS_NODE_CSS_SELECTOR = `.${fe.ACTIVE_CLASS_NAME}`, fe.PASSIVE_FOCUS_NODE_CSS_SELECTOR = `.${fe.PASSIVE_CSS_CLASS_NAME}`;
-      var $g = class {
+      var Eg = class {
         constructor(e, t) {
           this.tree = e, this.rootShouldBeAutoTabbable = t;
         }
-      }, Ne = class {
+      }, Me = class {
         constructor(e) {
           this.previouslyFocusedNode = this.focusedNode = null, this.registeredTrees = [], this.isUpdatingFocusedNode = this.recentlyLostAllFocus = this.lockFocusStateChanges = this.currentlyHoldsEphemeralFocus = !1;
           const t = (s) => {
@@ -3003,7 +3003,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         registerTree(e, t = !1) {
           if (this.ensureManagerIsUnlocked(), this.isRegistered(e)) throw Error(`Attempted to re-register already registered tree: ${e}.`);
-          this.registeredTrees.push(new $g(e, t));
+          this.registeredTrees.push(new Eg(e, t));
           const s = e.getRootFocusableNode().getFocusableElement();
           if (!s.id || s.id === "null") throw Error(`Attempting to register a tree with a root element that has an invalid ID: ${e}.`);
           t && (s.tabIndex = 0);
@@ -3102,25 +3102,25 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           e.onNodeBlur(), this.lockFocusStateChanges = !1, s !== t && this.setNodeToVisualPassiveFocus(e);
         }
         setNodeToVisualActiveFocus(e) {
-          e = e.getFocusableElement(), L(e, Ne.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), F(e, Ne.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME);
+          e = e.getFocusableElement(), L(e, Me.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), H(e, Me.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME);
         }
         setNodeToVisualPassiveFocus(e) {
-          e = e.getFocusableElement(), F(e, Ne.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), L(
+          e = e.getFocusableElement(), H(e, Me.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), L(
             e,
-            Ne.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME
+            Me.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME
           );
         }
         removeHighlight(e) {
-          e = e.getFocusableElement(), F(e, Ne.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), F(e, Ne.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME);
+          e = e.getFocusableElement(), H(e, Me.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), H(e, Me.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME);
         }
         static getFocusManager() {
-          return Ne.focusManager || (Ne.focusManager = new Ne(document.addEventListener)), Ne.focusManager;
+          return Me.focusManager || (Me.focusManager = new Me(document.addEventListener)), Me.focusManager;
         }
       };
-      Ne.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME = "blocklyActiveFocus", Ne.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME = "blocklyPassiveFocus", Ne.focusManager = null, i.getFocusManager$$module$build$src$core$focus_manager;
+      Me.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME = "blocklyActiveFocus", Me.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME = "blocklyPassiveFocus", Me.focusManager = null, i.getFocusManager$$module$build$src$core$focus_manager;
       var iT = {};
       iT.deepMerge = tt;
-      var ee = class {
+      var te = class {
         constructor() {
           this.shortcuts = /* @__PURE__ */ new Map(), this.keyMap = /* @__PURE__ */ new Map(), this.reset();
         }
@@ -3186,29 +3186,29 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
         serializeKeyEvent(e) {
           let t = "";
-          for (const s in ee.modifierKeys) e.getModifierState(s) && (t !== "" && (t += "+"), t += s);
+          for (const s in te.modifierKeys) e.getModifierState(s) && (t !== "" && (t += "+"), t += s);
           return t !== "" && e.keyCode ? t += "+" + e.keyCode : e.keyCode && (t = String(e.keyCode)), t;
         }
         checkModifiers(e) {
-          for (const t of e) if (!(t in ee.modifierKeys)) throw Error(t + " is not a valid modifier key.");
+          for (const t of e) if (!(t in te.modifierKeys)) throw Error(t + " is not a valid modifier key.");
         }
         createSerializedKey(e, t) {
           let s = "";
           if (t) {
             this.checkModifiers(t);
-            for (const o in ee.modifierKeys) t.includes(ee.modifierKeys[o]) && (s !== "" && (s += "+"), s += o);
+            for (const o in te.modifierKeys) t.includes(te.modifierKeys[o]) && (s !== "" && (s += "+"), s += o);
           }
           return s !== "" && e ? s += "+" + e : e && (s = `${e}`), s;
         }
       };
-      ee.registry = new ee(), (function(e) {
+      te.registry = new te(), (function(e) {
         e = e.modifierKeys || (e.modifierKeys = {}), e[e.Shift = 16] = "Shift", e[e.Control = 17] = "Control", e[e.Alt = 18] = "Alt", e[e.Meta = 91] = "Meta";
-      })(ee || (ee = {}));
-      var wi = /* @__PURE__ */ Object.create(null), nT, rT, Bi = [], lT = { defineBlocksWithJsonArrayInternal: Eh }, me = { TEST_ONLY: lT };
-      me.createBlockDefinitionsFromJsonArray = i.createBlockDefinitionsFromJsonArray$$module$build$src$core$common, me.defineBlocks = i.defineBlocks$$module$build$src$core$common, me.defineBlocksWithJsonArray = pl, me.draggingConnections = Bi, me.fireSelectedEvent = S, me.getAllWorkspaces = rs, me.getBlockTypeCounts = hi, me.getMainWorkspace = l, me.getParentContainer = Z, me.getSelected = T, me.getWorkspaceById = pt, me.globalShortcutHandler = di, me.registerWorkspace = ai, me.setMainWorkspace = a, me.setParentContainer = ls, me.setSelected = p, me.svgResize = Ns, me.unregisterWorkpace = Eo;
+      })(te || (te = {}));
+      var Di = /* @__PURE__ */ Object.create(null), nT, rT, wi = [], lT = { defineBlocksWithJsonArrayInternal: Eh }, me = { TEST_ONLY: lT };
+      me.createBlockDefinitionsFromJsonArray = i.createBlockDefinitionsFromJsonArray$$module$build$src$core$common, me.defineBlocks = i.defineBlocks$$module$build$src$core$common, me.defineBlocksWithJsonArray = pl, me.draggingConnections = wi, me.fireSelectedEvent = S, me.getAllWorkspaces = rs, me.getBlockTypeCounts = ai, me.getMainWorkspace = l, me.getParentContainer = Q, me.getSelected = T, me.getWorkspaceById = pt, me.globalShortcutHandler = hi, me.registerWorkspace = ui, me.setMainWorkspace = a, me.setParentContainer = ls, me.setSelected = p, me.svgResize = Cs, me.unregisterWorkpace = $o;
       var Yt = class {
         constructor() {
-          this.workspaceId = void 0, this.isUiEvent = !1, this.type = "", this.group = i.getGroup$$module$build$src$core$events$utils(), this.recordUndo = Ce();
+          this.workspaceId = void 0, this.isUiEvent = !1, this.type = "", this.group = i.getGroup$$module$build$src$core$events$utils(), this.recordUndo = Ne();
         }
         toJson() {
           return { type: this.type, group: this.group };
@@ -3257,7 +3257,7 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
         }
       };
       zt.POSITIONABLE = new zt("positionable"), zt.DRAG_TARGET = new zt("drag_target"), zt.DELETE_AREA = new zt("delete_area"), zt.AUTOHIDEABLE = new zt("autohideable");
-      var te = class {
+      var se = class {
         constructor() {
           this.componentData = /* @__PURE__ */ new Map(), this.capabilityToComponentIds = /* @__PURE__ */ new Map();
         }
@@ -3329,9 +3329,9 @@ Use ` + o + " instead."), PT.has(e) || (PT.add(e), console.warn(e));
           return s;
         }
       };
-      te.Capability = zt, (function(e) {
+      se.Capability = zt, (function(e) {
         e = e.ComponentWeight || (e.ComponentWeight = {}), e[e.TOOLBOX_WEIGHT = 0] = "TOOLBOX_WEIGHT", e[e.FLYOUT_WEIGHT = 1] = "FLYOUT_WEIGHT", e[e.TRASHCAN_WEIGHT = 2] = "TRASHCAN_WEIGHT", e[e.ZOOM_CONTROLS_WEIGHT = 3] = "ZOOM_CONTROLS_WEIGHT";
-      })(te || (te = {})), te.ComponentWeight;
+      })(se || (se = {})), se.ComponentWeight;
       var Uu = !1, Fu = `
 .blocklySvg {
   background-color: #fff;
@@ -3865,26 +3865,26 @@ input[type=number] {
           return new w(Math.min(e.width, t.width), Math.min(e.height, t.height));
         }
       }, uT = { getSizeInternal: gh }, $s = { TEST_ONLY: uT };
-      $s.getBorderBox = Rl, $s.getComputedStyle = It, $s.getContainerOffsetToScrollInto = Ll, $s.getPageOffset = cs, $s.getSize = _i, $s.getViewportPageOffset = Ol, $s.scrollIntoContainerView = Sl;
-      var aT = /translate\(\s*([-+\d.e]+)([ ,]\s*([-+\d.e]+)\s*)?/, hT = /transform:\s*translate(?:3d)?\(\s*([-+\d.e]+)\s*px([ ,]\s*([-+\d.e]+)\s*px)?/, Eg = { XY_REGEX: aT, XY_STYLE_REGEX: hT }, Hs = { TEST_ONLY: Eg };
-      Hs.getDocumentScroll = fl, Hs.getInjectionDivXY = gn, Hs.getRelativeXY = Ti, Hs.getViewportBBox = bl, Hs.screenToWsCoordinates = $i, Hs.wsToScreenCoordinates = go;
-      var he = class {
+      $s.getBorderBox = Rl, $s.getComputedStyle = It, $s.getContainerOffsetToScrollInto = Ll, $s.getPageOffset = cs, $s.getSize = di, $s.getViewportPageOffset = Ol, $s.scrollIntoContainerView = Sl;
+      var aT = /translate\(\s*([-+\d.e]+)([ ,]\s*([-+\d.e]+)\s*)?/, hT = /transform:\s*translate(?:3d)?\(\s*([-+\d.e]+)\s*px([ ,]\s*([-+\d.e]+)\s*px)?/, gg = { XY_REGEX: aT, XY_STYLE_REGEX: hT }, Fs = { TEST_ONLY: gg };
+      Fs.getDocumentScroll = fl, Fs.getInjectionDivXY = gn, Fs.getRelativeXY = _i, Fs.getViewportBBox = bl, Fs.screenToWsCoordinates = Ti, Fs.wsToScreenCoordinates = Eo;
+      var de = class {
         constructor(e, t, s, o, n) {
-          this.workspace = e, this.horizontal = t, this.oldHostMetrics = null, this.ratio = 1, this.origin = new R(0, 0), this.startDragHandle = this.handlePosition = this.handleLength = this.scrollbarLength = this.startDragMouse = 0, this.containerVisible = this.isHandleVisible = !0, this.position = new R(0, 0), this.onMouseMoveWrapper_ = this.onMouseUpWrapper_ = null, this.pair = s || !1, this.margin = n !== void 0 ? n : he.DEFAULT_SCROLLBAR_MARGIN, e = "blocklyScrollbar" + (this.horizontal ? "Horizontal" : "Vertical"), o && (e += " " + o), this.outerSvg = O($.SVG, { class: e }), o = O($.G, {}, this.outerSvg), this.svgBackground = O(
+          this.workspace = e, this.horizontal = t, this.oldHostMetrics = null, this.ratio = 1, this.origin = new R(0, 0), this.startDragHandle = this.handlePosition = this.handleLength = this.scrollbarLength = this.startDragMouse = 0, this.containerVisible = this.isHandleVisible = !0, this.position = new R(0, 0), this.onMouseMoveWrapper_ = this.onMouseUpWrapper_ = null, this.pair = s || !1, this.margin = n !== void 0 ? n : de.DEFAULT_SCROLLBAR_MARGIN, e = "blocklyScrollbar" + (this.horizontal ? "Horizontal" : "Vertical"), o && (e += " " + o), this.outerSvg = O($.SVG, { class: e }), o = O($.G, {}, this.outerSvg), this.svgBackground = O(
             $.RECT,
             { class: "blocklyScrollbarBackground" },
             o
-          ), e = Math.floor((he.scrollbarThickness - 5) / 2), this.svgHandle = O($.RECT, { class: "blocklyScrollbarHandle", rx: e, ry: e }, o), this.workspace.getThemeManager().subscribe(this.svgHandle, "scrollbarColour", "fill"), this.workspace.getThemeManager().subscribe(this.svgHandle, "scrollbarOpacity", "fill-opacity"), Bt(
+          ), e = Math.floor((de.scrollbarThickness - 5) / 2), this.svgHandle = O($.RECT, { class: "blocklyScrollbarHandle", rx: e, ry: e }, o), this.workspace.getThemeManager().subscribe(this.svgHandle, "scrollbarColour", "fill"), this.workspace.getThemeManager().subscribe(this.svgHandle, "scrollbarOpacity", "fill-opacity"), Bt(
             this.outerSvg,
             this.workspace.getParentSvg()
-          ), this.setInitialThickness(), t ? (this.lengthAttribute_ = "width", this.positionAttribute_ = "x") : (this.lengthAttribute_ = "height", this.positionAttribute_ = "y"), this.onMouseDownBarWrapper_ = P(this.svgBackground, "pointerdown", this, this.onMouseDownBar), this.onMouseDownHandleWrapper_ = P(this.svgHandle, "pointerdown", this, this.onMouseDownHandle);
+          ), this.setInitialThickness(), t ? (this.lengthAttribute_ = "width", this.positionAttribute_ = "x") : (this.lengthAttribute_ = "height", this.positionAttribute_ = "y"), this.onMouseDownBarWrapper_ = k(this.svgBackground, "pointerdown", this, this.onMouseDownBar), this.onMouseDownHandleWrapper_ = k(this.svgHandle, "pointerdown", this, this.onMouseDownHandle);
         }
         setInitialThickness() {
-          const e = he.scrollbarThickness;
+          const e = de.scrollbarThickness;
           this.horizontal ? (this.svgBackground.setAttribute("height", String(e)), this.outerSvg.setAttribute("height", String(e)), this.svgHandle.setAttribute("height", String(e - 5)), this.svgHandle.setAttribute("y", "2.5")) : (this.svgBackground.setAttribute("width", String(e)), this.outerSvg.setAttribute("width", String(e)), this.svgHandle.setAttribute("width", String(e - 5)), this.svgHandle.setAttribute("x", "2.5"));
         }
         dispose() {
-          this.cleanUp(), G(this.onMouseDownBarWrapper_), G(this.onMouseDownHandleWrapper_), V(this.outerSvg), this.workspace.getThemeManager().unsubscribe(this.svgHandle);
+          this.cleanUp(), V(this.onMouseDownBarWrapper_), V(this.onMouseDownHandleWrapper_), X(this.outerSvg), this.workspace.getThemeManager().unsubscribe(this.svgHandle);
         }
         constrainHandleLength(e) {
           return e = e <= 0 || isNaN(e) ? 0 : Math.min(e, this.scrollbarLength);
@@ -3905,10 +3905,10 @@ input[type=number] {
           this.scrollbarLength = e, this.outerSvg.setAttribute(this.lengthAttribute_, String(this.scrollbarLength)), this.svgBackground.setAttribute(this.lengthAttribute_, String(this.scrollbarLength));
         }
         setPosition(e, t) {
-          this.position.x = e, this.position.y = t, _o(this.outerSvg, "translate(" + (this.position.x + this.origin.x) + "px," + (this.position.y + this.origin.y) + "px)");
+          this.position.x = e, this.position.y = t, ho(this.outerSvg, "translate(" + (this.position.x + this.origin.x) + "px," + (this.position.y + this.origin.y) + "px)");
         }
         resize(e) {
-          !e && (e = this.workspace.getMetrics(), !e) || this.oldHostMetrics && he.metricsAreEquivalent(e, this.oldHostMetrics) || (this.horizontal ? this.resizeHorizontal(e) : this.resizeVertical(e), this.oldHostMetrics = e, this.updateMetrics());
+          !e && (e = this.workspace.getMetrics(), !e) || this.oldHostMetrics && de.metricsAreEquivalent(e, this.oldHostMetrics) || (this.horizontal ? this.resizeHorizontal(e) : this.resizeVertical(e), this.oldHostMetrics = e, this.updateMetrics());
         }
         requiresViewResize(e) {
           return this.oldHostMetrics ? this.oldHostMetrics.viewWidth !== e.viewWidth || this.oldHostMetrics.viewHeight !== e.viewHeight || this.oldHostMetrics.absoluteLeft !== e.absoluteLeft || this.oldHostMetrics.absoluteTop !== e.absoluteTop : !0;
@@ -3918,7 +3918,7 @@ input[type=number] {
         }
         resizeViewHorizontal(e) {
           var t = e.viewWidth - this.margin * 2;
-          this.pair && (t -= he.scrollbarThickness), this.setScrollbarLength(Math.max(0, t)), t = e.absoluteLeft + this.margin, this.pair && this.workspace.RTL && (t += he.scrollbarThickness), this.setPosition(t, e.absoluteTop + e.viewHeight - he.scrollbarThickness - this.margin), this.resizeContentHorizontal(e);
+          this.pair && (t -= de.scrollbarThickness), this.setScrollbarLength(Math.max(0, t)), t = e.absoluteLeft + this.margin, this.pair && this.workspace.RTL && (t += de.scrollbarThickness), this.setPosition(t, e.absoluteTop + e.viewHeight - de.scrollbarThickness - this.margin), this.resizeContentHorizontal(e);
         }
         resizeContentHorizontal(e) {
           if (e.viewWidth >= e.scrollWidth) this.setHandleLength(this.scrollbarLength), this.setHandlePosition(0), this.pair || this.setVisible(!1);
@@ -3935,7 +3935,7 @@ input[type=number] {
         }
         resizeViewVertical(e) {
           let t = e.viewHeight - this.margin * 2;
-          this.pair && (t -= he.scrollbarThickness), this.setScrollbarLength(Math.max(0, t)), this.setPosition(this.workspace.RTL ? e.absoluteLeft + this.margin : e.absoluteLeft + e.viewWidth - he.scrollbarThickness - this.margin, e.absoluteTop + this.margin), this.resizeContentVertical(e);
+          this.pair && (t -= de.scrollbarThickness), this.setScrollbarLength(Math.max(0, t)), this.setPosition(this.workspace.RTL ? e.absoluteLeft + this.margin : e.absoluteLeft + e.viewWidth - de.scrollbarThickness - this.margin, e.absoluteTop + this.margin), this.resizeContentVertical(e);
         }
         resizeContentVertical(e) {
           if (e.viewHeight >= e.scrollHeight) this.setHandleLength(this.scrollbarLength), this.setHandlePosition(0), this.pair || this.setVisible(!1);
@@ -3966,7 +3966,7 @@ input[type=number] {
           this.containerVisible && this.isVisible() ? this.outerSvg.setAttribute("display", "block") : this.outerSvg.setAttribute("display", "none");
         }
         onMouseDownBar(e) {
-          if (this.workspace.markFocused(), J(), this.cleanUp(), Ve(e)) e.stopPropagation();
+          if (this.workspace.markFocused(), q(), this.cleanUp(), Ve(e)) e.stopPropagation();
           else {
             var t = ss(e, this.workspace.getParentSvg(), this.workspace.getInverseScreenCTM());
             t = this.horizontal ? t.x : t.y;
@@ -3977,7 +3977,7 @@ input[type=number] {
           }
         }
         onMouseDownHandle(e) {
-          this.workspace.markFocused(), this.cleanUp(), Ve(e) ? e.stopPropagation() : (this.startDragHandle = this.handlePosition, this.startDragMouse = this.horizontal ? e.clientX : e.clientY, this.onMouseUpWrapper_ = P(document, "pointerup", this, this.onMouseUpHandle), this.onMouseMoveWrapper_ = P(
+          this.workspace.markFocused(), this.cleanUp(), Ve(e) ? e.stopPropagation() : (this.startDragHandle = this.handlePosition, this.startDragMouse = this.horizontal ? e.clientX : e.clientY, this.onMouseUpWrapper_ = k(document, "pointerup", this, this.onMouseUpHandle), this.onMouseMoveWrapper_ = k(
             document,
             "pointermove",
             this,
@@ -3988,10 +3988,10 @@ input[type=number] {
           this.setHandlePosition(this.constrainHandlePosition(this.startDragHandle + ((this.horizontal ? e.clientX : e.clientY) - this.startDragMouse))), this.updateMetrics();
         }
         onMouseUpHandle() {
-          J(), this.cleanUp();
+          q(), this.cleanUp();
         }
         cleanUp() {
-          this.workspace.hideChaff(!0), this.onMouseUpWrapper_ && (G(this.onMouseUpWrapper_), this.onMouseUpWrapper_ = null), this.onMouseMoveWrapper_ && (G(this.onMouseMoveWrapper_), this.onMouseMoveWrapper_ = null);
+          this.workspace.hideChaff(!0), this.onMouseUpWrapper_ && (V(this.onMouseUpWrapper_), this.onMouseUpWrapper_ = null), this.onMouseMoveWrapper_ && (V(this.onMouseMoveWrapper_), this.onMouseMoveWrapper_ = null);
         }
         getRatio_() {
           let e = this.handlePosition / (this.scrollbarLength - this.handleLength);
@@ -4014,36 +4014,36 @@ input[type=number] {
           return e.viewWidth === t.viewWidth && e.viewHeight === t.viewHeight && e.viewLeft === t.viewLeft && e.viewTop === t.viewTop && e.absoluteTop === t.absoluteTop && e.absoluteLeft === t.absoluteLeft && e.scrollWidth === t.scrollWidth && e.scrollHeight === t.scrollHeight && e.scrollLeft === t.scrollLeft && e.scrollTop === t.scrollTop;
         }
       };
-      he.scrollbarThickness = U_ ? 25 : 15, he.DEFAULT_SCROLLBAR_MARGIN = 0.5;
+      de.scrollbarThickness = U_ ? 25 : 15, de.DEFAULT_SCROLLBAR_MARGIN = 0.5;
       var pr = { parseFromString: function() {
         throw Error("DOMParser was not found in the global scope and was not properly injected using injectDependencies");
       } }, Gu = { serializeToString: function() {
         throw Error("XMLSerializer was not foundin the global scope and was not properly injected using injectDependencies");
-      } }, { document: mr, DOMParser: xi, XMLSerializer: Ui } = globalThis;
-      xi && (pr = new xi()), Ui && (Gu = new Ui());
-      var dT = "https://developers.google.com/blockly/xml", gg = /[\x00-\x09\x0B\x0C\x0E-\x1F]/g, Do = { NAME_SPACE: dT };
-      Do.createElement = i.createElement$$module$build$src$core$utils$xml, Do.createTextNode = i.createTextNode$$module$build$src$core$utils$xml, Do.domToText = po, Do.injectDependencies = ph, Do.textToDom = i.textToDom$$module$build$src$core$utils$xml;
+      } }, { document: mr, DOMParser: Bi, XMLSerializer: xi } = globalThis;
+      Bi && (pr = new Bi()), xi && (Gu = new xi());
+      var dT = "https://developers.google.com/blockly/xml", pg = /[\x00-\x09\x0B\x0C\x0E-\x1F]/g, Po = { NAME_SPACE: dT };
+      Po.createElement = i.createElement$$module$build$src$core$utils$xml, Po.createTextNode = i.createTextNode$$module$build$src$core$utils$xml, Po.domToText = go, Po.injectDependencies = ph, Po.textToDom = i.textToDom$$module$build$src$core$utils$xml;
       var Vu = "categoryToolbox", _T = "flyoutToolbox", B;
       (function(e) {
         e[e.TOP = 0] = "TOP", e[e.BOTTOM = 1] = "BOTTOM", e[e.LEFT = 2] = "LEFT", e[e.RIGHT = 3] = "RIGHT";
       })(B || (B = {}));
       var TT = { hasCategoriesInternal: Oh }, Es = {};
-      Es.Position = B, Es.TEST_ONLY = TT, Es.convertFlyoutDefToJsonArray = Ei, Es.convertToolboxDefToJson = pn, Es.hasCategories = mn, Es.isCategoryCollapsible = In, Es.parseToolboxTree = Cl;
+      Es.Position = B, Es.TEST_ONLY = TT, Es.convertFlyoutDefToJsonArray = $i, Es.convertToolboxDefToJson = pn, Es.hasCategories = mn, Es.isCategoryCollapsible = In, Es.parseToolboxTree = Cl;
       var Kt;
       (function(e) {
         e[e.TOP = 0] = "TOP", e[e.BOTTOM = 1] = "BOTTOM";
       })(Kt || (Kt = {}));
-      var wo;
+      var Do;
       (function(e) {
         e[e.LEFT = 0] = "LEFT", e[e.RIGHT = 1] = "RIGHT";
-      })(wo || (wo = {}));
+      })(Do || (Do = {}));
       var gs;
       (function(e) {
         e[e.UP = 0] = "UP", e[e.DOWN = 1] = "DOWN";
       })(gs || (gs = {}));
-      var Gs = {};
-      Gs.bumpDirection = gs, Gs.bumpPositionRect = Ln, Gs.getCornerOppositeToolbox = Sn, Gs.getStartPositionRect = Rn, Gs.horizontalPosition = wo, Gs.verticalPosition = Kt;
-      var xe = { width: 96, height: 124, url: "sprites.png" }, $T = class {
+      var Hs = {};
+      Hs.bumpDirection = gs, Hs.bumpPositionRect = Ln, Hs.getCornerOppositeToolbox = Sn, Hs.getStartPositionRect = Rn, Hs.horizontalPosition = Do, Hs.verticalPosition = Kt;
+      var Ue = { width: 96, height: 124, url: "sprites.png" }, $T = class {
         constructor(e) {
           this.workspace = e, this.id = "zoomControls", this.boundEvents = [], this.zoomResetGroup = this.zoomOutGroup = this.zoomInGroup = null, this.HEIGHT = this.WIDTH = 32, this.SMALL_SPACING = 2, this.LARGE_SPACING = 11, this.MARGIN_HORIZONTAL = this.MARGIN_VERTICAL = 20, this.svgGroup = null, this.top = this.left = 0, this.initialized = !1;
         }
@@ -4053,11 +4053,11 @@ input[type=number] {
           return this.createZoomOutSvg(e), this.createZoomInSvg(e), this.workspace.isMovable() && this.createZoomResetSvg(e), this.svgGroup;
         }
         init() {
-          this.workspace.getComponentManager().addComponent({ component: this, weight: te.ComponentWeight.ZOOM_CONTROLS_WEIGHT, capabilities: [te.Capability.POSITIONABLE] }), this.initialized = !0;
+          this.workspace.getComponentManager().addComponent({ component: this, weight: se.ComponentWeight.ZOOM_CONTROLS_WEIGHT, capabilities: [se.Capability.POSITIONABLE] }), this.initialized = !0;
         }
         dispose() {
-          this.workspace.getComponentManager().removeComponent("zoomControls"), this.svgGroup && V(this.svgGroup);
-          for (const e of this.boundEvents) G(e);
+          this.workspace.getComponentManager().removeComponent("zoomControls"), this.svgGroup && X(this.svgGroup);
+          for (const e of this.boundEvents) V(e);
           this.boundEvents.length = 0;
         }
         getBoundingRectangle() {
@@ -4090,19 +4090,19 @@ input[type=number] {
             { id: "blocklyZoomoutClipPath" + e },
             this.zoomOutGroup
           );
-          O($.RECT, { width: 32, height: 32 }, t), O($.IMAGE, { width: xe.width, height: xe.height, x: -64, y: -92, "clip-path": "url(#blocklyZoomoutClipPath" + e + ")" }, this.zoomOutGroup).setAttributeNS(
+          O($.RECT, { width: 32, height: 32 }, t), O($.IMAGE, { width: Ue.width, height: Ue.height, x: -64, y: -92, "clip-path": "url(#blocklyZoomoutClipPath" + e + ")" }, this.zoomOutGroup).setAttributeNS(
             Ye,
             "xlink:href",
-            this.workspace.options.pathToMedia + xe.url
-          ), this.boundEvents.push(P(this.zoomOutGroup, "pointerdown", null, this.zoom.bind(this, -1)));
+            this.workspace.options.pathToMedia + Ue.url
+          ), this.boundEvents.push(k(this.zoomOutGroup, "pointerdown", null, this.zoom.bind(this, -1)));
         }
         createZoomInSvg(e) {
           this.zoomInGroup = O($.G, { class: "blocklyZoom blocklyZoomIn" }, this.svgGroup);
           const t = O($.CLIPPATH, { id: "blocklyZoominClipPath" + e }, this.zoomInGroup);
-          O($.RECT, { width: 32, height: 32 }, t), O($.IMAGE, { width: xe.width, height: xe.height, x: -32, y: -92, "clip-path": "url(#blocklyZoominClipPath" + e + ")" }, this.zoomInGroup).setAttributeNS(Ye, "xlink:href", this.workspace.options.pathToMedia + xe.url), this.boundEvents.push(P(this.zoomInGroup, "pointerdown", null, this.zoom.bind(this, 1)));
+          O($.RECT, { width: 32, height: 32 }, t), O($.IMAGE, { width: Ue.width, height: Ue.height, x: -32, y: -92, "clip-path": "url(#blocklyZoominClipPath" + e + ")" }, this.zoomInGroup).setAttributeNS(Ye, "xlink:href", this.workspace.options.pathToMedia + Ue.url), this.boundEvents.push(k(this.zoomInGroup, "pointerdown", null, this.zoom.bind(this, 1)));
         }
         zoom(e, t) {
-          this.workspace.markFocused(), this.workspace.zoomCenter(e), this.fireZoomEvent(), J(), t.stopPropagation(), t.preventDefault();
+          this.workspace.markFocused(), this.workspace.zoomCenter(e), this.fireZoomEvent(), q(), t.stopPropagation(), t.preventDefault();
         }
         createZoomResetSvg(e) {
           this.zoomResetGroup = O(
@@ -4111,12 +4111,12 @@ input[type=number] {
             this.svgGroup
           );
           const t = O($.CLIPPATH, { id: "blocklyZoomresetClipPath" + e }, this.zoomResetGroup);
-          O($.RECT, { width: 32, height: 32 }, t), O($.IMAGE, { width: xe.width, height: xe.height, y: -92, "clip-path": "url(#blocklyZoomresetClipPath" + e + ")" }, this.zoomResetGroup).setAttributeNS(Ye, "xlink:href", this.workspace.options.pathToMedia + xe.url), this.boundEvents.push(P(this.zoomResetGroup, "pointerdown", null, this.resetZoom.bind(this)));
+          O($.RECT, { width: 32, height: 32 }, t), O($.IMAGE, { width: Ue.width, height: Ue.height, y: -92, "clip-path": "url(#blocklyZoomresetClipPath" + e + ")" }, this.zoomResetGroup).setAttributeNS(Ye, "xlink:href", this.workspace.options.pathToMedia + Ue.url), this.boundEvents.push(k(this.zoomResetGroup, "pointerdown", null, this.resetZoom.bind(this)));
         }
         resetZoom(e) {
           this.workspace.markFocused();
           const t = Math.log(this.workspace.options.zoomOptions.startScale / this.workspace.scale) / Math.log(this.workspace.options.zoomOptions.scaleSpeed);
-          this.workspace.beginCanvasTransition(), this.workspace.zoomCenter(t), this.workspace.scrollCenter(), setTimeout(this.workspace.endCanvasTransition.bind(this.workspace), 500), this.fireZoomEvent(), J(), e.stopPropagation(), e.preventDefault();
+          this.workspace.beginCanvasTransition(), this.workspace.zoomCenter(t), this.workspace.scrollCenter(), setTimeout(this.workspace.endCanvasTransition.bind(this.workspace), 500), this.fireZoomEvent(), q(), e.stopPropagation(), e.preventDefault();
         }
         fireZoomEvent() {
           const e = new (M(g.CLICK))(null, this.workspace.id, "zoom_controls");
@@ -4136,32 +4136,32 @@ input[type=number] {
   opacity: .8;
 }
 `);
-      var ET = 100, gT = 75, pT = 50, mT = 25, pg = {
+      var ET = 100, gT = 75, pT = 50, mT = 25, mg = {
         BLOCKS: pT,
         PROCEDURES: gT,
         VARIABLES: ET,
         WORKSPACE_COMMENTS: mT
       }, Xu = {};
-      Xu.register = gi, Xu.unregister = Sh;
+      Xu.register = Ei, Xu.unregister = Sh;
       var IT = class {
         constructor() {
           this.priority = mT;
         }
         save(e) {
           const t = [];
-          for (const s of e.getTopComments()) (e = mo(s, { addCoordinates: !0, saveIds: !0 })) && t.push(e);
+          for (const s of e.getTopComments()) (e = po(s, { addCoordinates: !0, saveIds: !0 })) && t.push(e);
           return t.length ? t : null;
         }
         load(e, t) {
-          for (const s of e) pi(s, t, { recordUndo: Ce() });
+          for (const s of e) gi(s, t, { recordUndo: Ne() });
         }
         clear(e) {
           for (const t of e.getTopComments()) t.dispose();
         }
       };
-      gi("workspaceComments", new IT());
+      Ei("workspaceComments", new IT());
       var Ir = {};
-      Ir.WorkspaceCommentSerializer = IT, Ir.append = pi, Ir.save = mo;
+      Ir.WorkspaceCommentSerializer = IT, Ir.append = gi, Ir.save = po;
       var Wu = {};
       Wu.register = bn, Wu.unregister = Lh;
       var Or = class {
@@ -4169,37 +4169,37 @@ input[type=number] {
           e = e.commentState, s && (e.x = s.x, e.y = s.y), i.disable$$module$build$src$core$events$utils();
           let o;
           try {
-            o = pi(e, t), bh(o);
+            o = gi(e, t), bh(o);
           } finally {
             i.enable$$module$build$src$core$events$utils();
           }
-          return o ? (j() && v(new (M(g.COMMENT_CREATE))(o)), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(o), o) : null;
+          return o ? (Z() && v(new (M(g.COMMENT_CREATE))(o)), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(o), o) : null;
         }
       };
       Or.TYPE = "workspace-comment", bn(Or.TYPE, new Or());
       var Yu;
       Yu = 28, i.config$$module$build$src$core$config = { dragRadius: 5, flyoutDragRadius: 10, snapRadius: Yu, connectingSnapRadius: Yu, currentConnectionPreference: 8, bumpDelay: 250 }, i.config$$module$build$src$core$config;
-      var mg = "aria-", Ig = "role", ze;
+      var Ig = "aria-", Og = "role", ze;
       (function(e) {
         e.GRID = "grid", e.GRIDCELL = "gridcell", e.GROUP = "group", e.LISTBOX = "listbox", e.MENU = "menu", e.MENUITEM = "menuitem", e.MENUITEMCHECKBOX = "menuitemcheckbox", e.OPTION = "option", e.PRESENTATION = "presentation", e.ROW = "row", e.TREE = "tree", e.TREEITEM = "treeitem", e.SEPARATOR = "separator", e.STATUS = "status";
       })(ze || (ze = {}));
-      var se;
+      var oe;
       (function(e) {
         e.ACTIVEDESCENDANT = "activedescendant", e.COLCOUNT = "colcount", e.DISABLED = "disabled", e.EXPANDED = "expanded", e.INVALID = "invalid", e.LABEL = "label", e.LABELLEDBY = "labelledby", e.LEVEL = "level", e.ORIENTATION = "orientation", e.POSINSET = "posinset", e.ROWCOUNT = "rowcount", e.SELECTED = "selected", e.SETSIZE = "setsize", e.VALUEMAX = "valuemax", e.VALUEMIN = "valuemin", e.LIVE = "live", e.HIDDEN = "hidden";
-      })(se || (se = {}));
-      var Fi = {};
-      Fi.Role = ze, Fi.State = se, Fi.setRole = Ot, Fi.setState = re;
+      })(oe || (oe = {}));
+      var Ui = {};
+      Ui.Role = ze, Ui.State = oe, Ui.setRole = Ot, Ui.setState = le;
       var Rr = class {
         constructor(e, t) {
           this.content = e, this.opt_value = t, this.enabled = !0, this.element = null, this.rightToLeft = !1, this.roleName = null, this.highlight = this.checked = this.checkable = !1, this.actionHandler = null;
         }
         createDom() {
           const e = document.createElement("div");
-          e.id = ne(), this.element = e, e.className = "blocklyMenuItem " + (this.enabled ? "" : "blocklyMenuItemDisabled ") + (this.checked ? "blocklyMenuItemSelected " : "") + (this.highlight ? "blocklyMenuItemHighlight " : "") + (this.rightToLeft ? "blocklyMenuItemRtl " : "");
+          e.id = re(), this.element = e, e.className = "blocklyMenuItem " + (this.enabled ? "" : "blocklyMenuItemDisabled ") + (this.checked ? "blocklyMenuItemSelected " : "") + (this.highlight ? "blocklyMenuItemHighlight " : "") + (this.rightToLeft ? "blocklyMenuItemRtl " : "");
           const t = document.createElement("div");
           t.className = "blocklyMenuItemContent";
           let s = this.content;
-          return typeof this.content == "string" && (s = document.createTextNode(this.content)), t.appendChild(s), e.appendChild(t), this.checkable && this.toggleHasCheckbox(!0), this.roleName && Ot(e, this.roleName), re(e, se.SELECTED, this.checkable && this.checked || !1), re(e, se.DISABLED, !this.enabled), e;
+          return typeof this.content == "string" && (s = document.createTextNode(this.content)), t.appendChild(s), e.appendChild(t), this.checkable && this.toggleHasCheckbox(!0), this.roleName && Ot(e, this.roleName), le(e, oe.SELECTED, this.checkable && this.checked || !1), le(e, oe.DISABLED, !this.enabled), e;
         }
         dispose() {
           this.element = null;
@@ -4226,7 +4226,7 @@ input[type=number] {
           (this.checkable = e) || this.setChecked(!1), this.toggleHasCheckbox(e);
         }
         setChecked(e) {
-          (!e || this.checkable) && (this.checked = e, (e = this.getElement()) && (e.classList.toggle("blocklyMenuItemSelected", this.checked), re(e, se.SELECTED, this.checked)));
+          (!e || this.checkable) && (this.checked = e, (e = this.getElement()) && (e.classList.toggle("blocklyMenuItemSelected", this.checked), le(e, oe.SELECTED, this.checked)));
         }
         setHighlighted(e) {
           if (this.highlight = e, this.isEnabled()) {
@@ -4241,7 +4241,7 @@ input[type=number] {
           this.enabled = e, (e = this.getElement()) && (e.classList.toggle(
             "blocklyMenuItemDisabled",
             !this.enabled
-          ), re(e, se.DISABLED, !this.enabled));
+          ), le(e, oe.DISABLED, !this.enabled));
         }
         performAction(e) {
           this.isEnabled() && this.actionHandler && this.actionHandler(this, e);
@@ -4273,7 +4273,7 @@ input[type=number] {
           const t = document.createElement("div");
           t.className = "blocklyMenu", t.tabIndex = 0, this.roleName && Ot(t, this.roleName), this.element = t;
           for (let s = 0, o; o = this.menuItems[s]; s++) t.appendChild(o.createDom());
-          return this.pointerMoveHandler = P(t, "pointermove", this, this.handlePointerMove, !0), this.clickHandler = P(t, "pointerup", this, this.handleClick, !0), this.pointerEnterHandler = P(t, "pointerenter", this, this.handlePointerEnter, !0), this.pointerLeaveHandler = P(t, "pointerleave", this, this.handlePointerLeave, !0), this.onKeyDownHandler = P(t, "keydown", this, this.handleKeyEvent), e.appendChild(t), t;
+          return this.pointerMoveHandler = k(t, "pointermove", this, this.handlePointerMove, !0), this.clickHandler = k(t, "pointerup", this, this.handleClick, !0), this.pointerEnterHandler = k(t, "pointerenter", this, this.handlePointerEnter, !0), this.pointerLeaveHandler = k(t, "pointerleave", this, this.handlePointerLeave, !0), this.onKeyDownHandler = k(t, "keydown", this, this.handleKeyEvent), e.appendChild(t), t;
         }
         getElement() {
           return this.element;
@@ -4290,7 +4290,7 @@ input[type=number] {
           this.roleName = e;
         }
         dispose() {
-          this.pointerMoveHandler && (G(this.pointerMoveHandler), this.pointerMoveHandler = null), this.clickHandler && (G(this.clickHandler), this.clickHandler = null), this.pointerEnterHandler && (G(this.pointerEnterHandler), this.pointerEnterHandler = null), this.pointerLeaveHandler && (G(this.pointerLeaveHandler), this.pointerLeaveHandler = null), this.onKeyDownHandler && (G(this.onKeyDownHandler), this.onKeyDownHandler = null);
+          this.pointerMoveHandler && (V(this.pointerMoveHandler), this.pointerMoveHandler = null), this.clickHandler && (V(this.clickHandler), this.clickHandler = null), this.pointerEnterHandler && (V(this.pointerEnterHandler), this.pointerEnterHandler = null), this.pointerLeaveHandler && (V(this.pointerLeaveHandler), this.pointerLeaveHandler = null), this.onKeyDownHandler && (V(this.onKeyDownHandler), this.onKeyDownHandler = null);
           for (let e = 0, t; t = this.menuItems[e]; e++) t.dispose();
           this.element = null;
         }
@@ -4310,9 +4310,9 @@ input[type=number] {
           if (t && (t.setHighlighted(!1), this.highlightedItem = null), e) {
             e.setHighlighted(!0), this.highlightedItem = e, t = this.getElement();
             const s = e.getElement();
-            t && s && (Sl(s, t), re(
+            t && s && (Sl(s, t), le(
               t,
-              se.ACTIVEDESCENDANT,
+              oe.ACTIVEDESCENDANT,
               e.getId()
             ));
           }
@@ -4389,7 +4389,7 @@ input[type=number] {
           }
         }
         getSize() {
-          const e = this.getElement(), t = _i(e);
+          const e = this.getElement(), t = di(e);
           return t.height = e.scrollHeight, t;
         }
         getMenuItems() {
@@ -4406,11 +4406,11 @@ input[type=number] {
           let e;
           (e = this.element) == null || e.remove(), this.element = null;
         }
-      }, Hi = "_TEMP_COLLAPSED_INPUT", Sr = "_TEMP_COLLAPSED_FIELD", it = "MANUALLY_DISABLED", Og = { COLLAPSED_FIELD_NAME: Sr, COLLAPSED_INPUT_NAME: Hi, MANUALLY_DISABLED: it };
+      }, Fi = "_TEMP_COLLAPSED_INPUT", Sr = "_TEMP_COLLAPSED_FIELD", it = "MANUALLY_DISABLED", Rg = { COLLAPSED_FIELD_NAME: Sr, COLLAPSED_INPUT_NAME: Fi, MANUALLY_DISABLED: it };
       (function(e) {
         e[e.VALUE = 1] = "VALUE", e[e.STATEMENT = 3] = "STATEMENT", e[e.DUMMY = 5] = "DUMMY", e[e.CUSTOM = 6] = "CUSTOM", e[e.END_ROW = 7] = "END_ROW";
       })(i.inputTypes$$module$build$src$core$inputs$input_types || (i.inputTypes$$module$build$src$core$inputs$input_types = {})), i.inputTypes$$module$build$src$core$inputs$input_types;
-      var Lr = /* @__PURE__ */ new Set(), Ku = /* @__PURE__ */ new WeakSet(), Ju = /* @__PURE__ */ new WeakMap(), Bo = null, ju = null, RT = 0, br = {};
+      var Lr = /* @__PURE__ */ new Set(), Ku = /* @__PURE__ */ new WeakSet(), Ju = /* @__PURE__ */ new WeakMap(), wo = null, ju = null, RT = 0, br = {};
       br.finishQueuedRenders = Rt, br.queueRender = Nl, br.triggerQueuedRenders = us;
       var qu, ST;
       i.Msg$$module$build$src$core$msg = /* @__PURE__ */ Object.create(null), qu = function(e) {
@@ -4418,7 +4418,7 @@ input[type=number] {
           i.Msg$$module$build$src$core$msg[t] = e[t];
         });
       }, ST = { Msg: i.Msg$$module$build$src$core$msg, setLocale: qu };
-      var Gi = "blocklyToast", LT = "blocklyToastMessage", bT = "blocklyToastCloseButton", Vs = class {
+      var Hi = "blocklyToast", LT = "blocklyToastMessage", bT = "blocklyToastCloseButton", Gs = class {
         static show(e, t) {
           if (t.oncePerSession && t.id) {
             if (this.shownIds.has(t.id)) return;
@@ -4431,10 +4431,10 @@ input[type=number] {
           });
         }
         static createDom(e, t) {
-          const { message: s, duration: o = 5, assertiveness: n = Vs.Assertiveness.POLITE } = t, r = document.createElement("div");
-          e.getInjectionDiv().appendChild(r), r.dataset.toastId = t.id, r.className = Gi, Ot(r, ze.STATUS), re(r, se.LIVE, n), t = r.appendChild(document.createElement("div")), t.className = LT, t.innerText = s, t = r.appendChild(document.createElement("button")), t.className = bT, re(t, se.LABEL, i.Msg$$module$build$src$core$msg.CLOSE);
+          const { message: s, duration: o = 5, assertiveness: n = Gs.Assertiveness.POLITE } = t, r = document.createElement("div");
+          e.getInjectionDiv().appendChild(r), r.dataset.toastId = t.id, r.className = Hi, Ot(r, ze.STATUS), le(r, oe.LIVE, n), t = r.appendChild(document.createElement("div")), t.className = LT, t.innerText = s, t = r.appendChild(document.createElement("button")), t.className = bT, le(t, oe.LABEL, i.Msg$$module$build$src$core$msg.CLOSE);
           var u = O($.SVG, { width: 24, height: 24, viewBox: "0 0 24 24", fill: "none" }, t);
-          re(u, se.HIDDEN, !0), O(
+          le(u, oe.HIDDEN, !0), O(
             $.RECT,
             { x: 19.7782, y: 2.80762, width: 2, height: 24, transform: "rotate(45, 19.7782, 2.80762)", fill: "black" },
             u
@@ -4450,13 +4450,13 @@ input[type=number] {
           ), r.addEventListener("mousemove", u), r.addEventListener("mouseleave", t), t(), r;
         }
         static hide(e, t) {
-          e = e.getInjectionDiv().querySelector(`.${Gi}`), e instanceof HTMLElement && (!t || t === e.dataset.toastId) && e.remove();
+          e = e.getInjectionDiv().querySelector(`.${Hi}`), e instanceof HTMLElement && (!t || t === e.dataset.toastId) && e.remove();
         }
       };
-      Vs.shownIds = /* @__PURE__ */ new Set(), (function(e) {
+      Gs.shownIds = /* @__PURE__ */ new Set(), (function(e) {
         e = e.Assertiveness || (e.Assertiveness = {}), e.ASSERTIVE = "assertive", e.POLITE = "polite";
-      })(Vs || (Vs = {})), mt(`
-.${Gi} {
+      })(Gs || (Gs = {})), mt(`
+.${Hi} {
   font-size: 1.2rem;
   position: absolute;
   bottom: -10rem;
@@ -4474,11 +4474,11 @@ input[type=number] {
   transition: bottom 0.3s ease-out;
 }
 
-.${Gi} .${LT} {
+.${Hi} .${LT} {
   maxWidth: 18rem;
 }
 
-.${Gi} .${bT} {
+.${Hi} .${bT} {
   margin: 0;
   padding: 0.2rem;
   background-color: transparent;
@@ -4493,39 +4493,39 @@ input[type=number] {
         t(window.confirm(e));
       }, NT = CT, MT = function(e, t, s) {
         s(window.prompt(e, t));
-      }, yT = MT, vT = Vs.show.bind(Vs), kT = vT, Jt = {};
-      Jt.alert = Ii, Jt.confirm = An, Jt.prompt = Cn, Jt.setAlert = Nh, Jt.setConfirm = Mh, Jt.setPrompt = yh, Jt.setToast = kh, Jt.toast = vh;
+      }, yT = MT, vT = Gs.show.bind(Gs), kT = vT, Jt = {};
+      Jt.alert = mi, Jt.confirm = An, Jt.prompt = Cn, Jt.setAlert = Nh, Jt.setConfirm = Mh, Jt.setPrompt = yh, Jt.setToast = kh, Jt.toast = vh;
       var PT = /* @__PURE__ */ new Set(), DT = {};
       DT.warn = Se;
-      var Zu = "VARIABLE", Qu = "ijkmnopqrstuvwxyzabcdefgh", wT = { generateUniqueNameInternal: wh }, de = { CATEGORY_NAME: Zu, TEST_ONLY: wT, VAR_LETTER_OPTIONS: Qu };
-      de.allDeveloperVariables = i.allDeveloperVariables$$module$build$src$core$variables, de.allUsedVarModels = i.allUsedVarModels$$module$build$src$core$variables, de.compareByName = Oo, de.createVariableButtonHandler = Ms, de.deleteVariable = i.deleteVariable$$module$build$src$core$variables, de.flyoutCategory = Pl, de.flyoutCategoryBlocks = Dl, de.generateUniqueName = wl, de.generateUniqueNameFromOptions = vn, de.generateVariableFieldDom = ys, de.getAddedVariables = Pn, de.getOrCreateVariablePackage = i.getOrCreateVariablePackage$$module$build$src$core$variables, de.getVariable = i.getVariable$$module$build$src$core$variables, de.getVariableUsesById = Ro, de.internalFlyoutCategory = Nn, de.jsonFlyoutCategoryBlocks = yn, de.nameUsedWithAnyType = Bl, de.nameUsedWithConflictingParam = xl, de.promptName = kn, de.renameVariable = i.renameVariable$$module$build$src$core$variables;
-      var xo = class extends Error {
-      }, BT = class extends xo {
+      var Zu = "VARIABLE", Qu = "ijkmnopqrstuvwxyzabcdefgh", wT = { generateUniqueNameInternal: wh }, _e = { CATEGORY_NAME: Zu, TEST_ONLY: wT, VAR_LETTER_OPTIONS: Qu };
+      _e.allDeveloperVariables = i.allDeveloperVariables$$module$build$src$core$variables, _e.allUsedVarModels = i.allUsedVarModels$$module$build$src$core$variables, _e.compareByName = Io, _e.createVariableButtonHandler = Ns, _e.deleteVariable = i.deleteVariable$$module$build$src$core$variables, _e.flyoutCategory = Pl, _e.flyoutCategoryBlocks = Dl, _e.generateUniqueName = wl, _e.generateUniqueNameFromOptions = vn, _e.generateVariableFieldDom = Ms, _e.getAddedVariables = Pn, _e.getOrCreateVariablePackage = i.getOrCreateVariablePackage$$module$build$src$core$variables, _e.getVariable = i.getVariable$$module$build$src$core$variables, _e.getVariableUsesById = Oo, _e.internalFlyoutCategory = Nn, _e.jsonFlyoutCategoryBlocks = yn, _e.nameUsedWithAnyType = Bl, _e.nameUsedWithConflictingParam = xl, _e.promptName = kn, _e.renameVariable = i.renameVariable$$module$build$src$core$variables;
+      var Bo = class extends Error {
+      }, BT = class extends Bo {
         constructor(e) {
           super("Expected to find a 'type' property, defining the block type"), this.state = e;
         }
-      }, Vi = class extends xo {
+      }, Gi = class extends Bo {
         constructor(e, t, s) {
           super(`The block ${t.toDevString()} is missing a(n) ${e}
 connection`), this.block = t, this.state = s;
         }
-      }, xT = class extends xo {
+      }, xT = class extends Bo {
         constructor(e, t, s, o) {
           super(`The block ${s.toDevString()} could not connect its
 ${t} to its parent, because: ${e}`), this.childBlock = s, this.childState = o;
         }
-      }, UT = class extends xo {
+      }, UT = class extends Bo {
         constructor(e) {
           super(`Encountered a real block which is defined as a child of a shadow
 block. It is an invariant of Blockly that shadow blocks only have shadow
 children`), this.state = e;
         }
-      }, FT = class extends xo {
+      }, FT = class extends Bo {
         constructor(e, t, s) {
           super(`Cannot add an icon of type '${e}' to the block ${t.toDevString()}, because there is no icon registered with type '${e}'. Make sure that all of your icons have been registered.`), this.block = t, this.state = s;
         }
-      }, Xs = {};
-      Xs.BadConnectionCheck = xT, Xs.DeserializationError = xo, Xs.MissingBlockType = BT, Xs.MissingConnection = Vi, Xs.RealChildOfShadow = UT, Xs.UnregisteredIcon = FT;
+      }, Vs = {};
+      Vs.BadConnectionCheck = xT, Vs.DeserializationError = Bo, Vs.MissingBlockType = BT, Vs.MissingConnection = Gi, Vs.RealChildOfShadow = UT, Vs.UnregisteredIcon = FT;
       var HT = class {
         constructor() {
           this.priority = pT;
@@ -4537,19 +4537,19 @@ children`), this.state = e;
         }
         load(e, t) {
           e = e.blocks;
-          for (const s of e) vs(
+          for (const s of e) ys(
             s,
             t,
-            { recordUndo: Ce() }
+            { recordUndo: Ne() }
           );
         }
         clear(e) {
           for (const t of e.getTopBlocks(!1)) t.dispose(!1);
         }
       };
-      gi("blocks", new HT());
-      var Xi = {};
-      Xi.BlockSerializer = HT, Xi.append = vs, Xi.appendInternal = ks, Xi.save = st;
+      Ei("blocks", new HT());
+      var Vi = {};
+      Vi.BlockSerializer = HT, Vi.append = ys, Vi.appendInternal = vs, Vi.save = st;
       var Ee = class {
         constructor(e) {
           this.name = e;
@@ -4578,7 +4578,7 @@ children`), this.state = e;
             s ?? new nt()
           ), t.blockId = e.blockId, t;
         }
-      }, Ws = class extends nt {
+      }, Xs = class extends nt {
         constructor(e, t, s, o, n) {
           super(e), this.type = g.BLOCK_CHANGE, e && (this.element = t, this.name = s || void 0, this.oldValue = o, this.newValue = n);
         }
@@ -4588,7 +4588,7 @@ children`), this.state = e;
           return e.element = this.element, e.name = this.name, e.oldValue = this.oldValue, e.newValue = this.newValue, this.disabledReason && (e.disabledReason = this.disabledReason), e;
         }
         static fromJson(e, t, s) {
-          return t = nt.fromJson(e, t, s ?? new Ws()), t.element = e.element, t.name = e.name, t.oldValue = e.oldValue, t.newValue = e.newValue, e.disabledReason !== void 0 && (t.disabledReason = e.disabledReason), t;
+          return t = nt.fromJson(e, t, s ?? new Xs()), t.element = e.element, t.name = e.name, t.oldValue = e.oldValue, t.newValue = e.newValue, e.disabledReason !== void 0 && (t.disabledReason = e.disabledReason), t;
         }
         setDisabledReason(e) {
           if (this.element !== "disabled") throw Error('Cannot set the disabled reason for a BlockChange event if the element is not "disabled".');
@@ -4620,7 +4620,7 @@ children`), this.state = e;
               t.setInputsInline(!!e);
               break;
             case "mutation":
-              o = Ws.getExtraBlockState_(t), t.loadExtraState ? t.loadExtraState(JSON.parse(e || "{}")) : t.domToMutation && t.domToMutation(i.textToDom$$module$build$src$core$utils$xml(e || "<mutation/>")), v(new Ws(t, "mutation", null, o, e));
+              o = Xs.getExtraBlockState_(t), t.loadExtraState ? t.loadExtraState(JSON.parse(e || "{}")) : t.domToMutation && t.domToMutation(i.textToDom$$module$build$src$core$utils$xml(e || "<mutation/>")), v(new Xs(t, "mutation", null, o, e));
               break;
             default:
               console.warn("Unknown change type: " + this.element);
@@ -4630,21 +4630,21 @@ children`), this.state = e;
           return e.saveExtraState ? (e = e.saveExtraState(!0)) ? JSON.stringify(e) : "" : e.mutationToDom && (e = e.mutationToDom()) ? Lt(e) : "";
         }
       };
-      c(I.EVENT, g.BLOCK_CHANGE, Ws);
+      c(I.EVENT, g.BLOCK_CHANGE, Xs);
       var fr = {};
-      fr.clamp = So, fr.toDegrees = id, fr.toRadians = Dn;
-      var Ar = 16, GT = 1, VT = 12, ea = 16, Cr = 0.25, ta = null, Ys = null, XT = "", WT = "", ce, Wi, zs, sa = null, ps = null, YT = null, Nr = null, Mr = null, oa = { getBoundsInfo: function() {
-        const e = cs(sa), t = _i(sa);
+      fr.clamp = Ro, fr.toDegrees = id, fr.toRadians = Dn;
+      var Ar = 16, GT = 1, VT = 12, ea = 16, Cr = 0.25, ta = null, Ws = null, XT = "", WT = "", ue, Xi, Ys, sa = null, ps = null, YT = null, Nr = null, Mr = null, oa = { getBoundsInfo: function() {
+        const e = cs(sa), t = di(sa);
         return { left: e.x, right: e.x + t.width, top: e.y, bottom: e.y + t.height, width: t.width, height: t.height };
       }, getPositionMetrics: function(e, t, s, o) {
-        const n = oa.getBoundsInfo(), r = _i(ce);
+        const n = oa.getBoundsInfo(), r = di(ue);
         return t + r.height < n.bottom ? jl(e, t, n, r) : o - r.height > n.top ? ql(
           s,
           o,
           n,
           r
         ) : t + r.height < document.documentElement.clientHeight ? jl(e, t, n, r) : o - r.height > document.documentElement.clientTop ? ql(s, o, n, r) : rd(e, n, r);
-      } }, ve = {
+      } }, ke = {
         ANIMATION_TIME: Cr,
         ARROW_HORIZONTAL_PADDING: VT,
         ARROW_SIZE: Ar,
@@ -4652,16 +4652,16 @@ children`), this.state = e;
         PADDING_Y: ea,
         TEST_ONLY: oa
       };
-      ve.clearContent = xn, ve.createDom = wn, ve.getContentDiv = Bn, ve.getOwner = Vl, ve.getPositionX = Oi, ve.hide = Fn, ve.hideIfOwner = Un, ve.hideWithoutAnimation = St, ve.isVisible = Zl, ve.repositionForWindowResize = ec, ve.setBoundsElement = Gl, ve.setColour = Xl, ve.show = Jl, ve.showPositionedByBlock = nd, ve.showPositionedByField = Wl;
-      var Uo = {};
-      Uo.commonWordPrefix = tc, Uo.commonWordSuffix = sc, Uo.isNumber = i.isNumber$$module$build$src$core$utils$string, Uo.shortestStringLength = Ri, Uo.wrap = i.wrap$$module$build$src$core$utils$string;
-      var yr = void 0, Yi = !1, Fo = !1, zT = 50, KT = 0, Ks = 0, ia = 0, na = 0, rt = null, zi = null, ra = 0, la = 10, JT = 10, jT = 750, vr = 5, ge = null, Ke = { HOVER_MS: jT, LIMIT: zT, MARGINS: vr, OFFSET_X: ra, OFFSET_Y: la, RADIUS_OK: JT };
-      Ke.bindMouseEvents = Si, Ke.block = uc, Ke.createDom = nc, Ke.dispose = cc, Ke.getCustomTooltip = ad, Ke.getDiv = dd, Ke.getTooltipOfObject = Lo, Ke.hide = Ht, Ke.isVisible = hd, Ke.setCustomTooltip = ud, Ke.unbindMouseEvents = rc, Ke.unblock = ac;
+      ke.clearContent = xn, ke.createDom = wn, ke.getContentDiv = Bn, ke.getOwner = Vl, ke.getPositionX = Ii, ke.hide = Fn, ke.hideIfOwner = Un, ke.hideWithoutAnimation = St, ke.isVisible = Zl, ke.repositionForWindowResize = ec, ke.setBoundsElement = Gl, ke.setColour = Xl, ke.show = Jl, ke.showPositionedByBlock = nd, ke.showPositionedByField = Wl;
+      var xo = {};
+      xo.commonWordPrefix = tc, xo.commonWordSuffix = sc, xo.isNumber = i.isNumber$$module$build$src$core$utils$string, xo.shortestStringLength = Oi, xo.wrap = i.wrap$$module$build$src$core$utils$string;
+      var yr = void 0, Wi = !1, Uo = !1, zT = 50, KT = 0, zs = 0, ia = 0, na = 0, rt = null, Yi = null, ra = 0, la = 10, JT = 10, jT = 750, vr = 5, ge = null, Ke = { HOVER_MS: jT, LIMIT: zT, MARGINS: vr, OFFSET_X: ra, OFFSET_Y: la, RADIUS_OK: JT };
+      Ke.bindMouseEvents = Ri, Ke.block = uc, Ke.createDom = nc, Ke.dispose = cc, Ke.getCustomTooltip = ad, Ke.getDiv = dd, Ke.getTooltipOfObject = So, Ke.hide = Ht, Ke.isVisible = hd, Ke.setCustomTooltip = ud, Ke.unbindMouseEvents = rc, Ke.unblock = ac;
       var ca = 0.45, ua = 0.65, qT = { aqua: "#00ffff", black: "#000000", blue: "#0000ff", fuchsia: "#ff00ff", gray: "#808080", green: "#008000", lime: "#00ff00", maroon: "#800000", navy: "#000080", olive: "#808000", purple: "#800080", red: "#ff0000", silver: "#c0c0c0", teal: "#008080", white: "#ffffff", yellow: "#ffff00" }, lt = {};
-      lt.blend = Ds, lt.getHsvSaturation = hc, lt.getHsvValue = dc, lt.hexToRgb = Gn, lt.hsvToHex = Vn, lt.hueToHex = _c, lt.names = qT, lt.parse = Ps, lt.rgbToHex = Li, lt.setHsvSaturation = md, lt.setHsvValue = Id;
-      var Ki = {};
-      Ki.checkMessageReferences = Od, Ki.parseBlockColour = bo, Ki.replaceMessageReferences = ue, Ki.tokenizeInterpolation = Tc;
-      var Y = class {
+      lt.blend = Ps, lt.getHsvSaturation = hc, lt.getHsvValue = dc, lt.hexToRgb = Gn, lt.hsvToHex = Vn, lt.hueToHex = _c, lt.names = qT, lt.parse = ks, lt.rgbToHex = Si, lt.setHsvSaturation = md, lt.setHsvValue = Id;
+      var zi = {};
+      zi.checkMessageReferences = Od, zi.parseBlockColour = Lo, zi.replaceMessageReferences = ae, zi.tokenizeInterpolation = Tc;
+      var z = class {
         get size_() {
           return this.size;
         }
@@ -4669,15 +4669,15 @@ children`), this.state = e;
           this.size = e;
         }
         constructor(e, t, s) {
-          this.DEFAULT_VALUE = null, this.name = void 0, this.tooltip = this.validator_ = null, this.size = new w(0, 0), this.constants_ = this.mouseDownWrapper = this.textContent_ = this.textElement_ = this.borderRect_ = this.fieldGroup_ = null, this.disposed = !1, this.maxDisplayLength = 50, this.sourceBlock_ = null, this.enabled_ = this.visible_ = this.isDirty_ = !0, this.suffixField = this.prefixField = this.clickTarget_ = null, this.EDITABLE = !0, this.SERIALIZABLE = !1, this.id_ = null, this.value_ = "DEFAULT_VALUE" in new.target.prototype ? new.target.prototype.DEFAULT_VALUE : this.DEFAULT_VALUE, this.size_ = new w(0, 0), e !== Y.SKIP_SETUP && (s && this.configure_(s), this.setValue(e), t && this.setValidator(t));
+          this.DEFAULT_VALUE = null, this.name = void 0, this.tooltip = this.validator_ = null, this.size = new w(0, 0), this.constants_ = this.mouseDownWrapper = this.textContent_ = this.textElement_ = this.borderRect_ = this.fieldGroup_ = null, this.disposed = !1, this.maxDisplayLength = 50, this.sourceBlock_ = null, this.enabled_ = this.visible_ = this.isDirty_ = !0, this.suffixField = this.prefixField = this.clickTarget_ = null, this.EDITABLE = !0, this.SERIALIZABLE = !1, this.id_ = null, this.value_ = "DEFAULT_VALUE" in new.target.prototype ? new.target.prototype.DEFAULT_VALUE : this.DEFAULT_VALUE, this.size_ = new w(0, 0), e !== z.SKIP_SETUP && (s && this.configure_(s), this.setValue(e), t && this.setValidator(t));
         }
         configure_(e) {
-          e.tooltip && this.setTooltip(ue(e.tooltip));
+          e.tooltip && this.setTooltip(ae(e.tooltip));
         }
         setSourceBlock(e) {
           if (this.sourceBlock_) throw Error("Field already bound to a block");
           if (this.sourceBlock_ = e, e.id.includes("_field")) throw Error(`Field ID indicator is contained in block ID. This may cause problems with focus: ${e.id}.`);
-          this.id_ = `${e.id}_field_${ne()}`;
+          this.id_ = `${e.id}_field_${re()}`;
         }
         getConstants() {
           return !this.constants_ && this.sourceBlock_ && !this.sourceBlock_.isDeadOrDying() && this.sourceBlock_.workspace.rendered && (this.constants_ = this.sourceBlock_.workspace.getRenderer().getConstants()), this.constants_;
@@ -4713,7 +4713,7 @@ children`), this.state = e;
         bindEvents_() {
           const e = this.getClickTarget_();
           if (!e) throw Error("A click target has not been set.");
-          Si(e), this.mouseDownWrapper = P(
+          Ri(e), this.mouseDownWrapper = k(
             e,
             "pointerdown",
             this,
@@ -4727,25 +4727,25 @@ children`), this.state = e;
           return e.textContent = this.getValue(), e;
         }
         saveState(e) {
-          return e = this.saveLegacyState(Y), e !== null ? e : this.getValue();
+          return e = this.saveLegacyState(z), e !== null ? e : this.getValue();
         }
         loadState(e) {
-          this.loadLegacyState(Y, e) || this.setValue(e);
+          this.loadLegacyState(z, e) || this.setValue(e);
         }
         saveLegacyState(e) {
-          return e.prototype.saveState === this.saveState && e.prototype.toXml !== this.toXml ? (e = i.createElement$$module$build$src$core$utils$xml("field"), e.setAttribute("name", this.name || ""), po(this.toXml(e)).replace(' xmlns="https://developers.google.com/blockly/xml"', "")) : null;
+          return e.prototype.saveState === this.saveState && e.prototype.toXml !== this.toXml ? (e = i.createElement$$module$build$src$core$utils$xml("field"), e.setAttribute("name", this.name || ""), go(this.toXml(e)).replace(' xmlns="https://developers.google.com/blockly/xml"', "")) : null;
         }
         loadLegacyState(e, t) {
           return e.prototype.loadState === this.loadState && e.prototype.fromXml !== this.fromXml ? (this.fromXml(i.textToDom$$module$build$src$core$utils$xml(t)), !0) : !1;
         }
         dispose() {
-          Un(this), ws(this);
+          Un(this), Ds(this);
           let e;
-          (e = this.getSourceBlock()) != null && e.isDeadOrDying() || V(this.fieldGroup_), this.disposed = !0;
+          (e = this.getSourceBlock()) != null && e.isDeadOrDying() || X(this.fieldGroup_), this.disposed = !0;
         }
         updateEditable() {
           const e = this.fieldGroup_, t = this.getSourceBlock();
-          this.EDITABLE && e && t && (this.enabled_ && t.isEditable() ? (L(e, "blocklyEditableField"), F(e, "blocklyNonEditableField")) : (L(e, "blocklyNonEditableField"), F(e, "blocklyEditableField")));
+          this.EDITABLE && e && t && (this.enabled_ && t.isEditable() ? (L(e, "blocklyEditableField"), H(e, "blocklyNonEditableField")) : (L(e, "blocklyNonEditableField"), H(e, "blocklyEditableField")));
         }
         setEnabled(e) {
           this.enabled_ = e, this.updateEditable();
@@ -4754,7 +4754,7 @@ children`), this.state = e;
           return this.enabled_;
         }
         isClickable() {
-          return this.enabled_ && !!this.sourceBlock_ && this.sourceBlock_.isEditable() && this.showEditor_ !== Y.prototype.showEditor_;
+          return this.enabled_ && !!this.sourceBlock_ && this.sourceBlock_.isEditable() && this.showEditor_ !== z.prototype.showEditor_;
         }
         isClickableInFlyout(e) {
           return !e;
@@ -4831,7 +4831,7 @@ children`), this.state = e;
         getScaledBBox() {
           let e;
           var t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           if (this.isFullBlockField()) {
             var s = this.sourceBlock_.getHeightWidth();
             const o = t.workspace.scale;
@@ -4848,7 +4848,7 @@ children`), this.state = e;
         }
         getDisplayText_() {
           let e = this.getText();
-          return e.length > this.maxDisplayLength && (e = e.substring(0, this.maxDisplayLength - 2) + "…"), e = e.replace(/\s/g, Y.NBSP), this.sourceBlock_ && this.sourceBlock_.RTL && (e += "‏"), e;
+          return e.length > this.maxDisplayLength && (e = e.substring(0, this.maxDisplayLength - 2) + "…"), e = e.replace(/\s/g, z.NBSP), this.sourceBlock_ && this.sourceBlock_.RTL && (e += "‏"), e;
         }
         getText() {
           const e = this.getText_();
@@ -4875,7 +4875,7 @@ children`), this.state = e;
                   var u = this.sourceBlock_;
                   if (!u || !u.disposed) {
                     var h = this.getValue();
-                    h === r ? this.doValueUpdate_(r) : (this.doValueUpdate_(r), t && u && j() && v(new (M(g.BLOCK_CHANGE))(u, "field", this.name || null, h, r)), this.isDirty_ && this.forceRerender());
+                    h === r ? this.doValueUpdate_(r) : (this.doValueUpdate_(r), t && u && Z() && v(new (M(g.BLOCK_CHANGE))(u, "field", this.name || null, h, r)), this.isDirty_ && this.forceRerender());
                   }
                 }
               }
@@ -4908,7 +4908,7 @@ children`), this.state = e;
         }
         getTooltip() {
           const e = this.getClickTarget_();
-          return Lo(e || { tooltip: this.tooltip });
+          return So(e || { tooltip: this.tooltip });
         }
         getClickTarget_() {
           return this.clickTarget_ || this.getSvgRoot();
@@ -4924,7 +4924,7 @@ children`), this.state = e;
         getParentInput() {
           let e = null;
           const t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           const s = t.inputList;
           for (let o = 0; o < t.inputList.length; o++) {
             const n = s[o], r = n.fieldRow;
@@ -4947,7 +4947,7 @@ children`), this.state = e;
         }
         getFocusableTree() {
           const e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           return e.workspace;
         }
         onNodeFocus() {
@@ -4963,15 +4963,15 @@ children`), this.state = e;
           throw Error("Attempted to instantiate a field from the registry that hasn't defined a 'fromJson' method.");
         }
       };
-      Y.NBSP = " ", Y.SKIP_SETUP = Symbol("SKIP_SETUP");
-      var _e = class extends Error {
+      z.NBSP = " ", z.SKIP_SETUP = Symbol("SKIP_SETUP");
+      var Te = class extends Error {
         constructor() {
           super("The field has not yet been attached to its input. Call appendField to attach it.");
         }
-      }, Ho = null, ZT = null, kr = null, aa = "blocklyWidgetDiv", Go = "", Vo = "", Je, Pr = null, ht = {};
-      ht.createDom = $c, ht.getDiv = fo, ht.hide = Ao, ht.hideIfOwner = ws, ht.hideIfOwnerIsInWorkspace = bi, ht.isVisible = Ec, ht.positionWithAnchor = pc, ht.repositionForWindowResize = mc, ht.show = Wn, ht.testOnly_setDiv = Rd;
-      var Dr = null, QT = {}, Js = null, ms = {};
-      ms.callbackFactory = i.callbackFactory$$module$build$src$core$contextmenu, ms.dispose = Oc, ms.getCurrentBlock = fd, ms.getMenu = Rc, ms.hide = fi, ms.setCurrentBlock = Ic, ms.show = Co;
+      }, Fo = null, ZT = null, kr = null, aa = "blocklyWidgetDiv", Ho = "", Go = "", Je, Pr = null, ht = {};
+      ht.createDom = $c, ht.getDiv = bo, ht.hide = fo, ht.hideIfOwner = Ds, ht.hideIfOwnerIsInWorkspace = Li, ht.isVisible = Ec, ht.positionWithAnchor = pc, ht.repositionForWindowResize = mc, ht.show = Wn, ht.testOnly_setDiv = Rd;
+      var Dr = null, QT = {}, Ks = null, ms = {};
+      ms.callbackFactory = i.callbackFactory$$module$build$src$core$contextmenu, ms.dispose = Oc, ms.getCurrentBlock = fd, ms.getMenu = Rc, ms.hide = bi, ms.setCurrentBlock = Ic, ms.show = Ao;
       var x = class {
         constructor() {
           this.registeredItems = /* @__PURE__ */ new Map(), this.reset();
@@ -5022,7 +5022,7 @@ children`), this.state = e;
         var t = e.ScopeType || (e.ScopeType = {});
         t.BLOCK = "block", t.WORKSPACE = "workspace", t.COMMENT = "comment", e.registry = new e();
       })(x || (x = {}));
-      var ha = x.ScopeType, js = 50, Xo = 100, Rg = { BLOCK: js, BUBBLE: Xo }, e$ = class {
+      var ha = x.ScopeType, Js = 50, Vo = 100, Sg = { BLOCK: Js, BUBBLE: Vo }, e$ = class {
         constructor(e) {
           this.comment = e, this.startLoc = null, this.workspace = e.workspace;
         }
@@ -5040,7 +5040,7 @@ children`), this.state = e;
         endDrag() {
           this.fireDragEndEvent(), this.fireMoveEvent();
           let e;
-          (e = this.workspace.getLayerManager()) == null || e.moveOffDragLayer(this.comment, js), this.comment.setDragging(!1), this.comment.snapToGrid(), this.workspace.setResizesEnabled(!0);
+          (e = this.workspace.getLayerManager()) == null || e.moveOffDragLayer(this.comment, Js), this.comment.setDragging(!1), this.comment.snapToGrid(), this.workspace.setResizesEnabled(!0);
         }
         fireDragStartEvent() {
           const e = new (M(g.COMMENT_DRAG))(this.comment, !0);
@@ -5102,10 +5102,10 @@ children`), this.state = e;
             $.IMAGE,
             { class: "blocklyFoldoutIcon", href: `${this.workspace.options.pathToMedia}foldout-icon.svg`, id: `${this.id}${s$}` },
             this.container
-          ), this.bindId = P(this.icon, "pointerdown", this, this.performAction.bind(this));
+          ), this.bindId = k(this.icon, "pointerdown", this, this.performAction.bind(this));
         }
         dispose() {
-          G(this.bindId);
+          V(this.bindId);
         }
         reposition() {
           const e = this.getMargin();
@@ -5115,18 +5115,18 @@ children`), this.state = e;
           );
         }
         performAction(e) {
-          J(), this.getCommentView().bringToFront(), e && e instanceof PointerEvent && Ve(e) ? e.stopPropagation() : (this.getCommentView().setCollapsed(!this.getCommentView().isCollapsed()), this.workspace.hideChaff(), e == null || e.stopPropagation());
+          q(), this.getCommentView().bringToFront(), e && e instanceof PointerEvent && Ve(e) ? e.stopPropagation() : (this.getCommentView().setCollapsed(!this.getCommentView().isCollapsed()), this.workspace.hideChaff(), e == null || e.stopPropagation());
         }
       }, da = "_comment_textarea_", Br = class {
         constructor(e, t, s) {
-          this.workspace = e, this.onFinishEditing = s, this.textChangeListeners = [], this.text = "", this.foreignObject = O($.FOREIGNOBJECT, { class: "blocklyCommentForeignObject" }), e = document.createElementNS(Fs, "body"), e.setAttribute("xmlns", Fs), e.className = "blocklyMinimalBody", this.textArea = document.createElementNS(Fs, "textarea"), this.textArea.setAttribute("tabindex", "-1"), this.textArea.setAttribute("dir", this.workspace.RTL ? "RTL" : "LTR"), this.textArea.setAttribute("placeholder", i.Msg$$module$build$src$core$msg.WORKSPACE_COMMENT_DEFAULT_TEXT), L(this.textArea, "blocklyCommentText"), L(
+          this.workspace = e, this.onFinishEditing = s, this.textChangeListeners = [], this.text = "", this.foreignObject = O($.FOREIGNOBJECT, { class: "blocklyCommentForeignObject" }), e = document.createElementNS(Us, "body"), e.setAttribute("xmlns", Us), e.className = "blocklyMinimalBody", this.textArea = document.createElementNS(Us, "textarea"), this.textArea.setAttribute("tabindex", "-1"), this.textArea.setAttribute("dir", this.workspace.RTL ? "RTL" : "LTR"), this.textArea.setAttribute("placeholder", i.Msg$$module$build$src$core$msg.WORKSPACE_COMMENT_DEFAULT_TEXT), L(this.textArea, "blocklyCommentText"), L(
             this.textArea,
             "blocklyTextarea"
-          ), L(this.textArea, "blocklyText"), e.appendChild(this.textArea), this.foreignObject.appendChild(e), t && (this.id = t + da, this.textArea.setAttribute("id", this.id)), P(this.textArea, "change", this, this.onTextChange), P(this.textArea, "pointerdown", this, (o) => {
-            o.stopPropagation(), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this), J();
-          }), P(this.textArea, "wheel", this, (o) => {
+          ), L(this.textArea, "blocklyText"), e.appendChild(this.textArea), this.foreignObject.appendChild(e), t && (this.id = t + da, this.textArea.setAttribute("id", this.id)), k(this.textArea, "change", this, this.onTextChange), k(this.textArea, "pointerdown", this, (o) => {
+            o.stopPropagation(), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this), q();
+          }), k(this.textArea, "wheel", this, (o) => {
             o.stopPropagation();
-          }, !1, { passive: !0 }), P(this.textArea, "keydown", this, this.handleKeyDown);
+          }, !1, { passive: !0 }), k(this.textArea, "keydown", this, this.handleKeyDown);
         }
         getDom() {
           return this.foreignObject;
@@ -5168,7 +5168,7 @@ children`), this.state = e;
         }
         onNodeFocus() {
           const e = D.from(this.foreignObject.getBoundingClientRect());
-          this.workspace.scrollBoundsIntoView(D.createFromPoint($i(
+          this.workspace.scrollBoundsIntoView(D.createFromPoint(Ti(
             this.workspace,
             e.getOrigin()
           ), e.getWidth(), e.getHeight()));
@@ -5184,10 +5184,10 @@ children`), this.state = e;
             class: "blocklyDeleteIcon",
             href: `${this.workspace.options.pathToMedia}delete-icon.svg`,
             id: `${this.id}${i$}`
-          }, s), this.bindId = P(this.icon, "pointerdown", this, this.performAction.bind(this));
+          }, s), this.bindId = k(this.icon, "pointerdown", this, this.performAction.bind(this));
         }
         dispose() {
-          G(this.bindId);
+          V(this.bindId);
         }
         reposition() {
           const e = this.getMargin();
@@ -5199,9 +5199,9 @@ children`), this.state = e;
           ), this.icon.setAttribute("x", `${t.width - this.getSize(!0).getWidth()}`);
         }
         performAction(e) {
-          J(), e && e instanceof PointerEvent && Ve(e) ? e.stopPropagation() : (this.getCommentView().dispose(), e == null || e.stopPropagation(), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this.workspace));
+          q(), e && e instanceof PointerEvent && Ve(e) ? e.stopPropagation() : (this.getCommentView().dispose(), e == null || e.stopPropagation(), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this.workspace));
         }
-      }, Ji = class {
+      }, Ki = class {
         constructor(e, t) {
           this.workspace = e, this.commentId = t, this.collapsed = !1, this.editable = !0, this.location = new R(0, 0), this.sizeChangeListeners = [], this.disposeListeners = [], this.collapseChangeListeners = [], this.resizePointerMoveListener = this.resizePointerUpListener = null, this.disposed = this.disposing = !1, this.svgRoot = O(
             $.G,
@@ -5210,8 +5210,8 @@ children`), this.state = e;
           let s;
           (s = e.getLayerManager()) == null || s.append(
             this,
-            js
-          ), this.size = Ji.defaultCommentSize, this.setSizeWithoutFiringEvents(this.size), this.moveTo(new R(0, 0));
+            Js
+          ), this.size = Ki.defaultCommentSize, this.setSizeWithoutFiringEvents(this.size), this.moveTo(new R(0, 0));
         }
         createHighlightRect(e) {
           return O($.RECT, { class: "blocklyCommentHighlight" }, e);
@@ -5243,7 +5243,7 @@ children`), this.state = e;
           return this.commentEditor;
         }
         createResizeHandle(e, t) {
-          return e = O($.IMAGE, { class: "blocklyResizeHandle", href: `${t.options.pathToMedia}resize-handle.svg` }, e), P(e, "pointerdown", this, this.onResizePointerDown), e;
+          return e = O($.IMAGE, { class: "blocklyResizeHandle", href: `${t.options.pathToMedia}resize-handle.svg` }, e), k(e, "pointerdown", this, this.onResizePointerDown), e;
         }
         getSvgRoot() {
           return this.svgRoot;
@@ -5295,10 +5295,10 @@ children`), this.state = e;
           this.sizeChangeListeners.splice(this.sizeChangeListeners.indexOf(e), 1);
         }
         onResizePointerDown(e) {
-          this.isEditable() && (this.bringToFront(), Ve(e) || (this.preResizeSize = this.getSize(), Yn(this.workspace, e, new R(this.workspace.RTL ? -this.getSize().width : this.getSize().width, this.getSize().height)), this.resizePointerUpListener = P(document, "pointerup", this, this.onResizePointerUp), this.resizePointerMoveListener = P(document, "pointermove", this, this.onResizePointerMove), this.workspace.hideChaff()), e.stopPropagation());
+          this.isEditable() && (this.bringToFront(), Ve(e) || (this.preResizeSize = this.getSize(), Yn(this.workspace, e, new R(this.workspace.RTL ? -this.getSize().width : this.getSize().width, this.getSize().height)), this.resizePointerUpListener = k(document, "pointerup", this, this.onResizePointerUp), this.resizePointerMoveListener = k(document, "pointermove", this, this.onResizePointerMove), this.workspace.hideChaff()), e.stopPropagation());
         }
         onResizePointerUp(e) {
-          J(), this.resizePointerUpListener && (G(this.resizePointerUpListener), this.resizePointerUpListener = null), this.resizePointerMoveListener && (G(this.resizePointerMoveListener), this.resizePointerMoveListener = null), this.setSize(this.size), this.preResizeSize = void 0;
+          q(), this.resizePointerUpListener && (V(this.resizePointerUpListener), this.resizePointerUpListener = null), this.resizePointerMoveListener && (V(this.resizePointerMoveListener), this.resizePointerMoveListener = null), this.setSize(this.size), this.preResizeSize = void 0;
         }
         onResizePointerMove(e) {
           e = zn(
@@ -5310,7 +5310,7 @@ children`), this.state = e;
           return this.collapsed;
         }
         setCollapsed(e) {
-          (this.collapsed = e) ? L(this.svgRoot, "blocklyCollapsed") : F(this.svgRoot, "blocklyCollapsed"), this.setSizeWithoutFiringEvents(this.size), this.onCollapse();
+          (this.collapsed = e) ? L(this.svgRoot, "blocklyCollapsed") : H(this.svgRoot, "blocklyCollapsed"), this.setSizeWithoutFiringEvents(this.size), this.onCollapse();
         }
         onCollapse() {
           for (let e = this.collapseChangeListeners.length - 1; e >= 0; e--) this.collapseChangeListeners[e](this.collapsed);
@@ -5328,7 +5328,7 @@ children`), this.state = e;
           return this.editable;
         }
         setEditable(e) {
-          (this.editable = e) ? (L(this.svgRoot, "blocklyEditable"), F(this.svgRoot, "blocklyReadonly")) : (F(this.svgRoot, "blocklyEditable"), L(this.svgRoot, "blocklyReadonly")), this.commentEditor.setEditable(e);
+          (this.editable = e) ? (L(this.svgRoot, "blocklyEditable"), H(this.svgRoot, "blocklyReadonly")) : (H(this.svgRoot, "blocklyEditable"), L(this.svgRoot, "blocklyReadonly")), this.commentEditor.setEditable(e);
         }
         getRelativeToSurfaceXY() {
           return this.location;
@@ -5365,10 +5365,10 @@ children`), this.state = e;
           t[t.length - 1] !== this.svgRoot && e.appendChild(this.svgRoot);
         }
         onDeleteDown(e) {
-          J(), Ve(e) || this.dispose(), e.stopPropagation();
+          q(), Ve(e) || this.dispose(), e.stopPropagation();
         }
         dispose() {
-          this.disposing = !0, V(this.svgRoot);
+          this.disposing = !0, X(this.svgRoot);
           for (let e = this.disposeListeners.length - 1; e >= 0; e--) this.disposeListeners[e]();
           this.disposeListeners.length = 0, this.disposed = !0;
         }
@@ -5388,7 +5388,7 @@ children`), this.state = e;
           return [this.foldoutButton, this.deleteButton];
         }
       };
-      Ji.defaultCommentSize = new w(120, 100), mt(`
+      Ki.defaultCommentSize = new w(120, 100), mt(`
 .injectionDiv {
   --commentFillColour: #FFFCC7;
   --commentBorderColour: #F2E49B;
@@ -5500,23 +5500,23 @@ children`), this.state = e;
 `);
       var xr = class {
         constructor(e, t) {
-          this.workspace = e, this.text = "", this.collapsed = !1, this.deletable = this.movable = this.editable = !0, this.location = new R(0, 0), this.disposing = this.disposed = !1, this.id = t && !e.getCommentById(t) ? t : et(), this.size = Ji.defaultCommentSize, e.addTopComment(this), this.fireCreateEvent();
+          this.workspace = e, this.text = "", this.collapsed = !1, this.deletable = this.movable = this.editable = !0, this.location = new R(0, 0), this.disposing = this.disposed = !1, this.id = t && !e.getCommentById(t) ? t : et(), this.size = Ki.defaultCommentSize, e.addTopComment(this), this.fireCreateEvent();
         }
         fireCreateEvent() {
-          j() && v(new (M(g.COMMENT_CREATE))(this));
+          Z() && v(new (M(g.COMMENT_CREATE))(this));
         }
         fireDeleteEvent() {
-          j() && v(new (M(g.COMMENT_DELETE))(this));
+          Z() && v(new (M(g.COMMENT_DELETE))(this));
         }
         fireChangeEvent(e, t) {
-          j() && v(new (M(g.COMMENT_CHANGE))(
+          Z() && v(new (M(g.COMMENT_CHANGE))(
             this,
             e,
             t
           ));
         }
         fireCollapseEvent(e) {
-          j() && v(new (M(g.COMMENT_COLLAPSE))(this, e));
+          Z() && v(new (M(g.COMMENT_COLLAPSE))(this, e));
         }
         setText(e) {
           const t = this.text;
@@ -5583,10 +5583,10 @@ children`), this.state = e;
         }
       }, jt = class extends xr {
         constructor(e, t) {
-          super(e, t), this.dragStrategy = new e$(this), this.workspace = e, this.view = new Ji(e, this.id), this.view.setSize(this.getSize()), this.view.setEditable(this.isEditable()), this.view.getSvgRoot().setAttribute(
+          super(e, t), this.dragStrategy = new e$(this), this.workspace = e, this.view = new Ki(e, this.id), this.view.setSize(this.getSize()), this.view.setEditable(this.isEditable()), this.view.getSvgRoot().setAttribute(
             "data-id",
             this.id
-          ), this.view.getSvgRoot().setAttribute("id", this.id), this.addModelUpdateBindings(), P(this.view.getSvgRoot(), "pointerdown", this, this.startGesture);
+          ), this.view.getSvgRoot().setAttribute("id", this.id), this.addModelUpdateBindings(), k(this.view.getSvgRoot(), "pointerdown", this, this.startGesture);
         }
         addModelUpdateBindings() {
           this.view.addTextChangeListener((e, t) => void super.setText(t)), this.view.addSizeChangeListener((e, t) => void super.setSize(t)), this.view.addOnCollapseListener(() => void super.setCollapsed(this.view.isCollapsed())), this.view.addDisposeListener(() => {
@@ -5631,7 +5631,7 @@ children`), this.state = e;
           this.location = e, this.view.moveTo(e);
         }
         setDragging(e) {
-          e ? L(this.getSvgRoot(), "blocklyDragging") : F(this.getSvgRoot(), "blocklyDragging");
+          e ? L(this.getSvgRoot(), "blocklyDragging") : H(this.getSvgRoot(), "blocklyDragging");
         }
         dispose() {
           this.disposing = !0;
@@ -5643,7 +5643,7 @@ children`), this.state = e;
           t && (t.handleCommentStart(e, this), i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this));
         }
         setDeleteStyle(e) {
-          e ? L(this.getSvgRoot(), "blocklyDraggingDelete") : F(this.getSvgRoot(), "blocklyDraggingDelete");
+          e ? L(this.getSvgRoot(), "blocklyDraggingDelete") : H(this.getSvgRoot(), "blocklyDraggingDelete");
         }
         isCopyable() {
           return this.isOwnMovable() && this.isOwnDeletable();
@@ -5670,10 +5670,10 @@ children`), this.state = e;
           ), S(this);
         }
         unselect() {
-          F(this.getSvgRoot(), "blocklySelected"), S(null);
+          H(this.getSvgRoot(), "blocklySelected"), S(null);
         }
         toCopyData() {
-          return { paster: Or.TYPE, commentState: mo(this, { addCoordinates: !0, saveIds: !1 }) };
+          return { paster: Or.TYPE, commentState: po(this, { addCoordinates: !0, saveIds: !1 }) };
         }
         showContextMenu(e) {
           const t = x.registry.getContextMenuOptions({
@@ -5681,7 +5681,7 @@ children`), this.state = e;
             focusedNode: this
           }, e);
           let s;
-          s = e instanceof PointerEvent ? new R(e.clientX, e.clientY) : go(this.workspace, this.getRelativeToSurfaceXY()).translate(10, 10), Co(e, t, this.workspace.RTL, this.workspace, s);
+          s = e instanceof PointerEvent ? new R(e.clientX, e.clientY) : Eo(this.workspace, this.getRelativeToSurfaceXY()).translate(10, 10), Ao(e, t, this.workspace.RTL, this.workspace, s);
         }
         snapToGrid() {
           if (!this.isDeadOrDying()) {
@@ -5715,11 +5715,11 @@ children`), this.state = e;
         canBeFocused() {
           return !0;
         }
-      }, ke = {};
-      ke.appendDomToWorkspace = wd, ke.blockToDom = hs, ke.blockToDomWithXY = Ci, ke.clearWorkspaceAndLoadFromXml = Dd, ke.deleteNext = Wd, ke.domToBlock = i.domToBlock$$module$build$src$core$xml, ke.domToBlockInternal = Bs, ke.domToPrettyText = Pd, ke.domToText = Lt, ke.domToVariables = Ac, ke.domToWorkspace = i.domToWorkspace$$module$build$src$core$xml, ke.loadWorkspaceComment = fc, ke.saveWorkspaceComment = Ai, ke.variablesToDom = Lc, ke.workspaceToDom = yd;
+      }, Pe = {};
+      Pe.appendDomToWorkspace = wd, Pe.blockToDom = hs, Pe.blockToDomWithXY = Ai, Pe.clearWorkspaceAndLoadFromXml = Dd, Pe.deleteNext = Wd, Pe.domToBlock = i.domToBlock$$module$build$src$core$xml, Pe.domToBlockInternal = ws, Pe.domToPrettyText = Pd, Pe.domToText = Lt, Pe.domToVariables = Ac, Pe.domToWorkspace = i.domToWorkspace$$module$build$src$core$xml, Pe.loadWorkspaceComment = fc, Pe.saveWorkspaceComment = fi, Pe.variablesToDom = Lc, Pe.workspaceToDom = yd;
       var _a = class extends nt {
         constructor(e) {
-          super(e), this.type = g.BLOCK_CREATE, e && (e.isShadow() && (this.recordUndo = !1), this.xml = Ci(e), this.ids = ao(e), this.json = st(e, { addCoordinates: !0 }));
+          super(e), this.type = g.BLOCK_CREATE, e && (e.isShadow() && (this.recordUndo = !1), this.xml = Ai(e), this.ids = uo(e), this.json = st(e, { addCoordinates: !0 }));
         }
         toJson() {
           const e = super.toJson();
@@ -5735,13 +5735,13 @@ children`), this.state = e;
           const t = this.getEventWorkspace_();
           if (!this.json) throw Error("The block JSON is undefined. Either pass a block to the constructor, or call fromJson");
           if (!this.ids) throw Error("The block IDs are undefined. Either pass a block to the constructor, or call fromJson");
-          if (!Sg(t, this.ids)) if (e) vs(this.json, t);
+          if (!Lg(t, this.ids)) if (e) ys(this.json, t);
           else for (e = 0; e < this.ids.length; e++) {
             const s = this.ids[e], o = t.getBlockById(s);
             o ? o.dispose(!1) : s === this.blockId && console.warn("Can't uncreate non-existent block: " + s);
           }
         }
-      }, Sg = function(e, t) {
+      }, Lg = function(e, t) {
         return t.map((s) => e.getBlockById(s)).filter((s) => s && s.isShadow()).length === t.length;
       };
       c(I.EVENT, g.BLOCK_CREATE, _a);
@@ -5782,15 +5782,15 @@ children`), this.state = e;
       c(I.EVENT, g.VIEWPORT_CHANGE, $a);
       var r$ = { fromJsonInternal: zd }, Ur = { TEST_ONLY: r$ };
       Ur.fromJson = i.fromJson$$module$build$src$core$field_registry, Ur.register = bt, Ur.unregister = Yd;
-      var Me = class extends Y {
+      var ye = class extends z {
         constructor(e, t, s) {
-          super(Y.SKIP_SETUP), this.svgArrow = this.arrow = this.imageElement = this.menu_ = this.selectedMenuItem = null, this.SERIALIZABLE = !0, this.clickTarget_ = this.suffixField = this.prefixField = this.generatedOptions = null, e !== Y.SKIP_SETUP && (this.setOptions(e), s && this.configure_(s), t && this.setValidator(t));
+          super(z.SKIP_SETUP), this.svgArrow = this.arrow = this.imageElement = this.menu_ = this.selectedMenuItem = null, this.SERIALIZABLE = !0, this.clickTarget_ = this.suffixField = this.prefixField = this.generatedOptions = null, e !== z.SKIP_SETUP && (this.setOptions(e), s && this.configure_(s), t && this.setValidator(t));
         }
         fromXml(e) {
           this.isOptionListDynamic() && this.getOptions(!1), this.setValue(e.textContent);
         }
         loadState(e) {
-          this.loadLegacyState(Me, e) || (this.isOptionListDynamic() && this.getOptions(!1), this.setValue(e));
+          this.loadLegacyState(ye, e) || (this.isOptionListDynamic() && this.getOptions(!1), this.setValue(e));
         }
         initView() {
           this.shouldAddBorderRect_() ? this.createBorderRect_() : this.clickTarget_ = this.sourceBlock_.getSvgRoot(), this.createTextElement_(), this.imageElement = O($.IMAGE, {}, this.fieldGroup_), this.getConstants().FIELD_DROPDOWN_SVG_ARROW ? this.createSVGArrow_() : this.createTextArrow_(), this.borderRect_ && L(this.borderRect_, "blocklyDropdownRect"), this.fieldGroup_ && (L(this.fieldGroup_, "blocklyField"), L(this.fieldGroup_, "blocklyDropdownField"));
@@ -5802,7 +5802,7 @@ children`), this.state = e;
         createTextArrow_() {
           this.arrow = O($.TSPAN, {}, this.textElement_);
           let e;
-          this.arrow.appendChild(document.createTextNode((e = this.getSourceBlock()) != null && e.RTL ? Me.ARROW_CHAR + " " : " " + Me.ARROW_CHAR)), this.getConstants().FIELD_TEXT_BASELINE_CENTER && this.arrow.setAttribute("dominant-baseline", "central");
+          this.arrow.appendChild(document.createTextNode((e = this.getSourceBlock()) != null && e.RTL ? ye.ARROW_CHAR + " " : " " + ye.ARROW_CHAR)), this.getConstants().FIELD_TEXT_BASELINE_CENTER && this.arrow.setAttribute("dominant-baseline", "central");
           let t;
           (t = this.getSourceBlock()) != null && t.RTL ? this.getTextElement().insertBefore(this.arrow, this.textContent_) : this.getTextElement().appendChild(this.arrow);
         }
@@ -5815,7 +5815,7 @@ children`), this.state = e;
         }
         showEditor_(e) {
           var t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           this.dropdownCreate(), this.menu_ && (this.menu_.openingCoords = e && typeof e.clientX == "number" ? new R(e.clientX, e.clientY) : null, xn(), e = this.menu_.render(Bn()), L(
             e,
             "blocklyDropdownMenu"
@@ -5823,19 +5823,19 @@ children`), this.state = e;
         }
         dropdownCreate() {
           const e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           const t = new zu();
           t.setRole(ze.LISTBOX), this.menu_ = t;
           const s = this.getOptions(!1);
           this.selectedMenuItem = null;
           for (let n = 0; n < s.length; n++) {
             var o = s[n];
-            if (o === Me.SEPARATOR) {
+            if (o === ye.SEPARATOR) {
               t.addChild(new OT());
               continue;
             }
             const [r, u] = o;
-            No(r) ? (o = new Image(r.width, r.height), o.src = r.src, o.alt = r.alt) : o = r, o = new Rr(o, u), o.setRole(ze.OPTION), o.setRightToLeft(e.RTL), o.setCheckable(!0), t.addChild(o), o.setChecked(u === this.value_), u === this.value_ && (this.selectedMenuItem = o), o.onAction(this.handleMenuActionEvent, this);
+            Co(r) ? (o = new Image(r.width, r.height), o.src = r.src, o.alt = r.alt) : o = r, o = new Rr(o, u), o.setRole(ze.OPTION), o.setRightToLeft(e.RTL), o.setCheckable(!0), t.addChild(o), o.setChecked(u === this.value_), u === this.value_ && (this.selectedMenuItem = o), o.onAction(this.handleMenuActionEvent, this);
           }
         }
         dropdownDispose_() {
@@ -5874,16 +5874,16 @@ children`), this.state = e;
         render_() {
           this.getTextContent().nodeValue = "", this.imageElement.style.display = "none";
           const e = this.selectedOption && this.selectedOption[0];
-          No(e) ? this.renderSelectedImage(e) : this.renderSelectedText(), this.positionBorderRect_();
+          Co(e) ? this.renderSelectedImage(e) : this.renderSelectedText(), this.positionBorderRect_();
         }
         renderSelectedImage(e) {
           const t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           this.imageElement.style.display = "", this.imageElement.setAttributeNS(Ye, "xlink:href", e.src), this.imageElement.setAttribute("height", String(e.height)), this.imageElement.setAttribute("width", String(e.width));
           const s = Number(e.height);
           e = Number(e.width);
           var o = !!this.borderRect_;
-          const n = Math.max(o ? this.getConstants().FIELD_DROPDOWN_BORDER_RECT_HEIGHT : 0, s + Me.IMAGE_Y_PADDING);
+          const n = Math.max(o ? this.getConstants().FIELD_DROPDOWN_BORDER_RECT_HEIGHT : 0, s + ye.IMAGE_Y_PADDING);
           o = o ? this.getConstants().FIELD_BORDER_RECT_X_PADDING : 0;
           let r;
           r = this.svgArrow ? this.positionSVGArrow(e + o, n / 2 - this.getConstants().FIELD_DROPDOWN_SVG_ARROW_SIZE / 2) : pe(this.arrow), this.size_ = new w(e + r + o * 2, n);
@@ -5904,14 +5904,14 @@ children`), this.state = e;
         positionSVGArrow(e, t) {
           if (!this.svgArrow) return 0;
           const s = this.getSourceBlock();
-          if (!s) throw new _e();
+          if (!s) throw new Te();
           const o = this.borderRect_ ? this.getConstants().FIELD_BORDER_RECT_X_PADDING : 0, n = this.getConstants().FIELD_DROPDOWN_SVG_ARROW_PADDING, r = this.getConstants().FIELD_DROPDOWN_SVG_ARROW_SIZE;
           return this.svgArrow.setAttribute("transform", "translate(" + (s.RTL ? o : e + n) + "," + t + ")"), r + n;
         }
         getText_() {
           if (!this.selectedOption) return null;
           const e = this.selectedOption[0];
-          if (No(e)) return e.alt;
+          if (Co(e)) return e.alt;
           if (typeof HTMLElement < "u" && e instanceof HTMLElement) {
             let t, s;
             return (s = (t = e.title) != null ? t : e.ariaLabel) != null ? s : e.innerText;
@@ -5925,12 +5925,12 @@ children`), this.state = e;
         trimOptions(e) {
           let t = !1;
           const s = e.map((u) => {
-            if (u === Me.SEPARATOR) return t = !0, u;
+            if (u === ye.SEPARATOR) return t = !0, u;
             const [h, m] = u;
-            return typeof h == "string" ? [ue(h), m] : (t = !0, [No(h) ? Object.assign({}, h, { alt: ue(h.alt) }) : h, m]);
+            return typeof h == "string" ? [ae(h), m] : (t = !0, [Co(h) ? Object.assign({}, h, { alt: ae(h.alt) }) : h, m]);
           });
           if (t || e.length < 2) return { options: s };
-          var o = s.map(([u]) => u), n = Ri(o);
+          var o = s.map(([u]) => u), n = Oi(o);
           e = tc(o, n);
           const r = sc(o, n);
           return !e && !r || n <= e + r ? { options: s } : (n = e ? o[0].substring(0, e - 1) : void 0, o = r ? o[0].substr(1 - r) : void 0, { options: this.applyTrim(s, e, r), prefix: n, suffix: o });
@@ -5944,16 +5944,16 @@ children`), this.state = e;
           let t = !1;
           for (let s = 0; s < e.length; s++) {
             const o = e[s];
-            Array.isArray(o) || o === Me.SEPARATOR ? typeof o[1] != "string" ? (t = !0, console.error(`Invalid option[${s}]: Each FieldDropdown option id must be a string.
-          Found ${o[1]} in: ${o}`)) : !o[0] || typeof o[0] == "string" || No(o[0]) || typeof HTMLElement < "u" && o[0] instanceof HTMLElement || (t = !0, console.error(`Invalid option[${s}]: Each FieldDropdown option must have a string
+            Array.isArray(o) || o === ye.SEPARATOR ? typeof o[1] != "string" ? (t = !0, console.error(`Invalid option[${s}]: Each FieldDropdown option id must be a string.
+          Found ${o[1]} in: ${o}`)) : !o[0] || typeof o[0] == "string" || Co(o[0]) || typeof HTMLElement < "u" && o[0] instanceof HTMLElement || (t = !0, console.error(`Invalid option[${s}]: Each FieldDropdown option must have a string
           label, image description, or HTML element. Found ${o[0]} in: ${o}`)) : (t = !0, console.error(`Invalid option[${s}]: Each FieldDropdown option must be an array or
           the string literal 'separator'. Found: ${o}`));
           }
           if (t) throw TypeError("Found invalid FieldDropdown options.");
         }
       };
-      Me.SEPARATOR = "separator", Me.ARROW_CHAR = "▾", Me.IMAGE_Y_OFFSET = 5, Me.IMAGE_Y_PADDING = Me.IMAGE_Y_OFFSET * 2, bt("field_dropdown", Me);
-      var qs = class {
+      ye.SEPARATOR = "separator", ye.ARROW_CHAR = "▾", ye.IMAGE_Y_OFFSET = 5, ye.IMAGE_Y_PADDING = ye.IMAGE_Y_OFFSET * 2, bt("field_dropdown", ye);
+      var js = class {
         constructor(e, t, s, o) {
           this.name = e, this.startHats = !1, this.blockStyles = t || /* @__PURE__ */ Object.create(null), this.categoryStyles = s || /* @__PURE__ */ Object.create(null), this.componentStyles = o || /* @__PURE__ */ Object.create(null), this.fontStyle = /* @__PURE__ */ Object.create(null), c(I.THEME, e, this, !0);
         }
@@ -5985,18 +5985,18 @@ children`), this.state = e;
         }
         static defineTheme(e, t) {
           e = e.toLowerCase();
-          const s = new qs(e);
+          const s = new js(e);
           let o = t.base;
           if (o) {
             if (typeof o == "string") {
               let n;
               o = (n = ct(I.THEME, o)) != null ? n : void 0;
             }
-            o instanceof qs && (tt(s, o), s.name = e);
+            o instanceof js && (tt(s, o), s.name = e);
           }
           return tt(s.blockStyles, t.blockStyles), tt(s.categoryStyles, t.categoryStyles), tt(s.componentStyles, t.componentStyles), tt(s.fontStyle, t.fontStyle), t.startHats !== null && (s.startHats = t.startHats), s;
         }
-      }, Lg = { colour_blocks: { colourPrimary: "20" }, list_blocks: { colourPrimary: "260" }, logic_blocks: { colourPrimary: "210" }, loop_blocks: { colourPrimary: "120" }, math_blocks: { colourPrimary: "230" }, procedure_blocks: { colourPrimary: "290" }, text_blocks: { colourPrimary: "160" }, variable_blocks: { colourPrimary: "330" }, variable_dynamic_blocks: { colourPrimary: "310" }, hat_blocks: { colourPrimary: "330", hat: "cap" } }, bg = {
+      }, bg = { colour_blocks: { colourPrimary: "20" }, list_blocks: { colourPrimary: "260" }, logic_blocks: { colourPrimary: "210" }, loop_blocks: { colourPrimary: "120" }, math_blocks: { colourPrimary: "230" }, procedure_blocks: { colourPrimary: "290" }, text_blocks: { colourPrimary: "160" }, variable_blocks: { colourPrimary: "330" }, variable_dynamic_blocks: { colourPrimary: "310" }, hat_blocks: { colourPrimary: "330", hat: "cap" } }, fg = {
         colour_category: { colour: "20" },
         list_category: { colour: "260" },
         logic_category: { colour: "210" },
@@ -6006,7 +6006,7 @@ children`), this.state = e;
         text_category: { colour: "160" },
         variable_category: { colour: "330" },
         variable_dynamic_category: { colour: "310" }
-      }, Fr = new qs("classic", Lg, bg), At = class {
+      }, Fr = new js("classic", bg, fg), At = class {
         constructor(e) {
           this.gridPattern = null, this.getMetrics = this.setMetrics = void 0;
           let t = null, s = !1;
@@ -6017,24 +6017,24 @@ children`), this.state = e;
             t = pn((A = e.toolbox) != null ? A : null), s = mn(t), o = e.trashcan, o = o === void 0 ? s : o, n = e.collapse, n = n === void 0 ? s : n, r = e.comments, r = r === void 0 ? s : r, u = e.disable, u = u === void 0 ? s : u, h = e.sounds, h = h === void 0 ? !0 : h;
           }
           A = e.maxTrashcanContents, o ? A === void 0 && (A = 32) : A = 0;
-          const ie = !!e.rtl;
-          let K = e.horizontalLayout;
-          K === void 0 && (K = !1);
-          var ye = e.toolboxPosition !== "end";
-          ye = K ? ye ? B.TOP : B.BOTTOM : ye === ie ? B.RIGHT : B.LEFT;
+          const ne = !!e.rtl;
+          let j = e.horizontalLayout;
+          j === void 0 && (j = !1);
+          var ve = e.toolboxPosition !== "end";
+          ve = j ? ve ? B.TOP : B.BOTTOM : ve === ne ? B.RIGHT : B.LEFT;
           let es = e.css;
           es === void 0 && (es = !0);
           let Pt = "https://blockly-demo.appspot.com/static/media/";
           e.media && (Pt = e.media.endsWith("/") ? e.media : e.media + "/");
-          const KE = e.oneBasedIndex, np = e.renderer || "geras", rp = e.plugins || {};
+          const KE = e.oneBasedIndex, rp = e.renderer || "geras", lp = e.plugins || {};
           let dh = e.modalInputs;
-          dh === void 0 && (dh = !0), this.RTL = ie, this.oneBasedIndex = KE === void 0 ? !0 : KE, this.collapse = n, this.comments = r, this.disable = u, this.readOnly = m, this.maxBlocks = e.maxBlocks || 1 / 0;
+          dh === void 0 && (dh = !0), this.RTL = ne, this.oneBasedIndex = KE === void 0 ? !0 : KE, this.collapse = n, this.comments = r, this.disable = u, this.readOnly = m, this.maxBlocks = e.maxBlocks || 1 / 0;
           let JE;
-          this.maxInstances = (JE = e.maxInstances) != null ? JE : null, this.modalInputs = dh, this.pathToMedia = Pt, this.hasCategories = s, this.moveOptions = At.parseMoveOptions(e, s), this.hasScrollbars = !!this.moveOptions.scrollbars, this.hasTrashcan = o, this.maxTrashcanContents = A, this.hasSounds = h, this.hasCss = es, this.horizontalLayout = K, this.languageTree = t, this.gridOptions = At.parseGridOptions(e), this.zoomOptions = At.parseZoomOptions(e), this.toolboxPosition = ye, this.theme = At.parseThemeOptions(e), this.renderer = np;
+          this.maxInstances = (JE = e.maxInstances) != null ? JE : null, this.modalInputs = dh, this.pathToMedia = Pt, this.hasCategories = s, this.moveOptions = At.parseMoveOptions(e, s), this.hasScrollbars = !!this.moveOptions.scrollbars, this.hasTrashcan = o, this.maxTrashcanContents = A, this.hasSounds = h, this.hasCss = es, this.horizontalLayout = j, this.languageTree = t, this.gridOptions = At.parseGridOptions(e), this.zoomOptions = At.parseZoomOptions(e), this.toolboxPosition = ve, this.theme = At.parseThemeOptions(e), this.renderer = rp;
           let jE;
           this.rendererOverrides = (jE = e.rendererOverrides) != null ? jE : null;
           let qE;
-          this.parentWorkspace = (qE = e.parentWorkspace) != null ? qE : null, this.plugins = rp;
+          this.parentWorkspace = (qE = e.parentWorkspace) != null ? qE : null, this.plugins = lp;
         }
         static parseMoveOptions(e, t) {
           const s = e.move || {}, o = {};
@@ -6051,7 +6051,7 @@ children`), this.state = e;
           return t.spacing = Number(e.spacing) || 0, t.colour = e.colour || "#888", t.length = e.length === void 0 ? 1 : Number(e.length), t.snap = t.spacing > 0 && !!e.snap, t;
         }
         static parseThemeOptions(e) {
-          return e = e.theme || Fr, typeof e == "string" ? ct(I.THEME, e) : e instanceof qs ? e : qs.defineTheme(e.name || "builtin" + ne(), e);
+          return e = e.theme || Fr, typeof e == "string" ? ct(I.THEME, e) : e instanceof js ? e : js.defineTheme(e.name || "builtin" + re(), e);
         }
       }, l$ = class {
         constructor(e, t) {
@@ -6071,18 +6071,18 @@ children`), this.state = e;
         endDrag() {
           this.workspace.setResizesEnabled(!0);
           let e;
-          (e = this.workspace.getLayerManager()) == null || e.moveOffDragLayer(this.bubble, Xo), this.bubble.setDragging(!1);
+          (e = this.workspace.getLayerManager()) == null || e.moveOffDragLayer(this.bubble, Vo), this.bubble.setDragging(!1);
         }
         revertDrag() {
           this.startLoc && this.bubble.moveDuringDrag(this.startLoc);
         }
-      }, je, X = class {
+      }, je, W = class {
         constructor(e, t, s, o, n) {
-          this.workspace = e, this.anchor = t, this.ownerRect = s, this.owner = n, this.size = new w(0, 0), this.colour = "#ffffff", this.disposed = !1, this.relativeLeft = this.relativeTop = 0, this.dragStrategy = new l$(this, this.workspace), this.id = ne(), this.svgRoot = O($.G, { class: "blocklyBubble" }, e.getBubbleCanvas()), e = O($.G, { class: "blocklyEmboss" }, this.svgRoot), this.tail = O($.PATH, { class: "blocklyBubbleTail" }, e), this.background = O(
+          this.workspace = e, this.anchor = t, this.ownerRect = s, this.owner = n, this.size = new w(0, 0), this.colour = "#ffffff", this.disposed = !1, this.relativeLeft = this.relativeTop = 0, this.dragStrategy = new l$(this, this.workspace), this.id = re(), this.svgRoot = O($.G, { class: "blocklyBubble" }, e.getBubbleCanvas()), e = O($.G, { class: "blocklyEmboss" }, this.svgRoot), this.tail = O($.PATH, { class: "blocklyBubbleTail" }, e), this.background = O(
             $.RECT,
             { class: "blocklyDraggable", x: 0, y: 0, rx: je.BORDER_WIDTH, ry: je.BORDER_WIDTH },
             e
-          ), this.contentContainer = O($.G, {}, this.svgRoot), this.focusableElement = o ?? this.svgRoot, this.focusableElement.setAttribute("id", this.id), P(this.background, "pointerdown", this, this.onMouseDown), P(
+          ), this.contentContainer = O($.G, {}, this.svgRoot), this.focusableElement = o ?? this.svgRoot, this.focusableElement.setAttribute("id", this.id), k(this.background, "pointerdown", this, this.onMouseDown), k(
             this.focusableElement,
             "keydown",
             this,
@@ -6090,7 +6090,7 @@ children`), this.state = e;
           );
         }
         dispose() {
-          V(this.svgRoot), this.disposed = !0;
+          X(this.svgRoot), this.disposed = !0;
         }
         setAnchorLocation(e, t = !1) {
           this.anchor = e, t ? this.positionByRect(this.ownerRect) : this.positionRelativeToAnchor(), this.renderTail();
@@ -6165,7 +6165,7 @@ children`), this.state = e;
           return e = e.left + e.width, s -= this.getScrollbarThickness(), this.workspace.RTL ? o -= this.getScrollbarThickness() : e -= this.getScrollbarThickness(), new D(t, s, o, e);
         }
         getScrollbarThickness() {
-          return he.scrollbarThickness / this.workspace.scale;
+          return de.scrollbarThickness / this.workspace.scale;
         }
         renderTail() {
           const e = [];
@@ -6178,11 +6178,11 @@ children`), this.state = e;
             var h = u + Math.PI / 2;
             h > Math.PI * 2 && (h -= Math.PI * 2);
             var m = Math.sin(h);
-            const ie = Math.cos(h);
-            let K = (this.size.width + this.size.height) / je.TAIL_THICKNESS;
-            K = Math.min(K, this.size.width, this.size.height) / 4, h = 1 - je.ANCHOR_RADIUS / r, o = t + h * o, n = s + h * n, h = t + K * ie;
-            const ye = s + K * m;
-            t -= K * ie, s -= K * m, m = Dn(this.workspace.RTL ? -je.TAIL_ANGLE : je.TAIL_ANGLE), m = u + m, m > Math.PI * 2 && (m -= Math.PI * 2), u = Math.sin(m) * r / je.TAIL_BEND, r = Math.cos(m) * r / je.TAIL_BEND, e.push("M" + h + "," + ye), e.push("C" + (h + r) + "," + (ye + u) + " " + o + "," + n + " " + o + "," + n), e.push("C" + o + "," + n + " " + (t + r) + "," + (s + u) + " " + t + "," + s);
+            const ne = Math.cos(h);
+            let j = (this.size.width + this.size.height) / je.TAIL_THICKNESS;
+            j = Math.min(j, this.size.width, this.size.height) / 4, h = 1 - je.ANCHOR_RADIUS / r, o = t + h * o, n = s + h * n, h = t + j * ne;
+            const ve = s + j * m;
+            t -= j * ne, s -= j * m, m = Dn(this.workspace.RTL ? -je.TAIL_ANGLE : je.TAIL_ANGLE), m = u + m, m > Math.PI * 2 && (m -= Math.PI * 2), u = Math.sin(m) * r / je.TAIL_BEND, r = Math.cos(m) * r / je.TAIL_BEND, e.push("M" + h + "," + ve), e.push("C" + (h + r) + "," + (ve + u) + " " + o + "," + n + " " + o + "," + n), e.push("C" + o + "," + n + " " + (t + r) + "," + (s + u) + " " + t + "," + s);
           }
           e.push("z");
           let A;
@@ -6257,12 +6257,12 @@ children`), this.state = e;
           return this.owner;
         }
       };
-      je = X, X.BORDER_WIDTH = 6, X.DOUBLE_BORDER = je.BORDER_WIDTH * 2, X.MIN_SIZE = je.DOUBLE_BORDER, X.TAIL_THICKNESS = 1, X.TAIL_ANGLE = 20, X.TAIL_BEND = 4, X.ANCHOR_RADIUS = 8;
-      var qt = class extends X {
+      je = W, W.BORDER_WIDTH = 6, W.DOUBLE_BORDER = je.BORDER_WIDTH * 2, W.MIN_SIZE = je.DOUBLE_BORDER, W.TAIL_THICKNESS = 1, W.TAIL_ANGLE = 20, W.TAIL_BEND = 4, W.ANCHOR_RADIUS = 8;
+      var qt = class extends W {
         constructor(e, t, s, o) {
           super(t, s, o), this.workspace = t, this.anchor = s, this.ownerRect = o, this.autoLayout = !0, t = new At(e), this.validateWorkspaceOptions(t), this.svgDialog = O(
             $.SVG,
-            { x: X.BORDER_WIDTH, y: X.BORDER_WIDTH },
+            { x: W.BORDER_WIDTH, y: W.BORDER_WIDTH },
             this.contentContainer
           ), e.parentWorkspace = this.workspace, this.miniWorkspace = this.newWorkspaceSvg(new At(e)), this.miniWorkspace.internalIsMutator = !0, e = this.miniWorkspace.createDom("blocklyMutatorBackground"), this.svgDialog.appendChild(e), t.languageTree && (e.insertBefore(this.miniWorkspace.addFlyout($.G), this.miniWorkspace.getCanvas()), e = this.miniWorkspace.getFlyout(), e == null || e.init(this.miniWorkspace), e == null || e.show(t.languageTree)), L(this.svgRoot, "blocklyMiniWorkspaceBubble"), this.miniWorkspace.addChangeListener(this.onWorkspaceChange.bind(this));
           let n, r;
@@ -6301,7 +6301,7 @@ children`), this.state = e;
           if (!this.miniWorkspace.isDragging() || this.miniWorkspace.keyboardMoveInProgress) {
             this.autoLayout && (this.autoLayout = !this.miniWorkspace.keyboardMoveInProgress);
             var e = this.getSize(), t = this.calculateWorkspaceSize();
-            Math.abs(e.width - t.width) < qt.MINIMUM_VIEW_CHANGE && Math.abs(e.height - t.height) < qt.MINIMUM_VIEW_CHANGE || (this.svgDialog.setAttribute("width", `${t.width}px`), this.svgDialog.setAttribute("height", `${t.height}px`), this.miniWorkspace.setCachedParentSvgSize(t.width, t.height), this.miniWorkspace.RTL && this.miniWorkspace.getCanvas().setAttribute("transform", `translate(${t.width}, 0)`), this.setSize(new w(t.width + X.DOUBLE_BORDER, t.height + X.DOUBLE_BORDER), this.autoLayout), this.miniWorkspace.resize(), this.miniWorkspace.recordDragTargets());
+            Math.abs(e.width - t.width) < qt.MINIMUM_VIEW_CHANGE && Math.abs(e.height - t.height) < qt.MINIMUM_VIEW_CHANGE || (this.svgDialog.setAttribute("width", `${t.width}px`), this.svgDialog.setAttribute("height", `${t.height}px`), this.miniWorkspace.setCachedParentSvgSize(t.width, t.height), this.miniWorkspace.RTL && this.miniWorkspace.getCanvas().setAttribute("transform", `translate(${t.width}, 0)`), this.setSize(new w(t.width + W.DOUBLE_BORDER, t.height + W.DOUBLE_BORDER), this.autoLayout), this.miniWorkspace.resize(), this.miniWorkspace.recordDragTargets());
           }
         }
         calculateWorkspaceSize() {
@@ -6330,10 +6330,10 @@ children`), this.state = e;
           throw Error("The implementation of newWorkspaceSvg should be monkey-patched in by blockly.ts");
         }
       };
-      qt.MINIMUM_VIEW_CHANGE = 10, qt.MARGIN = X.DOUBLE_BORDER * 3;
-      var Wo = class {
+      qt.MINIMUM_VIEW_CHANGE = 10, qt.MARGIN = W.DOUBLE_BORDER * 3;
+      var Xo = class {
         constructor(e) {
-          this.sourceBlock = e, this.offsetInBlock = new R(0, 0), this.workspaceLocation = new R(0, 0), this.svgRoot = null, this.tooltip = e, this.id = ne();
+          this.sourceBlock = e, this.offsetInBlock = new R(0, 0), this.workspaceLocation = new R(0, 0), this.svgRoot = null, this.tooltip = e, this.id = re();
         }
         getType() {
           throw Error("Icons must implement getType");
@@ -6344,11 +6344,11 @@ children`), this.state = e;
             this.svgRoot = O(
               $.G,
               { class: "blocklyIconGroup", id: this.id }
-            ), t.getSvgRoot().appendChild(this.svgRoot), this.updateSvgRootOffset(), P(this.svgRoot, "pointerdown", this, e), this.svgRoot.tooltip = this, Si(this.svgRoot);
+            ), t.getSvgRoot().appendChild(this.svgRoot), this.updateSvgRootOffset(), k(this.svgRoot, "pointerdown", this, e), this.svgRoot.tooltip = this, Ri(this.svgRoot);
           }
         }
         dispose() {
-          rc(this.svgRoot), V(this.svgRoot);
+          rc(this.svgRoot), X(this.svgRoot);
         }
         getWeight() {
           return -1;
@@ -6414,7 +6414,7 @@ children`), this.state = e;
           this.getSourceBlock().showContextMenu(e);
         }
       }, Hr, Gr;
-      Hr = 17, Gr = 16, i.MutatorIcon$$module$build$src$core$icons$mutator_icon = class extends Wo {
+      Hr = 17, Gr = 16, i.MutatorIcon$$module$build$src$core$icons$mutator_icon = class extends Xo {
         constructor(e, t) {
           super(t), this.flyoutBlockTypes = e, this.sourceBlock = t, this.saveConnectionsListener = this.updateWorkspacePid = this.rootBlock = this.miniWorkspaceBubble = null;
         }
@@ -6537,16 +6537,16 @@ children`), this.state = e;
           };
         }
         static isIgnorableMutatorEvent(e) {
-          return e.isUiEvent || lo(e) || os(e) && e.element === "disabled";
+          return e.isUiEvent || ro(e) || os(e) && e.element === "disabled";
         }
         recomposeSourceBlock() {
           if (this.rootBlock) {
             if (!this.sourceBlock.compose) throw Error("Blocks with mutator icons must include a compose method");
             var e = i.getGroup$$module$build$src$core$events$utils();
             e || i.setGroup$$module$build$src$core$events$utils(!0);
-            var t = Ws.getExtraBlockState_(this.sourceBlock);
+            var t = Xs.getExtraBlockState_(this.sourceBlock);
             this.sourceBlock.compose(this.rootBlock);
-            var s = Ws.getExtraBlockState_(this.sourceBlock);
+            var s = Xs.getExtraBlockState_(this.sourceBlock);
             t !== s && v(new (M(g.BLOCK_CHANGE))(this.sourceBlock, "mutation", null, t, s)), i.setGroup$$module$build$src$core$events$utils(e);
           }
         }
@@ -6555,21 +6555,21 @@ children`), this.state = e;
           return (e = this.miniWorkspaceBubble) == null ? void 0 : e.getWorkspace();
         }
       }, i.MutatorIcon$$module$build$src$core$icons$mutator_icon.TYPE = Ee.MUTATOR, i.MutatorIcon$$module$build$src$core$icons$mutator_icon.WEIGHT = 1, i.MutatorIcon$$module$build$src$core$icons$mutator_icon;
-      var Yo = /* @__PURE__ */ Object.create(null), fg = { allExtensions: Yo };
+      var Wo = /* @__PURE__ */ Object.create(null), Ag = { allExtensions: Wo };
       i.register$$module$build$src$core$extensions("parent_tooltip_when_inline", t_);
-      var dt = { TEST_ONLY: fg };
+      var dt = { TEST_ONLY: Ag };
       dt.apply = Jn, dt.buildTooltipForDropdown = i.buildTooltipForDropdown$$module$build$src$core$extensions, dt.buildTooltipWithFieldText = i.buildTooltipWithFieldText$$module$build$src$core$extensions, dt.isRegistered = Mc, dt.register = i.register$$module$build$src$core$extensions, dt.registerMixin = i.registerMixin$$module$build$src$core$extensions, dt.registerMutator = i.registerMutator$$module$build$src$core$extensions, dt.runAfterPageLoad = Qd, dt.unregister = Kd;
-      var Te;
+      var $e;
       (function(e) {
         e[e.WIN_KEY_FF_LINUX = 0] = "WIN_KEY_FF_LINUX", e[e.MAC_ENTER = 3] = "MAC_ENTER", e[e.BACKSPACE = 8] = "BACKSPACE", e[e.TAB = 9] = "TAB", e[e.NUM_CENTER = 12] = "NUM_CENTER", e[e.ENTER = 13] = "ENTER", e[e.SHIFT = 16] = "SHIFT", e[e.CTRL = 17] = "CTRL", e[e.ALT = 18] = "ALT", e[e.PAUSE = 19] = "PAUSE", e[e.CAPS_LOCK = 20] = "CAPS_LOCK", e[e.ESC = 27] = "ESC", e[e.SPACE = 32] = "SPACE", e[e.PAGE_UP = 33] = "PAGE_UP", e[e.PAGE_DOWN = 34] = "PAGE_DOWN", e[e.END = 35] = "END", e[e.HOME = 36] = "HOME", e[e.LEFT = 37] = "LEFT", e[e.UP = 38] = "UP", e[e.RIGHT = 39] = "RIGHT", e[e.DOWN = 40] = "DOWN", e[e.PLUS_SIGN = 43] = "PLUS_SIGN", e[e.PRINT_SCREEN = 44] = "PRINT_SCREEN", e[e.INSERT = 45] = "INSERT", e[e.DELETE = 46] = "DELETE", e[e.ZERO = 48] = "ZERO", e[e.ONE = 49] = "ONE", e[e.TWO = 50] = "TWO", e[e.THREE = 51] = "THREE", e[e.FOUR = 52] = "FOUR", e[e.FIVE = 53] = "FIVE", e[e.SIX = 54] = "SIX", e[e.SEVEN = 55] = "SEVEN", e[e.EIGHT = 56] = "EIGHT", e[e.NINE = 57] = "NINE", e[e.FF_SEMICOLON = 59] = "FF_SEMICOLON", e[e.FF_EQUALS = 61] = "FF_EQUALS", e[e.FF_DASH = 173] = "FF_DASH", e[e.FF_HASH = 163] = "FF_HASH", e[e.QUESTION_MARK = 63] = "QUESTION_MARK", e[e.AT_SIGN = 64] = "AT_SIGN", e[e.A = 65] = "A", e[e.B = 66] = "B", e[e.C = 67] = "C", e[e.D = 68] = "D", e[e.E = 69] = "E", e[e.F = 70] = "F", e[e.G = 71] = "G", e[e.H = 72] = "H", e[e.I = 73] = "I", e[e.J = 74] = "J", e[e.K = 75] = "K", e[e.L = 76] = "L", e[e.M = 77] = "M", e[e.N = 78] = "N", e[e.O = 79] = "O", e[e.P = 80] = "P", e[e.Q = 81] = "Q", e[e.R = 82] = "R", e[e.S = 83] = "S", e[e.T = 84] = "T", e[e.U = 85] = "U", e[e.V = 86] = "V", e[e.W = 87] = "W", e[e.X = 88] = "X", e[e.Y = 89] = "Y", e[e.Z = 90] = "Z", e[e.META = 91] = "META", e[e.WIN_KEY_RIGHT = 92] = "WIN_KEY_RIGHT", e[e.CONTEXT_MENU = 93] = "CONTEXT_MENU", e[e.NUM_ZERO = 96] = "NUM_ZERO", e[e.NUM_ONE = 97] = "NUM_ONE", e[e.NUM_TWO = 98] = "NUM_TWO", e[e.NUM_THREE = 99] = "NUM_THREE", e[e.NUM_FOUR = 100] = "NUM_FOUR", e[e.NUM_FIVE = 101] = "NUM_FIVE", e[e.NUM_SIX = 102] = "NUM_SIX", e[e.NUM_SEVEN = 103] = "NUM_SEVEN", e[e.NUM_EIGHT = 104] = "NUM_EIGHT", e[e.NUM_NINE = 105] = "NUM_NINE", e[e.NUM_MULTIPLY = 106] = "NUM_MULTIPLY", e[e.NUM_PLUS = 107] = "NUM_PLUS", e[e.NUM_MINUS = 109] = "NUM_MINUS", e[e.NUM_PERIOD = 110] = "NUM_PERIOD", e[e.NUM_DIVISION = 111] = "NUM_DIVISION", e[e.F1 = 112] = "F1", e[e.F2 = 113] = "F2", e[e.F3 = 114] = "F3", e[e.F4 = 115] = "F4", e[e.F5 = 116] = "F5", e[e.F6 = 117] = "F6", e[e.F7 = 118] = "F7", e[e.F8 = 119] = "F8", e[e.F9 = 120] = "F9", e[e.F10 = 121] = "F10", e[e.F11 = 122] = "F11", e[e.F12 = 123] = "F12", e[e.NUMLOCK = 144] = "NUMLOCK", e[e.SCROLL_LOCK = 145] = "SCROLL_LOCK", e[e.FIRST_MEDIA_KEY = 166] = "FIRST_MEDIA_KEY", e[e.LAST_MEDIA_KEY = 183] = "LAST_MEDIA_KEY", e[e.SEMICOLON = 186] = "SEMICOLON", e[e.DASH = 189] = "DASH", e[e.EQUALS = 187] = "EQUALS", e[e.COMMA = 188] = "COMMA", e[e.PERIOD = 190] = "PERIOD", e[e.SLASH = 191] = "SLASH", e[e.APOSTROPHE = 192] = "APOSTROPHE", e[e.TILDE = 192] = "TILDE", e[e.SINGLE_QUOTE = 222] = "SINGLE_QUOTE", e[e.OPEN_SQUARE_BRACKET = 219] = "OPEN_SQUARE_BRACKET", e[e.BACKSLASH = 220] = "BACKSLASH", e[e.CLOSE_SQUARE_BRACKET = 221] = "CLOSE_SQUARE_BRACKET", e[e.WIN_KEY = 224] = "WIN_KEY", e[e.MAC_FF_META = 224] = "MAC_FF_META", e[e.MAC_WK_CMD_LEFT = 91] = "MAC_WK_CMD_LEFT", e[e.MAC_WK_CMD_RIGHT = 93] = "MAC_WK_CMD_RIGHT", e[e.WIN_IME = 229] = "WIN_IME", e[e.VK_NONAME = 252] = "VK_NONAME", e[e.PHANTOM = 255] = "PHANTOM", e[e.CTRL_CMD = gr || J_ || vu ? e.MAC_WK_CMD_LEFT : e.CTRL] = "CTRL_CMD";
-      })(Te || (Te = {}));
+      })($e || ($e = {}));
       var Zt = {};
-      Zt.arc = ae, Zt.curve = He, Zt.line = Mo, Zt.lineOnAxis = y, Zt.lineTo = ft, Zt.moveBy = le, Zt.moveTo = Le, Zt.point = N;
-      var oe = {};
-      oe.Coordinate = R, oe.KeyCodes = Te, oe.Rect = D, oe.Size = w, oe.Svg = $, oe.aria = Fi, oe.array = cT, oe.browserEvents = Vt, oe.colour = lt, oe.deprecation = DT, oe.dom = be, oe.extensions = dt, oe.idGenerator = ku, oe.math = fr, oe.object = iT, oe.parsing = Ki, oe.string = Uo, oe.style = $s, oe.svgMath = Hs, oe.svgPaths = Zt, oe.toolbox = Es, oe.userAgent = _g, oe.xml = Do;
-      var Vr = class extends X {
+      Zt.arc = he, Zt.curve = He, Zt.line = No, Zt.lineOnAxis = y, Zt.lineTo = ft, Zt.moveBy = ce, Zt.moveTo = Le, Zt.point = N;
+      var ie = {};
+      ie.Coordinate = R, ie.KeyCodes = $e, ie.Rect = D, ie.Size = w, ie.Svg = $, ie.aria = Ui, ie.array = cT, ie.browserEvents = Vt, ie.colour = lt, ie.deprecation = DT, ie.dom = be, ie.extensions = dt, ie.idGenerator = ku, ie.math = fr, ie.object = iT, ie.parsing = zi, ie.string = xo, ie.style = $s, ie.svgMath = Fs, ie.svgPaths = Zt, ie.toolbox = Es, ie.userAgent = Tg, ie.xml = Po;
+      var Vr = class extends W {
         constructor(e, t, s, o) {
-          super(e, t, s, void 0, o), this.workspace = e, this.anchor = t, this.ownerRect = s, this.owner = o, this.resizePointerMoveListener = this.resizePointerUpListener = null, this.sizeChangeListeners = [], this.locationChangeListeners = [], this.DEFAULT_SIZE = new w(160 + X.DOUBLE_BORDER, 80 + X.DOUBLE_BORDER), this.MIN_SIZE = new w(45 + X.DOUBLE_BORDER, 20 + X.DOUBLE_BORDER), this.editable = !0, L(this.svgRoot, "blocklyTextInputBubble"), this.editor = new Br(e, this.id, () => {
+          super(e, t, s, void 0, o), this.workspace = e, this.anchor = t, this.ownerRect = s, this.owner = o, this.resizePointerMoveListener = this.resizePointerUpListener = null, this.sizeChangeListeners = [], this.locationChangeListeners = [], this.DEFAULT_SIZE = new w(160 + W.DOUBLE_BORDER, 80 + W.DOUBLE_BORDER), this.MIN_SIZE = new w(45 + W.DOUBLE_BORDER, 20 + W.DOUBLE_BORDER), this.editable = !0, L(this.svgRoot, "blocklyTextInputBubble"), this.editor = new Br(e, this.id, () => {
             i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this);
           }), this.contentContainer.appendChild(this.editor.getDom()), this.resizeGroup = this.createResizeHandle(this.svgRoot, e), this.setSize(this.DEFAULT_SIZE, !0);
         }
@@ -6599,15 +6599,15 @@ children`), this.state = e;
             $.IMAGE,
             { class: "blocklyResizeHandle", href: `${t.options.pathToMedia}resize-handle.svg` },
             e
-          ), P(e, "pointerdown", this, this.onResizePointerDown), e;
+          ), k(e, "pointerdown", this, this.onResizePointerDown), e;
         }
         setSize(e, t = !1) {
           e.width = Math.max(e.width, this.MIN_SIZE.width), e.height = Math.max(e.height, this.MIN_SIZE.height);
-          const s = e.width - X.DOUBLE_BORDER, o = e.height - X.DOUBLE_BORDER;
+          const s = e.width - W.DOUBLE_BORDER, o = e.height - W.DOUBLE_BORDER;
           this.editor.updateSize(new w(
             s,
             o
-          ), new w(0, 0)), this.editor.getDom().setAttribute("x", `${X.DOUBLE_BORDER / 2}`), this.editor.getDom().setAttribute("y", `${X.DOUBLE_BORDER / 2}`), this.resizeGroup.setAttribute("y", `${o}`), this.workspace.RTL ? this.resizeGroup.setAttribute("x", `${-X.DOUBLE_BORDER}`) : this.resizeGroup.setAttribute("x", `${s}`), super.setSize(e, t), this.onSizeChange();
+          ), new w(0, 0)), this.editor.getDom().setAttribute("x", `${W.DOUBLE_BORDER / 2}`), this.editor.getDom().setAttribute("y", `${W.DOUBLE_BORDER / 2}`), this.resizeGroup.setAttribute("y", `${o}`), this.workspace.RTL ? this.resizeGroup.setAttribute("x", `${-W.DOUBLE_BORDER}`) : this.resizeGroup.setAttribute("x", `${s}`), super.setSize(e, t), this.onSizeChange();
         }
         getSize() {
           return super.getSize();
@@ -6625,10 +6625,10 @@ children`), this.state = e;
           this.bringToFront(), Ve(e) || (Yn(this.workspace, e, new R(
             this.workspace.RTL ? -this.getSize().width : this.getSize().width,
             this.getSize().height
-          )), this.resizePointerUpListener = P(document, "pointerup", this, this.onResizePointerUp), this.resizePointerMoveListener = P(document, "pointermove", this, this.onResizePointerMove), this.workspace.hideChaff()), e.stopPropagation();
+          )), this.resizePointerUpListener = k(document, "pointerup", this, this.onResizePointerUp), this.resizePointerMoveListener = k(document, "pointermove", this, this.onResizePointerMove), this.workspace.hideChaff()), e.stopPropagation();
         }
         onResizePointerUp(e) {
-          J(), this.resizePointerUpListener && (G(this.resizePointerUpListener), this.resizePointerUpListener = null), this.resizePointerMoveListener && (G(this.resizePointerMoveListener), this.resizePointerMoveListener = null);
+          q(), this.resizePointerUpListener && (V(this.resizePointerUpListener), this.resizePointerUpListener = null), this.resizePointerMoveListener && (V(this.resizePointerMoveListener), this.resizePointerMoveListener = null);
         }
         onResizePointerMove(e) {
           e = zn(this.workspace, e), this.setSize(new w(this.workspace.RTL ? -e.x : e.x, e.y), !1), this.onSizeChange();
@@ -6660,7 +6660,7 @@ children`), this.state = e;
       (function(e) {
         e[e.INPUT_VALUE = 1] = "INPUT_VALUE", e[e.OUTPUT_VALUE = 2] = "OUTPUT_VALUE", e[e.NEXT_STATEMENT = 3] = "NEXT_STATEMENT", e[e.PREVIOUS_STATEMENT = 4] = "PREVIOUS_STATEMENT";
       })(f || (f = {}));
-      var zo = class {
+      var Yo = class {
         constructor(e) {
           this.connectionChecker = e, this.connections = [];
         }
@@ -6703,8 +6703,8 @@ children`), this.state = e;
         }
         getNeighbours(e, t) {
           function s(A) {
-            const ie = n - o[A].x, K = r - o[A].y;
-            return Math.sqrt(ie * ie + K * K) <= t && m.push(o[A]), K < t;
+            const ne = n - o[A].x, j = r - o[A].y;
+            return Math.sqrt(ne * ne + j * j) <= t && m.push(o[A]), j < t;
           }
           const o = this.connections, n = e.x, r = e.y;
           e = 0;
@@ -6735,7 +6735,7 @@ children`), this.state = e;
         }
         static init(e) {
           const t = [];
-          return t[f.INPUT_VALUE] = new zo(e), t[f.OUTPUT_VALUE] = new zo(e), t[f.NEXT_STATEMENT] = new zo(e), t[f.PREVIOUS_STATEMENT] = new zo(e), t;
+          return t[f.INPUT_VALUE] = new Yo(e), t[f.OUTPUT_VALUE] = new Yo(e), t[f.NEXT_STATEMENT] = new Yo(e), t[f.PREVIOUS_STATEMENT] = new Yo(e), t;
         }
       }, Ea = class extends Ie {
         constructor(e, t, s) {
@@ -6754,7 +6754,7 @@ children`), this.state = e;
         constructor(e) {
           if (super(e), this.type = g.BLOCK_DELETE, e) {
             if (e.getParent()) throw Error("Connected blocks cannot be deleted.");
-            e.isShadow() && (this.recordUndo = !1), this.oldXml = Ci(e), this.ids = ao(e), this.wasShadow = e.isShadow(), this.oldJson = st(e, { addCoordinates: !0 });
+            e.isShadow() && (this.recordUndo = !1), this.oldXml = Ai(e), this.ids = uo(e), this.wasShadow = e.isShadow(), this.oldJson = st(e, { addCoordinates: !0 });
           }
         }
         toJson() {
@@ -6776,14 +6776,14 @@ children`), this.state = e;
             const s = this.ids[e], o = t.getBlockById(s);
             o ? o.dispose(!1) : s === this.blockId && console.warn("Can't delete non-existent block: " + s);
           }
-          else vs(this.oldJson, t);
+          else ys(this.oldJson, t);
         }
       };
       c(I.EVENT, g.BLOCK_DELETE, ga);
-      var H = class {
+      var G = class {
         constructor(e, t) {
           if (this.type = t, this.targetConnection = null, this.disposed = !1, this.shadowDom = this.check = null, this.y = this.x = 0, this.shadowState = null, this.sourceBlock_ = e, e.id.includes("_connection")) throw Error(`Connection ID indicator is contained in block ID. This will cause problems with focus: ${e.id}.`);
-          this.id = `${e.id}_connection_${ne()}`;
+          this.id = `${e.id}_connection_${re()}`;
         }
         connect_(e) {
           const t = f.INPUT_VALUE, s = this.getSourceBlock();
@@ -6795,10 +6795,10 @@ children`), this.state = e;
             h.isShadow() ? h.dispose(!1) : (this.disconnectInternal(), n = h), this.applyShadowState(u);
           }
           let r;
-          j() && (r = new (M(g.BLOCK_MOVE))(o), r.setReason(["connect"])), s_(
+          Z() && (r = new (M(g.BLOCK_MOVE))(o), r.setReason(["connect"])), s_(
             this,
             e
-          ), o.setParent(s), r && (r.recordNew(), v(r)), n && (e = this.type === t ? n.outputConnection : n.previousConnection) && ((o = H.getConnectionForOrphanedConnection(o, e)) ? e.connect(o) : e.onFailedConnect(this));
+          ), o.setParent(s), r && (r.recordNew(), v(r)), n && (e = this.type === t ? n.outputConnection : n.previousConnection) && ((o = G.getConnectionForOrphanedConnection(o, e)) ? e.connect(o) : e.onFailedConnect(this));
         }
         dispose() {
           if (this.isConnected()) {
@@ -6839,7 +6839,7 @@ children`), this.state = e;
           const o = i.getGroup$$module$build$src$core$events$utils();
           o || i.setGroup$$module$build$src$core$events$utils(!0);
           let n;
-          j() && (n = new (M(g.BLOCK_MOVE))(s.getSourceBlock()), n.setReason(["disconnect"]));
+          Z() && (n = new (M(g.BLOCK_MOVE))(s.getSourceBlock()), n.setReason(["disconnect"]));
           const r = this.targetConnection;
           r && (r.targetConnection = null), this.targetConnection = null, e && s.getSourceBlock().setParent(null), n && (n.recordNew(), v(n)), s.getSourceBlock().isShadow() || t.respawnShadow_(), i.setGroup$$module$build$src$core$events$utils(o);
         }
@@ -6929,9 +6929,9 @@ children`), this.state = e;
           var t = this.getSourceBlock();
           const s = this.getShadowState(), o = this.getShadowDom();
           if (t.isDeadOrDying() || !s && !o) return null;
-          if (s) return t = ks(s, t.workspace, { parentConnection: e ? this : void 0, isShadow: !0, recordUndo: !1 });
+          if (s) return t = vs(s, t.workspace, { parentConnection: e ? this : void 0, isShadow: !0, recordUndo: !1 });
           if (o) {
-            if (t = Bs(o, t.workspace), e) if (this.type === f.INPUT_VALUE) {
+            if (t = ws(o, t.workspace), e) if (this.type === f.INPUT_VALUE) {
               if (!t.outputConnection) throw Error("Shadow block is missing an output connection");
               if (!this.connect(t.outputConnection)) throw Error("Could not connect shadow block to connection");
             } else if (this.type === f.NEXT_STATEMENT) {
@@ -6952,7 +6952,7 @@ children`), this.state = e;
           return e && s.canConnect(t, e, !1) ? e : null;
         }
       };
-      H.CAN_CONNECT = 0, H.REASON_SELF_CONNECTION = 1, H.REASON_WRONG_TYPE = 2, H.REASON_TARGET_NULL = 3, H.REASON_CHECKS_FAILED = 4, H.REASON_DIFFERENT_WORKSPACES = 5, H.REASON_SHADOW_PARENT = 6, H.REASON_DRAG_CHECKS_FAILED = 7, H.REASON_PREVIOUS_AND_OUTPUT = 8;
+      G.CAN_CONNECT = 0, G.REASON_SELF_CONNECTION = 1, G.REASON_WRONG_TYPE = 2, G.REASON_TARGET_NULL = 3, G.REASON_CHECKS_FAILED = 4, G.REASON_DIFFERENT_WORKSPACES = 5, G.REASON_SHADOW_PARENT = 6, G.REASON_DRAG_CHECKS_FAILED = 7, G.REASON_PREVIOUS_AND_OUTPUT = 8;
       var c$ = class extends Error {
         constructor(e) {
           super(`Tried to append an icon of type ${e.getType()} when an icon of that type already exists on the block. Use getIcon to access the existing icon.`), this.icon = e;
@@ -6961,9 +6961,9 @@ children`), this.state = e;
       u$.DuplicateIconType = c$, (function(e) {
         e[e.LEFT = -1] = "LEFT", e[e.CENTRE = 0] = "CENTRE", e[e.RIGHT = 1] = "RIGHT";
       })(i.Align$$module$build$src$core$inputs$align || (i.Align$$module$build$src$core$inputs$align = {})), i.Align$$module$build$src$core$inputs$align;
-      var Zs = class extends Y {
+      var qs = class extends z {
         constructor(e, t, s) {
-          super(Y.SKIP_SETUP), this.class = null, this.EDITABLE = !1, this.maxDisplayLength = 1 / 0, e !== Y.SKIP_SETUP && (s ? this.configure_(s) : this.class = t || null, this.setValue(e));
+          super(z.SKIP_SETUP), this.class = null, this.EDITABLE = !1, this.maxDisplayLength = 1 / 0, e !== z.SKIP_SETUP && (s ? this.configure_(s) : this.class = t || null, this.setValue(e));
         }
         configure_(e) {
           super.configure_(e), e.class && (this.class = e.class);
@@ -6978,18 +6978,18 @@ children`), this.state = e;
           return e == null ? null : `${e}`;
         }
         setClass(e) {
-          this.textElement_ && (this.class && F(this.textElement_, this.class), e && L(this.textElement_, e)), this.class = e;
+          this.textElement_ && (this.class && H(this.textElement_, this.class), e && L(this.textElement_, e)), this.class = e;
         }
         static fromJson(e) {
-          return new this(ue(e.text), void 0, e);
+          return new this(ae(e.text), void 0, e);
         }
       };
-      bt("field_label", Zs), Zs.prototype.DEFAULT_VALUE = "";
-      var a$ = 30, Qs = [];
-      Qs[f.INPUT_VALUE] = f.OUTPUT_VALUE, Qs[f.OUTPUT_VALUE] = f.INPUT_VALUE, Qs[f.NEXT_STATEMENT] = f.PREVIOUS_STATEMENT, Qs[f.PREVIOUS_STATEMENT] = f.NEXT_STATEMENT;
-      var pa = "RENAME_VARIABLE_ID", ma = "DELETE_VARIABLE_ID", h$ = 10, Ae = class extends H {
+      bt("field_label", qs), qs.prototype.DEFAULT_VALUE = "";
+      var a$ = 30, Zs = [];
+      Zs[f.INPUT_VALUE] = f.OUTPUT_VALUE, Zs[f.OUTPUT_VALUE] = f.INPUT_VALUE, Zs[f.NEXT_STATEMENT] = f.PREVIOUS_STATEMENT, Zs[f.PREVIOUS_STATEMENT] = f.NEXT_STATEMENT;
+      var pa = "RENAME_VARIABLE_ID", ma = "DELETE_VARIABLE_ID", h$ = 10, Ae = class extends G {
         constructor(e, t) {
-          super(e, t), this.highlighted = !1, this.targetConnection = null, this.db = e.workspace.connectionDBList[t], this.dbOpposite = e.workspace.connectionDBList[Qs[t]], this.offsetInBlock = new R(0, 0), this.trackedState = Ae.TrackedState.WILL_TRACK;
+          super(e, t), this.highlighted = !1, this.targetConnection = null, this.db = e.workspace.connectionDBList[t], this.dbOpposite = e.workspace.connectionDBList[Zs[t]], this.offsetInBlock = new R(0, 0), this.trackedState = Ae.TrackedState.WILL_TRACK;
         }
         dispose() {
           super.dispose(), this.trackedState === Ae.TrackedState.TRACKED && this.db.removeConnection(this, this.y);
@@ -7086,7 +7086,7 @@ children`), this.state = e;
         }
         onFailedConnect(e) {
           const t = this.getSourceBlock();
-          if (Ce()) {
+          if (Ne()) {
             const s = i.getGroup$$module$build$src$core$events$utils();
             setTimeout((function() {
               t.isDisposed() || t.getParent() || (i.setGroup$$module$build$src$core$events$utils(s), this.bumpAwayFrom(e), i.setGroup$$module$build$src$core$events$utils(!1));
@@ -7129,8 +7129,8 @@ children`), this.state = e;
               e.clientX,
               e.clientY
             );
-            else n = new R(this.x, this.y), n = go(o, n).translate(s.RTL ? -5 : 5, 5);
-            Co(e, t, s.RTL, o, n);
+            else n = new R(this.x, this.y), n = Eo(o, n).translate(s.RTL ? -5 : 5, 5);
+            Ao(e, t, s.RTL, o, n);
           }
         }
         getFocusableElement() {
@@ -7157,7 +7157,7 @@ children`), this.state = e;
       (function(e) {
         e = e.TrackedState || (e.TrackedState = {}), e[e.WILL_TRACK = -1] = "WILL_TRACK", e[e.UNTRACKED = 0] = "UNTRACKED", e[e.TRACKED = 1] = "TRACKED";
       })(Ae || (Ae = {})), Ae.TrackedState;
-      var Ko = class {
+      var zo = class {
         constructor(e, t) {
           this.name = e, this.sourceBlock = t, this.fieldRow = [], this.align = i.Align$$module$build$src$core$inputs$align.LEFT, this.visible = !0, this.type = i.inputTypes$$module$build$src$core$inputs$input_types.CUSTOM, this.connection = null;
         }
@@ -7225,47 +7225,47 @@ children`), this.state = e;
         makeConnection(e) {
           return this.sourceBlock.makeConnection_(e);
         }
-      }, Ct = class extends Ko {
+      }, Ct = class extends zo {
         constructor(e, t) {
           super(e, t), this.name = e, this.type = i.inputTypes$$module$build$src$core$inputs$input_types.DUMMY;
         }
-      }, Qt = class extends Ko {
+      }, Qt = class extends zo {
         constructor(e, t) {
           super(e, t), this.name = e, this.type = i.inputTypes$$module$build$src$core$inputs$input_types.END_ROW;
         }
-      }, qe = class extends Ko {
+      }, qe = class extends zo {
         constructor(e, t) {
           if (!e) throw Error("Statement inputs must have a non-empty name");
           super(e, t), this.name = e, this.type = i.inputTypes$$module$build$src$core$inputs$input_types.STATEMENT, this.connection = this.makeConnection(f.NEXT_STATEMENT);
         }
       }, d$;
-      i.ValueInput$$module$build$src$core$inputs$value_input = class extends Ko {
+      i.ValueInput$$module$build$src$core$inputs$value_input = class extends zo {
         constructor(e, t) {
           if (!e) throw Error("Value inputs must have a non-empty name");
           super(e, t), this.name = e, this.type = i.inputTypes$$module$build$src$core$inputs$input_types.VALUE, this.connection = this.makeConnection(f.INPUT_VALUE);
         }
       }, d$ = {}, d$.ValueInput = i.ValueInput$$module$build$src$core$inputs$value_input;
-      var Jo = class {
+      var Ko = class {
         constructor(e, t, s) {
           if (this.data = null, this.disposed = !1, this.hue = null, this.colour_ = "#000000", this.styleName_ = "", this.suppressPrefixSuffix = !1, this.previousConnection = this.nextConnection = this.outputConnection = null, this.inputList = [], this.icons = [], this.disabledReasons = /* @__PURE__ */ new Set(), this.tooltip = "", this.contextMenu = !0, this.parentBlock_ = null, this.childBlocks_ = [], this.editable = this.movable = this.deletable = !0, this.collapsed_ = this.shadow = !1, this.outputShape_ = null, this.rendered = this.isInsertionMarker_ = this.initialized = this.disposing = !1, this.onchangeWrapper = this.helpUrl = null, this.statementInputCount = 0, this.workspace = e, this.id = s && !e.getBlockById(s) ? s : et(), e.setBlockById(this.id, this), this.xy = new R(0, 0), this.isInFlyout = e.isFlyout, this.isInMutator = e.isMutator, this.RTL = e.RTL, t) {
-            if (this.type = t, s = Q[t], !s || typeof s != "object") throw TypeError("Invalid block definition for type: " + t);
+            if (this.type = t, s = ee[t], !s || typeof s != "object") throw TypeError("Invalid block definition for type: " + t);
             Object.assign(this, s);
           }
-          e.addTopBlock(this), e.addTypedBlock(this), new.target === Jo && this.doInit_();
+          e.addTopBlock(this), e.addTypedBlock(this), new.target === Ko && this.doInit_();
         }
         doInit_() {
           const e = i.getGroup$$module$build$src$core$events$utils();
           e || i.setGroup$$module$build$src$core$events$utils(!0);
-          const t = Ce();
+          const t = Ne();
           try {
-            typeof this.init == "function" && (i.setRecordUndo$$module$build$src$core$events$utils(!1), this.init(), i.setRecordUndo$$module$build$src$core$events$utils(t)), j() && v(new (M(g.BLOCK_CREATE))(this));
+            typeof this.init == "function" && (i.setRecordUndo$$module$build$src$core$events$utils(!1), this.init(), i.setRecordUndo$$module$build$src$core$events$utils(t)), Z() && v(new (M(g.BLOCK_CREATE))(this));
           } finally {
             i.setGroup$$module$build$src$core$events$utils(e), i.setRecordUndo$$module$build$src$core$events$utils(t);
           }
           this.inputsInlineDefault = this.inputsInline, typeof this.onchange == "function" && this.setOnChange(this.onchange);
         }
         dispose(e = !1) {
-          this.disposing = !0, this.onchangeWrapper && this.workspace.removeChangeListener(this.onchangeWrapper), this.unplug(e), j() && v(new (M(g.BLOCK_DELETE))(this)), this.workspace.removeTopBlock(this), this.disposeInternal();
+          this.disposing = !0, this.onchangeWrapper && this.workspace.removeChangeListener(this.onchangeWrapper), this.unplug(e), Z() && v(new (M(g.BLOCK_DELETE))(this)), this.workspace.removeTopBlock(this), this.disposeInternal();
         }
         disposeInternal() {
           this.disposing = !0, this.onchangeWrapper && this.workspace.removeChangeListener(this.onchangeWrapper), this.workspace.removeTypedBlock(this), this.workspace.removeBlockById(this.id), typeof this.destroy == "function" && this.destroy(), this.childBlocks_.forEach((e) => e.disposeInternal()), this.inputList.forEach((e) => e.dispose()), this.inputList.length = 0, this.getConnections_(!0).forEach((e) => e.dispose()), this.disposed = !0;
@@ -7403,7 +7403,7 @@ children`), this.state = e;
           this.movable = e;
         }
         isDuplicatable() {
-          return this.workspace.hasBlockLimits() ? this.workspace.isCapacityAvailable(hi(this, !0)) : !0;
+          return this.workspace.hasBlockLimits() ? this.workspace.isCapacityAvailable(ai(this, !0)) : !0;
         }
         isShadow() {
           return this.shadow;
@@ -7448,7 +7448,7 @@ children`), this.state = e;
           this.tooltip = e;
         }
         getTooltip() {
-          return Lo(this);
+          return So(this);
         }
         getColour() {
           return this.colour_;
@@ -7460,7 +7460,7 @@ children`), this.state = e;
           return this.hue;
         }
         setColour(e) {
-          e = bo(e), this.hue = e.hue, this.colour_ = e.hex;
+          e = Lo(e), this.hue = e.hue, this.colour_ = e.hex;
         }
         setStyle(e) {
           this.styleName_ = e;
@@ -7575,7 +7575,7 @@ children`), this.state = e;
         }
         toTokens(e = "?") {
           const t = [];
-          for (const o of this.inputList) if (o.name != Hi) {
+          for (const o of this.inputList) if (o.name != Fi) {
             for (const n of o.fieldRow) t.push(n.getText());
             if (o.connection) {
               const n = o.connection.targetBlock();
@@ -7618,7 +7618,7 @@ children`), this.state = e;
           }
           if (e.style && e.style.hat && (this.hat = e.style.hat, e.style = null), e.style && e.colour) throw Error(t + "Must not have both a colour and a style.");
           for (e.style ? this.jsonInitStyle(e, t) : this.jsonInitColour(e, t), s = 0; e["message" + s] !== void 0; ) this.interpolate(e["message" + s], e["args" + s] || [], e["implicitAlign" + s] || e["lastDummyAlign" + s], t), s++;
-          if (e.inputsInline !== void 0 && (i.disable$$module$build$src$core$events$utils(), this.setInputsInline(e.inputsInline), i.enable$$module$build$src$core$events$utils()), e.output !== void 0 && this.setOutput(!0, e.output), e.outputShape !== void 0 && this.setOutputShape(e.outputShape), e.previousStatement !== void 0 && this.setPreviousStatement(!0, e.previousStatement), e.nextStatement !== void 0 && this.setNextStatement(!0, e.nextStatement), e.tooltip !== void 0 && (s = ue(e.tooltip), this.setTooltip(s)), e.enableContextMenu !== void 0 && (this.contextMenu = !!e.enableContextMenu), e.suppressPrefixSuffix !== void 0 && (this.suppressPrefixSuffix = !!e.suppressPrefixSuffix), e.helpUrl !== void 0 && (s = ue(e.helpUrl), this.setHelpUrl(s)), typeof e.extensions == "string" && (console.warn(t + "JSON attribute 'extensions' should be an array of strings. Found raw string in JSON for '" + e.type + "' block."), e.extensions = [e.extensions]), e.mutator !== void 0 && Jn(e.mutator, this, !0), e = e.extensions, Array.isArray(e)) for (t = 0; t < e.length; t++) Jn(e[t], this, !1);
+          if (e.inputsInline !== void 0 && (i.disable$$module$build$src$core$events$utils(), this.setInputsInline(e.inputsInline), i.enable$$module$build$src$core$events$utils()), e.output !== void 0 && this.setOutput(!0, e.output), e.outputShape !== void 0 && this.setOutputShape(e.outputShape), e.previousStatement !== void 0 && this.setPreviousStatement(!0, e.previousStatement), e.nextStatement !== void 0 && this.setNextStatement(!0, e.nextStatement), e.tooltip !== void 0 && (s = ae(e.tooltip), this.setTooltip(s)), e.enableContextMenu !== void 0 && (this.contextMenu = !!e.enableContextMenu), e.suppressPrefixSuffix !== void 0 && (this.suppressPrefixSuffix = !!e.suppressPrefixSuffix), e.helpUrl !== void 0 && (s = ae(e.helpUrl), this.setHelpUrl(s)), typeof e.extensions == "string" && (console.warn(t + "JSON attribute 'extensions' should be an array of strings. Found raw string in JSON for '" + e.type + "' block."), e.extensions = [e.extensions]), e.mutator !== void 0 && Jn(e.mutator, this, !0), e = e.extensions, Array.isArray(e)) for (t = 0; t < e.length; t++) Jn(e[t], this, !1);
         }
         jsonInitColour(e, t) {
           if ("colour" in e) if (e.colour === void 0) console.warn(t + "Undefined colour value.");
@@ -7714,7 +7714,7 @@ children`), this.state = e;
           return o ? (e.check && o.setCheck(e.check), e.align && (s = s[e.align.toUpperCase()], s === void 0 ? console.warn(t + "Illegal align value: ", e.align) : o.setAlign(s)), o) : null;
         }
         isInputKeyword(e) {
-          return e === "input_value" || e === "input_statement" || e === "input_dummy" || e === "input_end_row" || no(I.INPUT, e);
+          return e === "input_value" || e === "input_statement" || e === "input_dummy" || e === "input_end_row" || io(I.INPUT, e);
         }
         stringToFieldJson(e) {
           return (e = e.trim()) ? { type: "field_label", text: e } : null;
@@ -7810,7 +7810,7 @@ children`), this.state = e;
           s && o.setReason(s), this.xy.translate(e, t), o.recordNew(), v(o);
         }
         makeConnection_(e) {
-          return new H(
+          return new G(
             this,
             e
           );
@@ -7828,28 +7828,28 @@ children`), this.state = e;
           return this.id && (e += ' (id="' + this.id + '")'), e;
         }
       };
-      Jo.COLLAPSED_INPUT_NAME = Hi, Jo.COLLAPSED_FIELD_NAME = Sr;
-      var Xr = null, ji = null, qi = {};
-      qi.connectionUiEffect = Dc, qi.disconnectUiEffect = wc, qi.disconnectUiStop = yo, qi.disposeUiEffect = Zn;
-      var Zi = class {
+      Ko.COLLAPSED_INPUT_NAME = Fi, Ko.COLLAPSED_FIELD_NAME = Sr;
+      var Xr = null, Ji = null, ji = {};
+      ji.connectionUiEffect = Dc, ji.disconnectUiEffect = wc, ji.disconnectUiStop = Mo, ji.disposeUiEffect = Zn;
+      var qi = class {
         paste(e, t, s) {
           if (!t.isCapacityAvailable(e.typeCounts)) return null;
           s && (e.blockState.x = s.x, e.blockState.y = s.y), s = s || new R(e.blockState.x || 0, e.blockState.y || 0), i.disable$$module$build$src$core$events$utils();
           let o;
           try {
-            o = vs(e.blockState, t), r_(o, s);
+            o = ys(e.blockState, t), r_(o, s);
           } finally {
             i.enable$$module$build$src$core$events$utils();
           }
           if (!o) return o;
-          j() && !o.isShadow() && v(new (M(g.BLOCK_CREATE))(o));
+          Z() && !o.isShadow() && v(new (M(g.BLOCK_CREATE))(o));
           const n = o;
           return Rt().then(() => i.getFocusManager$$module$build$src$core$focus_manager().focusNode(n)), o;
         }
       };
-      Zi.TYPE = "block", bn(Zi.TYPE, new Zi());
+      qi.TYPE = "block", bn(qi.TYPE, new qi());
       var Wr = {};
-      Wr.bumpIntoBounds = vo, Wr.bumpIntoBoundsHandler = xc, Wr.bumpTopObjectsIntoBounds = Qn;
+      Wr.bumpIntoBounds = yo, Wr.bumpIntoBoundsHandler = xc, Wr.bumpTopObjectsIntoBounds = Qn;
       var _$ = class {
         constructor(e) {
           this.block = e, this.connectionPreviewer = this.connectionCandidate = this.startLoc = this.startChildConn = this.startParentConn = null, this.dragging = !1, this.dragOffset = new R(0, 0), this.originalEventGroup = "", this.workspace = e.workspace;
@@ -7864,7 +7864,7 @@ children`), this.state = e;
         startDrag(e) {
           if (this.block.isShadow()) this.startDraggingShadow(e);
           else {
-            this.dragging = !0, this.fireDragStartEvent(), this.startLoc = this.block.getRelativeToSurfaceXY(), this.connectionCandidate = null, this.connectionPreviewer = new (Re(I.CONNECTION_PREVIEWER, this.workspace.options))(this.block), xt(), this.workspace.setResizesEnabled(!1), yo(), e = this.shouldHealStack(e), this.shouldDisconnect(e) && this.disconnectBlock(e), this.block.setDragging(!0);
+            this.dragging = !0, this.fireDragStartEvent(), this.startLoc = this.block.getRelativeToSurfaceXY(), this.connectionCandidate = null, this.connectionPreviewer = new (Re(I.CONNECTION_PREVIEWER, this.workspace.options))(this.block), xt(), this.workspace.setResizesEnabled(!1), Mo(), e = this.shouldHealStack(e), this.shouldDisconnect(e) && this.disconnectBlock(e), this.block.setDragging(!0);
             var t;
             (t = this.workspace.getLayerManager()) == null || t.moveToDragLayer(this.block), this.getVisibleBubbles(this.block).forEach((s) => {
               let o;
@@ -7941,7 +7941,7 @@ children`), this.state = e;
           }
         }
         orphanCanConnectAtEnd(e, t, s) {
-          return !!H.getConnectionForOrphanedConnection(e, s === f.OUTPUT_VALUE ? t.outputConnection : t.previousConnection);
+          return !!G.getConnectionForOrphanedConnection(e, s === f.OUTPUT_VALUE ? t.outputConnection : t.previousConnection);
         }
         currCandidateIsBetter(e, t, s) {
           const { local: o, neighbour: n } = e;
@@ -7973,13 +7973,13 @@ children`), this.state = e;
             let s;
             (s = this.block.getParent()) == null || s.endDrag(e);
           } else {
-            this.originalEventGroup = i.getGroup$$module$build$src$core$events$utils(), this.fireDragEndEvent(), this.fireMoveEvent(), Ut(), yo();
+            this.originalEventGroup = i.getGroup$$module$build$src$core$events$utils(), this.fireDragEndEvent(), this.fireMoveEvent(), Ut(), Mo();
             var t;
             if ((t = this.connectionPreviewer) == null || t.hidePreview(), !this.block.isDeadOrDying() && this.dragging) {
               let s;
-              (s = this.workspace.getLayerManager()) == null || s.moveOffDragLayer(this.block, js), this.getVisibleBubbles(this.block).forEach((o) => {
+              (s = this.workspace.getLayerManager()) == null || s.moveOffDragLayer(this.block, Js), this.getVisibleBubbles(this.block).forEach((o) => {
                 let n;
-                return (n = this.workspace.getLayerManager()) == null ? void 0 : n.moveOffDragLayer(o, Xo, !1);
+                return (n = this.workspace.getLayerManager()) == null ? void 0 : n.moveOffDragLayer(o, Vo, !1);
               }), this.block.setDragging(!1);
             }
             this.connectionCandidate ? (this.applyConnections(this.connectionCandidate), this.disposeStep()) : this.block.queueRender().then(() => this.disposeStep());
@@ -8019,10 +8019,10 @@ children`), this.state = e;
             else {
               this.block.moveTo(this.startLoc, ["drag"]);
               let s;
-              (s = this.workspace.getLayerManager()) == null || s.moveOffDragLayer(this.block, js), this.getVisibleBubbles(this.block).forEach((o) => {
+              (s = this.workspace.getLayerManager()) == null || s.moveOffDragLayer(this.block, Js), this.getVisibleBubbles(this.block).forEach((o) => {
                 let n;
-                return (n = this.workspace.getLayerManager()) == null ? void 0 : n.moveOffDragLayer(o, Xo, !1);
-              }), vo(
+                return (n = this.workspace.getLayerManager()) == null ? void 0 : n.moveOffDragLayer(o, Vo, !1);
+              }), yo(
                 this.workspace,
                 this.workspace.getMetricsManager().getScrollMetrics(!0),
                 this.block
@@ -8031,7 +8031,7 @@ children`), this.state = e;
             this.startParentConn = this.startChildConn = null, this.block.setDragging(!1), this.dragging = !1;
           }
         }
-      }, T$ = class extends X {
+      }, T$ = class extends W {
         constructor(e, t, s, o) {
           super(t, s, o), this.text = e, this.workspace = t, this.anchor = s, this.ownerRect = o, this.paragraph = this.stringToSvg(e, this.contentContainer), this.updateBubbleSize(), L(this.svgRoot, "blocklyTextBubble");
         }
@@ -8039,7 +8039,7 @@ children`), this.state = e;
           return this.text;
         }
         setText(e) {
-          this.text = e, V(this.paragraph), this.paragraph = this.stringToSvg(
+          this.text = e, X(this.paragraph), this.paragraph = this.stringToSvg(
             e,
             this.contentContainer
           ), this.updateBubbleSize();
@@ -8048,24 +8048,24 @@ children`), this.state = e;
           return t = this.createParagraph(t), e = this.createTextFragments(t, e), this.workspace.RTL && this.rightAlignTextFragments(t.getBBox().width, e), t;
         }
         createParagraph(e) {
-          return O($.G, { class: "blocklyText blocklyBubbleText blocklyNoPointerEvents", transform: `translate(0,${X.BORDER_WIDTH})`, style: `direction: ${this.workspace.RTL ? "rtl" : "ltr"}` }, e);
+          return O($.G, { class: "blocklyText blocklyBubbleText blocklyNoPointerEvents", transform: `translate(0,${W.BORDER_WIDTH})`, style: `direction: ${this.workspace.RTL ? "rtl" : "ltr"}` }, e);
         }
         createTextFragments(e, t) {
           let s = 1;
           return t.split(`
 `).map((o) => {
-            const n = O($.TEXT, { y: `${s}em`, x: X.BORDER_WIDTH }, e);
+            const n = O($.TEXT, { y: `${s}em`, x: W.BORDER_WIDTH }, e);
             return o = document.createTextNode(o), n.appendChild(o), s += 1, n;
           });
         }
         rightAlignTextFragments(e, t) {
-          for (const s of t) s.setAttribute("text-anchor", "start"), s.setAttribute("x", `${e + X.BORDER_WIDTH}`);
+          for (const s of t) s.setAttribute("text-anchor", "start"), s.setAttribute("x", `${e + W.BORDER_WIDTH}`);
         }
         updateBubbleSize() {
           const e = this.paragraph.getBBox();
-          this.setSize(new w(e.width + X.BORDER_WIDTH * 2, e.height + X.BORDER_WIDTH * 2), !0);
+          this.setSize(new w(e.width + W.BORDER_WIDTH * 2, e.height + W.BORDER_WIDTH * 2), !0);
         }
-      }, Ia = 17, Nt = class extends Wo {
+      }, Ia = 17, Nt = class extends Xo {
         constructor(e) {
           super(e), this.sourceBlock = e, this.textMap = /* @__PURE__ */ new Map(), this.textBubble = null;
         }
@@ -8150,16 +8150,16 @@ children`), this.state = e;
         }
       };
       Nt.TYPE = Ee.WARNING, Nt.WEIGHT = 2;
-      var z = class extends Jo {
+      var J = class extends Ko {
         constructor(e, t, s) {
           if (super(e, t, s), this.childlessWidth = this.width = this.height = 0, this.warningTextDb = /* @__PURE__ */ new Map(), this.mutator = null, this.rendered = !0, this.visuallyDisabled = !1, this.translation = "", this.dragging = !1, this.relativeCoords = new R(0, 0), this.dragStrategy = new _$(this), !e.rendered) throw TypeError("Cannot create a rendered block in a headless workspace");
-          this.workspace = e, this.svgGroup = O($.G, {}), t && L(this.svgGroup, t), this.style = e.getRenderer().getConstants().getBlockStyle(null), this.pathObject = e.getRenderer().makePathObject(this.svgGroup, this.style), e = this.pathObject.svgPath, e.tooltip = this, Si(e), this.svgGroup.setAttribute("data-id", this.id), e.id = ne(), this.doInit_();
+          this.workspace = e, this.svgGroup = O($.G, {}), t && L(this.svgGroup, t), this.style = e.getRenderer().getConstants().getBlockStyle(null), this.pathObject = e.getRenderer().makePathObject(this.svgGroup, this.style), e = this.pathObject.svgPath, e.tooltip = this, Ri(e), this.svgGroup.setAttribute("data-id", this.id), e.id = re(), this.doInit_();
         }
         initSvg() {
           if (!this.initialized) {
             for (var e of this.inputList) e.init();
             for (const t of this.getIcons()) t.initView(this.createIconPointerDownListener(t)), t.updateEditable();
-            this.applyColour(), this.pathObject.updateMovable(this.isMovable() || this.isInFlyout), (e = this.getSvgRoot()) && P(e, "pointerdown", this, this.onMouseDown), e.parentNode || this.workspace.getCanvas().appendChild(e), this.initialized = !0;
+            this.applyColour(), this.pathObject.updateMovable(this.isMovable() || this.isInFlyout), (e = this.getSvgRoot()) && k(e, "pointerdown", this, this.onMouseDown), e.parentNode || this.workspace.getCanvas().appendChild(e), this.initialized = !0;
           }
         }
         getColourSecondary() {
@@ -8191,14 +8191,14 @@ children`), this.state = e;
           let t = 0, s = 0, o = this.getSvgRoot();
           if (o)
             do {
-              const n = Ti(o);
+              const n = _i(o);
               t += n.x, s += n.y, o = o.parentNode;
             } while (o && !e.hasLayer(o));
           return new R(t, s);
         }
         moveBy(e, t, s) {
           if (this.parentBlock_) throw Error("Block has parent");
-          const o = j();
+          const o = Z();
           let n = null;
           o && (n = new (M(g.BLOCK_MOVE))(this), s && n.setReason(s)), e = new R(e, t), t = this.getRelativeToSurfaceXY(), e = R.sum(t, e), this.translate(e.x, e.y), this.updateComponentLocations(e), o && n && (n.recordNew(), v(n)), this.workspace.resizeContents();
         }
@@ -8261,10 +8261,10 @@ children`), this.state = e;
         }
         updateCollapsed() {
           var e = this.isCollapsed();
-          const t = Hi, s = Sr;
+          const t = Fi, s = Sr;
           for (let n = 0, r; r = this.inputList[n]; n++) r.name !== t && r.setVisible(!e);
           for (var o of this.getIcons()) o.updateCollapsed();
-          e ? (L(this.svgGroup, "blocklyCollapsed"), this.childHasWarning() && this.setWarningText(i.Msg$$module$build$src$core$msg.COLLAPSED_WARNINGS_WARNING, z.COLLAPSED_WARNING_ID), e = this.toString(a$), (o = this.getField(s)) ? o.setValue(e) : (this.getInput(t) || this.appendDummyInput(t)).appendField(new Zs(e), s)) : (this.updateDisabled(), this.removeInput(t), F(this.svgGroup, "blocklyCollapsed"), this.setWarningText(null, z.COLLAPSED_WARNING_ID));
+          e ? (L(this.svgGroup, "blocklyCollapsed"), this.childHasWarning() && this.setWarningText(i.Msg$$module$build$src$core$msg.COLLAPSED_WARNINGS_WARNING, J.COLLAPSED_WARNING_ID), e = this.toString(a$), (o = this.getField(s)) ? o.setValue(e) : (this.getInput(t) || this.appendDummyInput(t)).appendField(new qs(e), s)) : (this.updateDisabled(), this.removeInput(t), H(this.svgGroup, "blocklyCollapsed"), this.setWarningText(null, J.COLLAPSED_WARNING_ID));
         }
         onMouseDown(e) {
           if (!this.workspace.isReadOnly()) {
@@ -8284,14 +8284,14 @@ children`), this.state = e;
         }
         calculateContextMenuLocation(e) {
           if (e instanceof PointerEvent) return new R(e.clientX, e.clientY);
-          e = go(this.workspace, this.getRelativeToSurfaceXY());
+          e = Eo(this.workspace, this.getRelativeToSurfaceXY());
           let t, s;
           const o = (t = this.inputList.filter((n) => n.isVisible()).flatMap((n) => n.fieldRow).find((n) => n.isVisible())) == null || (s = t.getSvgRoot()) == null ? void 0 : s.getBoundingClientRect();
           return new R(this.RTL ? e.x - 5 : e.x + 5, (o && o.height ? o.y + o.height : e.y + this.height) + 5);
         }
         showContextMenu(e) {
           const t = this.generateContextMenu(e), s = this.calculateContextMenuLocation(e);
-          t && t.length && (Co(e, t, this.RTL, this.workspace, s), Ic(this));
+          t && t.length && (Ao(e, t, this.RTL, this.workspace, s), Ic(this));
         }
         updateComponentLocations(e) {
           this.dragging || this.updateConnectionLocations(e), this.updateIconLocations(e), this.updateFieldLocations(e);
@@ -8313,17 +8313,17 @@ children`), this.state = e;
           L(this.svgGroup, e);
         }
         removeClass(e) {
-          F(this.svgGroup, e);
+          H(this.svgGroup, e);
         }
         setDragging(e) {
-          (this.dragging = e) ? (this.translation = "", Bi.push(...this.getConnections_(!0)), this.addClass("blocklyDragging")) : (Bi.length = 0, this.removeClass("blocklyDragging"));
+          (this.dragging = e) ? (this.translation = "", wi.push(...this.getConnections_(!0)), this.addClass("blocklyDragging")) : (wi.length = 0, this.removeClass("blocklyDragging"));
           for (let t = 0; t < this.childBlocks_.length; t++) this.childBlocks_[t].setDragging(e);
         }
         setMovable(e) {
           super.setMovable(e), this.pathObject.updateMovable(e);
         }
         setEditable(e) {
-          super.setEditable(e), e ? F(this.svgGroup, "blocklyNotEditable") : L(this.svgGroup, "blocklyNotEditable"), e = this.getIcons();
+          super.setEditable(e), e ? H(this.svgGroup, "blocklyNotEditable") : L(this.svgGroup, "blocklyNotEditable"), e = this.getIcons();
           for (let t = 0; t < e.length; t++) e[t].updateEditable();
         }
         setShadow(e) {
@@ -8344,7 +8344,7 @@ children`), this.state = e;
           return t;
         }
         dispose(e, t) {
-          this.disposing = !0, cc(), fi();
+          this.disposing = !0, cc(), bi();
           const s = i.getFocusManager$$module$build$src$core$focus_manager();
           var o, n;
           if (this.getSvgRoot().contains((n = (o = s.getFocusedNode()) == null ? void 0 : o.getFocusableElement()) != null ? n : null)) {
@@ -8359,7 +8359,7 @@ children`), this.state = e;
               this.workspace.rendered && s.focusTree(this.workspace);
             }, 0);
           }
-          t && (this.unplug(e), Zn(this)), super.dispose(!!e), V(this.svgGroup);
+          t && (this.unplug(e), Zn(this)), super.dispose(!!e), X(this.svgGroup);
         }
         disposeInternal() {
           this.disposing = !0, super.disposeInternal(), i.getFocusManager$$module$build$src$core$focus_manager().getFocusedNode() === this && this.workspace.cancelCurrentGesture(), [...this.warningTextDb.values()].forEach((e) => clearTimeout(e)), this.warningTextDb.clear(), this.getIcons().forEach((e) => e.dispose());
@@ -8368,7 +8368,7 @@ children`), this.state = e;
           this.workspace.isFlyout || (i.setGroup$$module$build$src$core$events$utils(!0), this.workspace.hideChaff(), this.outputConnection ? this.dispose(!1, !0) : this.dispose(!0, !0), i.setGroup$$module$build$src$core$events$utils(!1));
         }
         toCopyData(e = !1) {
-          return this.isInsertionMarker_ ? null : { paster: Zi.TYPE, blockState: st(this, { addCoordinates: !0, addNextBlocks: e, saveIds: !1 }), typeCounts: hi(this, !0) };
+          return this.isInsertionMarker_ ? null : { paster: qi.TYPE, blockState: st(this, { addCoordinates: !0, addNextBlocks: e, saveIds: !1 }), typeCounts: ai(this, !0) };
         }
         applyColour() {
           var e, t;
@@ -8397,7 +8397,7 @@ children`), this.state = e;
           else if (this.isInFlyout && (e = null), s = this.getIcon(Nt.TYPE), e) {
             let o = this.getSurroundParent(), n = null;
             for (; o; ) o.isCollapsed() && (n = o), o = o.getSurroundParent();
-            n && n.setWarningText(i.Msg$$module$build$src$core$msg.COLLAPSED_WARNINGS_WARNING, z.COLLAPSED_WARNING_ID), s ? s.addMessage(e, t) : this.addIcon(new Nt(this).addMessage(e, t));
+            n && n.setWarningText(i.Msg$$module$build$src$core$msg.COLLAPSED_WARNINGS_WARNING, J.COLLAPSED_WARNING_ID), s ? s.addMessage(e, t) : this.addIcon(new Nt(this).addMessage(e, t));
           } else s && (t ? (s.addMessage("", t), s.getText() || this.removeIcon(Nt.TYPE)) : this.removeIcon(Nt.TYPE));
         }
         setMutator(e) {
@@ -8420,7 +8420,7 @@ children`), this.state = e;
           super.setDisabledReason(e, t), this.isEnabled() === s || this.getInheritedDisabled() || this.updateDisabled();
         }
         setDeletable(e) {
-          super.setDeletable(e), e ? F(this.svgGroup, "blocklyNotDeletable") : L(this.svgGroup, "blocklyNotDeletable");
+          super.setDeletable(e), e ? H(this.svgGroup, "blocklyNotDeletable") : L(this.svgGroup, "blocklyNotDeletable");
         }
         setHighlighted(e) {
           this.pathObject.updateHighlighted(e);
@@ -8444,7 +8444,7 @@ children`), this.state = e;
         }
         setStyle(e) {
           const t = this.workspace.getRenderer().getConstants().getBlockStyle(e);
-          if (this.styleName_ && F(this.svgGroup, this.styleName_), t) {
+          if (this.styleName_ && H(this.svgGroup, this.styleName_), t) {
             this.hat = t.hat;
             let s, o;
             (o = (s = this.pathObject).setStyle) == null || o.call(s, t), this.colour_ = t.colourPrimary, this.style = t, this.applyColour(), L(this.svgGroup, e), this.styleName_ = e;
@@ -8620,7 +8620,7 @@ children`), this.state = e;
           return !0;
         }
       };
-      z.INLINE = -1, z.COLLAPSED_WARNING_ID = "TEMP_COLLAPSED_WARNING_";
+      J.INLINE = -1, J.COLLAPSED_WARNING_ID = "TEMP_COLLAPSED_WARNING_";
       var $$ = class {
         constructor() {
         }
@@ -8643,12 +8643,12 @@ children`), this.state = e;
           super(), this.wouldDelete_ = !1;
         }
         wouldDelete(e) {
-          return e instanceof z ? (e = !e.getParent() && e.isDeletable(), this.updateWouldDelete_(e)) : this.updateWouldDelete_(ot(e) && e.isDeletable()), this.wouldDelete_;
+          return e instanceof J ? (e = !e.getParent() && e.isDeletable(), this.updateWouldDelete_(e)) : this.updateWouldDelete_(ot(e) && e.isDeletable()), this.wouldDelete_;
         }
         updateWouldDelete_(e) {
           this.wouldDelete_ = e;
         }
-      }, jo = class {
+      }, Jo = class {
         constructor(e, t) {
           this.element = e, this.type = t;
         }
@@ -8751,29 +8751,29 @@ children`), this.state = e;
         getScrollMetrics(e, t, s) {
           return t = s || this.getContentMetrics(), s = this.flyout_.MARGIN * this.workspace_.scale, e = e ? this.workspace_.scale : 1, { height: (t.height + 2 * s) / e, width: (t.width + t.left + s) / e, top: 0, left: 0 };
         }
-      }, Ue = class {
+      }, Fe = class {
         constructor(e, t, s, o) {
-          this.workspace = e, this.targetWorkspace = t, this.isFlyoutLabel = o, this.height = this.width = 0, this.cursorSvg = this.svgText = null, this.text = s.text, this.position = new R(0, 0), this.callbackKey = s.callbackKey || s.callbackkey, this.cssClass = s["web-class"] || null, this.info = s, e = this.isFlyoutLabel ? "blocklyFlyoutLabel" : "blocklyFlyoutButton", this.cssClass && (e += " " + this.cssClass), this.id = ne(), this.svgGroup = O($.G, { id: this.id, class: e }, this.workspace.getCanvas());
+          this.workspace = e, this.targetWorkspace = t, this.isFlyoutLabel = o, this.height = this.width = 0, this.cursorSvg = this.svgText = null, this.text = s.text, this.position = new R(0, 0), this.callbackKey = s.callbackKey || s.callbackkey, this.cssClass = s["web-class"] || null, this.info = s, e = this.isFlyoutLabel ? "blocklyFlyoutLabel" : "blocklyFlyoutButton", this.cssClass && (e += " " + this.cssClass), this.id = re(), this.svgGroup = O($.G, { id: this.id, class: e }, this.workspace.getCanvas());
           let n;
-          this.isFlyoutLabel || (n = O($.RECT, { class: "blocklyFlyoutButtonShadow", rx: Ue.BORDER_RADIUS, ry: Ue.BORDER_RADIUS, x: 1, y: 1 }, this.svgGroup)), e = O(
+          this.isFlyoutLabel || (n = O($.RECT, { class: "blocklyFlyoutButtonShadow", rx: Fe.BORDER_RADIUS, ry: Fe.BORDER_RADIUS, x: 1, y: 1 }, this.svgGroup)), e = O(
             $.RECT,
-            { class: this.isFlyoutLabel ? "blocklyFlyoutLabelBackground" : "blocklyFlyoutButtonBackground", rx: Ue.BORDER_RADIUS, ry: Ue.BORDER_RADIUS },
+            { class: this.isFlyoutLabel ? "blocklyFlyoutLabelBackground" : "blocklyFlyoutButtonBackground", rx: Fe.BORDER_RADIUS, ry: Fe.BORDER_RADIUS },
             this.svgGroup
-          ), t = O($.TEXT, { class: this.isFlyoutLabel ? "blocklyFlyoutLabelText" : "blocklyText", x: 0, y: 0, "text-anchor": "middle" }, this.svgGroup), s = ue(this.text), this.workspace.RTL && (s += "‏"), t.textContent = s, this.isFlyoutLabel && (this.svgText = t, this.workspace.getThemeManager().subscribe(this.svgText, "flyoutForegroundColour", "fill")), o = It(t, "fontSize");
+          ), t = O($.TEXT, { class: this.isFlyoutLabel ? "blocklyFlyoutLabelText" : "blocklyText", x: 0, y: 0, "text-anchor": "middle" }, this.svgGroup), s = ae(this.text), this.workspace.RTL && (s += "‏"), t.textContent = s, this.isFlyoutLabel && (this.svgText = t, this.workspace.getThemeManager().subscribe(this.svgText, "flyoutForegroundColour", "fill")), o = It(t, "fontSize");
           const r = It(t, "fontWeight"), u = It(t, "fontFamily");
-          if (this.width = Cs(t, o, r, u), s = To(
+          if (this.width = As(t, o, r, u), s = _o(
             s,
             o,
             r,
             u
           ), this.height = this.height || s.height, !this.isFlyoutLabel) {
-            this.width += 2 * Ue.TEXT_MARGIN_X, this.height += 2 * Ue.TEXT_MARGIN_Y;
+            this.width += 2 * Fe.TEXT_MARGIN_X, this.height += 2 * Fe.TEXT_MARGIN_Y;
             let h;
             (h = n) == null || h.setAttribute("width", String(this.width));
             let m;
             (m = n) == null || m.setAttribute("height", String(this.height));
           }
-          e.setAttribute("width", String(this.width)), e.setAttribute("height", String(this.height)), t.setAttribute("x", String(this.width / 2)), t.setAttribute("y", String(this.height / 2 - s.height / 2 + s.baseline)), this.updateTransform(), this.onMouseDownWrapper = P(this.svgGroup, "pointerdown", this, this.onMouseDown), this.onMouseUpWrapper = P(this.svgGroup, "pointerup", this, this.onMouseUp);
+          e.setAttribute("width", String(this.width)), e.setAttribute("height", String(this.height)), t.setAttribute("x", String(this.width / 2)), t.setAttribute("y", String(this.height / 2 - s.height / 2 + s.baseline)), this.updateTransform(), this.onMouseDownWrapper = k(this.svgGroup, "pointerdown", this, this.onMouseDown), this.onMouseUpWrapper = k(this.svgGroup, "pointerup", this, this.onMouseUp);
         }
         createDom() {
           return this.svgGroup;
@@ -8809,7 +8809,7 @@ children`), this.state = e;
           return this.workspace;
         }
         dispose() {
-          G(this.onMouseDownWrapper), G(this.onMouseUpWrapper), this.svgGroup && V(this.svgGroup), this.svgText && this.workspace.getThemeManager().unsubscribe(this.svgText);
+          V(this.onMouseDownWrapper), V(this.onMouseUpWrapper), this.svgGroup && X(this.svgGroup), this.svgText && this.workspace.getThemeManager().unsubscribe(this.svgText);
         }
         setCursorSvg(e) {
           e ? this.svgGroup && (this.svgGroup.appendChild(e), this.cursorSvg = e) : this.cursorSvg = null;
@@ -8840,7 +8840,7 @@ children`), this.state = e;
           return !0;
         }
       };
-      Ue.TEXT_MARGIN_X = 5, Ue.TEXT_MARGIN_Y = 2, Ue.BORDER_RADIUS = 4, mt(`
+      Fe.TEXT_MARGIN_X = 5, Fe.TEXT_MARGIN_Y = 2, Fe.BORDER_RADIUS = 4, mt(`
 .blocklyFlyoutButton {
   fill: #888;
   cursor: default;
@@ -8885,7 +8885,7 @@ children`), this.state = e;
           return e.canBeFocused();
         }
         isApplicable(e) {
-          return e instanceof Ue;
+          return e instanceof Fe;
         }
       }, p$ = class {
         constructor(e, t) {
@@ -8965,7 +8965,7 @@ children`), this.state = e;
         isApplicable(e) {
           return e instanceof zr;
         }
-      }, Ag = class {
+      }, Cg = class {
         getFirstChild(e) {
           return e.getEditor();
         }
@@ -9006,7 +9006,7 @@ children`), this.state = e;
             return (o = e.nextConnection) == null ? void 0 : o.targetBlock();
           }
           let s;
-          return (s = e.outputConnection) != null && s.targetBlock() ? ut(e, 1) : e.getSurroundParent() ? ut(e.getTopStackBlock(), 1) : this.getParent(e) instanceof De ? ko(e, 1) : null;
+          return (s = e.outputConnection) != null && s.targetBlock() ? ut(e, 1) : e.getSurroundParent() ? ut(e.getTopStackBlock(), 1) : this.getParent(e) instanceof we ? vo(e, 1) : null;
         }
         getPreviousSibling(e) {
           let t;
@@ -9015,15 +9015,15 @@ children`), this.state = e;
             return (o = e.previousConnection) == null ? void 0 : o.targetBlock();
           }
           let s;
-          return (s = e.outputConnection) != null && s.targetBlock() ? ut(e, -1) : this.getParent(e) instanceof De ? ko(e, -1) : null;
+          return (s = e.outputConnection) != null && s.targetBlock() ? ut(e, -1) : this.getParent(e) instanceof we ? vo(e, -1) : null;
         }
         isNavigable(e) {
           return e.canBeFocused();
         }
         isApplicable(e) {
-          return e instanceof z;
+          return e instanceof J;
         }
-      }, Cg = class {
+      }, Ng = class {
         getFirstChild(e) {
           return null;
         }
@@ -9044,7 +9044,7 @@ children`), this.state = e;
         isApplicable(e) {
           return e instanceof wr;
         }
-      }, Ng = class {
+      }, Mg = class {
         getFirstChild(e) {
           return null;
         }
@@ -9126,11 +9126,11 @@ children`), this.state = e;
           return e.canBeFocused() && e.isVisible() && (e.isClickable() || e.isCurrentlyEditable()) && !((t = e.getSourceBlock()) != null && t.isSimpleReporter() && e.isFullBlockField()) && e.getParentInput().isVisible();
         }
         isApplicable(e) {
-          return e instanceof Y;
+          return e instanceof z;
         }
       }, Ra = {};
       Ra.register = Fc, Ra.unregister = a_;
-      var Sa = 17, S$ = 160, L$ = 80, _t = class extends Wo {
+      var Sa = 17, S$ = 160, L$ = 80, _t = class extends Xo {
         constructor(e) {
           super(e), this.sourceBlock = e, this.textInputBubble = null, this.text = "", this.bubbleSize = new w(S$, L$), this.bubbleVisiblity = !1;
         }
@@ -9291,7 +9291,7 @@ children`), this.state = e;
         }
       };
       _t.TYPE = Ee.COMMENT, _t.WEIGHT = 3, Fc(_t.TYPE, _t);
-      var Mg = class {
+      var yg = class {
         getFirstChild(e) {
           if (e instanceof i.MutatorIcon$$module$build$src$core$icons$mutator_icon && e.bubbleIsVisible() && i.getFocusManager$$module$build$src$core$focus_manager().getFocusedNode() === e) {
             let t, s;
@@ -9316,9 +9316,9 @@ children`), this.state = e;
           return e.canBeFocused();
         }
         isApplicable(e) {
-          return e instanceof Wo;
+          return e instanceof Xo;
         }
-      }, yg = class {
+      }, vg = class {
         getFirstChild(e) {
           return e.view.getCommentBarButtons()[0];
         }
@@ -9326,10 +9326,10 @@ children`), this.state = e;
           return e.workspace;
         }
         getNextSibling(e) {
-          return ko(e, 1);
+          return vo(e, 1);
         }
         getPreviousSibling(e) {
-          return ko(e, -1);
+          return vo(e, -1);
         }
         isNavigable(e) {
           return e.canBeFocused();
@@ -9354,7 +9354,7 @@ children`), this.state = e;
           return e.canBeFocused() && !e.isMutator;
         }
         isApplicable(e) {
-          return e instanceof De;
+          return e instanceof we;
         }
       }, La = class {
         constructor() {
@@ -9363,11 +9363,11 @@ children`), this.state = e;
             new R$(),
             new O$(),
             new b$(),
-            new Mg(),
             new yg(),
+            new vg(),
+            new Ng(),
             new Cg(),
-            new Ag(),
-            new Ng()
+            new Mg()
           ];
         }
         addNavigationPolicy(e) {
@@ -9412,14 +9412,14 @@ children`), this.state = e;
         constructor(e, t, s, o, n) {
           this.workspace = e, this.oldHostMetrics = this.corner_ = this.vScroll = this.hScroll = null, t = t === void 0 ? !0 : t, s = s === void 0 ? !0 : s;
           const r = t && s;
-          t && (this.hScroll = new he(e, !0, r, o, n)), s && (this.vScroll = new he(e, !1, r, o, n)), r && (this.corner_ = O($.RECT, {
-            height: he.scrollbarThickness,
-            width: he.scrollbarThickness,
+          t && (this.hScroll = new de(e, !0, r, o, n)), s && (this.vScroll = new de(e, !1, r, o, n)), r && (this.corner_ = O($.RECT, {
+            height: de.scrollbarThickness,
+            width: de.scrollbarThickness,
             class: "blocklyScrollbarBackground"
           }), Bt(this.corner_, e.getBubbleCanvas()));
         }
         dispose() {
-          V(this.corner_), this.oldHostMetrics = this.corner_ = null, this.hScroll && (this.hScroll.dispose(), this.hScroll = null), this.vScroll && (this.vScroll.dispose(), this.vScroll = null);
+          X(this.corner_), this.oldHostMetrics = this.corner_ = null, this.hScroll && (this.hScroll.dispose(), this.hScroll = null), this.vScroll && (this.vScroll.dispose(), this.vScroll = null);
         }
         resize() {
           const e = this.workspace.getMetrics();
@@ -9480,9 +9480,9 @@ children`), this.state = e;
         resizeView(e) {
           this.hScroll && this.hScroll.resizeViewHorizontal(e), this.vScroll && this.vScroll.resizeViewVertical(e);
         }
-      }, qo = "sep", A$ = class {
+      }, jo = "sep", A$ = class {
         load(e, t) {
-          return e = new zr(0, t.horizontalLayout ? "x" : "y"), new jo(e, qo);
+          return e = new zr(0, t.horizontalLayout ? "x" : "y"), new Jo(e, jo);
         }
         gapForItem(e, t) {
           let s;
@@ -9491,13 +9491,13 @@ children`), this.state = e;
         disposeItem(e) {
         }
         getType() {
-          return qo;
+          return jo;
         }
       };
-      c(I.FLYOUT_INFLATER, qo, A$);
+      c(I.FLYOUT_INFLATER, jo, A$);
       var Kr = class extends Yr {
         constructor(e) {
-          super(), this.horizontalLayout = !1, this.boundEvents = [], this.reflowWrapper = null, this.inhibitReflowWrapper = !1, this.contents = [], this.autoClose = !0, this.visible = !1, this.containerVisible = !0, this.CORNER_RADIUS = 8, this.SCROLLBAR_MARGIN = 2.5, this.height_ = this.width_ = 0, this.dragAngleRange_ = 70, this.svgGroup_ = this.svgBackground_ = null, this.inflaters = /* @__PURE__ */ new Map(), e.setMetrics = this.setMetrics_.bind(this), this.workspace_ = new De(e), this.workspace_.setMetricsManager(new E$(this.workspace_, this)), this.workspace_.internalIsFlyout = !0, this.workspace_.setVisible(this.visible), this.workspace_.setNavigator(new f$(this)), this.id = et(), this.RTL = !!e.RTL, this.toolboxPosition_ = e.toolboxPosition, this.tabWidth_ = this.workspace_.getRenderer().getConstants().TAB_WIDTH, this.MARGIN = this.CORNER_RADIUS, this.GAP_X = this.MARGIN * 3, this.GAP_Y = this.MARGIN * 3;
+          super(), this.horizontalLayout = !1, this.boundEvents = [], this.reflowWrapper = null, this.inhibitReflowWrapper = !1, this.contents = [], this.autoClose = !0, this.visible = !1, this.containerVisible = !0, this.CORNER_RADIUS = 8, this.SCROLLBAR_MARGIN = 2.5, this.height_ = this.width_ = 0, this.dragAngleRange_ = 70, this.svgGroup_ = this.svgBackground_ = null, this.inflaters = /* @__PURE__ */ new Map(), e.setMetrics = this.setMetrics_.bind(this), this.workspace_ = new we(e), this.workspace_.setMetricsManager(new E$(this.workspace_, this)), this.workspace_.internalIsFlyout = !0, this.workspace_.setVisible(this.visible), this.workspace_.setNavigator(new f$(this)), this.id = et(), this.RTL = !!e.RTL, this.toolboxPosition_ = e.toolboxPosition, this.tabWidth_ = this.workspace_.getRenderer().getConstants().TAB_WIDTH, this.MARGIN = this.CORNER_RADIUS, this.GAP_X = this.MARGIN * 3, this.GAP_Y = this.MARGIN * 3;
         }
         createDom(e) {
           return this.svgGroup_ = O(e, { class: "blocklyFlyout" }), this.svgGroup_.style.display = "none", this.svgBackground_ = O($.PATH, { class: "blocklyFlyoutBackground" }, this.svgGroup_), this.svgGroup_.appendChild(this.workspace_.createDom()), this.workspace_.getThemeManager().subscribe(
@@ -9507,23 +9507,23 @@ children`), this.state = e;
           ), this.workspace_.getThemeManager().subscribe(this.svgBackground_, "flyoutOpacity", "fill-opacity"), this.svgGroup_;
         }
         init(e) {
-          this.targetWorkspace = e, this.workspace_.targetWorkspace = e, this.workspace_.scrollbar = new ba(this.workspace_, this.horizontalLayout, !this.horizontalLayout, "blocklyFlyoutScrollbar", this.SCROLLBAR_MARGIN), this.hide(), this.boundEvents.push(P(
+          this.targetWorkspace = e, this.workspace_.targetWorkspace = e, this.workspace_.scrollbar = new ba(this.workspace_, this.horizontalLayout, !this.horizontalLayout, "blocklyFlyoutScrollbar", this.SCROLLBAR_MARGIN), this.hide(), this.boundEvents.push(k(
             this.svgGroup_,
             "wheel",
             this,
             this.wheel_,
             !1,
             { passive: !1 }
-          )), this.boundEvents.push(P(this.svgBackground_, "pointerdown", this, this.onMouseDown)), this.workspace_.getGesture = this.targetWorkspace.getGesture.bind(this.targetWorkspace), this.workspace_.setVariableMap(this.targetWorkspace.getVariableMap()), this.workspace_.createPotentialVariableMap(), e.getComponentManager().addComponent({
+          )), this.boundEvents.push(k(this.svgBackground_, "pointerdown", this, this.onMouseDown)), this.workspace_.getGesture = this.targetWorkspace.getGesture.bind(this.targetWorkspace), this.workspace_.setVariableMap(this.targetWorkspace.getVariableMap()), this.workspace_.createPotentialVariableMap(), e.getComponentManager().addComponent({
             component: this,
-            weight: te.ComponentWeight.FLYOUT_WEIGHT,
-            capabilities: [te.Capability.AUTOHIDEABLE, te.Capability.DELETE_AREA, te.Capability.DRAG_TARGET]
+            weight: se.ComponentWeight.FLYOUT_WEIGHT,
+            capabilities: [se.Capability.AUTOHIDEABLE, se.Capability.DELETE_AREA, se.Capability.DRAG_TARGET]
           });
         }
         dispose() {
           this.hide(), this.targetWorkspace.getComponentManager().removeComponent(this.id);
-          for (const e of this.boundEvents) G(e);
-          this.boundEvents.length = 0, this.workspace_ && (this.workspace_.getThemeManager().unsubscribe(this.svgBackground_), this.workspace_.dispose()), this.svgGroup_ && V(this.svgGroup_);
+          for (const e of this.boundEvents) V(e);
+          this.boundEvents.length = 0, this.workspace_ && (this.workspace_.getThemeManager().unsubscribe(this.svgBackground_), this.workspace_.dispose()), this.svgGroup_ && X(this.svgGroup_);
         }
         getWidth() {
           return this.width_;
@@ -9573,25 +9573,25 @@ children`), this.state = e;
           let n;
           (n = this.svgGroup_) == null || n.setAttribute("width", `${e}`);
           let r;
-          (r = this.svgGroup_) == null || r.setAttribute("height", `${t}`), this.workspace_.setCachedParentSvgSize(e, t), this.svgGroup_ && _o(this.svgGroup_, "translate(" + s + "px," + o + "px)"), (e = this.workspace_.scrollbar) && (e.setOrigin(s, o), e.resize(), e.hScroll && e.hScroll.setPosition(e.hScroll.position.x, e.hScroll.position.y), e.vScroll && e.vScroll.setPosition(e.vScroll.position.x, e.vScroll.position.y));
+          (r = this.svgGroup_) == null || r.setAttribute("height", `${t}`), this.workspace_.setCachedParentSvgSize(e, t), this.svgGroup_ && ho(this.svgGroup_, "translate(" + s + "px," + o + "px)"), (e = this.workspace_.scrollbar) && (e.setOrigin(s, o), e.resize(), e.hScroll && e.hScroll.setPosition(e.hScroll.position.x, e.hScroll.position.y), e.vScroll && e.vScroll.setPosition(e.vScroll.position.x, e.vScroll.position.y));
         }
         hide() {
           this.isVisible() && (this.setVisible(!1), this.reflowWrapper && (this.workspace_.removeChangeListener(this.reflowWrapper), this.reflowWrapper = null));
         }
         show(e) {
-          this.workspace_.setResizesEnabled(!1), i.setRecordUndo$$module$build$src$core$events$utils(!1), this.hide(), this.clearOldBlocks(), typeof e == "string" && (e = this.getDynamicCategoryContents(e)), this.setVisible(!0), e = Ei(e), e = this.createFlyoutInfo(e), us(this.workspace_), this.setContents(e), this.layout_(e), this.horizontalLayout ? this.height_ = 0 : this.width_ = 0, this.reflow(), i.setRecordUndo$$module$build$src$core$events$utils(!0), this.workspace_.setResizesEnabled(!0), this.reflowWrapper = (t) => {
+          this.workspace_.setResizesEnabled(!1), i.setRecordUndo$$module$build$src$core$events$utils(!1), this.hide(), this.clearOldBlocks(), typeof e == "string" && (e = this.getDynamicCategoryContents(e)), this.setVisible(!0), e = $i(e), e = this.createFlyoutInfo(e), us(this.workspace_), this.setContents(e), this.layout_(e), this.horizontalLayout ? this.height_ = 0 : this.width_ = 0, this.reflow(), i.setRecordUndo$$module$build$src$core$events$utils(!0), this.workspace_.setResizesEnabled(!0), this.reflowWrapper = (t) => {
             this.inhibitReflowWrapper || t.type !== g.BLOCK_CHANGE && t.type !== g.BLOCK_FIELD_INTERMEDIATE_CHANGE || this.reflow();
           }, this.workspace_.addChangeListener(this.reflowWrapper);
         }
         createFlyoutInfo(e) {
           const t = [], s = this.horizontalLayout ? this.GAP_X : this.GAP_Y;
-          for (const o of e) "custom" in o && (e = this.getDynamicCategoryContents(o.custom), e = Ei(e), t.push(...this.createFlyoutInfo(e))), e = o.kind.toLowerCase(), (e = this.getInflaterForType(e)) && (t.push(e.load(o, this)), (e = e.gapForItem(o, s)) && t.push(new jo(new zr(e, this.horizontalLayout ? "x" : "y"), qo)));
+          for (const o of e) "custom" in o && (e = this.getDynamicCategoryContents(o.custom), e = $i(e), t.push(...this.createFlyoutInfo(e))), e = o.kind.toLowerCase(), (e = this.getInflaterForType(e)) && (t.push(e.load(o, this)), (e = e.gapForItem(o, s)) && t.push(new Jo(new zr(e, this.horizontalLayout ? "x" : "y"), jo)));
           return this.normalizeSeparators(t);
         }
         normalizeSeparators(e) {
           for (let t = e.length - 1; t > 0; t--) {
             const s = e[t].getType().toLowerCase(), o = e[t - 1].getType().toLowerCase();
-            s === qo && o === qo && e.splice(t - 1, 1);
+            s === jo && o === jo && e.splice(t - 1, 1);
           }
           return e;
         }
@@ -9618,7 +9618,7 @@ children`), this.state = e;
           const t = this.targetWorkspace;
           if (!e.getSvgRoot()) throw Error("oldBlock is not rendered");
           var s = this.serializeBlock(e);
-          return t.setResizesEnabled(!1), s = ks(s, t, { recordUndo: !0 }), this.positionNewBlock(e, s), t.hideChaff(), s;
+          return t.setResizesEnabled(!1), s = vs(s, t, { recordUndo: !0 }), this.positionNewBlock(e, s), t.hideChaff(), s;
         }
         reflow() {
           this.inhibitReflowWrapper = !0, this.reflowInternal_(), this.inhibitReflowWrapper = !1;
@@ -9705,13 +9705,13 @@ children`), this.state = e;
           else if (this.verticalScrollEnabled) this.workspace.scroll(this.workspace.scrollX, e.y);
           else throw new TypeError("Invalid state.");
         }
-      }, vg = 5, kg = 6, jr = class {
+      }, kg = 5, Pg = 6, jr = class {
         constructor(e, t) {
           this.creatorWorkspace = t, this.mouseDownXY = new R(0, 0), this.startWorkspace_ = this.targetBlock = this.startComment = this.startBlock = this.startIcon = this.startField = this.startBubble = null, this.hasExceededDragRadius = !1, this.boundEvents = [], this.workspaceDragger = this.dragger = null, this.dragging = !1, this.flyout = null, this.multiTouch = this.isEnding_ = this.gestureHasStarted = this.calledUpdateIsDragging = !1, this.cachedPoints = /* @__PURE__ */ new Map(), this.startDistance = this.previousScale = 0, this.currentDropdownOwner = this.isPinchZoomEnabled = null, this.mostRecentEvent = e, this.currentDragDeltaXY = new R(0, 0);
         }
         dispose() {
-          J(), ac(), this.creatorWorkspace.clearGesture();
-          for (const e of this.boundEvents) G(e);
+          q(), ac(), this.creatorWorkspace.clearGesture();
+          for (const e of this.boundEvents) V(e);
           this.boundEvents.length = 0;
         }
         updateFromEvent(e) {
@@ -9737,33 +9737,33 @@ children`), this.state = e;
           if (this.calledUpdateIsDragging) throw Error("updateIsDragging_ should only be called once per gesture.");
           this.calledUpdateIsDragging = !0, this.flyout && this.updateIsDraggingFromFlyout();
           const t = T();
-          t && Po(t) && t.isMovable() ? (this.dragging = !0, this.dragger = this.createDragger(t, this.startWorkspace_), this.dragger.onDragStart(e), this.dragger.onDrag(e, this.currentDragDeltaXY)) : this.updateIsDraggingWorkspace();
+          t && ko(t) && t.isMovable() ? (this.dragging = !0, this.dragger = this.createDragger(t, this.startWorkspace_), this.dragger.onDragStart(e), this.dragger.onDrag(e, this.currentDragDeltaXY)) : this.updateIsDraggingWorkspace();
         }
         createDragger(e, t) {
           return new (Re(I.BLOCK_DRAGGER, this.creatorWorkspace.options, !0))(e, t);
         }
         doStart(e) {
           if (!this.startWorkspace_) throw Error("Cannot start the touch gesture becauase the start workspace is undefined");
-          this.isPinchZoomEnabled = this.startWorkspace_.options.zoomOptions && this.startWorkspace_.options.zoomOptions.pinch, fs(e) ? this.cancel() : (this.gestureHasStarted = !0, yo(), this.startWorkspace_.updateScreenCalculationsIfScrolled(), this.startWorkspace_.isMutator && this.startWorkspace_.resize(), this.currentDropdownOwner = Vl(), this.startWorkspace_.hideChaff(!!this.flyout), this.startWorkspace_.markFocused(), this.mostRecentEvent = e, uc(), Ve(e) ? this.handleRightClick(e) : (e.type.toLowerCase() === "pointerdown" && e.pointerType !== "mouse" && oi(e, this), this.mouseDownXY = new R(e.clientX, e.clientY), this.bindMouseEvents(e), this.isEnding_ || this.handleTouchStart(e)));
+          this.isPinchZoomEnabled = this.startWorkspace_.options.zoomOptions && this.startWorkspace_.options.zoomOptions.pinch, bs(e) ? this.cancel() : (this.gestureHasStarted = !0, Mo(), this.startWorkspace_.updateScreenCalculationsIfScrolled(), this.startWorkspace_.isMutator && this.startWorkspace_.resize(), this.currentDropdownOwner = Vl(), this.startWorkspace_.hideChaff(!!this.flyout), this.startWorkspace_.markFocused(), this.mostRecentEvent = e, uc(), Ve(e) ? this.handleRightClick(e) : (e.type.toLowerCase() === "pointerdown" && e.pointerType !== "mouse" && si(e, this), this.mouseDownXY = new R(e.clientX, e.clientY), this.bindMouseEvents(e), this.isEnding_ || this.handleTouchStart(e)));
         }
         bindMouseEvents(e) {
-          this.boundEvents.push(P(
+          this.boundEvents.push(k(
             document,
             "pointerdown",
             null,
             this.handleStart.bind(this),
             !0
-          )), this.boundEvents.push(P(document, "pointermove", null, this.handleMove.bind(this), !0)), this.boundEvents.push(P(document, "pointerup", null, this.handleUp.bind(this), !0)), this.boundEvents.push(P(document, "pointercancel", null, this.handleUp.bind(this), !0)), e.preventDefault(), e.stopPropagation();
+          )), this.boundEvents.push(k(document, "pointermove", null, this.handleMove.bind(this), !0)), this.boundEvents.push(k(document, "pointerup", null, this.handleUp.bind(this), !0)), this.boundEvents.push(k(document, "pointercancel", null, this.handleUp.bind(this), !0)), e.preventDefault(), e.stopPropagation();
         }
         handleStart(e) {
           this.isDragging() || (this.handleTouchStart(e), this.isMultiTouch() && Qe());
         }
         handleMove(e) {
-          this.isDragging() && bs(e) || !this.isMultiTouch() ? (this.updateFromEvent(e), this.workspaceDragger ? this.workspaceDragger.drag(this.currentDragDeltaXY) : this.dragger && this.dragger.onDrag(this.mostRecentEvent, this.currentDragDeltaXY), e.preventDefault(), e.stopPropagation()) : this.isMultiTouch() && (this.handleTouchMove(e), Qe());
+          this.isDragging() && Ls(e) || !this.isMultiTouch() ? (this.updateFromEvent(e), this.workspaceDragger ? this.workspaceDragger.drag(this.currentDragDeltaXY) : this.dragger && this.dragger.onDrag(this.mostRecentEvent, this.currentDragDeltaXY), e.preventDefault(), e.stopPropagation()) : this.isMultiTouch() && (this.handleTouchMove(e), Qe());
         }
         handleUp(e) {
           if (this.isDragging() || this.handleTouchEnd(e), !this.isMultiTouch() || this.isDragging()) {
-            if (!bs(e)) return;
+            if (!Ls(e)) return;
             if (this.updateFromEvent(e), Qe(), this.isEnding_) {
               console.log("Trying to end a gesture recursively.");
               return;
@@ -9785,7 +9785,7 @@ children`), this.state = e;
         handlePinch(e) {
           var t = Array.from(this.cachedPoints.keys()), s = this.cachedPoints.get(t[0]);
           if (t = this.cachedPoints.get(t[1]), s = R.distance(s, t) / this.startDistance, this.previousScale > 0 && this.previousScale < 1 / 0) {
-            if (t = s - this.previousScale, t = t > 0 ? t * vg : t * kg, !this.startWorkspace_) throw Error("Cannot handle a pinch because the start workspace is undefined");
+            if (t = s - this.previousScale, t = t > 0 ? t * kg : t * Pg, !this.startWorkspace_) throw Error("Cannot handle a pinch because the start workspace is undefined");
             const o = this.startWorkspace_, n = ss(e, o.getParentSvg(), o.getInverseScreenCTM());
             o.zoom(n.x, n.y, t);
           }
@@ -9982,22 +9982,22 @@ children`), this.state = e;
           } else O($.LINE, {}, e);
           return o && o.style.setProperty("--blocklyGridPattern", `url(#${e.id})`), e;
         }
-      }, Pg = class {
+      }, Dg = class {
         constructor(e) {
-          this.workspace = e, this.layers = /* @__PURE__ */ new Map(), (e = e.getInjectionDiv()) && (this.dragLayer = this.createDragLayer(e), this.animationLayer = this.createAnimationLayer(e)), e = this.createLayer(js), L(e, "blocklyBlockCanvas"), e = this.createLayer(Xo), L(e, "blocklyBubbleCanvas");
+          this.workspace = e, this.layers = /* @__PURE__ */ new Map(), (e = e.getInjectionDiv()) && (this.dragLayer = this.createDragLayer(e), this.animationLayer = this.createAnimationLayer(e)), e = this.createLayer(Js), L(e, "blocklyBlockCanvas"), e = this.createLayer(Vo), L(e, "blocklyBubbleCanvas");
         }
         createDragLayer(e) {
           const t = O(
             $.SVG,
-            { class: "blocklyBlockDragSurface", xmlns: Pi, "xmlns:html": Fs, "xmlns:xlink": Ye, version: "1.1" }
+            { class: "blocklyBlockDragSurface", xmlns: ki, "xmlns:html": Us, "xmlns:xlink": Ye, version: "1.1" }
           );
           return e.append(t), O($.G, {}, t);
         }
         createAnimationLayer(e) {
           const t = O($.SVG, {
             class: "blocklyAnimationLayer",
-            xmlns: Pi,
-            "xmlns:html": Fs,
+            xmlns: ki,
+            "xmlns:html": Us,
             "xmlns:xlink": Ye,
             version: "1.1"
           });
@@ -10048,10 +10048,10 @@ children`), this.state = e;
           return e === this.dragLayer || new Set(this.layers.values()).has(e);
         }
         getBlockLayer() {
-          return this.layers.get(js);
+          return this.layers.get(Js);
         }
         getBubbleLayer() {
-          return this.layers.get(Xo);
+          return this.layers.get(Vo);
         }
         getDragLayer() {
           return this.dragLayer;
@@ -10070,7 +10070,7 @@ children`), this.state = e;
           this.curNode = null;
         }
         getSourceBlockFromNode(e) {
-          return e instanceof z ? e : e instanceof Y || e instanceof Ae || e instanceof Wo ? e.getSourceBlock() : null;
+          return e instanceof J ? e : e instanceof z || e instanceof Ae || e instanceof Xo ? e.getSourceBlock() : null;
         }
         getSourceBlock() {
           return this.getSourceBlockFromNode(this.getCurNode());
@@ -10085,7 +10085,7 @@ children`), this.state = e;
             e,
             (t) => {
               let s;
-              return t instanceof z && !((s = t.outputConnection) != null && s.targetBlock()) || t instanceof jt;
+              return t instanceof J && !((s = t.outputConnection) != null && s.targetBlock()) || t instanceof jt;
             },
             !0
           )) && this.setCurNode(e), e) : null;
@@ -10098,7 +10098,7 @@ children`), this.state = e;
           var e = this.getCurNode();
           return e ? ((e = this.getPreviousNode(e, (t) => {
             let s;
-            return t instanceof z && !((s = t.outputConnection) != null && s.targetBlock()) || t instanceof jt;
+            return t instanceof J && !((s = t.outputConnection) != null && s.targetBlock()) || t instanceof jt;
           }, !0)) && this.setCurNode(e), e) : null;
         }
         out() {
@@ -10111,7 +10111,7 @@ children`), this.state = e;
           const t = this.getNextNode(e, () => !0, !0);
           return e = this.getNextNode(e, (s) => {
             let o;
-            return s instanceof z && !((o = s.outputConnection) != null && o.targetBlock());
+            return s instanceof J && !((o = s.outputConnection) != null && o.targetBlock());
           }, !0), t === e;
         }
         getNextNodeImpl(e, t, s = /* @__PURE__ */ new Set()) {
@@ -10207,7 +10207,7 @@ children`), this.state = e;
       };
       Ca.LOCAL_MARKER = "local_marker_1";
       var Is = {};
-      Is.CommentIcon = _t, Is.Icon = Wo, Is.IconType = Ee, Is.MutatorIcon = i.MutatorIcon$$module$build$src$core$icons$mutator_icon, Is.WarningIcon = Nt, Is.exceptions = u$, Is.registry = Ra, i.Names$$module$build$src$core$names = class {
+      Is.CommentIcon = _t, Is.Icon = Xo, Is.IconType = Ee, Is.MutatorIcon = i.MutatorIcon$$module$build$src$core$icons$mutator_icon, Is.WarningIcon = Nt, Is.exceptions = u$, Is.registry = Ra, i.Names$$module$build$src$core$names = class {
         constructor(e, t) {
           this.db = /* @__PURE__ */ new Map(), this.dbReverse = /* @__PURE__ */ new Set(), this.variableMap = null, this.variablePrefix = t || "", this.reservedWords = new Set(e ? e.split(",") : []);
         }
@@ -10279,9 +10279,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         getProcedures() {
           return [...this.values()];
         }
-      }, qr, Pe;
-      qr = "PROCEDURE", i.DEFAULT_ARG$$module$build$src$core$procedures = "x", Pe = { CATEGORY_NAME: qr, DEFAULT_ARG: i.DEFAULT_ARG$$module$build$src$core$procedures }, Pe.ObservableProcedureMap = y$, Pe.allProcedures = Ni, Pe.findLegalName = i.findLegalName$$module$build$src$core$procedures, Pe.flyoutCategory = Xc, Pe.getCallers = zc, Pe.getDefinition = i.getDefinition$$module$build$src$core$procedures, Pe.internalFlyoutCategory = tr, Pe.isNameUsed = Vc, Pe.isProcedureBlock = ds, Pe.mutateCallers = i.mutateCallers$$module$build$src$core$procedures, Pe.mutatorOpenListener = Yc, Pe.rename = i.rename$$module$build$src$core$procedures;
-      var Dg = class {
+      }, qr, De;
+      qr = "PROCEDURE", i.DEFAULT_ARG$$module$build$src$core$procedures = "x", De = { CATEGORY_NAME: qr, DEFAULT_ARG: i.DEFAULT_ARG$$module$build$src$core$procedures }, De.ObservableProcedureMap = y$, De.allProcedures = Ci, De.findLegalName = i.findLegalName$$module$build$src$core$procedures, De.flyoutCategory = Xc, De.getCallers = zc, De.getDefinition = i.getDefinition$$module$build$src$core$procedures, De.internalFlyoutCategory = tr, De.isNameUsed = Vc, De.isProcedureBlock = ds, De.mutateCallers = i.mutateCallers$$module$build$src$core$procedures, De.mutatorOpenListener = Yc, De.rename = i.rename$$module$build$src$core$procedures;
+      var wg = class {
         constructor() {
           this.NONE = 0, this.FIELD = 1, this.HAT = 2, this.ICON = 4, this.SPACER = 8, this.BETWEEN_ROW_SPACER = 16, this.IN_ROW_SPACER = 32, this.EXTERNAL_VALUE_INPUT = 64, this.INPUT = 128, this.INLINE_INPUT = 256, this.STATEMENT_INPUT = 512, this.CONNECTION = 1024, this.PREVIOUS_CONNECTION = 2048, this.NEXT_CONNECTION = 4096, this.OUTPUT_CONNECTION = 8192, this.CORNER = 16384, this.LEFT_SQUARE_CORNER = 32768, this.LEFT_ROUND_CORNER = 65536, this.RIGHT_SQUARE_CORNER = 131072, this.RIGHT_ROUND_CORNER = 262144, this.JAGGED_EDGE = 524288, this.ROW = 1048576, this.TOP_ROW = 2097152, this.BOTTOM_ROW = 4194304, this.INPUT_ROW = 8388608, this.LEFT_CORNER = this.LEFT_SQUARE_CORNER | this.LEFT_ROUND_CORNER, this.RIGHT_CORNER = this.RIGHT_SQUARE_CORNER | this.RIGHT_ROUND_CORNER, this.nextTypeValue_ = 16777216;
         }
@@ -10366,11 +10366,11 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         isInputRow(e) {
           return (e.type & this.INPUT_ROW) >= 1;
         }
-      }, d = new Dg(), Mt = class {
+      }, d = new wg(), Mt = class {
         constructor(e) {
           this.centerline = this.xPos = this.height = this.width = 0, this.constants_ = e, this.type = d.NONE, this.notchOffset = this.constants_.NOTCH_OFFSET_LEFT;
         }
-      }, Qi = class {
+      }, Zi = class {
         constructor(e) {
           this.elements = [], this.xPos = this.yPos = this.widthWithConnectedBlocks = this.minWidth = this.minHeight = this.width = this.height = 0, this.hasStatement = this.hasExternalInput = !1, this.statementEdge = 0, this.hasJaggedEdge = this.hasDummyInput = this.hasInlineInput = !1, this.align = null, this.constants_ = e, this.type = d.ROW, this.notchOffset = this.constants_.NOTCH_OFFSET_LEFT;
         }
@@ -10404,7 +10404,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }
           return null;
         }
-      }, Na = class extends Qi {
+      }, Na = class extends Zi {
         constructor(e) {
           super(e), this.hasNextConnection = !1, this.connection = null, this.baseline = this.descenderHeight = 0, this.type |= d.BOTTOM_ROW;
         }
@@ -10428,11 +10428,11 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         endsWithElemSpacer() {
           return !1;
         }
-      }, eo = class extends Mt {
+      }, Qs = class extends Mt {
         constructor(e, t) {
           super(e), this.connectionModel = t, this.type |= d.CONNECTION, this.shape = this.constants_.shapeFor(t), this.isDynamicShape = "isDynamic" in this.shape && this.shape.isDynamic, this.highlighted = t.isHighlighted();
         }
-      }, Zr = class extends eo {
+      }, Zr = class extends Qs {
         constructor(e, t) {
           super(e, t.connection), this.input = t, this.connectionOffsetY = this.connectionOffsetX = 0, this.type |= d.INPUT, this.align = t.align, (this.connectedBlock = t.connection && t.connection.targetBlock() ? t.connection.targetBlock() : null) ? (e = this.connectedBlock.getHeightWidth(), this.connectedBlockWidth = e.width, this.connectedBlockHeight = e.height) : this.connectedBlockHeight = this.connectedBlockWidth = 0;
         }
@@ -10460,7 +10460,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         constructor(e, t) {
           super(e, t), this.type |= d.INLINE_INPUT, this.connectedBlock ? (this.width = this.connectedBlockWidth, this.height = this.connectedBlockHeight) : (this.height = this.constants_.EMPTY_INLINE_INPUT_HEIGHT, this.width = this.constants_.EMPTY_INLINE_INPUT_PADDING), this.connectionHeight = this.isDynamicShape ? this.shape.height(this.height) : this.shape.height, this.connectionWidth = this.isDynamicShape ? this.shape.width(this.height) : this.shape.width, this.connectedBlock || (this.width += this.connectionWidth * (this.isDynamicShape ? 2 : 1)), this.connectionOffsetY = "connectionOffsetY" in this.shape ? this.shape.connectionOffsetY(this.connectionHeight) : this.constants_.TAB_OFFSET_FROM_TOP, this.connectionOffsetX = "connectionOffsetX" in this.shape ? this.shape.connectionOffsetX(this.connectionWidth) : 0;
         }
-      }, ka = class extends Qi {
+      }, ka = class extends Zi {
         constructor(e) {
           super(e), this.connectedBlockWidths = 0, this.type |= d.INPUT_ROW;
         }
@@ -10480,23 +10480,23 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         constructor(e) {
           super(e), this.type |= d.JAGGED_EDGE, this.height = this.constants_.JAGGED_TEETH.height, this.width = this.constants_.JAGGED_TEETH.width;
         }
-      }, D$ = class extends eo {
+      }, D$ = class extends Qs {
         constructor(e, t) {
           super(e, t), this.type |= d.NEXT_CONNECTION, this.height = this.shape.height, this.width = this.shape.width;
         }
-      }, w$ = class extends eo {
+      }, w$ = class extends Qs {
         constructor(e, t) {
           super(e, t), this.connectionOffsetX = 0, this.type |= d.OUTPUT_CONNECTION, this.height = this.isDynamicShape ? 0 : this.shape.height, this.startX = this.width = this.isDynamicShape ? 0 : this.shape.width, this.connectionOffsetY = this.constants_.TAB_OFFSET_FROM_TOP;
         }
-      }, B$ = class extends eo {
+      }, B$ = class extends Qs {
         constructor(e, t) {
           super(e, t), this.type |= d.PREVIOUS_CONNECTION, this.height = this.shape.height, this.width = this.shape.width;
         }
-      }, en = class extends Mt {
+      }, Qi = class extends Mt {
         constructor(e, t) {
           super(e), this.type = (t && t !== "left" ? d.RIGHT_ROUND_CORNER : d.LEFT_ROUND_CORNER) | d.CORNER, this.width = this.constants_.CORNER_RADIUS, this.height = this.constants_.CORNER_RADIUS / 2;
         }
-      }, Pa = class extends Qi {
+      }, Pa = class extends Zi {
         constructor(e, t, s) {
           super(e), this.height = t, this.width = s, this.precedesStatement = this.followsStatement = !1, this.widthWithConnectedBlocks = 0, this.type |= d.SPACER | d.BETWEEN_ROW_SPACER, this.elements = [new Ze(
             this.constants_,
@@ -10505,7 +10505,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         measure() {
         }
-      }, tn = class extends Mt {
+      }, en = class extends Mt {
         constructor(e, t) {
           super(e), this.type = (t && t !== "left" ? d.RIGHT_SQUARE_CORNER : d.LEFT_SQUARE_CORNER) | d.CORNER, this.width = this.height = this.constants_.NO_PADDING;
         }
@@ -10513,7 +10513,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         constructor(e, t) {
           super(e, t), this.type |= d.STATEMENT_INPUT, this.height = this.connectedBlock ? this.connectedBlockHeight + this.constants_.STATEMENT_BOTTOM_SPACER : this.constants_.EMPTY_STATEMENT_INPUT_HEIGHT, this.width = this.constants_.STATEMENT_INPUT_NOTCH_OFFSET + this.shape.width;
         }
-      }, Da = class extends Qi {
+      }, Da = class extends Zi {
         constructor(e) {
           super(e), this.ascenderHeight = this.capline = 0, this.hasPreviousConnection = !1, this.connection = null, this.type |= d.TOP_ROW;
         }
@@ -10540,7 +10540,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       }, el = class {
         constructor() {
-          this.NO_PADDING = 0, this.SMALL_PADDING = 3, this.MEDIUM_PADDING = 5, this.MEDIUM_LARGE_PADDING = 8, this.LARGE_PADDING = 10, this.TAB_HEIGHT = 15, this.TAB_OFFSET_FROM_TOP = 5, this.TAB_VERTICAL_OVERLAP = 2.5, this.TAB_WIDTH = 8, this.NOTCH_WIDTH = 15, this.NOTCH_HEIGHT = 4, this.MIN_BLOCK_WIDTH = 12, this.EMPTY_BLOCK_SPACER_HEIGHT = 16, this.CORNER_RADIUS = 8, this.NOTCH_OFFSET_LEFT = 15, this.STATEMENT_BOTTOM_SPACER = 0, this.STATEMENT_INPUT_PADDING_LEFT = 20, this.BETWEEN_STATEMENT_PADDING_Y = 4, this.ADD_START_HATS = !1, this.START_HAT_HEIGHT = 15, this.START_HAT_WIDTH = 100, this.SPACER_DEFAULT_HEIGHT = 15, this.MIN_BLOCK_HEIGHT = 24, this.EMPTY_INLINE_INPUT_PADDING = 14.5, this.EXTERNAL_VALUE_INPUT_PADDING = 2, this.JAGGED_TEETH_HEIGHT = 12, this.JAGGED_TEETH_WIDTH = 6, this.FIELD_TEXT_FONTSIZE = 11, this.FIELD_TEXT_FONTWEIGHT = "normal", this.FIELD_TEXT_FONTFAMILY = "sans-serif", this.FIELD_TEXT_BASELINE = this.FIELD_TEXT_HEIGHT = -1, this.FIELD_BORDER_RECT_RADIUS = 4, this.FIELD_BORDER_RECT_HEIGHT = 16, this.FIELD_BORDER_RECT_X_PADDING = 5, this.FIELD_BORDER_RECT_Y_PADDING = 3, this.FIELD_BORDER_RECT_COLOUR = "#fff", this.FIELD_DROPDOWN_SVG_ARROW = this.FIELD_DROPDOWN_COLOURED_DIV = this.FIELD_DROPDOWN_NO_BORDER_RECT_SHADOW = !1, this.FIELD_DROPDOWN_SVG_ARROW_SIZE = 12, this.FIELD_COLOUR_FULL_BLOCK = this.FIELD_TEXTINPUT_BOX_SHADOW = !1, this.FIELD_COLOUR_DEFAULT_WIDTH = 26, this.defs = null, this.embossFilterId = "", this.embossFilter = null, this.disabledPatternId = "", this.disabledPattern = null, this.debugFilterId = "", this.cssNode = this.debugFilter = null, this.CURSOR_COLOUR = "#cc0a0a", this.MARKER_COLOUR = "#4286f4", this.CURSOR_WS_WIDTH = 100, this.WS_CURSOR_HEIGHT = 5, this.CURSOR_STACK_PADDING = 10, this.CURSOR_BLOCK_PADDING = 2, this.CURSOR_STROKE_WIDTH = 4, this.FULL_BLOCK_FIELDS = !1, this.INSERTION_MARKER_COLOUR = "#000000", this.INSERTION_MARKER_OPACITY = 0.2, this.SHAPES = { PUZZLE: 1, NOTCH: 2 }, this.TALL_INPUT_FIELD_OFFSET_Y = this.MEDIUM_PADDING, this.DUMMY_INPUT_SHADOW_MIN_HEIGHT = this.DUMMY_INPUT_MIN_HEIGHT = this.TAB_HEIGHT, this.STATEMENT_INPUT_NOTCH_OFFSET = this.NOTCH_OFFSET_LEFT, this.TOP_ROW_MIN_HEIGHT = this.MEDIUM_PADDING, this.TOP_ROW_PRECEDES_STATEMENT_MIN_HEIGHT = this.LARGE_PADDING, this.BOTTOM_ROW_MIN_HEIGHT = this.MEDIUM_PADDING, this.BOTTOM_ROW_AFTER_STATEMENT_MIN_HEIGHT = this.LARGE_PADDING, this.EMPTY_INLINE_INPUT_HEIGHT = this.TAB_HEIGHT + 11, this.EMPTY_STATEMENT_INPUT_HEIGHT = this.MIN_BLOCK_HEIGHT, this.START_POINT = le(0, 0), this.FIELD_TEXT_BASELINE_CENTER = !0, this.FIELD_DROPDOWN_BORDER_RECT_HEIGHT = this.FIELD_BORDER_RECT_HEIGHT, this.FIELD_DROPDOWN_SVG_ARROW_PADDING = this.FIELD_BORDER_RECT_X_PADDING, this.FIELD_DROPDOWN_SVG_ARROW_DATAURI = "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMi43MSIgaGVpZ2h0PSI4Ljc5IiB2aWV3Qm94PSIwIDAgMTIuNzEgOC43OSI+PHRpdGxlPmRyb3Bkb3duLWFycm93PC90aXRsZT48ZyBvcGFjaXR5PSIwLjEiPjxwYXRoIGQ9Ik0xMi43MSwyLjQ0QTIuNDEsMi40MSwwLDAsMSwxMiw0LjE2TDguMDgsOC4wOGEyLjQ1LDIuNDUsMCwwLDEtMy40NSwwTDAuNzIsNC4xNkEyLjQyLDIuNDIsMCwwLDEsMCwyLjQ0LDIuNDgsMi40OCwwLDAsMSwuNzEuNzFDMSwwLjQ3LDEuNDMsMCw2LjM2LDBTMTEuNzUsMC40NiwxMiwuNzFBMi40NCwyLjQ0LDAsMCwxLDEyLjcxLDIuNDRaIiBmaWxsPSIjMjMxZjIwIi8+PC9nPjxwYXRoIGQ9Ik02LjM2LDcuNzlhMS40MywxLjQzLDAsMCwxLTEtLjQyTDEuNDIsMy40NWExLjQ0LDEuNDQsMCwwLDEsMC0yYzAuNTYtLjU2LDkuMzEtMC41Niw5Ljg3LDBhMS40NCwxLjQ0LDAsMCwxLDAsMkw3LjM3LDcuMzdBMS40MywxLjQzLDAsMCwxLDYuMzYsNy43OVoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=", this.FIELD_COLOUR_DEFAULT_HEIGHT = this.FIELD_BORDER_RECT_HEIGHT, this.FIELD_CHECKBOX_X_OFFSET = this.FIELD_BORDER_RECT_X_PADDING - 3, this.randomIdentifier = String(Math.random()).substring(2);
+          this.NO_PADDING = 0, this.SMALL_PADDING = 3, this.MEDIUM_PADDING = 5, this.MEDIUM_LARGE_PADDING = 8, this.LARGE_PADDING = 10, this.TAB_HEIGHT = 15, this.TAB_OFFSET_FROM_TOP = 5, this.TAB_VERTICAL_OVERLAP = 2.5, this.TAB_WIDTH = 8, this.NOTCH_WIDTH = 15, this.NOTCH_HEIGHT = 4, this.MIN_BLOCK_WIDTH = 12, this.EMPTY_BLOCK_SPACER_HEIGHT = 16, this.CORNER_RADIUS = 8, this.NOTCH_OFFSET_LEFT = 15, this.STATEMENT_BOTTOM_SPACER = 0, this.STATEMENT_INPUT_PADDING_LEFT = 20, this.BETWEEN_STATEMENT_PADDING_Y = 4, this.ADD_START_HATS = !1, this.START_HAT_HEIGHT = 15, this.START_HAT_WIDTH = 100, this.SPACER_DEFAULT_HEIGHT = 15, this.MIN_BLOCK_HEIGHT = 24, this.EMPTY_INLINE_INPUT_PADDING = 14.5, this.EXTERNAL_VALUE_INPUT_PADDING = 2, this.JAGGED_TEETH_HEIGHT = 12, this.JAGGED_TEETH_WIDTH = 6, this.FIELD_TEXT_FONTSIZE = 11, this.FIELD_TEXT_FONTWEIGHT = "normal", this.FIELD_TEXT_FONTFAMILY = "sans-serif", this.FIELD_TEXT_BASELINE = this.FIELD_TEXT_HEIGHT = -1, this.FIELD_BORDER_RECT_RADIUS = 4, this.FIELD_BORDER_RECT_HEIGHT = 16, this.FIELD_BORDER_RECT_X_PADDING = 5, this.FIELD_BORDER_RECT_Y_PADDING = 3, this.FIELD_BORDER_RECT_COLOUR = "#fff", this.FIELD_DROPDOWN_SVG_ARROW = this.FIELD_DROPDOWN_COLOURED_DIV = this.FIELD_DROPDOWN_NO_BORDER_RECT_SHADOW = !1, this.FIELD_DROPDOWN_SVG_ARROW_SIZE = 12, this.FIELD_COLOUR_FULL_BLOCK = this.FIELD_TEXTINPUT_BOX_SHADOW = !1, this.FIELD_COLOUR_DEFAULT_WIDTH = 26, this.defs = null, this.embossFilterId = "", this.embossFilter = null, this.disabledPatternId = "", this.disabledPattern = null, this.debugFilterId = "", this.cssNode = this.debugFilter = null, this.CURSOR_COLOUR = "#cc0a0a", this.MARKER_COLOUR = "#4286f4", this.CURSOR_WS_WIDTH = 100, this.WS_CURSOR_HEIGHT = 5, this.CURSOR_STACK_PADDING = 10, this.CURSOR_BLOCK_PADDING = 2, this.CURSOR_STROKE_WIDTH = 4, this.FULL_BLOCK_FIELDS = !1, this.INSERTION_MARKER_COLOUR = "#000000", this.INSERTION_MARKER_OPACITY = 0.2, this.SHAPES = { PUZZLE: 1, NOTCH: 2 }, this.TALL_INPUT_FIELD_OFFSET_Y = this.MEDIUM_PADDING, this.DUMMY_INPUT_SHADOW_MIN_HEIGHT = this.DUMMY_INPUT_MIN_HEIGHT = this.TAB_HEIGHT, this.STATEMENT_INPUT_NOTCH_OFFSET = this.NOTCH_OFFSET_LEFT, this.TOP_ROW_MIN_HEIGHT = this.MEDIUM_PADDING, this.TOP_ROW_PRECEDES_STATEMENT_MIN_HEIGHT = this.LARGE_PADDING, this.BOTTOM_ROW_MIN_HEIGHT = this.MEDIUM_PADDING, this.BOTTOM_ROW_AFTER_STATEMENT_MIN_HEIGHT = this.LARGE_PADDING, this.EMPTY_INLINE_INPUT_HEIGHT = this.TAB_HEIGHT + 11, this.EMPTY_STATEMENT_INPUT_HEIGHT = this.MIN_BLOCK_HEIGHT, this.START_POINT = ce(0, 0), this.FIELD_TEXT_BASELINE_CENTER = !0, this.FIELD_DROPDOWN_BORDER_RECT_HEIGHT = this.FIELD_BORDER_RECT_HEIGHT, this.FIELD_DROPDOWN_SVG_ARROW_PADDING = this.FIELD_BORDER_RECT_X_PADDING, this.FIELD_DROPDOWN_SVG_ARROW_DATAURI = "data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMi43MSIgaGVpZ2h0PSI4Ljc5IiB2aWV3Qm94PSIwIDAgMTIuNzEgOC43OSI+PHRpdGxlPmRyb3Bkb3duLWFycm93PC90aXRsZT48ZyBvcGFjaXR5PSIwLjEiPjxwYXRoIGQ9Ik0xMi43MSwyLjQ0QTIuNDEsMi40MSwwLDAsMSwxMiw0LjE2TDguMDgsOC4wOGEyLjQ1LDIuNDUsMCwwLDEtMy40NSwwTDAuNzIsNC4xNkEyLjQyLDIuNDIsMCwwLDEsMCwyLjQ0LDIuNDgsMi40OCwwLDAsMSwuNzEuNzFDMSwwLjQ3LDEuNDMsMCw2LjM2LDBTMTEuNzUsMC40NiwxMiwuNzFBMi40NCwyLjQ0LDAsMCwxLDEyLjcxLDIuNDRaIiBmaWxsPSIjMjMxZjIwIi8+PC9nPjxwYXRoIGQ9Ik02LjM2LDcuNzlhMS40MywxLjQzLDAsMCwxLTEtLjQyTDEuNDIsMy40NWExLjQ0LDEuNDQsMCwwLDEsMC0yYzAuNTYtLjU2LDkuMzEtMC41Niw5Ljg3LDBhMS40NCwxLjQ0LDAsMCwxLDAsMkw3LjM3LDcuMzdBMS40MywxLjQzLDAsMCwxLDYuMzYsNy43OVoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=", this.FIELD_COLOUR_DEFAULT_HEIGHT = this.FIELD_BORDER_RECT_HEIGHT, this.FIELD_CHECKBOX_X_OFFSET = this.FIELD_BORDER_RECT_X_PADDING - 3, this.randomIdentifier = String(Math.random()).substring(2);
         }
         init() {
           this.JAGGED_TEETH = this.makeJaggedTeeth(), this.NOTCH = this.makeNotch(), this.START_HAT = this.makeStartHat(), this.PUZZLE_TAB = this.makePuzzleTab(), this.INSIDE_CORNERS = this.makeInsideCorners(), this.OUTSIDE_CORNERS = this.makeOutsideCorners();
@@ -10555,7 +10555,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.setFontConstants_(e), this.setComponentConstants_(e), this.ADD_START_HATS = e.startHats !== void 0 ? e.startHats : this.ADD_START_HATS;
         }
         setFontConstants_(e) {
-          e.fontStyle && e.fontStyle.family && (this.FIELD_TEXT_FONTFAMILY = e.fontStyle.family), e.fontStyle && e.fontStyle.weight && (this.FIELD_TEXT_FONTWEIGHT = e.fontStyle.weight), e.fontStyle && e.fontStyle.size && (this.FIELD_TEXT_FONTSIZE = e.fontStyle.size), e = To(
+          e.fontStyle && e.fontStyle.family && (this.FIELD_TEXT_FONTFAMILY = e.fontStyle.family), e.fontStyle && e.fontStyle.weight && (this.FIELD_TEXT_FONTWEIGHT = e.fontStyle.weight), e.fontStyle && e.fontStyle.size && (this.FIELD_TEXT_FONTSIZE = e.fontStyle.size), e = _o(
             "Hg",
             this.FIELD_TEXT_FONTSIZE + "pt",
             this.FIELD_TEXT_FONTWEIGHT,
@@ -10577,23 +10577,23 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         validatedBlockStyle_(e) {
           const t = {};
-          return e && Object.assign(t, e), e = bo(t.colourPrimary || "#000"), t.colourPrimary = e.hex, t.colourSecondary = t.colourSecondary ? bo(t.colourSecondary).hex : this.generateSecondaryColour_(t.colourPrimary), t.colourTertiary = t.colourTertiary ? bo(t.colourTertiary).hex : this.generateTertiaryColour_(t.colourPrimary), t.hat = t.hat || "", t;
+          return e && Object.assign(t, e), e = Lo(t.colourPrimary || "#000"), t.colourPrimary = e.hex, t.colourSecondary = t.colourSecondary ? Lo(t.colourSecondary).hex : this.generateSecondaryColour_(t.colourPrimary), t.colourTertiary = t.colourTertiary ? Lo(t.colourTertiary).hex : this.generateTertiaryColour_(t.colourPrimary), t.hat = t.hat || "", t;
         }
         generateSecondaryColour_(e) {
-          return Ds("#fff", e, 0.6) || e;
+          return Ps("#fff", e, 0.6) || e;
         }
         generateTertiaryColour_(e) {
-          return Ds(
+          return Ps(
             "#fff",
             e,
             0.3
           ) || e;
         }
         dispose() {
-          this.embossFilter && V(this.embossFilter), this.disabledPattern && V(this.disabledPattern), this.debugFilter && V(this.debugFilter), this.cssNode = null;
+          this.embossFilter && X(this.embossFilter), this.disabledPattern && X(this.disabledPattern), this.debugFilter && X(this.debugFilter), this.cssNode = null;
         }
         makeJaggedTeeth() {
-          const e = this.JAGGED_TEETH_HEIGHT, t = this.JAGGED_TEETH_WIDTH, s = Mo([N(t, e / 4), N(-t * 2, e / 2), N(t, e / 4)]);
+          const e = this.JAGGED_TEETH_HEIGHT, t = this.JAGGED_TEETH_WIDTH, s = No([N(t, e / 4), N(-t * 2, e / 2), N(t, e / 4)]);
           return { height: e, width: t, path: s };
         }
         makeStartHat() {
@@ -10605,31 +10605,31 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             r = r ? -1 : 1;
             const u = -r;
             var h = s / 2;
-            const m = h + 2.5, A = h + 0.5, ie = N(
+            const m = h + 2.5, A = h + 0.5, ne = N(
               -t,
               r * h
             );
-            return h = N(t, r * h), He("c", [N(0, r * m), N(-t, u * A), ie]) + He("s", [N(t, u * 2.5), h]);
+            return h = N(t, r * h), He("c", [N(0, r * m), N(-t, u * A), ne]) + He("s", [N(t, u * 2.5), h]);
           }
           const t = this.TAB_WIDTH, s = this.TAB_HEIGHT, o = e(!0), n = e(!1);
           return { type: this.SHAPES.PUZZLE, width: t, height: s, pathDown: n, pathUp: o };
         }
         makeNotch() {
           function e(u) {
-            return Mo([N(u * o, s), N(u * 3, 0), N(u * o, -s)]);
+            return No([N(u * o, s), N(u * 3, 0), N(u * o, -s)]);
           }
           const t = this.NOTCH_WIDTH, s = this.NOTCH_HEIGHT, o = (t - 3) / 2, n = e(1), r = e(-1);
           return { type: this.SHAPES.NOTCH, width: t, height: s, pathLeft: n, pathRight: r };
         }
         makeInsideCorners() {
-          const e = this.CORNER_RADIUS, t = ae("a", "0 0,0", e, N(-e, e)), s = ae("a", "0 0,0", e, N(
+          const e = this.CORNER_RADIUS, t = he("a", "0 0,0", e, N(-e, e)), s = he("a", "0 0,0", e, N(
             e,
             e
           ));
           return { width: e, height: e, pathTop: t, pathBottom: s };
         }
         makeOutsideCorners() {
-          const e = this.CORNER_RADIUS, t = le(0, e) + ae("a", "0 0,1", e, N(e, -e)), s = ae("a", "0 0,1", e, N(e, e)), o = ae("a", "0 0,1", e, N(-e, -e)), n = ae(
+          const e = this.CORNER_RADIUS, t = ce(0, e) + he("a", "0 0,1", e, N(e, -e)), s = he("a", "0 0,1", e, N(e, e)), o = he("a", "0 0,1", e, N(-e, -e)), n = he(
             "a",
             "0 0,1",
             e,
@@ -10758,7 +10758,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         drawTop_() {
           const e = this.info_.topRow, t = e.elements;
-          this.positionPreviousConnection_(), this.outlinePath_ += le(e.xPos, this.info_.startY);
+          this.positionPreviousConnection_(), this.outlinePath_ += ce(e.xPos, this.info_.startY);
           for (let s = 0, o; o = t[s]; s++) d.isLeftRoundedCorner(o) ? this.outlinePath_ += this.constants_.OUTSIDE_CORNERS.topLeft : d.isRightRoundedCorner(o) ? this.outlinePath_ += this.constants_.OUTSIDE_CORNERS.topRight : d.isPreviousConnection(o) ? this.outlinePath_ += o.shape.pathLeft : d.isHat(o) ? this.outlinePath_ += this.constants_.START_HAT.path : d.isSpacer(o) && (this.outlinePath_ += y("h", o.width));
           this.outlinePath_ += y("v", e.height - e.ascenderHeight);
         }
@@ -10863,7 +10863,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         updateConnectionHighlights() {
           for (const e of this.info_.rows) for (const t of e.elements) {
-            if (!(t instanceof eo)) continue;
+            if (!(t instanceof Qs)) continue;
             const s = this.drawConnectionHighlightPath(t);
             s && (s.style.display = t.highlighted ? "" : "none");
           }
@@ -10877,14 +10877,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         getExpressionConnectionHighlightPath(e) {
           let t = "";
-          return sr(e.shape) ? t = e.shape.pathDown(e.height) : E_(e.shape) && (t = e.shape.pathDown), e = this.constants_.TAB_OFFSET_FROM_TOP, le(0, -e) + y("v", e) + t + y("v", e);
+          return sr(e.shape) ? t = e.shape.pathDown(e.height) : E_(e.shape) && (t = e.shape.pathDown), e = this.constants_.TAB_OFFSET_FROM_TOP, ce(0, -e) + y("v", e) + t + y("v", e);
         }
         getStatementConnectionHighlightPath(e) {
           if (!g_(e.shape)) throw Error("Statement connections should have notch shapes");
           const t = this.constants_.NOTCH_OFFSET_LEFT - this.constants_.CORNER_RADIUS;
-          return le(-t, 0) + y("h", t) + e.shape.pathLeft + y("h", t);
+          return ce(-t, 0) + y("h", t) + e.shape.pathLeft + y("h", t);
         }
-      }, sn = class {
+      }, tn = class {
         constructor(e, t) {
           this.statementEdge = this.width = this.widthWithChildren = this.height = 0, this.rows = [], this.inputRows = [], this.startY = this.startX = 0, this.renderer_ = e, this.block_ = t, this.constants_ = this.renderer_.getConstants(), this.outputConnection = t.outputConnection ? new w$(this.constants_, t.outputConnection) : null, this.isInline = t.getInputsInline() && !t.isCollapsed(), this.isCollapsed = t.isCollapsed(), this.isInsertionMarker = t.isInsertionMarker(), this.RTL = t.RTL, this.topRow = new Da(this.constants_), this.bottomRow = new Na(this.constants_);
         }
@@ -10914,11 +10914,11 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         populateTopRow_() {
           var e = !!this.block_.previousConnection;
           const t = (this.block_.hat ? this.block_.hat === "cap" : this.constants_.ADD_START_HATS) && !this.outputConnection && !e;
-          let s = this.topRow.hasLeftSquareCorner(this.block_) ? tn : en;
-          this.topRow.elements.push(new s(this.constants_)), t ? (e = new v$(this.constants_), this.topRow.elements.push(e)) : e && (this.topRow.hasPreviousConnection = !0, this.topRow.connection = new B$(this.constants_, this.block_.previousConnection), this.topRow.elements.push(this.topRow.connection)), this.block_.inputList.length && this.block_.inputList[0] instanceof qe && !this.block_.isCollapsed() ? this.topRow.minHeight = this.constants_.TOP_ROW_PRECEDES_STATEMENT_MIN_HEIGHT : this.topRow.minHeight = this.constants_.TOP_ROW_MIN_HEIGHT, s = this.topRow.hasRightSquareCorner(this.block_) ? tn : en, this.topRow.elements.push(new s(this.constants_, "right"));
+          let s = this.topRow.hasLeftSquareCorner(this.block_) ? en : Qi;
+          this.topRow.elements.push(new s(this.constants_)), t ? (e = new v$(this.constants_), this.topRow.elements.push(e)) : e && (this.topRow.hasPreviousConnection = !0, this.topRow.connection = new B$(this.constants_, this.block_.previousConnection), this.topRow.elements.push(this.topRow.connection)), this.block_.inputList.length && this.block_.inputList[0] instanceof qe && !this.block_.isCollapsed() ? this.topRow.minHeight = this.constants_.TOP_ROW_PRECEDES_STATEMENT_MIN_HEIGHT : this.topRow.minHeight = this.constants_.TOP_ROW_MIN_HEIGHT, s = this.topRow.hasRightSquareCorner(this.block_) ? en : Qi, this.topRow.elements.push(new s(this.constants_, "right"));
         }
         populateBottomRow_() {
-          this.bottomRow.hasNextConnection = !!this.block_.nextConnection, this.bottomRow.minHeight = this.block_.inputList.length && this.block_.inputList[this.block_.inputList.length - 1] instanceof qe ? this.constants_.BOTTOM_ROW_AFTER_STATEMENT_MIN_HEIGHT : this.constants_.BOTTOM_ROW_MIN_HEIGHT, this.bottomRow.hasLeftSquareCorner(this.block_) ? this.bottomRow.elements.push(new tn(this.constants_)) : this.bottomRow.elements.push(new en(this.constants_)), this.bottomRow.hasNextConnection && (this.bottomRow.connection = new D$(this.constants_, this.block_.nextConnection), this.bottomRow.elements.push(this.bottomRow.connection)), this.bottomRow.hasRightSquareCorner(this.block_) ? this.bottomRow.elements.push(new tn(this.constants_, "right")) : this.bottomRow.elements.push(new en(this.constants_, "right"));
+          this.bottomRow.hasNextConnection = !!this.block_.nextConnection, this.bottomRow.minHeight = this.block_.inputList.length && this.block_.inputList[this.block_.inputList.length - 1] instanceof qe ? this.constants_.BOTTOM_ROW_AFTER_STATEMENT_MIN_HEIGHT : this.constants_.BOTTOM_ROW_MIN_HEIGHT, this.bottomRow.hasLeftSquareCorner(this.block_) ? this.bottomRow.elements.push(new en(this.constants_)) : this.bottomRow.elements.push(new Qi(this.constants_)), this.bottomRow.hasNextConnection && (this.bottomRow.connection = new D$(this.constants_, this.block_.nextConnection), this.bottomRow.elements.push(this.bottomRow.connection)), this.bottomRow.hasRightSquareCorner(this.block_) ? this.bottomRow.elements.push(new en(this.constants_, "right")) : this.bottomRow.elements.push(new Qi(this.constants_, "right"));
         }
         addInput_(e, t) {
           this.isInline && e instanceof i.ValueInput$$module$build$src$core$inputs$value_input ? (t.elements.push(new va(
@@ -11030,7 +11030,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         getMeasureableForConnection(e) {
           let t;
           if (((t = this.outputConnection) == null ? void 0 : t.connectionModel) === e) return this.outputConnection;
-          for (const s of this.rows) for (const o of s.elements) if (o instanceof eo && o.connectionModel === e) return o;
+          for (const s of this.rows) for (const o of s.elements) if (o instanceof Qs && o.connectionModel === e) return o;
           return null;
         }
       }, sl = class {
@@ -11053,7 +11053,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.style = e;
         }
         setClass_(e, t) {
-          e && (t ? L(this.svgRoot, e) : F(this.svgRoot, e));
+          e && (t ? L(this.svgRoot, e) : H(this.svgRoot, e));
         }
         updateHighlighted(e) {
           e ? this.setClass_("blocklyHighlighted", !0) : this.setClass_("blocklyHighlighted", !1);
@@ -11092,7 +11092,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         removeConnectionHighlight(e) {
           const t = this.connectionHighlights.get(e);
-          t && (V(t), this.connectionHighlights.delete(e));
+          t && (X(t), this.connectionHighlights.delete(e));
         }
       }, ol = class {
         constructor(e) {
@@ -11118,7 +11118,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return new el();
         }
         makeRenderInfo_(e) {
-          return new sn(this, e);
+          return new tn(this, e);
         }
         makeDrawer_(e, t) {
           return new tl(
@@ -11136,14 +11136,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return !0;
         }
         orphanCanConnectAtEnd(e, t, s) {
-          return !!H.getConnectionForOrphanedConnection(e, s === f.OUTPUT_VALUE ? t.outputConnection : t.previousConnection);
+          return !!G.getConnectionForOrphanedConnection(e, s === f.OUTPUT_VALUE ? t.outputConnection : t.previousConnection);
         }
         render(e) {
           const t = this.makeRenderInfo_(e);
           t.measure(), this.makeDrawer_(e, t).draw();
         }
-      }, W = {};
-      W.BottomRow = Na, W.Connection = eo, W.ConstantProvider = el, W.Drawer = tl, W.ExternalValueInput = Ma, W.Field = ya, W.Hat = v$, W.Icon = k$, W.InRowSpacer = Ze, W.InlineInput = va, W.InputConnection = Zr, W.InputRow = ka, W.JaggedEdge = P$, W.Measurable = Mt, W.NextConnection = D$, W.OutputConnection = w$, W.PathObject = sl, W.PreviousConnection = B$, W.RenderInfo = sn, W.Renderer = ol, W.RoundCorner = en, W.Row = Qi, W.SpacerRow = Pa, W.SquareCorner = tn, W.StatementInput = Qr, W.TopRow = Da, W.Types = d, W.init = Kc, W.register = Mi, W.unregister = p_;
+      }, Y = {};
+      Y.BottomRow = Na, Y.Connection = Qs, Y.ConstantProvider = el, Y.Drawer = tl, Y.ExternalValueInput = Ma, Y.Field = ya, Y.Hat = v$, Y.Icon = k$, Y.InRowSpacer = Ze, Y.InlineInput = va, Y.InputConnection = Zr, Y.InputRow = ka, Y.JaggedEdge = P$, Y.Measurable = Mt, Y.NextConnection = D$, Y.OutputConnection = w$, Y.PathObject = sl, Y.PreviousConnection = B$, Y.RenderInfo = tn, Y.Renderer = ol, Y.RoundCorner = Qi, Y.Row = Zi, Y.SpacerRow = Pa, Y.SquareCorner = en, Y.StatementInput = Qr, Y.TopRow = Da, Y.Types = d, Y.init = Kc, Y.register = Ni, Y.unregister = p_;
       var x$ = class {
         constructor(e, t) {
           this.workspace = e, this.theme = t, this.subscribedWorkspaces = [], this.componentDB = /* @__PURE__ */ new Map();
@@ -11153,7 +11153,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         setTheme(e) {
           var t = this.theme;
-          this.theme = e, (e = this.workspace.getInjectionDiv()) && (t && (t = t.getClassName()) && F(e, t), (t = this.theme.getClassName()) && L(e, t));
+          this.theme = e, (e = this.workspace.getInjectionDiv()) && (t && (t = t.getClassName()) && H(e, t), (t = this.theme.getClassName()) && L(e, t));
           for (let s = 0, o; o = this.subscribedWorkspaces[s]; s++) o.refreshTheme();
           for (const [
             s,
@@ -11190,38 +11190,38 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       Os.flyoutCategory = Jc, Os.flyoutCategoryBlocks = jc, Os.internalFlyoutCategory = rr, Os.onCreateVariableButtonClick_Colour = nr, Os.onCreateVariableButtonClick_Number = ir, Os.onCreateVariableButtonClick_String = or;
       var U$ = class {
         canConnect(e, t, s, o) {
-          return this.canConnectWithReason(e, t, s, o) === H.CAN_CONNECT;
+          return this.canConnectWithReason(e, t, s, o) === G.CAN_CONNECT;
         }
         canConnectWithReason(e, t, s, o) {
           const n = this.doSafetyChecks(e, t);
-          return n !== H.CAN_CONNECT ? n : this.doTypeChecks(e, t) ? s && !this.doDragChecks(e, t, o || 0) ? H.REASON_DRAG_CHECKS_FAILED : H.CAN_CONNECT : H.REASON_CHECKS_FAILED;
+          return n !== G.CAN_CONNECT ? n : this.doTypeChecks(e, t) ? s && !this.doDragChecks(e, t, o || 0) ? G.REASON_DRAG_CHECKS_FAILED : G.CAN_CONNECT : G.REASON_CHECKS_FAILED;
         }
         getErrorMessage(e, t, s) {
           switch (e) {
-            case H.REASON_SELF_CONNECTION:
+            case G.REASON_SELF_CONNECTION:
               return "Attempted to connect a block to itself.";
-            case H.REASON_DIFFERENT_WORKSPACES:
+            case G.REASON_DIFFERENT_WORKSPACES:
               return "Blocks not on same workspace.";
-            case H.REASON_WRONG_TYPE:
+            case G.REASON_WRONG_TYPE:
               return "Attempt to connect incompatible types.";
-            case H.REASON_TARGET_NULL:
+            case G.REASON_TARGET_NULL:
               return "Target connection is null.";
-            case H.REASON_CHECKS_FAILED:
+            case G.REASON_CHECKS_FAILED:
               return "Connection checks failed. " + (t + " expected " + t.getCheck() + ", found " + s.getCheck());
-            case H.REASON_SHADOW_PARENT:
+            case G.REASON_SHADOW_PARENT:
               return "Connecting non-shadow to shadow block.";
-            case H.REASON_DRAG_CHECKS_FAILED:
+            case G.REASON_DRAG_CHECKS_FAILED:
               return "Drag checks failed.";
-            case H.REASON_PREVIOUS_AND_OUTPUT:
+            case G.REASON_PREVIOUS_AND_OUTPUT:
               return "Block would have an output and a previous connection.";
             default:
               return "Unknown connection failure: this should never happen!";
           }
         }
         doSafetyChecks(e, t) {
-          if (!e || !t) return H.REASON_TARGET_NULL;
+          if (!e || !t) return G.REASON_TARGET_NULL;
           let s, o, n;
-          return e.isSuperior() ? (s = e.getSourceBlock(), o = t.getSourceBlock(), n = t) : (o = e.getSourceBlock(), s = t.getSourceBlock(), n = e, e = t), s === o ? H.REASON_SELF_CONNECTION : n.type !== Qs[e.type] ? H.REASON_WRONG_TYPE : s.workspace !== o.workspace ? H.REASON_DIFFERENT_WORKSPACES : s.isShadow() && !o.isShadow() ? H.REASON_SHADOW_PARENT : n.type === f.OUTPUT_VALUE && o.previousConnection && o.previousConnection.isConnected() || n.type === f.PREVIOUS_STATEMENT && o.outputConnection && o.outputConnection.isConnected() ? H.REASON_PREVIOUS_AND_OUTPUT : H.CAN_CONNECT;
+          return e.isSuperior() ? (s = e.getSourceBlock(), o = t.getSourceBlock(), n = t) : (o = e.getSourceBlock(), s = t.getSourceBlock(), n = e, e = t), s === o ? G.REASON_SELF_CONNECTION : n.type !== Zs[e.type] ? G.REASON_WRONG_TYPE : s.workspace !== o.workspace ? G.REASON_DIFFERENT_WORKSPACES : s.isShadow() && !o.isShadow() ? G.REASON_SHADOW_PARENT : n.type === f.OUTPUT_VALUE && o.previousConnection && o.previousConnection.isConnected() || n.type === f.PREVIOUS_STATEMENT && o.outputConnection && o.outputConnection.isConnected() ? G.REASON_PREVIOUS_AND_OUTPUT : G.CAN_CONNECT;
         }
         doTypeChecks(e, t) {
           if (e = e.getCheck(), t = t.getCheck(), !e || !t) return !0;
@@ -11245,14 +11245,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             default:
               return !1;
           }
-          return !Bi.includes(t);
+          return !wi.includes(t);
         }
         canConnectToPrevious_(e, t) {
-          return e.targetConnection || Bi.includes(t) ? !1 : t.targetConnection ? (e = t.targetBlock(), e.isInsertionMarker() ? !e.getPreviousBlock() : !1) : !0;
+          return e.targetConnection || wi.includes(t) ? !1 : t.targetConnection ? (e = t.targetBlock(), e.isInsertionMarker() ? !e.getPreviousBlock() : !1) : !0;
         }
       };
       c(I.CONNECTION_CHECKER, We, U$);
-      var Zo = class {
+      var qo = class {
         get isFlyout() {
           return this.internalIsFlyout;
         }
@@ -11260,14 +11260,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.internalIsMutator;
         }
         constructor(e) {
-          this.isClearing = this.internalIsMutator = this.internalIsFlyout = this.rendered = !1, this.MAX_UNDO = 1024, this.connectionDBList = [], this.topBlocks = [], this.topComments = [], this.commentDB = /* @__PURE__ */ new Map(), this.listeners = [], this.undoStack_ = [], this.redoStack_ = [], this.blockDB = /* @__PURE__ */ new Map(), this.typedBlocksDB = /* @__PURE__ */ new Map(), this.procedureMap = new y$(), this.readOnly = !1, this.potentialVariableMap = null, this.id = et(), ai(this), this.options = e || new At({}), this.RTL = !!this.options.RTL, this.horizontalLayout = !!this.options.horizontalLayout, this.toolboxPosition = this.options.toolboxPosition, this.connectionChecker = new (Re(
+          this.isClearing = this.internalIsMutator = this.internalIsFlyout = this.rendered = !1, this.MAX_UNDO = 1024, this.connectionDBList = [], this.topBlocks = [], this.topComments = [], this.commentDB = /* @__PURE__ */ new Map(), this.listeners = [], this.undoStack_ = [], this.redoStack_ = [], this.blockDB = /* @__PURE__ */ new Map(), this.typedBlocksDB = /* @__PURE__ */ new Map(), this.procedureMap = new y$(), this.readOnly = !1, this.potentialVariableMap = null, this.id = et(), ui(this), this.options = e || new At({}), this.RTL = !!this.options.RTL, this.horizontalLayout = !!this.options.horizontalLayout, this.toolboxPosition = this.options.toolboxPosition, this.connectionChecker = new (Re(
             I.CONNECTION_CHECKER,
             this.options,
             !0
           ))(this), this.variableMap = new (this.getVariableMapClass())(this), this.setIsReadOnly(this.options.readOnly);
         }
         dispose() {
-          this.listeners.length = 0, this.clear(), Eo(this);
+          this.listeners.length = 0, this.clear(), $o(this);
         }
         sortObjects(e, t) {
           const s = (o) => ({ getBoundingRectangle: () => {
@@ -11278,7 +11278,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.sortByOrigin(s(e), s(t));
         }
         sortByOrigin(e, t) {
-          const s = Math.sin(Dn(Zo.SCAN_ANGLE)) * (this.RTL ? -1 : 1);
+          const s = Math.sin(Dn(qo.SCAN_ANGLE)) * (this.RTL ? -1 : 1);
           return e = e.getBoundingRectangle().getOrigin(), t = t.getBoundingRectangle().getOrigin(), e.y + s * e.x - (t.y + s * t.x);
         }
         addTopBlock(e) {
@@ -11345,7 +11345,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             "v12",
             "v13",
             "Blockly.Variables.getVariableUsesById"
-          ), Ro(this, e);
+          ), Oo(this, e);
         }
         deleteVariableById(e) {
           Se("Blockly.Workspace.deleteVariableById", "v12", "v13", "Blockly.Workspace.getVariableMap().deleteVariable");
@@ -11423,7 +11423,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }
         }
         clearUndo() {
-          this.undoStack_.length = 0, this.redoStack_.length = 0, ui();
+          this.undoStack_.length = 0, this.redoStack_.length = 0, ci();
         }
         addChangeListener(e) {
           return this.listeners.push(e), e;
@@ -11495,8 +11495,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.readOnly = e, this.options.readOnly = e;
         }
       };
-      Zo.SCAN_ANGLE = 3;
-      var wg = 100, F$ = class {
+      qo.SCAN_ANGLE = 3;
+      var Bg = 100, F$ = class {
         constructor(e) {
           this.parentWorkspace = e, this.sounds = /* @__PURE__ */ new Map(), this.lastSound = null, this.muted = !1, window.AudioContext && (this.context = new AudioContext());
         }
@@ -11523,7 +11523,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
               var o = s.sounds.get(e);
               if (o) {
                 const u = /* @__PURE__ */ new Date();
-                if (!(s.lastSound !== null && u.getTime() - s.lastSound.getTime() < wg)) {
+                if (!(s.lastSound !== null && u.getTime() - s.lastSound.getTime() < Bg)) {
                   s.lastSound = u, s.context.state === "suspended" && (yield s.context.resume());
                   var n = s.context.createBufferSource(), r = s.context.createGain();
                   r.gain.value = t ?? 1, r.connect(s.context.destination), n.buffer = o, n.connect(r), n.addEventListener("ended", () => {
@@ -11540,16 +11540,16 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         getMuted() {
           return this.muted;
         }
-      }, Bg = 20, De = class extends Zo {
+      }, xg = 20, we = class extends qo {
         constructor(e) {
           super(e), this.resizeHandlerWrapper = null, this.resizesEnabled = this.visible = this.rendered = !0, this.startScrollY = this.startScrollX = this.scrollY = this.scrollX = 0, this.oldScale = this.scale = 1, this.oldLeft = this.oldTop = 0, this.inverseScreenCTM = this.targetWorkspace = this.dummyWheelListener = this.configureContextMenu = this.lastRecordedPageScroll = this.injectionDiv = this.currentGesture_ = this.toolbox = this.flyout = this.scrollbar = this.trashcan = null, this.inverseScreenCTMDirty = !0, this.highlightedBlocks = [], this.toolboxCategoryCallbacks = /* @__PURE__ */ new Map(), this.flyoutButtonCallbacks = /* @__PURE__ */ new Map(), this.cachedParentSvg = null, this.keyboardMoveInProgress = this.keyboardAccessibilityMode = !1, this.topBoundedElements = [], this.dragTargetAreas = [], this.zoomControls_ = this.layerManager = null, this.navigator = new La(), this.metricsManager = new (Re(
             I.METRICS_MANAGER,
             e,
             !0
-          ))(this), this.getMetrics = e.getMetrics || this.metricsManager.getMetrics.bind(this.metricsManager), this.setMetrics = e.setMetrics || De.setTopLevelWorkspaceMetrics, this.componentManager = new te(), this.connectionDBList = zo.init(this.connectionChecker), this.audioManager = new F$(e.parentWorkspace), this.grid = this.options.gridPattern ? new fa(this.options.gridPattern, e.gridOptions) : null, this.markerManager = new Ca(this), de && Nn && this.registerToolboxCategoryCallback(Zu, Nn), Os && rr && this.registerToolboxCategoryCallback(
+          ))(this), this.getMetrics = e.getMetrics || this.metricsManager.getMetrics.bind(this.metricsManager), this.setMetrics = e.setMetrics || we.setTopLevelWorkspaceMetrics, this.componentManager = new se(), this.connectionDBList = Yo.init(this.connectionChecker), this.audioManager = new F$(e.parentWorkspace), this.grid = this.options.gridPattern ? new fa(this.options.gridPattern, e.gridOptions) : null, this.markerManager = new Ca(this), _e && Nn && this.registerToolboxCategoryCallback(Zu, Nn), Os && rr && this.registerToolboxCategoryCallback(
             wa,
             rr
-          ), Pe && tr && (this.registerToolboxCategoryCallback(qr, tr), this.addChangeListener(Yc)), this.addChangeListener(this.variableChangeCallback.bind(this)), this.themeManager_ = this.options.parentWorkspace ? this.options.parentWorkspace.getThemeManager() : new x$(this, this.options.theme || Fr), this.themeManager_.subscribeWorkspace(this);
+          ), De && tr && (this.registerToolboxCategoryCallback(qr, tr), this.addChangeListener(Yc)), this.addChangeListener(this.variableChangeCallback.bind(this)), this.themeManager_ = this.options.parentWorkspace ? this.options.parentWorkspace.getThemeManager() : new x$(this, this.options.theme || Fr), this.themeManager_.subscribeWorkspace(this);
           let t;
           this.renderer = Kc(this.options.renderer || "geras", this.getTheme(), (t = this.options.rendererOverrides) != null ? t : void 0), this.cachedParentSvgSize = new w(0, 0);
         }
@@ -11613,7 +11613,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           let t = 0, s = 0, o = 1;
           (this.getCanvas().contains(e) || this.getBubbleCanvas().contains(e)) && (o = this.scale);
           do {
-            const n = Ti(e);
+            const n = _i(e);
             (e === this.getCanvas() || e === this.getBubbleCanvas()) && (o = 1), t += n.x * o, s += n.y * o, e = e.parentNode;
           } while (e && e !== this.getParentSvg() && e !== this.getInjectionDiv());
           return new R(t, s);
@@ -11648,25 +11648,25 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.resizeHandlerWrapper = e;
         }
         createDom(e, t) {
-          return this.injectionDiv || (this.injectionDiv = t ?? null), this.svgGroup_ = O($.G, { class: "blocklyWorkspace", id: this.id }), t && re(
+          return this.injectionDiv || (this.injectionDiv = t ?? null), this.svgGroup_ = O($.G, { class: "blocklyWorkspace", id: this.id }), t && le(
             this.svgGroup_,
-            se.LABEL,
+            oe.LABEL,
             i.Msg$$module$build$src$core$msg.WORKSPACE_ARIA_LABEL
-          ), e && (this.svgBackground_ = O($.RECT, { height: "100%", width: "100%", class: e }, this.svgGroup_), e === "blocklyMainBackground" && this.grid ? this.svgBackground_.style.fill = "var(--blocklyGridPattern)" : this.themeManager_.subscribe(this.svgBackground_, "workspaceBackgroundColour", "fill")), this.layerManager = new Pg(this), this.svgBlockCanvas_ = this.layerManager.getBlockLayer(), this.svgBubbleCanvas_ = this.layerManager.getBubbleLayer(), this.isFlyout || (P(this.svgGroup_, "pointerdown", this, this.onMouseDown, !1), this.dummyWheelListener = () => {
-          }, document.body.addEventListener("wheel", this.dummyWheelListener, { passive: !0 }), P(this.svgGroup_, "wheel", this, this.onMouseWheel, !1, { passive: !1 })), this.options.hasCategories && (this.toolbox = new (Re(I.TOOLBOX, this.options, !0))(this)), this.grid && this.grid.update(this.scale), this.recordDragTargets(), (e = Re(I.CURSOR, this.options)) && this.markerManager.setCursor(new e(this)), e = this.options.parentWorkspace === null, this.renderer.createDom(this.svgGroup_, this.getTheme(), e ? this.getInjectionDiv() : void 0), i.getFocusManager$$module$build$src$core$focus_manager().registerTree(
+          ), e && (this.svgBackground_ = O($.RECT, { height: "100%", width: "100%", class: e }, this.svgGroup_), e === "blocklyMainBackground" && this.grid ? this.svgBackground_.style.fill = "var(--blocklyGridPattern)" : this.themeManager_.subscribe(this.svgBackground_, "workspaceBackgroundColour", "fill")), this.layerManager = new Dg(this), this.svgBlockCanvas_ = this.layerManager.getBlockLayer(), this.svgBubbleCanvas_ = this.layerManager.getBubbleLayer(), this.isFlyout || (k(this.svgGroup_, "pointerdown", this, this.onMouseDown, !1), this.dummyWheelListener = () => {
+          }, document.body.addEventListener("wheel", this.dummyWheelListener, { passive: !0 }), k(this.svgGroup_, "wheel", this, this.onMouseWheel, !1, { passive: !1 })), this.options.hasCategories && (this.toolbox = new (Re(I.TOOLBOX, this.options, !0))(this)), this.grid && this.grid.update(this.scale), this.recordDragTargets(), (e = Re(I.CURSOR, this.options)) && this.markerManager.setCursor(new e(this)), e = this.options.parentWorkspace === null, this.renderer.createDom(this.svgGroup_, this.getTheme(), e ? this.getInjectionDiv() : void 0), i.getFocusManager$$module$build$src$core$focus_manager().registerTree(
             this,
             !!this.injectionDiv || this.isFlyout
           ), this.svgGroup_;
         }
         dispose() {
-          if (this.rendered = !1, this.currentGesture_ && this.currentGesture_.cancel(), this.svgGroup_ && V(this.svgGroup_), this.toolbox && (this.toolbox.dispose(), this.toolbox = null), this.flyout && (this.flyout.dispose(), this.flyout = null), this.trashcan && (this.trashcan.dispose(), this.trashcan = null), this.scrollbar && (this.scrollbar.dispose(), this.scrollbar = null), this.zoomControls_ && this.zoomControls_.dispose(), this.audioManager && this.audioManager.dispose(), this.grid && (this.grid = null), this.renderer.dispose(), this.markerManager.dispose(), super.dispose(), this.themeManager_ && (this.themeManager_.unsubscribeWorkspace(this), this.themeManager_.unsubscribe(this.svgBackground_), this.options.parentWorkspace || this.themeManager_.dispose()), this.connectionDBList.length = 0, this.toolboxCategoryCallbacks.clear(), this.flyoutButtonCallbacks.clear(), !this.options.parentWorkspace) {
+          if (this.rendered = !1, this.currentGesture_ && this.currentGesture_.cancel(), this.svgGroup_ && X(this.svgGroup_), this.toolbox && (this.toolbox.dispose(), this.toolbox = null), this.flyout && (this.flyout.dispose(), this.flyout = null), this.trashcan && (this.trashcan.dispose(), this.trashcan = null), this.scrollbar && (this.scrollbar.dispose(), this.scrollbar = null), this.zoomControls_ && this.zoomControls_.dispose(), this.audioManager && this.audioManager.dispose(), this.grid && (this.grid = null), this.renderer.dispose(), this.markerManager.dispose(), super.dispose(), this.themeManager_ && (this.themeManager_.unsubscribeWorkspace(this), this.themeManager_.unsubscribe(this.svgBackground_), this.options.parentWorkspace || this.themeManager_.dispose()), this.connectionDBList.length = 0, this.toolboxCategoryCallbacks.clear(), this.flyoutButtonCallbacks.clear(), !this.options.parentWorkspace) {
             const e = this.getParentSvg();
-            e && e.parentNode && V(e.parentNode);
+            e && e.parentNode && X(e.parentNode);
           }
-          this.resizeHandlerWrapper && (G(this.resizeHandlerWrapper), this.resizeHandlerWrapper = null), this.dummyWheelListener && (document.body.removeEventListener("wheel", this.dummyWheelListener), this.dummyWheelListener = null), i.getFocusManager$$module$build$src$core$focus_manager().isRegistered(this) && i.getFocusManager$$module$build$src$core$focus_manager().unregisterTree(this);
+          this.resizeHandlerWrapper && (V(this.resizeHandlerWrapper), this.resizeHandlerWrapper = null), this.dummyWheelListener && (document.body.removeEventListener("wheel", this.dummyWheelListener), this.dummyWheelListener = null), i.getFocusManager$$module$build$src$core$focus_manager().isRegistered(this) && i.getFocusManager$$module$build$src$core$focus_manager().unregisterTree(this);
         }
         addTrashcan() {
-          this.trashcan = De.newTrashcan(this);
+          this.trashcan = we.newTrashcan(this);
           const e = this.trashcan.createDom();
           this.svgGroup_.insertBefore(e, this.getCanvas());
         }
@@ -11713,7 +11713,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         resize() {
           this.toolbox ? this.toolbox.position() : this.flyout && this.flyout.position();
-          const e = this.componentManager.getComponents(te.Capability.POSITIONABLE, !0), t = this.getMetricsManager().getUiMetrics(), s = [];
+          const e = this.componentManager.getComponents(se.Capability.POSITIONABLE, !0), t = this.getMetricsManager().getUiMetrics(), s = [];
           for (let o = 0, n; n = e[o]; o++) {
             n.position(t, s);
             const r = n.getBoundingRectangle();
@@ -11755,7 +11755,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.cachedParentSvg;
         }
         maybeFireViewportChangeEvent() {
-          if (j()) {
+          if (Z()) {
             var e = this.scale, t = -this.scrollY, s = -this.scrollX;
             if (!(e === this.oldScale && Math.abs(t - this.oldTop) < 1 && Math.abs(s - this.oldLeft) < 1)) {
               var o = new (M(g.VIEWPORT_CHANGE))(t, s, e, this.id, this.oldScale);
@@ -11802,7 +11802,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           e && !e.currentGesture_ && e.toolbox && e.toolbox.getFlyout() && e.toolbox.refreshSelection();
         }
         recordDragTargets() {
-          const e = this.componentManager.getComponents(te.Capability.DRAG_TARGET, !0);
+          const e = this.componentManager.getComponents(se.Capability.DRAG_TARGET, !0);
           this.dragTargetAreas = [];
           for (let t = 0, s; s = e[t]; t++) {
             const o = s.getClientRect();
@@ -11854,7 +11854,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           else {
             var t = this.options.zoomOptions && this.options.zoomOptions.wheel, s = this.options.moveOptions && this.options.moveOptions.wheel;
             if (t || s) {
-              var o = As(e);
+              var o = fs(e);
               if (gr) var n = e.metaKey;
               t && (e.ctrlKey || n || !s) ? (o = -o.y / 50, t = ss(e, this.getParentSvg(), this.getInverseScreenCTM()), this.zoom(t.x, t.y, o)) : (t = this.scrollX - o.x, s = this.scrollY - o.y, e.shiftKey && !o.x && (t = this.scrollX - o.y, s = this.scrollY), this.scroll(t, s)), e.preventDefault();
             }
@@ -11892,11 +11892,11 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           if (!this.isReadOnly() && !this.isFlyout) {
             var t = x.registry.getContextMenuOptions({ workspace: this, focusedNode: this }, e);
             this.configureContextMenu && this.configureContextMenu(t, e);
-            var s = e instanceof PointerEvent ? new R(e.clientX, e.clientY) : go(this, new R(
+            var s = e instanceof PointerEvent ? new R(e.clientX, e.clientY) : Eo(this, new R(
               5,
               5
             ));
-            Co(e, t, this.RTL, this, s);
+            Ao(e, t, this.RTL, this, s);
           }
         }
         updateToolbox(e) {
@@ -11932,7 +11932,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           if (this.isMovable()) {
             var e = this.getMetrics(), t = e.viewWidth;
             e = e.viewHeight;
-            var s = this.getBlocksBoundingBox(), o = Bg * 2, n = s.right - s.left + o;
+            var s = this.getBlocksBoundingBox(), o = xg * 2, n = s.right - s.left + o;
             if (s = s.bottom - s.top + o, n) {
               this.flyout && (this.horizontalLayout ? (e += this.flyout.getHeight(), s += this.flyout.getHeight() / this.scale) : (t += this.flyout.getWidth(), n += this.flyout.getWidth() / this.scale)), t /= n, e /= s, i.disable$$module$build$src$core$events$utils();
               try {
@@ -11951,7 +11951,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           ), L(this.getBubbleCanvas(), "blocklyCanvasTransitioning");
         }
         endCanvasTransition() {
-          F(this.getCanvas(), "blocklyCanvasTransitioning"), F(this.getBubbleCanvas(), "blocklyCanvasTransitioning");
+          H(this.getCanvas(), "blocklyCanvasTransitioning"), H(this.getBubbleCanvas(), "blocklyCanvasTransitioning");
         }
         scrollCenter() {
           if (this.isMovable()) {
@@ -12086,10 +12086,10 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.grid;
         }
         hideChaff(e = !1) {
-          Ht(), bi(this), St(), this.hideComponents(e);
+          Ht(), Li(this), St(), this.hideComponents(e);
         }
         hideComponents(e = !1) {
-          this.getComponentManager().getComponents(te.Capability.AUTOHIDEABLE, !0).forEach((t) => t.autoHide(e));
+          this.getComponentManager().getComponents(se.Capability.AUTOHIDEABLE, !0).forEach((t) => t.autoHide(e));
         }
         static setTopLevelWorkspaceMetrics(e) {
           const t = this.getMetrics();
@@ -12099,7 +12099,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.injectionDiv && L(this.injectionDiv, e);
         }
         removeClass(e) {
-          this.injectionDiv && F(this.injectionDiv, e);
+          this.injectionDiv && H(this.injectionDiv, e);
         }
         setIsReadOnly(e) {
           super.setIsReadOnly(e), e ? this.addClass("blocklyReadOnly") : this.removeClass("blocklyReadOnly");
@@ -12389,7 +12389,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           (s = this.variableMap.get(t)) == null || s.set(e.getId(), e);
         }
         deleteVariable(e) {
-          const t = Ro(this.workspace, e.getId());
+          const t = Oo(this.workspace, e.getId());
           let s = "";
           this.potentialMap || (s = i.getGroup$$module$build$src$core$events$utils()) || i.setGroup$$module$build$src$core$events$utils(!0);
           try {
@@ -12436,7 +12436,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e;
         }
         getVariableUsesById(e) {
-          return Se("VariableMap.getVariableUsesById", "v12", "v13", "Blockly.Variables.getVariableUsesById"), Ro(this.workspace, e);
+          return Se("VariableMap.getVariableUsesById", "v12", "v13", "Blockly.Variables.getVariableUsesById"), Oo(this.workspace, e);
         }
       };
       c(I.VARIABLE_MAP, We, G$);
@@ -12470,37 +12470,37 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             $.CLIPPATH,
             { id: "blocklyTrashBodyClipPath" + t },
             this.svgGroup
-          ), O($.RECT, { width: Qo, height: il, y: ei }, e);
+          ), O($.RECT, { width: Zo, height: il, y: Qo }, e);
           const s = O($.IMAGE, {
-            width: xe.width,
+            width: Ue.width,
             x: -Ha,
-            height: xe.height,
+            height: Ue.height,
             y: -Ga,
             "clip-path": "url(#blocklyTrashBodyClipPath" + t + ")"
           }, this.svgGroup);
-          return s.setAttributeNS(Ye, "xlink:href", this.workspace.options.pathToMedia + xe.url), e = O($.CLIPPATH, { id: "blocklyTrashLidClipPath" + t }, this.svgGroup), O($.RECT, {
-            width: Qo,
-            height: ei
-          }, e), this.svgLid = O($.IMAGE, { width: xe.width, x: -Ha, height: xe.height, y: -Ga, "clip-path": "url(#blocklyTrashLidClipPath" + t + ")" }, this.svgGroup), this.svgLid.setAttributeNS(
+          return s.setAttributeNS(Ye, "xlink:href", this.workspace.options.pathToMedia + Ue.url), e = O($.CLIPPATH, { id: "blocklyTrashLidClipPath" + t }, this.svgGroup), O($.RECT, {
+            width: Zo,
+            height: Qo
+          }, e), this.svgLid = O($.IMAGE, { width: Ue.width, x: -Ha, height: Ue.height, y: -Ga, "clip-path": "url(#blocklyTrashLidClipPath" + t + ")" }, this.svgGroup), this.svgLid.setAttributeNS(
             Ye,
             "xlink:href",
-            this.workspace.options.pathToMedia + xe.url
-          ), Be(this.svgGroup, "pointerdown", this, this.blockMouseDownWhenOpenable), Be(this.svgGroup, "pointerup", this, this.click), Be(s, "pointerover", this, this.mouseOver), Be(s, "pointerout", this, this.mouseOut), this.animateLid(), this.svgGroup;
+            this.workspace.options.pathToMedia + Ue.url
+          ), xe(this.svgGroup, "pointerdown", this, this.blockMouseDownWhenOpenable), xe(this.svgGroup, "pointerup", this, this.click), xe(s, "pointerover", this, this.mouseOver), xe(s, "pointerout", this, this.mouseOut), this.animateLid(), this.svgGroup;
         }
         init() {
           if (this.workspace.options.maxTrashcanContents > 0) {
             const e = this.flyout.createDom($.SVG);
             L(e, "blocklyTrashcanFlyout"), Bt(e, this.workspace.getParentSvg()), this.flyout.init(this.workspace);
           }
-          this.workspace.getComponentManager().addComponent({ component: this, weight: te.ComponentWeight.TRASHCAN_WEIGHT, capabilities: [
-            te.Capability.AUTOHIDEABLE,
-            te.Capability.DELETE_AREA,
-            te.Capability.DRAG_TARGET,
-            te.Capability.POSITIONABLE
+          this.workspace.getComponentManager().addComponent({ component: this, weight: se.ComponentWeight.TRASHCAN_WEIGHT, capabilities: [
+            se.Capability.AUTOHIDEABLE,
+            se.Capability.DELETE_AREA,
+            se.Capability.DRAG_TARGET,
+            se.Capability.POSITIONABLE
           ] }), this.initialized = !0, this.setLidOpen(!1);
         }
         dispose() {
-          this.workspace.getComponentManager().removeComponent("trashcan"), this.svgGroup && V(this.svgGroup), this.lidTask && clearTimeout(this.lidTask);
+          this.workspace.getComponentManager().removeComponent("trashcan"), this.svgGroup && X(this.svgGroup), this.lidTask && clearTimeout(this.lidTask);
         }
         hasContents() {
           return !!this.contents.length;
@@ -12540,8 +12540,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             var s = Sn(this.workspace, e);
             e = Rn(
               s,
-              new w(Qo, il + ei),
-              xg,
+              new w(Zo, il + Qo),
+              Ug,
               X$,
               e,
               this.workspace
@@ -12556,13 +12556,13 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }
         }
         getBoundingRectangle() {
-          return new D(this.top, this.top + il + ei, this.left, this.left + Qo);
+          return new D(this.top, this.top + il + Qo, this.left, this.left + Zo);
         }
         getClientRect() {
           if (!this.svgGroup) return null;
           var e = this.svgGroup.getBoundingClientRect();
           const t = e.top + Ga - nl;
-          return e = e.left + Ha - nl, new D(t, t + ei + il + 2 * nl, e, e + Qo + 2 * nl);
+          return e = e.left + Ha - nl, new D(t, t + Qo + il + 2 * nl, e, e + Zo + 2 * nl);
         }
         onDragOver(e) {
           this.setLidOpen(this.wouldDelete_);
@@ -12580,14 +12580,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.isLidOpen !== e && (this.lidTask && clearTimeout(this.lidTask), this.isLidOpen = e, this.animateLid());
         }
         animateLid() {
-          const e = Hg;
+          const e = Gg;
           var t = 1 / (e + 1);
-          this.lidOpen += this.isLidOpen ? t : -t, this.lidOpen = Math.min(Math.max(this.lidOpen, this.minOpenness), 1), this.setLidAngle(this.lidOpen * Y$), t = W$ + this.lidOpen * (Gg - W$), this.svgGroup && (this.svgGroup.style.opacity = `${t}`), this.lidOpen > this.minOpenness && this.lidOpen < 1 && (this.lidTask = setTimeout(this.animateLid.bind(this), Fg / e));
+          this.lidOpen += this.isLidOpen ? t : -t, this.lidOpen = Math.min(Math.max(this.lidOpen, this.minOpenness), 1), this.setLidAngle(this.lidOpen * Y$), t = W$ + this.lidOpen * (Vg - W$), this.svgGroup && (this.svgGroup.style.opacity = `${t}`), this.lidOpen > this.minOpenness && this.lidOpen < 1 && (this.lidTask = setTimeout(this.animateLid.bind(this), Hg / e));
         }
         setLidAngle(e) {
           const t = this.workspace.toolboxPosition === B.RIGHT || this.workspace.horizontalLayout && this.workspace.RTL;
           let s;
-          (s = this.svgLid) == null || s.setAttribute("transform", "rotate(" + (t ? -e : e) + "," + (t ? 4 : Qo - 4) + "," + (ei - 2) + ")");
+          (s = this.svgLid) == null || s.setAttribute("transform", "rotate(" + (t ? -e : e) + "," + (t ? 4 : Zo - 4) + "," + (Qo - 2) + ")");
         }
         setMinOpenness(e) {
           this.minOpenness = e, this.isLidOpen || this.setLidAngle(e * Y$);
@@ -12611,11 +12611,11 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.setLidOpen(!1);
         }
         onDelete(e) {
-          if (!(this.workspace.options.maxTrashcanContents <= 0 || !ii(e) || e.wasShadow)) {
+          if (!(this.workspace.options.maxTrashcanContents <= 0 || !oi(e) || e.wasShadow)) {
             if (!e.oldJson) throw Error("Encountered a delete event without proper oldJson");
             if (e = JSON.stringify(this.cleanBlockJson(e.oldJson)), !this.contents.includes(e)) {
               for (this.contents.unshift(e); this.contents.length > this.workspace.options.maxTrashcanContents; ) this.contents.pop();
-              this.setMinOpenness(Ug);
+              this.setMinOpenness(Fg);
             }
           }
         }
@@ -12637,17 +12637,17 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }
           return e = JSON.parse(JSON.stringify(e)), t(e), Object.assign({}, { kind: "BLOCK" }, e);
         }
-      }, Qo = 47, il = 44, ei = 16, X$ = 20, xg = 20, nl = 10, Ha = 0, Ga = 32, Ug = 0.1, Fg = 80, Hg = 4, W$ = 0.4, Gg = 0.8, Y$ = 45, on = null, nn = null, rl = void 0, Tt = {};
-      Tt.BlockPaster = Zi, Tt.copy = lr, Tt.getLastCopiedData = cr, Tt.getLastCopiedLocation = qc, Tt.getLastCopiedWorkspace = ur, Tt.paste = _s, Tt.registry = Wu, Tt.setLastCopiedData = I_, Tt.setLastCopiedLocation = R_, Tt.setLastCopiedWorkspace = O_;
+      }, Zo = 47, il = 44, Qo = 16, X$ = 20, Ug = 20, nl = 10, Ha = 0, Ga = 32, Fg = 0.1, Hg = 80, Gg = 4, W$ = 0.4, Vg = 0.8, Y$ = 45, sn = null, on = null, rl = void 0, Tt = {};
+      Tt.BlockPaster = qi, Tt.copy = lr, Tt.getLastCopiedData = cr, Tt.getLastCopiedLocation = qc, Tt.getLastCopiedWorkspace = ur, Tt.paste = _s, Tt.registry = Wu, Tt.setLastCopiedData = I_, Tt.setLastCopiedLocation = R_, Tt.setLastCopiedWorkspace = O_;
       var Rs = {};
-      Rs.CollapseCommentBarButton = o$, Rs.CommentBarButton = wr, Rs.CommentEditor = Br, Rs.CommentView = Ji, Rs.DeleteCommentBarButton = n$, Rs.RenderedWorkspaceComment = jt, Rs.WorkspaceComment = xr;
+      Rs.CollapseCommentBarButton = o$, Rs.CommentBarButton = wr, Rs.CommentEditor = Br, Rs.CommentView = Ki, Rs.DeleteCommentBarButton = n$, Rs.RenderedWorkspaceComment = jt, Rs.WorkspaceComment = xr;
       var $t;
       (function(e) {
         e.ESCAPE = "escape", e.DELETE = "delete", e.COPY = "copy", e.CUT = "cut", e.PASTE = "paste", e.UNDO = "undo", e.REDO = "redo", e.MENU = "menu";
       })($t || ($t = {})), cu();
       var Et = {};
       Et.names = $t, Et.registerCopy = su, Et.registerCut = ou, Et.registerDefaultShortcuts = cu, Et.registerDelete = eu, Et.registerEscape = Qc, Et.registerPaste = iu, Et.registerRedo = ru, Et.registerShowContextMenu = lu, Et.registerUndo = nu;
-      var Vg = class {
+      var Xg = class {
         constructor(e, t) {
           this.procedureModelClass = e, this.parameterModelClass = t, this.priority = gT;
         }
@@ -12667,7 +12667,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           e.getProcedureMap().clear();
         }
       }, ll = {};
-      ll.ProcedureSerializer = Vg, ll.loadProcedure = au, ll.saveProcedure = uu;
+      ll.ProcedureSerializer = Xg, ll.loadProcedure = au, ll.saveProcedure = uu;
       var z$ = class {
         constructor() {
           this.priority = ET;
@@ -12685,22 +12685,22 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           e.getVariableMap().clear();
         }
       };
-      gi("variables", new z$());
+      Ei("variables", new z$());
       var K$ = {};
       K$.VariableSerializer = z$;
       var Va = {};
       Va.load = L_, Va.save = S_;
-      var Xg = { blocks: Xi, exceptions: Xs, priorities: pg, procedures: ll, registry: Xu, variables: K$, workspaceComments: Ir, workspaces: Va };
+      var Wg = { blocks: Vi, exceptions: Vs, priorities: mg, procedures: ll, registry: Xu, variables: K$, workspaceComments: Ir, workspaces: Va };
       "Blockly" in globalThis || (globalThis.Blockly = { Msg: ST });
       var Xa = "label", J$ = class {
         load(e, t) {
-          return e = new Ue(t.getWorkspace(), t.targetWorkspace, e, !0), e.show(), new jo(e, Xa);
+          return e = new Fe(t.getWorkspace(), t.targetWorkspace, e, !0), e.show(), new Jo(e, Xa);
         }
         gapForItem(e, t) {
           return t;
         }
         disposeItem(e) {
-          e = e.getElement(), e instanceof Ue && e.dispose();
+          e = e.getElement(), e instanceof Fe && e.dispose();
         }
         getType() {
           return Xa;
@@ -12727,7 +12727,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.SELECTED_GLOW_SIZE = t && !isNaN(t) ? t : this.SELECTED_GLOW_SIZE, this.REPLACEMENT_GLOW_COLOUR = e.getComponentStyle("replacementGlowColour") || this.REPLACEMENT_GLOW_COLOUR, this.REPLACEMENT_GLOW_SIZE = (e = Number(e.getComponentStyle("replacementGlowSize"))) && !isNaN(e) ? e : this.REPLACEMENT_GLOW_SIZE;
         }
         dispose() {
-          super.dispose(), this.selectedGlowFilter && V(this.selectedGlowFilter), this.replacementGlowFilter && V(this.replacementGlowFilter);
+          super.dispose(), this.selectedGlowFilter && X(this.selectedGlowFilter), this.replacementGlowFilter && X(this.replacementGlowFilter);
         }
         makeStartHat() {
           const e = this.START_HAT_HEIGHT, t = this.START_HAT_WIDTH, s = He(
@@ -12765,7 +12765,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             const u = o > s ? o - s : 0;
             o = (o > s ? s : o) / 2;
             const h = r === n ? "0" : "1";
-            return ae("a", "0 0," + h, o, N((r ? 1 : -1) * o, (n ? -1 : 1) * o)) + y("v", (n ? -1 : 1) * u) + ae("a", "0 0," + h, o, N((r ? -1 : 1) * o, (n ? -1 : 1) * o));
+            return he("a", "0 0," + h, o, N((r ? 1 : -1) * o, (n ? -1 : 1) * o)) + y("v", (n ? -1 : 1) * u) + he("a", "0 0," + h, o, N((r ? -1 : 1) * o, (n ? -1 : 1) * o));
           }
           const t = this.MAX_DYNAMIC_CONNECTION_SHAPE_WIDTH, s = t * 2;
           return { type: this.SHAPES.ROUND, isDynamic: !0, width(o) {
@@ -12790,7 +12790,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           function e(s, o, n) {
             s -= t * 2;
             const r = n === o ? "0" : "1";
-            return ae("a", "0 0," + r, t, N((n ? 1 : -1) * t, (o ? -1 : 1) * t)) + y("v", (o ? -1 : 1) * s) + ae("a", "0 0," + r, t, N((n ? -1 : 1) * t, (o ? -1 : 1) * t));
+            return he("a", "0 0," + r, t, N((n ? 1 : -1) * t, (o ? -1 : 1) * t)) + y("v", (o ? -1 : 1) * s) + he("a", "0 0," + r, t, N((n ? -1 : 1) * t, (o ? -1 : 1) * t));
           }
           const t = this.CORNER_RADIUS;
           return { type: this.SHAPES.SQUARE, isDynamic: !0, width(s) {
@@ -12837,26 +12837,26 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             return He(
               "c",
               [N(A * n / 2, 0), N(A * n * 3 / 4, u / 2), N(A * n, u)]
-            ) + Mo([N(A * n, r)]) + He("c", [N(A * n / 4, u / 2), N(A * n / 2, u), N(A * n, u)]) + y(
+            ) + No([N(A * n, r)]) + He("c", [N(A * n / 4, u / 2), N(A * n / 2, u), N(A * n, u)]) + y(
               "h",
               A * o
-            ) + He("c", [N(A * n / 2, 0), N(A * n * 3 / 4, -(u / 2)), N(A * n, -u)]) + Mo([N(A * n, -r)]) + He("c", [N(A * n / 4, -(u / 2)), N(A * n / 2, -u), N(A * n, -u)]);
+            ) + He("c", [N(A * n / 2, 0), N(A * n * 3 / 4, -(u / 2)), N(A * n, -u)]) + No([N(A * n, -r)]) + He("c", [N(A * n / 4, -(u / 2)), N(A * n / 2, -u), N(A * n, -u)]);
           }
           const t = this.NOTCH_WIDTH, s = this.NOTCH_HEIGHT, o = t / 3, n = o / 3, r = s / 2, u = r / 2, h = e(1), m = e(-1);
           return { type: this.SHAPES.NOTCH, width: t, height: s, pathLeft: h, pathRight: m };
         }
         makeInsideCorners() {
-          const e = this.CORNER_RADIUS, t = ae("a", "0 0,0", e, N(-e, e)), s = ae("a", "0 0,1", e, N(-e, e)), o = ae("a", "0 0,0", e, N(
+          const e = this.CORNER_RADIUS, t = he("a", "0 0,0", e, N(-e, e)), s = he("a", "0 0,1", e, N(-e, e)), o = he("a", "0 0,0", e, N(
             e,
             e
-          )), n = ae("a", "0 0,1", e, N(e, e));
+          )), n = he("a", "0 0,1", e, N(e, e));
           return { width: e, height: e, pathTop: t, pathBottom: o, rightWidth: e, rightHeight: e, pathTopRight: s, pathBottomRight: n };
         }
         generateSecondaryColour_(e) {
-          return Ds("#000", e, 0.15) || e;
+          return Ps("#000", e, 0.15) || e;
         }
         generateTertiaryColour_(e) {
-          return Ds("#000", e, 0.25) || e;
+          return Ps("#000", e, 0.25) || e;
         }
         createDom(e, t, s, o) {
           super.createDom(e, t, s, o), e = O(
@@ -12983,7 +12983,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         drawFlatTop_() {
           const e = this.info_.topRow;
-          this.positionPreviousConnection_(), this.outlinePath_ += le(
+          this.positionPreviousConnection_(), this.outlinePath_ += ce(
             e.xPos,
             this.info_.startY
           ), this.outlinePath_ += y("h", e.width);
@@ -13020,14 +13020,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           let o, n;
           return (n = (o = s.pathObject).addConnectionHighlight) == null ? void 0 : n.call(o, t, e, t.getOffsetInBlock(), s.RTL);
         }
-      }, to = class extends Y {
+      }, eo = class extends z {
         constructor(e, t, s, o, n, r, u) {
-          if (super(Y.SKIP_SETUP), this.imageElement = this.clickHandler = null, this.flipRtl = this.isDirty_ = this.EDITABLE = !1, this.altText = "", s = Number(ue(s)), t = Number(ue(t)), isNaN(s) || isNaN(t)) throw Error("Height and width values of an image field must cast to numbers.");
+          if (super(z.SKIP_SETUP), this.imageElement = this.clickHandler = null, this.flipRtl = this.isDirty_ = this.EDITABLE = !1, this.altText = "", s = Number(ae(s)), t = Number(ae(t)), isNaN(s) || isNaN(t)) throw Error("Height and width values of an image field must cast to numbers.");
           if (s <= 0 || t <= 0) throw Error("Height and width values of an image field must be greater than 0.");
-          this.size_ = new w(t, s + to.Y_PADDING), this.imageHeight = s, typeof n == "function" && (this.clickHandler = n), e !== Y.SKIP_SETUP && (u ? this.configure_(u) : (this.flipRtl = !!r, this.altText = ue(o) || ""), this.setValue(ue(e)));
+          this.size_ = new w(t, s + eo.Y_PADDING), this.imageHeight = s, typeof n == "function" && (this.clickHandler = n), e !== z.SKIP_SETUP && (u ? this.configure_(u) : (this.flipRtl = !!r, this.altText = ae(o) || ""), this.setValue(ae(e)));
         }
         configure_(e) {
-          super.configure_(e), e.flipRtl && (this.flipRtl = e.flipRtl), e.alt && (this.altText = ue(e.alt));
+          super.configure_(e), e.flipRtl && (this.flipRtl = e.flipRtl), e.alt && (this.altText = ae(e.alt));
         }
         initView() {
           this.imageElement = O($.IMAGE, { height: this.imageHeight + "px", width: this.size_.width + "px", alt: this.altText }, this.fieldGroup_), this.imageElement.setAttributeNS(Ye, "xlink:href", this.value_), this.fieldGroup_ && L(
@@ -13066,8 +13066,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return new this(e.src, e.width, e.height, void 0, void 0, void 0, e);
         }
       };
-      to.Y_PADDING = 1, bt("field_image", to), to.prototype.DEFAULT_VALUE = "";
-      var cl = 14, ti = class extends Y {
+      eo.Y_PADDING = 1, bt("field_image", eo), eo.prototype.DEFAULT_VALUE = "";
+      var cl = 14, ei = class extends z {
         set size_(e) {
           super.size_ = e;
         }
@@ -13076,30 +13076,30 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.width < cl && (e.width = cl), e;
         }
         constructor(e, t, s) {
-          super(Y.SKIP_SETUP), this.spellcheck_ = !0, this.htmlInput_ = null, this.isTextValid_ = this.isBeingEdited_ = !1, this.onInputWrapper = this.onKeyDownWrapper = this.valueWhenEditorWasOpened_ = null, this.fullBlockClickTarget_ = !1, this.workspace_ = null, this.SERIALIZABLE = !0, e !== Y.SKIP_SETUP && (s && this.configure_(s), this.setValue(e), t && this.setValidator(t));
+          super(z.SKIP_SETUP), this.spellcheck_ = !0, this.htmlInput_ = null, this.isTextValid_ = this.isBeingEdited_ = !1, this.onInputWrapper = this.onKeyDownWrapper = this.valueWhenEditorWasOpened_ = null, this.fullBlockClickTarget_ = !1, this.workspace_ = null, this.SERIALIZABLE = !0, e !== z.SKIP_SETUP && (s && this.configure_(s), this.setValue(e), t && this.setValidator(t));
         }
         configure_(e) {
           super.configure_(e), e.spellcheck !== void 0 && (this.spellcheck_ = e.spellcheck);
         }
         initView() {
-          if (!this.getSourceBlock()) throw new _e();
+          if (!this.getSourceBlock()) throw new Te();
           super.initView(), this.isFullBlockField() && (this.clickTarget_ = this.sourceBlock_.getSvgRoot()), this.fieldGroup_ && L(this.fieldGroup_, "blocklyInputField");
         }
         isFullBlockField() {
           const e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           let t;
           return this.fullBlockClickTarget_ = !((t = this.getConstants()) == null || !t.FULL_BLOCK_FIELDS) && e.isSimpleReporter();
         }
         doValueInvalid_(e, t = !0) {
-          this.isBeingEdited_ && (this.isDirty_ = !0, this.isTextValid_ = !1, e = this.value_, this.value_ = this.valueWhenEditorWasOpened_, this.sourceBlock_ && j() && this.value_ !== e && t && v(new (M(g.BLOCK_CHANGE))(this.sourceBlock_, "field", this.name || null, e, this.value_)));
+          this.isBeingEdited_ && (this.isDirty_ = !0, this.isTextValid_ = !1, e = this.value_, this.value_ = this.valueWhenEditorWasOpened_, this.sourceBlock_ && Z() && this.value_ !== e && t && v(new (M(g.BLOCK_CHANGE))(this.sourceBlock_, "field", this.name || null, e, this.value_)));
         }
         doValueUpdate_(e) {
           this.isTextValid_ = this.isDirty_ = !0, this.value_ = e;
         }
         applyColour() {
           const e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           this.getConstants().FULL_BLOCK_FIELDS && this.fieldGroup_ && (!this.isFullBlockField() && this.borderRect_ ? (this.borderRect_.style.display = "block", this.borderRect_.setAttribute("stroke", e.getColourTertiary())) : (this.borderRect_.style.display = "none", e.pathObject.svgPath.setAttribute("fill", this.getConstants().FIELD_BORDER_RECT_COLOUR)));
         }
         getSize() {
@@ -13112,9 +13112,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         render_() {
           if (super.render_(), this.isBeingEdited_) {
             var e = this.htmlInput_;
-            this.isTextValid_ ? (F(e, "blocklyInvalidInput"), re(e, se.INVALID, !1)) : (L(e, "blocklyInvalidInput"), re(e, se.INVALID, !0));
+            this.isTextValid_ ? (H(e, "blocklyInvalidInput"), le(e, oe.INVALID, !1)) : (L(e, "blocklyInvalidInput"), le(e, oe.INVALID, !0));
           }
-          if (e = this.getSourceBlock(), !e) throw new _e();
+          if (e = this.getSourceBlock(), !e) throw new Te();
           this.getConstants().FULL_BLOCK_FIELDS && e.applyColour();
         }
         setSpellcheck(e) {
@@ -13134,52 +13134,52 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         showInlineEditor(e, t) {
           const s = this.getSourceBlock();
-          if (!s) throw new _e();
+          if (!s) throw new Te();
           Wn(this, s.RTL, this.widgetDispose_.bind(this), this.workspace_, t), this.htmlInput_ = this.widgetCreate_(), this.isBeingEdited_ = !0, this.valueWhenEditorWasOpened_ = this.value_, e || (this.htmlInput_.focus({ preventScroll: !0 }), this.htmlInput_.select());
         }
         widgetCreate_() {
           var e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           i.setGroup$$module$build$src$core$events$utils(!0);
-          const t = fo();
+          const t = bo();
           var s = this.getClickTarget_();
           if (!s) throw Error("A click target has not been set.");
           L(s, "blocklyEditing"), s = document.createElement("input"), s.className = "blocklyHtmlInput", s.setAttribute("spellcheck", this.spellcheck_);
           const o = this.workspace_.getAbsoluteScale();
           var n = this.getConstants().FIELD_TEXT_FONTSIZE * o + "pt";
-          return t.style.fontSize = n, s.style.fontSize = n, n = ti.BORDERRADIUS * o + "px", this.isFullBlockField() && (n = this.getScaledBBox(), n = (n.bottom - n.top) / 2 + "px", e = e.getParent() ? e.getParent().getColourTertiary() : this.sourceBlock_.getColourTertiary(), s.style.border = 1 * o + "px solid " + e, t.style.borderRadius = n, t.style.transition = "box-shadow 0.25s ease 0s", this.getConstants().FIELD_TEXTINPUT_BOX_SHADOW && (t.style.boxShadow = "rgba(255, 255, 255, 0.3) 0 0 0 " + 4 * o + "px")), s.style.borderRadius = n, t.appendChild(s), s.value = s.defaultValue = this.getEditorText_(this.value_), s.setAttribute("data-untyped-default-value", String(this.value_)), this.resizeEditor_(), this.bindInputEvents_(s), s;
+          return t.style.fontSize = n, s.style.fontSize = n, n = ei.BORDERRADIUS * o + "px", this.isFullBlockField() && (n = this.getScaledBBox(), n = (n.bottom - n.top) / 2 + "px", e = e.getParent() ? e.getParent().getColourTertiary() : this.sourceBlock_.getColourTertiary(), s.style.border = 1 * o + "px solid " + e, t.style.borderRadius = n, t.style.transition = "box-shadow 0.25s ease 0s", this.getConstants().FIELD_TEXTINPUT_BOX_SHADOW && (t.style.boxShadow = "rgba(255, 255, 255, 0.3) 0 0 0 " + 4 * o + "px")), s.style.borderRadius = n, t.appendChild(s), s.value = s.defaultValue = this.getEditorText_(this.value_), s.setAttribute("data-untyped-default-value", String(this.value_)), this.resizeEditor_(), this.bindInputEvents_(s), s;
         }
         widgetDispose_() {
-          this.isBeingEdited_ = !1, this.isTextValid_ = !0, this.forceRerender(), this.onFinishEditing_(this.value_), this.sourceBlock_ && j() && this.valueWhenEditorWasOpened_ !== null && this.valueWhenEditorWasOpened_ !== this.value_ && (v(new (M(g.BLOCK_CHANGE))(
+          this.isBeingEdited_ = !1, this.isTextValid_ = !0, this.forceRerender(), this.onFinishEditing_(this.value_), this.sourceBlock_ && Z() && this.valueWhenEditorWasOpened_ !== null && this.valueWhenEditorWasOpened_ !== this.value_ && (v(new (M(g.BLOCK_CHANGE))(
             this.sourceBlock_,
             "field",
             this.name || null,
             this.valueWhenEditorWasOpened_,
             this.value_
           )), this.valueWhenEditorWasOpened_ = null), i.setGroup$$module$build$src$core$events$utils(!1), this.unbindInputEvents_();
-          var e = fo().style;
+          var e = bo().style;
           if (e.width = "auto", e.height = "auto", e.fontSize = "", e.transition = "", e.boxShadow = "", this.htmlInput_ = null, e = this.getClickTarget_(), !e) throw Error("A click target has not been set.");
-          F(e, "blocklyEditing");
+          H(e, "blocklyEditing");
         }
         onFinishEditing_(e) {
         }
         bindInputEvents_(e) {
-          this.onKeyDownWrapper = P(e, "keydown", this, this.onHtmlInputKeyDown_), this.onInputWrapper = P(e, "input", this, this.onHtmlInputChange);
+          this.onKeyDownWrapper = k(e, "keydown", this, this.onHtmlInputKeyDown_), this.onInputWrapper = k(e, "input", this, this.onHtmlInputChange);
         }
         unbindInputEvents_() {
-          this.onKeyDownWrapper && (G(this.onKeyDownWrapper), this.onKeyDownWrapper = null), this.onInputWrapper && (G(this.onInputWrapper), this.onInputWrapper = null);
+          this.onKeyDownWrapper && (V(this.onKeyDownWrapper), this.onKeyDownWrapper = null), this.onInputWrapper && (V(this.onInputWrapper), this.onInputWrapper = null);
         }
         onHtmlInputKeyDown_(e) {
-          if (e.key === "Enter") ws(this), St();
-          else if (e.key === "Escape") this.setValue(this.htmlInput_.getAttribute("data-untyped-default-value"), !1), ws(this), St();
+          if (e.key === "Enter") Ds(this), St();
+          else if (e.key === "Escape") this.setValue(this.htmlInput_.getAttribute("data-untyped-default-value"), !1), Ds(this), St();
           else if (e.key === "Tab") {
             e.preventDefault();
             var t, s = (t = this.workspace_) == null ? void 0 : t.getCursor();
-            t = (o) => (o instanceof ti || o instanceof z && o.isSimpleReporter()) && o !== this.getSourceBlock(), e = e.shiftKey ? s == null ? void 0 : s.getPreviousNode(this, t, !1) : s == null ? void 0 : s.getNextNode(this, t, !1), e = e instanceof z && e.isSimpleReporter() ? e.getFields().next().value : e, e instanceof ti && (ws(this), St(), s = e.getSourceBlock(), e.isFullBlockField() && s && s instanceof z ? i.getFocusManager$$module$build$src$core$focus_manager().focusNode(s) : i.getFocusManager$$module$build$src$core$focus_manager().focusNode(e), e.showEditor());
+            t = (o) => (o instanceof ei || o instanceof J && o.isSimpleReporter()) && o !== this.getSourceBlock(), e = e.shiftKey ? s == null ? void 0 : s.getPreviousNode(this, t, !1) : s == null ? void 0 : s.getNextNode(this, t, !1), e = e instanceof J && e.isSimpleReporter() ? e.getFields().next().value : e, e instanceof ei && (Ds(this), St(), s = e.getSourceBlock(), e.isFullBlockField() && s && s instanceof J ? i.getFocusManager$$module$build$src$core$focus_manager().focusNode(s) : i.getFocusManager$$module$build$src$core$focus_manager().focusNode(e), e.showEditor());
           }
         }
         onHtmlInputChange(e) {
-          e = this.value_, this.setValue(this.getValueFromEditorText_(this.htmlInput_.value), !1), this.sourceBlock_ && j() && this.value_ !== e && v(new (M(g.BLOCK_FIELD_INTERMEDIATE_CHANGE))(
+          e = this.value_, this.setValue(this.getValueFromEditorText_(this.htmlInput_.value), !1), this.sourceBlock_ && Z() && this.value_ !== e && v(new (M(g.BLOCK_FIELD_INTERMEDIATE_CHANGE))(
             this.sourceBlock_,
             this.name || null,
             e,
@@ -13192,8 +13192,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         resizeEditor_() {
           Rt().then(() => {
             const e = this.getSourceBlock();
-            if (!e) throw new _e();
-            const t = fo(), s = this.getScaledBBox();
+            if (!e) throw new Te();
+            const t = bo(), s = this.getScaledBBox();
             t.style.width = s.right - s.left + "px", t.style.height = s.bottom - s.top + "px";
             const o = s.top;
             t.style.left = `${e.RTL ? s.right - t.offsetWidth : s.left}px`, t.style.top = `${o}px`;
@@ -13202,7 +13202,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         repositionForWindowResize() {
           let e;
           const t = (e = this.getSourceBlock()) == null ? void 0 : e.getRootBlock();
-          return t instanceof z ? (vo(this.workspace_, this.workspace_.getMetricsManager().getViewMetrics(!0), t) || this.resizeEditor_(), !0) : !1;
+          return t instanceof J ? (yo(this.workspace_, this.workspace_.getMetricsManager().getViewMetrics(!0), t) || this.resizeEditor_(), !0) : !1;
         }
         positionTextElement_(e, t) {
           const s = e * 2 + t;
@@ -13218,7 +13218,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e;
         }
       };
-      ti.BORDERRADIUS = 4, i.FieldTextInput$$module$build$src$core$field_textinput = class extends ti {
+      ei.BORDERRADIUS = 4, i.FieldTextInput$$module$build$src$core$field_textinput = class extends ei {
         constructor(e, t, s) {
           super(e, t, s);
         }
@@ -13229,7 +13229,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e === void 0 ? null : `${e}`;
         }
         static fromJson(e) {
-          return new this(ue(e.text), void 0, e);
+          return new this(ae(e.text), void 0, e);
         }
       }, bt("field_input", i.FieldTextInput$$module$build$src$core$field_textinput), i.FieldTextInput$$module$build$src$core$field_textinput.prototype.DEFAULT_VALUE = "", i.FieldTextInput$$module$build$src$core$field_textinput;
       var Z$ = class extends Na {
@@ -13270,7 +13270,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         hasRightSquareCorner(e) {
           return !!e.outputConnection && !e.statementInputCount && !e.nextConnection;
         }
-      }, tE = class extends sn {
+      }, tE = class extends tn {
         constructor(e, t) {
           super(e, t), this.isInline = !0, this.renderer_ = e, this.constants_ = this.renderer_.getConstants(), this.topRow = new eE(this.constants_), this.bottomRow = new Z$(this.constants_), this.isMultiRow = !t.getInputsInline() || t.isCollapsed(), this.hasStatementInput = t.statementInputCount > 0, this.rightSide = this.outputConnection ? new Q$(this.constants_) : null, this.rightAlignedDummyInputs = /* @__PURE__ */ new WeakMap();
         }
@@ -13346,7 +13346,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
               o = r.xPos, s = null;
               for (let u = 0; u < r.elements.length; u++) {
                 const h = r.elements[u];
-                d.isSpacer(h) && (s = h), !(s && (d.isField(h) || d.isInput(h)) && o < t) || d.isField(h) && (h.field instanceof Zs || h.field instanceof to) || (s.width += t - o), o += h.width;
+                d.isSpacer(h) && (s = h), !(s && (d.isField(h) || d.isInput(h)) && o < t) || d.isField(h) && (h.field instanceof qs || h.field instanceof eo) || (s.width += t - o), o += h.width;
               }
             }
           }
@@ -13400,7 +13400,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             var e = o === 2, t = o + 2 >= this.rows.length - 1 ? !!this.bottomRow.hasNextConnection : !!u.precedesStatement;
             if (e ? this.topRow.hasPreviousConnection : n.followsStatement) {
               var s = r.elements[1];
-              if (s = r.elements.length === 3 && s instanceof ya && (s.field instanceof Zs || s.field instanceof to), !e && s) n.height -= this.constants_.SMALL_PADDING, u.height -= this.constants_.SMALL_PADDING, r.height -= this.constants_.MEDIUM_PADDING;
+              if (s = r.elements.length === 3 && s instanceof ya && (s.field instanceof qs || s.field instanceof eo), !e && s) n.height -= this.constants_.SMALL_PADDING, u.height -= this.constants_.SMALL_PADDING, r.height -= this.constants_.MEDIUM_PADDING;
               else if (!e && !t) n.height += this.constants_.SMALL_PADDING;
               else if (t) {
                 for (e = !1, t = 0; t < r.elements.length; t++) if (s = r.elements[t], d.isInlineInput(s) && s.connectedBlock && !s.connectedBlock.isShadow() && s.connectedBlock.getHeightWidth().height >= 40) {
@@ -13433,7 +13433,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           for (const e of this.outlines.values()) e.setAttribute("transform", "scale(-1 1)");
         }
         updateSelected(e) {
-          this.setClass_("blocklySelected", e), e ? this.svgPathSelected || (this.svgPathSelected = this.svgPath.cloneNode(!0), this.svgPathSelected.classList.add("blocklyPathSelected"), F(this.svgPathSelected, Ne.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), F(this.svgPathSelected, Ne.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME), this.svgPathSelected.removeAttribute("tabindex"), this.svgPathSelected.removeAttribute("id"), this.svgRoot.appendChild(this.svgPathSelected)) : this.svgPathSelected && (this.svgRoot.removeChild(this.svgPathSelected), this.svgPathSelected = null);
+          this.setClass_("blocklySelected", e), e ? this.svgPathSelected || (this.svgPathSelected = this.svgPath.cloneNode(!0), this.svgPathSelected.classList.add("blocklyPathSelected"), H(this.svgPathSelected, Me.ACTIVE_FOCUS_NODE_CSS_CLASS_NAME), H(this.svgPathSelected, Me.PASSIVE_FOCUS_NODE_CSS_CLASS_NAME), this.svgPathSelected.removeAttribute("tabindex"), this.svgPathSelected.removeAttribute("id"), this.svgRoot.appendChild(this.svgPathSelected)) : this.svgPathSelected && (this.svgRoot.removeChild(this.svgPathSelected), this.svgPathSelected = null);
         }
         updateReplacementFade(e) {
           this.setClass_("blocklyReplaceable", e);
@@ -13483,7 +13483,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.constants_;
         }
       };
-      Mi("zelos", Wa);
+      Ni("zelos", Wa);
       var oE = class {
         constructor(e) {
           this.staticConn = this.draggedConn = this.markerConn = this.fadedBlock = null, this.workspace = e.workspace;
@@ -13531,7 +13531,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return t;
         }
         createInsertionMarker(e) {
-          e = this.serializeBlockToInsertionMarker(e), e = vs(
+          e = this.serializeBlockToInsertionMarker(e), e = ys(
             e,
             this.workspace
           );
@@ -13567,7 +13567,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       };
       c(I.CONNECTION_PREVIEWER, We, oE);
       var Ss = {};
-      Ss.Align = i.Align$$module$build$src$core$inputs$align, Ss.DummyInput = Ct, Ss.EndRowInput = Qt, Ss.Input = Ko, Ss.StatementInput = qe, Ss.ValueInput = i.ValueInput$$module$build$src$core$inputs$value_input, Ss.inputTypes = i.inputTypes$$module$build$src$core$inputs$input_types;
+      Ss.Align = i.Align$$module$build$src$core$inputs$align, Ss.DummyInput = Ct, Ss.EndRowInput = Qt, Ss.Input = zo, Ss.StatementInput = qe, Ss.ValueInput = i.ValueInput$$module$build$src$core$inputs$value_input, Ss.inputTypes = i.inputTypes$$module$build$src$core$inputs$input_types;
       var iE = !1, nE;
       i.CodeGenerator$$module$build$src$core$generator = class {
         constructor(e) {
@@ -13737,12 +13737,12 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           (e = this.workspace_.scrollbar) == null || e.setY(0);
         }
         wheel_(e) {
-          var t = As(e);
+          var t = fs(e);
           if (t.y) {
             const s = this.workspace_.getMetricsManager(), o = s.getScrollMetrics();
             t = s.getViewMetrics().top - o.top + t.y;
             let n;
-            (n = this.workspace_.scrollbar) == null || n.setY(t), bi(this.workspace_), St();
+            (n = this.workspace_.scrollbar) == null || n.setY(t), Li(this.workspace_), St();
           }
           e.preventDefault(), e.stopPropagation();
         }
@@ -13765,7 +13765,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         reflowInternal_() {
           this.workspace_.scale = this.getFlyoutScale();
           let e = this.getContents().reduce((t, s) => Math.max(t, s.getElement().getBoundingRectangle().getWidth()), 0);
-          if (e += this.MARGIN * 1.5 + this.tabWidth_, e *= this.workspace_.scale, e += he.scrollbarThickness, this.getWidth() !== e) {
+          if (e += this.MARGIN * 1.5 + this.tabWidth_, e *= this.workspace_.scale, e += de.scrollbarThickness, this.getWidth() !== e) {
             if (this.RTL) for (const t of this.getContents()) {
               const s = t.getElement().getBoundingRectangle().left, o = e / this.workspace_.scale - t.getElement().getBoundingRectangle().getWidth() - this.MARGIN - this.tabWidth_;
               t.getElement().moveBy(o - s, 0);
@@ -13816,12 +13816,12 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           (e = this.workspace_.scrollbar) == null || e.setX(this.RTL ? 1 / 0 : 0);
         }
         wheel_(e) {
-          var t = As(e);
+          var t = fs(e);
           if (t = t.x || t.y) {
             const s = this.workspace_.getMetricsManager(), o = s.getScrollMetrics();
             t = s.getViewMetrics().left - o.left + t;
             let n;
-            (n = this.workspace_.scrollbar) == null || n.setX(t), bi(this.workspace_), St();
+            (n = this.workspace_.scrollbar) == null || n.setX(t), Li(this.workspace_), St();
           }
           e.preventDefault(), e.stopPropagation();
         }
@@ -13845,20 +13845,20 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         reflowInternal_() {
           this.workspace_.scale = this.getFlyoutScale();
           let e = this.getContents().reduce((t, s) => Math.max(t, s.getElement().getBoundingRectangle().getHeight()), 0);
-          e += this.MARGIN * 1.5, e *= this.workspace_.scale, e += he.scrollbarThickness, this.getHeight() !== e && (this.targetWorkspace.scrollbar || this.autoClose || this.targetWorkspace.getFlyout() !== this || this.toolboxPosition_ !== B.TOP || this.targetWorkspace.translate(this.targetWorkspace.scrollX, this.targetWorkspace.scrollY + e), this.height_ = e, this.position(), this.targetWorkspace.resizeContents(), this.targetWorkspace.recordDragTargets());
+          e += this.MARGIN * 1.5, e *= this.workspace_.scale, e += de.scrollbarThickness, this.getHeight() !== e && (this.targetWorkspace.scrollbar || this.autoClose || this.targetWorkspace.getFlyout() !== this || this.toolboxPosition_ !== B.TOP || this.targetWorkspace.translate(this.targetWorkspace.scrollX, this.targetWorkspace.scrollY + e), this.height_ = e, this.position(), this.targetWorkspace.resizeContents(), this.targetWorkspace.recordDragTargets());
         }
       };
       c(I.FLYOUTS_HORIZONTAL_TOOLBOX, We, rE);
-      var rn = class extends Me {
+      var nn = class extends ye {
         constructor(e, t, s, o, n) {
-          super(Y.SKIP_SETUP), this.defaultType = "", this.variableTypes = [], this.variable = null, this.SERIALIZABLE = !0, this.menuGenerator_ = rn.dropdownCreate, this.defaultVariableName = typeof e == "string" ? e : "", this.size_ = new w(0, 0), e !== Y.SKIP_SETUP && (n ? this.configure_(n) : this.setTypes(s, o), t && this.setValidator(t));
+          super(z.SKIP_SETUP), this.defaultType = "", this.variableTypes = [], this.variable = null, this.SERIALIZABLE = !0, this.menuGenerator_ = nn.dropdownCreate, this.defaultVariableName = typeof e == "string" ? e : "", this.size_ = new w(0, 0), e !== z.SKIP_SETUP && (n ? this.configure_(n) : this.setTypes(s, o), t && this.setValidator(t));
         }
         configure_(e) {
           super.configure_(e), this.setTypes(e.variableTypes, e.defaultType);
         }
         initModel() {
           var e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           this.variable || (e = i.getOrCreateVariablePackage$$module$build$src$core$variables(e.workspace, null, this.defaultVariableName, this.defaultType), this.doValueUpdate_(e.getId()));
         }
         initView() {
@@ -13869,12 +13869,12 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         shouldAddBorderRect_() {
           const e = this.getSourceBlock();
-          if (!e) throw new _e();
+          if (!e) throw new Te();
           return super.shouldAddBorderRect_() && (!this.getConstants().FIELD_DROPDOWN_NO_BORDER_RECT_SHADOW || e.type !== "variables_get");
         }
         fromXml(e) {
           var t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           const s = e.getAttribute("id"), o = e.textContent, n = e.getAttribute("variabletype") || e.getAttribute("variableType") || "";
           if (t = i.getOrCreateVariablePackage$$module$build$src$core$variables(
             t.workspace,
@@ -13888,13 +13888,13 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.initModel(), e.id = this.variable.getId(), e.textContent = this.variable.getName(), this.variable.getType() && e.setAttribute("variabletype", this.variable.getType()), e;
         }
         saveState(e) {
-          var t = this.saveLegacyState(rn);
+          var t = this.saveLegacyState(nn);
           return t !== null || (this.initModel(), t = { id: this.variable.getId() }, e && (t.name = this.variable.getName(), t.type = this.variable.getType())), t;
         }
         loadState(e) {
           const t = this.getSourceBlock();
-          if (!t) throw new _e();
-          this.loadLegacyState(rn, e) || (e = i.getOrCreateVariablePackage$$module$build$src$core$variables(t.workspace, e.id || null, e.name, e.type || ""), this.setValue(e.getId()));
+          if (!t) throw new Te();
+          this.loadLegacyState(nn, e) || (e = i.getOrCreateVariablePackage$$module$build$src$core$variables(t.workspace, e.id || null, e.name, e.type || ""), this.setValue(e.getId()));
         }
         setSourceBlock(e) {
           if (e.isShadow()) throw Error("Variable fields are not allowed to exist on shadow blocks.");
@@ -13918,12 +13918,12 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         doClassValidation_(e) {
           if (e === null) return null;
           var t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           return t = i.getVariable$$module$build$src$core$variables(t.workspace, e), t ? (t = t.getType(), this.typeIsAllowed(t) ? e : (console.warn("Variable type doesn't match this field!  Type was " + t), null)) : (console.warn("Variable id doesn't point to a real variable! ID was " + e), null);
         }
         doValueUpdate_(e) {
           const t = this.getSourceBlock();
-          if (!t) throw new _e();
+          if (!t) throw new Te();
           this.variable = i.getVariable$$module$build$src$core$variables(t.workspace, e), super.doValueUpdate_(e);
         }
         typeIsAllowed(e) {
@@ -13976,7 +13976,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return !0;
         }
         static fromJson(e) {
-          return new this(ue(e.variable), void 0, void 0, void 0, e);
+          return new this(ae(e.variable), void 0, void 0, void 0, e);
         }
         static dropdownCreate() {
           if (!this.variable) throw Error("Tried to call dropdownCreate on a variable field with no variable selected.");
@@ -13994,17 +13994,17 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
               }
             }
           }
-          for (t.sort(Oo), o = [], n = 0; n < t.length; n++) o[n] = [t[n].getName(), t[n].getId()];
+          for (t.sort(Io), o = [], n = 0; n < t.length; n++) o[n] = [t[n].getName(), t[n].getId()];
           return o.push([
             i.Msg$$module$build$src$core$msg.RENAME_VARIABLE,
             pa
           ]), i.Msg$$module$build$src$core$msg.DELETE_VARIABLE && o.push([i.Msg$$module$build$src$core$msg.DELETE_VARIABLE.replace("%1", e), ma]), o;
         }
       };
-      bt("field_variable", rn);
-      var za = class extends ti {
+      bt("field_variable", nn);
+      var za = class extends ei {
         constructor(e, t, s, o, n, r) {
-          super(Y.SKIP_SETUP), this.min_ = -1 / 0, this.max_ = 1 / 0, this.precision_ = 0, this.decimalPlaces = null, this.spellcheck_ = !1, e !== Y.SKIP_SETUP && (r ? this.configure_(r) : this.setConstraints(t, s, o), this.setValue(e), n && this.setValidator(n));
+          super(z.SKIP_SETUP), this.min_ = -1 / 0, this.max_ = 1 / 0, this.precision_ = 0, this.decimalPlaces = null, this.spellcheck_ = !1, e !== z.SKIP_SETUP && (r ? this.configure_(r) : this.setConstraints(t, s, o), this.setValue(e), n && this.setValidator(n));
         }
         configure_(e) {
           super.configure_(e), this.setMinInternal(e.min), this.setMaxInternal(e.max), this.setPrecisionInternal(e.precision);
@@ -14051,9 +14051,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         widgetCreate_() {
           const e = super.widgetCreate_();
-          return this.min_ > -1 / 0 && (e.min = `${this.min_}`, re(e, se.VALUEMIN, this.min_)), this.max_ < 1 / 0 && (e.max = `${this.max_}`, re(
+          return this.min_ > -1 / 0 && (e.min = `${this.min_}`, le(e, oe.VALUEMIN, this.min_)), this.max_ < 1 / 0 && (e.max = `${this.max_}`, le(
             e,
-            se.VALUEMAX,
+            oe.VALUEMAX,
             this.max_
           )), e;
         }
@@ -14065,24 +14065,24 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       bt("field_number", za), za.prototype.DEFAULT_VALUE = 0;
-      var lE = class extends Zs {
+      var lE = class extends qs {
         constructor(e, t, s) {
           super(String(e ?? ""), t, s), this.EDITABLE = !1, this.SERIALIZABLE = !0;
         }
         static fromJson(e) {
-          return new this(ue(e.text), void 0, e);
+          return new this(ae(e.text), void 0, e);
         }
       };
       bt("field_label_serializable", lE);
-      var so = class extends Y {
+      var to = class extends z {
         constructor(e, t, s) {
-          super(Y.SKIP_SETUP), this.SERIALIZABLE = !0, this.value_ = this.value_, this.checkChar = so.CHECK_CHAR, e !== Y.SKIP_SETUP && (s && this.configure_(s), this.setValue(e), t && this.setValidator(t));
+          super(z.SKIP_SETUP), this.SERIALIZABLE = !0, this.value_ = this.value_, this.checkChar = to.CHECK_CHAR, e !== z.SKIP_SETUP && (s && this.configure_(s), this.setValue(e), t && this.setValidator(t));
         }
         configure_(e) {
           super.configure_(e), e.checkCharacter && (this.checkChar = e.checkCharacter);
         }
         saveState() {
-          const e = this.saveLegacyState(so);
+          const e = this.saveLegacyState(to);
           return e !== null ? e : this.getValueBoolean();
         }
         initView() {
@@ -14097,7 +14097,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.checkChar;
         }
         setCheckCharacter(e) {
-          this.checkChar = e || so.CHECK_CHAR, this.forceRerender();
+          this.checkChar = e || to.CHECK_CHAR, this.forceRerender();
         }
         showEditor_() {
           this.setValue(!this.value_);
@@ -14124,7 +14124,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return new this(e.checked, void 0, e);
         }
       };
-      so.CHECK_CHAR = "✓", bt("field_checkbox", so), so.prototype.DEFAULT_VALUE = !1;
+      to.CHECK_CHAR = "✓", bt("field_checkbox", to), to.prototype.DEFAULT_VALUE = !1;
       var cE = class {
         constructor(e, t) {
           this.draggable = e, this.workspace = t, this.dragTarget = null, this.startLoc = e.getRelativeToSurfaceXY();
@@ -14148,7 +14148,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           t = this.pixelsToWorkspaceUnits(t), t = R.sum(this.startLoc, t), this.draggable.drag(t, e);
         }
         wouldDeleteDraggable(e, t) {
-          return (e = this.workspace.getDragTarget(e)) && this.workspace.getComponentManager().hasCapability(e.id, te.Capability.DELETE_AREA) ? e.wouldDelete(t) : !1;
+          return (e = this.workspace.getDragTarget(e)) && this.workspace.getComponentManager().hasCapability(e.id, se.Capability.DELETE_AREA) ? e.wouldDelete(t) : !1;
         }
         onDragEnd(e) {
           const t = i.getGroup$$module$build$src$core$events$utils();
@@ -14158,10 +14158,10 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             let n;
             (n = this.dragTarget) == null || n.onDrop(o);
           }
-          this.shouldReturnToStart(e, o) && this.draggable.revertDrag(), (s = ot(o) && this.wouldDeleteDraggable(e, o)) && this.draggable instanceof z && Zn(this.draggable.getRootBlock()), this.draggable.endDrag(e), s && ot(o) && (i.setGroup$$module$build$src$core$events$utils(t), o.dispose()), i.setGroup$$module$build$src$core$events$utils(!1), !s && Ft(this.draggable) && i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this.draggable);
+          this.shouldReturnToStart(e, o) && this.draggable.revertDrag(), (s = ot(o) && this.wouldDeleteDraggable(e, o)) && this.draggable instanceof J && Zn(this.draggable.getRootBlock()), this.draggable.endDrag(e), s && ot(o) && (i.setGroup$$module$build$src$core$events$utils(t), o.dispose()), i.setGroup$$module$build$src$core$events$utils(!1), !s && Ft(this.draggable) && i.getFocusManager$$module$build$src$core$focus_manager().focusNode(this.draggable);
         }
         getRoot(e) {
-          return e instanceof z ? e.getRootBlock() : e;
+          return e instanceof J ? e.getRootBlock() : e;
         }
         shouldReturnToStart(e, t) {
           return (e = this.workspace.getDragTarget(e)) ? e.shouldPreventMove(t) : !1;
@@ -14171,8 +14171,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       c(I.BLOCK_DRAGGER, We, cE);
-      var ln = {};
-      ln.BlockDragStrategy = _$, ln.BubbleDragStrategy = l$, ln.CommentDragStrategy = e$, ln.Dragger = cE;
+      var rn = {};
+      rn.BlockDragStrategy = _$, rn.BubbleDragStrategy = l$, rn.CommentDragStrategy = e$, rn.Dragger = cE;
       var Ka = class extends Ie {
         constructor(e, t, s) {
           super(e ? e.workspace.id : void 0), this.type = g.BLOCK_DRAG, e && (this.blockId = e.id, this.isStart = t, this.blocks = s);
@@ -14281,9 +14281,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       (function(e) {
         e.MUTATOR = "mutator", e.COMMENT = "comment", e.WARNING = "warning";
       })(Za || (Za = {})), c(I.EVENT, g.BUBBLE_OPEN, qa);
-      var we = class extends Yt {
+      var Be = class extends Yt {
         constructor(e) {
-          super(), this.isBlank = !0, this.isBlank = !e, e && (this.commentId = e.id, this.workspaceId = e.workspace.id, this.group = i.getGroup$$module$build$src$core$events$utils(), this.recordUndo = Ce());
+          super(), this.isBlank = !0, this.isBlank = !e, e && (this.commentId = e.id, this.workspaceId = e.workspace.id, this.group = i.getGroup$$module$build$src$core$events$utils(), this.recordUndo = Ne());
         }
         toJson() {
           const e = super.toJson();
@@ -14291,19 +14291,19 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.commentId = this.commentId, e;
         }
         static fromJson(e, t, s) {
-          return t = Yt.fromJson(e, t, s ?? new we()), t.commentId = e.commentId, t;
+          return t = Yt.fromJson(e, t, s ?? new Be()), t.commentId = e.commentId, t;
         }
         static CommentCreateDeleteHelper(e, t) {
           const s = e.getEventWorkspace_();
           if (t) {
             if (!e.json) throw Error("Encountered a comment event without proper json");
-            pi(e.json, s);
+            gi(e.json, s);
           } else {
             if (!e.commentId) throw Error("The comment ID is undefined. Either pass a comment to the constructor, or call fromJson");
             (t = s.getCommentById(e.commentId)) ? t.dispose() : console.warn("Can't delete non-existent comment: " + e.commentId);
           }
         }
-      }, Qa = class extends we {
+      }, Qa = class extends Be {
         constructor(e, t, s) {
           super(e), this.type = g.COMMENT_CHANGE, e && (this.oldContents_ = typeof t > "u" ? "" : t, this.newContents_ = typeof s > "u" ? "" : s);
         }
@@ -14314,7 +14314,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.oldContents = this.oldContents_, e.newContents = this.newContents_, e;
         }
         static fromJson(e, t, s) {
-          return t = we.fromJson(e, t, s ?? new Qa()), t.oldContents_ = e.oldContents, t.newContents_ = e.newContents, t;
+          return t = Be.fromJson(e, t, s ?? new Qa()), t.oldContents_ = e.oldContents, t.newContents_ = e.newContents, t;
         }
         isNull() {
           return this.oldContents_ === this.newContents_;
@@ -14331,7 +14331,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       c(I.EVENT, g.COMMENT_CHANGE, Qa);
-      var eh = class extends we {
+      var eh = class extends Be {
         constructor(e, t) {
           super(e), this.newCollapsed = t, this.type = g.COMMENT_COLLAPSE;
         }
@@ -14341,7 +14341,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.newCollapsed = this.newCollapsed, e;
         }
         static fromJson(e, t, s) {
-          return t = we.fromJson(
+          return t = Be.fromJson(
             e,
             t,
             s ?? new eh()
@@ -14354,9 +14354,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       c(I.EVENT, g.COMMENT_COLLAPSE, eh);
-      var th = class extends we {
+      var th = class extends Be {
         constructor(e) {
-          super(e), this.type = g.COMMENT_CREATE, e && (this.xml = Ai(e), this.json = mo(e, { addCoordinates: !0 }));
+          super(e), this.type = g.COMMENT_CREATE, e && (this.xml = fi(e), this.json = po(e, { addCoordinates: !0 }));
         }
         toJson() {
           const e = super.toJson();
@@ -14365,22 +14365,22 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.xml = Lt(this.xml), e.json = this.json, e;
         }
         static fromJson(e, t, s) {
-          return t = we.fromJson(e, t, s ?? new th()), t.xml = i.textToDom$$module$build$src$core$utils$xml(e.xml), t.json = e.json, t;
+          return t = Be.fromJson(e, t, s ?? new th()), t.xml = i.textToDom$$module$build$src$core$utils$xml(e.xml), t.json = e.json, t;
         }
         run(e) {
-          we.CommentCreateDeleteHelper(
+          Be.CommentCreateDeleteHelper(
             this,
             e
           );
         }
       };
       c(I.EVENT, g.COMMENT_CREATE, th);
-      var sh = class extends we {
+      var sh = class extends Be {
         constructor(e) {
-          super(e), this.type = g.COMMENT_DELETE, e && (this.xml = Ai(e), this.json = mo(e, { addCoordinates: !0 }));
+          super(e), this.type = g.COMMENT_DELETE, e && (this.xml = fi(e), this.json = po(e, { addCoordinates: !0 }));
         }
         run(e) {
-          we.CommentCreateDeleteHelper(this, !e);
+          Be.CommentCreateDeleteHelper(this, !e);
         }
         toJson() {
           const e = super.toJson();
@@ -14389,7 +14389,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.xml = Lt(this.xml), e.json = this.json, e;
         }
         static fromJson(e, t, s) {
-          return t = we.fromJson(e, t, s ?? new sh()), t.xml = i.textToDom$$module$build$src$core$utils$xml(e.xml), t.json = e.json, t;
+          return t = Be.fromJson(e, t, s ?? new sh()), t.xml = i.textToDom$$module$build$src$core$utils$xml(e.xml), t.json = e.json, t;
         }
       };
       c(I.EVENT, g.COMMENT_DELETE, sh);
@@ -14408,7 +14408,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       c(I.EVENT, g.COMMENT_DRAG, oh);
-      var ih = class extends we {
+      var ih = class extends Be {
         constructor(e) {
           super(e), this.type = g.COMMENT_MOVE, e && (this.comment_ = e, this.oldCoordinate_ = e.getRelativeToSurfaceXY());
         }
@@ -14430,7 +14430,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.oldCoordinate = `${Math.round(this.oldCoordinate_.x)}, ${Math.round(this.oldCoordinate_.y)}`, e.newCoordinate = Math.round(this.newCoordinate_.x) + "," + Math.round(this.newCoordinate_.y), e;
         }
         static fromJson(e, t, s) {
-          return t = we.fromJson(e, t, s ?? new ih()), s = e.oldCoordinate.split(","), t.oldCoordinate_ = new R(Number(s[0]), Number(s[1])), s = e.newCoordinate.split(","), t.newCoordinate_ = new R(
+          return t = Be.fromJson(e, t, s ?? new ih()), s = e.oldCoordinate.split(","), t.oldCoordinate_ = new R(Number(s[0]), Number(s[1])), s = e.newCoordinate.split(","), t.newCoordinate_ = new R(
             Number(s[0]),
             Number(s[1])
           ), t;
@@ -14448,7 +14448,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       };
       c(I.EVENT, g.COMMENT_MOVE, ih);
-      var nh = class extends we {
+      var nh = class extends Be {
         constructor(e) {
           super(e), this.type = g.COMMENT_RESIZE, e && (this.oldSize = e.getSize());
         }
@@ -14466,7 +14466,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return e.oldWidth = Math.round(this.oldSize.width), e.oldHeight = Math.round(this.oldSize.height), e.newWidth = Math.round(this.newSize.width), e.newHeight = Math.round(this.newSize.height), e;
         }
         static fromJson(e, t, s) {
-          return t = we.fromJson(e, t, s ?? new nh()), t.oldSize = new w(e.oldWidth, e.oldHeight), t.newSize = new w(e.newWidth, e.newHeight), t;
+          return t = Be.fromJson(e, t, s ?? new nh()), t.oldSize = new w(e.oldWidth, e.oldHeight), t.newSize = new w(e.newWidth, e.newHeight), t;
         }
         isNull() {
           return w.equals(
@@ -14525,48 +14525,48 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
       };
       c(I.EVENT, g.FINISHED_LOADING, uE);
       var aE, hE, dE, _E, TE, $E, EE, gE, pE, mE, IE, OE, RE, SE, LE, bE, fE, AE, CE, NE, ME, yE, vE, kE, b;
-      i.BLOCK_CHANGE$$module$build$src$core$events$events = g.BLOCK_CHANGE, i.BLOCK_CREATE$$module$build$src$core$events$events = g.BLOCK_CREATE, i.BLOCK_DELETE$$module$build$src$core$events$events = g.BLOCK_DELETE, aE = g.BLOCK_DRAG, i.BLOCK_MOVE$$module$build$src$core$events$events = g.BLOCK_MOVE, hE = g.BLOCK_FIELD_INTERMEDIATE_CHANGE, dE = g.BUBBLE_OPEN, _E = g.BLOCK_CHANGE, TE = g.CLICK, $E = g.COMMENT_CHANGE, EE = g.COMMENT_CREATE, gE = g.COMMENT_DELETE, pE = g.COMMENT_MOVE, mE = g.COMMENT_RESIZE, IE = g.COMMENT_DRAG, OE = g.BLOCK_CREATE, RE = g.BLOCK_DELETE, SE = g.FINISHED_LOADING, LE = g.BLOCK_MOVE, bE = g.SELECTED, fE = g.THEME_CHANGE, AE = g.TOOLBOX_ITEM_SELECT, CE = g.TRASHCAN_OPEN, NE = g.UI, ME = g.VAR_CREATE, yE = g.VAR_DELETE, vE = g.VAR_RENAME, kE = g.VIEWPORT_CHANGE, b = {}, b.Abstract = Yt, b.BLOCK_CHANGE = i.BLOCK_CHANGE$$module$build$src$core$events$events, b.BLOCK_CREATE = i.BLOCK_CREATE$$module$build$src$core$events$events, b.BLOCK_DELETE = i.BLOCK_DELETE$$module$build$src$core$events$events, b.BLOCK_DRAG = aE, b.BLOCK_FIELD_INTERMEDIATE_CHANGE = hE, b.BLOCK_MOVE = i.BLOCK_MOVE$$module$build$src$core$events$events, b.BUBBLE_OPEN = dE, b.BUMP_EVENTS = Q_, b.BlockBase = nt, b.BlockChange = Ws, b.BlockCreate = _a, b.BlockDelete = ga, b.BlockDrag = Ka, b.BlockFieldIntermediateChange = Ja, b.BlockMove = ja, b.BubbleOpen = qa, b.BubbleType = Za, b.CHANGE = _E, b.CLICK = TE, b.COMMENT_CHANGE = $E, b.COMMENT_CREATE = EE, b.COMMENT_DELETE = gE, b.COMMENT_DRAG = IE, b.COMMENT_MOVE = pE, b.COMMENT_RESIZE = mE, b.CREATE = OE, b.Click = Bu, b.ClickTarget = xu, b.CommentBase = we, b.CommentChange = Qa, b.CommentCollapse = eh, b.CommentCreate = th, b.CommentDelete = sh, b.CommentDrag = oh, b.CommentMove = ih, b.CommentResize = nh, b.DELETE = RE, b.FINISHED_LOADING = SE, b.FinishedLoading = uE, b.MOVE = LE, b.SELECTED = bE, b.Selected = Ea, b.THEME_CHANGE = fE, b.TOOLBOX_ITEM_SELECT = AE, b.TRASHCAN_OPEN = CE, b.ThemeChange = Ta, b.ToolboxItemSelect = rh, b.TrashcanOpen = Fa, b.UI = NE, b.UiBase = Ie, b.VAR_CREATE = ME, b.VAR_DELETE = yE, b.VAR_RENAME = vE, b.VIEWPORT_CHANGE = kE, b.VarBase = yt, b.VarCreate = Ba, b.VarDelete = xa, b.VarRename = Ua, b.VarTypeChange = lh, b.ViewportChange = $a, b.clearPendingUndo = ui, b.disable = i.disable$$module$build$src$core$events$utils, b.disableOrphans = $n, b.enable = i.enable$$module$build$src$core$events$utils, b.filter = ci, b.fire = v, b.fromJson = Tn, b.get = M, b.getDescendantIds = ao, b.getGroup = i.getGroup$$module$build$src$core$events$utils, b.getRecordUndo = Ce, b.isEnabled = j, b.setGroup = i.setGroup$$module$build$src$core$events$utils, b.setRecordUndo = i.setRecordUndo$$module$build$src$core$events$utils;
+      i.BLOCK_CHANGE$$module$build$src$core$events$events = g.BLOCK_CHANGE, i.BLOCK_CREATE$$module$build$src$core$events$events = g.BLOCK_CREATE, i.BLOCK_DELETE$$module$build$src$core$events$events = g.BLOCK_DELETE, aE = g.BLOCK_DRAG, i.BLOCK_MOVE$$module$build$src$core$events$events = g.BLOCK_MOVE, hE = g.BLOCK_FIELD_INTERMEDIATE_CHANGE, dE = g.BUBBLE_OPEN, _E = g.BLOCK_CHANGE, TE = g.CLICK, $E = g.COMMENT_CHANGE, EE = g.COMMENT_CREATE, gE = g.COMMENT_DELETE, pE = g.COMMENT_MOVE, mE = g.COMMENT_RESIZE, IE = g.COMMENT_DRAG, OE = g.BLOCK_CREATE, RE = g.BLOCK_DELETE, SE = g.FINISHED_LOADING, LE = g.BLOCK_MOVE, bE = g.SELECTED, fE = g.THEME_CHANGE, AE = g.TOOLBOX_ITEM_SELECT, CE = g.TRASHCAN_OPEN, NE = g.UI, ME = g.VAR_CREATE, yE = g.VAR_DELETE, vE = g.VAR_RENAME, kE = g.VIEWPORT_CHANGE, b = {}, b.Abstract = Yt, b.BLOCK_CHANGE = i.BLOCK_CHANGE$$module$build$src$core$events$events, b.BLOCK_CREATE = i.BLOCK_CREATE$$module$build$src$core$events$events, b.BLOCK_DELETE = i.BLOCK_DELETE$$module$build$src$core$events$events, b.BLOCK_DRAG = aE, b.BLOCK_FIELD_INTERMEDIATE_CHANGE = hE, b.BLOCK_MOVE = i.BLOCK_MOVE$$module$build$src$core$events$events, b.BUBBLE_OPEN = dE, b.BUMP_EVENTS = Q_, b.BlockBase = nt, b.BlockChange = Xs, b.BlockCreate = _a, b.BlockDelete = ga, b.BlockDrag = Ka, b.BlockFieldIntermediateChange = Ja, b.BlockMove = ja, b.BubbleOpen = qa, b.BubbleType = Za, b.CHANGE = _E, b.CLICK = TE, b.COMMENT_CHANGE = $E, b.COMMENT_CREATE = EE, b.COMMENT_DELETE = gE, b.COMMENT_DRAG = IE, b.COMMENT_MOVE = pE, b.COMMENT_RESIZE = mE, b.CREATE = OE, b.Click = Bu, b.ClickTarget = xu, b.CommentBase = Be, b.CommentChange = Qa, b.CommentCollapse = eh, b.CommentCreate = th, b.CommentDelete = sh, b.CommentDrag = oh, b.CommentMove = ih, b.CommentResize = nh, b.DELETE = RE, b.FINISHED_LOADING = SE, b.FinishedLoading = uE, b.MOVE = LE, b.SELECTED = bE, b.Selected = Ea, b.THEME_CHANGE = fE, b.TOOLBOX_ITEM_SELECT = AE, b.TRASHCAN_OPEN = CE, b.ThemeChange = Ta, b.ToolboxItemSelect = rh, b.TrashcanOpen = Fa, b.UI = NE, b.UiBase = Ie, b.VAR_CREATE = ME, b.VAR_DELETE = yE, b.VAR_RENAME = vE, b.VIEWPORT_CHANGE = kE, b.VarBase = yt, b.VarCreate = Ba, b.VarDelete = xa, b.VarRename = Ua, b.VarTypeChange = lh, b.ViewportChange = $a, b.clearPendingUndo = ci, b.disable = i.disable$$module$build$src$core$events$utils, b.disableOrphans = $n, b.enable = i.enable$$module$build$src$core$events$utils, b.filter = li, b.fire = v, b.fromJson = Tn, b.get = M, b.getDescendantIds = uo, b.getGroup = i.getGroup$$module$build$src$core$events$utils, b.getRecordUndo = Ne, b.isEnabled = Z, b.setGroup = i.setGroup$$module$build$src$core$events$utils, b.setRecordUndo = i.setRecordUndo$$module$build$src$core$events$utils;
       var vt = {};
       vt.BottomRow = Z$, vt.ConstantProvider = j$, vt.Drawer = q$, vt.PathObject = sE, vt.RenderInfo = tE, vt.Renderer = Wa, vt.RightConnectionShape = Q$, vt.StatementInput = ul, vt.TopRow = eE, Nu();
       var Oe = {};
       Oe.registerCleanup = _u, Oe.registerCollapse = $u, Oe.registerCollapseExpandBlock = Ru, Oe.registerComment = Iu, Oe.registerCommentCreate = Cu, Oe.registerCommentDelete = fu, Oe.registerCommentDuplicate = Au, Oe.registerCommentOptions = P_, Oe.registerDefaultOptions = Nu, Oe.registerDelete = Lu, Oe.registerDeleteAll = pu, Oe.registerDisable = Su, Oe.registerDuplicate = mu, Oe.registerExpand = Eu, Oe.registerHelp = bu, Oe.registerInline = Ou, Oe.registerRedo = du, Oe.registerUndo = hu;
       var ch = "button", PE = class {
         load(e, t) {
-          return e = new Ue(t.getWorkspace(), t.targetWorkspace, e, !1), e.show(), new jo(e, ch);
+          return e = new Fe(t.getWorkspace(), t.targetWorkspace, e, !1), e.show(), new Jo(e, ch);
         }
         gapForItem(e, t) {
           return t;
         }
         disposeItem(e) {
-          e = e.getElement(), e instanceof Ue && e.dispose();
+          e = e.getElement(), e instanceof Fe && e.dispose();
         }
         getType() {
           return ch;
         }
       };
       c(I.FLYOUT_INFLATER, ch, PE);
-      var cn = {};
-      cn.Bubble = X, cn.MiniWorkspaceBubble = qt, cn.TextBubble = T$, cn.TextInputBubble = Vr;
-      var Wg = "WORKSPACE_AT_BLOCK_CAPACITY", uh = "block", DE = class {
+      var ln = {};
+      ln.Bubble = W, ln.MiniWorkspaceBubble = qt, ln.TextBubble = T$, ln.TextInputBubble = Vr;
+      var Yg = "WORKSPACE_AT_BLOCK_CAPACITY", uh = "block", DE = class {
         constructor() {
           this.permanentlyDisabledBlocks = /* @__PURE__ */ new Set(), this.listeners = /* @__PURE__ */ new Map(), this.capacityWrapper = this.filterFlyoutBasedOnCapacity.bind(this);
         }
         load(e, t) {
-          return this.setFlyout(t), e = this.createBlock(e, t.getWorkspace()), e.isEnabled() ? this.updateStateBasedOnCapacity(e) : this.permanentlyDisabledBlocks.add(e), e.getDescendants(!1).forEach((s) => s.isInFlyout = !0), this.addBlockListeners(e), new jo(e, uh);
+          return this.setFlyout(t), e = this.createBlock(e, t.getWorkspace()), e.isEnabled() ? this.updateStateBasedOnCapacity(e) : this.permanentlyDisabledBlocks.add(e), e.getDescendants(!1).forEach((s) => s.isInFlyout = !0), this.addBlockListeners(e), new Jo(e, uh);
         }
         createBlock(e, t) {
-          return e.blockxml ? (e = typeof e.blockxml == "string" ? i.textToDom$$module$build$src$core$utils$xml(e.blockxml) : e.blockxml, t = Bs(e, t)) : (e.enabled === void 0 && (e.enabled = e.disabled !== "true" && e.disabled !== !0), e.disabledReasons === void 0 && e.enabled === !1 && (e.disabledReasons = [it]), "x" in e && delete e.x, "y" in e && delete e.y, t = ks(e, t)), t;
+          return e.blockxml ? (e = typeof e.blockxml == "string" ? i.textToDom$$module$build$src$core$utils$xml(e.blockxml) : e.blockxml, t = ws(e, t)) : (e.enabled === void 0 && (e.enabled = e.disabled !== "true" && e.disabled !== !0), e.disabledReasons === void 0 && e.enabled === !1 && (e.disabledReasons = [it]), "x" in e && delete e.x, "y" in e && delete e.y, t = vs(e, t)), t;
         }
         gapForItem(e, t) {
           let s;
           return e.gap ? s = parseInt(String(e.gap)) : e.blockxml && (e = typeof e.blockxml == "string" ? i.textToDom$$module$build$src$core$utils$xml(e.blockxml) : e.blockxml, s = parseInt(e.getAttribute("gap"))), !s || isNaN(s) ? t : s;
         }
         disposeItem(e) {
-          e = e.getElement(), e instanceof z && (this.removeListeners(e.id), e.dispose(!1, !1));
+          e = e.getElement(), e instanceof J && (this.removeListeners(e.id), e.dispose(!1, !1));
         }
         removeListeners(e) {
           let t;
-          ((t = this.listeners.get(e)) != null ? t : []).forEach((s) => G(s)), this.listeners.delete(e);
+          ((t = this.listeners.get(e)) != null ? t : []).forEach((s) => V(s)), this.listeners.delete(e);
         }
         setFlyout(e) {
           if (this.flyout !== e) {
@@ -14581,19 +14581,19 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         updateStateBasedOnCapacity(e) {
           let t, s;
-          const o = (t = this.flyout) == null || (s = t.targetWorkspace) == null ? void 0 : s.isCapacityAvailable(hi(e));
-          for (; e; ) e.setDisabledReason(!o, Wg), e = e.getNextBlock();
+          const o = (t = this.flyout) == null || (s = t.targetWorkspace) == null ? void 0 : s.isCapacityAvailable(ai(e));
+          for (; e; ) e.setDisabledReason(!o, Yg), e = e.getNextBlock();
         }
         addBlockListeners(e) {
           const t = [];
-          t.push(P(e.getSvgRoot(), "pointerdown", e, (s) => {
+          t.push(k(e.getSvgRoot(), "pointerdown", e, (s) => {
             let o, n;
             const r = (o = this.flyout) == null || (n = o.targetWorkspace) == null ? void 0 : n.getGesture(s);
             r && this.flyout && (r.setStartBlock(e), r.handleFlyoutStart(s, this.flyout));
-          })), t.push(Be(e.getSvgRoot(), "pointermove", null, () => {
+          })), t.push(xe(e.getSvgRoot(), "pointermove", null, () => {
             let s, o;
             !((s = this.flyout) == null || (o = s.targetWorkspace) == null) && o.isDragging() || e.addSelect();
-          })), t.push(Be(e.getSvgRoot(), "pointerleave", null, () => {
+          })), t.push(xe(e.getSvgRoot(), "pointerleave", null, () => {
             let s, o;
             !((s = this.flyout) == null || (o = s.targetWorkspace) == null) && o.isDragging() || e.removeSelect();
           })), this.listeners.set(e.id, t);
@@ -14630,7 +14630,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
 ` + this.inlineSteps_;
         }
         drawTopCorner(e) {
-          this.steps_ += le(e.xPos, this.info_.startY);
+          this.steps_ += ce(e.xPos, this.info_.startY);
           for (let t = 0, s; s = e.elements[t]; t++) d.isLeftSquareCorner(s) ? this.steps_ += this.highlightConstants_.START_POINT : d.isLeftRoundedCorner(s) ? this.steps_ += this.outsideCornerPaths_.topLeft(this.RTL_) : d.isPreviousConnection(s) ? this.steps_ += this.notchPaths_.pathLeft : d.isHat(s) ? this.steps_ += this.startPaths_.path(this.RTL_) : d.isSpacer(s) && s.width !== 0 && (this.steps_ += y("H", s.xPos + s.width - this.highlightOffset));
           this.steps_ += y(
             "H",
@@ -14745,13 +14745,13 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
       }, UE = class {
         constructor(e) {
-          this.OFFSET = 0.5, this.constantProvider = e, this.START_POINT = le(this.OFFSET, this.OFFSET);
+          this.OFFSET = 0.5, this.constantProvider = e, this.START_POINT = ce(this.OFFSET, this.OFFSET);
         }
         init() {
           this.INSIDE_CORNER = this.makeInsideCorner(), this.OUTSIDE_CORNER = this.makeOutsideCorner(), this.PUZZLE_TAB = this.makePuzzleTab(), this.NOTCH = this.makeNotch(), this.JAGGED_TEETH = this.makeJaggedTeeth(), this.START_HAT = this.makeStartHat();
         }
         makeInsideCorner() {
-          const e = this.constantProvider.CORNER_RADIUS, t = this.OFFSET, s = (1 - Math.SQRT1_2) * (e + t) - t, o = le(s, s) + ae("a", "0 0,0", e, N(-s - t, e - s)), n = ae("a", "0 0,0", e + t, N(e + t, e + t)), r = le(s, -s) + ae("a", "0 0,0", e + t, N(e - s, s + t));
+          const e = this.constantProvider.CORNER_RADIUS, t = this.OFFSET, s = (1 - Math.SQRT1_2) * (e + t) - t, o = ce(s, s) + he("a", "0 0,0", e, N(-s - t, e - s)), n = he("a", "0 0,0", e + t, N(e + t, e + t)), r = ce(s, -s) + he("a", "0 0,0", e + t, N(e - s, s + t));
           return { width: e + t, height: e, pathTop(u) {
             return u ? o : "";
           }, pathBottom(u) {
@@ -14759,7 +14759,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           } };
         }
         makeOutsideCorner() {
-          const e = this.constantProvider.CORNER_RADIUS, t = this.OFFSET, s = (1 - Math.SQRT1_2) * (e - t) + t, o = le(s, s) + ae("a", "0 0,1", e - t, N(e - s, -s + t)), n = le(t, e) + ae("a", "0 0,1", e - t, N(e, -e + t)), r = -s, u = le(s, r) + ae("a", "0 0,1", e - t, N(-s + t, -r - e));
+          const e = this.constantProvider.CORNER_RADIUS, t = this.OFFSET, s = (1 - Math.SQRT1_2) * (e - t) + t, o = ce(s, s) + he("a", "0 0,1", e - t, N(e - s, -s + t)), n = ce(t, e) + he("a", "0 0,1", e - t, N(e, -e + t)), r = -s, u = ce(s, r) + he("a", "0 0,1", e - t, N(-s + t, -r - e));
           return { height: e, topLeft(h) {
             return h ? o : n;
           }, bottomLeft() {
@@ -14767,13 +14767,13 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           } };
         }
         makePuzzleTab() {
-          const e = this.constantProvider.TAB_WIDTH, t = this.constantProvider.TAB_HEIGHT, s = le(-2, -t + 2.5 + 0.9) + ft(e * -0.45, -2.1), o = y(
+          const e = this.constantProvider.TAB_WIDTH, t = this.constantProvider.TAB_HEIGHT, s = ce(-2, -t + 2.5 + 0.9) + ft(e * -0.45, -2.1), o = y(
             "v",
             2.5
-          ) + le(-e * 0.97, 2.5) + He("q", [N(-e * 0.05, 10), N(e * 0.3, 9.5)]) + le(e * 0.67, -1.9) + y("v", 2.5), n = y("v", -1.5) + le(e * -0.92, -0.5) + He(
+          ) + ce(-e * 0.97, 2.5) + He("q", [N(-e * 0.05, 10), N(e * 0.3, 9.5)]) + ce(e * 0.67, -1.9) + y("v", 2.5), n = y("v", -1.5) + ce(e * -0.92, -0.5) + He(
             "q",
             [N(e * -0.19, -5.5), N(0, -11)]
-          ) + le(e * 0.92, 1), r = le(-5, t - 0.7) + ft(e * 0.46, -2.1);
+          ) + ce(e * 0.92, 1), r = ce(-5, t - 0.7) + ft(e * 0.46, -2.1);
           return { width: e, height: t, pathUp(u) {
             return u ? s : n;
           }, pathDown(u) {
@@ -14787,10 +14787,10 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return { pathLeft: ft(
             5.1,
             2.6
-          ) + le(-10.2, 6.8) + ft(5.1, 2.6), height: 12, width: 10.2 };
+          ) + ce(-10.2, 6.8) + ft(5.1, 2.6), height: 12, width: 10.2 };
         }
         makeStartHat() {
-          const e = this.constantProvider.START_HAT.height, t = le(25, -8.7) + He("c", [N(29.7, -6.2), N(57.2, -0.5), N(75, 8.7)]), s = He(
+          const e = this.constantProvider.START_HAT.height, t = ce(25, -8.7) + He("c", [N(29.7, -6.2), N(57.2, -0.5), N(75, 8.7)]), s = He(
             "c",
             [N(17.8, -9.2), N(45.3, -14.9), N(75, -8.7)]
           ) + Le(100.5, e + 0.5);
@@ -14806,7 +14806,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         constructor(e, t) {
           super(e, t), this.constants_ = e, this.connectedBlock && (this.height += this.constants_.DARK_PATH_OFFSET);
         }
-      }, GE = class extends sn {
+      }, GE = class extends tn {
         constructor(e, t) {
           super(e, t), this.renderer_ = e;
         }
@@ -14924,7 +14924,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.svgPathLight.style.display = "", this.svgPathDark.style.display = "", this.svgPathLight.setAttribute("stroke", this.style.colourTertiary), this.svgPathDark.setAttribute("fill", this.colourDark), super.applyColour(e), this.svgPath.setAttribute("stroke", "none");
         }
         setStyle(e) {
-          this.style = e, this.colourDark = Ds("#000", this.style.colourPrimary, 0.2) || this.colourDark;
+          this.style = e, this.colourDark = Ps("#000", this.style.colourPrimary, 0.2) || this.colourDark;
         }
         updateHighlighted(e) {
           super.updateHighlighted(e), this.svgPathLight.style.display = e ? "none" : "inline";
@@ -14968,10 +14968,10 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.highlightConstants;
         }
       };
-      Mi("geras", XE);
+      Ni("geras", XE);
       var kt = {};
       kt.ConstantProvider = wE, kt.Drawer = xE, kt.HighlightConstantProvider = UE, kt.Highlighter = BE, kt.InlineInput = FE, kt.PathObject = VE, kt.RenderInfo = GE, kt.Renderer = XE, kt.StatementInput = HE;
-      var WE = class extends sn {
+      var WE = class extends tn {
         constructor(e, t) {
           super(e, t);
         }
@@ -15056,10 +15056,10 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return new WE(this, e);
         }
       };
-      Mi("thrasos", YE);
+      Ni("thrasos", YE);
       var ah = {};
       ah.RenderInfo = WE, ah.Renderer = YE;
-      var Yg = {
+      var zg = {
         colour_blocks: { colourPrimary: "#CF63CF", colourSecondary: "#C94FC9", colourTertiary: "#BD42BD" },
         list_blocks: { colourPrimary: "#9966FF", colourSecondary: "#855CD6", colourTertiary: "#774DCB" },
         logic_blocks: { colourPrimary: "#4C97FF", colourSecondary: "#4280D7", colourTertiary: "#3373CC" },
@@ -15070,9 +15070,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         variable_blocks: { colourPrimary: "#FF8C1A", colourSecondary: "#FF8000", colourTertiary: "#DB6E00" },
         variable_dynamic_blocks: { colourPrimary: "#FF8C1A", colourSecondary: "#FF8000", colourTertiary: "#DB6E00" },
         hat_blocks: { colourPrimary: "#4C97FF", colourSecondary: "#4280D7", colourTertiary: "#3373CC", hat: "cap" }
-      }, zg = { colour_category: { colour: "#CF63CF" }, list_category: { colour: "#9966FF" }, logic_category: { colour: "#4C97FF" }, loop_category: { colour: "#0fBD8C" }, math_category: { colour: "#59C059" }, procedure_category: { colour: "#FF6680" }, text_category: { colour: "#FFBF00" }, variable_category: { colour: "#FF8C1A" }, variable_dynamic_category: { colour: "#FF8C1A" } }, Kg = new qs("zelos", Yg, zg), Jg = { Classic: Fr, Zelos: Kg }, hh = class {
+      }, Kg = { colour_category: { colour: "#CF63CF" }, list_category: { colour: "#9966FF" }, logic_category: { colour: "#4C97FF" }, loop_category: { colour: "#0fBD8C" }, math_category: { colour: "#59C059" }, procedure_category: { colour: "#FF6680" }, text_category: { colour: "#FFBF00" }, variable_category: { colour: "#FF8C1A" }, variable_dynamic_category: { colour: "#FF8C1A" } }, Jg = new js("zelos", zg, Kg), jg = { Classic: Fr, Zelos: Jg }, hh = class {
         constructor(e, t, s) {
-          this.id_ = e.toolboxitemid || ne(), this.level_ = (this.parent_ = s || null) ? this.parent_.getLevel() + 1 : 0, this.toolboxItemDef_ = e, this.parentToolbox_ = t, this.workspace_ = this.parentToolbox_.getWorkspace();
+          this.id_ = e.toolboxitemid || re(), this.level_ = (this.parent_ = s || null) ? this.parent_.getLevel() + 1 : 0, this.toolboxItemDef_ = e, this.parentToolbox_ = t, this.workspace_ = this.parentToolbox_.getWorkspace();
         }
         init() {
         }
@@ -15135,19 +15135,19 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }
         }
         parseCategoryDef_(e) {
-          this.name_ = "name" in e ? ue(e.name) : "", this.colour_ = this.getColour_(e), Object.assign(this.cssConfig_, e.cssconfig || e.cssConfig);
+          this.name_ = "name" in e ? ae(e.name) : "", this.colour_ = this.getColour_(e), Object.assign(this.cssConfig_, e.cssconfig || e.cssConfig);
         }
         createDom_() {
-          this.htmlDiv_ = this.createContainer_(), Ot(this.htmlDiv_, ze.TREEITEM), re(
+          this.htmlDiv_ = this.createContainer_(), Ot(this.htmlDiv_, ze.TREEITEM), le(
             this.htmlDiv_,
-            se.SELECTED,
+            oe.SELECTED,
             !1
-          ), re(this.htmlDiv_, se.LEVEL, this.level_ + 1), this.rowDiv_ = this.createRowContainer_(), this.rowDiv_.style.pointerEvents = "auto", this.htmlDiv_.appendChild(this.rowDiv_), this.rowContents_ = this.createRowContentsContainer_(), this.rowContents_.style.pointerEvents = "none", this.rowDiv_.appendChild(this.rowContents_), this.iconDom_ = this.createIconDom_(), Ot(
+          ), le(this.htmlDiv_, oe.LEVEL, this.level_ + 1), this.rowDiv_ = this.createRowContainer_(), this.rowDiv_.style.pointerEvents = "auto", this.htmlDiv_.appendChild(this.rowDiv_), this.rowContents_ = this.createRowContentsContainer_(), this.rowContents_.style.pointerEvents = "none", this.rowDiv_.appendChild(this.rowContents_), this.iconDom_ = this.createIconDom_(), Ot(
             this.iconDom_,
             ze.PRESENTATION
           ), this.rowContents_.appendChild(this.iconDom_), this.labelDom_ = this.createLabelDom_(this.name_), this.rowContents_.appendChild(this.labelDom_);
           const e = this.labelDom_.getAttribute("id");
-          return e && re(this.htmlDiv_, se.LABELLEDBY, e), this.addColourBorder_(this.colour_), this.htmlDiv_;
+          return e && le(this.htmlDiv_, oe.LABELLEDBY, e), this.addColourBorder_(this.colour_), this.htmlDiv_;
         }
         createContainer_() {
           const e = document.createElement("div");
@@ -15206,9 +15206,9 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.rowDiv_;
         }
         parseColour(e) {
-          if (e = ue(e), e == null || e === "") return "";
+          if (e = ae(e), e == null || e === "") return "";
           var t = Number(e);
-          return isNaN(t) ? (t = Ps(e)) ? t : (console.warn('Toolbox category "' + this.name_ + '" has unrecognized colour attribute: ' + e), "") : _c(t);
+          return isNaN(t) ? (t = ks(e)) ? t : (console.warn('Toolbox category "' + this.name_ + '" has unrecognized colour attribute: ' + e), "") : _c(t);
         }
         openIcon_(e) {
           if (e) {
@@ -15250,8 +15250,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             if (e) {
               const s = this.parseColour(gt.defaultBackgroundColour);
               this.rowDiv_.style.backgroundColor = this.colour_ || s, t && L(this.rowDiv_, t);
-            } else this.rowDiv_.style.backgroundColor = "", t && F(this.rowDiv_, t);
-            re(this.htmlDiv_, se.SELECTED, e);
+            } else this.rowDiv_.style.backgroundColor = "", t && H(this.rowDiv_, t);
+            le(this.htmlDiv_, oe.SELECTED, e);
           }
         }
         setDisabled(e) {
@@ -15273,7 +15273,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           this.flyoutItems_ = [], this.toolboxItemDef_ = typeof e == "string" ? { kind: this.toolboxItemDef_.kind, custom: e, id: this.toolboxItemDef_.id, categorystyle: this.toolboxItemDef_.categorystyle, colour: this.toolboxItemDef_.colour, cssconfig: this.toolboxItemDef_.cssconfig, hidden: this.toolboxItemDef_.hidden } : {
             kind: this.toolboxItemDef_.kind,
             name: "name" in this.toolboxItemDef_ ? this.toolboxItemDef_.name : "",
-            contents: Ei(e),
+            contents: $i(e),
             id: this.toolboxItemDef_.id,
             categorystyle: this.toolboxItemDef_.categorystyle,
             colour: this.toolboxItemDef_.colour,
@@ -15282,7 +15282,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           }, this.parseContents_(this.toolboxItemDef_);
         }
         dispose() {
-          V(this.htmlDiv_);
+          X(this.htmlDiv_);
         }
       };
       gt.registrationName = "category", gt.nestedPadding = 19, gt.borderWidth = 8, gt.defaultBackgroundColour = "#57e", mt(`
@@ -15358,7 +15358,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
   color: #fff;
 }
 `), c(I.TOOLBOX_ITEM, gt.registrationName, gt);
-      var un = class extends hh {
+      var cn = class extends hh {
         constructor(e, t) {
           super(e, t), this.cssConfig_ = { container: "blocklyTreeSeparator" }, this.htmlDiv = null, Object.assign(this.cssConfig_, e.cssconfig || e.cssConfig);
         }
@@ -15375,10 +15375,10 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.htmlDiv;
         }
         dispose() {
-          V(this.htmlDiv);
+          X(this.htmlDiv);
         }
       };
-      un.registrationName = "sep", mt(`
+      cn.registrationName = "sep", mt(`
 .blocklyTreeSeparator {
   border-bottom: solid #e5e5e5 1px;
   height: 0;
@@ -15393,8 +15393,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
   padding: 5px 0;
   width: 0;
 }
-`), c(I.TOOLBOX_ITEM, un.registrationName, un);
-      var si = class extends gt {
+`), c(I.TOOLBOX_ITEM, cn.registrationName, cn);
+      var ti = class extends gt {
         constructor(e, t, s) {
           super(e, t, s), this.subcategoriesDiv_ = null, this.expanded_ = !1, this.toolboxItems_ = [];
         }
@@ -15410,14 +15410,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
               this.flyoutItems_ = [], e = !0;
               for (let s = 0; s < t.length; s++) {
                 const o = t[s];
-                !no(I.TOOLBOX_ITEM, o.kind) || o.kind.toLowerCase() === un.registrationName && e ? (this.flyoutItems_.push(o), e = !0) : (this.createToolboxItem(o), e = !1);
+                !io(I.TOOLBOX_ITEM, o.kind) || o.kind.toLowerCase() === cn.registrationName && e ? (this.flyoutItems_.push(o), e = !0) : (this.createToolboxItem(o), e = !1);
               }
             }
           }
         }
         createToolboxItem(e) {
           let t = e.kind;
-          t.toUpperCase() === "CATEGORY" && In(e) && (t = si.registrationName), e = new (Ge(I.TOOLBOX_ITEM, t))(e, this.parentToolbox_, this), this.toolboxItems_.push(e);
+          t.toUpperCase() === "CATEGORY" && In(e) && (t = ti.registrationName), e = new (Ge(I.TOOLBOX_ITEM, t))(e, this.parentToolbox_, this), this.toolboxItems_.push(e);
         }
         init() {
           super.init(), this.setExpanded(this.toolboxItemDef_.expanded === "true" || this.toolboxItemDef_.expanded === !0);
@@ -15425,7 +15425,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         createDom_() {
           super.createDom_();
           const e = this.getChildToolboxItems();
-          return this.subcategoriesDiv_ = this.createSubCategoriesDom_(e), Ot(this.subcategoriesDiv_, ze.GROUP), this.htmlDiv_.appendChild(this.subcategoriesDiv_), this.closeIcon_(this.iconDom_), re(this.htmlDiv_, se.EXPANDED, !1), this.htmlDiv_;
+          return this.subcategoriesDiv_ = this.createSubCategoriesDom_(e), Ot(this.subcategoriesDiv_, ze.GROUP), this.htmlDiv_.appendChild(this.subcategoriesDiv_), this.closeIcon_(this.iconDom_), le(this.htmlDiv_, oe.EXPANDED, !1), this.htmlDiv_;
         }
         createIconDom_() {
           const e = document.createElement("span");
@@ -15457,7 +15457,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
               let t;
               (t = this.parentToolbox_.getFlyout()) == null || t.setVisible(!1), this.subcategoriesDiv_.style.display = "none", this.closeIcon_(this.iconDom_);
             }
-            re(this.htmlDiv_, se.EXPANDED, e), this.parentToolbox_.handleToolboxItemResize();
+            le(this.htmlDiv_, oe.EXPANDED, e), this.parentToolbox_.handleToolboxItemResize();
           }
         }
         setVisible_(e) {
@@ -15485,7 +15485,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return this.toolboxItems_;
         }
       };
-      si.registrationName = "collapsibleCategory", c(I.TOOLBOX_ITEM, si.registrationName, si);
+      ti.registrationName = "collapsibleCategory", c(I.TOOLBOX_ITEM, ti.registrationName, ti);
       var zE = class extends Yr {
         constructor(e) {
           super(), this.id = "toolbox", this.contentsDiv_ = this.HtmlDiv = null, this.isVisible_ = !1, this.height_ = this.width_ = 0, this.flyout = null, this.contents = /* @__PURE__ */ new Map(), this.previouslySelectedItem_ = this.selectedItem_ = null, this.boundEvents_ = [], this.mouseDown = !1, this.workspace_ = e, this.toolboxDef_ = e.options.languageTree || { contents: [] }, this.horizontalLayout = e.options.horizontalLayout, this.RTL = e.options.RTL, this.toolboxPosition = e.options.toolboxPosition;
@@ -15502,12 +15502,12 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             this.HtmlDiv,
             "toolboxBackgroundColour",
             "background-color"
-          ), e.subscribe(this.HtmlDiv, "toolboxForegroundColour", "color"), this.workspace_.getComponentManager().addComponent({ component: this, weight: te.ComponentWeight.TOOLBOX_WEIGHT, capabilities: [te.Capability.AUTOHIDEABLE, te.Capability.DELETE_AREA, te.Capability.DRAG_TARGET] }), i.getFocusManager$$module$build$src$core$focus_manager().registerTree(this, !0);
+          ), e.subscribe(this.HtmlDiv, "toolboxForegroundColour", "color"), this.workspace_.getComponentManager().addComponent({ component: this, weight: se.ComponentWeight.TOOLBOX_WEIGHT, capabilities: [se.Capability.AUTOHIDEABLE, se.Capability.DELETE_AREA, se.Capability.DRAG_TARGET] }), i.getFocusManager$$module$build$src$core$focus_manager().registerTree(this, !0);
         }
         createDom_(e) {
           e = e.getParentSvg();
           const t = this.createContainer_();
-          t.id = ne(), this.contentsDiv_ = this.createContentsContainer_(), Ot(this.contentsDiv_, ze.TREE), t.appendChild(this.contentsDiv_);
+          t.id = re(), this.contentsDiv_ = this.createContentsContainer_(), Ot(this.contentsDiv_, ze.TREE), t.appendChild(this.contentsDiv_);
           let s;
           return (s = e.parentNode) == null || s.insertBefore(t, e), this.attachEvents_(t, this.contentsDiv_), t;
         }
@@ -15520,16 +15520,16 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return L(e, "blocklyToolboxCategoryGroup"), this.isHorizontal() && (e.style.flexDirection = "row"), e;
         }
         attachEvents_(e, t) {
-          const s = P(
+          const s = k(
             e,
             "pointerdown",
             this,
             this.onClick_,
             !1
           );
-          this.boundEvents_.push(s), e = Be(e, "pointerup", this, () => {
+          this.boundEvents_.push(s), e = xe(e, "pointerup", this, () => {
             this.mouseDown = !1;
-          }), this.boundEvents_.push(e), t = P(t, "keydown", this, this.onKeyDown_, !1), this.boundEvents_.push(t);
+          }), this.boundEvents_.push(e), t = k(t, "keydown", this, this.onKeyDown_, !1), this.boundEvents_.push(t);
         }
         onClick_(e) {
           if (this.mouseDown = !0, Ve(e) || e.target === this.HtmlDiv) l().hideChaff(!1);
@@ -15537,7 +15537,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
             var t = e.target.getAttribute("id");
             t && (t = this.getToolboxItemById(t), t == null ? 0 : t.isSelectable()) && (this.setSelectedItem(t), t.onClick(e)), l().hideChaff(!0);
           }
-          J();
+          q();
         }
         onKeyDown_(e) {
           let t = !1;
@@ -15582,7 +15582,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         }
         createToolboxItem(e, t) {
           var s = e.kind;
-          if (s.toUpperCase() === "CATEGORY" && In(e) && (s = si.registrationName), s = Ge(I.TOOLBOX_ITEM, s.toLowerCase())) {
+          if (s.toUpperCase() === "CATEGORY" && In(e) && (s = ti.registrationName), s = Ge(I.TOOLBOX_ITEM, s.toLowerCase())) {
             e = new s(e, this), e.init(), this.addToolboxItem_(e), (s = e.getDiv()) && t.appendChild(s);
             let o;
             (o = e.getClickTarget()) == null || o.setAttribute("id", e.getId());
@@ -15604,7 +15604,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           );
         }
         removeStyle(e) {
-          e && this.HtmlDiv && F(this.HtmlDiv, e);
+          e && this.HtmlDiv && H(this.HtmlDiv, e);
         }
         getClientRect() {
           if (!this.HtmlDiv || !this.isVisible_) return null;
@@ -15618,7 +15618,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           ) : this.toolboxPosition === B.LEFT ? new D(-1e7, 1e7, -1e7, e) : new D(-1e7, 1e7, o, 1e7);
         }
         wouldDelete(e) {
-          return e instanceof z ? this.updateWouldDelete_(!e.getParent() && e.isDeletable()) : this.updateWouldDelete_(ot(e) && e.isDeletable()), this.wouldDelete_;
+          return e instanceof J ? this.updateWouldDelete_(!e.getParent() && e.isDeletable()) : this.updateWouldDelete_(ot(e) && e.isDeletable()), this.wouldDelete_;
         }
         onDragEnter(e) {
           this.updateCursorDeleteStyle_(!0);
@@ -15671,7 +15671,7 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         handleToolboxItemResize() {
           if (this.HtmlDiv) {
             var e = this.workspace_, t = this.HtmlDiv.getBoundingClientRect(), s = this.getFlyout(), o = this.toolboxPosition === B.LEFT ? e.scrollX + t.width + (s != null && s.isVisible() ? s.getWidth() : 0) : e.scrollX;
-            t = this.toolboxPosition === B.TOP ? e.scrollY + t.height + (s != null && s.isVisible() ? s.getHeight() : 0) : e.scrollY, e.translate(o, t), Ns(e);
+            t = this.toolboxPosition === B.TOP ? e.scrollY + t.height + (s != null && s.isVisible() ? s.getHeight() : 0) : e.scrollY, e.translate(o, t), Cs(e);
           }
         }
         clearSelection() {
@@ -15705,14 +15705,14 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
           return t !== null && t !== e;
         }
         deselectItem_(e) {
-          this.selectedItem_ = null, this.previouslySelectedItem_ = e, e.setSelected(!1), re(
+          this.selectedItem_ = null, this.previouslySelectedItem_ = e, e.setSelected(!1), le(
             this.contentsDiv_,
-            se.ACTIVEDESCENDANT,
+            oe.ACTIVEDESCENDANT,
             ""
           );
         }
         selectItem_(e, t) {
-          this.selectedItem_ = t, this.previouslySelectedItem_ = e, t.setSelected(!0), re(this.contentsDiv_, se.ACTIVEDESCENDANT, t.getId());
+          this.selectedItem_ = t, this.previouslySelectedItem_ = e, t.setSelected(!0), le(this.contentsDiv_, oe.ACTIVEDESCENDANT, t.getId());
         }
         selectItemByPosition(e) {
           (e = this.getToolboxItems()[e]) && this.setSelectedItem(e);
@@ -15769,8 +15769,8 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
         dispose() {
           this.workspace_.getComponentManager().removeComponent("toolbox");
           var e;
-          for ((e = this.flyout) == null || e.dispose(), this.contents.forEach((t) => t.dispose()), e = 0; e < this.boundEvents_.length; e++) G(this.boundEvents_[e]);
-          this.boundEvents_ = [], this.contents.clear(), this.HtmlDiv && (this.workspace_.getThemeManager().unsubscribe(this.HtmlDiv), V(this.HtmlDiv)), i.getFocusManager$$module$build$src$core$focus_manager().unregisterTree(this);
+          for ((e = this.flyout) == null || e.dispose(), this.contents.forEach((t) => t.dispose()), e = 0; e < this.boundEvents_.length; e++) V(this.boundEvents_[e]);
+          this.boundEvents_ = [], this.contents.clear(), this.HtmlDiv && (this.workspace_.getThemeManager().unsubscribe(this.HtmlDiv), X(this.HtmlDiv)), i.getFocusManager$$module$build$src$core$focus_manager().unregisterTree(this);
         }
         getFocusableElement() {
           if (!this.HtmlDiv) throw Error("Toolbox DOM has not yet been created.");
@@ -15846,208 +15846,208 @@ Blockly.YourGeneratorName.nameDB_.setVariableMap(workspace.getVariableMap());`),
   outline: none;
 }
 `), c(I.TOOLBOX, We, zE);
-      var jg = "12.5.1", qg = f.INPUT_VALUE, Zg = f.OUTPUT_VALUE, Qg = f.NEXT_STATEMENT, ep = f.PREVIOUS_STATEMENT, tp = B.TOP, sp = B.BOTTOM, op = B.LEFT, ip = B.RIGHT;
-      Zo.prototype.newBlock = function(e, t) {
-        return new Jo(this, e, t);
-      }, De.prototype.newBlock = function(e, t) {
-        return new z(this, e, t);
-      }, Zo.prototype.newComment = function(e) {
+      var qg = "12.5.1", Zg = f.INPUT_VALUE, Qg = f.OUTPUT_VALUE, ep = f.NEXT_STATEMENT, tp = f.PREVIOUS_STATEMENT, sp = B.TOP, op = B.BOTTOM, ip = B.LEFT, np = B.RIGHT;
+      qo.prototype.newBlock = function(e, t) {
+        return new Ko(this, e, t);
+      }, we.prototype.newBlock = function(e, t) {
+        return new J(this, e, t);
+      }, qo.prototype.newComment = function(e) {
         return new xr(this, e);
-      }, De.prototype.newComment = function(e) {
+      }, we.prototype.newComment = function(e) {
         return new jt(this, e);
-      }, De.newTrashcan = function(e) {
+      }, we.newTrashcan = function(e) {
         return new V$(e);
       }, qt.prototype.newWorkspaceSvg = function(e) {
-        return new De(e);
+        return new we(e);
       }, i.Names$$module$build$src$core$names.prototype.populateProcedures = function(e) {
-        e = Ni(e), e = e[0].concat(e[1]);
+        e = Ci(e), e = e[0].concat(e[1]);
         for (let t = 0; t < e.length; t++) this.getName(e[t][0], i.Names$$module$build$src$core$names.NameType.PROCEDURE);
       };
       var E = {};
-      return E.Block = Jo, E.BlockFlyoutInflater = DE, E.BlockNavigationPolicy = I$, E.BlockSvg = z, E.Blocks = Q, E.ButtonFlyoutInflater = PE, E.COLLAPSED_FIELD_NAME = Sr, E.COLLAPSED_INPUT_NAME = Hi, E.COLLAPSE_CHARS = a$, E.CodeGenerator = i.CodeGenerator$$module$build$src$core$generator, E.CollapsibleToolboxCategory = si, E.ComponentManager = te, E.Connection = H, E.ConnectionChecker = U$, E.ConnectionDB = zo, E.ConnectionNavigationPolicy = O$, E.ConnectionType = f, E.ContextMenu = ms, E.ContextMenuItems = Oe, E.ContextMenuRegistry = x, E.Css = Hu, E.DELETE_VARIABLE_ID = ma, E.DeleteArea = Yr, E.DragTarget = $$, E.DropDownDiv = ve, E.Events = b, E.Extensions = dt, E.Field = Y, E.FieldCheckbox = so, E.FieldDropdown = Me, E.FieldImage = to, E.FieldLabel = Zs, E.FieldLabelSerializable = lE, E.FieldNavigationPolicy = R$, E.FieldNumber = za, E.FieldTextInput = i.FieldTextInput$$module$build$src$core$field_textinput, E.FieldVariable = rn, E.Flyout = Kr, E.FlyoutButton = Ue, E.FlyoutButtonNavigationPolicy = g$, E.FlyoutItem = jo, E.FlyoutMetricsManager = E$, E.FlyoutNavigationPolicy = p$, E.FlyoutNavigator = f$, E.FlyoutSeparator = zr, E.FlyoutSeparatorNavigationPolicy = m$, E.FocusManager = Ne, E.FocusableTreeTraverser = fe, E.Generator = i.CodeGenerator$$module$build$src$core$generator, E.Gesture = jr, E.Grid = fa, E.HorizontalFlyout = rE, E.INPUT_VALUE = qg, E.Input = Ko, E.InsertionMarkerPreviewer = oE, E.KeyboardNavigationController = C$, E.LabelFlyoutInflater = J$, E.LineCursor = Aa, E.Marker = M$, E.MarkerManager = Ca, E.Menu = zu, E.MenuItem = Rr, E.MetricsManager = Oa, E.Msg = i.Msg$$module$build$src$core$msg, E.NEXT_STATEMENT = Qg, E.Names = i.Names$$module$build$src$core$names, E.Navigator = La, E.OPPOSITE_TYPE = Qs, E.OUTPUT_VALUE = Zg, E.Options = At, E.PREVIOUS_STATEMENT = ep, E.PROCEDURE_CATEGORY_NAME = qr, E.Procedures = Pe, E.RENAME_VARIABLE_ID = pa, E.RenderedConnection = Ae, E.Scrollbar = he, E.ScrollbarPair = ba, E.SeparatorFlyoutInflater = A$, E.ShortcutItems = Et, E.ShortcutRegistry = ee, E.TOOLBOX_AT_BOTTOM = sp, E.TOOLBOX_AT_LEFT = op, E.TOOLBOX_AT_RIGHT = ip, E.TOOLBOX_AT_TOP = tp, E.Theme = qs, E.ThemeManager = x$, E.Themes = Jg, E.Toast = Vs, E.Toolbox = zE, E.ToolboxCategory = gt, E.ToolboxItem = hh, E.ToolboxSeparator = un, E.Tooltip = Ke, E.Touch = Us, E.Trashcan = V$, E.UnattachedFieldError = _e, E.VARIABLE_CATEGORY_NAME = Zu, E.VARIABLE_DYNAMIC_CATEGORY_NAME = wa, E.VERSION = jg, E.VariableMap = G$, E.VariableModel = H$, E.Variables = de, E.VariablesDynamic = Os, E.VerticalFlyout = Ya, E.WidgetDiv = ht, E.Workspace = Zo, E.WorkspaceAudio = F$, E.WorkspaceDragger = N$, E.WorkspaceNavigationPolicy = b$, E.WorkspaceSvg = De, E.Xml = ke, E.ZoomControls = $T, E.blockAnimations = qi, E.blockRendering = W, E.browserEvents = Vt, E.bubbles = cn, E.bumpObjects = Wr, E.clipboard = Tt, E.comments = Rs, E.common = me, E.config = i.config$$module$build$src$core$config, E.constants = Og, E.defineBlocksWithJsonArray = pl, E.dialog = Jt, E.dragging = ln, E.fieldRegistry = Ur, E.geras = kt, E.getFocusManager = i.getFocusManager$$module$build$src$core$focus_manager, E.getMainWorkspace = l, E.getSelected = T, E.hasBubble = as, E.hideChaff = x_, E.icons = Is, E.inject = b_, E.inputs = Ss, E.isCopyable = yi, E.isDeletable = ot, E.isDraggable = Po, E.isIcon = kc, E.isObservable = er, E.isPaster = D_, E.isRenderedElement = w_, E.isSelectable = $o, E.isSerializable = mi, E.isVariableBackedParameterModel = kl, E.keyboardNavigationController = Jr, E.layers = Rg, E.navigateBlock = ut, E.navigateStacks = ko, E.procedures = Pe, E.registry = Gt, E.renderManagement = br, E.serialization = Xg, E.setLocale = qu, E.setParentContainer = ls, E.svgResize = Ns, E.thrasos = ah, E.uiPosition = Gs, E.utils = oe, E.zelos = vt, E.__namespace__ = i, E;
+      return E.Block = Ko, E.BlockFlyoutInflater = DE, E.BlockNavigationPolicy = I$, E.BlockSvg = J, E.Blocks = ee, E.ButtonFlyoutInflater = PE, E.COLLAPSED_FIELD_NAME = Sr, E.COLLAPSED_INPUT_NAME = Fi, E.COLLAPSE_CHARS = a$, E.CodeGenerator = i.CodeGenerator$$module$build$src$core$generator, E.CollapsibleToolboxCategory = ti, E.ComponentManager = se, E.Connection = G, E.ConnectionChecker = U$, E.ConnectionDB = Yo, E.ConnectionNavigationPolicy = O$, E.ConnectionType = f, E.ContextMenu = ms, E.ContextMenuItems = Oe, E.ContextMenuRegistry = x, E.Css = Hu, E.DELETE_VARIABLE_ID = ma, E.DeleteArea = Yr, E.DragTarget = $$, E.DropDownDiv = ke, E.Events = b, E.Extensions = dt, E.Field = z, E.FieldCheckbox = to, E.FieldDropdown = ye, E.FieldImage = eo, E.FieldLabel = qs, E.FieldLabelSerializable = lE, E.FieldNavigationPolicy = R$, E.FieldNumber = za, E.FieldTextInput = i.FieldTextInput$$module$build$src$core$field_textinput, E.FieldVariable = nn, E.Flyout = Kr, E.FlyoutButton = Fe, E.FlyoutButtonNavigationPolicy = g$, E.FlyoutItem = Jo, E.FlyoutMetricsManager = E$, E.FlyoutNavigationPolicy = p$, E.FlyoutNavigator = f$, E.FlyoutSeparator = zr, E.FlyoutSeparatorNavigationPolicy = m$, E.FocusManager = Me, E.FocusableTreeTraverser = fe, E.Generator = i.CodeGenerator$$module$build$src$core$generator, E.Gesture = jr, E.Grid = fa, E.HorizontalFlyout = rE, E.INPUT_VALUE = Zg, E.Input = zo, E.InsertionMarkerPreviewer = oE, E.KeyboardNavigationController = C$, E.LabelFlyoutInflater = J$, E.LineCursor = Aa, E.Marker = M$, E.MarkerManager = Ca, E.Menu = zu, E.MenuItem = Rr, E.MetricsManager = Oa, E.Msg = i.Msg$$module$build$src$core$msg, E.NEXT_STATEMENT = ep, E.Names = i.Names$$module$build$src$core$names, E.Navigator = La, E.OPPOSITE_TYPE = Zs, E.OUTPUT_VALUE = Qg, E.Options = At, E.PREVIOUS_STATEMENT = tp, E.PROCEDURE_CATEGORY_NAME = qr, E.Procedures = De, E.RENAME_VARIABLE_ID = pa, E.RenderedConnection = Ae, E.Scrollbar = de, E.ScrollbarPair = ba, E.SeparatorFlyoutInflater = A$, E.ShortcutItems = Et, E.ShortcutRegistry = te, E.TOOLBOX_AT_BOTTOM = op, E.TOOLBOX_AT_LEFT = ip, E.TOOLBOX_AT_RIGHT = np, E.TOOLBOX_AT_TOP = sp, E.Theme = js, E.ThemeManager = x$, E.Themes = jg, E.Toast = Gs, E.Toolbox = zE, E.ToolboxCategory = gt, E.ToolboxItem = hh, E.ToolboxSeparator = cn, E.Tooltip = Ke, E.Touch = xs, E.Trashcan = V$, E.UnattachedFieldError = Te, E.VARIABLE_CATEGORY_NAME = Zu, E.VARIABLE_DYNAMIC_CATEGORY_NAME = wa, E.VERSION = qg, E.VariableMap = G$, E.VariableModel = H$, E.Variables = _e, E.VariablesDynamic = Os, E.VerticalFlyout = Ya, E.WidgetDiv = ht, E.Workspace = qo, E.WorkspaceAudio = F$, E.WorkspaceDragger = N$, E.WorkspaceNavigationPolicy = b$, E.WorkspaceSvg = we, E.Xml = Pe, E.ZoomControls = $T, E.blockAnimations = ji, E.blockRendering = Y, E.browserEvents = Vt, E.bubbles = ln, E.bumpObjects = Wr, E.clipboard = Tt, E.comments = Rs, E.common = me, E.config = i.config$$module$build$src$core$config, E.constants = Rg, E.defineBlocksWithJsonArray = pl, E.dialog = Jt, E.dragging = rn, E.fieldRegistry = Ur, E.geras = kt, E.getFocusManager = i.getFocusManager$$module$build$src$core$focus_manager, E.getMainWorkspace = l, E.getSelected = T, E.hasBubble = as, E.hideChaff = x_, E.icons = Is, E.inject = b_, E.inputs = Ss, E.isCopyable = Mi, E.isDeletable = ot, E.isDraggable = ko, E.isIcon = kc, E.isObservable = er, E.isPaster = D_, E.isRenderedElement = w_, E.isSelectable = To, E.isSerializable = pi, E.isVariableBackedParameterModel = kl, E.keyboardNavigationController = Jr, E.layers = Sg, E.navigateBlock = ut, E.navigateStacks = vo, E.procedures = De, E.registry = Gt, E.renderManagement = br, E.serialization = Wg, E.setLocale = qu, E.setParentContainer = ls, E.svgResize = Cs, E.thrasos = ah, E.uiPosition = Hs, E.utils = ie, E.zelos = vt, E.__namespace__ = i, E;
     });
   })(dl)), dl.exports;
 }
-var cp = lg();
-const up = /* @__PURE__ */ gl(cp), {
-  Block: lD,
-  BlockFlyoutInflater: cD,
-  BlockNavigationPolicy: uD,
-  BlockSvg: aD,
+var up = cg();
+const ap = /* @__PURE__ */ gl(up), {
+  Block: cD,
+  BlockFlyoutInflater: uD,
+  BlockNavigationPolicy: aD,
+  BlockSvg: hD,
   Blocks: Dt,
-  ButtonFlyoutInflater: hD,
-  COLLAPSED_FIELD_NAME: dD,
-  COLLAPSED_INPUT_NAME: _D,
-  COLLAPSE_CHARS: TD,
-  CodeGenerator: $D,
-  CollapsibleToolboxCategory: ED,
-  ComponentManager: gD,
-  Connection: pD,
-  ConnectionChecker: mD,
-  ConnectionDB: ID,
-  ConnectionNavigationPolicy: OD,
-  ConnectionType: RD,
-  ContextMenu: SD,
-  ContextMenuItems: LD,
-  ContextMenuRegistry: bD,
-  Css: fD,
-  DELETE_VARIABLE_ID: AD,
-  DeleteArea: CD,
-  DragTarget: ND,
-  DropDownDiv: MD,
+  ButtonFlyoutInflater: dD,
+  COLLAPSED_FIELD_NAME: _D,
+  COLLAPSED_INPUT_NAME: TD,
+  COLLAPSE_CHARS: $D,
+  CodeGenerator: ED,
+  CollapsibleToolboxCategory: gD,
+  ComponentManager: pD,
+  Connection: mD,
+  ConnectionChecker: ID,
+  ConnectionDB: OD,
+  ConnectionNavigationPolicy: RD,
+  ConnectionType: SD,
+  ContextMenu: LD,
+  ContextMenuItems: bD,
+  ContextMenuRegistry: fD,
+  Css: AD,
+  DELETE_VARIABLE_ID: CD,
+  DeleteArea: ND,
+  DragTarget: MD,
+  DropDownDiv: yD,
   Events: eg,
-  Extensions: yD,
-  Field: vD,
-  FieldCheckbox: kD,
-  FieldDropdown: oo,
-  FieldImage: PD,
-  FieldLabel: DD,
-  FieldLabelSerializable: wD,
-  FieldNavigationPolicy: BD,
+  Extensions: vD,
+  Field: kD,
+  FieldCheckbox: PD,
+  FieldDropdown: so,
+  FieldImage: DD,
+  FieldLabel: wD,
+  FieldLabelSerializable: BD,
+  FieldNavigationPolicy: xD,
   FieldNumber: al,
-  FieldTextInput: io,
-  FieldVariable: xD,
-  Flyout: UD,
-  FlyoutButton: FD,
-  FlyoutButtonNavigationPolicy: HD,
-  FlyoutItem: GD,
-  FlyoutMetricsManager: VD,
-  FlyoutNavigationPolicy: XD,
-  FlyoutNavigator: WD,
-  FlyoutSeparator: YD,
-  FlyoutSeparatorNavigationPolicy: zD,
-  FocusManager: KD,
-  FocusableTreeTraverser: JD,
-  Generator: jD,
-  Gesture: qD,
-  Grid: ZD,
-  HorizontalFlyout: QD,
-  INPUT_VALUE: ew,
-  Input: tw,
-  InsertionMarkerPreviewer: sw,
-  KeyboardNavigationController: ow,
-  LabelFlyoutInflater: iw,
-  LineCursor: nw,
-  Marker: rw,
-  MarkerManager: lw,
-  Menu: cw,
-  MenuItem: uw,
-  MetricsManager: aw,
-  Msg: hw,
-  NEXT_STATEMENT: dw,
-  Names: _w,
-  Navigator: Tw,
-  OPPOSITE_TYPE: $w,
-  OUTPUT_VALUE: Ew,
-  Options: gw,
-  PREVIOUS_STATEMENT: pw,
-  PROCEDURE_CATEGORY_NAME: mw,
-  Procedures: Iw,
-  RENAME_VARIABLE_ID: Ow,
-  RenderedConnection: Rw,
-  Scrollbar: Sw,
-  ScrollbarPair: Lw,
-  SeparatorFlyoutInflater: bw,
-  ShortcutItems: fw,
-  ShortcutRegistry: Aw,
-  TOOLBOX_AT_BOTTOM: Cw,
-  TOOLBOX_AT_LEFT: Nw,
-  TOOLBOX_AT_RIGHT: Mw,
-  TOOLBOX_AT_TOP: yw,
-  Theme: ap,
-  ThemeManager: vw,
-  Themes: hp,
-  Toast: kw,
-  Toolbox: Pw,
-  ToolboxCategory: Dw,
-  ToolboxItem: ww,
-  ToolboxSeparator: Bw,
-  Tooltip: xw,
-  Touch: Uw,
-  Trashcan: Fw,
-  UnattachedFieldError: Hw,
-  VARIABLE_CATEGORY_NAME: Gw,
-  VARIABLE_DYNAMIC_CATEGORY_NAME: Vw,
-  VERSION: Xw,
-  VariableMap: Ww,
-  VariableModel: Yw,
-  Variables: zw,
-  VariablesDynamic: Kw,
-  VerticalFlyout: Jw,
-  WidgetDiv: jw,
-  Workspace: qw,
-  WorkspaceAudio: Zw,
-  WorkspaceDragger: Qw,
-  WorkspaceNavigationPolicy: eB,
-  WorkspaceSvg: tB,
-  Xml: sB,
-  ZoomControls: oB,
-  blockAnimations: iB,
-  blockRendering: nB,
-  browserEvents: rB,
-  bubbles: lB,
-  bumpObjects: cB,
-  clipboard: uB,
-  comments: aB,
-  common: hB,
-  config: dB,
-  constants: _B,
-  defineBlocksWithJsonArray: TB,
-  dialog: $B,
-  dragging: EB,
-  fieldRegistry: gB,
-  geras: pB,
-  getFocusManager: mB,
-  getMainWorkspace: IB,
-  getSelected: OB,
-  hasBubble: RB,
-  hideChaff: SB,
-  icons: LB,
-  inject: dp,
-  inputs: bB,
-  isCopyable: fB,
-  isDeletable: AB,
-  isDraggable: CB,
-  isIcon: NB,
-  isObservable: MB,
-  isPaster: yB,
-  isRenderedElement: vB,
-  isSelectable: kB,
-  isSerializable: PB,
-  isVariableBackedParameterModel: DB,
-  keyboardNavigationController: wB,
-  layers: BB,
-  navigateBlock: xB,
-  navigateStacks: UB,
-  procedures: FB,
-  registry: HB,
+  FieldTextInput: oo,
+  FieldVariable: UD,
+  Flyout: FD,
+  FlyoutButton: HD,
+  FlyoutButtonNavigationPolicy: GD,
+  FlyoutItem: VD,
+  FlyoutMetricsManager: XD,
+  FlyoutNavigationPolicy: WD,
+  FlyoutNavigator: YD,
+  FlyoutSeparator: zD,
+  FlyoutSeparatorNavigationPolicy: KD,
+  FocusManager: JD,
+  FocusableTreeTraverser: jD,
+  Generator: qD,
+  Gesture: ZD,
+  Grid: QD,
+  HorizontalFlyout: ew,
+  INPUT_VALUE: tw,
+  Input: sw,
+  InsertionMarkerPreviewer: ow,
+  KeyboardNavigationController: iw,
+  LabelFlyoutInflater: nw,
+  LineCursor: rw,
+  Marker: lw,
+  MarkerManager: cw,
+  Menu: uw,
+  MenuItem: aw,
+  MetricsManager: hw,
+  Msg: dw,
+  NEXT_STATEMENT: _w,
+  Names: Tw,
+  Navigator: $w,
+  OPPOSITE_TYPE: Ew,
+  OUTPUT_VALUE: gw,
+  Options: pw,
+  PREVIOUS_STATEMENT: mw,
+  PROCEDURE_CATEGORY_NAME: Iw,
+  Procedures: Ow,
+  RENAME_VARIABLE_ID: Rw,
+  RenderedConnection: Sw,
+  Scrollbar: Lw,
+  ScrollbarPair: bw,
+  SeparatorFlyoutInflater: fw,
+  ShortcutItems: Aw,
+  ShortcutRegistry: Cw,
+  TOOLBOX_AT_BOTTOM: Nw,
+  TOOLBOX_AT_LEFT: Mw,
+  TOOLBOX_AT_RIGHT: yw,
+  TOOLBOX_AT_TOP: vw,
+  Theme: hp,
+  ThemeManager: kw,
+  Themes: dp,
+  Toast: Pw,
+  Toolbox: Dw,
+  ToolboxCategory: ww,
+  ToolboxItem: Bw,
+  ToolboxSeparator: xw,
+  Tooltip: Uw,
+  Touch: Fw,
+  Trashcan: Hw,
+  UnattachedFieldError: Gw,
+  VARIABLE_CATEGORY_NAME: Vw,
+  VARIABLE_DYNAMIC_CATEGORY_NAME: Xw,
+  VERSION: Ww,
+  VariableMap: Yw,
+  VariableModel: zw,
+  Variables: Kw,
+  VariablesDynamic: Jw,
+  VerticalFlyout: jw,
+  WidgetDiv: qw,
+  Workspace: Zw,
+  WorkspaceAudio: Qw,
+  WorkspaceDragger: eB,
+  WorkspaceNavigationPolicy: tB,
+  WorkspaceSvg: sB,
+  Xml: oB,
+  ZoomControls: iB,
+  blockAnimations: nB,
+  blockRendering: rB,
+  browserEvents: lB,
+  bubbles: cB,
+  bumpObjects: uB,
+  clipboard: aB,
+  comments: hB,
+  common: dB,
+  config: _B,
+  constants: TB,
+  defineBlocksWithJsonArray: $B,
+  dialog: EB,
+  dragging: gB,
+  fieldRegistry: pB,
+  geras: mB,
+  getFocusManager: IB,
+  getMainWorkspace: OB,
+  getSelected: RB,
+  hasBubble: SB,
+  hideChaff: LB,
+  icons: bB,
+  inject: _p,
+  inputs: fB,
+  isCopyable: AB,
+  isDeletable: CB,
+  isDraggable: NB,
+  isIcon: MB,
+  isObservable: yB,
+  isPaster: vB,
+  isRenderedElement: kB,
+  isSelectable: PB,
+  isSerializable: DB,
+  isVariableBackedParameterModel: wB,
+  keyboardNavigationController: BB,
+  layers: xB,
+  navigateBlock: UB,
+  navigateStacks: FB,
+  procedures: HB,
+  registry: GB,
   renderManagement: hl,
-  serialization: GB,
-  setLocale: _p,
-  setParentContainer: VB,
+  serialization: VB,
+  setLocale: Tp,
+  setParentContainer: XB,
   svgResize: _h,
-  thrasos: XB,
-  uiPosition: WB,
-  utils: YB,
-  zelos: zB
-} = up;
-var _l = { exports: {} }, Tp = _l.exports, tg;
-function $p() {
-  return tg || (tg = 1, (function(C, k) {
+  thrasos: WB,
+  uiPosition: YB,
+  utils: zB,
+  zelos: KB
+} = ap;
+var _l = { exports: {} }, $p = _l.exports, tg;
+function Ep() {
+  return tg || (tg = 1, (function(C, P) {
     (function(i, c) {
-      C.exports = c(lg());
-    })(Tp, function(i) {
-      var c = i.__namespace__, q = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "variables_get_dynamic", message0: "%1", args0: [{ type: "field_variable", name: "VAR", variable: "%{BKY_VARIABLES_DEFAULT_NAME}" }], output: null, style: "variable_dynamic_blocks", helpUrl: "%{BKY_VARIABLES_GET_HELPURL}", tooltip: "%{BKY_VARIABLES_GET_TOOLTIP}", extensions: ["contextMenu_variableDynamicSetterGetter"] }, { type: "variables_set_dynamic", message0: "%{BKY_VARIABLES_SET}", args0: [{
+      C.exports = c(cg());
+    })($p, function(i) {
+      var c = i.__namespace__, U = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "variables_get_dynamic", message0: "%1", args0: [{ type: "field_variable", name: "VAR", variable: "%{BKY_VARIABLES_DEFAULT_NAME}" }], output: null, style: "variable_dynamic_blocks", helpUrl: "%{BKY_VARIABLES_GET_HELPURL}", tooltip: "%{BKY_VARIABLES_GET_TOOLTIP}", extensions: ["contextMenu_variableDynamicSetterGetter"] }, { type: "variables_set_dynamic", message0: "%{BKY_VARIABLES_SET}", args0: [{
         type: "field_variable",
         name: "VAR",
         variable: "%{BKY_VARIABLES_DEFAULT_NAME}"
-      }, { type: "input_value", name: "VALUE" }], previousStatement: null, nextStatement: null, style: "variable_dynamic_blocks", tooltip: "%{BKY_VARIABLES_SET_TOOLTIP}", helpUrl: "%{BKY_VARIABLES_SET_HELPURL}", extensions: ["contextMenu_variableDynamicSetterGetter"] }]), $e = { customContextMenu: function(l) {
+      }, { type: "input_value", name: "VALUE" }], previousStatement: null, nextStatement: null, style: "variable_dynamic_blocks", tooltip: "%{BKY_VARIABLES_SET_TOOLTIP}", helpUrl: "%{BKY_VARIABLES_SET_HELPURL}", extensions: ["contextMenu_variableDynamicSetterGetter"] }]), K = { customContextMenu: function(l) {
         if (this.isInFlyout)
           (this.type === "variables_get_dynamic" || this.type === "variables_get_reporter_dynamic") && (T = {
             text: c.Msg$$module$build$src$core$msg.RENAME_VARIABLE,
             enabled: !0,
-            callback: Fe(this)
-          }, p = this.getField("VAR").getText(), p = { text: c.Msg$$module$build$src$core$msg.DELETE_VARIABLE.replace("%1", p), enabled: !0, callback: no(this) }, l.unshift(T), l.unshift(p));
+            callback: Ce(this)
+          }, p = this.getField("VAR").getText(), p = { text: c.Msg$$module$build$src$core$msg.DELETE_VARIABLE.replace("%1", p), enabled: !0, callback: io(this) }, l.unshift(T), l.unshift(p));
         else {
           if (this.type === "variables_get_dynamic")
             var a = "variables_set_dynamic", T = c.Msg$$module$build$src$core$msg.VARIABLES_GET_CREATE_SET;
@@ -16057,24 +16057,24 @@ function $p() {
         }
       }, onchange: function(l) {
         l = this.getFieldValue("VAR"), l = c.getVariable$$module$build$src$core$variables(this.workspace, l), this.type === "variables_get_dynamic" ? this.outputConnection.setCheck(l.getType()) : this.getInput("VALUE").connection.setCheck(l.getType());
-      } }, Fe = function(l) {
+      } }, Ce = function(l) {
         return function() {
           const a = l.workspace, T = l.getField("VAR").getVariable();
           c.renameVariable$$module$build$src$core$variables(a, T);
         };
-      }, no = function(l) {
+      }, io = function(l) {
         return function() {
           const a = l.getField("VAR").getVariable();
           a && c.deleteVariable$$module$build$src$core$variables(a.getWorkspace(), a, l);
         };
       };
-      c.registerMixin$$module$build$src$core$extensions("contextMenu_variableDynamicSetterGetter", $e), c.defineBlocks$$module$build$src$core$common(q);
-      var Ge = { blocks: q }, ct = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "variables_get", message0: "%1", args0: [{ type: "field_variable", name: "VAR", variable: "%{BKY_VARIABLES_DEFAULT_NAME}" }], output: null, style: "variable_blocks", helpUrl: "%{BKY_VARIABLES_GET_HELPURL}", tooltip: "%{BKY_VARIABLES_GET_TOOLTIP}", extensions: ["contextMenu_variableSetterGetter"] }, { type: "variables_set", message0: "%{BKY_VARIABLES_SET}", args0: [
+      c.registerMixin$$module$build$src$core$extensions("contextMenu_variableDynamicSetterGetter", K), c.defineBlocks$$module$build$src$core$common(U);
+      var Ge = { blocks: U }, ct = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "variables_get", message0: "%1", args0: [{ type: "field_variable", name: "VAR", variable: "%{BKY_VARIABLES_DEFAULT_NAME}" }], output: null, style: "variable_blocks", helpUrl: "%{BKY_VARIABLES_GET_HELPURL}", tooltip: "%{BKY_VARIABLES_GET_TOOLTIP}", extensions: ["contextMenu_variableSetterGetter"] }, { type: "variables_set", message0: "%{BKY_VARIABLES_SET}", args0: [
         { type: "field_variable", name: "VAR", variable: "%{BKY_VARIABLES_DEFAULT_NAME}" },
         { type: "input_value", name: "VALUE" }
-      ], previousStatement: null, nextStatement: null, style: "variable_blocks", tooltip: "%{BKY_VARIABLES_SET_TOOLTIP}", helpUrl: "%{BKY_VARIABLES_SET_HELPURL}", extensions: ["contextMenu_variableSetterGetter"] }]), ro = { customContextMenu: function(l) {
+      ], previousStatement: null, nextStatement: null, style: "variable_blocks", tooltip: "%{BKY_VARIABLES_SET_TOOLTIP}", helpUrl: "%{BKY_VARIABLES_SET_HELPURL}", extensions: ["contextMenu_variableSetterGetter"] }]), no = { customContextMenu: function(l) {
         if (this.isInFlyout)
-          (this.type === "variables_get" || this.type === "variables_get_reporter") && (T = { text: c.Msg$$module$build$src$core$msg.RENAME_VARIABLE, enabled: !0, callback: Re(this) }, p = this.getField("VAR").getText(), p = { text: c.Msg$$module$build$src$core$msg.DELETE_VARIABLE.replace("%1", p), enabled: !0, callback: oi(this) }, l.unshift(T), l.unshift(p));
+          (this.type === "variables_get" || this.type === "variables_get_reporter") && (T = { text: c.Msg$$module$build$src$core$msg.RENAME_VARIABLE, enabled: !0, callback: Re(this) }, p = this.getField("VAR").getText(), p = { text: c.Msg$$module$build$src$core$msg.DELETE_VARIABLE.replace("%1", p), enabled: !0, callback: si(this) }, l.unshift(T), l.unshift(p));
         else {
           if (this.type === "variables_get")
             var a = "variables_set", T = c.Msg$$module$build$src$core$msg.VARIABLES_GET_CREATE_SET;
@@ -16087,14 +16087,14 @@ function $p() {
           const a = l.workspace, T = l.getField("VAR").getVariable();
           c.renameVariable$$module$build$src$core$variables(a, T);
         };
-      }, oi = function(l) {
+      }, si = function(l) {
         return function() {
           const a = l.getField("VAR").getVariable();
           a && c.deleteVariable$$module$build$src$core$variables(a.getWorkspace(), a, l);
         };
       };
-      c.registerMixin$$module$build$src$core$extensions("contextMenu_variableSetterGetter", ro), c.defineBlocks$$module$build$src$core$common(ct);
-      var Qe = { blocks: ct }, J = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([
+      c.registerMixin$$module$build$src$core$extensions("contextMenu_variableSetterGetter", no), c.defineBlocks$$module$build$src$core$common(ct);
+      var Qe = { blocks: ct }, q = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([
         { type: "text", message0: "%1", args0: [{ type: "field_input", name: "TEXT", text: "" }], output: "String", style: "text_blocks", helpUrl: "%{BKY_TEXT_TEXT_HELPURL}", tooltip: "%{BKY_TEXT_TEXT_TOOLTIP}", extensions: ["text_quotes", "parent_tooltip_when_inline"] },
         { type: "text_join", message0: "", output: "String", style: "text_blocks", helpUrl: "%{BKY_TEXT_JOIN_HELPURL}", tooltip: "%{BKY_TEXT_JOIN_TOOLTIP}", mutator: "text_join_mutator" },
         { type: "text_create_join_container", message0: "%{BKY_TEXT_CREATE_JOIN_TITLE_JOIN} %1 %2", args0: [{ type: "input_dummy" }, { type: "input_statement", name: "STACK" }], style: "text_blocks", tooltip: "%{BKY_TEXT_CREATE_JOIN_TOOLTIP}", enableContextMenu: !1 },
@@ -16138,7 +16138,7 @@ function $p() {
           inputsInline: !0,
           mutator: "text_charAt_mutator"
         }
-      ]), bs = { init: function() {
+      ]), Ls = { init: function() {
         this.WHERE_OPTIONS_1 = [[c.Msg$$module$build$src$core$msg.TEXT_GET_SUBSTRING_START_FROM_START, "FROM_START"], [c.Msg$$module$build$src$core$msg.TEXT_GET_SUBSTRING_START_FROM_END, "FROM_END"], [c.Msg$$module$build$src$core$msg.TEXT_GET_SUBSTRING_START_FIRST, "FIRST"]], this.WHERE_OPTIONS_2 = [[c.Msg$$module$build$src$core$msg.TEXT_GET_SUBSTRING_END_FROM_START, "FROM_START"], [
           c.Msg$$module$build$src$core$msg.TEXT_GET_SUBSTRING_END_FROM_END,
           "FROM_END"
@@ -16167,19 +16167,19 @@ function $p() {
           !0
         ), this.appendDummyInput("TAIL").appendField(c.Msg$$module$build$src$core$msg.TEXT_GET_SUBSTRING_TAIL)), l === 1 && (this.moveInputBefore("AT1", "WHERE2_INPUT"), this.getInput("ORDINAL1") && this.moveInputBefore("ORDINAL1", "WHERE2_INPUT"));
       } };
-      J.text_getSubstring = bs, J.text_changeCase = { init: function() {
+      q.text_getSubstring = Ls, q.text_changeCase = { init: function() {
         const l = [[c.Msg$$module$build$src$core$msg.TEXT_CHANGECASE_OPERATOR_UPPERCASE, "UPPERCASE"], [c.Msg$$module$build$src$core$msg.TEXT_CHANGECASE_OPERATOR_LOWERCASE, "LOWERCASE"], [c.Msg$$module$build$src$core$msg.TEXT_CHANGECASE_OPERATOR_TITLECASE, "TITLECASE"]];
         this.setHelpUrl(c.Msg$$module$build$src$core$msg.TEXT_CHANGECASE_HELPURL), this.setStyle("text_blocks"), this.appendValueInput("TEXT").setCheck("String").appendField(c.fromJson$$module$build$src$core$field_registry({
           type: "field_dropdown",
           options: l
         }), "CASE"), this.setOutput(!0, "String"), this.setTooltip(c.Msg$$module$build$src$core$msg.TEXT_CHANGECASE_TOOLTIP);
-      } }, J.text_trim = { init: function() {
+      } }, q.text_trim = { init: function() {
         const l = [[c.Msg$$module$build$src$core$msg.TEXT_TRIM_OPERATOR_BOTH, "BOTH"], [c.Msg$$module$build$src$core$msg.TEXT_TRIM_OPERATOR_LEFT, "LEFT"], [c.Msg$$module$build$src$core$msg.TEXT_TRIM_OPERATOR_RIGHT, "RIGHT"]];
         this.setHelpUrl(c.Msg$$module$build$src$core$msg.TEXT_TRIM_HELPURL), this.setStyle("text_blocks"), this.appendValueInput("TEXT").setCheck("String").appendField(
           c.fromJson$$module$build$src$core$field_registry({ type: "field_dropdown", options: l }),
           "MODE"
         ), this.setOutput(!0, "String"), this.setTooltip(c.Msg$$module$build$src$core$msg.TEXT_TRIM_TOOLTIP);
-      } }, J.text_print = { init: function() {
+      } }, q.text_print = { init: function() {
         this.jsonInit({ message0: c.Msg$$module$build$src$core$msg.TEXT_PRINT_TITLE, args0: [{ type: "input_value", name: "TEXT" }], previousStatement: null, nextStatement: null, style: "text_blocks", tooltip: c.Msg$$module$build$src$core$msg.TEXT_PRINT_TOOLTIP, helpUrl: c.Msg$$module$build$src$core$msg.TEXT_PRINT_HELPURL });
       } };
       var wt = { updateType_: function(l) {
@@ -16190,7 +16190,7 @@ function $p() {
       }, domToMutation: function(l) {
         this.updateType_(l.getAttribute("type"));
       } };
-      J.text_prompt_ext = Object.assign({}, wt, { init: function() {
+      q.text_prompt_ext = Object.assign({}, wt, { init: function() {
         var l = [[c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TYPE_TEXT, "TEXT"], [c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TYPE_NUMBER, "NUMBER"]];
         this.setHelpUrl(c.Msg$$module$build$src$core$msg.TEXT_PROMPT_HELPURL), this.setStyle("text_blocks"), l = c.fromJson$$module$build$src$core$field_registry({ type: "field_dropdown", options: l }), l.setValidator((a) => {
           this.updateType_(a);
@@ -16198,17 +16198,17 @@ function $p() {
           l,
           "TYPE"
         ), this.setOutput(!0, "String"), this.setTooltip(() => this.getFieldValue("TYPE") === "TEXT" ? c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TOOLTIP_TEXT : c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TOOLTIP_NUMBER);
-      } }), J.text_prompt = Object.assign({}, wt, { init: function() {
+      } }), q.text_prompt = Object.assign({}, wt, { init: function() {
         this.mixin(ts);
         var l = [[c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TYPE_TEXT, "TEXT"], [c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TYPE_NUMBER, "NUMBER"]];
         this.setHelpUrl(c.Msg$$module$build$src$core$msg.TEXT_PROMPT_HELPURL), this.setStyle("text_blocks"), l = c.fromJson$$module$build$src$core$field_registry({ type: "field_dropdown", options: l }), l.setValidator((a) => {
           this.updateType_(a);
         }), this.appendDummyInput().appendField(l, "TYPE").appendField(this.newQuote_(!0)).appendField(c.fromJson$$module$build$src$core$field_registry({ type: "field_input", text: "" }), "TEXT").appendField(this.newQuote_(!1)), this.setOutput(!0, "String"), this.setTooltip(() => this.getFieldValue("TYPE") === "TEXT" ? c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TOOLTIP_TEXT : c.Msg$$module$build$src$core$msg.TEXT_PROMPT_TOOLTIP_NUMBER);
-      } }), J.text_count = { init: function() {
+      } }), q.text_count = { init: function() {
         this.jsonInit({ message0: c.Msg$$module$build$src$core$msg.TEXT_COUNT_MESSAGE0, args0: [{ type: "input_value", name: "SUB", check: "String" }, { type: "input_value", name: "TEXT", check: "String" }], output: "Number", inputsInline: !0, style: "text_blocks", tooltip: c.Msg$$module$build$src$core$msg.TEXT_COUNT_TOOLTIP, helpUrl: c.Msg$$module$build$src$core$msg.TEXT_COUNT_HELPURL });
-      } }, J.text_replace = { init: function() {
+      } }, q.text_replace = { init: function() {
         this.jsonInit({ message0: c.Msg$$module$build$src$core$msg.TEXT_REPLACE_MESSAGE0, args0: [{ type: "input_value", name: "FROM", check: "String" }, { type: "input_value", name: "TO", check: "String" }, { type: "input_value", name: "TEXT", check: "String" }], output: "String", inputsInline: !0, style: "text_blocks", tooltip: c.Msg$$module$build$src$core$msg.TEXT_REPLACE_TOOLTIP, helpUrl: c.Msg$$module$build$src$core$msg.TEXT_REPLACE_HELPURL });
-      } }, J.text_reverse = { init: function() {
+      } }, q.text_reverse = { init: function() {
         this.jsonInit({ message0: c.Msg$$module$build$src$core$msg.TEXT_REVERSE_MESSAGE0, args0: [{ type: "input_value", name: "TEXT", check: "String" }], output: "String", inputsInline: !0, style: "text_blocks", tooltip: c.Msg$$module$build$src$core$msg.TEXT_REVERSE_TOOLTIP, helpUrl: c.Msg$$module$build$src$core$msg.TEXT_REVERSE_HELPURL });
       } };
       var ts = {
@@ -16232,9 +16232,9 @@ function $p() {
             alt: l ? "“" : "”"
           });
         }
-      }, P = function() {
+      }, k = function() {
         this.mixin(ts), this.quoteField_("TEXT");
-      }, Be = {
+      }, xe = {
         itemCount_: 0,
         mutationToDom: function() {
           const l = c.createElement$$module$build$src$core$utils$xml("mutation");
@@ -16291,11 +16291,11 @@ function $p() {
           }
           for (l = this.itemCount_; this.getInput("ADD" + l); l++) this.removeInput("ADD" + l);
         }
-      }, G = function() {
+      }, V = function() {
         this.mixin(ts), this.itemCount_ = 2, this.updateShape_(), this.setMutator(new c.MutatorIcon$$module$build$src$core$icons$mutator_icon(["text_create_join_item"], this));
       };
       c.register$$module$build$src$core$extensions("text_append_tooltip", c.buildTooltipWithFieldText$$module$build$src$core$extensions("%{BKY_TEXT_APPEND_TOOLTIP}", "VAR"));
-      var fs = function() {
+      var bs = function() {
         this.setTooltip(() => c.Msg$$module$build$src$core$msg.TEXT_INDEXOF_TOOLTIP.replace("%1", this.workspace.options.oneBasedIndex ? "0" : "-1"));
       }, Ve = { isAt_: !1, mutationToDom: function() {
         const l = c.createElement$$module$build$src$core$utils$xml("mutation");
@@ -16318,8 +16318,8 @@ function $p() {
           return (l === "FROM_START" || l === "FROM_END") && (l = l === "FROM_START" ? c.Msg$$module$build$src$core$msg.LISTS_INDEX_FROM_START_TOOLTIP : c.Msg$$module$build$src$core$msg.LISTS_INDEX_FROM_END_TOOLTIP) && (a += "  " + l.replace("%1", this.workspace.options.oneBasedIndex ? "#1" : "#0")), a;
         });
       };
-      c.register$$module$build$src$core$extensions("text_indexOf_tooltip", fs), c.register$$module$build$src$core$extensions("text_quotes", P), c.registerMixin$$module$build$src$core$extensions("quote_image_mixin", ts), c.registerMutator$$module$build$src$core$extensions("text_join_mutator", Be, G), c.registerMutator$$module$build$src$core$extensions("text_charAt_mutator", Ve, ss), c.defineBlocks$$module$build$src$core$common(J);
-      var As = { blocks: J }, ne = {}, et = { setStatements_: function(l) {
+      c.register$$module$build$src$core$extensions("text_indexOf_tooltip", bs), c.register$$module$build$src$core$extensions("text_quotes", k), c.registerMixin$$module$build$src$core$extensions("quote_image_mixin", ts), c.registerMutator$$module$build$src$core$extensions("text_join_mutator", xe, V), c.registerMutator$$module$build$src$core$extensions("text_charAt_mutator", Ve, ss), c.defineBlocks$$module$build$src$core$common(q);
+      var fs = { blocks: q }, re = {}, et = { setStatements_: function(l) {
         this.hasStatements_ !== l && (l ? (this.appendStatementInput("STACK").appendField(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_DO), this.getInput("RETURN") && this.moveInputBefore("STACK", "RETURN")) : this.removeInput("STACK", !0), this.hasStatements_ = l);
       }, updateParams_: function() {
         let l = "";
@@ -16376,15 +16376,15 @@ function $p() {
         var T = c.createElement$$module$build$src$core$utils$xml("statement");
         T.setAttribute("name", "STACK"), a.appendChild(T);
         for (let S = 0; S < this.arguments_.length; S++) {
-          const Z = c.createElement$$module$build$src$core$utils$xml("block");
-          Z.setAttribute("type", "procedures_mutatorarg");
+          const Q = c.createElement$$module$build$src$core$utils$xml("block");
+          Q.setAttribute("type", "procedures_mutatorarg");
           var p = c.createElement$$module$build$src$core$utils$xml("field");
           p.setAttribute(
             "name",
             "NAME"
           );
           const ls = c.createTextNode$$module$build$src$core$utils$xml(this.arguments_[S]);
-          p.appendChild(ls), Z.appendChild(p), p = c.createElement$$module$build$src$core$utils$xml("next"), Z.appendChild(p), T.appendChild(Z), T = p;
+          p.appendChild(ls), Q.appendChild(p), p = c.createElement$$module$build$src$core$utils$xml("next"), Q.appendChild(p), T.appendChild(Q), T = p;
         }
         return l = c.domToBlock$$module$build$src$core$xml(a, l), this.type === "procedures_defreturn" ? l.setFieldValue(this.hasStatements_, "STATEMENTS") : l.removeInput("STATEMENT_INPUT"), c.mutateCallers$$module$build$src$core$procedures(this), l;
       }, compose: function(l) {
@@ -16437,7 +16437,7 @@ function $p() {
           }
         }
       } };
-      ne.procedures_defnoreturn = Object.assign({}, et, { init: function() {
+      re.procedures_defnoreturn = Object.assign({}, et, { init: function() {
         var l = c.findLegalName$$module$build$src$core$procedures("", this);
         l = c.fromJson$$module$build$src$core$field_registry({ type: "field_input", text: l }), l.setValidator(c.rename$$module$build$src$core$procedures), l.setSpellcheck(!1), this.appendDummyInput().appendField(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_TITLE).appendField(l, "NAME").appendField(
           "",
@@ -16445,7 +16445,7 @@ function $p() {
         ), this.setMutator(new c.MutatorIcon$$module$build$src$core$icons$mutator_icon(["procedures_mutatorarg"], this)), (this.workspace.options.comments || this.workspace.options.parentWorkspace && this.workspace.options.parentWorkspace.options.comments) && c.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_COMMENT && this.setCommentText(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_COMMENT), this.setStyle("procedure_blocks"), this.setTooltip(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_TOOLTIP), this.setHelpUrl(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFNORETURN_HELPURL), this.arguments_ = [], this.argumentVarModels_ = [], this.setStatements_(!0), this.statementConnection_ = null;
       }, getProcedureDef: function() {
         return [this.getFieldValue("NAME"), this.arguments_, !1];
-      }, callType_: "procedures_callnoreturn" }), ne.procedures_defreturn = Object.assign({}, et, { init: function() {
+      }, callType_: "procedures_callnoreturn" }), re.procedures_defreturn = Object.assign({}, et, { init: function() {
         var l = c.findLegalName$$module$build$src$core$procedures("", this);
         l = c.fromJson$$module$build$src$core$field_registry({ type: "field_input", text: l }), l.setValidator(c.rename$$module$build$src$core$procedures), l.setSpellcheck(!1), this.appendDummyInput().appendField(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFRETURN_TITLE).appendField(l, "NAME").appendField(
           "",
@@ -16454,11 +16454,11 @@ function $p() {
       }, getProcedureDef: function() {
         return [this.getFieldValue("NAME"), this.arguments_, !0];
       }, callType_: "procedures_callreturn" });
-      var lo = { init: function() {
+      var ro = { init: function() {
         this.appendDummyInput().appendField(c.Msg$$module$build$src$core$msg.PROCEDURES_MUTATORCONTAINER_TITLE), this.appendStatementInput("STACK"), this.appendDummyInput("STATEMENT_INPUT").appendField(c.Msg$$module$build$src$core$msg.PROCEDURES_ALLOW_STATEMENTS).appendField(c.fromJson$$module$build$src$core$field_registry({ type: "field_checkbox", checked: !0 }), "STATEMENTS"), this.setStyle("procedure_blocks"), this.setTooltip(c.Msg$$module$build$src$core$msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP), this.contextMenu = !1;
       } };
-      ne.procedures_mutatorcontainer = lo;
-      var ii = class extends c.FieldTextInput$$module$build$src$core$field_textinput {
+      re.procedures_mutatorcontainer = ro;
+      var oi = class extends c.FieldTextInput$$module$build$src$core$field_textinput {
         constructor() {
           super(...arguments), this.editingInteractively = !1;
         }
@@ -16469,7 +16469,7 @@ function $p() {
           super.onFinishEditing_(l), this.editingInteractively = !1;
         }
       }, os = { init: function() {
-        const l = new ii(
+        const l = new oi(
           c.DEFAULT_ARG$$module$build$src$core$procedures,
           this.validator_
         );
@@ -16478,15 +16478,15 @@ function $p() {
         var a = this.getSourceBlock(), T = a.workspace.getRootWorkspace();
         if (l = l.replace(/[\s\xa0]+/g, " ").replace(/^ | $/g, ""), !l) return null;
         const p = (a.workspace.targetWorkspace || a.workspace).getAllBlocks(!1), S = l.toLowerCase();
-        for (let Z = 0; Z < p.length; Z++) {
-          if (p[Z].id === this.getSourceBlock().id) continue;
-          const ls = p[Z].getFieldValue("NAME");
+        for (let Q = 0; Q < p.length; Q++) {
+          if (p[Q].id === this.getSourceBlock().id) continue;
+          const ls = p[Q].getFieldValue("NAME");
           if (ls && ls.toLowerCase() === S) return null;
         }
         return a.isInFlyout || (a = T.getVariableMap(), (T = a.getVariable(l, "")) && T.getName() !== l && a.renameVariable(T, l), T || (this.editingInteractively ? this.editingVariable ? a.renameVariable(this.editingVariable, l) : this.editingVariable = a.createVariable(l, "") : a.createVariable(l, ""))), l;
       } };
-      ne.procedures_mutatorarg = os;
-      var ni = "DISABLED_PROCEDURE_DEFINITION", is = { getProcedureCall: function() {
+      re.procedures_mutatorarg = os;
+      var ii = "DISABLED_PROCEDURE_DEFINITION", is = { getProcedureCall: function() {
         return this.getFieldValue("NAME");
       }, renameProcedure: function(l, a) {
         c.Names$$module$build$src$core$names.equals(l, this.getProcedureCall()) && (this.setFieldValue(a, "NAME"), this.setTooltip((this.outputConnection ? c.Msg$$module$build$src$core$msg.PROCEDURES_CALLRETURN_TOOLTIP : c.Msg$$module$build$src$core$msg.PROCEDURES_CALLNORETURN_TOOLTIP).replace(
@@ -16562,7 +16562,7 @@ function $p() {
       }, onchange: function(l) {
         if (this.workspace && !this.workspace.isFlyout && l.recordUndo) if (l.type === c.BLOCK_CREATE$$module$build$src$core$events$events && l.ids.includes(this.id)) {
           var a = this.getProcedureCall(), T = c.getDefinition$$module$build$src$core$procedures(a, this.workspace);
-          if (!T || T.type === this.defType_ && JSON.stringify(T.getVars()) === JSON.stringify(this.arguments_) || (T = null), T) T.isEnabled() || (this.setDisabledReason(!0, ni), this.setWarningText(c.Msg$$module$build$src$core$msg.PROCEDURES_CALL_DISABLED_DEF_WARNING.replace(
+          if (!T || T.type === this.defType_ && JSON.stringify(T.getVars()) === JSON.stringify(this.arguments_) || (T = null), T) T.isEnabled() || (this.setDisabledReason(!0, ii), this.setWarningText(c.Msg$$module$build$src$core$msg.PROCEDURES_CALL_DISABLED_DEF_WARNING.replace(
             "%1",
             a
           )));
@@ -16576,7 +16576,7 @@ function $p() {
         } else l.type === c.BLOCK_DELETE$$module$build$src$core$events$events ? (a = this.getProcedureCall(), c.getDefinition$$module$build$src$core$procedures(
           a,
           this.workspace
-        ) || (c.setGroup$$module$build$src$core$events$utils(l.group), this.dispose(!0), c.setGroup$$module$build$src$core$events$utils(!1))) : l.type === c.BLOCK_CHANGE$$module$build$src$core$events$events && l.element === "disabled" && (a = this.getProcedureCall(), (p = c.getDefinition$$module$build$src$core$procedures(a, this.workspace)) && p.id === l.blockId && ((T = c.getGroup$$module$build$src$core$events$utils()) && console.log("Saw an existing group while responding to a definition change"), c.setGroup$$module$build$src$core$events$utils(l.group), l = p.isEnabled(), this.setDisabledReason(!l, ni), this.setWarningText(l ? null : c.Msg$$module$build$src$core$msg.PROCEDURES_CALL_DISABLED_DEF_WARNING.replace("%1", a)), c.setGroup$$module$build$src$core$events$utils(T)));
+        ) || (c.setGroup$$module$build$src$core$events$utils(l.group), this.dispose(!0), c.setGroup$$module$build$src$core$events$utils(!1))) : l.type === c.BLOCK_CHANGE$$module$build$src$core$events$events && l.element === "disabled" && (a = this.getProcedureCall(), (p = c.getDefinition$$module$build$src$core$procedures(a, this.workspace)) && p.id === l.blockId && ((T = c.getGroup$$module$build$src$core$events$utils()) && console.log("Saw an existing group while responding to a definition change"), c.setGroup$$module$build$src$core$events$utils(l.group), l = p.isEnabled(), this.setDisabledReason(!l, ii), this.setWarningText(l ? null : c.Msg$$module$build$src$core$msg.PROCEDURES_CALL_DISABLED_DEF_WARNING.replace("%1", a)), c.setGroup$$module$build$src$core$events$utils(T)));
       }, customContextMenu: function(l) {
         if (this.workspace.isMovable()) {
           var a = this.getProcedureCall(), T = this.workspace;
@@ -16586,12 +16586,12 @@ function $p() {
           } });
         }
       } };
-      ne.procedures_callnoreturn = Object.assign({}, is, { init: function() {
+      re.procedures_callnoreturn = Object.assign({}, is, { init: function() {
         this.appendDummyInput("TOPROW").appendField("", "NAME"), this.setPreviousStatement(!0), this.setNextStatement(!0), this.setStyle("procedure_blocks"), this.setHelpUrl(c.Msg$$module$build$src$core$msg.PROCEDURES_CALLNORETURN_HELPURL), this.arguments_ = [], this.argumentVarModels_ = [], this.quarkConnections_ = {}, this.quarkIds_ = null;
-      }, defType_: "procedures_defnoreturn" }), ne.procedures_callreturn = Object.assign({}, is, { init: function() {
+      }, defType_: "procedures_defnoreturn" }), re.procedures_callreturn = Object.assign({}, is, { init: function() {
         this.appendDummyInput("TOPROW").appendField("", "NAME"), this.setOutput(!0), this.setStyle("procedure_blocks"), this.setHelpUrl(c.Msg$$module$build$src$core$msg.PROCEDURES_CALLRETURN_HELPURL), this.arguments_ = [], this.argumentVarModels_ = [], this.quarkConnections_ = {}, this.quarkIds_ = null;
       }, defType_: "procedures_defreturn" });
-      var hn = "UNPARENTED_IFRETURN", ri = {
+      var hn = "UNPARENTED_IFRETURN", ni = {
         init: function() {
           this.appendValueInput("CONDITION").setCheck("Boolean").appendField(c.Msg$$module$build$src$core$msg.CONTROLS_IF_MSG_IF), this.appendValueInput("VALUE").appendField(c.Msg$$module$build$src$core$msg.PROCEDURES_DEFRETURN_RETURN), this.setInputsInline(!0), this.setPreviousStatement(!0), this.setNextStatement(!0), this.setStyle("procedure_blocks"), this.setTooltip(c.Msg$$module$build$src$core$msg.PROCEDURES_IFRETURN_TOOLTIP), this.setHelpUrl(c.Msg$$module$build$src$core$msg.PROCEDURES_IFRETURN_HELPURL), this.hasReturnValue_ = !0;
         },
@@ -16622,8 +16622,8 @@ function $p() {
         },
         FUNCTION_TYPES: ["procedures_defnoreturn", "procedures_defreturn"]
       };
-      ne.procedures_ifreturn = ri, c.defineBlocks$$module$build$src$core$common(ne);
-      var co = { blocks: ne }, Ce = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([
+      re.procedures_ifreturn = ni, c.defineBlocks$$module$build$src$core$common(re);
+      var lo = { blocks: re }, Ne = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([
         { type: "math_number", message0: "%1", args0: [{ type: "field_number", name: "NUM", value: 0 }], output: "Number", helpUrl: "%{BKY_MATH_NUMBER_HELPURL}", style: "math_blocks", tooltip: "%{BKY_MATH_NUMBER_TOOLTIP}", extensions: ["parent_tooltip_when_inline"] },
         { type: "math_arithmetic", message0: "%1 %2 %3", args0: [{ type: "input_value", name: "A", check: "Number" }, { type: "field_dropdown", name: "OP", options: [[
           "%{BKY_MATH_ADDITION_SYMBOL}",
@@ -16722,13 +16722,13 @@ function $p() {
       }, updateShape_: function(l) {
         const a = this.getInput("DIVISOR");
         l ? a || this.appendValueInput("DIVISOR").setCheck("Number") : a && this.removeInput("DIVISOR");
-      } }, uo = function() {
+      } }, co = function() {
         this.getField("PROPERTY").setValidator(function(l) {
           l = l === "DIVISIBLE_BY", this.getSourceBlock().updateShape_(l);
         });
       };
-      c.registerMutator$$module$build$src$core$extensions("math_is_divisibleby_mutator", dn, uo), c.register$$module$build$src$core$extensions("math_change_tooltip", c.buildTooltipWithFieldText$$module$build$src$core$extensions("%{BKY_MATH_CHANGE_TOOLTIP}", "VAR"));
-      var li = { updateType_: function(l) {
+      c.registerMutator$$module$build$src$core$extensions("math_is_divisibleby_mutator", dn, co), c.register$$module$build$src$core$extensions("math_change_tooltip", c.buildTooltipWithFieldText$$module$build$src$core$extensions("%{BKY_MATH_CHANGE_TOOLTIP}", "VAR"));
+      var ri = { updateType_: function(l) {
         l === "MODE" ? this.outputConnection.setCheck("Array") : this.outputConnection.setCheck("Number");
       }, mutationToDom: function() {
         const l = c.createElement$$module$build$src$core$utils$xml("mutation");
@@ -16736,13 +16736,13 @@ function $p() {
       }, domToMutation: function(l) {
         if (l = l.getAttribute("op"), l === null) throw new TypeError("xmlElement had no op attribute");
         this.updateType_(l);
-      } }, ci = function() {
+      } }, li = function() {
         this.getField("OP").setValidator((function(l) {
           this.updateType_(l);
         }).bind(this));
       };
-      c.registerMutator$$module$build$src$core$extensions("math_modes_of_list_mutator", li, ci), c.defineBlocks$$module$build$src$core$common(Ce);
-      var ui = { blocks: Ce }, j = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "controls_repeat_ext", message0: "%{BKY_CONTROLS_REPEAT_TITLE}", args0: [{ type: "input_value", name: "TIMES", check: "Number" }], message1: "%{BKY_CONTROLS_REPEAT_INPUT_DO} %1", args1: [{ type: "input_statement", name: "DO" }], previousStatement: null, nextStatement: null, style: "loop_blocks", tooltip: "%{BKY_CONTROLS_REPEAT_TOOLTIP}", helpUrl: "%{BKY_CONTROLS_REPEAT_HELPURL}" }, {
+      c.registerMutator$$module$build$src$core$extensions("math_modes_of_list_mutator", ri, li), c.defineBlocks$$module$build$src$core$common(Ne);
+      var ci = { blocks: Ne }, Z = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([{ type: "controls_repeat_ext", message0: "%{BKY_CONTROLS_REPEAT_TITLE}", args0: [{ type: "input_value", name: "TIMES", check: "Number" }], message1: "%{BKY_CONTROLS_REPEAT_INPUT_DO} %1", args1: [{ type: "input_statement", name: "DO" }], previousStatement: null, nextStatement: null, style: "loop_blocks", tooltip: "%{BKY_CONTROLS_REPEAT_TOOLTIP}", helpUrl: "%{BKY_CONTROLS_REPEAT_HELPURL}" }, {
         type: "controls_repeat",
         message0: "%{BKY_CONTROLS_REPEAT_TITLE}",
         args0: [{ type: "field_number", name: "TIMES", value: 10, min: 0, precision: 1 }],
@@ -16776,8 +16776,8 @@ function $p() {
         extensions: ["controls_flow_tooltip", "controls_flow_in_loop_check"]
       }]), _n = { WHILE: "%{BKY_CONTROLS_WHILEUNTIL_TOOLTIP_WHILE}", UNTIL: "%{BKY_CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL}" };
       c.register$$module$build$src$core$extensions("controls_whileUntil_tooltip", c.buildTooltipForDropdown$$module$build$src$core$extensions("MODE", _n));
-      var ao = { BREAK: "%{BKY_CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK}", CONTINUE: "%{BKY_CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE}" };
-      c.register$$module$build$src$core$extensions("controls_flow_tooltip", c.buildTooltipForDropdown$$module$build$src$core$extensions("FLOW", ao));
+      var uo = { BREAK: "%{BKY_CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK}", CONTINUE: "%{BKY_CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE}" };
+      c.register$$module$build$src$core$extensions("controls_flow_tooltip", c.buildTooltipForDropdown$$module$build$src$core$extensions("FLOW", uo));
       var Tn = { customContextMenu: function(l) {
         if (!this.isInFlyout) {
           var a = this.getField("VAR"), T = a.getVariable().getName();
@@ -16800,8 +16800,8 @@ function $p() {
           c.setRecordUndo$$module$build$src$core$events$utils(!0);
         }
       } };
-      c.registerMixin$$module$build$src$core$extensions("controls_flow_in_loop_check", O), c.defineBlocks$$module$build$src$core$common(j);
-      var L = { blocks: j, loopTypes: M }, ns = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([
+      c.registerMixin$$module$build$src$core$extensions("controls_flow_in_loop_check", O), c.defineBlocks$$module$build$src$core$common(Z);
+      var L = { blocks: Z, loopTypes: M }, ns = c.createBlockDefinitionsFromJsonArray$$module$build$src$core$common([
         { type: "logic_boolean", message0: "%1", args0: [{ type: "field_dropdown", name: "BOOL", options: [["%{BKY_LOGIC_BOOLEAN_TRUE}", "TRUE"], ["%{BKY_LOGIC_BOOLEAN_FALSE}", "FALSE"]] }], output: "Boolean", style: "logic_blocks", tooltip: "%{BKY_LOGIC_BOOLEAN_TOOLTIP}", helpUrl: "%{BKY_LOGIC_BOOLEAN_HELPURL}" },
         {
           type: "controls_if",
@@ -16871,7 +16871,7 @@ function $p() {
           tooltip: "%{BKY_CONTROLS_IF_ELSEIF_TOOLTIP}"
         },
         { type: "controls_if_else", message0: "%{BKY_CONTROLS_IF_ELSE_TITLE_ELSE}", previousStatement: null, enableContextMenu: !1, style: "logic_blocks", tooltip: "%{BKY_CONTROLS_IF_ELSE_TOOLTIP}" }
-      ]), F = {
+      ]), H = {
         EQ: "%{BKY_LOGIC_COMPARE_TOOLTIP_EQ}",
         NEQ: "%{BKY_LOGIC_COMPARE_TOOLTIP_NEQ}",
         LT: "%{BKY_LOGIC_COMPARE_TOOLTIP_LT}",
@@ -16881,8 +16881,8 @@ function $p() {
         AND: "%{BKY_LOGIC_OPERATION_TOOLTIP_AND}",
         OR: "%{BKY_LOGIC_OPERATION_TOOLTIP_OR}"
       };
-      c.register$$module$build$src$core$extensions("logic_op_tooltip", c.buildTooltipForDropdown$$module$build$src$core$extensions("OP", F));
-      var ho = {
+      c.register$$module$build$src$core$extensions("logic_op_tooltip", c.buildTooltipForDropdown$$module$build$src$core$extensions("OP", H));
+      var ao = {
         elseifCount_: 0,
         elseCount_: 0,
         mutationToDom: function() {
@@ -16954,8 +16954,8 @@ function $p() {
           let T = null;
           this.getInput("ELSE") && (T = this.getInput("ELSE").connection.targetConnection);
           for (let p = 1; this.getInput("IF" + p); p++) {
-            const S = this.getInput("IF" + p), Z = this.getInput("DO" + p);
-            l.push(S.connection.targetConnection), a.push(Z.connection.targetConnection);
+            const S = this.getInput("IF" + p), Q = this.getInput("DO" + p);
+            l.push(S.connection.targetConnection), a.push(Q.connection.targetConnection);
           }
           this.updateShape_(), this.reconnectChildBlocks_(l, a, T);
         },
@@ -16969,14 +16969,14 @@ function $p() {
           for (let p = 1; p <= this.elseifCount_; p++) {
             let S;
             (S = l[p]) == null || S.reconnect(this, "IF" + p);
-            let Z;
-            (Z = a[p]) == null || Z.reconnect(this, "DO" + p);
+            let Q;
+            (Q = a[p]) == null || Q.reconnect(this, "DO" + p);
           }
           T == null || T.reconnect(this, "ELSE");
         }
       };
-      c.registerMutator$$module$build$src$core$extensions("controls_if_mutator", ho, null, ["controls_if_elseif", "controls_if_else"]);
-      var V = function() {
+      c.registerMutator$$module$build$src$core$extensions("controls_if_mutator", ao, null, ["controls_if_elseif", "controls_if_else"]);
+      var X = function() {
         this.setTooltip((function() {
           if (this.elseifCount_ || this.elseCount_) {
             if (!this.elseifCount_ && this.elseCount_) return c.Msg$$module$build$src$core$msg.CONTROLS_IF_TOOLTIP_2;
@@ -16986,21 +16986,21 @@ function $p() {
           return "";
         }).bind(this));
       };
-      c.register$$module$build$src$core$extensions("controls_if_tooltip", V);
+      c.register$$module$build$src$core$extensions("controls_if_tooltip", X);
       var Bt = { onchange: function(l) {
         this.prevBlocks_ || (this.prevBlocks_ = [null, null]);
         var a = this.getInputTargetBlock("A");
         const T = this.getInputTargetBlock("B");
         a && T && !this.workspace.connectionChecker.doTypeChecks(a.outputConnection, T.outputConnection) && (c.setGroup$$module$build$src$core$events$utils(l.group), l = this.prevBlocks_[0], l !== a && (a.unplug(), !l || l.isDisposed() || l.isShadow() || this.getInput("A").connection.connect(l.outputConnection)), a = this.prevBlocks_[1], a !== T && (T.unplug(), !a || a.isDisposed() || a.isShadow() || this.getInput("B").connection.connect(a.outputConnection)), this.bumpNeighbours(), c.setGroup$$module$build$src$core$events$utils(!1)), this.prevBlocks_[0] = this.getInputTargetBlock("A"), this.prevBlocks_[1] = this.getInputTargetBlock("B");
-      } }, _o = function() {
+      } }, ho = function() {
         this.mixin(Bt);
       };
-      c.register$$module$build$src$core$extensions("logic_compare", _o);
+      c.register$$module$build$src$core$extensions("logic_compare", ho);
       var xt = { prevParentConnection_: null, onchange: function(l) {
         const a = this.getInputTargetBlock("THEN"), T = this.getInputTargetBlock("ELSE"), p = this.outputConnection.targetConnection;
         if ((a || T) && p) for (let S = 0; S < 2; S++) {
-          const Z = S === 1 ? a : T;
-          Z && !Z.workspace.connectionChecker.doTypeChecks(Z.outputConnection, p) && (c.setGroup$$module$build$src$core$events$utils(l.group), p === this.prevParentConnection_ ? (this.unplug(), p.getSourceBlock().bumpNeighbours()) : (Z.unplug(), Z.bumpNeighbours()), c.setGroup$$module$build$src$core$events$utils(!1));
+          const Q = S === 1 ? a : T;
+          Q && !Q.workspace.connectionChecker.doTypeChecks(Q.outputConnection, p) && (c.setGroup$$module$build$src$core$events$utils(l.group), p === this.prevParentConnection_ ? (this.unplug(), p.getSourceBlock().bumpNeighbours()) : (Q.unplug(), Q.bumpNeighbours()), c.setGroup$$module$build$src$core$events$utils(!1));
         }
         this.prevParentConnection_ = p;
       } };
@@ -17076,14 +17076,14 @@ function $p() {
         for (l = this.itemCount_; this.getInput("ADD" + l); l++) this.removeInput("ADD" + l);
       } };
       pe.lists_create_with = En;
-      var Cs = { init: function() {
+      var As = { init: function() {
         this.setStyle("list_blocks"), this.appendDummyInput().appendField(c.Msg$$module$build$src$core$msg.LISTS_CREATE_WITH_CONTAINER_TITLE_ADD), this.appendStatementInput("STACK"), this.setTooltip(c.Msg$$module$build$src$core$msg.LISTS_CREATE_WITH_CONTAINER_TOOLTIP), this.contextMenu = !1;
       } };
-      pe.lists_create_with_container = Cs;
-      var To = { init: function() {
+      pe.lists_create_with_container = As;
+      var _o = { init: function() {
         this.setStyle("list_blocks"), this.appendDummyInput().appendField(c.Msg$$module$build$src$core$msg.LISTS_CREATE_WITH_ITEM_TITLE), this.setPreviousStatement(!0), this.setNextStatement(!0), this.setTooltip(c.Msg$$module$build$src$core$msg.LISTS_CREATE_WITH_ITEM_TOOLTIP), this.contextMenu = !1;
       } };
-      pe.lists_create_with_item = To;
+      pe.lists_create_with_item = _o;
       var Ft = { init: function() {
         var l = [[c.Msg$$module$build$src$core$msg.LISTS_INDEX_OF_FIRST, "FIRST"], [c.Msg$$module$build$src$core$msg.LISTS_INDEX_OF_LAST, "LAST"]];
         if (this.setHelpUrl(c.Msg$$module$build$src$core$msg.LISTS_INDEX_OF_HELPURL), this.setStyle("list_blocks"), this.setOutput(!0, "Number"), this.appendValueInput("VALUE").setCheck("Array").appendField(c.Msg$$module$build$src$core$msg.LISTS_INDEX_OF_INPUT_IN_LIST), l = c.fromJson$$module$build$src$core$field_registry({
@@ -17093,7 +17093,7 @@ function $p() {
         this.appendValueInput("FIND").appendField(l, "END"), this.setInputsInline(!0), this.setTooltip(() => c.Msg$$module$build$src$core$msg.LISTS_INDEX_OF_TOOLTIP.replace("%1", this.workspace.options.oneBasedIndex ? "0" : "-1"));
       } };
       pe.lists_indexOf = Ft;
-      var $o = { init: function() {
+      var To = { init: function() {
         var l = [[c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_GET, "GET"], [c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_GET_REMOVE, "GET_REMOVE"], [c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_REMOVE, "REMOVE"]];
         this.WHERE_OPTIONS = [
           [c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_FROM_START, "FROM_START"],
@@ -17171,7 +17171,7 @@ function $p() {
       }, updateAt_: function(l) {
         this.removeInput("AT"), this.removeInput("ORDINAL", !0), l ? (this.appendValueInput("AT").setCheck("Number"), c.Msg$$module$build$src$core$msg.ORDINAL_NUMBER_SUFFIX && this.appendDummyInput("ORDINAL").appendField(c.Msg$$module$build$src$core$msg.ORDINAL_NUMBER_SUFFIX)) : this.appendDummyInput("AT"), c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_TAIL && this.moveInputBefore("TAIL", null);
       } };
-      pe.lists_getIndex = $o;
+      pe.lists_getIndex = To;
       var tt = { init: function() {
         var l = [[c.Msg$$module$build$src$core$msg.LISTS_SET_INDEX_SET, "SET"], [c.Msg$$module$build$src$core$msg.LISTS_SET_INDEX_INSERT, "INSERT"]];
         this.WHERE_OPTIONS = [[c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_FROM_START, "FROM_START"], [c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_FROM_END, "FROM_END"], [c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_FIRST, "FIRST"], [c.Msg$$module$build$src$core$msg.LISTS_GET_INDEX_LAST, "LAST"], [
@@ -17305,1837 +17305,1837 @@ function $p() {
           this.updateType_(l.mode);
         }
       }, c.defineBlocks$$module$build$src$core$common(pe);
-      var rs = { blocks: pe }, ai = Object.assign({}, pe, ns, j, Ce, ne, J, ct, q), Eo = {
-        blocks: ai,
+      var rs = { blocks: pe }, ui = Object.assign({}, pe, ns, Z, Ne, re, q, ct, U), $o = {
+        blocks: ui,
         lists: rs,
         logic: Ut,
         loops: L,
-        math: ui,
-        procedures: co,
-        texts: As,
+        math: ci,
+        procedures: lo,
+        texts: fs,
         variables: Qe,
         variablesDynamic: Ge
       };
-      return Eo.__namespace__ = c, Eo;
+      return $o.__namespace__ = c, $o;
     });
   })(_l)), _l.exports;
 }
-var Ep = $p();
-const gp = /* @__PURE__ */ gl(Ep), {
-  blocks: KB,
-  lists: JB,
-  logic: jB,
-  loops: qB,
-  math: ZB,
-  procedures: QB,
-  texts: ex,
-  variables: tx,
-  variablesDynamic: sx
-} = gp;
-var Tl = { exports: {} }, pp = Tl.exports, sg;
-function mp() {
-  return sg || (sg = 1, (function(C, k) {
+var gp = Ep();
+const pp = /* @__PURE__ */ gl(gp), {
+  blocks: JB,
+  lists: jB,
+  logic: qB,
+  loops: ZB,
+  math: QB,
+  procedures: ex,
+  texts: tx,
+  variables: sx,
+  variablesDynamic: ox
+} = pp;
+var Tl = { exports: {} }, mp = Tl.exports, sg;
+function Ip() {
+  return sg || (sg = 1, (function(C, P) {
     (function(i, c) {
       C.exports = c();
-    })(pp, function() {
+    })(mp, function() {
       var i = i || { Msg: /* @__PURE__ */ Object.create(null) };
       return i.Msg.ADD_COMMENT = "Add Comment", i.Msg.ALT_KEY = "Alt", i.Msg.CANNOT_DELETE_VARIABLE_PROCEDURE = "Can't delete the variable '%1' because it's part of the definition of the function '%2'", i.Msg.CHANGE_VALUE_TITLE = "Change value:", i.Msg.CHROME_OS = "ChromeOS", i.Msg.CLEAN_UP = "Clean up Blocks", i.Msg.CLOSE = "Close", i.Msg.COLLAPSED_WARNINGS_WARNING = "Collapsed blocks contain warnings.", i.Msg.COLLAPSE_ALL = "Collapse Blocks", i.Msg.COLLAPSE_BLOCK = "Collapse Block", i.Msg.COLOUR_BLEND_COLOUR1 = "colour 1", i.Msg.COLOUR_BLEND_COLOUR2 = "colour 2", i.Msg.COLOUR_BLEND_HELPURL = "https://meyerweb.com/eric/tools/color-blend/#:::rgbp", i.Msg.COLOUR_BLEND_RATIO = "ratio", i.Msg.COLOUR_BLEND_TITLE = "blend", i.Msg.COLOUR_BLEND_TOOLTIP = "Blends two colours together with a given ratio (0.0 - 1.0).", i.Msg.COLOUR_PICKER_HELPURL = "https://en.wikipedia.org/wiki/Color", i.Msg.COLOUR_PICKER_TOOLTIP = "Choose a colour from the palette.", i.Msg.COLOUR_RANDOM_HELPURL = "http://randomcolour.com", i.Msg.COLOUR_RANDOM_TITLE = "random colour", i.Msg.COLOUR_RANDOM_TOOLTIP = "Choose a colour at random.", i.Msg.COLOUR_RGB_BLUE = "blue", i.Msg.COLOUR_RGB_GREEN = "green", i.Msg.COLOUR_RGB_HELPURL = "https://www.december.com/html/spec/colorpercompact.html", i.Msg.COLOUR_RGB_RED = "red", i.Msg.COLOUR_RGB_TITLE = "colour with", i.Msg.COLOUR_RGB_TOOLTIP = "Create a colour with the specified amount of red, green, and blue. All values must be between 0 and 100.", i.Msg.COMMAND_KEY = "⌘ Command", i.Msg.CONTROLS_FLOW_STATEMENTS_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#loop-termination-blocks", i.Msg.CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK = "break out of loop", i.Msg.CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE = "continue with next iteration of loop", i.Msg.CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK = "Break out of the containing loop.", i.Msg.CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE = "Skip the rest of this loop, and continue with the next iteration.", i.Msg.CONTROLS_FLOW_STATEMENTS_WARNING = "Warning: This block may only be used within a loop.", i.Msg.CONTROLS_FOREACH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#for-each", i.Msg.CONTROLS_FOREACH_TITLE = "for each item %1 in list %2", i.Msg.CONTROLS_FOREACH_TOOLTIP = "For each item in a list, set the variable '%1' to the item, and then do some statements.", i.Msg.CONTROLS_FOR_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#count-with", i.Msg.CONTROLS_FOR_TITLE = "count with %1 from %2 to %3 by %4", i.Msg.CONTROLS_FOR_TOOLTIP = "Have the variable '%1' take on the values from the start number to the end number, counting by the specified interval, and do the specified blocks.", i.Msg.CONTROLS_IF_ELSEIF_TOOLTIP = "Add a condition to the if block.", i.Msg.CONTROLS_IF_ELSE_TOOLTIP = "Add a final, catch-all condition to the if block.", i.Msg.CONTROLS_IF_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/IfElse", i.Msg.CONTROLS_IF_IF_TOOLTIP = "Add, remove, or reorder sections to reconfigure this if block.", i.Msg.CONTROLS_IF_MSG_ELSE = "else", i.Msg.CONTROLS_IF_MSG_ELSEIF = "else if", i.Msg.CONTROLS_IF_MSG_IF = "if", i.Msg.CONTROLS_IF_TOOLTIP_1 = "If a value is true, then do some statements.", i.Msg.CONTROLS_IF_TOOLTIP_2 = "If a value is true, then do the first block of statements. Otherwise, do the second block of statements.", i.Msg.CONTROLS_IF_TOOLTIP_3 = "If the first value is true, then do the first block of statements. Otherwise, if the second value is true, do the second block of statements.", i.Msg.CONTROLS_IF_TOOLTIP_4 = "If the first value is true, then do the first block of statements. Otherwise, if the second value is true, do the second block of statements. If none of the values are true, do the last block of statements.", i.Msg.CONTROLS_REPEAT_HELPURL = "https://en.wikipedia.org/wiki/For_loop", i.Msg.CONTROLS_REPEAT_INPUT_DO = "do", i.Msg.CONTROLS_REPEAT_TITLE = "repeat %1 times", i.Msg.CONTROLS_REPEAT_TOOLTIP = "Do some statements several times.", i.Msg.CONTROLS_WHILEUNTIL_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#repeat", i.Msg.CONTROLS_WHILEUNTIL_OPERATOR_UNTIL = "repeat until", i.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "repeat while", i.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "While a value is false, then do some statements.", i.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "While a value is true, then do some statements.", i.Msg.CONTROL_KEY = "Ctrl", i.Msg.COPY_SHORTCUT = "Copy", i.Msg.CUT_SHORTCUT = "Cut", i.Msg.DELETE_ALL_BLOCKS = "Delete all %1 blocks?", i.Msg.DELETE_BLOCK = "Delete Block", i.Msg.DELETE_VARIABLE = "Delete the '%1' variable", i.Msg.DELETE_VARIABLE_CONFIRMATION = "Delete %1 uses of the '%2' variable?", i.Msg.DELETE_X_BLOCKS = "Delete %1 Blocks", i.Msg.DIALOG_CANCEL = "Cancel", i.Msg.DIALOG_OK = "OK", i.Msg.DISABLE_BLOCK = "Disable Block", i.Msg.DUPLICATE_BLOCK = "Duplicate", i.Msg.DUPLICATE_COMMENT = "Duplicate Comment", i.Msg.EDIT_BLOCK_CONTENTS = "Edit Block contents", i.Msg.ENABLE_BLOCK = "Enable Block", i.Msg.EXPAND_ALL = "Expand Blocks", i.Msg.EXPAND_BLOCK = "Expand Block", i.Msg.EXTERNAL_INPUTS = "External Inputs", i.Msg.HELP = "Help", i.Msg.HELP_PROMPT = "Press %1 for help on keyboard controls", i.Msg.INLINE_INPUTS = "Inline Inputs", i.Msg.KEYBOARD_NAV_CONSTRAINED_MOVE_HINT = "Use the arrow keys to move, then %1 to accept the position", i.Msg.KEYBOARD_NAV_COPIED_HINT = "Copied. Press %1 to paste.", i.Msg.KEYBOARD_NAV_CUT_HINT = "Cut. Press %1 to paste.", i.Msg.KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT = "Hold %1 and use arrow keys to move freely, then %2 to accept the position", i.Msg.LINUX = "Linux", i.Msg.LISTS_CREATE_EMPTY_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#create-empty-list", i.Msg.LISTS_CREATE_EMPTY_TITLE = "create empty list", i.Msg.LISTS_CREATE_EMPTY_TOOLTIP = "Returns a list, of length 0, containing no data records", i.Msg.LISTS_CREATE_WITH_CONTAINER_TITLE_ADD = "list", i.Msg.LISTS_CREATE_WITH_CONTAINER_TOOLTIP = "Add, remove, or reorder sections to reconfigure this list block.", i.Msg.LISTS_CREATE_WITH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#create-list-with", i.Msg.LISTS_CREATE_WITH_INPUT_WITH = "create list with", i.Msg.LISTS_CREATE_WITH_ITEM_TOOLTIP = "Add an item to the list.", i.Msg.LISTS_CREATE_WITH_TOOLTIP = "Create a list with any number of items.", i.Msg.LISTS_GET_INDEX_FIRST = "first", i.Msg.LISTS_GET_INDEX_FROM_END = "# from end", i.Msg.LISTS_GET_INDEX_FROM_START = "#", i.Msg.LISTS_GET_INDEX_GET = "get", i.Msg.LISTS_GET_INDEX_GET_REMOVE = "get and remove", i.Msg.LISTS_GET_INDEX_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#getting-items-from-a-list", i.Msg.LISTS_GET_INDEX_LAST = "last", i.Msg.LISTS_GET_INDEX_RANDOM = "random", i.Msg.LISTS_GET_INDEX_REMOVE = "remove", i.Msg.LISTS_GET_INDEX_TAIL = "", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FIRST = "Returns the first item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FROM = "Returns the item at the specified position in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_LAST = "Returns the last item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_RANDOM = "Returns a random item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST = "Removes and returns the first item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM = "Removes and returns the item at the specified position in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST = "Removes and returns the last item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM = "Removes and returns a random item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST = "Removes the first item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM = "Removes the item at the specified position in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST = "Removes the last item in a list.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM = "Removes a random item in a list.", i.Msg.LISTS_GET_SUBLIST_END_FROM_END = "to # from end", i.Msg.LISTS_GET_SUBLIST_END_FROM_START = "to #", i.Msg.LISTS_GET_SUBLIST_END_LAST = "to last", i.Msg.LISTS_GET_SUBLIST_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#getting-a-sublist", i.Msg.LISTS_GET_SUBLIST_START_FIRST = "get sub-list from first", i.Msg.LISTS_GET_SUBLIST_START_FROM_END = "get sub-list from # from end", i.Msg.LISTS_GET_SUBLIST_START_FROM_START = "get sub-list from #", i.Msg.LISTS_GET_SUBLIST_TAIL = "", i.Msg.LISTS_GET_SUBLIST_TOOLTIP = "Creates a copy of the specified portion of a list.", i.Msg.LISTS_INDEX_FROM_END_TOOLTIP = "%1 is the last item.", i.Msg.LISTS_INDEX_FROM_START_TOOLTIP = "%1 is the first item.", i.Msg.LISTS_INDEX_OF_FIRST = "find first occurrence of item", i.Msg.LISTS_INDEX_OF_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#finding-items-in-a-list", i.Msg.LISTS_INDEX_OF_LAST = "find last occurrence of item", i.Msg.LISTS_INDEX_OF_TOOLTIP = "Returns the index of the first/last occurrence of the item in the list. Returns %1 if item is not found.", i.Msg.LISTS_INLIST = "in list", i.Msg.LISTS_ISEMPTY_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#is-empty", i.Msg.LISTS_ISEMPTY_TITLE = "%1 is empty", i.Msg.LISTS_ISEMPTY_TOOLTIP = "Returns true if the list is empty.", i.Msg.LISTS_LENGTH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#length-of", i.Msg.LISTS_LENGTH_TITLE = "length of %1", i.Msg.LISTS_LENGTH_TOOLTIP = "Returns the length of a list.", i.Msg.LISTS_REPEAT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#create-list-with", i.Msg.LISTS_REPEAT_TITLE = "create list with item %1 repeated %2 times", i.Msg.LISTS_REPEAT_TOOLTIP = "Creates a list consisting of the given value repeated the specified number of times.", i.Msg.LISTS_REVERSE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#reversing-a-list", i.Msg.LISTS_REVERSE_MESSAGE0 = "reverse %1", i.Msg.LISTS_REVERSE_TOOLTIP = "Reverse a copy of a list.", i.Msg.LISTS_SET_INDEX_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#in-list--set", i.Msg.LISTS_SET_INDEX_INPUT_TO = "as", i.Msg.LISTS_SET_INDEX_INSERT = "insert at", i.Msg.LISTS_SET_INDEX_SET = "set", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST = "Inserts the item at the start of a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM = "Inserts the item at the specified position in a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST = "Append the item to the end of a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM = "Inserts the item randomly in a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST = "Sets the first item in a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM = "Sets the item at the specified position in a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST = "Sets the last item in a list.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM = "Sets a random item in a list.", i.Msg.LISTS_SORT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#sorting-a-list", i.Msg.LISTS_SORT_ORDER_ASCENDING = "ascending", i.Msg.LISTS_SORT_ORDER_DESCENDING = "descending", i.Msg.LISTS_SORT_TITLE = "sort %1 %2 %3", i.Msg.LISTS_SORT_TOOLTIP = "Sort a copy of a list.", i.Msg.LISTS_SORT_TYPE_IGNORECASE = "alphabetic, ignore case", i.Msg.LISTS_SORT_TYPE_NUMERIC = "numeric", i.Msg.LISTS_SORT_TYPE_TEXT = "alphabetic", i.Msg.LISTS_SPLIT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#splitting-strings-and-joining-lists", i.Msg.LISTS_SPLIT_LIST_FROM_TEXT = "make list from text", i.Msg.LISTS_SPLIT_TEXT_FROM_LIST = "make text from list", i.Msg.LISTS_SPLIT_TOOLTIP_JOIN = "Join a list of texts into one text, separated by a delimiter.", i.Msg.LISTS_SPLIT_TOOLTIP_SPLIT = "Split text into a list of texts, breaking at each delimiter.", i.Msg.LISTS_SPLIT_WITH_DELIMITER = "with delimiter", i.Msg.LOGIC_BOOLEAN_FALSE = "false", i.Msg.LOGIC_BOOLEAN_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Logic#values", i.Msg.LOGIC_BOOLEAN_TOOLTIP = "Returns either true or false.", i.Msg.LOGIC_BOOLEAN_TRUE = "true", i.Msg.LOGIC_COMPARE_HELPURL = "https://en.wikipedia.org/wiki/Inequality_(mathematics)", i.Msg.LOGIC_COMPARE_TOOLTIP_EQ = "Return true if both inputs equal each other.", i.Msg.LOGIC_COMPARE_TOOLTIP_GT = "Return true if the first input is greater than the second input.", i.Msg.LOGIC_COMPARE_TOOLTIP_GTE = "Return true if the first input is greater than or equal to the second input.", i.Msg.LOGIC_COMPARE_TOOLTIP_LT = "Return true if the first input is smaller than the second input.", i.Msg.LOGIC_COMPARE_TOOLTIP_LTE = "Return true if the first input is smaller than or equal to the second input.", i.Msg.LOGIC_COMPARE_TOOLTIP_NEQ = "Return true if both inputs are not equal to each other.", i.Msg.LOGIC_NEGATE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Logic#not", i.Msg.LOGIC_NEGATE_TITLE = "not %1", i.Msg.LOGIC_NEGATE_TOOLTIP = "Returns true if the input is false. Returns false if the input is true.", i.Msg.LOGIC_NULL = "null", i.Msg.LOGIC_NULL_HELPURL = "https://en.wikipedia.org/wiki/Nullable_type", i.Msg.LOGIC_NULL_TOOLTIP = "Returns null.", i.Msg.LOGIC_OPERATION_AND = "and", i.Msg.LOGIC_OPERATION_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Logic#logical-operations", i.Msg.LOGIC_OPERATION_OR = "or", i.Msg.LOGIC_OPERATION_TOOLTIP_AND = "Return true if both inputs are true.", i.Msg.LOGIC_OPERATION_TOOLTIP_OR = "Return true if at least one of the inputs is true.", i.Msg.LOGIC_TERNARY_CONDITION = "test", i.Msg.LOGIC_TERNARY_HELPURL = "https://en.wikipedia.org/wiki/%3F:", i.Msg.LOGIC_TERNARY_IF_FALSE = "if false", i.Msg.LOGIC_TERNARY_IF_TRUE = "if true", i.Msg.LOGIC_TERNARY_TOOLTIP = "Check the condition in 'test'. If the condition is true, returns the 'if true' value; otherwise returns the 'if false' value.", i.Msg.MAC_OS = "macOS", i.Msg.MATH_ADDITION_SYMBOL = "+", i.Msg.MATH_ARITHMETIC_HELPURL = "https://en.wikipedia.org/wiki/Arithmetic", i.Msg.MATH_ARITHMETIC_TOOLTIP_ADD = "Return the sum of the two numbers.", i.Msg.MATH_ARITHMETIC_TOOLTIP_DIVIDE = "Return the quotient of the two numbers.", i.Msg.MATH_ARITHMETIC_TOOLTIP_MINUS = "Return the difference of the two numbers.", i.Msg.MATH_ARITHMETIC_TOOLTIP_MULTIPLY = "Return the product of the two numbers.", i.Msg.MATH_ARITHMETIC_TOOLTIP_POWER = "Return the first number raised to the power of the second number.", i.Msg.MATH_ATAN2_HELPURL = "https://en.wikipedia.org/wiki/Atan2", i.Msg.MATH_ATAN2_TITLE = "atan2 of X:%1 Y:%2", i.Msg.MATH_ATAN2_TOOLTIP = "Return the arctangent of point (X, Y) in degrees from -180 to 180.", i.Msg.MATH_CHANGE_HELPURL = "https://en.wikipedia.org/wiki/Programming_idiom#Incrementing_a_counter", i.Msg.MATH_CHANGE_TITLE = "change %1 by %2", i.Msg.MATH_CHANGE_TOOLTIP = "Add a number to variable '%1'.", i.Msg.MATH_CONSTANT_HELPURL = "https://en.wikipedia.org/wiki/Mathematical_constant", i.Msg.MATH_CONSTANT_TOOLTIP = "Return one of the common constants: π (3.141…), e (2.718…), φ (1.618…), sqrt(2) (1.414…), sqrt(½) (0.707…), or ∞ (infinity).", i.Msg.MATH_CONSTRAIN_HELPURL = "https://en.wikipedia.org/wiki/Clamping_(graphics)", i.Msg.MATH_CONSTRAIN_TITLE = "constrain %1 low %2 high %3", i.Msg.MATH_CONSTRAIN_TOOLTIP = "Constrain a number to be between the specified limits (inclusive).", i.Msg.MATH_DIVISION_SYMBOL = "÷", i.Msg.MATH_IS_DIVISIBLE_BY = "is divisible by", i.Msg.MATH_IS_EVEN = "is even", i.Msg.MATH_IS_NEGATIVE = "is negative", i.Msg.MATH_IS_ODD = "is odd", i.Msg.MATH_IS_POSITIVE = "is positive", i.Msg.MATH_IS_PRIME = "is prime", i.Msg.MATH_IS_TOOLTIP = "Check if a number is an even, odd, prime, whole, positive, negative, or if it is divisible by certain number. Returns true or false.", i.Msg.MATH_IS_WHOLE = "is whole", i.Msg.MATH_MODULO_HELPURL = "https://en.wikipedia.org/wiki/Modulo_operation", i.Msg.MATH_MODULO_TITLE = "remainder of %1 ÷ %2", i.Msg.MATH_MODULO_TOOLTIP = "Return the remainder from dividing the two numbers.", i.Msg.MATH_MULTIPLICATION_SYMBOL = "×", i.Msg.MATH_NUMBER_HELPURL = "https://en.wikipedia.org/wiki/Number", i.Msg.MATH_NUMBER_TOOLTIP = "A number.", i.Msg.MATH_ONLIST_HELPURL = "", i.Msg.MATH_ONLIST_OPERATOR_AVERAGE = "average of list", i.Msg.MATH_ONLIST_OPERATOR_MAX = "max of list", i.Msg.MATH_ONLIST_OPERATOR_MEDIAN = "median of list", i.Msg.MATH_ONLIST_OPERATOR_MIN = "min of list", i.Msg.MATH_ONLIST_OPERATOR_MODE = "modes of list", i.Msg.MATH_ONLIST_OPERATOR_RANDOM = "random item of list", i.Msg.MATH_ONLIST_OPERATOR_STD_DEV = "standard deviation of list", i.Msg.MATH_ONLIST_OPERATOR_SUM = "sum of list", i.Msg.MATH_ONLIST_TOOLTIP_AVERAGE = "Return the average (arithmetic mean) of the numeric values in the list.", i.Msg.MATH_ONLIST_TOOLTIP_MAX = "Return the largest number in the list.", i.Msg.MATH_ONLIST_TOOLTIP_MEDIAN = "Return the median number in the list.", i.Msg.MATH_ONLIST_TOOLTIP_MIN = "Return the smallest number in the list.", i.Msg.MATH_ONLIST_TOOLTIP_MODE = "Return a list of the most common item(s) in the list.", i.Msg.MATH_ONLIST_TOOLTIP_RANDOM = "Return a random element from the list.", i.Msg.MATH_ONLIST_TOOLTIP_STD_DEV = "Return the standard deviation of the list.", i.Msg.MATH_ONLIST_TOOLTIP_SUM = "Return the sum of all the numbers in the list.", i.Msg.MATH_POWER_SYMBOL = "^", i.Msg.MATH_RANDOM_FLOAT_HELPURL = "https://en.wikipedia.org/wiki/Random_number_generation", i.Msg.MATH_RANDOM_FLOAT_TITLE_RANDOM = "random fraction", i.Msg.MATH_RANDOM_FLOAT_TOOLTIP = "Return a random fraction between 0.0 (inclusive) and 1.0 (exclusive).", i.Msg.MATH_RANDOM_INT_HELPURL = "https://en.wikipedia.org/wiki/Random_number_generation", i.Msg.MATH_RANDOM_INT_TITLE = "random integer from %1 to %2", i.Msg.MATH_RANDOM_INT_TOOLTIP = "Return a random integer between the two specified limits, inclusive.", i.Msg.MATH_ROUND_HELPURL = "https://en.wikipedia.org/wiki/Rounding", i.Msg.MATH_ROUND_OPERATOR_ROUND = "round", i.Msg.MATH_ROUND_OPERATOR_ROUNDDOWN = "round down", i.Msg.MATH_ROUND_OPERATOR_ROUNDUP = "round up", i.Msg.MATH_ROUND_TOOLTIP = "Round a number up or down.", i.Msg.MATH_SINGLE_HELPURL = "https://en.wikipedia.org/wiki/Square_root", i.Msg.MATH_SINGLE_OP_ABSOLUTE = "absolute", i.Msg.MATH_SINGLE_OP_ROOT = "square root", i.Msg.MATH_SINGLE_TOOLTIP_ABS = "Return the absolute value of a number.", i.Msg.MATH_SINGLE_TOOLTIP_EXP = "Return e to the power of a number.", i.Msg.MATH_SINGLE_TOOLTIP_LN = "Return the natural logarithm of a number.", i.Msg.MATH_SINGLE_TOOLTIP_LOG10 = "Return the base 10 logarithm of a number.", i.Msg.MATH_SINGLE_TOOLTIP_NEG = "Return the negation of a number.", i.Msg.MATH_SINGLE_TOOLTIP_POW10 = "Return 10 to the power of a number.", i.Msg.MATH_SINGLE_TOOLTIP_ROOT = "Return the square root of a number.", i.Msg.MATH_SUBTRACTION_SYMBOL = "-", i.Msg.MATH_TRIG_ACOS = "acos", i.Msg.MATH_TRIG_ASIN = "asin", i.Msg.MATH_TRIG_ATAN = "atan", i.Msg.MATH_TRIG_COS = "cos", i.Msg.MATH_TRIG_HELPURL = "https://en.wikipedia.org/wiki/Trigonometric_functions", i.Msg.MATH_TRIG_SIN = "sin", i.Msg.MATH_TRIG_TAN = "tan", i.Msg.MATH_TRIG_TOOLTIP_ACOS = "Return the arccosine of a number.", i.Msg.MATH_TRIG_TOOLTIP_ASIN = "Return the arcsine of a number.", i.Msg.MATH_TRIG_TOOLTIP_ATAN = "Return the arctangent of a number.", i.Msg.MATH_TRIG_TOOLTIP_COS = "Return the cosine of a degree (not radian).", i.Msg.MATH_TRIG_TOOLTIP_SIN = "Return the sine of a degree (not radian).", i.Msg.MATH_TRIG_TOOLTIP_TAN = "Return the tangent of a degree (not radian).", i.Msg.MOVE_BLOCK = "Move Block", i.Msg.NEW_COLOUR_VARIABLE = "Create colour variable...", i.Msg.NEW_NUMBER_VARIABLE = "Create number variable...", i.Msg.NEW_STRING_VARIABLE = "Create string variable...", i.Msg.NEW_VARIABLE = "Create variable...", i.Msg.NEW_VARIABLE_TITLE = "New variable name:", i.Msg.NEW_VARIABLE_TYPE_TITLE = "New variable type:", i.Msg.OPTION_KEY = "⌥ Option", i.Msg.ORDINAL_NUMBER_SUFFIX = "", i.Msg.PASTE_SHORTCUT = "Paste", i.Msg.PROCEDURES_ALLOW_STATEMENTS = "allow statements", i.Msg.PROCEDURES_BEFORE_PARAMS = "with:", i.Msg.PROCEDURES_CALLNORETURN_HELPURL = "https://en.wikipedia.org/wiki/Subroutine", i.Msg.PROCEDURES_CALLNORETURN_TOOLTIP = "Run the user-defined function '%1'.", i.Msg.PROCEDURES_CALLRETURN_HELPURL = "https://en.wikipedia.org/wiki/Subroutine", i.Msg.PROCEDURES_CALLRETURN_TOOLTIP = "Run the user-defined function '%1' and use its output.", i.Msg.PROCEDURES_CALL_BEFORE_PARAMS = "with:", i.Msg.PROCEDURES_CALL_DISABLED_DEF_WARNING = "Can't run the user-defined function '%1' because the definition block is disabled.", i.Msg.PROCEDURES_CREATE_DO = "Create '%1'", i.Msg.PROCEDURES_DEFNORETURN_COMMENT = "Describe this function...", i.Msg.PROCEDURES_DEFNORETURN_DO = "", i.Msg.PROCEDURES_DEFNORETURN_HELPURL = "https://en.wikipedia.org/wiki/Subroutine", i.Msg.PROCEDURES_DEFNORETURN_PROCEDURE = "do something", i.Msg.PROCEDURES_DEFNORETURN_TITLE = "to", i.Msg.PROCEDURES_DEFNORETURN_TOOLTIP = "Creates a function with no output.", i.Msg.PROCEDURES_DEFRETURN_HELPURL = "https://en.wikipedia.org/wiki/Subroutine", i.Msg.PROCEDURES_DEFRETURN_RETURN = "return", i.Msg.PROCEDURES_DEFRETURN_TOOLTIP = "Creates a function with an output.", i.Msg.PROCEDURES_DEF_DUPLICATE_WARNING = "Warning: This function has duplicate parameters.", i.Msg.PROCEDURES_HIGHLIGHT_DEF = "Highlight function definition", i.Msg.PROCEDURES_IFRETURN_HELPURL = "https://c2.com/cgi/wiki?GuardClause", i.Msg.PROCEDURES_IFRETURN_TOOLTIP = "If a value is true, then return a second value.", i.Msg.PROCEDURES_IFRETURN_WARNING = "Warning: This block may be used only within a function definition.", i.Msg.PROCEDURES_MUTATORARG_TITLE = "input name:", i.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Add an input to the function.", i.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "inputs", i.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Add, remove, or reorder inputs to this function.", i.Msg.REDO = "Redo", i.Msg.REMOVE_COMMENT = "Remove Comment", i.Msg.RENAME_VARIABLE = "Rename variable...", i.Msg.RENAME_VARIABLE_TITLE = "Rename all '%1' variables to:", i.Msg.SHORTCUTS_CODE_NAVIGATION = "Code navigation", i.Msg.SHORTCUTS_EDITING = "Editing", i.Msg.SHORTCUTS_GENERAL = "General", i.Msg.TEXT_APPEND_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#text-modification", i.Msg.TEXT_APPEND_TITLE = "to %1 append text %2", i.Msg.TEXT_APPEND_TOOLTIP = "Append some text to variable '%1'.", i.Msg.TEXT_CHANGECASE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#adjusting-text-case", i.Msg.TEXT_CHANGECASE_OPERATOR_LOWERCASE = "to lower case", i.Msg.TEXT_CHANGECASE_OPERATOR_TITLECASE = "to Title Case", i.Msg.TEXT_CHANGECASE_OPERATOR_UPPERCASE = "to UPPER CASE", i.Msg.TEXT_CHANGECASE_TOOLTIP = "Return a copy of the text in a different case.", i.Msg.TEXT_CHARAT_FIRST = "get first letter", i.Msg.TEXT_CHARAT_FROM_END = "get letter # from end", i.Msg.TEXT_CHARAT_FROM_START = "get letter #", i.Msg.TEXT_CHARAT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#extracting-text", i.Msg.TEXT_CHARAT_LAST = "get last letter", i.Msg.TEXT_CHARAT_RANDOM = "get random letter", i.Msg.TEXT_CHARAT_TAIL = "", i.Msg.TEXT_CHARAT_TITLE = "in text %1 %2", i.Msg.TEXT_CHARAT_TOOLTIP = "Returns the letter at the specified position.", i.Msg.TEXT_COUNT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#counting-substrings", i.Msg.TEXT_COUNT_MESSAGE0 = "count %1 in %2", i.Msg.TEXT_COUNT_TOOLTIP = "Count how many times some text occurs within some other text.", i.Msg.TEXT_CREATE_JOIN_ITEM_TOOLTIP = "Add an item to the text.", i.Msg.TEXT_CREATE_JOIN_TITLE_JOIN = "join", i.Msg.TEXT_CREATE_JOIN_TOOLTIP = "Add, remove, or reorder sections to reconfigure this text block.", i.Msg.TEXT_GET_SUBSTRING_END_FROM_END = "to letter # from end", i.Msg.TEXT_GET_SUBSTRING_END_FROM_START = "to letter #", i.Msg.TEXT_GET_SUBSTRING_END_LAST = "to last letter", i.Msg.TEXT_GET_SUBSTRING_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#extracting-a-region-of-text", i.Msg.TEXT_GET_SUBSTRING_INPUT_IN_TEXT = "in text", i.Msg.TEXT_GET_SUBSTRING_START_FIRST = "get substring from first letter", i.Msg.TEXT_GET_SUBSTRING_START_FROM_END = "get substring from letter # from end", i.Msg.TEXT_GET_SUBSTRING_START_FROM_START = "get substring from letter #", i.Msg.TEXT_GET_SUBSTRING_TAIL = "", i.Msg.TEXT_GET_SUBSTRING_TOOLTIP = "Returns a specified portion of the text.", i.Msg.TEXT_INDEXOF_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#finding-text", i.Msg.TEXT_INDEXOF_OPERATOR_FIRST = "find first occurrence of text", i.Msg.TEXT_INDEXOF_OPERATOR_LAST = "find last occurrence of text", i.Msg.TEXT_INDEXOF_TITLE = "in text %1 %2 %3", i.Msg.TEXT_INDEXOF_TOOLTIP = "Returns the index of the first/last occurrence of the first text in the second text. Returns %1 if text is not found.", i.Msg.TEXT_ISEMPTY_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#checking-for-empty-text", i.Msg.TEXT_ISEMPTY_TITLE = "%1 is empty", i.Msg.TEXT_ISEMPTY_TOOLTIP = "Returns true if the provided text is empty.", i.Msg.TEXT_JOIN_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#text-creation", i.Msg.TEXT_JOIN_TITLE_CREATEWITH = "create text with", i.Msg.TEXT_JOIN_TOOLTIP = "Create a piece of text by joining together any number of items.", i.Msg.TEXT_LENGTH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#text-modification", i.Msg.TEXT_LENGTH_TITLE = "length of %1", i.Msg.TEXT_LENGTH_TOOLTIP = "Returns the number of letters (including spaces) in the provided text.", i.Msg.TEXT_PRINT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#printing-text", i.Msg.TEXT_PRINT_TITLE = "print %1", i.Msg.TEXT_PRINT_TOOLTIP = "Print the specified text, number or other value.", i.Msg.TEXT_PROMPT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#getting-input-from-the-user", i.Msg.TEXT_PROMPT_TOOLTIP_NUMBER = "Prompt for user for a number.", i.Msg.TEXT_PROMPT_TOOLTIP_TEXT = "Prompt for user for some text.", i.Msg.TEXT_PROMPT_TYPE_NUMBER = "prompt for number with message", i.Msg.TEXT_PROMPT_TYPE_TEXT = "prompt for text with message", i.Msg.TEXT_REPLACE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#replacing-substrings", i.Msg.TEXT_REPLACE_MESSAGE0 = "replace %1 with %2 in %3", i.Msg.TEXT_REPLACE_TOOLTIP = "Replace all occurances of some text within some other text.", i.Msg.TEXT_REVERSE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#reversing-text", i.Msg.TEXT_REVERSE_MESSAGE0 = "reverse %1", i.Msg.TEXT_REVERSE_TOOLTIP = "Reverses the order of the characters in the text.", i.Msg.TEXT_TEXT_HELPURL = "https://en.wikipedia.org/wiki/String_(computer_science)", i.Msg.TEXT_TEXT_TOOLTIP = "A letter, word, or line of text.", i.Msg.TEXT_TRIM_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#trimming-removing-spaces", i.Msg.TEXT_TRIM_OPERATOR_BOTH = "trim spaces from both sides of", i.Msg.TEXT_TRIM_OPERATOR_LEFT = "trim spaces from left side of", i.Msg.TEXT_TRIM_OPERATOR_RIGHT = "trim spaces from right side of", i.Msg.TEXT_TRIM_TOOLTIP = "Return a copy of the text with spaces removed from one or both ends.", i.Msg.TODAY = "Today", i.Msg.UNDO = "Undo", i.Msg.UNKNOWN = "Unknown", i.Msg.UNNAMED_KEY = "unnamed", i.Msg.VARIABLES_DEFAULT_NAME = "item", i.Msg.VARIABLES_GET_CREATE_SET = "Create 'set %1'", i.Msg.VARIABLES_GET_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Variables#get", i.Msg.VARIABLES_GET_TOOLTIP = "Returns the value of this variable.", i.Msg.VARIABLES_SET = "set %1 to %2", i.Msg.VARIABLES_SET_CREATE_GET = "Create 'get %1'", i.Msg.VARIABLES_SET_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Variables#set", i.Msg.VARIABLES_SET_TOOLTIP = "Sets this variable to be equal to the input.", i.Msg.VARIABLE_ALREADY_EXISTS = "A variable named '%1' already exists.", i.Msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = "A variable named '%1' already exists for another type: '%2'.", i.Msg.VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER = "A variable named '%1' already exists as a parameter in the procedure '%2'.", i.Msg.WINDOWS = "Windows", i.Msg.WORKSPACE_ARIA_LABEL = "Blockly Workspace", i.Msg.WORKSPACE_COMMENT_DEFAULT_TEXT = "Say something...", i.Msg.CONTROLS_FOREACH_INPUT_DO = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.CONTROLS_FOR_INPUT_DO = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.CONTROLS_IF_ELSEIF_TITLE_ELSEIF = i.Msg.CONTROLS_IF_MSG_ELSEIF, i.Msg.CONTROLS_IF_ELSE_TITLE_ELSE = i.Msg.CONTROLS_IF_MSG_ELSE, i.Msg.CONTROLS_IF_IF_TITLE_IF = i.Msg.CONTROLS_IF_MSG_IF, i.Msg.CONTROLS_IF_MSG_THEN = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.CONTROLS_WHILEUNTIL_INPUT_DO = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.LISTS_CREATE_WITH_ITEM_TITLE = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.LISTS_GET_INDEX_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.LISTS_GET_SUBLIST_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.LISTS_INDEX_OF_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.LISTS_SET_INDEX_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.MATH_CHANGE_TITLE_ITEM = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.PROCEDURES_DEFRETURN_COMMENT = i.Msg.PROCEDURES_DEFNORETURN_COMMENT, i.Msg.PROCEDURES_DEFRETURN_DO = i.Msg.PROCEDURES_DEFNORETURN_DO, i.Msg.PROCEDURES_DEFRETURN_PROCEDURE = i.Msg.PROCEDURES_DEFNORETURN_PROCEDURE, i.Msg.PROCEDURES_DEFRETURN_TITLE = i.Msg.PROCEDURES_DEFNORETURN_TITLE, i.Msg.TEXT_APPEND_VARIABLE = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.TEXT_CREATE_JOIN_ITEM_TITLE_ITEM = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.COLOUR_HUE = "20", i.Msg.LISTS_HUE = "260", i.Msg.LOGIC_HUE = "210", i.Msg.LOOPS_HUE = "120", i.Msg.MATH_HUE = "230", i.Msg.PROCEDURES_HUE = "290", i.Msg.TEXTS_HUE = "160", i.Msg.VARIABLES_DYNAMIC_HUE = "310", i.Msg.VARIABLES_HUE = "330", i.Msg;
     });
   })(Tl)), Tl.exports;
 }
-var Ip = mp();
-const Op = /* @__PURE__ */ gl(Ip), {
-  LOGIC_HUE: Rp,
-  LOOPS_HUE: Sp,
-  MATH_HUE: Lp,
-  TEXTS_HUE: bp,
-  LISTS_HUE: fp,
-  COLOUR_HUE: Ap,
-  VARIABLES_HUE: Cp,
-  VARIABLES_DYNAMIC_HUE: Np,
-  PROCEDURES_HUE: Mp,
-  VARIABLES_DEFAULT_NAME: yp,
-  UNNAMED_KEY: vp,
-  TODAY: kp,
-  DUPLICATE_BLOCK: Pp,
-  ADD_COMMENT: Dp,
-  REMOVE_COMMENT: wp,
-  DUPLICATE_COMMENT: Bp,
-  EXTERNAL_INPUTS: xp,
-  INLINE_INPUTS: Up,
-  DELETE_BLOCK: Fp,
-  DELETE_X_BLOCKS: Hp,
-  DELETE_ALL_BLOCKS: Gp,
-  CLEAN_UP: Vp,
-  CLOSE: Xp,
-  COLLAPSE_BLOCK: Wp,
-  COLLAPSE_ALL: Yp,
-  EXPAND_BLOCK: zp,
-  EXPAND_ALL: Kp,
-  DISABLE_BLOCK: Jp,
-  ENABLE_BLOCK: jp,
-  HELP: qp,
-  UNDO: Zp,
-  REDO: Qp,
-  CHANGE_VALUE_TITLE: em,
-  RENAME_VARIABLE: tm,
-  RENAME_VARIABLE_TITLE: sm,
-  NEW_VARIABLE: om,
-  NEW_STRING_VARIABLE: im,
-  NEW_NUMBER_VARIABLE: nm,
-  NEW_COLOUR_VARIABLE: rm,
-  NEW_VARIABLE_TYPE_TITLE: lm,
-  NEW_VARIABLE_TITLE: cm,
-  VARIABLE_ALREADY_EXISTS: um,
-  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: am,
-  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: hm,
-  DELETE_VARIABLE_CONFIRMATION: dm,
-  CANNOT_DELETE_VARIABLE_PROCEDURE: _m,
-  DELETE_VARIABLE: Tm,
-  COLOUR_PICKER_HELPURL: $m,
-  COLOUR_PICKER_TOOLTIP: Em,
-  COLOUR_RANDOM_HELPURL: gm,
-  COLOUR_RANDOM_TITLE: pm,
-  COLOUR_RANDOM_TOOLTIP: mm,
-  COLOUR_RGB_HELPURL: Im,
-  COLOUR_RGB_TITLE: Om,
-  COLOUR_RGB_RED: Rm,
-  COLOUR_RGB_GREEN: Sm,
-  COLOUR_RGB_BLUE: Lm,
-  COLOUR_RGB_TOOLTIP: bm,
-  COLOUR_BLEND_HELPURL: fm,
-  COLOUR_BLEND_TITLE: Am,
-  COLOUR_BLEND_COLOUR1: Cm,
-  COLOUR_BLEND_COLOUR2: Nm,
-  COLOUR_BLEND_RATIO: Mm,
-  COLOUR_BLEND_TOOLTIP: ym,
-  CONTROLS_REPEAT_HELPURL: vm,
-  CONTROLS_REPEAT_TITLE: km,
-  CONTROLS_REPEAT_INPUT_DO: Pm,
-  CONTROLS_REPEAT_TOOLTIP: Dm,
-  CONTROLS_WHILEUNTIL_HELPURL: wm,
-  CONTROLS_WHILEUNTIL_INPUT_DO: Bm,
-  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: xm,
-  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: Um,
-  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: Fm,
-  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: Hm,
-  CONTROLS_FOR_HELPURL: Gm,
-  CONTROLS_FOR_TOOLTIP: Vm,
-  CONTROLS_FOR_TITLE: Xm,
-  CONTROLS_FOR_INPUT_DO: Wm,
-  CONTROLS_FOREACH_HELPURL: Ym,
-  CONTROLS_FOREACH_TITLE: zm,
-  CONTROLS_FOREACH_INPUT_DO: Km,
-  CONTROLS_FOREACH_TOOLTIP: Jm,
-  CONTROLS_FLOW_STATEMENTS_HELPURL: jm,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: qm,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: Zm,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: Qm,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: eI,
-  CONTROLS_FLOW_STATEMENTS_WARNING: tI,
-  CONTROLS_IF_HELPURL: sI,
-  CONTROLS_IF_TOOLTIP_1: oI,
-  CONTROLS_IF_TOOLTIP_2: iI,
-  CONTROLS_IF_TOOLTIP_3: nI,
-  CONTROLS_IF_TOOLTIP_4: rI,
-  CONTROLS_IF_MSG_IF: lI,
-  CONTROLS_IF_MSG_ELSEIF: cI,
-  CONTROLS_IF_MSG_ELSE: uI,
-  CONTROLS_IF_MSG_THEN: aI,
-  CONTROLS_IF_IF_TITLE_IF: hI,
-  CONTROLS_IF_IF_TOOLTIP: dI,
-  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: _I,
-  CONTROLS_IF_ELSEIF_TOOLTIP: TI,
-  CONTROLS_IF_ELSE_TITLE_ELSE: $I,
-  CONTROLS_IF_ELSE_TOOLTIP: EI,
-  LOGIC_COMPARE_HELPURL: gI,
-  LOGIC_COMPARE_TOOLTIP_EQ: pI,
-  LOGIC_COMPARE_TOOLTIP_NEQ: mI,
-  LOGIC_COMPARE_TOOLTIP_LT: II,
-  LOGIC_COMPARE_TOOLTIP_LTE: OI,
-  LOGIC_COMPARE_TOOLTIP_GT: RI,
-  LOGIC_COMPARE_TOOLTIP_GTE: SI,
-  LOGIC_OPERATION_HELPURL: LI,
-  LOGIC_OPERATION_TOOLTIP_AND: bI,
-  LOGIC_OPERATION_AND: fI,
-  LOGIC_OPERATION_TOOLTIP_OR: AI,
-  LOGIC_OPERATION_OR: CI,
-  LOGIC_NEGATE_HELPURL: NI,
-  LOGIC_NEGATE_TITLE: MI,
-  LOGIC_NEGATE_TOOLTIP: yI,
-  LOGIC_BOOLEAN_HELPURL: vI,
-  LOGIC_BOOLEAN_TRUE: kI,
-  LOGIC_BOOLEAN_FALSE: PI,
-  LOGIC_BOOLEAN_TOOLTIP: DI,
-  LOGIC_NULL_HELPURL: wI,
-  LOGIC_NULL: BI,
-  LOGIC_NULL_TOOLTIP: xI,
-  LOGIC_TERNARY_HELPURL: UI,
-  LOGIC_TERNARY_CONDITION: FI,
-  LOGIC_TERNARY_IF_TRUE: HI,
-  LOGIC_TERNARY_IF_FALSE: GI,
-  LOGIC_TERNARY_TOOLTIP: VI,
-  MATH_NUMBER_HELPURL: XI,
-  MATH_NUMBER_TOOLTIP: WI,
-  MATH_ADDITION_SYMBOL: YI,
-  MATH_SUBTRACTION_SYMBOL: zI,
-  MATH_DIVISION_SYMBOL: KI,
-  MATH_MULTIPLICATION_SYMBOL: JI,
-  MATH_POWER_SYMBOL: jI,
-  MATH_TRIG_SIN: qI,
-  MATH_TRIG_COS: ZI,
-  MATH_TRIG_TAN: QI,
-  MATH_TRIG_ASIN: eO,
-  MATH_TRIG_ACOS: tO,
-  MATH_TRIG_ATAN: sO,
-  MATH_ARITHMETIC_HELPURL: oO,
-  MATH_ARITHMETIC_TOOLTIP_ADD: iO,
-  MATH_ARITHMETIC_TOOLTIP_MINUS: nO,
-  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: rO,
-  MATH_ARITHMETIC_TOOLTIP_DIVIDE: lO,
-  MATH_ARITHMETIC_TOOLTIP_POWER: cO,
-  MATH_SINGLE_HELPURL: uO,
-  MATH_SINGLE_OP_ROOT: aO,
-  MATH_SINGLE_TOOLTIP_ROOT: hO,
-  MATH_SINGLE_OP_ABSOLUTE: dO,
-  MATH_SINGLE_TOOLTIP_ABS: _O,
-  MATH_SINGLE_TOOLTIP_NEG: TO,
-  MATH_SINGLE_TOOLTIP_LN: $O,
-  MATH_SINGLE_TOOLTIP_LOG10: EO,
-  MATH_SINGLE_TOOLTIP_EXP: gO,
-  MATH_SINGLE_TOOLTIP_POW10: pO,
-  MATH_TRIG_HELPURL: mO,
-  MATH_TRIG_TOOLTIP_SIN: IO,
-  MATH_TRIG_TOOLTIP_COS: OO,
-  MATH_TRIG_TOOLTIP_TAN: RO,
-  MATH_TRIG_TOOLTIP_ASIN: SO,
-  MATH_TRIG_TOOLTIP_ACOS: LO,
-  MATH_TRIG_TOOLTIP_ATAN: bO,
-  MATH_CONSTANT_HELPURL: fO,
-  MATH_CONSTANT_TOOLTIP: AO,
-  MATH_IS_EVEN: CO,
-  MATH_IS_ODD: NO,
-  MATH_IS_PRIME: MO,
-  MATH_IS_WHOLE: yO,
-  MATH_IS_POSITIVE: vO,
-  MATH_IS_NEGATIVE: kO,
-  MATH_IS_DIVISIBLE_BY: PO,
-  MATH_IS_TOOLTIP: DO,
-  MATH_CHANGE_HELPURL: wO,
-  MATH_CHANGE_TITLE: BO,
-  MATH_CHANGE_TITLE_ITEM: xO,
-  MATH_CHANGE_TOOLTIP: UO,
-  MATH_ROUND_HELPURL: FO,
-  MATH_ROUND_TOOLTIP: HO,
-  MATH_ROUND_OPERATOR_ROUND: GO,
-  MATH_ROUND_OPERATOR_ROUNDUP: VO,
-  MATH_ROUND_OPERATOR_ROUNDDOWN: XO,
-  MATH_ONLIST_HELPURL: WO,
-  MATH_ONLIST_OPERATOR_SUM: YO,
-  MATH_ONLIST_TOOLTIP_SUM: zO,
-  MATH_ONLIST_OPERATOR_MIN: KO,
-  MATH_ONLIST_TOOLTIP_MIN: JO,
-  MATH_ONLIST_OPERATOR_MAX: jO,
-  MATH_ONLIST_TOOLTIP_MAX: qO,
-  MATH_ONLIST_OPERATOR_AVERAGE: ZO,
-  MATH_ONLIST_TOOLTIP_AVERAGE: QO,
-  MATH_ONLIST_OPERATOR_MEDIAN: eR,
-  MATH_ONLIST_TOOLTIP_MEDIAN: tR,
-  MATH_ONLIST_OPERATOR_MODE: sR,
-  MATH_ONLIST_TOOLTIP_MODE: oR,
-  MATH_ONLIST_OPERATOR_STD_DEV: iR,
-  MATH_ONLIST_TOOLTIP_STD_DEV: nR,
-  MATH_ONLIST_OPERATOR_RANDOM: rR,
-  MATH_ONLIST_TOOLTIP_RANDOM: lR,
-  MATH_MODULO_HELPURL: cR,
-  MATH_MODULO_TITLE: uR,
-  MATH_MODULO_TOOLTIP: aR,
-  MATH_CONSTRAIN_HELPURL: hR,
-  MATH_CONSTRAIN_TITLE: dR,
-  MATH_CONSTRAIN_TOOLTIP: _R,
-  MATH_RANDOM_INT_HELPURL: TR,
-  MATH_RANDOM_INT_TITLE: $R,
-  MATH_RANDOM_INT_TOOLTIP: ER,
-  MATH_RANDOM_FLOAT_HELPURL: gR,
-  MATH_RANDOM_FLOAT_TITLE_RANDOM: pR,
-  MATH_RANDOM_FLOAT_TOOLTIP: mR,
-  MATH_ATAN2_HELPURL: IR,
-  MATH_ATAN2_TITLE: OR,
-  MATH_ATAN2_TOOLTIP: RR,
-  TEXT_TEXT_HELPURL: SR,
-  TEXT_TEXT_TOOLTIP: LR,
-  TEXT_JOIN_HELPURL: bR,
-  TEXT_JOIN_TITLE_CREATEWITH: fR,
-  TEXT_JOIN_TOOLTIP: AR,
-  TEXT_CREATE_JOIN_TITLE_JOIN: CR,
-  TEXT_CREATE_JOIN_TOOLTIP: NR,
-  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: MR,
-  TEXT_CREATE_JOIN_ITEM_TOOLTIP: yR,
-  TEXT_APPEND_HELPURL: vR,
-  TEXT_APPEND_TITLE: kR,
-  TEXT_APPEND_VARIABLE: PR,
-  TEXT_APPEND_TOOLTIP: DR,
-  TEXT_LENGTH_HELPURL: wR,
-  TEXT_LENGTH_TITLE: BR,
-  TEXT_LENGTH_TOOLTIP: xR,
-  TEXT_ISEMPTY_HELPURL: UR,
-  TEXT_ISEMPTY_TITLE: FR,
-  TEXT_ISEMPTY_TOOLTIP: HR,
-  TEXT_INDEXOF_HELPURL: GR,
-  TEXT_INDEXOF_TOOLTIP: VR,
-  TEXT_INDEXOF_TITLE: XR,
-  TEXT_INDEXOF_OPERATOR_FIRST: WR,
-  TEXT_INDEXOF_OPERATOR_LAST: YR,
-  TEXT_CHARAT_HELPURL: zR,
-  TEXT_CHARAT_TITLE: KR,
-  TEXT_CHARAT_FROM_START: JR,
-  TEXT_CHARAT_FROM_END: jR,
-  TEXT_CHARAT_FIRST: qR,
-  TEXT_CHARAT_LAST: ZR,
-  TEXT_CHARAT_RANDOM: QR,
-  TEXT_CHARAT_TAIL: eS,
-  TEXT_CHARAT_TOOLTIP: tS,
-  TEXT_GET_SUBSTRING_TOOLTIP: sS,
-  TEXT_GET_SUBSTRING_HELPURL: oS,
-  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: iS,
-  TEXT_GET_SUBSTRING_START_FROM_START: nS,
-  TEXT_GET_SUBSTRING_START_FROM_END: rS,
-  TEXT_GET_SUBSTRING_START_FIRST: lS,
-  TEXT_GET_SUBSTRING_END_FROM_START: cS,
-  TEXT_GET_SUBSTRING_END_FROM_END: uS,
-  TEXT_GET_SUBSTRING_END_LAST: aS,
-  TEXT_GET_SUBSTRING_TAIL: hS,
-  TEXT_CHANGECASE_HELPURL: dS,
-  TEXT_CHANGECASE_TOOLTIP: _S,
-  TEXT_CHANGECASE_OPERATOR_UPPERCASE: TS,
-  TEXT_CHANGECASE_OPERATOR_LOWERCASE: $S,
-  TEXT_CHANGECASE_OPERATOR_TITLECASE: ES,
-  TEXT_TRIM_HELPURL: gS,
-  TEXT_TRIM_TOOLTIP: pS,
-  TEXT_TRIM_OPERATOR_BOTH: mS,
-  TEXT_TRIM_OPERATOR_LEFT: IS,
-  TEXT_TRIM_OPERATOR_RIGHT: OS,
-  TEXT_PRINT_HELPURL: RS,
-  TEXT_PRINT_TITLE: SS,
-  TEXT_PRINT_TOOLTIP: LS,
-  TEXT_PROMPT_HELPURL: bS,
-  TEXT_PROMPT_TYPE_TEXT: fS,
-  TEXT_PROMPT_TYPE_NUMBER: AS,
-  TEXT_PROMPT_TOOLTIP_NUMBER: CS,
-  TEXT_PROMPT_TOOLTIP_TEXT: NS,
-  TEXT_COUNT_MESSAGE0: MS,
-  TEXT_COUNT_HELPURL: yS,
-  TEXT_COUNT_TOOLTIP: vS,
-  TEXT_REPLACE_MESSAGE0: kS,
-  TEXT_REPLACE_HELPURL: PS,
-  TEXT_REPLACE_TOOLTIP: DS,
-  TEXT_REVERSE_MESSAGE0: wS,
-  TEXT_REVERSE_HELPURL: BS,
-  TEXT_REVERSE_TOOLTIP: xS,
-  LISTS_CREATE_EMPTY_HELPURL: US,
-  LISTS_CREATE_EMPTY_TITLE: FS,
-  LISTS_CREATE_EMPTY_TOOLTIP: HS,
-  LISTS_CREATE_WITH_HELPURL: GS,
-  LISTS_CREATE_WITH_TOOLTIP: VS,
-  LISTS_CREATE_WITH_INPUT_WITH: XS,
-  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: WS,
-  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: YS,
-  LISTS_CREATE_WITH_ITEM_TITLE: zS,
-  LISTS_CREATE_WITH_ITEM_TOOLTIP: KS,
-  LISTS_REPEAT_HELPURL: JS,
-  LISTS_REPEAT_TOOLTIP: jS,
-  LISTS_REPEAT_TITLE: qS,
-  LISTS_LENGTH_HELPURL: ZS,
-  LISTS_LENGTH_TITLE: QS,
-  LISTS_LENGTH_TOOLTIP: eL,
-  LISTS_ISEMPTY_HELPURL: tL,
-  LISTS_ISEMPTY_TITLE: sL,
-  LISTS_ISEMPTY_TOOLTIP: oL,
-  LISTS_INLIST: iL,
-  LISTS_INDEX_OF_HELPURL: nL,
-  LISTS_INDEX_OF_INPUT_IN_LIST: rL,
-  LISTS_INDEX_OF_FIRST: lL,
-  LISTS_INDEX_OF_LAST: cL,
-  LISTS_INDEX_OF_TOOLTIP: uL,
-  LISTS_GET_INDEX_HELPURL: aL,
-  LISTS_GET_INDEX_GET: hL,
-  LISTS_GET_INDEX_GET_REMOVE: dL,
-  LISTS_GET_INDEX_REMOVE: _L,
-  LISTS_GET_INDEX_FROM_START: TL,
-  LISTS_GET_INDEX_FROM_END: $L,
-  LISTS_GET_INDEX_FIRST: EL,
-  LISTS_GET_INDEX_LAST: gL,
-  LISTS_GET_INDEX_RANDOM: pL,
-  LISTS_GET_INDEX_TAIL: mL,
-  LISTS_GET_INDEX_INPUT_IN_LIST: IL,
-  LISTS_INDEX_FROM_START_TOOLTIP: OL,
-  LISTS_INDEX_FROM_END_TOOLTIP: RL,
-  LISTS_GET_INDEX_TOOLTIP_GET_FROM: SL,
-  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: LL,
-  LISTS_GET_INDEX_TOOLTIP_GET_LAST: bL,
-  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: fL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: AL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: CL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: NL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: ML,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: yL,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: vL,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: kL,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: PL,
-  LISTS_SET_INDEX_HELPURL: DL,
-  LISTS_SET_INDEX_INPUT_IN_LIST: wL,
-  LISTS_SET_INDEX_SET: BL,
-  LISTS_SET_INDEX_INSERT: xL,
-  LISTS_SET_INDEX_INPUT_TO: UL,
-  LISTS_SET_INDEX_TOOLTIP_SET_FROM: FL,
-  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: HL,
-  LISTS_SET_INDEX_TOOLTIP_SET_LAST: GL,
-  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: VL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: XL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: WL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: YL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: zL,
-  LISTS_GET_SUBLIST_HELPURL: KL,
-  LISTS_GET_SUBLIST_INPUT_IN_LIST: JL,
-  LISTS_GET_SUBLIST_START_FROM_START: jL,
-  LISTS_GET_SUBLIST_START_FROM_END: qL,
-  LISTS_GET_SUBLIST_START_FIRST: ZL,
-  LISTS_GET_SUBLIST_END_FROM_START: QL,
-  LISTS_GET_SUBLIST_END_FROM_END: eb,
-  LISTS_GET_SUBLIST_END_LAST: tb,
-  LISTS_GET_SUBLIST_TAIL: sb,
-  LISTS_GET_SUBLIST_TOOLTIP: ob,
-  LISTS_SORT_HELPURL: ib,
-  LISTS_SORT_TITLE: nb,
-  LISTS_SORT_TOOLTIP: rb,
-  LISTS_SORT_ORDER_ASCENDING: lb,
-  LISTS_SORT_ORDER_DESCENDING: cb,
-  LISTS_SORT_TYPE_NUMERIC: ub,
-  LISTS_SORT_TYPE_TEXT: ab,
-  LISTS_SORT_TYPE_IGNORECASE: hb,
-  LISTS_SPLIT_HELPURL: db,
-  LISTS_SPLIT_LIST_FROM_TEXT: _b,
-  LISTS_SPLIT_TEXT_FROM_LIST: Tb,
-  LISTS_SPLIT_WITH_DELIMITER: $b,
-  LISTS_SPLIT_TOOLTIP_SPLIT: Eb,
-  LISTS_SPLIT_TOOLTIP_JOIN: gb,
-  LISTS_REVERSE_HELPURL: pb,
-  LISTS_REVERSE_MESSAGE0: mb,
-  LISTS_REVERSE_TOOLTIP: Ib,
-  ORDINAL_NUMBER_SUFFIX: Ob,
-  VARIABLES_GET_HELPURL: Rb,
-  VARIABLES_GET_TOOLTIP: Sb,
-  VARIABLES_GET_CREATE_SET: Lb,
-  VARIABLES_SET_HELPURL: bb,
-  VARIABLES_SET: fb,
-  VARIABLES_SET_TOOLTIP: Ab,
-  VARIABLES_SET_CREATE_GET: Cb,
-  PROCEDURES_DEFNORETURN_HELPURL: Nb,
-  PROCEDURES_DEFNORETURN_TITLE: Mb,
-  PROCEDURES_DEFNORETURN_PROCEDURE: yb,
-  PROCEDURES_BEFORE_PARAMS: vb,
-  PROCEDURES_CALL_BEFORE_PARAMS: kb,
-  PROCEDURES_CALL_DISABLED_DEF_WARNING: Pb,
-  PROCEDURES_DEFNORETURN_DO: Db,
-  PROCEDURES_DEFNORETURN_TOOLTIP: wb,
-  PROCEDURES_DEFNORETURN_COMMENT: Bb,
-  PROCEDURES_DEFRETURN_HELPURL: xb,
-  PROCEDURES_DEFRETURN_TITLE: Ub,
-  PROCEDURES_DEFRETURN_PROCEDURE: Fb,
-  PROCEDURES_DEFRETURN_DO: Hb,
-  PROCEDURES_DEFRETURN_COMMENT: Gb,
-  PROCEDURES_DEFRETURN_RETURN: Vb,
-  PROCEDURES_DEFRETURN_TOOLTIP: Xb,
-  PROCEDURES_ALLOW_STATEMENTS: Wb,
-  PROCEDURES_DEF_DUPLICATE_WARNING: Yb,
-  PROCEDURES_CALLNORETURN_HELPURL: zb,
-  PROCEDURES_CALLNORETURN_TOOLTIP: Kb,
-  PROCEDURES_CALLRETURN_HELPURL: Jb,
-  PROCEDURES_CALLRETURN_TOOLTIP: jb,
-  PROCEDURES_MUTATORCONTAINER_TITLE: qb,
-  PROCEDURES_MUTATORCONTAINER_TOOLTIP: Zb,
-  PROCEDURES_MUTATORARG_TITLE: Qb,
-  PROCEDURES_MUTATORARG_TOOLTIP: ef,
-  PROCEDURES_HIGHLIGHT_DEF: tf,
-  PROCEDURES_CREATE_DO: sf,
-  PROCEDURES_IFRETURN_TOOLTIP: of,
-  PROCEDURES_IFRETURN_HELPURL: nf,
-  PROCEDURES_IFRETURN_WARNING: rf,
-  WORKSPACE_COMMENT_DEFAULT_TEXT: lf,
-  WORKSPACE_ARIA_LABEL: cf,
-  COLLAPSED_WARNINGS_WARNING: uf,
-  DIALOG_OK: af,
-  DIALOG_CANCEL: hf,
-  EDIT_BLOCK_CONTENTS: df,
-  MOVE_BLOCK: _f,
-  WINDOWS: Tf,
-  MAC_OS: $f,
-  CHROME_OS: Ef,
-  LINUX: gf,
-  UNKNOWN: pf,
-  CONTROL_KEY: mf,
-  COMMAND_KEY: If,
-  OPTION_KEY: Of,
-  ALT_KEY: Rf,
-  CUT_SHORTCUT: Sf,
-  COPY_SHORTCUT: Lf,
-  PASTE_SHORTCUT: bf,
-  HELP_PROMPT: ff,
-  SHORTCUTS_GENERAL: Af,
-  SHORTCUTS_EDITING: Cf,
-  SHORTCUTS_CODE_NAVIGATION: Nf,
-  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: Mf,
-  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: yf,
-  KEYBOARD_NAV_COPIED_HINT: vf,
-  KEYBOARD_NAV_CUT_HINT: kf
-} = Op, Pf = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var Op = Ip();
+const Rp = /* @__PURE__ */ gl(Op), {
+  LOGIC_HUE: Sp,
+  LOOPS_HUE: Lp,
+  MATH_HUE: bp,
+  TEXTS_HUE: fp,
+  LISTS_HUE: Ap,
+  COLOUR_HUE: Cp,
+  VARIABLES_HUE: Np,
+  VARIABLES_DYNAMIC_HUE: Mp,
+  PROCEDURES_HUE: yp,
+  VARIABLES_DEFAULT_NAME: vp,
+  UNNAMED_KEY: kp,
+  TODAY: Pp,
+  DUPLICATE_BLOCK: Dp,
+  ADD_COMMENT: wp,
+  REMOVE_COMMENT: Bp,
+  DUPLICATE_COMMENT: xp,
+  EXTERNAL_INPUTS: Up,
+  INLINE_INPUTS: Fp,
+  DELETE_BLOCK: Hp,
+  DELETE_X_BLOCKS: Gp,
+  DELETE_ALL_BLOCKS: Vp,
+  CLEAN_UP: Xp,
+  CLOSE: Wp,
+  COLLAPSE_BLOCK: Yp,
+  COLLAPSE_ALL: zp,
+  EXPAND_BLOCK: Kp,
+  EXPAND_ALL: Jp,
+  DISABLE_BLOCK: jp,
+  ENABLE_BLOCK: qp,
+  HELP: Zp,
+  UNDO: Qp,
+  REDO: em,
+  CHANGE_VALUE_TITLE: tm,
+  RENAME_VARIABLE: sm,
+  RENAME_VARIABLE_TITLE: om,
+  NEW_VARIABLE: im,
+  NEW_STRING_VARIABLE: nm,
+  NEW_NUMBER_VARIABLE: rm,
+  NEW_COLOUR_VARIABLE: lm,
+  NEW_VARIABLE_TYPE_TITLE: cm,
+  NEW_VARIABLE_TITLE: um,
+  VARIABLE_ALREADY_EXISTS: am,
+  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: hm,
+  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: dm,
+  DELETE_VARIABLE_CONFIRMATION: _m,
+  CANNOT_DELETE_VARIABLE_PROCEDURE: Tm,
+  DELETE_VARIABLE: $m,
+  COLOUR_PICKER_HELPURL: Em,
+  COLOUR_PICKER_TOOLTIP: gm,
+  COLOUR_RANDOM_HELPURL: pm,
+  COLOUR_RANDOM_TITLE: mm,
+  COLOUR_RANDOM_TOOLTIP: Im,
+  COLOUR_RGB_HELPURL: Om,
+  COLOUR_RGB_TITLE: Rm,
+  COLOUR_RGB_RED: Sm,
+  COLOUR_RGB_GREEN: Lm,
+  COLOUR_RGB_BLUE: bm,
+  COLOUR_RGB_TOOLTIP: fm,
+  COLOUR_BLEND_HELPURL: Am,
+  COLOUR_BLEND_TITLE: Cm,
+  COLOUR_BLEND_COLOUR1: Nm,
+  COLOUR_BLEND_COLOUR2: Mm,
+  COLOUR_BLEND_RATIO: ym,
+  COLOUR_BLEND_TOOLTIP: vm,
+  CONTROLS_REPEAT_HELPURL: km,
+  CONTROLS_REPEAT_TITLE: Pm,
+  CONTROLS_REPEAT_INPUT_DO: Dm,
+  CONTROLS_REPEAT_TOOLTIP: wm,
+  CONTROLS_WHILEUNTIL_HELPURL: Bm,
+  CONTROLS_WHILEUNTIL_INPUT_DO: xm,
+  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: Um,
+  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: Fm,
+  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: Hm,
+  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: Gm,
+  CONTROLS_FOR_HELPURL: Vm,
+  CONTROLS_FOR_TOOLTIP: Xm,
+  CONTROLS_FOR_TITLE: Wm,
+  CONTROLS_FOR_INPUT_DO: Ym,
+  CONTROLS_FOREACH_HELPURL: zm,
+  CONTROLS_FOREACH_TITLE: Km,
+  CONTROLS_FOREACH_INPUT_DO: Jm,
+  CONTROLS_FOREACH_TOOLTIP: jm,
+  CONTROLS_FLOW_STATEMENTS_HELPURL: qm,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: Zm,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: Qm,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: eI,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: tI,
+  CONTROLS_FLOW_STATEMENTS_WARNING: sI,
+  CONTROLS_IF_HELPURL: oI,
+  CONTROLS_IF_TOOLTIP_1: iI,
+  CONTROLS_IF_TOOLTIP_2: nI,
+  CONTROLS_IF_TOOLTIP_3: rI,
+  CONTROLS_IF_TOOLTIP_4: lI,
+  CONTROLS_IF_MSG_IF: cI,
+  CONTROLS_IF_MSG_ELSEIF: uI,
+  CONTROLS_IF_MSG_ELSE: aI,
+  CONTROLS_IF_MSG_THEN: hI,
+  CONTROLS_IF_IF_TITLE_IF: dI,
+  CONTROLS_IF_IF_TOOLTIP: _I,
+  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: TI,
+  CONTROLS_IF_ELSEIF_TOOLTIP: $I,
+  CONTROLS_IF_ELSE_TITLE_ELSE: EI,
+  CONTROLS_IF_ELSE_TOOLTIP: gI,
+  LOGIC_COMPARE_HELPURL: pI,
+  LOGIC_COMPARE_TOOLTIP_EQ: mI,
+  LOGIC_COMPARE_TOOLTIP_NEQ: II,
+  LOGIC_COMPARE_TOOLTIP_LT: OI,
+  LOGIC_COMPARE_TOOLTIP_LTE: RI,
+  LOGIC_COMPARE_TOOLTIP_GT: SI,
+  LOGIC_COMPARE_TOOLTIP_GTE: LI,
+  LOGIC_OPERATION_HELPURL: bI,
+  LOGIC_OPERATION_TOOLTIP_AND: fI,
+  LOGIC_OPERATION_AND: AI,
+  LOGIC_OPERATION_TOOLTIP_OR: CI,
+  LOGIC_OPERATION_OR: NI,
+  LOGIC_NEGATE_HELPURL: MI,
+  LOGIC_NEGATE_TITLE: yI,
+  LOGIC_NEGATE_TOOLTIP: vI,
+  LOGIC_BOOLEAN_HELPURL: kI,
+  LOGIC_BOOLEAN_TRUE: PI,
+  LOGIC_BOOLEAN_FALSE: DI,
+  LOGIC_BOOLEAN_TOOLTIP: wI,
+  LOGIC_NULL_HELPURL: BI,
+  LOGIC_NULL: xI,
+  LOGIC_NULL_TOOLTIP: UI,
+  LOGIC_TERNARY_HELPURL: FI,
+  LOGIC_TERNARY_CONDITION: HI,
+  LOGIC_TERNARY_IF_TRUE: GI,
+  LOGIC_TERNARY_IF_FALSE: VI,
+  LOGIC_TERNARY_TOOLTIP: XI,
+  MATH_NUMBER_HELPURL: WI,
+  MATH_NUMBER_TOOLTIP: YI,
+  MATH_ADDITION_SYMBOL: zI,
+  MATH_SUBTRACTION_SYMBOL: KI,
+  MATH_DIVISION_SYMBOL: JI,
+  MATH_MULTIPLICATION_SYMBOL: jI,
+  MATH_POWER_SYMBOL: qI,
+  MATH_TRIG_SIN: ZI,
+  MATH_TRIG_COS: QI,
+  MATH_TRIG_TAN: eO,
+  MATH_TRIG_ASIN: tO,
+  MATH_TRIG_ACOS: sO,
+  MATH_TRIG_ATAN: oO,
+  MATH_ARITHMETIC_HELPURL: iO,
+  MATH_ARITHMETIC_TOOLTIP_ADD: nO,
+  MATH_ARITHMETIC_TOOLTIP_MINUS: rO,
+  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: lO,
+  MATH_ARITHMETIC_TOOLTIP_DIVIDE: cO,
+  MATH_ARITHMETIC_TOOLTIP_POWER: uO,
+  MATH_SINGLE_HELPURL: aO,
+  MATH_SINGLE_OP_ROOT: hO,
+  MATH_SINGLE_TOOLTIP_ROOT: dO,
+  MATH_SINGLE_OP_ABSOLUTE: _O,
+  MATH_SINGLE_TOOLTIP_ABS: TO,
+  MATH_SINGLE_TOOLTIP_NEG: $O,
+  MATH_SINGLE_TOOLTIP_LN: EO,
+  MATH_SINGLE_TOOLTIP_LOG10: gO,
+  MATH_SINGLE_TOOLTIP_EXP: pO,
+  MATH_SINGLE_TOOLTIP_POW10: mO,
+  MATH_TRIG_HELPURL: IO,
+  MATH_TRIG_TOOLTIP_SIN: OO,
+  MATH_TRIG_TOOLTIP_COS: RO,
+  MATH_TRIG_TOOLTIP_TAN: SO,
+  MATH_TRIG_TOOLTIP_ASIN: LO,
+  MATH_TRIG_TOOLTIP_ACOS: bO,
+  MATH_TRIG_TOOLTIP_ATAN: fO,
+  MATH_CONSTANT_HELPURL: AO,
+  MATH_CONSTANT_TOOLTIP: CO,
+  MATH_IS_EVEN: NO,
+  MATH_IS_ODD: MO,
+  MATH_IS_PRIME: yO,
+  MATH_IS_WHOLE: vO,
+  MATH_IS_POSITIVE: kO,
+  MATH_IS_NEGATIVE: PO,
+  MATH_IS_DIVISIBLE_BY: DO,
+  MATH_IS_TOOLTIP: wO,
+  MATH_CHANGE_HELPURL: BO,
+  MATH_CHANGE_TITLE: xO,
+  MATH_CHANGE_TITLE_ITEM: UO,
+  MATH_CHANGE_TOOLTIP: FO,
+  MATH_ROUND_HELPURL: HO,
+  MATH_ROUND_TOOLTIP: GO,
+  MATH_ROUND_OPERATOR_ROUND: VO,
+  MATH_ROUND_OPERATOR_ROUNDUP: XO,
+  MATH_ROUND_OPERATOR_ROUNDDOWN: WO,
+  MATH_ONLIST_HELPURL: YO,
+  MATH_ONLIST_OPERATOR_SUM: zO,
+  MATH_ONLIST_TOOLTIP_SUM: KO,
+  MATH_ONLIST_OPERATOR_MIN: JO,
+  MATH_ONLIST_TOOLTIP_MIN: jO,
+  MATH_ONLIST_OPERATOR_MAX: qO,
+  MATH_ONLIST_TOOLTIP_MAX: ZO,
+  MATH_ONLIST_OPERATOR_AVERAGE: QO,
+  MATH_ONLIST_TOOLTIP_AVERAGE: eR,
+  MATH_ONLIST_OPERATOR_MEDIAN: tR,
+  MATH_ONLIST_TOOLTIP_MEDIAN: sR,
+  MATH_ONLIST_OPERATOR_MODE: oR,
+  MATH_ONLIST_TOOLTIP_MODE: iR,
+  MATH_ONLIST_OPERATOR_STD_DEV: nR,
+  MATH_ONLIST_TOOLTIP_STD_DEV: rR,
+  MATH_ONLIST_OPERATOR_RANDOM: lR,
+  MATH_ONLIST_TOOLTIP_RANDOM: cR,
+  MATH_MODULO_HELPURL: uR,
+  MATH_MODULO_TITLE: aR,
+  MATH_MODULO_TOOLTIP: hR,
+  MATH_CONSTRAIN_HELPURL: dR,
+  MATH_CONSTRAIN_TITLE: _R,
+  MATH_CONSTRAIN_TOOLTIP: TR,
+  MATH_RANDOM_INT_HELPURL: $R,
+  MATH_RANDOM_INT_TITLE: ER,
+  MATH_RANDOM_INT_TOOLTIP: gR,
+  MATH_RANDOM_FLOAT_HELPURL: pR,
+  MATH_RANDOM_FLOAT_TITLE_RANDOM: mR,
+  MATH_RANDOM_FLOAT_TOOLTIP: IR,
+  MATH_ATAN2_HELPURL: OR,
+  MATH_ATAN2_TITLE: RR,
+  MATH_ATAN2_TOOLTIP: SR,
+  TEXT_TEXT_HELPURL: LR,
+  TEXT_TEXT_TOOLTIP: bR,
+  TEXT_JOIN_HELPURL: fR,
+  TEXT_JOIN_TITLE_CREATEWITH: AR,
+  TEXT_JOIN_TOOLTIP: CR,
+  TEXT_CREATE_JOIN_TITLE_JOIN: NR,
+  TEXT_CREATE_JOIN_TOOLTIP: MR,
+  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: yR,
+  TEXT_CREATE_JOIN_ITEM_TOOLTIP: vR,
+  TEXT_APPEND_HELPURL: kR,
+  TEXT_APPEND_TITLE: PR,
+  TEXT_APPEND_VARIABLE: DR,
+  TEXT_APPEND_TOOLTIP: wR,
+  TEXT_LENGTH_HELPURL: BR,
+  TEXT_LENGTH_TITLE: xR,
+  TEXT_LENGTH_TOOLTIP: UR,
+  TEXT_ISEMPTY_HELPURL: FR,
+  TEXT_ISEMPTY_TITLE: HR,
+  TEXT_ISEMPTY_TOOLTIP: GR,
+  TEXT_INDEXOF_HELPURL: VR,
+  TEXT_INDEXOF_TOOLTIP: XR,
+  TEXT_INDEXOF_TITLE: WR,
+  TEXT_INDEXOF_OPERATOR_FIRST: YR,
+  TEXT_INDEXOF_OPERATOR_LAST: zR,
+  TEXT_CHARAT_HELPURL: KR,
+  TEXT_CHARAT_TITLE: JR,
+  TEXT_CHARAT_FROM_START: jR,
+  TEXT_CHARAT_FROM_END: qR,
+  TEXT_CHARAT_FIRST: ZR,
+  TEXT_CHARAT_LAST: QR,
+  TEXT_CHARAT_RANDOM: eS,
+  TEXT_CHARAT_TAIL: tS,
+  TEXT_CHARAT_TOOLTIP: sS,
+  TEXT_GET_SUBSTRING_TOOLTIP: oS,
+  TEXT_GET_SUBSTRING_HELPURL: iS,
+  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: nS,
+  TEXT_GET_SUBSTRING_START_FROM_START: rS,
+  TEXT_GET_SUBSTRING_START_FROM_END: lS,
+  TEXT_GET_SUBSTRING_START_FIRST: cS,
+  TEXT_GET_SUBSTRING_END_FROM_START: uS,
+  TEXT_GET_SUBSTRING_END_FROM_END: aS,
+  TEXT_GET_SUBSTRING_END_LAST: hS,
+  TEXT_GET_SUBSTRING_TAIL: dS,
+  TEXT_CHANGECASE_HELPURL: _S,
+  TEXT_CHANGECASE_TOOLTIP: TS,
+  TEXT_CHANGECASE_OPERATOR_UPPERCASE: $S,
+  TEXT_CHANGECASE_OPERATOR_LOWERCASE: ES,
+  TEXT_CHANGECASE_OPERATOR_TITLECASE: gS,
+  TEXT_TRIM_HELPURL: pS,
+  TEXT_TRIM_TOOLTIP: mS,
+  TEXT_TRIM_OPERATOR_BOTH: IS,
+  TEXT_TRIM_OPERATOR_LEFT: OS,
+  TEXT_TRIM_OPERATOR_RIGHT: RS,
+  TEXT_PRINT_HELPURL: SS,
+  TEXT_PRINT_TITLE: LS,
+  TEXT_PRINT_TOOLTIP: bS,
+  TEXT_PROMPT_HELPURL: fS,
+  TEXT_PROMPT_TYPE_TEXT: AS,
+  TEXT_PROMPT_TYPE_NUMBER: CS,
+  TEXT_PROMPT_TOOLTIP_NUMBER: NS,
+  TEXT_PROMPT_TOOLTIP_TEXT: MS,
+  TEXT_COUNT_MESSAGE0: yS,
+  TEXT_COUNT_HELPURL: vS,
+  TEXT_COUNT_TOOLTIP: kS,
+  TEXT_REPLACE_MESSAGE0: PS,
+  TEXT_REPLACE_HELPURL: DS,
+  TEXT_REPLACE_TOOLTIP: wS,
+  TEXT_REVERSE_MESSAGE0: BS,
+  TEXT_REVERSE_HELPURL: xS,
+  TEXT_REVERSE_TOOLTIP: US,
+  LISTS_CREATE_EMPTY_HELPURL: FS,
+  LISTS_CREATE_EMPTY_TITLE: HS,
+  LISTS_CREATE_EMPTY_TOOLTIP: GS,
+  LISTS_CREATE_WITH_HELPURL: VS,
+  LISTS_CREATE_WITH_TOOLTIP: XS,
+  LISTS_CREATE_WITH_INPUT_WITH: WS,
+  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: YS,
+  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: zS,
+  LISTS_CREATE_WITH_ITEM_TITLE: KS,
+  LISTS_CREATE_WITH_ITEM_TOOLTIP: JS,
+  LISTS_REPEAT_HELPURL: jS,
+  LISTS_REPEAT_TOOLTIP: qS,
+  LISTS_REPEAT_TITLE: ZS,
+  LISTS_LENGTH_HELPURL: QS,
+  LISTS_LENGTH_TITLE: eL,
+  LISTS_LENGTH_TOOLTIP: tL,
+  LISTS_ISEMPTY_HELPURL: sL,
+  LISTS_ISEMPTY_TITLE: oL,
+  LISTS_ISEMPTY_TOOLTIP: iL,
+  LISTS_INLIST: nL,
+  LISTS_INDEX_OF_HELPURL: rL,
+  LISTS_INDEX_OF_INPUT_IN_LIST: lL,
+  LISTS_INDEX_OF_FIRST: cL,
+  LISTS_INDEX_OF_LAST: uL,
+  LISTS_INDEX_OF_TOOLTIP: aL,
+  LISTS_GET_INDEX_HELPURL: hL,
+  LISTS_GET_INDEX_GET: dL,
+  LISTS_GET_INDEX_GET_REMOVE: _L,
+  LISTS_GET_INDEX_REMOVE: TL,
+  LISTS_GET_INDEX_FROM_START: $L,
+  LISTS_GET_INDEX_FROM_END: EL,
+  LISTS_GET_INDEX_FIRST: gL,
+  LISTS_GET_INDEX_LAST: pL,
+  LISTS_GET_INDEX_RANDOM: mL,
+  LISTS_GET_INDEX_TAIL: IL,
+  LISTS_GET_INDEX_INPUT_IN_LIST: OL,
+  LISTS_INDEX_FROM_START_TOOLTIP: RL,
+  LISTS_INDEX_FROM_END_TOOLTIP: SL,
+  LISTS_GET_INDEX_TOOLTIP_GET_FROM: LL,
+  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: bL,
+  LISTS_GET_INDEX_TOOLTIP_GET_LAST: fL,
+  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: AL,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: CL,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: NL,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: ML,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: yL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: vL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: kL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: PL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: DL,
+  LISTS_SET_INDEX_HELPURL: wL,
+  LISTS_SET_INDEX_INPUT_IN_LIST: BL,
+  LISTS_SET_INDEX_SET: xL,
+  LISTS_SET_INDEX_INSERT: UL,
+  LISTS_SET_INDEX_INPUT_TO: FL,
+  LISTS_SET_INDEX_TOOLTIP_SET_FROM: HL,
+  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: GL,
+  LISTS_SET_INDEX_TOOLTIP_SET_LAST: VL,
+  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: XL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: WL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: YL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: zL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: KL,
+  LISTS_GET_SUBLIST_HELPURL: JL,
+  LISTS_GET_SUBLIST_INPUT_IN_LIST: jL,
+  LISTS_GET_SUBLIST_START_FROM_START: qL,
+  LISTS_GET_SUBLIST_START_FROM_END: ZL,
+  LISTS_GET_SUBLIST_START_FIRST: QL,
+  LISTS_GET_SUBLIST_END_FROM_START: eb,
+  LISTS_GET_SUBLIST_END_FROM_END: tb,
+  LISTS_GET_SUBLIST_END_LAST: sb,
+  LISTS_GET_SUBLIST_TAIL: ob,
+  LISTS_GET_SUBLIST_TOOLTIP: ib,
+  LISTS_SORT_HELPURL: nb,
+  LISTS_SORT_TITLE: rb,
+  LISTS_SORT_TOOLTIP: lb,
+  LISTS_SORT_ORDER_ASCENDING: cb,
+  LISTS_SORT_ORDER_DESCENDING: ub,
+  LISTS_SORT_TYPE_NUMERIC: ab,
+  LISTS_SORT_TYPE_TEXT: hb,
+  LISTS_SORT_TYPE_IGNORECASE: db,
+  LISTS_SPLIT_HELPURL: _b,
+  LISTS_SPLIT_LIST_FROM_TEXT: Tb,
+  LISTS_SPLIT_TEXT_FROM_LIST: $b,
+  LISTS_SPLIT_WITH_DELIMITER: Eb,
+  LISTS_SPLIT_TOOLTIP_SPLIT: gb,
+  LISTS_SPLIT_TOOLTIP_JOIN: pb,
+  LISTS_REVERSE_HELPURL: mb,
+  LISTS_REVERSE_MESSAGE0: Ib,
+  LISTS_REVERSE_TOOLTIP: Ob,
+  ORDINAL_NUMBER_SUFFIX: Rb,
+  VARIABLES_GET_HELPURL: Sb,
+  VARIABLES_GET_TOOLTIP: Lb,
+  VARIABLES_GET_CREATE_SET: bb,
+  VARIABLES_SET_HELPURL: fb,
+  VARIABLES_SET: Ab,
+  VARIABLES_SET_TOOLTIP: Cb,
+  VARIABLES_SET_CREATE_GET: Nb,
+  PROCEDURES_DEFNORETURN_HELPURL: Mb,
+  PROCEDURES_DEFNORETURN_TITLE: yb,
+  PROCEDURES_DEFNORETURN_PROCEDURE: vb,
+  PROCEDURES_BEFORE_PARAMS: kb,
+  PROCEDURES_CALL_BEFORE_PARAMS: Pb,
+  PROCEDURES_CALL_DISABLED_DEF_WARNING: Db,
+  PROCEDURES_DEFNORETURN_DO: wb,
+  PROCEDURES_DEFNORETURN_TOOLTIP: Bb,
+  PROCEDURES_DEFNORETURN_COMMENT: xb,
+  PROCEDURES_DEFRETURN_HELPURL: Ub,
+  PROCEDURES_DEFRETURN_TITLE: Fb,
+  PROCEDURES_DEFRETURN_PROCEDURE: Hb,
+  PROCEDURES_DEFRETURN_DO: Gb,
+  PROCEDURES_DEFRETURN_COMMENT: Vb,
+  PROCEDURES_DEFRETURN_RETURN: Xb,
+  PROCEDURES_DEFRETURN_TOOLTIP: Wb,
+  PROCEDURES_ALLOW_STATEMENTS: Yb,
+  PROCEDURES_DEF_DUPLICATE_WARNING: zb,
+  PROCEDURES_CALLNORETURN_HELPURL: Kb,
+  PROCEDURES_CALLNORETURN_TOOLTIP: Jb,
+  PROCEDURES_CALLRETURN_HELPURL: jb,
+  PROCEDURES_CALLRETURN_TOOLTIP: qb,
+  PROCEDURES_MUTATORCONTAINER_TITLE: Zb,
+  PROCEDURES_MUTATORCONTAINER_TOOLTIP: Qb,
+  PROCEDURES_MUTATORARG_TITLE: ef,
+  PROCEDURES_MUTATORARG_TOOLTIP: tf,
+  PROCEDURES_HIGHLIGHT_DEF: sf,
+  PROCEDURES_CREATE_DO: of,
+  PROCEDURES_IFRETURN_TOOLTIP: nf,
+  PROCEDURES_IFRETURN_HELPURL: rf,
+  PROCEDURES_IFRETURN_WARNING: lf,
+  WORKSPACE_COMMENT_DEFAULT_TEXT: cf,
+  WORKSPACE_ARIA_LABEL: uf,
+  COLLAPSED_WARNINGS_WARNING: af,
+  DIALOG_OK: hf,
+  DIALOG_CANCEL: df,
+  EDIT_BLOCK_CONTENTS: _f,
+  MOVE_BLOCK: Tf,
+  WINDOWS: $f,
+  MAC_OS: Ef,
+  CHROME_OS: gf,
+  LINUX: pf,
+  UNKNOWN: mf,
+  CONTROL_KEY: If,
+  COMMAND_KEY: Of,
+  OPTION_KEY: Rf,
+  ALT_KEY: Sf,
+  CUT_SHORTCUT: Lf,
+  COPY_SHORTCUT: bf,
+  PASTE_SHORTCUT: ff,
+  HELP_PROMPT: Af,
+  SHORTCUTS_GENERAL: Cf,
+  SHORTCUTS_EDITING: Nf,
+  SHORTCUTS_CODE_NAVIGATION: Mf,
+  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: yf,
+  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: vf,
+  KEYBOARD_NAV_COPIED_HINT: kf,
+  KEYBOARD_NAV_CUT_HINT: Pf
+} = Rp, Df = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  ADD_COMMENT: Dp,
-  ALT_KEY: Rf,
-  CANNOT_DELETE_VARIABLE_PROCEDURE: _m,
-  CHANGE_VALUE_TITLE: em,
-  CHROME_OS: Ef,
-  CLEAN_UP: Vp,
-  CLOSE: Xp,
-  COLLAPSED_WARNINGS_WARNING: uf,
-  COLLAPSE_ALL: Yp,
-  COLLAPSE_BLOCK: Wp,
-  COLOUR_BLEND_COLOUR1: Cm,
-  COLOUR_BLEND_COLOUR2: Nm,
-  COLOUR_BLEND_HELPURL: fm,
-  COLOUR_BLEND_RATIO: Mm,
-  COLOUR_BLEND_TITLE: Am,
-  COLOUR_BLEND_TOOLTIP: ym,
-  COLOUR_HUE: Ap,
-  COLOUR_PICKER_HELPURL: $m,
-  COLOUR_PICKER_TOOLTIP: Em,
-  COLOUR_RANDOM_HELPURL: gm,
-  COLOUR_RANDOM_TITLE: pm,
-  COLOUR_RANDOM_TOOLTIP: mm,
-  COLOUR_RGB_BLUE: Lm,
-  COLOUR_RGB_GREEN: Sm,
-  COLOUR_RGB_HELPURL: Im,
-  COLOUR_RGB_RED: Rm,
-  COLOUR_RGB_TITLE: Om,
-  COLOUR_RGB_TOOLTIP: bm,
-  COMMAND_KEY: If,
-  CONTROLS_FLOW_STATEMENTS_HELPURL: jm,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: qm,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: Zm,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: Qm,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: eI,
-  CONTROLS_FLOW_STATEMENTS_WARNING: tI,
-  CONTROLS_FOREACH_HELPURL: Ym,
-  CONTROLS_FOREACH_INPUT_DO: Km,
-  CONTROLS_FOREACH_TITLE: zm,
-  CONTROLS_FOREACH_TOOLTIP: Jm,
-  CONTROLS_FOR_HELPURL: Gm,
-  CONTROLS_FOR_INPUT_DO: Wm,
-  CONTROLS_FOR_TITLE: Xm,
-  CONTROLS_FOR_TOOLTIP: Vm,
-  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: _I,
-  CONTROLS_IF_ELSEIF_TOOLTIP: TI,
-  CONTROLS_IF_ELSE_TITLE_ELSE: $I,
-  CONTROLS_IF_ELSE_TOOLTIP: EI,
-  CONTROLS_IF_HELPURL: sI,
-  CONTROLS_IF_IF_TITLE_IF: hI,
-  CONTROLS_IF_IF_TOOLTIP: dI,
-  CONTROLS_IF_MSG_ELSE: uI,
-  CONTROLS_IF_MSG_ELSEIF: cI,
-  CONTROLS_IF_MSG_IF: lI,
-  CONTROLS_IF_MSG_THEN: aI,
-  CONTROLS_IF_TOOLTIP_1: oI,
-  CONTROLS_IF_TOOLTIP_2: iI,
-  CONTROLS_IF_TOOLTIP_3: nI,
-  CONTROLS_IF_TOOLTIP_4: rI,
-  CONTROLS_REPEAT_HELPURL: vm,
-  CONTROLS_REPEAT_INPUT_DO: Pm,
-  CONTROLS_REPEAT_TITLE: km,
-  CONTROLS_REPEAT_TOOLTIP: Dm,
-  CONTROLS_WHILEUNTIL_HELPURL: wm,
-  CONTROLS_WHILEUNTIL_INPUT_DO: Bm,
-  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: Um,
-  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: xm,
-  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: Hm,
-  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: Fm,
-  CONTROL_KEY: mf,
-  COPY_SHORTCUT: Lf,
-  CUT_SHORTCUT: Sf,
-  DELETE_ALL_BLOCKS: Gp,
-  DELETE_BLOCK: Fp,
-  DELETE_VARIABLE: Tm,
-  DELETE_VARIABLE_CONFIRMATION: dm,
-  DELETE_X_BLOCKS: Hp,
-  DIALOG_CANCEL: hf,
-  DIALOG_OK: af,
-  DISABLE_BLOCK: Jp,
-  DUPLICATE_BLOCK: Pp,
-  DUPLICATE_COMMENT: Bp,
-  EDIT_BLOCK_CONTENTS: df,
-  ENABLE_BLOCK: jp,
-  EXPAND_ALL: Kp,
-  EXPAND_BLOCK: zp,
-  EXTERNAL_INPUTS: xp,
-  HELP: qp,
-  HELP_PROMPT: ff,
-  INLINE_INPUTS: Up,
-  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: yf,
-  KEYBOARD_NAV_COPIED_HINT: vf,
-  KEYBOARD_NAV_CUT_HINT: kf,
-  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: Mf,
-  LINUX: gf,
-  LISTS_CREATE_EMPTY_HELPURL: US,
-  LISTS_CREATE_EMPTY_TITLE: FS,
-  LISTS_CREATE_EMPTY_TOOLTIP: HS,
-  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: WS,
-  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: YS,
-  LISTS_CREATE_WITH_HELPURL: GS,
-  LISTS_CREATE_WITH_INPUT_WITH: XS,
-  LISTS_CREATE_WITH_ITEM_TITLE: zS,
-  LISTS_CREATE_WITH_ITEM_TOOLTIP: KS,
-  LISTS_CREATE_WITH_TOOLTIP: VS,
-  LISTS_GET_INDEX_FIRST: EL,
-  LISTS_GET_INDEX_FROM_END: $L,
-  LISTS_GET_INDEX_FROM_START: TL,
-  LISTS_GET_INDEX_GET: hL,
-  LISTS_GET_INDEX_GET_REMOVE: dL,
-  LISTS_GET_INDEX_HELPURL: aL,
-  LISTS_GET_INDEX_INPUT_IN_LIST: IL,
-  LISTS_GET_INDEX_LAST: gL,
-  LISTS_GET_INDEX_RANDOM: pL,
-  LISTS_GET_INDEX_REMOVE: _L,
-  LISTS_GET_INDEX_TAIL: mL,
-  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: LL,
-  LISTS_GET_INDEX_TOOLTIP_GET_FROM: SL,
-  LISTS_GET_INDEX_TOOLTIP_GET_LAST: bL,
-  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: fL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: CL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: AL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: NL,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: ML,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: vL,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: yL,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: kL,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: PL,
-  LISTS_GET_SUBLIST_END_FROM_END: eb,
-  LISTS_GET_SUBLIST_END_FROM_START: QL,
-  LISTS_GET_SUBLIST_END_LAST: tb,
-  LISTS_GET_SUBLIST_HELPURL: KL,
-  LISTS_GET_SUBLIST_INPUT_IN_LIST: JL,
-  LISTS_GET_SUBLIST_START_FIRST: ZL,
-  LISTS_GET_SUBLIST_START_FROM_END: qL,
-  LISTS_GET_SUBLIST_START_FROM_START: jL,
-  LISTS_GET_SUBLIST_TAIL: sb,
-  LISTS_GET_SUBLIST_TOOLTIP: ob,
-  LISTS_HUE: fp,
-  LISTS_INDEX_FROM_END_TOOLTIP: RL,
-  LISTS_INDEX_FROM_START_TOOLTIP: OL,
-  LISTS_INDEX_OF_FIRST: lL,
-  LISTS_INDEX_OF_HELPURL: nL,
-  LISTS_INDEX_OF_INPUT_IN_LIST: rL,
-  LISTS_INDEX_OF_LAST: cL,
-  LISTS_INDEX_OF_TOOLTIP: uL,
-  LISTS_INLIST: iL,
-  LISTS_ISEMPTY_HELPURL: tL,
-  LISTS_ISEMPTY_TITLE: sL,
-  LISTS_ISEMPTY_TOOLTIP: oL,
-  LISTS_LENGTH_HELPURL: ZS,
-  LISTS_LENGTH_TITLE: QS,
-  LISTS_LENGTH_TOOLTIP: eL,
-  LISTS_REPEAT_HELPURL: JS,
-  LISTS_REPEAT_TITLE: qS,
-  LISTS_REPEAT_TOOLTIP: jS,
-  LISTS_REVERSE_HELPURL: pb,
-  LISTS_REVERSE_MESSAGE0: mb,
-  LISTS_REVERSE_TOOLTIP: Ib,
-  LISTS_SET_INDEX_HELPURL: DL,
-  LISTS_SET_INDEX_INPUT_IN_LIST: wL,
-  LISTS_SET_INDEX_INPUT_TO: UL,
-  LISTS_SET_INDEX_INSERT: xL,
-  LISTS_SET_INDEX_SET: BL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: WL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: XL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: YL,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: zL,
-  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: HL,
-  LISTS_SET_INDEX_TOOLTIP_SET_FROM: FL,
-  LISTS_SET_INDEX_TOOLTIP_SET_LAST: GL,
-  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: VL,
-  LISTS_SORT_HELPURL: ib,
-  LISTS_SORT_ORDER_ASCENDING: lb,
-  LISTS_SORT_ORDER_DESCENDING: cb,
-  LISTS_SORT_TITLE: nb,
-  LISTS_SORT_TOOLTIP: rb,
-  LISTS_SORT_TYPE_IGNORECASE: hb,
-  LISTS_SORT_TYPE_NUMERIC: ub,
-  LISTS_SORT_TYPE_TEXT: ab,
-  LISTS_SPLIT_HELPURL: db,
-  LISTS_SPLIT_LIST_FROM_TEXT: _b,
-  LISTS_SPLIT_TEXT_FROM_LIST: Tb,
-  LISTS_SPLIT_TOOLTIP_JOIN: gb,
-  LISTS_SPLIT_TOOLTIP_SPLIT: Eb,
-  LISTS_SPLIT_WITH_DELIMITER: $b,
-  LOGIC_BOOLEAN_FALSE: PI,
-  LOGIC_BOOLEAN_HELPURL: vI,
-  LOGIC_BOOLEAN_TOOLTIP: DI,
-  LOGIC_BOOLEAN_TRUE: kI,
-  LOGIC_COMPARE_HELPURL: gI,
-  LOGIC_COMPARE_TOOLTIP_EQ: pI,
-  LOGIC_COMPARE_TOOLTIP_GT: RI,
-  LOGIC_COMPARE_TOOLTIP_GTE: SI,
-  LOGIC_COMPARE_TOOLTIP_LT: II,
-  LOGIC_COMPARE_TOOLTIP_LTE: OI,
-  LOGIC_COMPARE_TOOLTIP_NEQ: mI,
-  LOGIC_HUE: Rp,
-  LOGIC_NEGATE_HELPURL: NI,
-  LOGIC_NEGATE_TITLE: MI,
-  LOGIC_NEGATE_TOOLTIP: yI,
-  LOGIC_NULL: BI,
-  LOGIC_NULL_HELPURL: wI,
-  LOGIC_NULL_TOOLTIP: xI,
-  LOGIC_OPERATION_AND: fI,
-  LOGIC_OPERATION_HELPURL: LI,
-  LOGIC_OPERATION_OR: CI,
-  LOGIC_OPERATION_TOOLTIP_AND: bI,
-  LOGIC_OPERATION_TOOLTIP_OR: AI,
-  LOGIC_TERNARY_CONDITION: FI,
-  LOGIC_TERNARY_HELPURL: UI,
-  LOGIC_TERNARY_IF_FALSE: GI,
-  LOGIC_TERNARY_IF_TRUE: HI,
-  LOGIC_TERNARY_TOOLTIP: VI,
-  LOOPS_HUE: Sp,
-  MAC_OS: $f,
-  MATH_ADDITION_SYMBOL: YI,
-  MATH_ARITHMETIC_HELPURL: oO,
-  MATH_ARITHMETIC_TOOLTIP_ADD: iO,
-  MATH_ARITHMETIC_TOOLTIP_DIVIDE: lO,
-  MATH_ARITHMETIC_TOOLTIP_MINUS: nO,
-  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: rO,
-  MATH_ARITHMETIC_TOOLTIP_POWER: cO,
-  MATH_ATAN2_HELPURL: IR,
-  MATH_ATAN2_TITLE: OR,
-  MATH_ATAN2_TOOLTIP: RR,
-  MATH_CHANGE_HELPURL: wO,
-  MATH_CHANGE_TITLE: BO,
-  MATH_CHANGE_TITLE_ITEM: xO,
-  MATH_CHANGE_TOOLTIP: UO,
-  MATH_CONSTANT_HELPURL: fO,
-  MATH_CONSTANT_TOOLTIP: AO,
-  MATH_CONSTRAIN_HELPURL: hR,
-  MATH_CONSTRAIN_TITLE: dR,
-  MATH_CONSTRAIN_TOOLTIP: _R,
-  MATH_DIVISION_SYMBOL: KI,
-  MATH_HUE: Lp,
-  MATH_IS_DIVISIBLE_BY: PO,
-  MATH_IS_EVEN: CO,
-  MATH_IS_NEGATIVE: kO,
-  MATH_IS_ODD: NO,
-  MATH_IS_POSITIVE: vO,
-  MATH_IS_PRIME: MO,
-  MATH_IS_TOOLTIP: DO,
-  MATH_IS_WHOLE: yO,
-  MATH_MODULO_HELPURL: cR,
-  MATH_MODULO_TITLE: uR,
-  MATH_MODULO_TOOLTIP: aR,
-  MATH_MULTIPLICATION_SYMBOL: JI,
-  MATH_NUMBER_HELPURL: XI,
-  MATH_NUMBER_TOOLTIP: WI,
-  MATH_ONLIST_HELPURL: WO,
-  MATH_ONLIST_OPERATOR_AVERAGE: ZO,
-  MATH_ONLIST_OPERATOR_MAX: jO,
-  MATH_ONLIST_OPERATOR_MEDIAN: eR,
-  MATH_ONLIST_OPERATOR_MIN: KO,
-  MATH_ONLIST_OPERATOR_MODE: sR,
-  MATH_ONLIST_OPERATOR_RANDOM: rR,
-  MATH_ONLIST_OPERATOR_STD_DEV: iR,
-  MATH_ONLIST_OPERATOR_SUM: YO,
-  MATH_ONLIST_TOOLTIP_AVERAGE: QO,
-  MATH_ONLIST_TOOLTIP_MAX: qO,
-  MATH_ONLIST_TOOLTIP_MEDIAN: tR,
-  MATH_ONLIST_TOOLTIP_MIN: JO,
-  MATH_ONLIST_TOOLTIP_MODE: oR,
-  MATH_ONLIST_TOOLTIP_RANDOM: lR,
-  MATH_ONLIST_TOOLTIP_STD_DEV: nR,
-  MATH_ONLIST_TOOLTIP_SUM: zO,
-  MATH_POWER_SYMBOL: jI,
-  MATH_RANDOM_FLOAT_HELPURL: gR,
-  MATH_RANDOM_FLOAT_TITLE_RANDOM: pR,
-  MATH_RANDOM_FLOAT_TOOLTIP: mR,
-  MATH_RANDOM_INT_HELPURL: TR,
-  MATH_RANDOM_INT_TITLE: $R,
-  MATH_RANDOM_INT_TOOLTIP: ER,
-  MATH_ROUND_HELPURL: FO,
-  MATH_ROUND_OPERATOR_ROUND: GO,
-  MATH_ROUND_OPERATOR_ROUNDDOWN: XO,
-  MATH_ROUND_OPERATOR_ROUNDUP: VO,
-  MATH_ROUND_TOOLTIP: HO,
-  MATH_SINGLE_HELPURL: uO,
-  MATH_SINGLE_OP_ABSOLUTE: dO,
-  MATH_SINGLE_OP_ROOT: aO,
-  MATH_SINGLE_TOOLTIP_ABS: _O,
-  MATH_SINGLE_TOOLTIP_EXP: gO,
-  MATH_SINGLE_TOOLTIP_LN: $O,
-  MATH_SINGLE_TOOLTIP_LOG10: EO,
-  MATH_SINGLE_TOOLTIP_NEG: TO,
-  MATH_SINGLE_TOOLTIP_POW10: pO,
-  MATH_SINGLE_TOOLTIP_ROOT: hO,
-  MATH_SUBTRACTION_SYMBOL: zI,
-  MATH_TRIG_ACOS: tO,
-  MATH_TRIG_ASIN: eO,
-  MATH_TRIG_ATAN: sO,
-  MATH_TRIG_COS: ZI,
-  MATH_TRIG_HELPURL: mO,
-  MATH_TRIG_SIN: qI,
-  MATH_TRIG_TAN: QI,
-  MATH_TRIG_TOOLTIP_ACOS: LO,
-  MATH_TRIG_TOOLTIP_ASIN: SO,
-  MATH_TRIG_TOOLTIP_ATAN: bO,
-  MATH_TRIG_TOOLTIP_COS: OO,
-  MATH_TRIG_TOOLTIP_SIN: IO,
-  MATH_TRIG_TOOLTIP_TAN: RO,
-  MOVE_BLOCK: _f,
-  NEW_COLOUR_VARIABLE: rm,
-  NEW_NUMBER_VARIABLE: nm,
-  NEW_STRING_VARIABLE: im,
-  NEW_VARIABLE: om,
-  NEW_VARIABLE_TITLE: cm,
-  NEW_VARIABLE_TYPE_TITLE: lm,
-  OPTION_KEY: Of,
-  ORDINAL_NUMBER_SUFFIX: Ob,
-  PASTE_SHORTCUT: bf,
-  PROCEDURES_ALLOW_STATEMENTS: Wb,
-  PROCEDURES_BEFORE_PARAMS: vb,
-  PROCEDURES_CALLNORETURN_HELPURL: zb,
-  PROCEDURES_CALLNORETURN_TOOLTIP: Kb,
-  PROCEDURES_CALLRETURN_HELPURL: Jb,
-  PROCEDURES_CALLRETURN_TOOLTIP: jb,
-  PROCEDURES_CALL_BEFORE_PARAMS: kb,
-  PROCEDURES_CALL_DISABLED_DEF_WARNING: Pb,
-  PROCEDURES_CREATE_DO: sf,
-  PROCEDURES_DEFNORETURN_COMMENT: Bb,
-  PROCEDURES_DEFNORETURN_DO: Db,
-  PROCEDURES_DEFNORETURN_HELPURL: Nb,
-  PROCEDURES_DEFNORETURN_PROCEDURE: yb,
-  PROCEDURES_DEFNORETURN_TITLE: Mb,
-  PROCEDURES_DEFNORETURN_TOOLTIP: wb,
-  PROCEDURES_DEFRETURN_COMMENT: Gb,
-  PROCEDURES_DEFRETURN_DO: Hb,
-  PROCEDURES_DEFRETURN_HELPURL: xb,
-  PROCEDURES_DEFRETURN_PROCEDURE: Fb,
-  PROCEDURES_DEFRETURN_RETURN: Vb,
-  PROCEDURES_DEFRETURN_TITLE: Ub,
-  PROCEDURES_DEFRETURN_TOOLTIP: Xb,
-  PROCEDURES_DEF_DUPLICATE_WARNING: Yb,
-  PROCEDURES_HIGHLIGHT_DEF: tf,
-  PROCEDURES_HUE: Mp,
-  PROCEDURES_IFRETURN_HELPURL: nf,
-  PROCEDURES_IFRETURN_TOOLTIP: of,
-  PROCEDURES_IFRETURN_WARNING: rf,
-  PROCEDURES_MUTATORARG_TITLE: Qb,
-  PROCEDURES_MUTATORARG_TOOLTIP: ef,
-  PROCEDURES_MUTATORCONTAINER_TITLE: qb,
-  PROCEDURES_MUTATORCONTAINER_TOOLTIP: Zb,
-  REDO: Qp,
-  REMOVE_COMMENT: wp,
-  RENAME_VARIABLE: tm,
-  RENAME_VARIABLE_TITLE: sm,
-  SHORTCUTS_CODE_NAVIGATION: Nf,
-  SHORTCUTS_EDITING: Cf,
-  SHORTCUTS_GENERAL: Af,
-  TEXTS_HUE: bp,
-  TEXT_APPEND_HELPURL: vR,
-  TEXT_APPEND_TITLE: kR,
-  TEXT_APPEND_TOOLTIP: DR,
-  TEXT_APPEND_VARIABLE: PR,
-  TEXT_CHANGECASE_HELPURL: dS,
-  TEXT_CHANGECASE_OPERATOR_LOWERCASE: $S,
-  TEXT_CHANGECASE_OPERATOR_TITLECASE: ES,
-  TEXT_CHANGECASE_OPERATOR_UPPERCASE: TS,
-  TEXT_CHANGECASE_TOOLTIP: _S,
-  TEXT_CHARAT_FIRST: qR,
-  TEXT_CHARAT_FROM_END: jR,
-  TEXT_CHARAT_FROM_START: JR,
-  TEXT_CHARAT_HELPURL: zR,
-  TEXT_CHARAT_LAST: ZR,
-  TEXT_CHARAT_RANDOM: QR,
-  TEXT_CHARAT_TAIL: eS,
-  TEXT_CHARAT_TITLE: KR,
-  TEXT_CHARAT_TOOLTIP: tS,
-  TEXT_COUNT_HELPURL: yS,
-  TEXT_COUNT_MESSAGE0: MS,
-  TEXT_COUNT_TOOLTIP: vS,
-  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: MR,
-  TEXT_CREATE_JOIN_ITEM_TOOLTIP: yR,
-  TEXT_CREATE_JOIN_TITLE_JOIN: CR,
-  TEXT_CREATE_JOIN_TOOLTIP: NR,
-  TEXT_GET_SUBSTRING_END_FROM_END: uS,
-  TEXT_GET_SUBSTRING_END_FROM_START: cS,
-  TEXT_GET_SUBSTRING_END_LAST: aS,
-  TEXT_GET_SUBSTRING_HELPURL: oS,
-  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: iS,
-  TEXT_GET_SUBSTRING_START_FIRST: lS,
-  TEXT_GET_SUBSTRING_START_FROM_END: rS,
-  TEXT_GET_SUBSTRING_START_FROM_START: nS,
-  TEXT_GET_SUBSTRING_TAIL: hS,
-  TEXT_GET_SUBSTRING_TOOLTIP: sS,
-  TEXT_INDEXOF_HELPURL: GR,
-  TEXT_INDEXOF_OPERATOR_FIRST: WR,
-  TEXT_INDEXOF_OPERATOR_LAST: YR,
-  TEXT_INDEXOF_TITLE: XR,
-  TEXT_INDEXOF_TOOLTIP: VR,
-  TEXT_ISEMPTY_HELPURL: UR,
-  TEXT_ISEMPTY_TITLE: FR,
-  TEXT_ISEMPTY_TOOLTIP: HR,
-  TEXT_JOIN_HELPURL: bR,
-  TEXT_JOIN_TITLE_CREATEWITH: fR,
-  TEXT_JOIN_TOOLTIP: AR,
-  TEXT_LENGTH_HELPURL: wR,
-  TEXT_LENGTH_TITLE: BR,
-  TEXT_LENGTH_TOOLTIP: xR,
-  TEXT_PRINT_HELPURL: RS,
-  TEXT_PRINT_TITLE: SS,
-  TEXT_PRINT_TOOLTIP: LS,
-  TEXT_PROMPT_HELPURL: bS,
-  TEXT_PROMPT_TOOLTIP_NUMBER: CS,
-  TEXT_PROMPT_TOOLTIP_TEXT: NS,
-  TEXT_PROMPT_TYPE_NUMBER: AS,
-  TEXT_PROMPT_TYPE_TEXT: fS,
-  TEXT_REPLACE_HELPURL: PS,
-  TEXT_REPLACE_MESSAGE0: kS,
-  TEXT_REPLACE_TOOLTIP: DS,
-  TEXT_REVERSE_HELPURL: BS,
-  TEXT_REVERSE_MESSAGE0: wS,
-  TEXT_REVERSE_TOOLTIP: xS,
-  TEXT_TEXT_HELPURL: SR,
-  TEXT_TEXT_TOOLTIP: LR,
-  TEXT_TRIM_HELPURL: gS,
-  TEXT_TRIM_OPERATOR_BOTH: mS,
-  TEXT_TRIM_OPERATOR_LEFT: IS,
-  TEXT_TRIM_OPERATOR_RIGHT: OS,
-  TEXT_TRIM_TOOLTIP: pS,
-  TODAY: kp,
-  UNDO: Zp,
-  UNKNOWN: pf,
-  UNNAMED_KEY: vp,
-  VARIABLES_DEFAULT_NAME: yp,
-  VARIABLES_DYNAMIC_HUE: Np,
-  VARIABLES_GET_CREATE_SET: Lb,
-  VARIABLES_GET_HELPURL: Rb,
-  VARIABLES_GET_TOOLTIP: Sb,
-  VARIABLES_HUE: Cp,
-  VARIABLES_SET: fb,
-  VARIABLES_SET_CREATE_GET: Cb,
-  VARIABLES_SET_HELPURL: bb,
-  VARIABLES_SET_TOOLTIP: Ab,
-  VARIABLE_ALREADY_EXISTS: um,
-  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: am,
-  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: hm,
-  WINDOWS: Tf,
-  WORKSPACE_ARIA_LABEL: cf,
-  WORKSPACE_COMMENT_DEFAULT_TEXT: lf
+  ADD_COMMENT: wp,
+  ALT_KEY: Sf,
+  CANNOT_DELETE_VARIABLE_PROCEDURE: Tm,
+  CHANGE_VALUE_TITLE: tm,
+  CHROME_OS: gf,
+  CLEAN_UP: Xp,
+  CLOSE: Wp,
+  COLLAPSED_WARNINGS_WARNING: af,
+  COLLAPSE_ALL: zp,
+  COLLAPSE_BLOCK: Yp,
+  COLOUR_BLEND_COLOUR1: Nm,
+  COLOUR_BLEND_COLOUR2: Mm,
+  COLOUR_BLEND_HELPURL: Am,
+  COLOUR_BLEND_RATIO: ym,
+  COLOUR_BLEND_TITLE: Cm,
+  COLOUR_BLEND_TOOLTIP: vm,
+  COLOUR_HUE: Cp,
+  COLOUR_PICKER_HELPURL: Em,
+  COLOUR_PICKER_TOOLTIP: gm,
+  COLOUR_RANDOM_HELPURL: pm,
+  COLOUR_RANDOM_TITLE: mm,
+  COLOUR_RANDOM_TOOLTIP: Im,
+  COLOUR_RGB_BLUE: bm,
+  COLOUR_RGB_GREEN: Lm,
+  COLOUR_RGB_HELPURL: Om,
+  COLOUR_RGB_RED: Sm,
+  COLOUR_RGB_TITLE: Rm,
+  COLOUR_RGB_TOOLTIP: fm,
+  COMMAND_KEY: Of,
+  CONTROLS_FLOW_STATEMENTS_HELPURL: qm,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: Zm,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: Qm,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: eI,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: tI,
+  CONTROLS_FLOW_STATEMENTS_WARNING: sI,
+  CONTROLS_FOREACH_HELPURL: zm,
+  CONTROLS_FOREACH_INPUT_DO: Jm,
+  CONTROLS_FOREACH_TITLE: Km,
+  CONTROLS_FOREACH_TOOLTIP: jm,
+  CONTROLS_FOR_HELPURL: Vm,
+  CONTROLS_FOR_INPUT_DO: Ym,
+  CONTROLS_FOR_TITLE: Wm,
+  CONTROLS_FOR_TOOLTIP: Xm,
+  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: TI,
+  CONTROLS_IF_ELSEIF_TOOLTIP: $I,
+  CONTROLS_IF_ELSE_TITLE_ELSE: EI,
+  CONTROLS_IF_ELSE_TOOLTIP: gI,
+  CONTROLS_IF_HELPURL: oI,
+  CONTROLS_IF_IF_TITLE_IF: dI,
+  CONTROLS_IF_IF_TOOLTIP: _I,
+  CONTROLS_IF_MSG_ELSE: aI,
+  CONTROLS_IF_MSG_ELSEIF: uI,
+  CONTROLS_IF_MSG_IF: cI,
+  CONTROLS_IF_MSG_THEN: hI,
+  CONTROLS_IF_TOOLTIP_1: iI,
+  CONTROLS_IF_TOOLTIP_2: nI,
+  CONTROLS_IF_TOOLTIP_3: rI,
+  CONTROLS_IF_TOOLTIP_4: lI,
+  CONTROLS_REPEAT_HELPURL: km,
+  CONTROLS_REPEAT_INPUT_DO: Dm,
+  CONTROLS_REPEAT_TITLE: Pm,
+  CONTROLS_REPEAT_TOOLTIP: wm,
+  CONTROLS_WHILEUNTIL_HELPURL: Bm,
+  CONTROLS_WHILEUNTIL_INPUT_DO: xm,
+  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: Fm,
+  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: Um,
+  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: Gm,
+  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: Hm,
+  CONTROL_KEY: If,
+  COPY_SHORTCUT: bf,
+  CUT_SHORTCUT: Lf,
+  DELETE_ALL_BLOCKS: Vp,
+  DELETE_BLOCK: Hp,
+  DELETE_VARIABLE: $m,
+  DELETE_VARIABLE_CONFIRMATION: _m,
+  DELETE_X_BLOCKS: Gp,
+  DIALOG_CANCEL: df,
+  DIALOG_OK: hf,
+  DISABLE_BLOCK: jp,
+  DUPLICATE_BLOCK: Dp,
+  DUPLICATE_COMMENT: xp,
+  EDIT_BLOCK_CONTENTS: _f,
+  ENABLE_BLOCK: qp,
+  EXPAND_ALL: Jp,
+  EXPAND_BLOCK: Kp,
+  EXTERNAL_INPUTS: Up,
+  HELP: Zp,
+  HELP_PROMPT: Af,
+  INLINE_INPUTS: Fp,
+  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: vf,
+  KEYBOARD_NAV_COPIED_HINT: kf,
+  KEYBOARD_NAV_CUT_HINT: Pf,
+  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: yf,
+  LINUX: pf,
+  LISTS_CREATE_EMPTY_HELPURL: FS,
+  LISTS_CREATE_EMPTY_TITLE: HS,
+  LISTS_CREATE_EMPTY_TOOLTIP: GS,
+  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: YS,
+  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: zS,
+  LISTS_CREATE_WITH_HELPURL: VS,
+  LISTS_CREATE_WITH_INPUT_WITH: WS,
+  LISTS_CREATE_WITH_ITEM_TITLE: KS,
+  LISTS_CREATE_WITH_ITEM_TOOLTIP: JS,
+  LISTS_CREATE_WITH_TOOLTIP: XS,
+  LISTS_GET_INDEX_FIRST: gL,
+  LISTS_GET_INDEX_FROM_END: EL,
+  LISTS_GET_INDEX_FROM_START: $L,
+  LISTS_GET_INDEX_GET: dL,
+  LISTS_GET_INDEX_GET_REMOVE: _L,
+  LISTS_GET_INDEX_HELPURL: hL,
+  LISTS_GET_INDEX_INPUT_IN_LIST: OL,
+  LISTS_GET_INDEX_LAST: pL,
+  LISTS_GET_INDEX_RANDOM: mL,
+  LISTS_GET_INDEX_REMOVE: TL,
+  LISTS_GET_INDEX_TAIL: IL,
+  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: bL,
+  LISTS_GET_INDEX_TOOLTIP_GET_FROM: LL,
+  LISTS_GET_INDEX_TOOLTIP_GET_LAST: fL,
+  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: AL,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: NL,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: CL,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: ML,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: yL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: kL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: vL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: PL,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: DL,
+  LISTS_GET_SUBLIST_END_FROM_END: tb,
+  LISTS_GET_SUBLIST_END_FROM_START: eb,
+  LISTS_GET_SUBLIST_END_LAST: sb,
+  LISTS_GET_SUBLIST_HELPURL: JL,
+  LISTS_GET_SUBLIST_INPUT_IN_LIST: jL,
+  LISTS_GET_SUBLIST_START_FIRST: QL,
+  LISTS_GET_SUBLIST_START_FROM_END: ZL,
+  LISTS_GET_SUBLIST_START_FROM_START: qL,
+  LISTS_GET_SUBLIST_TAIL: ob,
+  LISTS_GET_SUBLIST_TOOLTIP: ib,
+  LISTS_HUE: Ap,
+  LISTS_INDEX_FROM_END_TOOLTIP: SL,
+  LISTS_INDEX_FROM_START_TOOLTIP: RL,
+  LISTS_INDEX_OF_FIRST: cL,
+  LISTS_INDEX_OF_HELPURL: rL,
+  LISTS_INDEX_OF_INPUT_IN_LIST: lL,
+  LISTS_INDEX_OF_LAST: uL,
+  LISTS_INDEX_OF_TOOLTIP: aL,
+  LISTS_INLIST: nL,
+  LISTS_ISEMPTY_HELPURL: sL,
+  LISTS_ISEMPTY_TITLE: oL,
+  LISTS_ISEMPTY_TOOLTIP: iL,
+  LISTS_LENGTH_HELPURL: QS,
+  LISTS_LENGTH_TITLE: eL,
+  LISTS_LENGTH_TOOLTIP: tL,
+  LISTS_REPEAT_HELPURL: jS,
+  LISTS_REPEAT_TITLE: ZS,
+  LISTS_REPEAT_TOOLTIP: qS,
+  LISTS_REVERSE_HELPURL: mb,
+  LISTS_REVERSE_MESSAGE0: Ib,
+  LISTS_REVERSE_TOOLTIP: Ob,
+  LISTS_SET_INDEX_HELPURL: wL,
+  LISTS_SET_INDEX_INPUT_IN_LIST: BL,
+  LISTS_SET_INDEX_INPUT_TO: FL,
+  LISTS_SET_INDEX_INSERT: UL,
+  LISTS_SET_INDEX_SET: xL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: YL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: WL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: zL,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: KL,
+  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: GL,
+  LISTS_SET_INDEX_TOOLTIP_SET_FROM: HL,
+  LISTS_SET_INDEX_TOOLTIP_SET_LAST: VL,
+  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: XL,
+  LISTS_SORT_HELPURL: nb,
+  LISTS_SORT_ORDER_ASCENDING: cb,
+  LISTS_SORT_ORDER_DESCENDING: ub,
+  LISTS_SORT_TITLE: rb,
+  LISTS_SORT_TOOLTIP: lb,
+  LISTS_SORT_TYPE_IGNORECASE: db,
+  LISTS_SORT_TYPE_NUMERIC: ab,
+  LISTS_SORT_TYPE_TEXT: hb,
+  LISTS_SPLIT_HELPURL: _b,
+  LISTS_SPLIT_LIST_FROM_TEXT: Tb,
+  LISTS_SPLIT_TEXT_FROM_LIST: $b,
+  LISTS_SPLIT_TOOLTIP_JOIN: pb,
+  LISTS_SPLIT_TOOLTIP_SPLIT: gb,
+  LISTS_SPLIT_WITH_DELIMITER: Eb,
+  LOGIC_BOOLEAN_FALSE: DI,
+  LOGIC_BOOLEAN_HELPURL: kI,
+  LOGIC_BOOLEAN_TOOLTIP: wI,
+  LOGIC_BOOLEAN_TRUE: PI,
+  LOGIC_COMPARE_HELPURL: pI,
+  LOGIC_COMPARE_TOOLTIP_EQ: mI,
+  LOGIC_COMPARE_TOOLTIP_GT: SI,
+  LOGIC_COMPARE_TOOLTIP_GTE: LI,
+  LOGIC_COMPARE_TOOLTIP_LT: OI,
+  LOGIC_COMPARE_TOOLTIP_LTE: RI,
+  LOGIC_COMPARE_TOOLTIP_NEQ: II,
+  LOGIC_HUE: Sp,
+  LOGIC_NEGATE_HELPURL: MI,
+  LOGIC_NEGATE_TITLE: yI,
+  LOGIC_NEGATE_TOOLTIP: vI,
+  LOGIC_NULL: xI,
+  LOGIC_NULL_HELPURL: BI,
+  LOGIC_NULL_TOOLTIP: UI,
+  LOGIC_OPERATION_AND: AI,
+  LOGIC_OPERATION_HELPURL: bI,
+  LOGIC_OPERATION_OR: NI,
+  LOGIC_OPERATION_TOOLTIP_AND: fI,
+  LOGIC_OPERATION_TOOLTIP_OR: CI,
+  LOGIC_TERNARY_CONDITION: HI,
+  LOGIC_TERNARY_HELPURL: FI,
+  LOGIC_TERNARY_IF_FALSE: VI,
+  LOGIC_TERNARY_IF_TRUE: GI,
+  LOGIC_TERNARY_TOOLTIP: XI,
+  LOOPS_HUE: Lp,
+  MAC_OS: Ef,
+  MATH_ADDITION_SYMBOL: zI,
+  MATH_ARITHMETIC_HELPURL: iO,
+  MATH_ARITHMETIC_TOOLTIP_ADD: nO,
+  MATH_ARITHMETIC_TOOLTIP_DIVIDE: cO,
+  MATH_ARITHMETIC_TOOLTIP_MINUS: rO,
+  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: lO,
+  MATH_ARITHMETIC_TOOLTIP_POWER: uO,
+  MATH_ATAN2_HELPURL: OR,
+  MATH_ATAN2_TITLE: RR,
+  MATH_ATAN2_TOOLTIP: SR,
+  MATH_CHANGE_HELPURL: BO,
+  MATH_CHANGE_TITLE: xO,
+  MATH_CHANGE_TITLE_ITEM: UO,
+  MATH_CHANGE_TOOLTIP: FO,
+  MATH_CONSTANT_HELPURL: AO,
+  MATH_CONSTANT_TOOLTIP: CO,
+  MATH_CONSTRAIN_HELPURL: dR,
+  MATH_CONSTRAIN_TITLE: _R,
+  MATH_CONSTRAIN_TOOLTIP: TR,
+  MATH_DIVISION_SYMBOL: JI,
+  MATH_HUE: bp,
+  MATH_IS_DIVISIBLE_BY: DO,
+  MATH_IS_EVEN: NO,
+  MATH_IS_NEGATIVE: PO,
+  MATH_IS_ODD: MO,
+  MATH_IS_POSITIVE: kO,
+  MATH_IS_PRIME: yO,
+  MATH_IS_TOOLTIP: wO,
+  MATH_IS_WHOLE: vO,
+  MATH_MODULO_HELPURL: uR,
+  MATH_MODULO_TITLE: aR,
+  MATH_MODULO_TOOLTIP: hR,
+  MATH_MULTIPLICATION_SYMBOL: jI,
+  MATH_NUMBER_HELPURL: WI,
+  MATH_NUMBER_TOOLTIP: YI,
+  MATH_ONLIST_HELPURL: YO,
+  MATH_ONLIST_OPERATOR_AVERAGE: QO,
+  MATH_ONLIST_OPERATOR_MAX: qO,
+  MATH_ONLIST_OPERATOR_MEDIAN: tR,
+  MATH_ONLIST_OPERATOR_MIN: JO,
+  MATH_ONLIST_OPERATOR_MODE: oR,
+  MATH_ONLIST_OPERATOR_RANDOM: lR,
+  MATH_ONLIST_OPERATOR_STD_DEV: nR,
+  MATH_ONLIST_OPERATOR_SUM: zO,
+  MATH_ONLIST_TOOLTIP_AVERAGE: eR,
+  MATH_ONLIST_TOOLTIP_MAX: ZO,
+  MATH_ONLIST_TOOLTIP_MEDIAN: sR,
+  MATH_ONLIST_TOOLTIP_MIN: jO,
+  MATH_ONLIST_TOOLTIP_MODE: iR,
+  MATH_ONLIST_TOOLTIP_RANDOM: cR,
+  MATH_ONLIST_TOOLTIP_STD_DEV: rR,
+  MATH_ONLIST_TOOLTIP_SUM: KO,
+  MATH_POWER_SYMBOL: qI,
+  MATH_RANDOM_FLOAT_HELPURL: pR,
+  MATH_RANDOM_FLOAT_TITLE_RANDOM: mR,
+  MATH_RANDOM_FLOAT_TOOLTIP: IR,
+  MATH_RANDOM_INT_HELPURL: $R,
+  MATH_RANDOM_INT_TITLE: ER,
+  MATH_RANDOM_INT_TOOLTIP: gR,
+  MATH_ROUND_HELPURL: HO,
+  MATH_ROUND_OPERATOR_ROUND: VO,
+  MATH_ROUND_OPERATOR_ROUNDDOWN: WO,
+  MATH_ROUND_OPERATOR_ROUNDUP: XO,
+  MATH_ROUND_TOOLTIP: GO,
+  MATH_SINGLE_HELPURL: aO,
+  MATH_SINGLE_OP_ABSOLUTE: _O,
+  MATH_SINGLE_OP_ROOT: hO,
+  MATH_SINGLE_TOOLTIP_ABS: TO,
+  MATH_SINGLE_TOOLTIP_EXP: pO,
+  MATH_SINGLE_TOOLTIP_LN: EO,
+  MATH_SINGLE_TOOLTIP_LOG10: gO,
+  MATH_SINGLE_TOOLTIP_NEG: $O,
+  MATH_SINGLE_TOOLTIP_POW10: mO,
+  MATH_SINGLE_TOOLTIP_ROOT: dO,
+  MATH_SUBTRACTION_SYMBOL: KI,
+  MATH_TRIG_ACOS: sO,
+  MATH_TRIG_ASIN: tO,
+  MATH_TRIG_ATAN: oO,
+  MATH_TRIG_COS: QI,
+  MATH_TRIG_HELPURL: IO,
+  MATH_TRIG_SIN: ZI,
+  MATH_TRIG_TAN: eO,
+  MATH_TRIG_TOOLTIP_ACOS: bO,
+  MATH_TRIG_TOOLTIP_ASIN: LO,
+  MATH_TRIG_TOOLTIP_ATAN: fO,
+  MATH_TRIG_TOOLTIP_COS: RO,
+  MATH_TRIG_TOOLTIP_SIN: OO,
+  MATH_TRIG_TOOLTIP_TAN: SO,
+  MOVE_BLOCK: Tf,
+  NEW_COLOUR_VARIABLE: lm,
+  NEW_NUMBER_VARIABLE: rm,
+  NEW_STRING_VARIABLE: nm,
+  NEW_VARIABLE: im,
+  NEW_VARIABLE_TITLE: um,
+  NEW_VARIABLE_TYPE_TITLE: cm,
+  OPTION_KEY: Rf,
+  ORDINAL_NUMBER_SUFFIX: Rb,
+  PASTE_SHORTCUT: ff,
+  PROCEDURES_ALLOW_STATEMENTS: Yb,
+  PROCEDURES_BEFORE_PARAMS: kb,
+  PROCEDURES_CALLNORETURN_HELPURL: Kb,
+  PROCEDURES_CALLNORETURN_TOOLTIP: Jb,
+  PROCEDURES_CALLRETURN_HELPURL: jb,
+  PROCEDURES_CALLRETURN_TOOLTIP: qb,
+  PROCEDURES_CALL_BEFORE_PARAMS: Pb,
+  PROCEDURES_CALL_DISABLED_DEF_WARNING: Db,
+  PROCEDURES_CREATE_DO: of,
+  PROCEDURES_DEFNORETURN_COMMENT: xb,
+  PROCEDURES_DEFNORETURN_DO: wb,
+  PROCEDURES_DEFNORETURN_HELPURL: Mb,
+  PROCEDURES_DEFNORETURN_PROCEDURE: vb,
+  PROCEDURES_DEFNORETURN_TITLE: yb,
+  PROCEDURES_DEFNORETURN_TOOLTIP: Bb,
+  PROCEDURES_DEFRETURN_COMMENT: Vb,
+  PROCEDURES_DEFRETURN_DO: Gb,
+  PROCEDURES_DEFRETURN_HELPURL: Ub,
+  PROCEDURES_DEFRETURN_PROCEDURE: Hb,
+  PROCEDURES_DEFRETURN_RETURN: Xb,
+  PROCEDURES_DEFRETURN_TITLE: Fb,
+  PROCEDURES_DEFRETURN_TOOLTIP: Wb,
+  PROCEDURES_DEF_DUPLICATE_WARNING: zb,
+  PROCEDURES_HIGHLIGHT_DEF: sf,
+  PROCEDURES_HUE: yp,
+  PROCEDURES_IFRETURN_HELPURL: rf,
+  PROCEDURES_IFRETURN_TOOLTIP: nf,
+  PROCEDURES_IFRETURN_WARNING: lf,
+  PROCEDURES_MUTATORARG_TITLE: ef,
+  PROCEDURES_MUTATORARG_TOOLTIP: tf,
+  PROCEDURES_MUTATORCONTAINER_TITLE: Zb,
+  PROCEDURES_MUTATORCONTAINER_TOOLTIP: Qb,
+  REDO: em,
+  REMOVE_COMMENT: Bp,
+  RENAME_VARIABLE: sm,
+  RENAME_VARIABLE_TITLE: om,
+  SHORTCUTS_CODE_NAVIGATION: Mf,
+  SHORTCUTS_EDITING: Nf,
+  SHORTCUTS_GENERAL: Cf,
+  TEXTS_HUE: fp,
+  TEXT_APPEND_HELPURL: kR,
+  TEXT_APPEND_TITLE: PR,
+  TEXT_APPEND_TOOLTIP: wR,
+  TEXT_APPEND_VARIABLE: DR,
+  TEXT_CHANGECASE_HELPURL: _S,
+  TEXT_CHANGECASE_OPERATOR_LOWERCASE: ES,
+  TEXT_CHANGECASE_OPERATOR_TITLECASE: gS,
+  TEXT_CHANGECASE_OPERATOR_UPPERCASE: $S,
+  TEXT_CHANGECASE_TOOLTIP: TS,
+  TEXT_CHARAT_FIRST: ZR,
+  TEXT_CHARAT_FROM_END: qR,
+  TEXT_CHARAT_FROM_START: jR,
+  TEXT_CHARAT_HELPURL: KR,
+  TEXT_CHARAT_LAST: QR,
+  TEXT_CHARAT_RANDOM: eS,
+  TEXT_CHARAT_TAIL: tS,
+  TEXT_CHARAT_TITLE: JR,
+  TEXT_CHARAT_TOOLTIP: sS,
+  TEXT_COUNT_HELPURL: vS,
+  TEXT_COUNT_MESSAGE0: yS,
+  TEXT_COUNT_TOOLTIP: kS,
+  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: yR,
+  TEXT_CREATE_JOIN_ITEM_TOOLTIP: vR,
+  TEXT_CREATE_JOIN_TITLE_JOIN: NR,
+  TEXT_CREATE_JOIN_TOOLTIP: MR,
+  TEXT_GET_SUBSTRING_END_FROM_END: aS,
+  TEXT_GET_SUBSTRING_END_FROM_START: uS,
+  TEXT_GET_SUBSTRING_END_LAST: hS,
+  TEXT_GET_SUBSTRING_HELPURL: iS,
+  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: nS,
+  TEXT_GET_SUBSTRING_START_FIRST: cS,
+  TEXT_GET_SUBSTRING_START_FROM_END: lS,
+  TEXT_GET_SUBSTRING_START_FROM_START: rS,
+  TEXT_GET_SUBSTRING_TAIL: dS,
+  TEXT_GET_SUBSTRING_TOOLTIP: oS,
+  TEXT_INDEXOF_HELPURL: VR,
+  TEXT_INDEXOF_OPERATOR_FIRST: YR,
+  TEXT_INDEXOF_OPERATOR_LAST: zR,
+  TEXT_INDEXOF_TITLE: WR,
+  TEXT_INDEXOF_TOOLTIP: XR,
+  TEXT_ISEMPTY_HELPURL: FR,
+  TEXT_ISEMPTY_TITLE: HR,
+  TEXT_ISEMPTY_TOOLTIP: GR,
+  TEXT_JOIN_HELPURL: fR,
+  TEXT_JOIN_TITLE_CREATEWITH: AR,
+  TEXT_JOIN_TOOLTIP: CR,
+  TEXT_LENGTH_HELPURL: BR,
+  TEXT_LENGTH_TITLE: xR,
+  TEXT_LENGTH_TOOLTIP: UR,
+  TEXT_PRINT_HELPURL: SS,
+  TEXT_PRINT_TITLE: LS,
+  TEXT_PRINT_TOOLTIP: bS,
+  TEXT_PROMPT_HELPURL: fS,
+  TEXT_PROMPT_TOOLTIP_NUMBER: NS,
+  TEXT_PROMPT_TOOLTIP_TEXT: MS,
+  TEXT_PROMPT_TYPE_NUMBER: CS,
+  TEXT_PROMPT_TYPE_TEXT: AS,
+  TEXT_REPLACE_HELPURL: DS,
+  TEXT_REPLACE_MESSAGE0: PS,
+  TEXT_REPLACE_TOOLTIP: wS,
+  TEXT_REVERSE_HELPURL: xS,
+  TEXT_REVERSE_MESSAGE0: BS,
+  TEXT_REVERSE_TOOLTIP: US,
+  TEXT_TEXT_HELPURL: LR,
+  TEXT_TEXT_TOOLTIP: bR,
+  TEXT_TRIM_HELPURL: pS,
+  TEXT_TRIM_OPERATOR_BOTH: IS,
+  TEXT_TRIM_OPERATOR_LEFT: OS,
+  TEXT_TRIM_OPERATOR_RIGHT: RS,
+  TEXT_TRIM_TOOLTIP: mS,
+  TODAY: Pp,
+  UNDO: Qp,
+  UNKNOWN: mf,
+  UNNAMED_KEY: kp,
+  VARIABLES_DEFAULT_NAME: vp,
+  VARIABLES_DYNAMIC_HUE: Mp,
+  VARIABLES_GET_CREATE_SET: bb,
+  VARIABLES_GET_HELPURL: Sb,
+  VARIABLES_GET_TOOLTIP: Lb,
+  VARIABLES_HUE: Np,
+  VARIABLES_SET: Ab,
+  VARIABLES_SET_CREATE_GET: Nb,
+  VARIABLES_SET_HELPURL: fb,
+  VARIABLES_SET_TOOLTIP: Cb,
+  VARIABLE_ALREADY_EXISTS: am,
+  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: hm,
+  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: dm,
+  WINDOWS: $f,
+  WORKSPACE_ARIA_LABEL: uf,
+  WORKSPACE_COMMENT_DEFAULT_TEXT: cf
 }, Symbol.toStringTag, { value: "Module" }));
-var $l = { exports: {} }, Df = $l.exports, og;
-function wf() {
-  return og || (og = 1, (function(C, k) {
+var $l = { exports: {} }, wf = $l.exports, og;
+function Bf() {
+  return og || (og = 1, (function(C, P) {
     (function(i, c) {
       C.exports = c();
-    })(Df, function() {
+    })(wf, function() {
       var i = i || { Msg: /* @__PURE__ */ Object.create(null) };
       return i.Msg.ADD_COMMENT = "Додати коментар", i.Msg.ALT_KEY = "Alt", i.Msg.CANNOT_DELETE_VARIABLE_PROCEDURE = "Неможливо видалити змінну '%1', тому що це частина визначення функції '%2'", i.Msg.CHANGE_VALUE_TITLE = "Змінити значення:", i.Msg.CHROME_OS = "ChromeOS", i.Msg.CLEAN_UP = "Очистити блоки", i.Msg.CLOSE = "Close", i.Msg.COLLAPSED_WARNINGS_WARNING = "Звернуті блоки містять попередження.", i.Msg.COLLAPSE_ALL = "Згорнути блоки", i.Msg.COLLAPSE_BLOCK = "Згорнути блок", i.Msg.COLOUR_BLEND_COLOUR1 = "колір 1", i.Msg.COLOUR_BLEND_COLOUR2 = "колір 2", i.Msg.COLOUR_BLEND_HELPURL = "https://meyerweb.com/eric/tools/color-blend/#:::rgbp", i.Msg.COLOUR_BLEND_RATIO = "співвідношення", i.Msg.COLOUR_BLEND_TITLE = "змішати", i.Msg.COLOUR_BLEND_TOOLTIP = "Змішує два кольори разом у вказаному співвідношені (0.0 - 1.0).", i.Msg.COLOUR_PICKER_HELPURL = "https://uk.wikipedia.org/wiki/Колір", i.Msg.COLOUR_PICKER_TOOLTIP = "Вибрати колір з палітри.", i.Msg.COLOUR_RANDOM_HELPURL = "http://randomcolour.com", i.Msg.COLOUR_RANDOM_TITLE = "випадковий колір", i.Msg.COLOUR_RANDOM_TOOLTIP = "Вибрати колір навмання.", i.Msg.COLOUR_RGB_BLUE = "синій", i.Msg.COLOUR_RGB_GREEN = "зелений", i.Msg.COLOUR_RGB_HELPURL = "https://www.december.com/html/spec/colorpercompact.html", i.Msg.COLOUR_RGB_RED = "червоний", i.Msg.COLOUR_RGB_TITLE = "колір з", i.Msg.COLOUR_RGB_TOOLTIP = "Створити колір зі вказаними рівнями червоного, зеленого та синього. Усі значення мають бути від 0 до 100.", i.Msg.COMMAND_KEY = "⌘ Command", i.Msg.CONTROLS_FLOW_STATEMENTS_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#loop-termination-blocks", i.Msg.CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK = "перервати цикл", i.Msg.CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE = "продовжити з наступної ітерації циклу", i.Msg.CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK = "Перервати виконання циклу.", i.Msg.CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE = "Пропустити залишок цього циклу і перейти до виконання наступної ітерації.", i.Msg.CONTROLS_FLOW_STATEMENTS_WARNING = "Попередження: цей блок може бути використаний тільки в межах циклу.", i.Msg.CONTROLS_FOREACH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#for-each", i.Msg.CONTROLS_FOREACH_TITLE = "для кожного елемента %1 у списку %2", i.Msg.CONTROLS_FOREACH_TOOLTIP = "Для кожного елемента в списку змінна '%1' отримує значення елемента, а потім виконуються певні дії.", i.Msg.CONTROLS_FOR_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#count-with", i.Msg.CONTROLS_FOR_TITLE = "рахувати з %1 від %2 до %3 через %4", i.Msg.CONTROLS_FOR_TOOLTIP = 'Наявна змінна "%1" набуває значень від початкового до кінцевого, враховуючи заданий інтервал, і виконуються вказані блоки.', i.Msg.CONTROLS_IF_ELSEIF_TOOLTIP = "Додайте умову до блока 'якщо'.", i.Msg.CONTROLS_IF_ELSE_TOOLTIP = "Додати остаточну, всеосяжну умову до блоку 'якщо'.", i.Msg.CONTROLS_IF_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/IfElse", i.Msg.CONTROLS_IF_IF_TOOLTIP = "Додайте, вилучіть або змініть порядок секцій, щоб переналаштувати цей блок 'якщо'.", i.Msg.CONTROLS_IF_MSG_ELSE = "інакше", i.Msg.CONTROLS_IF_MSG_ELSEIF = "інакше якщо", i.Msg.CONTROLS_IF_MSG_IF = "якщо", i.Msg.CONTROLS_IF_TOOLTIP_1 = "Якщо значення істинне, то виконати певні дії.", i.Msg.CONTROLS_IF_TOOLTIP_2 = "Якщо значення істинне, то виконується перший блок операторів. В іншому випадку виконується другий блок операторів.", i.Msg.CONTROLS_IF_TOOLTIP_3 = "Якщо перше значення істинне, то виконується перший блок операторів. В іншому випадку, якщо друге значення істина, то виконується другий блок операторів.", i.Msg.CONTROLS_IF_TOOLTIP_4 = "Якщо перше значення істинне, то виконується перший блок операторів. В іншому випадку, якщо друге значення істинне, то виконується другий блок операторів. Якщо жодне із значень не є істинним, то виконується останній блок операторів.", i.Msg.CONTROLS_REPEAT_HELPURL = "https://uk.wikipedia.org/wiki/Цикл_(програмування)#.D0.A6.D0.B8.D0.BA.D0.BB_.D0.B7_.D0.BB.D1.96.D1.87.D0.B8.D0.BB.D1.8C.D0.BD.D0.B8.D0.BA.D0.BE.D0.BC", i.Msg.CONTROLS_REPEAT_INPUT_DO = "виконати", i.Msg.CONTROLS_REPEAT_TITLE = "повторити %1 разів", i.Msg.CONTROLS_REPEAT_TOOLTIP = "Виконати певні дії декілька разів.", i.Msg.CONTROLS_WHILEUNTIL_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Loops#repeat", i.Msg.CONTROLS_WHILEUNTIL_OPERATOR_UNTIL = "повторювати, доки не", i.Msg.CONTROLS_WHILEUNTIL_OPERATOR_WHILE = "повторювати поки", i.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL = "Поки значення хибне, виконувати певні дії.", i.Msg.CONTROLS_WHILEUNTIL_TOOLTIP_WHILE = "Поки значення істинне, виконувати певні дії.", i.Msg.CONTROL_KEY = "Ctrl", i.Msg.COPY_SHORTCUT = "Copy", i.Msg.CUT_SHORTCUT = "Cut", i.Msg.DELETE_ALL_BLOCKS = "Вилучити всі блоки %1?", i.Msg.DELETE_BLOCK = "Видалити блок", i.Msg.DELETE_VARIABLE = "Вилучити змінну '%1'", i.Msg.DELETE_VARIABLE_CONFIRMATION = "Вилучити %1 використання змінної '%2'?", i.Msg.DELETE_X_BLOCKS = "Видалити %1 блоків", i.Msg.DIALOG_CANCEL = "Скасувати", i.Msg.DIALOG_OK = "Гаразд", i.Msg.DISABLE_BLOCK = "Вимкнути блок", i.Msg.DUPLICATE_BLOCK = "Дублювати", i.Msg.DUPLICATE_COMMENT = "Дублювати примітку", i.Msg.EDIT_BLOCK_CONTENTS = "Edit Block contents", i.Msg.ENABLE_BLOCK = "Увімкнути блок", i.Msg.EXPAND_ALL = "Розгорнути блоки", i.Msg.EXPAND_BLOCK = "Розгорнути блок", i.Msg.EXTERNAL_INPUTS = "Зовнішні входи", i.Msg.HELP = "Довідка", i.Msg.HELP_PROMPT = "Press %1 for help on keyboard controls", i.Msg.INLINE_INPUTS = "Вбудовані входи", i.Msg.KEYBOARD_NAV_CONSTRAINED_MOVE_HINT = "Use the arrow keys to move, then %1 to accept the position", i.Msg.KEYBOARD_NAV_COPIED_HINT = "Copied. Press %1 to paste.", i.Msg.KEYBOARD_NAV_CUT_HINT = "Cut. Press %1 to paste.", i.Msg.KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT = "Hold %1 and use arrow keys to move freely, then %2 to accept the position", i.Msg.LINUX = "Linux", i.Msg.LISTS_CREATE_EMPTY_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#create-empty-list", i.Msg.LISTS_CREATE_EMPTY_TITLE = "створити порожній список", i.Msg.LISTS_CREATE_EMPTY_TOOLTIP = "Повертає список, довжиною 0, що не містить записів даних", i.Msg.LISTS_CREATE_WITH_CONTAINER_TITLE_ADD = "список", i.Msg.LISTS_CREATE_WITH_CONTAINER_TOOLTIP = "Додайте, вилучіть або змініть порядок секцій для переналаштування блока списку.", i.Msg.LISTS_CREATE_WITH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#create-list-with", i.Msg.LISTS_CREATE_WITH_INPUT_WITH = "створити список з", i.Msg.LISTS_CREATE_WITH_ITEM_TOOLTIP = "Додати елемент до списку.", i.Msg.LISTS_CREATE_WITH_TOOLTIP = "Створює список з будь-якою кількістю елементів.", i.Msg.LISTS_GET_INDEX_FIRST = "перший", i.Msg.LISTS_GET_INDEX_FROM_END = "# з кінця", i.Msg.LISTS_GET_INDEX_FROM_START = "#", i.Msg.LISTS_GET_INDEX_GET = "отримати", i.Msg.LISTS_GET_INDEX_GET_REMOVE = "отримати і вилучити", i.Msg.LISTS_GET_INDEX_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#getting-items-from-a-list", i.Msg.LISTS_GET_INDEX_LAST = "останній", i.Msg.LISTS_GET_INDEX_RANDOM = "випадковий", i.Msg.LISTS_GET_INDEX_REMOVE = "вилучити", i.Msg.LISTS_GET_INDEX_TAIL = "", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FIRST = "Повертає перший елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_FROM = "Повертає елемент у заданій позиції у списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_LAST = "Повертає останній елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_RANDOM = "Повертає випадковий елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST = "Видаляє і повертає перший елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM = "Видаляє і повертає елемент у заданій позиції у списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST = "Видаляє і повертає останній елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM = "Видаляє і повертає випадковий елемент списоку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST = "Вилучає перший елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM = "Вилучає зі списку елемент у вказаній позиції.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST = "Вилучає останній елемент списку.", i.Msg.LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM = "Вилучає випадковий елемент списку.", i.Msg.LISTS_GET_SUBLIST_END_FROM_END = "до # з кінця", i.Msg.LISTS_GET_SUBLIST_END_FROM_START = "до #", i.Msg.LISTS_GET_SUBLIST_END_LAST = "до останнього", i.Msg.LISTS_GET_SUBLIST_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#getting-a-sublist", i.Msg.LISTS_GET_SUBLIST_START_FIRST = "отримати вкладений список з першого", i.Msg.LISTS_GET_SUBLIST_START_FROM_END = "отримати вкладений список від # з кінця", i.Msg.LISTS_GET_SUBLIST_START_FROM_START = "отримати вкладений список з #", i.Msg.LISTS_GET_SUBLIST_TAIL = "", i.Msg.LISTS_GET_SUBLIST_TOOLTIP = "Створює копію вказаної частини списку.", i.Msg.LISTS_INDEX_FROM_END_TOOLTIP = "%1 - це останній елемент.", i.Msg.LISTS_INDEX_FROM_START_TOOLTIP = "%1 - це перший елемент.", i.Msg.LISTS_INDEX_OF_FIRST = "знайти перше входження елемента", i.Msg.LISTS_INDEX_OF_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#finding-items-in-a-list", i.Msg.LISTS_INDEX_OF_LAST = "знайти останнє входження елемента", i.Msg.LISTS_INDEX_OF_TOOLTIP = "Повертає індекс першого/останнього входження елемента у списку. Повертає %1, якщо елемент не знайдено.", i.Msg.LISTS_INLIST = "у списку", i.Msg.LISTS_ISEMPTY_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#is-empty", i.Msg.LISTS_ISEMPTY_TITLE = "%1 є порожнім", i.Msg.LISTS_ISEMPTY_TOOLTIP = "Повертає істину, якщо список порожній.", i.Msg.LISTS_LENGTH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#length-of", i.Msg.LISTS_LENGTH_TITLE = "довжина %1", i.Msg.LISTS_LENGTH_TOOLTIP = "Повертає довжину списку.", i.Msg.LISTS_REPEAT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#create-list-with", i.Msg.LISTS_REPEAT_TITLE = "створити список з елемента %1 повтореного %2 разів", i.Msg.LISTS_REPEAT_TOOLTIP = "Створює список, що складається з заданого значення повтореного задану кількість разів.", i.Msg.LISTS_REVERSE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#reversing-a-list", i.Msg.LISTS_REVERSE_MESSAGE0 = "розвернути %1", i.Msg.LISTS_REVERSE_TOOLTIP = "Змінити порядок копії списку на зворотний.", i.Msg.LISTS_SET_INDEX_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#in-list--set", i.Msg.LISTS_SET_INDEX_INPUT_TO = "як", i.Msg.LISTS_SET_INDEX_INSERT = "вставити в", i.Msg.LISTS_SET_INDEX_SET = "встановити", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST = "Вставляє елемент на початок списку.", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_FROM = "Вставка елемента у вказану позицію списку.", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_LAST = "Додає елемент у кінці списку.", i.Msg.LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM = "Випадковим чином вставляє елемент у список.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FIRST = "Задає перший елемент списку.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_FROM = "Задає елемент списку у вказаній позиції.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_LAST = "Задає останній елемент списку.", i.Msg.LISTS_SET_INDEX_TOOLTIP_SET_RANDOM = "Задає випадковий елемент у списку.", i.Msg.LISTS_SORT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#sorting-a-list", i.Msg.LISTS_SORT_ORDER_ASCENDING = "за зростанням", i.Msg.LISTS_SORT_ORDER_DESCENDING = "за спаданням", i.Msg.LISTS_SORT_TITLE = "сортувати %3 %1 %2", i.Msg.LISTS_SORT_TOOLTIP = "Сортувати копію списку.", i.Msg.LISTS_SORT_TYPE_IGNORECASE = "за абеткою, ігноруючи регістр", i.Msg.LISTS_SORT_TYPE_NUMERIC = "як числа", i.Msg.LISTS_SORT_TYPE_TEXT = "за абеткою", i.Msg.LISTS_SPLIT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Lists#splitting-strings-and-joining-lists", i.Msg.LISTS_SPLIT_LIST_FROM_TEXT = "зробити з тексту список", i.Msg.LISTS_SPLIT_TEXT_FROM_LIST = "зробити зі списку текст", i.Msg.LISTS_SPLIT_TOOLTIP_JOIN = "Злити список текстів у єдиний текст, відокремивши розділювачами.", i.Msg.LISTS_SPLIT_TOOLTIP_SPLIT = "Поділити текст на список текстів, розриваючи на кожному розділювачі.", i.Msg.LISTS_SPLIT_WITH_DELIMITER = "з розділювачем", i.Msg.LOGIC_BOOLEAN_FALSE = "хибність", i.Msg.LOGIC_BOOLEAN_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Logic#values", i.Msg.LOGIC_BOOLEAN_TOOLTIP = "Повертає значення істина або хибність.", i.Msg.LOGIC_BOOLEAN_TRUE = "істина", i.Msg.LOGIC_COMPARE_HELPURL = "https://uk.wikipedia.org/wiki/Нерівність", i.Msg.LOGIC_COMPARE_TOOLTIP_EQ = "Повертає істину, якщо обидва входи рівні один одному.", i.Msg.LOGIC_COMPARE_TOOLTIP_GT = "Повертає істину, якщо перше вхідне значення більше, ніж друге.", i.Msg.LOGIC_COMPARE_TOOLTIP_GTE = "Повертає істину, якщо перше вхідне значення більше або дорівнює другому.", i.Msg.LOGIC_COMPARE_TOOLTIP_LT = "Повертає істину, якщо перше вхідне значення менше, ніж друге.", i.Msg.LOGIC_COMPARE_TOOLTIP_LTE = "Повертає істину, якщо перше вхідне значення менше або дорівнює другому.", i.Msg.LOGIC_COMPARE_TOOLTIP_NEQ = "Повертає істину, якщо обидва входи не дорівнюють один одному.", i.Msg.LOGIC_NEGATE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Logic#not", i.Msg.LOGIC_NEGATE_TITLE = "не %1", i.Msg.LOGIC_NEGATE_TOOLTIP = "Повертає істину, якщо вхідне значення хибне. Повертає хибність, якщо вхідне значення істинне.", i.Msg.LOGIC_NULL = "ніщо", i.Msg.LOGIC_NULL_HELPURL = "https://en.wikipedia.org/wiki/Nullable_type", i.Msg.LOGIC_NULL_TOOLTIP = "Повертає ніщо.", i.Msg.LOGIC_OPERATION_AND = "та", i.Msg.LOGIC_OPERATION_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Logic#logical-operations", i.Msg.LOGIC_OPERATION_OR = "або", i.Msg.LOGIC_OPERATION_TOOLTIP_AND = "Повертає істину, якщо обидва входи істинні.", i.Msg.LOGIC_OPERATION_TOOLTIP_OR = "Повертає істину, якщо принаймні один з входів істинний.", i.Msg.LOGIC_TERNARY_CONDITION = "тест", i.Msg.LOGIC_TERNARY_HELPURL = "https://en.wikipedia.org/wiki/%3F:", i.Msg.LOGIC_TERNARY_IF_FALSE = "якщо хибність", i.Msg.LOGIC_TERNARY_IF_TRUE = "якщо істина", i.Msg.LOGIC_TERNARY_TOOLTIP = "Перевіряє умову в 'тест'. Якщо умова істинна, то повертає значення 'якщо істина'; в іншому випадку повертає значення 'якщо хибність'.", i.Msg.MAC_OS = "macOS", i.Msg.MATH_ADDITION_SYMBOL = "+", i.Msg.MATH_ARITHMETIC_HELPURL = "https://uk.wikipedia.org/wiki/Арифметика", i.Msg.MATH_ARITHMETIC_TOOLTIP_ADD = "Повертає суму двох чисел.", i.Msg.MATH_ARITHMETIC_TOOLTIP_DIVIDE = "Повертає частку двох чисел.", i.Msg.MATH_ARITHMETIC_TOOLTIP_MINUS = "Повертає різницю двох чисел.", i.Msg.MATH_ARITHMETIC_TOOLTIP_MULTIPLY = "Повертає добуток двох чисел.", i.Msg.MATH_ARITHMETIC_TOOLTIP_POWER = "Повертає перше число, піднесене до степеня, вираженого другим числом.", i.Msg.MATH_ATAN2_HELPURL = "https://en.wikipedia.org/wiki/Atan2", i.Msg.MATH_ATAN2_TITLE = "atan2 по X:%1 Y:%2", i.Msg.MATH_ATAN2_TOOLTIP = "Повертає арктангенс точки (X, Y) у градусах від -180 до 180.", i.Msg.MATH_CHANGE_HELPURL = "https://en.wikipedia.org/wiki/Programming_idiom#Incrementing_a_counter", i.Msg.MATH_CHANGE_TITLE = "змінити %1 на %2", i.Msg.MATH_CHANGE_TOOLTIP = "Додати число до змінної '%1'.", i.Msg.MATH_CONSTANT_HELPURL = "https://uk.wikipedia.org/wiki/Математична_константа", i.Msg.MATH_CONSTANT_TOOLTIP = "Повертає одну з поширених констант: π (3.141...), e (2.718...), φ (1,618...), sqrt(2) (1.414...), sqrt(½) (0.707...) або ∞ (нескінченність).", i.Msg.MATH_CONSTRAIN_HELPURL = "https://en.wikipedia.org/wiki/Clamping_(graphics)", i.Msg.MATH_CONSTRAIN_TITLE = "обмежити %1 від %2 до %3", i.Msg.MATH_CONSTRAIN_TOOLTIP = "Обмежує число вказаними межами (включно).", i.Msg.MATH_DIVISION_SYMBOL = "÷", i.Msg.MATH_IS_DIVISIBLE_BY = "ділиться на", i.Msg.MATH_IS_EVEN = "парне", i.Msg.MATH_IS_NEGATIVE = "від'ємне", i.Msg.MATH_IS_ODD = "непарне", i.Msg.MATH_IS_POSITIVE = "додатне", i.Msg.MATH_IS_PRIME = "просте", i.Msg.MATH_IS_TOOLTIP = "Перевіряє, чи число парне, непарне, просте, ціле, додатне, від'ємне або чи воно ділиться на певне число без остачі. Повертає істину або хибність.", i.Msg.MATH_IS_WHOLE = "ціле", i.Msg.MATH_MODULO_HELPURL = "https://uk.wikipedia.org/wiki/Ділення_з_остачею", i.Msg.MATH_MODULO_TITLE = "остача від %1 ÷ %2", i.Msg.MATH_MODULO_TOOLTIP = "Повертає остачу від ділення двох чисел.", i.Msg.MATH_MULTIPLICATION_SYMBOL = "×", i.Msg.MATH_NUMBER_HELPURL = "https://uk.wikipedia.org/wiki/Число", i.Msg.MATH_NUMBER_TOOLTIP = "Число.", i.Msg.MATH_ONLIST_HELPURL = "https://www.mapleprimes.com/questions/100441-Applying-Function-To-List-Of-Numbers", i.Msg.MATH_ONLIST_OPERATOR_AVERAGE = "середнє списку", i.Msg.MATH_ONLIST_OPERATOR_MAX = "максимум списку", i.Msg.MATH_ONLIST_OPERATOR_MEDIAN = "медіана списку", i.Msg.MATH_ONLIST_OPERATOR_MIN = "мінімум списку", i.Msg.MATH_ONLIST_OPERATOR_MODE = "моди списку", i.Msg.MATH_ONLIST_OPERATOR_RANDOM = "випадковий елемент списку", i.Msg.MATH_ONLIST_OPERATOR_STD_DEV = "стандартне відхилення списку", i.Msg.MATH_ONLIST_OPERATOR_SUM = "сума списку", i.Msg.MATH_ONLIST_TOOLTIP_AVERAGE = "Повертає середнє (арифметичне) числових значень у списку.", i.Msg.MATH_ONLIST_TOOLTIP_MAX = "Повертає найбільше число у списку.", i.Msg.MATH_ONLIST_TOOLTIP_MEDIAN = "Повертає медіану списку.", i.Msg.MATH_ONLIST_TOOLTIP_MIN = "Повертає найменше число у списку.", i.Msg.MATH_ONLIST_TOOLTIP_MODE = "Повертає перелік найпоширеніших елементів у списку.", i.Msg.MATH_ONLIST_TOOLTIP_RANDOM = "Повертає випадковий елемент зі списку.", i.Msg.MATH_ONLIST_TOOLTIP_STD_DEV = "Повертає стандартне відхилення списку.", i.Msg.MATH_ONLIST_TOOLTIP_SUM = "Повертає суму всіх чисел у списку.", i.Msg.MATH_POWER_SYMBOL = "^", i.Msg.MATH_RANDOM_FLOAT_HELPURL = "https://uk.wikipedia.org/wiki/Генерація_випадкових_чисел", i.Msg.MATH_RANDOM_FLOAT_TITLE_RANDOM = "випадковий дріб", i.Msg.MATH_RANDOM_FLOAT_TOOLTIP = "Повертає випадковий дріб від 0,0 (включно) та 1.0 (не включно).", i.Msg.MATH_RANDOM_INT_HELPURL = "https://uk.wikipedia.org/wiki/Генерація_випадкових_чисел", i.Msg.MATH_RANDOM_INT_TITLE = "випадкове ціле число від %1 до %2", i.Msg.MATH_RANDOM_INT_TOOLTIP = "Повертає випадкове ціле число між двома заданими межами включно.", i.Msg.MATH_ROUND_HELPURL = "https://uk.wikipedia.org/wiki/Округлення", i.Msg.MATH_ROUND_OPERATOR_ROUND = "округлити", i.Msg.MATH_ROUND_OPERATOR_ROUNDDOWN = "округлити до меншого", i.Msg.MATH_ROUND_OPERATOR_ROUNDUP = "округлити до більшого", i.Msg.MATH_ROUND_TOOLTIP = "Округлення числа до більшого або до меншого.", i.Msg.MATH_SINGLE_HELPURL = "https://uk.wikipedia.org/wiki/Квадратний_корінь", i.Msg.MATH_SINGLE_OP_ABSOLUTE = "модуль", i.Msg.MATH_SINGLE_OP_ROOT = "квадратний корінь", i.Msg.MATH_SINGLE_TOOLTIP_ABS = "Повертає модуль числа.", i.Msg.MATH_SINGLE_TOOLTIP_EXP = "Повертає e у степені.", i.Msg.MATH_SINGLE_TOOLTIP_LN = "Повертає натуральний логарифм числа.", i.Msg.MATH_SINGLE_TOOLTIP_LOG10 = "Повертає десятковий логарифм числа.", i.Msg.MATH_SINGLE_TOOLTIP_NEG = "Повертає протилежне число.", i.Msg.MATH_SINGLE_TOOLTIP_POW10 = "Повертає 10 у степені.", i.Msg.MATH_SINGLE_TOOLTIP_ROOT = "Повертає квадратний корінь з числа.", i.Msg.MATH_SUBTRACTION_SYMBOL = "-", i.Msg.MATH_TRIG_ACOS = "acos", i.Msg.MATH_TRIG_ASIN = "asin", i.Msg.MATH_TRIG_ATAN = "atan", i.Msg.MATH_TRIG_COS = "cos", i.Msg.MATH_TRIG_HELPURL = "https://uk.wikipedia.org/wiki/Тригонометричні_функції", i.Msg.MATH_TRIG_SIN = "sin", i.Msg.MATH_TRIG_TAN = "tan", i.Msg.MATH_TRIG_TOOLTIP_ACOS = "Повертає арккосинус числа.", i.Msg.MATH_TRIG_TOOLTIP_ASIN = "Повертає арксинус числа.", i.Msg.MATH_TRIG_TOOLTIP_ATAN = "Повертає арктангенс числа.", i.Msg.MATH_TRIG_TOOLTIP_COS = "Повертає косинус кута в градусах (не в радіанах).", i.Msg.MATH_TRIG_TOOLTIP_SIN = "Повертає синус кута в градусах (не в радіанах).", i.Msg.MATH_TRIG_TOOLTIP_TAN = "Повертає тангенс кута в градусах (не в радіанах).", i.Msg.MOVE_BLOCK = "Move Block", i.Msg.NEW_COLOUR_VARIABLE = "Створити колірну змінну...", i.Msg.NEW_NUMBER_VARIABLE = "Створити числову змінну...", i.Msg.NEW_STRING_VARIABLE = "Створити рядкову змінну...", i.Msg.NEW_VARIABLE = "Створити змінну...", i.Msg.NEW_VARIABLE_TITLE = "Нова назва змінної:", i.Msg.NEW_VARIABLE_TYPE_TITLE = "Тип нової змінної:", i.Msg.OPTION_KEY = "⌥ Option", i.Msg.ORDINAL_NUMBER_SUFFIX = "", i.Msg.PASTE_SHORTCUT = "Paste", i.Msg.PROCEDURES_ALLOW_STATEMENTS = "дозволити дії", i.Msg.PROCEDURES_BEFORE_PARAMS = "з:", i.Msg.PROCEDURES_CALLNORETURN_HELPURL = "https://uk.wikipedia.org/wiki/Підпрограма", i.Msg.PROCEDURES_CALLNORETURN_TOOLTIP = 'Запустити користувацьку функцію "%1".', i.Msg.PROCEDURES_CALLRETURN_HELPURL = "https://uk.wikipedia.org/wiki/Підпрограма", i.Msg.PROCEDURES_CALLRETURN_TOOLTIP = 'Запустити користувацьку функцію "%1" і використати її вивід.', i.Msg.PROCEDURES_CALL_BEFORE_PARAMS = "з:", i.Msg.PROCEDURES_CALL_DISABLED_DEF_WARNING = "Can't run the user-defined function '%1' because the definition block is disabled.", i.Msg.PROCEDURES_CREATE_DO = 'Створити "%1"', i.Msg.PROCEDURES_DEFNORETURN_COMMENT = "Опишіть цю функцію...", i.Msg.PROCEDURES_DEFNORETURN_DO = "", i.Msg.PROCEDURES_DEFNORETURN_HELPURL = "https://uk.wikipedia.org/wiki/Підпрограма", i.Msg.PROCEDURES_DEFNORETURN_PROCEDURE = "щось зробити", i.Msg.PROCEDURES_DEFNORETURN_TITLE = "до", i.Msg.PROCEDURES_DEFNORETURN_TOOLTIP = "Створює функцію без виводу.", i.Msg.PROCEDURES_DEFRETURN_HELPURL = "https://uk.wikipedia.org/wiki/Підпрограма", i.Msg.PROCEDURES_DEFRETURN_RETURN = "повернути", i.Msg.PROCEDURES_DEFRETURN_TOOLTIP = "Створює функцію з виводом.", i.Msg.PROCEDURES_DEF_DUPLICATE_WARNING = "Увага: ця функція має дубльовані параметри.", i.Msg.PROCEDURES_HIGHLIGHT_DEF = "Підсвітити визначення функції", i.Msg.PROCEDURES_IFRETURN_HELPURL = "https://c2.com/cgi/wiki?GuardClause", i.Msg.PROCEDURES_IFRETURN_TOOLTIP = "Якщо значення істинне, то повернути друге значення.", i.Msg.PROCEDURES_IFRETURN_WARNING = "Попередження: цей блок може використовуватися лише в межах визначення функції.", i.Msg.PROCEDURES_MUTATORARG_TITLE = "назва входу:", i.Msg.PROCEDURES_MUTATORARG_TOOLTIP = "Додати до функції вхідні параметри.", i.Msg.PROCEDURES_MUTATORCONTAINER_TITLE = "входи", i.Msg.PROCEDURES_MUTATORCONTAINER_TOOLTIP = "Додайте, вилучіть або змініть порядок вхідних параметрів для цієї функції.", i.Msg.REDO = "Повторити", i.Msg.REMOVE_COMMENT = "Видалити коментар", i.Msg.RENAME_VARIABLE = "Перейменувати змінну...", i.Msg.RENAME_VARIABLE_TITLE = 'Перейменувати усі змінні "%1" до:', i.Msg.SHORTCUTS_CODE_NAVIGATION = "Code navigation", i.Msg.SHORTCUTS_EDITING = "Editing", i.Msg.SHORTCUTS_GENERAL = "General", i.Msg.TEXT_APPEND_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#text-modification", i.Msg.TEXT_APPEND_TITLE = "до %1 додати текст %2", i.Msg.TEXT_APPEND_TOOLTIP = "Додати деякий текст до змінної '%1'.", i.Msg.TEXT_CHANGECASE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#adjusting-text-case", i.Msg.TEXT_CHANGECASE_OPERATOR_LOWERCASE = "до нижнього регістру", i.Msg.TEXT_CHANGECASE_OPERATOR_TITLECASE = "Великі Перші Букви", i.Msg.TEXT_CHANGECASE_OPERATOR_UPPERCASE = "до ВЕРХНЬОГО регістру", i.Msg.TEXT_CHANGECASE_TOOLTIP = "В іншому випадку повертає копію тексту.", i.Msg.TEXT_CHARAT_FIRST = "отримати перший символ", i.Msg.TEXT_CHARAT_FROM_END = "отримати символ # з кінця", i.Msg.TEXT_CHARAT_FROM_START = "отримати символ #", i.Msg.TEXT_CHARAT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#extracting-text", i.Msg.TEXT_CHARAT_LAST = "отримати останній символ", i.Msg.TEXT_CHARAT_RANDOM = "отримати випадковий символ", i.Msg.TEXT_CHARAT_TAIL = "", i.Msg.TEXT_CHARAT_TITLE = "з тексту %1 %2", i.Msg.TEXT_CHARAT_TOOLTIP = "Повертає символ у зазначеній позиції.", i.Msg.TEXT_COUNT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#counting-substrings", i.Msg.TEXT_COUNT_MESSAGE0 = "кількість %1 в %2", i.Msg.TEXT_COUNT_TOOLTIP = "Підраховує, скільки разів деякий текст з'являється в іншому тексті.", i.Msg.TEXT_CREATE_JOIN_ITEM_TOOLTIP = "Додати елемент до тексту.", i.Msg.TEXT_CREATE_JOIN_TITLE_JOIN = "приєднати", i.Msg.TEXT_CREATE_JOIN_TOOLTIP = "Додайте, вилучіть або змініть порядок секцій для переналаштування текстового блоку.", i.Msg.TEXT_GET_SUBSTRING_END_FROM_END = "до символу # з кінця", i.Msg.TEXT_GET_SUBSTRING_END_FROM_START = "до символу #", i.Msg.TEXT_GET_SUBSTRING_END_LAST = "до останнього символу", i.Msg.TEXT_GET_SUBSTRING_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#extracting-a-region-of-text", i.Msg.TEXT_GET_SUBSTRING_INPUT_IN_TEXT = "у тексті", i.Msg.TEXT_GET_SUBSTRING_START_FIRST = "отримати підрядок від першого символу", i.Msg.TEXT_GET_SUBSTRING_START_FROM_END = "отримати підрядок від символу # з кінця", i.Msg.TEXT_GET_SUBSTRING_START_FROM_START = "отримати підрядок від символу #", i.Msg.TEXT_GET_SUBSTRING_TAIL = "", i.Msg.TEXT_GET_SUBSTRING_TOOLTIP = "Повертає заданий фрагмент тексту.", i.Msg.TEXT_INDEXOF_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#finding-text", i.Msg.TEXT_INDEXOF_OPERATOR_FIRST = "знайти перше входження тексту", i.Msg.TEXT_INDEXOF_OPERATOR_LAST = "знайти останнє входження тексту", i.Msg.TEXT_INDEXOF_TITLE = "у тексті %1 %2 %3.", i.Msg.TEXT_INDEXOF_TOOLTIP = "Повертає індекс першого/останнього входження першого тексту в другий. Повертає %1, якщо текст не знайдено.", i.Msg.TEXT_ISEMPTY_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#checking-for-empty-text", i.Msg.TEXT_ISEMPTY_TITLE = "%1 є порожнім", i.Msg.TEXT_ISEMPTY_TOOLTIP = "Повертає істину, якщо вказаний текст порожній.", i.Msg.TEXT_JOIN_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#text-creation", i.Msg.TEXT_JOIN_TITLE_CREATEWITH = "створити текст з", i.Msg.TEXT_JOIN_TOOLTIP = "Створити фрагмент тексту шляхом з'єднування будь-якого числа елементів.", i.Msg.TEXT_LENGTH_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#text-modification", i.Msg.TEXT_LENGTH_TITLE = "довжина %1", i.Msg.TEXT_LENGTH_TOOLTIP = "Повертає число символів (включно з пропусками) у даному тексті.", i.Msg.TEXT_PRINT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#printing-text", i.Msg.TEXT_PRINT_TITLE = "друк %1", i.Msg.TEXT_PRINT_TOOLTIP = "Надрукувати заданий текст, числа або інші значення.", i.Msg.TEXT_PROMPT_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#getting-input-from-the-user", i.Msg.TEXT_PROMPT_TOOLTIP_NUMBER = "Запитати у користувача число.", i.Msg.TEXT_PROMPT_TOOLTIP_TEXT = "Запитати у користувача деякий текст.", i.Msg.TEXT_PROMPT_TYPE_NUMBER = "запит числа з повідомленням", i.Msg.TEXT_PROMPT_TYPE_TEXT = "запит тексту з повідомленням", i.Msg.TEXT_REPLACE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#replacing-substrings", i.Msg.TEXT_REPLACE_MESSAGE0 = "замінити %1 на %2 в %3", i.Msg.TEXT_REPLACE_TOOLTIP = "Замінює всі входження деякого тексту іншим текстом.", i.Msg.TEXT_REVERSE_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#reversing-text", i.Msg.TEXT_REVERSE_MESSAGE0 = "розвернути %1", i.Msg.TEXT_REVERSE_TOOLTIP = "Змінює на протилежний порядок символів у тексті.", i.Msg.TEXT_TEXT_HELPURL = "https://uk.wikipedia.org/wiki/Рядок_(програмування)", i.Msg.TEXT_TEXT_TOOLTIP = "Символ, слово або рядок тексту.", i.Msg.TEXT_TRIM_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Text#trimming-removing-spaces", i.Msg.TEXT_TRIM_OPERATOR_BOTH = "вилучити крайні пропуски з обох кінців", i.Msg.TEXT_TRIM_OPERATOR_LEFT = "вилучити пропуски з лівого боку", i.Msg.TEXT_TRIM_OPERATOR_RIGHT = "вилучити пропуски з правого боку", i.Msg.TEXT_TRIM_TOOLTIP = "Повертає копію тексту з вилученими пропусками з одного або обох кінців.", i.Msg.TODAY = "Сьогодні", i.Msg.UNDO = "Скасувати", i.Msg.UNKNOWN = "Unknown", i.Msg.UNNAMED_KEY = "без назви", i.Msg.VARIABLES_DEFAULT_NAME = "елемент", i.Msg.VARIABLES_GET_CREATE_SET = "Створити 'встановити %1'", i.Msg.VARIABLES_GET_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Variables#get", i.Msg.VARIABLES_GET_TOOLTIP = "Повертає значення цієї змінної.", i.Msg.VARIABLES_SET = "встановити %1 до %2", i.Msg.VARIABLES_SET_CREATE_GET = "Створити 'отримати %1'", i.Msg.VARIABLES_SET_HELPURL = "https://github.com/RaspberryPiFoundation/blockly/wiki/Variables#set", i.Msg.VARIABLES_SET_TOOLTIP = "Задає цю змінну рівною входу.", i.Msg.VARIABLE_ALREADY_EXISTS = "Змінна з назвою '%1' вже існує.", i.Msg.VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE = "Змінна з назвою '%1' вже існує в іншому типі: '%2'.", i.Msg.VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER = "A variable named '%1' already exists as a parameter in the procedure '%2'.", i.Msg.WINDOWS = "Windows", i.Msg.WORKSPACE_ARIA_LABEL = "Робоча область Blockly", i.Msg.WORKSPACE_COMMENT_DEFAULT_TEXT = "Скажіть щось...", i.Msg.CONTROLS_FOREACH_INPUT_DO = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.CONTROLS_FOR_INPUT_DO = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.CONTROLS_IF_ELSEIF_TITLE_ELSEIF = i.Msg.CONTROLS_IF_MSG_ELSEIF, i.Msg.CONTROLS_IF_ELSE_TITLE_ELSE = i.Msg.CONTROLS_IF_MSG_ELSE, i.Msg.CONTROLS_IF_IF_TITLE_IF = i.Msg.CONTROLS_IF_MSG_IF, i.Msg.CONTROLS_IF_MSG_THEN = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.CONTROLS_WHILEUNTIL_INPUT_DO = i.Msg.CONTROLS_REPEAT_INPUT_DO, i.Msg.LISTS_CREATE_WITH_ITEM_TITLE = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.LISTS_GET_INDEX_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.LISTS_GET_SUBLIST_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.LISTS_INDEX_OF_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.LISTS_SET_INDEX_INPUT_IN_LIST = i.Msg.LISTS_INLIST, i.Msg.MATH_CHANGE_TITLE_ITEM = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.PROCEDURES_DEFRETURN_COMMENT = i.Msg.PROCEDURES_DEFNORETURN_COMMENT, i.Msg.PROCEDURES_DEFRETURN_DO = i.Msg.PROCEDURES_DEFNORETURN_DO, i.Msg.PROCEDURES_DEFRETURN_PROCEDURE = i.Msg.PROCEDURES_DEFNORETURN_PROCEDURE, i.Msg.PROCEDURES_DEFRETURN_TITLE = i.Msg.PROCEDURES_DEFNORETURN_TITLE, i.Msg.TEXT_APPEND_VARIABLE = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.TEXT_CREATE_JOIN_ITEM_TITLE_ITEM = i.Msg.VARIABLES_DEFAULT_NAME, i.Msg.COLOUR_HUE = "20", i.Msg.LISTS_HUE = "260", i.Msg.LOGIC_HUE = "210", i.Msg.LOOPS_HUE = "120", i.Msg.MATH_HUE = "230", i.Msg.PROCEDURES_HUE = "290", i.Msg.TEXTS_HUE = "160", i.Msg.VARIABLES_DYNAMIC_HUE = "310", i.Msg.VARIABLES_HUE = "330", i.Msg;
     });
   })($l)), $l.exports;
 }
-var Bf = wf();
-const xf = /* @__PURE__ */ gl(Bf), {
-  LOGIC_HUE: Uf,
-  LOOPS_HUE: Ff,
-  MATH_HUE: Hf,
-  TEXTS_HUE: Gf,
-  LISTS_HUE: Vf,
-  COLOUR_HUE: Xf,
-  VARIABLES_HUE: Wf,
-  VARIABLES_DYNAMIC_HUE: Yf,
-  PROCEDURES_HUE: zf,
-  VARIABLES_DEFAULT_NAME: Kf,
-  UNNAMED_KEY: Jf,
-  TODAY: jf,
-  DUPLICATE_BLOCK: qf,
-  ADD_COMMENT: Zf,
-  REMOVE_COMMENT: Qf,
-  DUPLICATE_COMMENT: eA,
-  EXTERNAL_INPUTS: tA,
-  INLINE_INPUTS: sA,
-  DELETE_BLOCK: oA,
-  DELETE_X_BLOCKS: iA,
-  DELETE_ALL_BLOCKS: nA,
-  CLEAN_UP: rA,
-  CLOSE: lA,
-  COLLAPSE_BLOCK: cA,
-  COLLAPSE_ALL: uA,
-  EXPAND_BLOCK: aA,
-  EXPAND_ALL: hA,
-  DISABLE_BLOCK: dA,
-  ENABLE_BLOCK: _A,
-  HELP: TA,
-  UNDO: $A,
-  REDO: EA,
-  CHANGE_VALUE_TITLE: gA,
-  RENAME_VARIABLE: pA,
-  RENAME_VARIABLE_TITLE: mA,
-  NEW_VARIABLE: IA,
-  NEW_STRING_VARIABLE: OA,
-  NEW_NUMBER_VARIABLE: RA,
-  NEW_COLOUR_VARIABLE: SA,
-  NEW_VARIABLE_TYPE_TITLE: LA,
-  NEW_VARIABLE_TITLE: bA,
-  VARIABLE_ALREADY_EXISTS: fA,
-  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: AA,
-  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: CA,
-  DELETE_VARIABLE_CONFIRMATION: NA,
-  CANNOT_DELETE_VARIABLE_PROCEDURE: MA,
-  DELETE_VARIABLE: yA,
-  COLOUR_PICKER_HELPURL: vA,
-  COLOUR_PICKER_TOOLTIP: kA,
-  COLOUR_RANDOM_HELPURL: PA,
-  COLOUR_RANDOM_TITLE: DA,
-  COLOUR_RANDOM_TOOLTIP: wA,
-  COLOUR_RGB_HELPURL: BA,
-  COLOUR_RGB_TITLE: xA,
-  COLOUR_RGB_RED: UA,
-  COLOUR_RGB_GREEN: FA,
-  COLOUR_RGB_BLUE: HA,
-  COLOUR_RGB_TOOLTIP: GA,
-  COLOUR_BLEND_HELPURL: VA,
-  COLOUR_BLEND_TITLE: XA,
-  COLOUR_BLEND_COLOUR1: WA,
-  COLOUR_BLEND_COLOUR2: YA,
-  COLOUR_BLEND_RATIO: zA,
-  COLOUR_BLEND_TOOLTIP: KA,
-  CONTROLS_REPEAT_HELPURL: JA,
-  CONTROLS_REPEAT_TITLE: jA,
-  CONTROLS_REPEAT_INPUT_DO: qA,
-  CONTROLS_REPEAT_TOOLTIP: ZA,
-  CONTROLS_WHILEUNTIL_HELPURL: QA,
-  CONTROLS_WHILEUNTIL_INPUT_DO: eC,
-  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: tC,
-  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: sC,
-  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: oC,
-  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: iC,
-  CONTROLS_FOR_HELPURL: nC,
-  CONTROLS_FOR_TOOLTIP: rC,
-  CONTROLS_FOR_TITLE: lC,
-  CONTROLS_FOR_INPUT_DO: cC,
-  CONTROLS_FOREACH_HELPURL: uC,
-  CONTROLS_FOREACH_TITLE: aC,
-  CONTROLS_FOREACH_INPUT_DO: hC,
-  CONTROLS_FOREACH_TOOLTIP: dC,
-  CONTROLS_FLOW_STATEMENTS_HELPURL: _C,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: TC,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: $C,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: EC,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: gC,
-  CONTROLS_FLOW_STATEMENTS_WARNING: pC,
-  CONTROLS_IF_HELPURL: mC,
-  CONTROLS_IF_TOOLTIP_1: IC,
-  CONTROLS_IF_TOOLTIP_2: OC,
-  CONTROLS_IF_TOOLTIP_3: RC,
-  CONTROLS_IF_TOOLTIP_4: SC,
-  CONTROLS_IF_MSG_IF: LC,
-  CONTROLS_IF_MSG_ELSEIF: bC,
-  CONTROLS_IF_MSG_ELSE: fC,
-  CONTROLS_IF_MSG_THEN: AC,
-  CONTROLS_IF_IF_TITLE_IF: CC,
-  CONTROLS_IF_IF_TOOLTIP: NC,
-  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: MC,
-  CONTROLS_IF_ELSEIF_TOOLTIP: yC,
-  CONTROLS_IF_ELSE_TITLE_ELSE: vC,
-  CONTROLS_IF_ELSE_TOOLTIP: kC,
-  LOGIC_COMPARE_HELPURL: PC,
-  LOGIC_COMPARE_TOOLTIP_EQ: DC,
-  LOGIC_COMPARE_TOOLTIP_NEQ: wC,
-  LOGIC_COMPARE_TOOLTIP_LT: BC,
-  LOGIC_COMPARE_TOOLTIP_LTE: xC,
-  LOGIC_COMPARE_TOOLTIP_GT: UC,
-  LOGIC_COMPARE_TOOLTIP_GTE: FC,
-  LOGIC_OPERATION_HELPURL: HC,
-  LOGIC_OPERATION_TOOLTIP_AND: GC,
-  LOGIC_OPERATION_AND: VC,
-  LOGIC_OPERATION_TOOLTIP_OR: XC,
-  LOGIC_OPERATION_OR: WC,
-  LOGIC_NEGATE_HELPURL: YC,
-  LOGIC_NEGATE_TITLE: zC,
-  LOGIC_NEGATE_TOOLTIP: KC,
-  LOGIC_BOOLEAN_HELPURL: JC,
-  LOGIC_BOOLEAN_TRUE: jC,
-  LOGIC_BOOLEAN_FALSE: qC,
-  LOGIC_BOOLEAN_TOOLTIP: ZC,
-  LOGIC_NULL_HELPURL: QC,
-  LOGIC_NULL: eN,
-  LOGIC_NULL_TOOLTIP: tN,
-  LOGIC_TERNARY_HELPURL: sN,
-  LOGIC_TERNARY_CONDITION: oN,
-  LOGIC_TERNARY_IF_TRUE: iN,
-  LOGIC_TERNARY_IF_FALSE: nN,
-  LOGIC_TERNARY_TOOLTIP: rN,
-  MATH_NUMBER_HELPURL: lN,
-  MATH_NUMBER_TOOLTIP: cN,
-  MATH_ADDITION_SYMBOL: uN,
-  MATH_SUBTRACTION_SYMBOL: aN,
-  MATH_DIVISION_SYMBOL: hN,
-  MATH_MULTIPLICATION_SYMBOL: dN,
-  MATH_POWER_SYMBOL: _N,
-  MATH_TRIG_SIN: TN,
-  MATH_TRIG_COS: $N,
-  MATH_TRIG_TAN: EN,
-  MATH_TRIG_ASIN: gN,
-  MATH_TRIG_ACOS: pN,
-  MATH_TRIG_ATAN: mN,
-  MATH_ARITHMETIC_HELPURL: IN,
-  MATH_ARITHMETIC_TOOLTIP_ADD: ON,
-  MATH_ARITHMETIC_TOOLTIP_MINUS: RN,
-  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: SN,
-  MATH_ARITHMETIC_TOOLTIP_DIVIDE: LN,
-  MATH_ARITHMETIC_TOOLTIP_POWER: bN,
-  MATH_SINGLE_HELPURL: fN,
-  MATH_SINGLE_OP_ROOT: AN,
-  MATH_SINGLE_TOOLTIP_ROOT: CN,
-  MATH_SINGLE_OP_ABSOLUTE: NN,
-  MATH_SINGLE_TOOLTIP_ABS: MN,
-  MATH_SINGLE_TOOLTIP_NEG: yN,
-  MATH_SINGLE_TOOLTIP_LN: vN,
-  MATH_SINGLE_TOOLTIP_LOG10: kN,
-  MATH_SINGLE_TOOLTIP_EXP: PN,
-  MATH_SINGLE_TOOLTIP_POW10: DN,
-  MATH_TRIG_HELPURL: wN,
-  MATH_TRIG_TOOLTIP_SIN: BN,
-  MATH_TRIG_TOOLTIP_COS: xN,
-  MATH_TRIG_TOOLTIP_TAN: UN,
-  MATH_TRIG_TOOLTIP_ASIN: FN,
-  MATH_TRIG_TOOLTIP_ACOS: HN,
-  MATH_TRIG_TOOLTIP_ATAN: GN,
-  MATH_CONSTANT_HELPURL: VN,
-  MATH_CONSTANT_TOOLTIP: XN,
-  MATH_IS_EVEN: WN,
-  MATH_IS_ODD: YN,
-  MATH_IS_PRIME: zN,
-  MATH_IS_WHOLE: KN,
-  MATH_IS_POSITIVE: JN,
-  MATH_IS_NEGATIVE: jN,
-  MATH_IS_DIVISIBLE_BY: qN,
-  MATH_IS_TOOLTIP: ZN,
-  MATH_CHANGE_HELPURL: QN,
-  MATH_CHANGE_TITLE: eM,
-  MATH_CHANGE_TITLE_ITEM: tM,
-  MATH_CHANGE_TOOLTIP: sM,
-  MATH_ROUND_HELPURL: oM,
-  MATH_ROUND_TOOLTIP: iM,
-  MATH_ROUND_OPERATOR_ROUND: nM,
-  MATH_ROUND_OPERATOR_ROUNDUP: rM,
-  MATH_ROUND_OPERATOR_ROUNDDOWN: lM,
-  MATH_ONLIST_HELPURL: cM,
-  MATH_ONLIST_OPERATOR_SUM: uM,
-  MATH_ONLIST_TOOLTIP_SUM: aM,
-  MATH_ONLIST_OPERATOR_MIN: hM,
-  MATH_ONLIST_TOOLTIP_MIN: dM,
-  MATH_ONLIST_OPERATOR_MAX: _M,
-  MATH_ONLIST_TOOLTIP_MAX: TM,
-  MATH_ONLIST_OPERATOR_AVERAGE: $M,
-  MATH_ONLIST_TOOLTIP_AVERAGE: EM,
-  MATH_ONLIST_OPERATOR_MEDIAN: gM,
-  MATH_ONLIST_TOOLTIP_MEDIAN: pM,
-  MATH_ONLIST_OPERATOR_MODE: mM,
-  MATH_ONLIST_TOOLTIP_MODE: IM,
-  MATH_ONLIST_OPERATOR_STD_DEV: OM,
-  MATH_ONLIST_TOOLTIP_STD_DEV: RM,
-  MATH_ONLIST_OPERATOR_RANDOM: SM,
-  MATH_ONLIST_TOOLTIP_RANDOM: LM,
-  MATH_MODULO_HELPURL: bM,
-  MATH_MODULO_TITLE: fM,
-  MATH_MODULO_TOOLTIP: AM,
-  MATH_CONSTRAIN_HELPURL: CM,
-  MATH_CONSTRAIN_TITLE: NM,
-  MATH_CONSTRAIN_TOOLTIP: MM,
-  MATH_RANDOM_INT_HELPURL: yM,
-  MATH_RANDOM_INT_TITLE: vM,
-  MATH_RANDOM_INT_TOOLTIP: kM,
-  MATH_RANDOM_FLOAT_HELPURL: PM,
-  MATH_RANDOM_FLOAT_TITLE_RANDOM: DM,
-  MATH_RANDOM_FLOAT_TOOLTIP: wM,
-  MATH_ATAN2_HELPURL: BM,
-  MATH_ATAN2_TITLE: xM,
-  MATH_ATAN2_TOOLTIP: UM,
-  TEXT_TEXT_HELPURL: FM,
-  TEXT_TEXT_TOOLTIP: HM,
-  TEXT_JOIN_HELPURL: GM,
-  TEXT_JOIN_TITLE_CREATEWITH: VM,
-  TEXT_JOIN_TOOLTIP: XM,
-  TEXT_CREATE_JOIN_TITLE_JOIN: WM,
-  TEXT_CREATE_JOIN_TOOLTIP: YM,
-  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: zM,
-  TEXT_CREATE_JOIN_ITEM_TOOLTIP: KM,
-  TEXT_APPEND_HELPURL: JM,
-  TEXT_APPEND_TITLE: jM,
-  TEXT_APPEND_VARIABLE: qM,
-  TEXT_APPEND_TOOLTIP: ZM,
-  TEXT_LENGTH_HELPURL: QM,
-  TEXT_LENGTH_TITLE: ey,
-  TEXT_LENGTH_TOOLTIP: ty,
-  TEXT_ISEMPTY_HELPURL: sy,
-  TEXT_ISEMPTY_TITLE: oy,
-  TEXT_ISEMPTY_TOOLTIP: iy,
-  TEXT_INDEXOF_HELPURL: ny,
-  TEXT_INDEXOF_TOOLTIP: ry,
-  TEXT_INDEXOF_TITLE: ly,
-  TEXT_INDEXOF_OPERATOR_FIRST: cy,
-  TEXT_INDEXOF_OPERATOR_LAST: uy,
-  TEXT_CHARAT_HELPURL: ay,
-  TEXT_CHARAT_TITLE: hy,
-  TEXT_CHARAT_FROM_START: dy,
-  TEXT_CHARAT_FROM_END: _y,
-  TEXT_CHARAT_FIRST: Ty,
-  TEXT_CHARAT_LAST: $y,
-  TEXT_CHARAT_RANDOM: Ey,
-  TEXT_CHARAT_TAIL: gy,
-  TEXT_CHARAT_TOOLTIP: py,
-  TEXT_GET_SUBSTRING_TOOLTIP: my,
-  TEXT_GET_SUBSTRING_HELPURL: Iy,
-  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: Oy,
-  TEXT_GET_SUBSTRING_START_FROM_START: Ry,
-  TEXT_GET_SUBSTRING_START_FROM_END: Sy,
-  TEXT_GET_SUBSTRING_START_FIRST: Ly,
-  TEXT_GET_SUBSTRING_END_FROM_START: by,
-  TEXT_GET_SUBSTRING_END_FROM_END: fy,
-  TEXT_GET_SUBSTRING_END_LAST: Ay,
-  TEXT_GET_SUBSTRING_TAIL: Cy,
-  TEXT_CHANGECASE_HELPURL: Ny,
-  TEXT_CHANGECASE_TOOLTIP: My,
-  TEXT_CHANGECASE_OPERATOR_UPPERCASE: yy,
-  TEXT_CHANGECASE_OPERATOR_LOWERCASE: vy,
-  TEXT_CHANGECASE_OPERATOR_TITLECASE: ky,
-  TEXT_TRIM_HELPURL: Py,
-  TEXT_TRIM_TOOLTIP: Dy,
-  TEXT_TRIM_OPERATOR_BOTH: wy,
-  TEXT_TRIM_OPERATOR_LEFT: By,
-  TEXT_TRIM_OPERATOR_RIGHT: xy,
-  TEXT_PRINT_HELPURL: Uy,
-  TEXT_PRINT_TITLE: Fy,
-  TEXT_PRINT_TOOLTIP: Hy,
-  TEXT_PROMPT_HELPURL: Gy,
-  TEXT_PROMPT_TYPE_TEXT: Vy,
-  TEXT_PROMPT_TYPE_NUMBER: Xy,
-  TEXT_PROMPT_TOOLTIP_NUMBER: Wy,
-  TEXT_PROMPT_TOOLTIP_TEXT: Yy,
-  TEXT_COUNT_MESSAGE0: zy,
-  TEXT_COUNT_HELPURL: Ky,
-  TEXT_COUNT_TOOLTIP: Jy,
-  TEXT_REPLACE_MESSAGE0: jy,
-  TEXT_REPLACE_HELPURL: qy,
-  TEXT_REPLACE_TOOLTIP: Zy,
-  TEXT_REVERSE_MESSAGE0: Qy,
-  TEXT_REVERSE_HELPURL: ev,
-  TEXT_REVERSE_TOOLTIP: tv,
-  LISTS_CREATE_EMPTY_HELPURL: sv,
-  LISTS_CREATE_EMPTY_TITLE: ov,
-  LISTS_CREATE_EMPTY_TOOLTIP: iv,
-  LISTS_CREATE_WITH_HELPURL: nv,
-  LISTS_CREATE_WITH_TOOLTIP: rv,
-  LISTS_CREATE_WITH_INPUT_WITH: lv,
-  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: cv,
-  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: uv,
-  LISTS_CREATE_WITH_ITEM_TITLE: av,
-  LISTS_CREATE_WITH_ITEM_TOOLTIP: hv,
-  LISTS_REPEAT_HELPURL: dv,
-  LISTS_REPEAT_TOOLTIP: _v,
-  LISTS_REPEAT_TITLE: Tv,
-  LISTS_LENGTH_HELPURL: $v,
-  LISTS_LENGTH_TITLE: Ev,
-  LISTS_LENGTH_TOOLTIP: gv,
-  LISTS_ISEMPTY_HELPURL: pv,
-  LISTS_ISEMPTY_TITLE: mv,
-  LISTS_ISEMPTY_TOOLTIP: Iv,
-  LISTS_INLIST: Ov,
-  LISTS_INDEX_OF_HELPURL: Rv,
-  LISTS_INDEX_OF_INPUT_IN_LIST: Sv,
-  LISTS_INDEX_OF_FIRST: Lv,
-  LISTS_INDEX_OF_LAST: bv,
-  LISTS_INDEX_OF_TOOLTIP: fv,
-  LISTS_GET_INDEX_HELPURL: Av,
-  LISTS_GET_INDEX_GET: Cv,
-  LISTS_GET_INDEX_GET_REMOVE: Nv,
-  LISTS_GET_INDEX_REMOVE: Mv,
-  LISTS_GET_INDEX_FROM_START: yv,
-  LISTS_GET_INDEX_FROM_END: vv,
-  LISTS_GET_INDEX_FIRST: kv,
-  LISTS_GET_INDEX_LAST: Pv,
-  LISTS_GET_INDEX_RANDOM: Dv,
-  LISTS_GET_INDEX_TAIL: wv,
-  LISTS_GET_INDEX_INPUT_IN_LIST: Bv,
-  LISTS_INDEX_FROM_START_TOOLTIP: xv,
-  LISTS_INDEX_FROM_END_TOOLTIP: Uv,
-  LISTS_GET_INDEX_TOOLTIP_GET_FROM: Fv,
-  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: Hv,
-  LISTS_GET_INDEX_TOOLTIP_GET_LAST: Gv,
-  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: Vv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: Xv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: Wv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: Yv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: zv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: Kv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: Jv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: jv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: qv,
-  LISTS_SET_INDEX_HELPURL: Zv,
-  LISTS_SET_INDEX_INPUT_IN_LIST: Qv,
-  LISTS_SET_INDEX_SET: ek,
-  LISTS_SET_INDEX_INSERT: tk,
-  LISTS_SET_INDEX_INPUT_TO: sk,
-  LISTS_SET_INDEX_TOOLTIP_SET_FROM: ok,
-  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: ik,
-  LISTS_SET_INDEX_TOOLTIP_SET_LAST: nk,
-  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: rk,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: lk,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: ck,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: uk,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: ak,
-  LISTS_GET_SUBLIST_HELPURL: hk,
-  LISTS_GET_SUBLIST_INPUT_IN_LIST: dk,
-  LISTS_GET_SUBLIST_START_FROM_START: _k,
-  LISTS_GET_SUBLIST_START_FROM_END: Tk,
-  LISTS_GET_SUBLIST_START_FIRST: $k,
-  LISTS_GET_SUBLIST_END_FROM_START: Ek,
-  LISTS_GET_SUBLIST_END_FROM_END: gk,
-  LISTS_GET_SUBLIST_END_LAST: pk,
-  LISTS_GET_SUBLIST_TAIL: mk,
-  LISTS_GET_SUBLIST_TOOLTIP: Ik,
-  LISTS_SORT_HELPURL: Ok,
-  LISTS_SORT_TITLE: Rk,
-  LISTS_SORT_TOOLTIP: Sk,
-  LISTS_SORT_ORDER_ASCENDING: Lk,
-  LISTS_SORT_ORDER_DESCENDING: bk,
-  LISTS_SORT_TYPE_NUMERIC: fk,
-  LISTS_SORT_TYPE_TEXT: Ak,
-  LISTS_SORT_TYPE_IGNORECASE: Ck,
-  LISTS_SPLIT_HELPURL: Nk,
-  LISTS_SPLIT_LIST_FROM_TEXT: Mk,
-  LISTS_SPLIT_TEXT_FROM_LIST: yk,
-  LISTS_SPLIT_WITH_DELIMITER: vk,
-  LISTS_SPLIT_TOOLTIP_SPLIT: kk,
-  LISTS_SPLIT_TOOLTIP_JOIN: Pk,
-  LISTS_REVERSE_HELPURL: Dk,
-  LISTS_REVERSE_MESSAGE0: wk,
-  LISTS_REVERSE_TOOLTIP: Bk,
-  ORDINAL_NUMBER_SUFFIX: xk,
-  VARIABLES_GET_HELPURL: Uk,
-  VARIABLES_GET_TOOLTIP: Fk,
-  VARIABLES_GET_CREATE_SET: Hk,
-  VARIABLES_SET_HELPURL: Gk,
-  VARIABLES_SET: Vk,
-  VARIABLES_SET_TOOLTIP: Xk,
-  VARIABLES_SET_CREATE_GET: Wk,
-  PROCEDURES_DEFNORETURN_HELPURL: Yk,
-  PROCEDURES_DEFNORETURN_TITLE: zk,
-  PROCEDURES_DEFNORETURN_PROCEDURE: Kk,
-  PROCEDURES_BEFORE_PARAMS: Jk,
-  PROCEDURES_CALL_BEFORE_PARAMS: jk,
-  PROCEDURES_CALL_DISABLED_DEF_WARNING: qk,
-  PROCEDURES_DEFNORETURN_DO: Zk,
-  PROCEDURES_DEFNORETURN_TOOLTIP: Qk,
-  PROCEDURES_DEFNORETURN_COMMENT: eP,
-  PROCEDURES_DEFRETURN_HELPURL: tP,
-  PROCEDURES_DEFRETURN_TITLE: sP,
-  PROCEDURES_DEFRETURN_PROCEDURE: oP,
-  PROCEDURES_DEFRETURN_DO: iP,
-  PROCEDURES_DEFRETURN_COMMENT: nP,
-  PROCEDURES_DEFRETURN_RETURN: rP,
-  PROCEDURES_DEFRETURN_TOOLTIP: lP,
-  PROCEDURES_ALLOW_STATEMENTS: cP,
-  PROCEDURES_DEF_DUPLICATE_WARNING: uP,
-  PROCEDURES_CALLNORETURN_HELPURL: aP,
-  PROCEDURES_CALLNORETURN_TOOLTIP: hP,
-  PROCEDURES_CALLRETURN_HELPURL: dP,
-  PROCEDURES_CALLRETURN_TOOLTIP: _P,
-  PROCEDURES_MUTATORCONTAINER_TITLE: TP,
-  PROCEDURES_MUTATORCONTAINER_TOOLTIP: $P,
-  PROCEDURES_MUTATORARG_TITLE: EP,
-  PROCEDURES_MUTATORARG_TOOLTIP: gP,
-  PROCEDURES_HIGHLIGHT_DEF: pP,
-  PROCEDURES_CREATE_DO: mP,
-  PROCEDURES_IFRETURN_TOOLTIP: IP,
-  PROCEDURES_IFRETURN_HELPURL: OP,
-  PROCEDURES_IFRETURN_WARNING: RP,
-  WORKSPACE_COMMENT_DEFAULT_TEXT: SP,
-  WORKSPACE_ARIA_LABEL: LP,
-  COLLAPSED_WARNINGS_WARNING: bP,
-  DIALOG_OK: fP,
-  DIALOG_CANCEL: AP,
-  EDIT_BLOCK_CONTENTS: CP,
-  MOVE_BLOCK: NP,
-  WINDOWS: MP,
-  MAC_OS: yP,
-  CHROME_OS: vP,
-  LINUX: kP,
-  UNKNOWN: PP,
-  CONTROL_KEY: DP,
-  COMMAND_KEY: wP,
-  OPTION_KEY: BP,
-  ALT_KEY: xP,
-  CUT_SHORTCUT: UP,
-  COPY_SHORTCUT: FP,
-  PASTE_SHORTCUT: HP,
-  HELP_PROMPT: GP,
-  SHORTCUTS_GENERAL: VP,
-  SHORTCUTS_EDITING: XP,
-  SHORTCUTS_CODE_NAVIGATION: WP,
-  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: YP,
-  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: zP,
-  KEYBOARD_NAV_COPIED_HINT: KP,
-  KEYBOARD_NAV_CUT_HINT: JP
-} = xf, jP = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
+var xf = Bf();
+const Uf = /* @__PURE__ */ gl(xf), {
+  LOGIC_HUE: Ff,
+  LOOPS_HUE: Hf,
+  MATH_HUE: Gf,
+  TEXTS_HUE: Vf,
+  LISTS_HUE: Xf,
+  COLOUR_HUE: Wf,
+  VARIABLES_HUE: Yf,
+  VARIABLES_DYNAMIC_HUE: zf,
+  PROCEDURES_HUE: Kf,
+  VARIABLES_DEFAULT_NAME: Jf,
+  UNNAMED_KEY: jf,
+  TODAY: qf,
+  DUPLICATE_BLOCK: Zf,
+  ADD_COMMENT: Qf,
+  REMOVE_COMMENT: eA,
+  DUPLICATE_COMMENT: tA,
+  EXTERNAL_INPUTS: sA,
+  INLINE_INPUTS: oA,
+  DELETE_BLOCK: iA,
+  DELETE_X_BLOCKS: nA,
+  DELETE_ALL_BLOCKS: rA,
+  CLEAN_UP: lA,
+  CLOSE: cA,
+  COLLAPSE_BLOCK: uA,
+  COLLAPSE_ALL: aA,
+  EXPAND_BLOCK: hA,
+  EXPAND_ALL: dA,
+  DISABLE_BLOCK: _A,
+  ENABLE_BLOCK: TA,
+  HELP: $A,
+  UNDO: EA,
+  REDO: gA,
+  CHANGE_VALUE_TITLE: pA,
+  RENAME_VARIABLE: mA,
+  RENAME_VARIABLE_TITLE: IA,
+  NEW_VARIABLE: OA,
+  NEW_STRING_VARIABLE: RA,
+  NEW_NUMBER_VARIABLE: SA,
+  NEW_COLOUR_VARIABLE: LA,
+  NEW_VARIABLE_TYPE_TITLE: bA,
+  NEW_VARIABLE_TITLE: fA,
+  VARIABLE_ALREADY_EXISTS: AA,
+  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: CA,
+  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: NA,
+  DELETE_VARIABLE_CONFIRMATION: MA,
+  CANNOT_DELETE_VARIABLE_PROCEDURE: yA,
+  DELETE_VARIABLE: vA,
+  COLOUR_PICKER_HELPURL: kA,
+  COLOUR_PICKER_TOOLTIP: PA,
+  COLOUR_RANDOM_HELPURL: DA,
+  COLOUR_RANDOM_TITLE: wA,
+  COLOUR_RANDOM_TOOLTIP: BA,
+  COLOUR_RGB_HELPURL: xA,
+  COLOUR_RGB_TITLE: UA,
+  COLOUR_RGB_RED: FA,
+  COLOUR_RGB_GREEN: HA,
+  COLOUR_RGB_BLUE: GA,
+  COLOUR_RGB_TOOLTIP: VA,
+  COLOUR_BLEND_HELPURL: XA,
+  COLOUR_BLEND_TITLE: WA,
+  COLOUR_BLEND_COLOUR1: YA,
+  COLOUR_BLEND_COLOUR2: zA,
+  COLOUR_BLEND_RATIO: KA,
+  COLOUR_BLEND_TOOLTIP: JA,
+  CONTROLS_REPEAT_HELPURL: jA,
+  CONTROLS_REPEAT_TITLE: qA,
+  CONTROLS_REPEAT_INPUT_DO: ZA,
+  CONTROLS_REPEAT_TOOLTIP: QA,
+  CONTROLS_WHILEUNTIL_HELPURL: eC,
+  CONTROLS_WHILEUNTIL_INPUT_DO: tC,
+  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: sC,
+  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: oC,
+  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: iC,
+  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: nC,
+  CONTROLS_FOR_HELPURL: rC,
+  CONTROLS_FOR_TOOLTIP: lC,
+  CONTROLS_FOR_TITLE: cC,
+  CONTROLS_FOR_INPUT_DO: uC,
+  CONTROLS_FOREACH_HELPURL: aC,
+  CONTROLS_FOREACH_TITLE: hC,
+  CONTROLS_FOREACH_INPUT_DO: dC,
+  CONTROLS_FOREACH_TOOLTIP: _C,
+  CONTROLS_FLOW_STATEMENTS_HELPURL: TC,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: $C,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: EC,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: gC,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: pC,
+  CONTROLS_FLOW_STATEMENTS_WARNING: mC,
+  CONTROLS_IF_HELPURL: IC,
+  CONTROLS_IF_TOOLTIP_1: OC,
+  CONTROLS_IF_TOOLTIP_2: RC,
+  CONTROLS_IF_TOOLTIP_3: SC,
+  CONTROLS_IF_TOOLTIP_4: LC,
+  CONTROLS_IF_MSG_IF: bC,
+  CONTROLS_IF_MSG_ELSEIF: fC,
+  CONTROLS_IF_MSG_ELSE: AC,
+  CONTROLS_IF_MSG_THEN: CC,
+  CONTROLS_IF_IF_TITLE_IF: NC,
+  CONTROLS_IF_IF_TOOLTIP: MC,
+  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: yC,
+  CONTROLS_IF_ELSEIF_TOOLTIP: vC,
+  CONTROLS_IF_ELSE_TITLE_ELSE: kC,
+  CONTROLS_IF_ELSE_TOOLTIP: PC,
+  LOGIC_COMPARE_HELPURL: DC,
+  LOGIC_COMPARE_TOOLTIP_EQ: wC,
+  LOGIC_COMPARE_TOOLTIP_NEQ: BC,
+  LOGIC_COMPARE_TOOLTIP_LT: xC,
+  LOGIC_COMPARE_TOOLTIP_LTE: UC,
+  LOGIC_COMPARE_TOOLTIP_GT: FC,
+  LOGIC_COMPARE_TOOLTIP_GTE: HC,
+  LOGIC_OPERATION_HELPURL: GC,
+  LOGIC_OPERATION_TOOLTIP_AND: VC,
+  LOGIC_OPERATION_AND: XC,
+  LOGIC_OPERATION_TOOLTIP_OR: WC,
+  LOGIC_OPERATION_OR: YC,
+  LOGIC_NEGATE_HELPURL: zC,
+  LOGIC_NEGATE_TITLE: KC,
+  LOGIC_NEGATE_TOOLTIP: JC,
+  LOGIC_BOOLEAN_HELPURL: jC,
+  LOGIC_BOOLEAN_TRUE: qC,
+  LOGIC_BOOLEAN_FALSE: ZC,
+  LOGIC_BOOLEAN_TOOLTIP: QC,
+  LOGIC_NULL_HELPURL: eN,
+  LOGIC_NULL: tN,
+  LOGIC_NULL_TOOLTIP: sN,
+  LOGIC_TERNARY_HELPURL: oN,
+  LOGIC_TERNARY_CONDITION: iN,
+  LOGIC_TERNARY_IF_TRUE: nN,
+  LOGIC_TERNARY_IF_FALSE: rN,
+  LOGIC_TERNARY_TOOLTIP: lN,
+  MATH_NUMBER_HELPURL: cN,
+  MATH_NUMBER_TOOLTIP: uN,
+  MATH_ADDITION_SYMBOL: aN,
+  MATH_SUBTRACTION_SYMBOL: hN,
+  MATH_DIVISION_SYMBOL: dN,
+  MATH_MULTIPLICATION_SYMBOL: _N,
+  MATH_POWER_SYMBOL: TN,
+  MATH_TRIG_SIN: $N,
+  MATH_TRIG_COS: EN,
+  MATH_TRIG_TAN: gN,
+  MATH_TRIG_ASIN: pN,
+  MATH_TRIG_ACOS: mN,
+  MATH_TRIG_ATAN: IN,
+  MATH_ARITHMETIC_HELPURL: ON,
+  MATH_ARITHMETIC_TOOLTIP_ADD: RN,
+  MATH_ARITHMETIC_TOOLTIP_MINUS: SN,
+  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: LN,
+  MATH_ARITHMETIC_TOOLTIP_DIVIDE: bN,
+  MATH_ARITHMETIC_TOOLTIP_POWER: fN,
+  MATH_SINGLE_HELPURL: AN,
+  MATH_SINGLE_OP_ROOT: CN,
+  MATH_SINGLE_TOOLTIP_ROOT: NN,
+  MATH_SINGLE_OP_ABSOLUTE: MN,
+  MATH_SINGLE_TOOLTIP_ABS: yN,
+  MATH_SINGLE_TOOLTIP_NEG: vN,
+  MATH_SINGLE_TOOLTIP_LN: kN,
+  MATH_SINGLE_TOOLTIP_LOG10: PN,
+  MATH_SINGLE_TOOLTIP_EXP: DN,
+  MATH_SINGLE_TOOLTIP_POW10: wN,
+  MATH_TRIG_HELPURL: BN,
+  MATH_TRIG_TOOLTIP_SIN: xN,
+  MATH_TRIG_TOOLTIP_COS: UN,
+  MATH_TRIG_TOOLTIP_TAN: FN,
+  MATH_TRIG_TOOLTIP_ASIN: HN,
+  MATH_TRIG_TOOLTIP_ACOS: GN,
+  MATH_TRIG_TOOLTIP_ATAN: VN,
+  MATH_CONSTANT_HELPURL: XN,
+  MATH_CONSTANT_TOOLTIP: WN,
+  MATH_IS_EVEN: YN,
+  MATH_IS_ODD: zN,
+  MATH_IS_PRIME: KN,
+  MATH_IS_WHOLE: JN,
+  MATH_IS_POSITIVE: jN,
+  MATH_IS_NEGATIVE: qN,
+  MATH_IS_DIVISIBLE_BY: ZN,
+  MATH_IS_TOOLTIP: QN,
+  MATH_CHANGE_HELPURL: eM,
+  MATH_CHANGE_TITLE: tM,
+  MATH_CHANGE_TITLE_ITEM: sM,
+  MATH_CHANGE_TOOLTIP: oM,
+  MATH_ROUND_HELPURL: iM,
+  MATH_ROUND_TOOLTIP: nM,
+  MATH_ROUND_OPERATOR_ROUND: rM,
+  MATH_ROUND_OPERATOR_ROUNDUP: lM,
+  MATH_ROUND_OPERATOR_ROUNDDOWN: cM,
+  MATH_ONLIST_HELPURL: uM,
+  MATH_ONLIST_OPERATOR_SUM: aM,
+  MATH_ONLIST_TOOLTIP_SUM: hM,
+  MATH_ONLIST_OPERATOR_MIN: dM,
+  MATH_ONLIST_TOOLTIP_MIN: _M,
+  MATH_ONLIST_OPERATOR_MAX: TM,
+  MATH_ONLIST_TOOLTIP_MAX: $M,
+  MATH_ONLIST_OPERATOR_AVERAGE: EM,
+  MATH_ONLIST_TOOLTIP_AVERAGE: gM,
+  MATH_ONLIST_OPERATOR_MEDIAN: pM,
+  MATH_ONLIST_TOOLTIP_MEDIAN: mM,
+  MATH_ONLIST_OPERATOR_MODE: IM,
+  MATH_ONLIST_TOOLTIP_MODE: OM,
+  MATH_ONLIST_OPERATOR_STD_DEV: RM,
+  MATH_ONLIST_TOOLTIP_STD_DEV: SM,
+  MATH_ONLIST_OPERATOR_RANDOM: LM,
+  MATH_ONLIST_TOOLTIP_RANDOM: bM,
+  MATH_MODULO_HELPURL: fM,
+  MATH_MODULO_TITLE: AM,
+  MATH_MODULO_TOOLTIP: CM,
+  MATH_CONSTRAIN_HELPURL: NM,
+  MATH_CONSTRAIN_TITLE: MM,
+  MATH_CONSTRAIN_TOOLTIP: yM,
+  MATH_RANDOM_INT_HELPURL: vM,
+  MATH_RANDOM_INT_TITLE: kM,
+  MATH_RANDOM_INT_TOOLTIP: PM,
+  MATH_RANDOM_FLOAT_HELPURL: DM,
+  MATH_RANDOM_FLOAT_TITLE_RANDOM: wM,
+  MATH_RANDOM_FLOAT_TOOLTIP: BM,
+  MATH_ATAN2_HELPURL: xM,
+  MATH_ATAN2_TITLE: UM,
+  MATH_ATAN2_TOOLTIP: FM,
+  TEXT_TEXT_HELPURL: HM,
+  TEXT_TEXT_TOOLTIP: GM,
+  TEXT_JOIN_HELPURL: VM,
+  TEXT_JOIN_TITLE_CREATEWITH: XM,
+  TEXT_JOIN_TOOLTIP: WM,
+  TEXT_CREATE_JOIN_TITLE_JOIN: YM,
+  TEXT_CREATE_JOIN_TOOLTIP: zM,
+  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: KM,
+  TEXT_CREATE_JOIN_ITEM_TOOLTIP: JM,
+  TEXT_APPEND_HELPURL: jM,
+  TEXT_APPEND_TITLE: qM,
+  TEXT_APPEND_VARIABLE: ZM,
+  TEXT_APPEND_TOOLTIP: QM,
+  TEXT_LENGTH_HELPURL: ey,
+  TEXT_LENGTH_TITLE: ty,
+  TEXT_LENGTH_TOOLTIP: sy,
+  TEXT_ISEMPTY_HELPURL: oy,
+  TEXT_ISEMPTY_TITLE: iy,
+  TEXT_ISEMPTY_TOOLTIP: ny,
+  TEXT_INDEXOF_HELPURL: ry,
+  TEXT_INDEXOF_TOOLTIP: ly,
+  TEXT_INDEXOF_TITLE: cy,
+  TEXT_INDEXOF_OPERATOR_FIRST: uy,
+  TEXT_INDEXOF_OPERATOR_LAST: ay,
+  TEXT_CHARAT_HELPURL: hy,
+  TEXT_CHARAT_TITLE: dy,
+  TEXT_CHARAT_FROM_START: _y,
+  TEXT_CHARAT_FROM_END: Ty,
+  TEXT_CHARAT_FIRST: $y,
+  TEXT_CHARAT_LAST: Ey,
+  TEXT_CHARAT_RANDOM: gy,
+  TEXT_CHARAT_TAIL: py,
+  TEXT_CHARAT_TOOLTIP: my,
+  TEXT_GET_SUBSTRING_TOOLTIP: Iy,
+  TEXT_GET_SUBSTRING_HELPURL: Oy,
+  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: Ry,
+  TEXT_GET_SUBSTRING_START_FROM_START: Sy,
+  TEXT_GET_SUBSTRING_START_FROM_END: Ly,
+  TEXT_GET_SUBSTRING_START_FIRST: by,
+  TEXT_GET_SUBSTRING_END_FROM_START: fy,
+  TEXT_GET_SUBSTRING_END_FROM_END: Ay,
+  TEXT_GET_SUBSTRING_END_LAST: Cy,
+  TEXT_GET_SUBSTRING_TAIL: Ny,
+  TEXT_CHANGECASE_HELPURL: My,
+  TEXT_CHANGECASE_TOOLTIP: yy,
+  TEXT_CHANGECASE_OPERATOR_UPPERCASE: vy,
+  TEXT_CHANGECASE_OPERATOR_LOWERCASE: ky,
+  TEXT_CHANGECASE_OPERATOR_TITLECASE: Py,
+  TEXT_TRIM_HELPURL: Dy,
+  TEXT_TRIM_TOOLTIP: wy,
+  TEXT_TRIM_OPERATOR_BOTH: By,
+  TEXT_TRIM_OPERATOR_LEFT: xy,
+  TEXT_TRIM_OPERATOR_RIGHT: Uy,
+  TEXT_PRINT_HELPURL: Fy,
+  TEXT_PRINT_TITLE: Hy,
+  TEXT_PRINT_TOOLTIP: Gy,
+  TEXT_PROMPT_HELPURL: Vy,
+  TEXT_PROMPT_TYPE_TEXT: Xy,
+  TEXT_PROMPT_TYPE_NUMBER: Wy,
+  TEXT_PROMPT_TOOLTIP_NUMBER: Yy,
+  TEXT_PROMPT_TOOLTIP_TEXT: zy,
+  TEXT_COUNT_MESSAGE0: Ky,
+  TEXT_COUNT_HELPURL: Jy,
+  TEXT_COUNT_TOOLTIP: jy,
+  TEXT_REPLACE_MESSAGE0: qy,
+  TEXT_REPLACE_HELPURL: Zy,
+  TEXT_REPLACE_TOOLTIP: Qy,
+  TEXT_REVERSE_MESSAGE0: ev,
+  TEXT_REVERSE_HELPURL: tv,
+  TEXT_REVERSE_TOOLTIP: sv,
+  LISTS_CREATE_EMPTY_HELPURL: ov,
+  LISTS_CREATE_EMPTY_TITLE: iv,
+  LISTS_CREATE_EMPTY_TOOLTIP: nv,
+  LISTS_CREATE_WITH_HELPURL: rv,
+  LISTS_CREATE_WITH_TOOLTIP: lv,
+  LISTS_CREATE_WITH_INPUT_WITH: cv,
+  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: uv,
+  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: av,
+  LISTS_CREATE_WITH_ITEM_TITLE: hv,
+  LISTS_CREATE_WITH_ITEM_TOOLTIP: dv,
+  LISTS_REPEAT_HELPURL: _v,
+  LISTS_REPEAT_TOOLTIP: Tv,
+  LISTS_REPEAT_TITLE: $v,
+  LISTS_LENGTH_HELPURL: Ev,
+  LISTS_LENGTH_TITLE: gv,
+  LISTS_LENGTH_TOOLTIP: pv,
+  LISTS_ISEMPTY_HELPURL: mv,
+  LISTS_ISEMPTY_TITLE: Iv,
+  LISTS_ISEMPTY_TOOLTIP: Ov,
+  LISTS_INLIST: Rv,
+  LISTS_INDEX_OF_HELPURL: Sv,
+  LISTS_INDEX_OF_INPUT_IN_LIST: Lv,
+  LISTS_INDEX_OF_FIRST: bv,
+  LISTS_INDEX_OF_LAST: fv,
+  LISTS_INDEX_OF_TOOLTIP: Av,
+  LISTS_GET_INDEX_HELPURL: Cv,
+  LISTS_GET_INDEX_GET: Nv,
+  LISTS_GET_INDEX_GET_REMOVE: Mv,
+  LISTS_GET_INDEX_REMOVE: yv,
+  LISTS_GET_INDEX_FROM_START: vv,
+  LISTS_GET_INDEX_FROM_END: kv,
+  LISTS_GET_INDEX_FIRST: Pv,
+  LISTS_GET_INDEX_LAST: Dv,
+  LISTS_GET_INDEX_RANDOM: wv,
+  LISTS_GET_INDEX_TAIL: Bv,
+  LISTS_GET_INDEX_INPUT_IN_LIST: xv,
+  LISTS_INDEX_FROM_START_TOOLTIP: Uv,
+  LISTS_INDEX_FROM_END_TOOLTIP: Fv,
+  LISTS_GET_INDEX_TOOLTIP_GET_FROM: Hv,
+  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: Gv,
+  LISTS_GET_INDEX_TOOLTIP_GET_LAST: Vv,
+  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: Xv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: Wv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: Yv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: zv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: Kv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: Jv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: jv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: qv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: Zv,
+  LISTS_SET_INDEX_HELPURL: Qv,
+  LISTS_SET_INDEX_INPUT_IN_LIST: ek,
+  LISTS_SET_INDEX_SET: tk,
+  LISTS_SET_INDEX_INSERT: sk,
+  LISTS_SET_INDEX_INPUT_TO: ok,
+  LISTS_SET_INDEX_TOOLTIP_SET_FROM: ik,
+  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: nk,
+  LISTS_SET_INDEX_TOOLTIP_SET_LAST: rk,
+  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: lk,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: ck,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: uk,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: ak,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: hk,
+  LISTS_GET_SUBLIST_HELPURL: dk,
+  LISTS_GET_SUBLIST_INPUT_IN_LIST: _k,
+  LISTS_GET_SUBLIST_START_FROM_START: Tk,
+  LISTS_GET_SUBLIST_START_FROM_END: $k,
+  LISTS_GET_SUBLIST_START_FIRST: Ek,
+  LISTS_GET_SUBLIST_END_FROM_START: gk,
+  LISTS_GET_SUBLIST_END_FROM_END: pk,
+  LISTS_GET_SUBLIST_END_LAST: mk,
+  LISTS_GET_SUBLIST_TAIL: Ik,
+  LISTS_GET_SUBLIST_TOOLTIP: Ok,
+  LISTS_SORT_HELPURL: Rk,
+  LISTS_SORT_TITLE: Sk,
+  LISTS_SORT_TOOLTIP: Lk,
+  LISTS_SORT_ORDER_ASCENDING: bk,
+  LISTS_SORT_ORDER_DESCENDING: fk,
+  LISTS_SORT_TYPE_NUMERIC: Ak,
+  LISTS_SORT_TYPE_TEXT: Ck,
+  LISTS_SORT_TYPE_IGNORECASE: Nk,
+  LISTS_SPLIT_HELPURL: Mk,
+  LISTS_SPLIT_LIST_FROM_TEXT: yk,
+  LISTS_SPLIT_TEXT_FROM_LIST: vk,
+  LISTS_SPLIT_WITH_DELIMITER: kk,
+  LISTS_SPLIT_TOOLTIP_SPLIT: Pk,
+  LISTS_SPLIT_TOOLTIP_JOIN: Dk,
+  LISTS_REVERSE_HELPURL: wk,
+  LISTS_REVERSE_MESSAGE0: Bk,
+  LISTS_REVERSE_TOOLTIP: xk,
+  ORDINAL_NUMBER_SUFFIX: Uk,
+  VARIABLES_GET_HELPURL: Fk,
+  VARIABLES_GET_TOOLTIP: Hk,
+  VARIABLES_GET_CREATE_SET: Gk,
+  VARIABLES_SET_HELPURL: Vk,
+  VARIABLES_SET: Xk,
+  VARIABLES_SET_TOOLTIP: Wk,
+  VARIABLES_SET_CREATE_GET: Yk,
+  PROCEDURES_DEFNORETURN_HELPURL: zk,
+  PROCEDURES_DEFNORETURN_TITLE: Kk,
+  PROCEDURES_DEFNORETURN_PROCEDURE: Jk,
+  PROCEDURES_BEFORE_PARAMS: jk,
+  PROCEDURES_CALL_BEFORE_PARAMS: qk,
+  PROCEDURES_CALL_DISABLED_DEF_WARNING: Zk,
+  PROCEDURES_DEFNORETURN_DO: Qk,
+  PROCEDURES_DEFNORETURN_TOOLTIP: eP,
+  PROCEDURES_DEFNORETURN_COMMENT: tP,
+  PROCEDURES_DEFRETURN_HELPURL: sP,
+  PROCEDURES_DEFRETURN_TITLE: oP,
+  PROCEDURES_DEFRETURN_PROCEDURE: iP,
+  PROCEDURES_DEFRETURN_DO: nP,
+  PROCEDURES_DEFRETURN_COMMENT: rP,
+  PROCEDURES_DEFRETURN_RETURN: lP,
+  PROCEDURES_DEFRETURN_TOOLTIP: cP,
+  PROCEDURES_ALLOW_STATEMENTS: uP,
+  PROCEDURES_DEF_DUPLICATE_WARNING: aP,
+  PROCEDURES_CALLNORETURN_HELPURL: hP,
+  PROCEDURES_CALLNORETURN_TOOLTIP: dP,
+  PROCEDURES_CALLRETURN_HELPURL: _P,
+  PROCEDURES_CALLRETURN_TOOLTIP: TP,
+  PROCEDURES_MUTATORCONTAINER_TITLE: $P,
+  PROCEDURES_MUTATORCONTAINER_TOOLTIP: EP,
+  PROCEDURES_MUTATORARG_TITLE: gP,
+  PROCEDURES_MUTATORARG_TOOLTIP: pP,
+  PROCEDURES_HIGHLIGHT_DEF: mP,
+  PROCEDURES_CREATE_DO: IP,
+  PROCEDURES_IFRETURN_TOOLTIP: OP,
+  PROCEDURES_IFRETURN_HELPURL: RP,
+  PROCEDURES_IFRETURN_WARNING: SP,
+  WORKSPACE_COMMENT_DEFAULT_TEXT: LP,
+  WORKSPACE_ARIA_LABEL: bP,
+  COLLAPSED_WARNINGS_WARNING: fP,
+  DIALOG_OK: AP,
+  DIALOG_CANCEL: CP,
+  EDIT_BLOCK_CONTENTS: NP,
+  MOVE_BLOCK: MP,
+  WINDOWS: yP,
+  MAC_OS: vP,
+  CHROME_OS: kP,
+  LINUX: PP,
+  UNKNOWN: DP,
+  CONTROL_KEY: wP,
+  COMMAND_KEY: BP,
+  OPTION_KEY: xP,
+  ALT_KEY: UP,
+  CUT_SHORTCUT: FP,
+  COPY_SHORTCUT: HP,
+  PASTE_SHORTCUT: GP,
+  HELP_PROMPT: VP,
+  SHORTCUTS_GENERAL: XP,
+  SHORTCUTS_EDITING: WP,
+  SHORTCUTS_CODE_NAVIGATION: YP,
+  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: zP,
+  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: KP,
+  KEYBOARD_NAV_COPIED_HINT: JP,
+  KEYBOARD_NAV_CUT_HINT: jP
+} = Uf, qP = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProperty({
   __proto__: null,
-  ADD_COMMENT: Zf,
-  ALT_KEY: xP,
-  CANNOT_DELETE_VARIABLE_PROCEDURE: MA,
-  CHANGE_VALUE_TITLE: gA,
-  CHROME_OS: vP,
-  CLEAN_UP: rA,
-  CLOSE: lA,
-  COLLAPSED_WARNINGS_WARNING: bP,
-  COLLAPSE_ALL: uA,
-  COLLAPSE_BLOCK: cA,
-  COLOUR_BLEND_COLOUR1: WA,
-  COLOUR_BLEND_COLOUR2: YA,
-  COLOUR_BLEND_HELPURL: VA,
-  COLOUR_BLEND_RATIO: zA,
-  COLOUR_BLEND_TITLE: XA,
-  COLOUR_BLEND_TOOLTIP: KA,
-  COLOUR_HUE: Xf,
-  COLOUR_PICKER_HELPURL: vA,
-  COLOUR_PICKER_TOOLTIP: kA,
-  COLOUR_RANDOM_HELPURL: PA,
-  COLOUR_RANDOM_TITLE: DA,
-  COLOUR_RANDOM_TOOLTIP: wA,
-  COLOUR_RGB_BLUE: HA,
-  COLOUR_RGB_GREEN: FA,
-  COLOUR_RGB_HELPURL: BA,
-  COLOUR_RGB_RED: UA,
-  COLOUR_RGB_TITLE: xA,
-  COLOUR_RGB_TOOLTIP: GA,
-  COMMAND_KEY: wP,
-  CONTROLS_FLOW_STATEMENTS_HELPURL: _C,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: TC,
-  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: $C,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: EC,
-  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: gC,
-  CONTROLS_FLOW_STATEMENTS_WARNING: pC,
-  CONTROLS_FOREACH_HELPURL: uC,
-  CONTROLS_FOREACH_INPUT_DO: hC,
-  CONTROLS_FOREACH_TITLE: aC,
-  CONTROLS_FOREACH_TOOLTIP: dC,
-  CONTROLS_FOR_HELPURL: nC,
-  CONTROLS_FOR_INPUT_DO: cC,
-  CONTROLS_FOR_TITLE: lC,
-  CONTROLS_FOR_TOOLTIP: rC,
-  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: MC,
-  CONTROLS_IF_ELSEIF_TOOLTIP: yC,
-  CONTROLS_IF_ELSE_TITLE_ELSE: vC,
-  CONTROLS_IF_ELSE_TOOLTIP: kC,
-  CONTROLS_IF_HELPURL: mC,
-  CONTROLS_IF_IF_TITLE_IF: CC,
-  CONTROLS_IF_IF_TOOLTIP: NC,
-  CONTROLS_IF_MSG_ELSE: fC,
-  CONTROLS_IF_MSG_ELSEIF: bC,
-  CONTROLS_IF_MSG_IF: LC,
-  CONTROLS_IF_MSG_THEN: AC,
-  CONTROLS_IF_TOOLTIP_1: IC,
-  CONTROLS_IF_TOOLTIP_2: OC,
-  CONTROLS_IF_TOOLTIP_3: RC,
-  CONTROLS_IF_TOOLTIP_4: SC,
-  CONTROLS_REPEAT_HELPURL: JA,
-  CONTROLS_REPEAT_INPUT_DO: qA,
-  CONTROLS_REPEAT_TITLE: jA,
-  CONTROLS_REPEAT_TOOLTIP: ZA,
-  CONTROLS_WHILEUNTIL_HELPURL: QA,
-  CONTROLS_WHILEUNTIL_INPUT_DO: eC,
-  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: sC,
-  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: tC,
-  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: iC,
-  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: oC,
-  CONTROL_KEY: DP,
-  COPY_SHORTCUT: FP,
-  CUT_SHORTCUT: UP,
-  DELETE_ALL_BLOCKS: nA,
-  DELETE_BLOCK: oA,
-  DELETE_VARIABLE: yA,
-  DELETE_VARIABLE_CONFIRMATION: NA,
-  DELETE_X_BLOCKS: iA,
-  DIALOG_CANCEL: AP,
-  DIALOG_OK: fP,
-  DISABLE_BLOCK: dA,
-  DUPLICATE_BLOCK: qf,
-  DUPLICATE_COMMENT: eA,
-  EDIT_BLOCK_CONTENTS: CP,
-  ENABLE_BLOCK: _A,
-  EXPAND_ALL: hA,
-  EXPAND_BLOCK: aA,
-  EXTERNAL_INPUTS: tA,
-  HELP: TA,
-  HELP_PROMPT: GP,
-  INLINE_INPUTS: sA,
-  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: zP,
-  KEYBOARD_NAV_COPIED_HINT: KP,
-  KEYBOARD_NAV_CUT_HINT: JP,
-  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: YP,
-  LINUX: kP,
-  LISTS_CREATE_EMPTY_HELPURL: sv,
-  LISTS_CREATE_EMPTY_TITLE: ov,
-  LISTS_CREATE_EMPTY_TOOLTIP: iv,
-  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: cv,
-  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: uv,
-  LISTS_CREATE_WITH_HELPURL: nv,
-  LISTS_CREATE_WITH_INPUT_WITH: lv,
-  LISTS_CREATE_WITH_ITEM_TITLE: av,
-  LISTS_CREATE_WITH_ITEM_TOOLTIP: hv,
-  LISTS_CREATE_WITH_TOOLTIP: rv,
-  LISTS_GET_INDEX_FIRST: kv,
-  LISTS_GET_INDEX_FROM_END: vv,
-  LISTS_GET_INDEX_FROM_START: yv,
-  LISTS_GET_INDEX_GET: Cv,
-  LISTS_GET_INDEX_GET_REMOVE: Nv,
-  LISTS_GET_INDEX_HELPURL: Av,
-  LISTS_GET_INDEX_INPUT_IN_LIST: Bv,
-  LISTS_GET_INDEX_LAST: Pv,
-  LISTS_GET_INDEX_RANDOM: Dv,
-  LISTS_GET_INDEX_REMOVE: Mv,
-  LISTS_GET_INDEX_TAIL: wv,
-  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: Hv,
-  LISTS_GET_INDEX_TOOLTIP_GET_FROM: Fv,
-  LISTS_GET_INDEX_TOOLTIP_GET_LAST: Gv,
-  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: Vv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: Wv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: Xv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: Yv,
-  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: zv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: Jv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: Kv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: jv,
-  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: qv,
-  LISTS_GET_SUBLIST_END_FROM_END: gk,
-  LISTS_GET_SUBLIST_END_FROM_START: Ek,
-  LISTS_GET_SUBLIST_END_LAST: pk,
-  LISTS_GET_SUBLIST_HELPURL: hk,
-  LISTS_GET_SUBLIST_INPUT_IN_LIST: dk,
-  LISTS_GET_SUBLIST_START_FIRST: $k,
-  LISTS_GET_SUBLIST_START_FROM_END: Tk,
-  LISTS_GET_SUBLIST_START_FROM_START: _k,
-  LISTS_GET_SUBLIST_TAIL: mk,
-  LISTS_GET_SUBLIST_TOOLTIP: Ik,
-  LISTS_HUE: Vf,
-  LISTS_INDEX_FROM_END_TOOLTIP: Uv,
-  LISTS_INDEX_FROM_START_TOOLTIP: xv,
-  LISTS_INDEX_OF_FIRST: Lv,
-  LISTS_INDEX_OF_HELPURL: Rv,
-  LISTS_INDEX_OF_INPUT_IN_LIST: Sv,
-  LISTS_INDEX_OF_LAST: bv,
-  LISTS_INDEX_OF_TOOLTIP: fv,
-  LISTS_INLIST: Ov,
-  LISTS_ISEMPTY_HELPURL: pv,
-  LISTS_ISEMPTY_TITLE: mv,
-  LISTS_ISEMPTY_TOOLTIP: Iv,
-  LISTS_LENGTH_HELPURL: $v,
-  LISTS_LENGTH_TITLE: Ev,
-  LISTS_LENGTH_TOOLTIP: gv,
-  LISTS_REPEAT_HELPURL: dv,
-  LISTS_REPEAT_TITLE: Tv,
-  LISTS_REPEAT_TOOLTIP: _v,
-  LISTS_REVERSE_HELPURL: Dk,
-  LISTS_REVERSE_MESSAGE0: wk,
-  LISTS_REVERSE_TOOLTIP: Bk,
-  LISTS_SET_INDEX_HELPURL: Zv,
-  LISTS_SET_INDEX_INPUT_IN_LIST: Qv,
-  LISTS_SET_INDEX_INPUT_TO: sk,
-  LISTS_SET_INDEX_INSERT: tk,
-  LISTS_SET_INDEX_SET: ek,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: ck,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: lk,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: uk,
-  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: ak,
-  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: ik,
-  LISTS_SET_INDEX_TOOLTIP_SET_FROM: ok,
-  LISTS_SET_INDEX_TOOLTIP_SET_LAST: nk,
-  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: rk,
-  LISTS_SORT_HELPURL: Ok,
-  LISTS_SORT_ORDER_ASCENDING: Lk,
-  LISTS_SORT_ORDER_DESCENDING: bk,
-  LISTS_SORT_TITLE: Rk,
-  LISTS_SORT_TOOLTIP: Sk,
-  LISTS_SORT_TYPE_IGNORECASE: Ck,
-  LISTS_SORT_TYPE_NUMERIC: fk,
-  LISTS_SORT_TYPE_TEXT: Ak,
-  LISTS_SPLIT_HELPURL: Nk,
-  LISTS_SPLIT_LIST_FROM_TEXT: Mk,
-  LISTS_SPLIT_TEXT_FROM_LIST: yk,
-  LISTS_SPLIT_TOOLTIP_JOIN: Pk,
-  LISTS_SPLIT_TOOLTIP_SPLIT: kk,
-  LISTS_SPLIT_WITH_DELIMITER: vk,
-  LOGIC_BOOLEAN_FALSE: qC,
-  LOGIC_BOOLEAN_HELPURL: JC,
-  LOGIC_BOOLEAN_TOOLTIP: ZC,
-  LOGIC_BOOLEAN_TRUE: jC,
-  LOGIC_COMPARE_HELPURL: PC,
-  LOGIC_COMPARE_TOOLTIP_EQ: DC,
-  LOGIC_COMPARE_TOOLTIP_GT: UC,
-  LOGIC_COMPARE_TOOLTIP_GTE: FC,
-  LOGIC_COMPARE_TOOLTIP_LT: BC,
-  LOGIC_COMPARE_TOOLTIP_LTE: xC,
-  LOGIC_COMPARE_TOOLTIP_NEQ: wC,
-  LOGIC_HUE: Uf,
-  LOGIC_NEGATE_HELPURL: YC,
-  LOGIC_NEGATE_TITLE: zC,
-  LOGIC_NEGATE_TOOLTIP: KC,
-  LOGIC_NULL: eN,
-  LOGIC_NULL_HELPURL: QC,
-  LOGIC_NULL_TOOLTIP: tN,
-  LOGIC_OPERATION_AND: VC,
-  LOGIC_OPERATION_HELPURL: HC,
-  LOGIC_OPERATION_OR: WC,
-  LOGIC_OPERATION_TOOLTIP_AND: GC,
-  LOGIC_OPERATION_TOOLTIP_OR: XC,
-  LOGIC_TERNARY_CONDITION: oN,
-  LOGIC_TERNARY_HELPURL: sN,
-  LOGIC_TERNARY_IF_FALSE: nN,
-  LOGIC_TERNARY_IF_TRUE: iN,
-  LOGIC_TERNARY_TOOLTIP: rN,
-  LOOPS_HUE: Ff,
-  MAC_OS: yP,
-  MATH_ADDITION_SYMBOL: uN,
-  MATH_ARITHMETIC_HELPURL: IN,
-  MATH_ARITHMETIC_TOOLTIP_ADD: ON,
-  MATH_ARITHMETIC_TOOLTIP_DIVIDE: LN,
-  MATH_ARITHMETIC_TOOLTIP_MINUS: RN,
-  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: SN,
-  MATH_ARITHMETIC_TOOLTIP_POWER: bN,
-  MATH_ATAN2_HELPURL: BM,
-  MATH_ATAN2_TITLE: xM,
-  MATH_ATAN2_TOOLTIP: UM,
-  MATH_CHANGE_HELPURL: QN,
-  MATH_CHANGE_TITLE: eM,
-  MATH_CHANGE_TITLE_ITEM: tM,
-  MATH_CHANGE_TOOLTIP: sM,
-  MATH_CONSTANT_HELPURL: VN,
-  MATH_CONSTANT_TOOLTIP: XN,
-  MATH_CONSTRAIN_HELPURL: CM,
-  MATH_CONSTRAIN_TITLE: NM,
-  MATH_CONSTRAIN_TOOLTIP: MM,
-  MATH_DIVISION_SYMBOL: hN,
-  MATH_HUE: Hf,
-  MATH_IS_DIVISIBLE_BY: qN,
-  MATH_IS_EVEN: WN,
-  MATH_IS_NEGATIVE: jN,
-  MATH_IS_ODD: YN,
-  MATH_IS_POSITIVE: JN,
-  MATH_IS_PRIME: zN,
-  MATH_IS_TOOLTIP: ZN,
-  MATH_IS_WHOLE: KN,
-  MATH_MODULO_HELPURL: bM,
-  MATH_MODULO_TITLE: fM,
-  MATH_MODULO_TOOLTIP: AM,
-  MATH_MULTIPLICATION_SYMBOL: dN,
-  MATH_NUMBER_HELPURL: lN,
-  MATH_NUMBER_TOOLTIP: cN,
-  MATH_ONLIST_HELPURL: cM,
-  MATH_ONLIST_OPERATOR_AVERAGE: $M,
-  MATH_ONLIST_OPERATOR_MAX: _M,
-  MATH_ONLIST_OPERATOR_MEDIAN: gM,
-  MATH_ONLIST_OPERATOR_MIN: hM,
-  MATH_ONLIST_OPERATOR_MODE: mM,
-  MATH_ONLIST_OPERATOR_RANDOM: SM,
-  MATH_ONLIST_OPERATOR_STD_DEV: OM,
-  MATH_ONLIST_OPERATOR_SUM: uM,
-  MATH_ONLIST_TOOLTIP_AVERAGE: EM,
-  MATH_ONLIST_TOOLTIP_MAX: TM,
-  MATH_ONLIST_TOOLTIP_MEDIAN: pM,
-  MATH_ONLIST_TOOLTIP_MIN: dM,
-  MATH_ONLIST_TOOLTIP_MODE: IM,
-  MATH_ONLIST_TOOLTIP_RANDOM: LM,
-  MATH_ONLIST_TOOLTIP_STD_DEV: RM,
-  MATH_ONLIST_TOOLTIP_SUM: aM,
-  MATH_POWER_SYMBOL: _N,
-  MATH_RANDOM_FLOAT_HELPURL: PM,
-  MATH_RANDOM_FLOAT_TITLE_RANDOM: DM,
-  MATH_RANDOM_FLOAT_TOOLTIP: wM,
-  MATH_RANDOM_INT_HELPURL: yM,
-  MATH_RANDOM_INT_TITLE: vM,
-  MATH_RANDOM_INT_TOOLTIP: kM,
-  MATH_ROUND_HELPURL: oM,
-  MATH_ROUND_OPERATOR_ROUND: nM,
-  MATH_ROUND_OPERATOR_ROUNDDOWN: lM,
-  MATH_ROUND_OPERATOR_ROUNDUP: rM,
-  MATH_ROUND_TOOLTIP: iM,
-  MATH_SINGLE_HELPURL: fN,
-  MATH_SINGLE_OP_ABSOLUTE: NN,
-  MATH_SINGLE_OP_ROOT: AN,
-  MATH_SINGLE_TOOLTIP_ABS: MN,
-  MATH_SINGLE_TOOLTIP_EXP: PN,
-  MATH_SINGLE_TOOLTIP_LN: vN,
-  MATH_SINGLE_TOOLTIP_LOG10: kN,
-  MATH_SINGLE_TOOLTIP_NEG: yN,
-  MATH_SINGLE_TOOLTIP_POW10: DN,
-  MATH_SINGLE_TOOLTIP_ROOT: CN,
-  MATH_SUBTRACTION_SYMBOL: aN,
-  MATH_TRIG_ACOS: pN,
-  MATH_TRIG_ASIN: gN,
-  MATH_TRIG_ATAN: mN,
-  MATH_TRIG_COS: $N,
-  MATH_TRIG_HELPURL: wN,
-  MATH_TRIG_SIN: TN,
-  MATH_TRIG_TAN: EN,
-  MATH_TRIG_TOOLTIP_ACOS: HN,
-  MATH_TRIG_TOOLTIP_ASIN: FN,
-  MATH_TRIG_TOOLTIP_ATAN: GN,
-  MATH_TRIG_TOOLTIP_COS: xN,
-  MATH_TRIG_TOOLTIP_SIN: BN,
-  MATH_TRIG_TOOLTIP_TAN: UN,
-  MOVE_BLOCK: NP,
-  NEW_COLOUR_VARIABLE: SA,
-  NEW_NUMBER_VARIABLE: RA,
-  NEW_STRING_VARIABLE: OA,
-  NEW_VARIABLE: IA,
-  NEW_VARIABLE_TITLE: bA,
-  NEW_VARIABLE_TYPE_TITLE: LA,
-  OPTION_KEY: BP,
-  ORDINAL_NUMBER_SUFFIX: xk,
-  PASTE_SHORTCUT: HP,
-  PROCEDURES_ALLOW_STATEMENTS: cP,
-  PROCEDURES_BEFORE_PARAMS: Jk,
-  PROCEDURES_CALLNORETURN_HELPURL: aP,
-  PROCEDURES_CALLNORETURN_TOOLTIP: hP,
-  PROCEDURES_CALLRETURN_HELPURL: dP,
-  PROCEDURES_CALLRETURN_TOOLTIP: _P,
-  PROCEDURES_CALL_BEFORE_PARAMS: jk,
-  PROCEDURES_CALL_DISABLED_DEF_WARNING: qk,
-  PROCEDURES_CREATE_DO: mP,
-  PROCEDURES_DEFNORETURN_COMMENT: eP,
-  PROCEDURES_DEFNORETURN_DO: Zk,
-  PROCEDURES_DEFNORETURN_HELPURL: Yk,
-  PROCEDURES_DEFNORETURN_PROCEDURE: Kk,
-  PROCEDURES_DEFNORETURN_TITLE: zk,
-  PROCEDURES_DEFNORETURN_TOOLTIP: Qk,
-  PROCEDURES_DEFRETURN_COMMENT: nP,
-  PROCEDURES_DEFRETURN_DO: iP,
-  PROCEDURES_DEFRETURN_HELPURL: tP,
-  PROCEDURES_DEFRETURN_PROCEDURE: oP,
-  PROCEDURES_DEFRETURN_RETURN: rP,
-  PROCEDURES_DEFRETURN_TITLE: sP,
-  PROCEDURES_DEFRETURN_TOOLTIP: lP,
-  PROCEDURES_DEF_DUPLICATE_WARNING: uP,
-  PROCEDURES_HIGHLIGHT_DEF: pP,
-  PROCEDURES_HUE: zf,
-  PROCEDURES_IFRETURN_HELPURL: OP,
-  PROCEDURES_IFRETURN_TOOLTIP: IP,
-  PROCEDURES_IFRETURN_WARNING: RP,
-  PROCEDURES_MUTATORARG_TITLE: EP,
-  PROCEDURES_MUTATORARG_TOOLTIP: gP,
-  PROCEDURES_MUTATORCONTAINER_TITLE: TP,
-  PROCEDURES_MUTATORCONTAINER_TOOLTIP: $P,
-  REDO: EA,
-  REMOVE_COMMENT: Qf,
-  RENAME_VARIABLE: pA,
-  RENAME_VARIABLE_TITLE: mA,
-  SHORTCUTS_CODE_NAVIGATION: WP,
-  SHORTCUTS_EDITING: XP,
-  SHORTCUTS_GENERAL: VP,
-  TEXTS_HUE: Gf,
-  TEXT_APPEND_HELPURL: JM,
-  TEXT_APPEND_TITLE: jM,
-  TEXT_APPEND_TOOLTIP: ZM,
-  TEXT_APPEND_VARIABLE: qM,
-  TEXT_CHANGECASE_HELPURL: Ny,
-  TEXT_CHANGECASE_OPERATOR_LOWERCASE: vy,
-  TEXT_CHANGECASE_OPERATOR_TITLECASE: ky,
-  TEXT_CHANGECASE_OPERATOR_UPPERCASE: yy,
-  TEXT_CHANGECASE_TOOLTIP: My,
-  TEXT_CHARAT_FIRST: Ty,
-  TEXT_CHARAT_FROM_END: _y,
-  TEXT_CHARAT_FROM_START: dy,
-  TEXT_CHARAT_HELPURL: ay,
-  TEXT_CHARAT_LAST: $y,
-  TEXT_CHARAT_RANDOM: Ey,
-  TEXT_CHARAT_TAIL: gy,
-  TEXT_CHARAT_TITLE: hy,
-  TEXT_CHARAT_TOOLTIP: py,
-  TEXT_COUNT_HELPURL: Ky,
-  TEXT_COUNT_MESSAGE0: zy,
-  TEXT_COUNT_TOOLTIP: Jy,
-  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: zM,
-  TEXT_CREATE_JOIN_ITEM_TOOLTIP: KM,
-  TEXT_CREATE_JOIN_TITLE_JOIN: WM,
-  TEXT_CREATE_JOIN_TOOLTIP: YM,
-  TEXT_GET_SUBSTRING_END_FROM_END: fy,
-  TEXT_GET_SUBSTRING_END_FROM_START: by,
-  TEXT_GET_SUBSTRING_END_LAST: Ay,
-  TEXT_GET_SUBSTRING_HELPURL: Iy,
-  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: Oy,
-  TEXT_GET_SUBSTRING_START_FIRST: Ly,
-  TEXT_GET_SUBSTRING_START_FROM_END: Sy,
-  TEXT_GET_SUBSTRING_START_FROM_START: Ry,
-  TEXT_GET_SUBSTRING_TAIL: Cy,
-  TEXT_GET_SUBSTRING_TOOLTIP: my,
-  TEXT_INDEXOF_HELPURL: ny,
-  TEXT_INDEXOF_OPERATOR_FIRST: cy,
-  TEXT_INDEXOF_OPERATOR_LAST: uy,
-  TEXT_INDEXOF_TITLE: ly,
-  TEXT_INDEXOF_TOOLTIP: ry,
-  TEXT_ISEMPTY_HELPURL: sy,
-  TEXT_ISEMPTY_TITLE: oy,
-  TEXT_ISEMPTY_TOOLTIP: iy,
-  TEXT_JOIN_HELPURL: GM,
-  TEXT_JOIN_TITLE_CREATEWITH: VM,
-  TEXT_JOIN_TOOLTIP: XM,
-  TEXT_LENGTH_HELPURL: QM,
-  TEXT_LENGTH_TITLE: ey,
-  TEXT_LENGTH_TOOLTIP: ty,
-  TEXT_PRINT_HELPURL: Uy,
-  TEXT_PRINT_TITLE: Fy,
-  TEXT_PRINT_TOOLTIP: Hy,
-  TEXT_PROMPT_HELPURL: Gy,
-  TEXT_PROMPT_TOOLTIP_NUMBER: Wy,
-  TEXT_PROMPT_TOOLTIP_TEXT: Yy,
-  TEXT_PROMPT_TYPE_NUMBER: Xy,
-  TEXT_PROMPT_TYPE_TEXT: Vy,
-  TEXT_REPLACE_HELPURL: qy,
-  TEXT_REPLACE_MESSAGE0: jy,
-  TEXT_REPLACE_TOOLTIP: Zy,
-  TEXT_REVERSE_HELPURL: ev,
-  TEXT_REVERSE_MESSAGE0: Qy,
-  TEXT_REVERSE_TOOLTIP: tv,
-  TEXT_TEXT_HELPURL: FM,
-  TEXT_TEXT_TOOLTIP: HM,
-  TEXT_TRIM_HELPURL: Py,
-  TEXT_TRIM_OPERATOR_BOTH: wy,
-  TEXT_TRIM_OPERATOR_LEFT: By,
-  TEXT_TRIM_OPERATOR_RIGHT: xy,
-  TEXT_TRIM_TOOLTIP: Dy,
-  TODAY: jf,
-  UNDO: $A,
-  UNKNOWN: PP,
-  UNNAMED_KEY: Jf,
-  VARIABLES_DEFAULT_NAME: Kf,
-  VARIABLES_DYNAMIC_HUE: Yf,
-  VARIABLES_GET_CREATE_SET: Hk,
-  VARIABLES_GET_HELPURL: Uk,
-  VARIABLES_GET_TOOLTIP: Fk,
-  VARIABLES_HUE: Wf,
-  VARIABLES_SET: Vk,
-  VARIABLES_SET_CREATE_GET: Wk,
-  VARIABLES_SET_HELPURL: Gk,
-  VARIABLES_SET_TOOLTIP: Xk,
-  VARIABLE_ALREADY_EXISTS: fA,
-  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: AA,
-  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: CA,
-  WINDOWS: MP,
-  WORKSPACE_ARIA_LABEL: LP,
-  WORKSPACE_COMMENT_DEFAULT_TEXT: SP
-}, Symbol.toStringTag, { value: "Module" })), qP = "/visual_automation_builder/blockly-media/", ig = {
+  ADD_COMMENT: Qf,
+  ALT_KEY: UP,
+  CANNOT_DELETE_VARIABLE_PROCEDURE: yA,
+  CHANGE_VALUE_TITLE: pA,
+  CHROME_OS: kP,
+  CLEAN_UP: lA,
+  CLOSE: cA,
+  COLLAPSED_WARNINGS_WARNING: fP,
+  COLLAPSE_ALL: aA,
+  COLLAPSE_BLOCK: uA,
+  COLOUR_BLEND_COLOUR1: YA,
+  COLOUR_BLEND_COLOUR2: zA,
+  COLOUR_BLEND_HELPURL: XA,
+  COLOUR_BLEND_RATIO: KA,
+  COLOUR_BLEND_TITLE: WA,
+  COLOUR_BLEND_TOOLTIP: JA,
+  COLOUR_HUE: Wf,
+  COLOUR_PICKER_HELPURL: kA,
+  COLOUR_PICKER_TOOLTIP: PA,
+  COLOUR_RANDOM_HELPURL: DA,
+  COLOUR_RANDOM_TITLE: wA,
+  COLOUR_RANDOM_TOOLTIP: BA,
+  COLOUR_RGB_BLUE: GA,
+  COLOUR_RGB_GREEN: HA,
+  COLOUR_RGB_HELPURL: xA,
+  COLOUR_RGB_RED: FA,
+  COLOUR_RGB_TITLE: UA,
+  COLOUR_RGB_TOOLTIP: VA,
+  COMMAND_KEY: BP,
+  CONTROLS_FLOW_STATEMENTS_HELPURL: TC,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_BREAK: $C,
+  CONTROLS_FLOW_STATEMENTS_OPERATOR_CONTINUE: EC,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_BREAK: gC,
+  CONTROLS_FLOW_STATEMENTS_TOOLTIP_CONTINUE: pC,
+  CONTROLS_FLOW_STATEMENTS_WARNING: mC,
+  CONTROLS_FOREACH_HELPURL: aC,
+  CONTROLS_FOREACH_INPUT_DO: dC,
+  CONTROLS_FOREACH_TITLE: hC,
+  CONTROLS_FOREACH_TOOLTIP: _C,
+  CONTROLS_FOR_HELPURL: rC,
+  CONTROLS_FOR_INPUT_DO: uC,
+  CONTROLS_FOR_TITLE: cC,
+  CONTROLS_FOR_TOOLTIP: lC,
+  CONTROLS_IF_ELSEIF_TITLE_ELSEIF: yC,
+  CONTROLS_IF_ELSEIF_TOOLTIP: vC,
+  CONTROLS_IF_ELSE_TITLE_ELSE: kC,
+  CONTROLS_IF_ELSE_TOOLTIP: PC,
+  CONTROLS_IF_HELPURL: IC,
+  CONTROLS_IF_IF_TITLE_IF: NC,
+  CONTROLS_IF_IF_TOOLTIP: MC,
+  CONTROLS_IF_MSG_ELSE: AC,
+  CONTROLS_IF_MSG_ELSEIF: fC,
+  CONTROLS_IF_MSG_IF: bC,
+  CONTROLS_IF_MSG_THEN: CC,
+  CONTROLS_IF_TOOLTIP_1: OC,
+  CONTROLS_IF_TOOLTIP_2: RC,
+  CONTROLS_IF_TOOLTIP_3: SC,
+  CONTROLS_IF_TOOLTIP_4: LC,
+  CONTROLS_REPEAT_HELPURL: jA,
+  CONTROLS_REPEAT_INPUT_DO: ZA,
+  CONTROLS_REPEAT_TITLE: qA,
+  CONTROLS_REPEAT_TOOLTIP: QA,
+  CONTROLS_WHILEUNTIL_HELPURL: eC,
+  CONTROLS_WHILEUNTIL_INPUT_DO: tC,
+  CONTROLS_WHILEUNTIL_OPERATOR_UNTIL: oC,
+  CONTROLS_WHILEUNTIL_OPERATOR_WHILE: sC,
+  CONTROLS_WHILEUNTIL_TOOLTIP_UNTIL: nC,
+  CONTROLS_WHILEUNTIL_TOOLTIP_WHILE: iC,
+  CONTROL_KEY: wP,
+  COPY_SHORTCUT: HP,
+  CUT_SHORTCUT: FP,
+  DELETE_ALL_BLOCKS: rA,
+  DELETE_BLOCK: iA,
+  DELETE_VARIABLE: vA,
+  DELETE_VARIABLE_CONFIRMATION: MA,
+  DELETE_X_BLOCKS: nA,
+  DIALOG_CANCEL: CP,
+  DIALOG_OK: AP,
+  DISABLE_BLOCK: _A,
+  DUPLICATE_BLOCK: Zf,
+  DUPLICATE_COMMENT: tA,
+  EDIT_BLOCK_CONTENTS: NP,
+  ENABLE_BLOCK: TA,
+  EXPAND_ALL: dA,
+  EXPAND_BLOCK: hA,
+  EXTERNAL_INPUTS: sA,
+  HELP: $A,
+  HELP_PROMPT: VP,
+  INLINE_INPUTS: oA,
+  KEYBOARD_NAV_CONSTRAINED_MOVE_HINT: KP,
+  KEYBOARD_NAV_COPIED_HINT: JP,
+  KEYBOARD_NAV_CUT_HINT: jP,
+  KEYBOARD_NAV_UNCONSTRAINED_MOVE_HINT: zP,
+  LINUX: PP,
+  LISTS_CREATE_EMPTY_HELPURL: ov,
+  LISTS_CREATE_EMPTY_TITLE: iv,
+  LISTS_CREATE_EMPTY_TOOLTIP: nv,
+  LISTS_CREATE_WITH_CONTAINER_TITLE_ADD: uv,
+  LISTS_CREATE_WITH_CONTAINER_TOOLTIP: av,
+  LISTS_CREATE_WITH_HELPURL: rv,
+  LISTS_CREATE_WITH_INPUT_WITH: cv,
+  LISTS_CREATE_WITH_ITEM_TITLE: hv,
+  LISTS_CREATE_WITH_ITEM_TOOLTIP: dv,
+  LISTS_CREATE_WITH_TOOLTIP: lv,
+  LISTS_GET_INDEX_FIRST: Pv,
+  LISTS_GET_INDEX_FROM_END: kv,
+  LISTS_GET_INDEX_FROM_START: vv,
+  LISTS_GET_INDEX_GET: Nv,
+  LISTS_GET_INDEX_GET_REMOVE: Mv,
+  LISTS_GET_INDEX_HELPURL: Cv,
+  LISTS_GET_INDEX_INPUT_IN_LIST: xv,
+  LISTS_GET_INDEX_LAST: Dv,
+  LISTS_GET_INDEX_RANDOM: wv,
+  LISTS_GET_INDEX_REMOVE: yv,
+  LISTS_GET_INDEX_TAIL: Bv,
+  LISTS_GET_INDEX_TOOLTIP_GET_FIRST: Gv,
+  LISTS_GET_INDEX_TOOLTIP_GET_FROM: Hv,
+  LISTS_GET_INDEX_TOOLTIP_GET_LAST: Vv,
+  LISTS_GET_INDEX_TOOLTIP_GET_RANDOM: Xv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FIRST: Yv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_FROM: Wv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_LAST: zv,
+  LISTS_GET_INDEX_TOOLTIP_GET_REMOVE_RANDOM: Kv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FIRST: jv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_FROM: Jv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_LAST: qv,
+  LISTS_GET_INDEX_TOOLTIP_REMOVE_RANDOM: Zv,
+  LISTS_GET_SUBLIST_END_FROM_END: pk,
+  LISTS_GET_SUBLIST_END_FROM_START: gk,
+  LISTS_GET_SUBLIST_END_LAST: mk,
+  LISTS_GET_SUBLIST_HELPURL: dk,
+  LISTS_GET_SUBLIST_INPUT_IN_LIST: _k,
+  LISTS_GET_SUBLIST_START_FIRST: Ek,
+  LISTS_GET_SUBLIST_START_FROM_END: $k,
+  LISTS_GET_SUBLIST_START_FROM_START: Tk,
+  LISTS_GET_SUBLIST_TAIL: Ik,
+  LISTS_GET_SUBLIST_TOOLTIP: Ok,
+  LISTS_HUE: Xf,
+  LISTS_INDEX_FROM_END_TOOLTIP: Fv,
+  LISTS_INDEX_FROM_START_TOOLTIP: Uv,
+  LISTS_INDEX_OF_FIRST: bv,
+  LISTS_INDEX_OF_HELPURL: Sv,
+  LISTS_INDEX_OF_INPUT_IN_LIST: Lv,
+  LISTS_INDEX_OF_LAST: fv,
+  LISTS_INDEX_OF_TOOLTIP: Av,
+  LISTS_INLIST: Rv,
+  LISTS_ISEMPTY_HELPURL: mv,
+  LISTS_ISEMPTY_TITLE: Iv,
+  LISTS_ISEMPTY_TOOLTIP: Ov,
+  LISTS_LENGTH_HELPURL: Ev,
+  LISTS_LENGTH_TITLE: gv,
+  LISTS_LENGTH_TOOLTIP: pv,
+  LISTS_REPEAT_HELPURL: _v,
+  LISTS_REPEAT_TITLE: $v,
+  LISTS_REPEAT_TOOLTIP: Tv,
+  LISTS_REVERSE_HELPURL: wk,
+  LISTS_REVERSE_MESSAGE0: Bk,
+  LISTS_REVERSE_TOOLTIP: xk,
+  LISTS_SET_INDEX_HELPURL: Qv,
+  LISTS_SET_INDEX_INPUT_IN_LIST: ek,
+  LISTS_SET_INDEX_INPUT_TO: ok,
+  LISTS_SET_INDEX_INSERT: sk,
+  LISTS_SET_INDEX_SET: tk,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FIRST: uk,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_FROM: ck,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_LAST: ak,
+  LISTS_SET_INDEX_TOOLTIP_INSERT_RANDOM: hk,
+  LISTS_SET_INDEX_TOOLTIP_SET_FIRST: nk,
+  LISTS_SET_INDEX_TOOLTIP_SET_FROM: ik,
+  LISTS_SET_INDEX_TOOLTIP_SET_LAST: rk,
+  LISTS_SET_INDEX_TOOLTIP_SET_RANDOM: lk,
+  LISTS_SORT_HELPURL: Rk,
+  LISTS_SORT_ORDER_ASCENDING: bk,
+  LISTS_SORT_ORDER_DESCENDING: fk,
+  LISTS_SORT_TITLE: Sk,
+  LISTS_SORT_TOOLTIP: Lk,
+  LISTS_SORT_TYPE_IGNORECASE: Nk,
+  LISTS_SORT_TYPE_NUMERIC: Ak,
+  LISTS_SORT_TYPE_TEXT: Ck,
+  LISTS_SPLIT_HELPURL: Mk,
+  LISTS_SPLIT_LIST_FROM_TEXT: yk,
+  LISTS_SPLIT_TEXT_FROM_LIST: vk,
+  LISTS_SPLIT_TOOLTIP_JOIN: Dk,
+  LISTS_SPLIT_TOOLTIP_SPLIT: Pk,
+  LISTS_SPLIT_WITH_DELIMITER: kk,
+  LOGIC_BOOLEAN_FALSE: ZC,
+  LOGIC_BOOLEAN_HELPURL: jC,
+  LOGIC_BOOLEAN_TOOLTIP: QC,
+  LOGIC_BOOLEAN_TRUE: qC,
+  LOGIC_COMPARE_HELPURL: DC,
+  LOGIC_COMPARE_TOOLTIP_EQ: wC,
+  LOGIC_COMPARE_TOOLTIP_GT: FC,
+  LOGIC_COMPARE_TOOLTIP_GTE: HC,
+  LOGIC_COMPARE_TOOLTIP_LT: xC,
+  LOGIC_COMPARE_TOOLTIP_LTE: UC,
+  LOGIC_COMPARE_TOOLTIP_NEQ: BC,
+  LOGIC_HUE: Ff,
+  LOGIC_NEGATE_HELPURL: zC,
+  LOGIC_NEGATE_TITLE: KC,
+  LOGIC_NEGATE_TOOLTIP: JC,
+  LOGIC_NULL: tN,
+  LOGIC_NULL_HELPURL: eN,
+  LOGIC_NULL_TOOLTIP: sN,
+  LOGIC_OPERATION_AND: XC,
+  LOGIC_OPERATION_HELPURL: GC,
+  LOGIC_OPERATION_OR: YC,
+  LOGIC_OPERATION_TOOLTIP_AND: VC,
+  LOGIC_OPERATION_TOOLTIP_OR: WC,
+  LOGIC_TERNARY_CONDITION: iN,
+  LOGIC_TERNARY_HELPURL: oN,
+  LOGIC_TERNARY_IF_FALSE: rN,
+  LOGIC_TERNARY_IF_TRUE: nN,
+  LOGIC_TERNARY_TOOLTIP: lN,
+  LOOPS_HUE: Hf,
+  MAC_OS: vP,
+  MATH_ADDITION_SYMBOL: aN,
+  MATH_ARITHMETIC_HELPURL: ON,
+  MATH_ARITHMETIC_TOOLTIP_ADD: RN,
+  MATH_ARITHMETIC_TOOLTIP_DIVIDE: bN,
+  MATH_ARITHMETIC_TOOLTIP_MINUS: SN,
+  MATH_ARITHMETIC_TOOLTIP_MULTIPLY: LN,
+  MATH_ARITHMETIC_TOOLTIP_POWER: fN,
+  MATH_ATAN2_HELPURL: xM,
+  MATH_ATAN2_TITLE: UM,
+  MATH_ATAN2_TOOLTIP: FM,
+  MATH_CHANGE_HELPURL: eM,
+  MATH_CHANGE_TITLE: tM,
+  MATH_CHANGE_TITLE_ITEM: sM,
+  MATH_CHANGE_TOOLTIP: oM,
+  MATH_CONSTANT_HELPURL: XN,
+  MATH_CONSTANT_TOOLTIP: WN,
+  MATH_CONSTRAIN_HELPURL: NM,
+  MATH_CONSTRAIN_TITLE: MM,
+  MATH_CONSTRAIN_TOOLTIP: yM,
+  MATH_DIVISION_SYMBOL: dN,
+  MATH_HUE: Gf,
+  MATH_IS_DIVISIBLE_BY: ZN,
+  MATH_IS_EVEN: YN,
+  MATH_IS_NEGATIVE: qN,
+  MATH_IS_ODD: zN,
+  MATH_IS_POSITIVE: jN,
+  MATH_IS_PRIME: KN,
+  MATH_IS_TOOLTIP: QN,
+  MATH_IS_WHOLE: JN,
+  MATH_MODULO_HELPURL: fM,
+  MATH_MODULO_TITLE: AM,
+  MATH_MODULO_TOOLTIP: CM,
+  MATH_MULTIPLICATION_SYMBOL: _N,
+  MATH_NUMBER_HELPURL: cN,
+  MATH_NUMBER_TOOLTIP: uN,
+  MATH_ONLIST_HELPURL: uM,
+  MATH_ONLIST_OPERATOR_AVERAGE: EM,
+  MATH_ONLIST_OPERATOR_MAX: TM,
+  MATH_ONLIST_OPERATOR_MEDIAN: pM,
+  MATH_ONLIST_OPERATOR_MIN: dM,
+  MATH_ONLIST_OPERATOR_MODE: IM,
+  MATH_ONLIST_OPERATOR_RANDOM: LM,
+  MATH_ONLIST_OPERATOR_STD_DEV: RM,
+  MATH_ONLIST_OPERATOR_SUM: aM,
+  MATH_ONLIST_TOOLTIP_AVERAGE: gM,
+  MATH_ONLIST_TOOLTIP_MAX: $M,
+  MATH_ONLIST_TOOLTIP_MEDIAN: mM,
+  MATH_ONLIST_TOOLTIP_MIN: _M,
+  MATH_ONLIST_TOOLTIP_MODE: OM,
+  MATH_ONLIST_TOOLTIP_RANDOM: bM,
+  MATH_ONLIST_TOOLTIP_STD_DEV: SM,
+  MATH_ONLIST_TOOLTIP_SUM: hM,
+  MATH_POWER_SYMBOL: TN,
+  MATH_RANDOM_FLOAT_HELPURL: DM,
+  MATH_RANDOM_FLOAT_TITLE_RANDOM: wM,
+  MATH_RANDOM_FLOAT_TOOLTIP: BM,
+  MATH_RANDOM_INT_HELPURL: vM,
+  MATH_RANDOM_INT_TITLE: kM,
+  MATH_RANDOM_INT_TOOLTIP: PM,
+  MATH_ROUND_HELPURL: iM,
+  MATH_ROUND_OPERATOR_ROUND: rM,
+  MATH_ROUND_OPERATOR_ROUNDDOWN: cM,
+  MATH_ROUND_OPERATOR_ROUNDUP: lM,
+  MATH_ROUND_TOOLTIP: nM,
+  MATH_SINGLE_HELPURL: AN,
+  MATH_SINGLE_OP_ABSOLUTE: MN,
+  MATH_SINGLE_OP_ROOT: CN,
+  MATH_SINGLE_TOOLTIP_ABS: yN,
+  MATH_SINGLE_TOOLTIP_EXP: DN,
+  MATH_SINGLE_TOOLTIP_LN: kN,
+  MATH_SINGLE_TOOLTIP_LOG10: PN,
+  MATH_SINGLE_TOOLTIP_NEG: vN,
+  MATH_SINGLE_TOOLTIP_POW10: wN,
+  MATH_SINGLE_TOOLTIP_ROOT: NN,
+  MATH_SUBTRACTION_SYMBOL: hN,
+  MATH_TRIG_ACOS: mN,
+  MATH_TRIG_ASIN: pN,
+  MATH_TRIG_ATAN: IN,
+  MATH_TRIG_COS: EN,
+  MATH_TRIG_HELPURL: BN,
+  MATH_TRIG_SIN: $N,
+  MATH_TRIG_TAN: gN,
+  MATH_TRIG_TOOLTIP_ACOS: GN,
+  MATH_TRIG_TOOLTIP_ASIN: HN,
+  MATH_TRIG_TOOLTIP_ATAN: VN,
+  MATH_TRIG_TOOLTIP_COS: UN,
+  MATH_TRIG_TOOLTIP_SIN: xN,
+  MATH_TRIG_TOOLTIP_TAN: FN,
+  MOVE_BLOCK: MP,
+  NEW_COLOUR_VARIABLE: LA,
+  NEW_NUMBER_VARIABLE: SA,
+  NEW_STRING_VARIABLE: RA,
+  NEW_VARIABLE: OA,
+  NEW_VARIABLE_TITLE: fA,
+  NEW_VARIABLE_TYPE_TITLE: bA,
+  OPTION_KEY: xP,
+  ORDINAL_NUMBER_SUFFIX: Uk,
+  PASTE_SHORTCUT: GP,
+  PROCEDURES_ALLOW_STATEMENTS: uP,
+  PROCEDURES_BEFORE_PARAMS: jk,
+  PROCEDURES_CALLNORETURN_HELPURL: hP,
+  PROCEDURES_CALLNORETURN_TOOLTIP: dP,
+  PROCEDURES_CALLRETURN_HELPURL: _P,
+  PROCEDURES_CALLRETURN_TOOLTIP: TP,
+  PROCEDURES_CALL_BEFORE_PARAMS: qk,
+  PROCEDURES_CALL_DISABLED_DEF_WARNING: Zk,
+  PROCEDURES_CREATE_DO: IP,
+  PROCEDURES_DEFNORETURN_COMMENT: tP,
+  PROCEDURES_DEFNORETURN_DO: Qk,
+  PROCEDURES_DEFNORETURN_HELPURL: zk,
+  PROCEDURES_DEFNORETURN_PROCEDURE: Jk,
+  PROCEDURES_DEFNORETURN_TITLE: Kk,
+  PROCEDURES_DEFNORETURN_TOOLTIP: eP,
+  PROCEDURES_DEFRETURN_COMMENT: rP,
+  PROCEDURES_DEFRETURN_DO: nP,
+  PROCEDURES_DEFRETURN_HELPURL: sP,
+  PROCEDURES_DEFRETURN_PROCEDURE: iP,
+  PROCEDURES_DEFRETURN_RETURN: lP,
+  PROCEDURES_DEFRETURN_TITLE: oP,
+  PROCEDURES_DEFRETURN_TOOLTIP: cP,
+  PROCEDURES_DEF_DUPLICATE_WARNING: aP,
+  PROCEDURES_HIGHLIGHT_DEF: mP,
+  PROCEDURES_HUE: Kf,
+  PROCEDURES_IFRETURN_HELPURL: RP,
+  PROCEDURES_IFRETURN_TOOLTIP: OP,
+  PROCEDURES_IFRETURN_WARNING: SP,
+  PROCEDURES_MUTATORARG_TITLE: gP,
+  PROCEDURES_MUTATORARG_TOOLTIP: pP,
+  PROCEDURES_MUTATORCONTAINER_TITLE: $P,
+  PROCEDURES_MUTATORCONTAINER_TOOLTIP: EP,
+  REDO: gA,
+  REMOVE_COMMENT: eA,
+  RENAME_VARIABLE: mA,
+  RENAME_VARIABLE_TITLE: IA,
+  SHORTCUTS_CODE_NAVIGATION: YP,
+  SHORTCUTS_EDITING: WP,
+  SHORTCUTS_GENERAL: XP,
+  TEXTS_HUE: Vf,
+  TEXT_APPEND_HELPURL: jM,
+  TEXT_APPEND_TITLE: qM,
+  TEXT_APPEND_TOOLTIP: QM,
+  TEXT_APPEND_VARIABLE: ZM,
+  TEXT_CHANGECASE_HELPURL: My,
+  TEXT_CHANGECASE_OPERATOR_LOWERCASE: ky,
+  TEXT_CHANGECASE_OPERATOR_TITLECASE: Py,
+  TEXT_CHANGECASE_OPERATOR_UPPERCASE: vy,
+  TEXT_CHANGECASE_TOOLTIP: yy,
+  TEXT_CHARAT_FIRST: $y,
+  TEXT_CHARAT_FROM_END: Ty,
+  TEXT_CHARAT_FROM_START: _y,
+  TEXT_CHARAT_HELPURL: hy,
+  TEXT_CHARAT_LAST: Ey,
+  TEXT_CHARAT_RANDOM: gy,
+  TEXT_CHARAT_TAIL: py,
+  TEXT_CHARAT_TITLE: dy,
+  TEXT_CHARAT_TOOLTIP: my,
+  TEXT_COUNT_HELPURL: Jy,
+  TEXT_COUNT_MESSAGE0: Ky,
+  TEXT_COUNT_TOOLTIP: jy,
+  TEXT_CREATE_JOIN_ITEM_TITLE_ITEM: KM,
+  TEXT_CREATE_JOIN_ITEM_TOOLTIP: JM,
+  TEXT_CREATE_JOIN_TITLE_JOIN: YM,
+  TEXT_CREATE_JOIN_TOOLTIP: zM,
+  TEXT_GET_SUBSTRING_END_FROM_END: Ay,
+  TEXT_GET_SUBSTRING_END_FROM_START: fy,
+  TEXT_GET_SUBSTRING_END_LAST: Cy,
+  TEXT_GET_SUBSTRING_HELPURL: Oy,
+  TEXT_GET_SUBSTRING_INPUT_IN_TEXT: Ry,
+  TEXT_GET_SUBSTRING_START_FIRST: by,
+  TEXT_GET_SUBSTRING_START_FROM_END: Ly,
+  TEXT_GET_SUBSTRING_START_FROM_START: Sy,
+  TEXT_GET_SUBSTRING_TAIL: Ny,
+  TEXT_GET_SUBSTRING_TOOLTIP: Iy,
+  TEXT_INDEXOF_HELPURL: ry,
+  TEXT_INDEXOF_OPERATOR_FIRST: uy,
+  TEXT_INDEXOF_OPERATOR_LAST: ay,
+  TEXT_INDEXOF_TITLE: cy,
+  TEXT_INDEXOF_TOOLTIP: ly,
+  TEXT_ISEMPTY_HELPURL: oy,
+  TEXT_ISEMPTY_TITLE: iy,
+  TEXT_ISEMPTY_TOOLTIP: ny,
+  TEXT_JOIN_HELPURL: VM,
+  TEXT_JOIN_TITLE_CREATEWITH: XM,
+  TEXT_JOIN_TOOLTIP: WM,
+  TEXT_LENGTH_HELPURL: ey,
+  TEXT_LENGTH_TITLE: ty,
+  TEXT_LENGTH_TOOLTIP: sy,
+  TEXT_PRINT_HELPURL: Fy,
+  TEXT_PRINT_TITLE: Hy,
+  TEXT_PRINT_TOOLTIP: Gy,
+  TEXT_PROMPT_HELPURL: Vy,
+  TEXT_PROMPT_TOOLTIP_NUMBER: Yy,
+  TEXT_PROMPT_TOOLTIP_TEXT: zy,
+  TEXT_PROMPT_TYPE_NUMBER: Wy,
+  TEXT_PROMPT_TYPE_TEXT: Xy,
+  TEXT_REPLACE_HELPURL: Zy,
+  TEXT_REPLACE_MESSAGE0: qy,
+  TEXT_REPLACE_TOOLTIP: Qy,
+  TEXT_REVERSE_HELPURL: tv,
+  TEXT_REVERSE_MESSAGE0: ev,
+  TEXT_REVERSE_TOOLTIP: sv,
+  TEXT_TEXT_HELPURL: HM,
+  TEXT_TEXT_TOOLTIP: GM,
+  TEXT_TRIM_HELPURL: Dy,
+  TEXT_TRIM_OPERATOR_BOTH: By,
+  TEXT_TRIM_OPERATOR_LEFT: xy,
+  TEXT_TRIM_OPERATOR_RIGHT: Uy,
+  TEXT_TRIM_TOOLTIP: wy,
+  TODAY: qf,
+  UNDO: EA,
+  UNKNOWN: DP,
+  UNNAMED_KEY: jf,
+  VARIABLES_DEFAULT_NAME: Jf,
+  VARIABLES_DYNAMIC_HUE: zf,
+  VARIABLES_GET_CREATE_SET: Gk,
+  VARIABLES_GET_HELPURL: Fk,
+  VARIABLES_GET_TOOLTIP: Hk,
+  VARIABLES_HUE: Yf,
+  VARIABLES_SET: Xk,
+  VARIABLES_SET_CREATE_GET: Yk,
+  VARIABLES_SET_HELPURL: Vk,
+  VARIABLES_SET_TOOLTIP: Wk,
+  VARIABLE_ALREADY_EXISTS: AA,
+  VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE: CA,
+  VARIABLE_ALREADY_EXISTS_FOR_A_PARAMETER: NA,
+  WINDOWS: yP,
+  WORKSPACE_ARIA_LABEL: bP,
+  WORKSPACE_COMMENT_DEFAULT_TEXT: LP
+}, Symbol.toStringTag, { value: "Module" })), ZP = "/visual_automation_builder/blockly-media/", ig = {
   en: {
     title: "Automation Builder",
     alias: "Automation name",
@@ -19224,87 +19224,94 @@ const xf = /* @__PURE__ */ gl(Bf), {
   }
 };
 let El = "en";
-function U(C) {
-  var k;
-  return ((k = ig[El]) == null ? void 0 : k[C]) || ig.en[C] || C;
+function F(C) {
+  var P;
+  return ((P = ig[El]) == null ? void 0 : P[C]) || ig.en[C] || C;
 }
 function ng(C) {
-  El = C && C.startsWith("uk") ? "uk" : "en", _p(El === "uk" ? jP : Pf), window.__VAB_LANG = El;
+  El = C && C.startsWith("uk") ? "uk" : "en", Tp(El === "uk" ? qP : Df), window.__VAB_LANG = El;
 }
-let Ls = [["(no entities)", ""]];
-window.__VAB_ENTITIES = Ls;
-function rg(C) {
-  if (!(!C || !C.states) && (Ls = Object.entries(C.states).map(([k, i]) => {
-    var c;
-    return [((c = i == null ? void 0 : i.attributes) == null ? void 0 : c.friendly_name) || k, k];
-  }).sort((k, i) => k[0].localeCompare(i[0])), Ls.length || (Ls = [["(no entities)", ""]]), window.__VAB_ENTITIES = Ls, window.__VAB_WORKSPACE))
-    for (const k of window.__VAB_WORKSPACE.getAllBlocks(!1)) {
-      const i = k.getField && k.getField("ENTITY");
-      i && i.setOptions && i.setOptions(Ls);
-      const c = k.getField && k.getField("TARGET");
-      c && c.setOptions && c.setOptions(Ls);
-    }
+let an = [["(no entities)", ""]];
+window.__VAB_ENTITIES = an;
+let rg = "";
+function lg(C) {
+  if (!C || !C.states) return;
+  const P = Object.entries(C.states).map(([c, U]) => {
+    var K;
+    return [((K = U == null ? void 0 : U.attributes) == null ? void 0 : K.friendly_name) || c, c];
+  }).sort((c, U) => c[0].localeCompare(U[0]));
+  P.length || P.push(["(no entities)", ""]);
+  const i = P.map(([c, U]) => `${U}|${c}`).join(`
+`);
+  if (i !== rg && (rg = i, an = P, window.__VAB_ENTITIES = an, window.__VAB_WORKSPACE))
+    for (const c of window.__VAB_WORKSPACE.getAllBlocks(!1))
+      for (const U of ["ENTITY", "TARGET"]) {
+        const K = c.getField && c.getField(U);
+        if (!K || !K.setOptions) continue;
+        const Ce = K.getValue();
+        K.setOptions(an), Ce && K.setValue(Ce);
+      }
 }
-function an() {
-  return () => window.__VAB_ENTITIES || Ls;
+function un() {
+  return () => window.__VAB_ENTITIES || an;
 }
-function ZP() {
+function QP() {
   Dt.vab_trigger_state = {
     init() {
-      this.appendDummyInput().appendField(U("when")).appendField(new oo(an()), "ENTITY").appendField(U("becomes")).appendField(new io("on"), "STATE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
+      this.appendDummyInput().appendField(F("when")).appendField(new so(un()), "ENTITY").appendField(F("becomes")).appendField(new oo("on"), "STATE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
     }
   }, Dt.vab_trigger_time = {
     init() {
-      this.appendDummyInput().appendField(U("at_time")).appendField(new io("08:00:00"), "TIME"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
+      this.appendDummyInput().appendField(F("at_time")).appendField(new oo("08:00:00"), "TIME"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
     }
   }, Dt.vab_trigger_numeric = {
     init() {
-      this.appendDummyInput().appendField(U("when")).appendField(new oo(an()), "ENTITY").appendField(
-        new oo([
-          [U("above"), "above"],
-          [U("below"), "below"]
+      this.appendDummyInput().appendField(F("when")).appendField(new so(un()), "ENTITY").appendField(
+        new so([
+          [F("above"), "above"],
+          [F("below"), "below"]
         ]),
         "DIR"
       ).appendField(new al(0), "VALUE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(120);
     }
   }, Dt.vab_condition_state = {
     init() {
-      this.appendDummyInput().appendField(U("if")).appendField(new oo(an()), "ENTITY").appendField(U("is")).appendField(new io("on"), "STATE"), this.setOutput(!0, "Condition"), this.setColour(210);
+      this.appendDummyInput().appendField(F("if")).appendField(new so(un()), "ENTITY").appendField(F("is")).appendField(new oo("on"), "STATE"), this.setOutput(!0, "Condition"), this.setColour(210);
     }
   }, Dt.vab_condition_numeric = {
     init() {
-      this.appendDummyInput().appendField(U("if")).appendField(new oo(an()), "ENTITY").appendField(
-        new oo([
-          [U("above"), "above"],
-          [U("below"), "below"]
+      this.appendDummyInput().appendField(F("if")).appendField(new so(un()), "ENTITY").appendField(
+        new so([
+          [F("above"), "above"],
+          [F("below"), "below"]
         ]),
         "DIR"
       ).appendField(new al(0), "VALUE"), this.setOutput(!0, "Condition"), this.setColour(210);
     }
   }, Dt.vab_action_service = {
     init() {
-      this.appendDummyInput().appendField(U("call_service")).appendField(new io("light.turn_on"), "SERVICE"), this.appendDummyInput().appendField(U("target")).appendField(new oo(an()), "TARGET"), this.appendDummyInput().appendField(U("data_json")).appendField(new io("{}"), "DATA"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      this.appendDummyInput().appendField(F("call_service")).appendField(new oo("light.turn_on"), "SERVICE"), this.appendDummyInput().appendField(F("target")).appendField(new so(un()), "TARGET"), this.appendDummyInput().appendField(F("data_json")).appendField(new oo("{}"), "DATA"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
     }
   }, Dt.vab_action_delay = {
     init() {
-      this.appendDummyInput().appendField(U("wait")).appendField(new al(5, 0, 86400, 1), "DELAY").appendField(U("seconds")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      this.appendDummyInput().appendField(F("wait")).appendField(new al(5, 0, 86400, 1), "DELAY").appendField(F("seconds")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
     }
   }, Dt.vab_action_notify = {
     init() {
-      this.appendDummyInput().appendField(U("notify")).appendField(new io("Automation"), "TITLE"), this.appendDummyInput().appendField(U("message")).appendField(new io("Done"), "MESSAGE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
+      this.appendDummyInput().appendField(F("notify")).appendField(new oo("Automation"), "TITLE"), this.appendDummyInput().appendField(F("message")).appendField(new oo("Done"), "MESSAGE"), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(260);
     }
   }, Dt.vab_action_choose = {
     init() {
-      this.appendValueInput("CONDITION").setCheck("Condition").appendField(U("if")), this.appendStatementInput("THEN").appendField(U("then")), this.appendStatementInput("ELSE").appendField(U("else")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(290);
+      this.appendValueInput("CONDITION").setCheck("Condition").appendField(F("if")), this.appendStatementInput("THEN").appendField(F("then")), this.appendStatementInput("ELSE").appendField(F("else")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(290);
     }
   }, Dt.vab_action_repeat = {
     init() {
-      this.appendDummyInput().appendField(U("repeat")).appendField(new al(1, 1, 1e3, 1), "COUNT").appendField(U("times")), this.appendStatementInput("DO").appendField(U("do")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(290);
+      this.appendDummyInput().appendField(F("repeat")).appendField(new al(1, 1, 1e3, 1), "COUNT").appendField(F("times")), this.appendStatementInput("DO").appendField(F("do")), this.setPreviousStatement(!0, null), this.setNextStatement(!0, null), this.setColour(290);
     }
   };
 }
-const QP = ap.defineTheme("vab-dark", {
-  base: hp.Classic,
+const eD = hp.defineTheme("vab-dark", {
+  base: dp.Classic,
   componentStyles: {
     workspaceBackgroundColour: "#111315",
     toolboxBackgroundColour: "#1b1d1f",
@@ -19319,14 +19326,14 @@ const QP = ap.defineTheme("vab-dark", {
   },
   fontStyle: { family: "Roboto, Noto Sans, sans-serif", size: 11 }
 });
-function eD(C) {
+function tD(C) {
   try {
     return JSON.parse(C || "{}");
   } catch {
     return {};
   }
 }
-function cg(C) {
+function ug(C) {
   return C ? C.type === "vab_condition_state" ? {
     condition: "state",
     entity_id: C.getFieldValue("ENTITY"),
@@ -19337,14 +19344,14 @@ function cg(C) {
     [C.getFieldValue("DIR")]: Number(C.getFieldValue("VALUE") || 0)
   } : null : null;
 }
-function ug(C) {
+function ag(C) {
   if (!C) return null;
   switch (C.type) {
     case "vab_action_service": {
-      const k = { service: C.getFieldValue("SERVICE") }, i = C.getFieldValue("TARGET");
-      i && (k.target = { entity_id: i });
-      const c = eD(C.getFieldValue("DATA"));
-      return c && Object.keys(c).length && (k.data = c), k;
+      const P = { service: C.getFieldValue("SERVICE") }, i = C.getFieldValue("TARGET");
+      i && (P.target = { entity_id: i });
+      const c = tD(C.getFieldValue("DATA"));
+      return c && Object.keys(c).length && (P.data = c), P;
     }
     case "vab_action_delay":
       return { delay: { seconds: Number(C.getFieldValue("DELAY") || 0) } };
@@ -19357,11 +19364,11 @@ function ug(C) {
         }
       };
     case "vab_action_choose": {
-      const k = cg(C.getInputTargetBlock("CONDITION"));
+      const P = ug(C.getInputTargetBlock("CONDITION"));
       return {
         choose: [
           {
-            conditions: k ? [k] : [],
+            conditions: P ? [P] : [],
             sequence: Th(C.getInputTargetBlock("THEN"))
           }
         ],
@@ -19380,15 +19387,15 @@ function ug(C) {
   }
 }
 function Th(C) {
-  const k = [];
+  const P = [];
   let i = C;
   for (; i; ) {
-    const c = ug(i);
-    c && k.push(c), i = i.getNextBlock();
+    const c = ag(i);
+    c && P.push(c), i = i.getNextBlock();
   }
-  return k;
+  return P;
 }
-function tD(C) {
+function sD(C) {
   switch (C.type) {
     case "vab_trigger_state":
       return {
@@ -19408,16 +19415,16 @@ function tD(C) {
       return null;
   }
 }
-function sD(C) {
+function oD(C) {
   return C.startsWith("vab_action_");
 }
-function oD(C) {
+function iD(C) {
   return C.startsWith("vab_trigger_");
 }
-function iD(C) {
+function nD(C) {
   return C.startsWith("vab_condition_");
 }
-const nD = [
+const rD = [
   {
     key: "cat_triggers",
     colour: "#5aa15a",
@@ -19447,22 +19454,22 @@ const nD = [
     ]
   }
 ];
-class rD extends HTMLElement {
+class lD extends HTMLElement {
   constructor() {
     super(), this._hass = void 0, this._workspace = void 0, this._alias = "Visual automation";
   }
-  set hass(k) {
+  set hass(P) {
     var c;
-    this._hass = k;
-    const i = ((c = k == null ? void 0 : k.locale) == null ? void 0 : c.language) || (k == null ? void 0 : k.language);
-    i && ng(i), rg(k), this._workspace && i && i !== window.__VAB_LANG_APPLIED && (window.__VAB_LANG_APPLIED = i);
+    this._hass = P;
+    const i = ((c = P == null ? void 0 : P.locale) == null ? void 0 : c.language) || (P == null ? void 0 : P.language);
+    i && ng(i), lg(P), this._workspace && i && i !== window.__VAB_LANG_APPLIED && (window.__VAB_LANG_APPLIED = i);
   }
   get hass() {
     return this._hass;
   }
   connectedCallback() {
-    var k, i, c;
-    ng(((i = (k = this._hass) == null ? void 0 : k.locale) == null ? void 0 : i.language) || ((c = this._hass) == null ? void 0 : c.language) || "en"), this.innerHTML = `
+    var P, i, c;
+    ng(((i = (P = this._hass) == null ? void 0 : P.locale) == null ? void 0 : i.language) || ((c = this._hass) == null ? void 0 : c.language) || "en"), this.innerHTML = `
       <style>
         automation-builder {
           display: flex; flex-direction: column; height: 100%;
@@ -19550,50 +19557,50 @@ class rD extends HTMLElement {
         }
       </style>
       <div class="vab-header">
-        <div class="vab-title">${U("title")}</div>
-        <input id="vab-alias" placeholder="${U("alias")}" value="" />
-        <button id="vab-save">${U("save")}</button>
-        <button id="vab-clear" class="secondary">${U("clear")}</button>
+        <div class="vab-title">${F("title")}</div>
+        <input id="vab-alias" placeholder="${F("alias")}" value="" />
+        <button id="vab-save">${F("save")}</button>
+        <button id="vab-clear" class="secondary">${F("clear")}</button>
         <span class="vab-status" id="vab-status"></span>
       </div>
       <div class="vab-body">
         <aside class="vab-palette">
-          ${nD.map(
-      (q) => `
+          ${rD.map(
+      (U) => `
             <div class="vab-cat">
-              <h3>${U(q.key)}</h3>
-              ${q.blocks.map(
-        ($e) => `
-                <button class="vab-block-btn" data-block="${$e.type}">
-                  <span class="vab-dot" style="background:${q.colour}"></span>
-                  <span>${U($e.label)}</span>
+              <h3>${F(U.key)}</h3>
+              ${U.blocks.map(
+        (K) => `
+                <button class="vab-block-btn" data-block="${K.type}">
+                  <span class="vab-dot" style="background:${U.colour}"></span>
+                  <span>${F(K.label)}</span>
                 </button>`
       ).join("")}
             </div>`
     ).join("")}
-          <div class="vab-hint">${U("hint")}</div>
+          <div class="vab-hint">${F("hint")}</div>
         </aside>
         <div class="vab-blockly" id="vab-blockly"></div>
       </div>
-    `, ZP(), rg(this._hass), this._workspace = dp(this.querySelector("#vab-blockly"), {
-      theme: QP,
+    `, QP(), lg(this._hass), this._workspace = _p(this.querySelector("#vab-blockly"), {
+      theme: eD,
       renderer: "zelos",
-      media: qP,
+      media: ZP,
       grid: { spacing: 24, length: 3, colour: "#2a2e33", snap: !0 },
       zoom: { controls: !0, wheel: !0, startScale: 0.9, maxScale: 2, minScale: 0.4 },
       trashcan: !0,
       move: { scrollbars: !0, drag: !0, wheel: !0 }
-    }), window.__VAB_WORKSPACE = this._workspace, this._copyBlocklyStyles(), this._injectGlobalStyles(), this._workspace.addChangeListener((q) => {
-      (q.type === eg.SELECTED || q.type === eg.CLICK) && setTimeout(() => {
+    }), window.__VAB_WORKSPACE = this._workspace, this._copyBlocklyStyles(), this._injectGlobalStyles(), this._workspace.addChangeListener((U) => {
+      (U.type === eg.SELECTED || U.type === eg.CLICK) && setTimeout(() => {
         this._workspace && this._workspace.render();
       }, 0);
     });
-    for (const q of this.querySelectorAll(".vab-block-btn"))
-      q.addEventListener("click", () => {
-        this.addBlock(q.dataset.block);
+    for (const U of this.querySelectorAll(".vab-block-btn"))
+      U.addEventListener("click", () => {
+        this.addBlock(U.dataset.block);
       });
-    this.querySelector("#vab-alias").addEventListener("input", (q) => {
-      this._alias = q.target.value;
+    this.querySelector("#vab-alias").addEventListener("input", (U) => {
+      this._alias = U.target.value;
     }), this.querySelector("#vab-save").addEventListener("click", () => {
       this.saveAutomation();
     }), this.querySelector("#vab-clear").addEventListener("click", () => {
@@ -19602,8 +19609,8 @@ class rD extends HTMLElement {
       this._workspace && _h(this._workspace);
     }), this._resizeObserver.observe(this);
   }
-  addBlock(k) {
-    const i = this._workspace.newBlock(k);
+  addBlock(P) {
+    const i = this._workspace.newBlock(P);
     i.initSvg(), i.render();
     const c = this._workspace.getMetrics();
     i.moveBy(
@@ -19615,8 +19622,8 @@ class rD extends HTMLElement {
   }
   _injectGlobalStyles() {
     if (document.getElementById("vab-global-style")) return;
-    const k = document.createElement("style");
-    k.id = "vab-global-style", k.textContent = `
+    const P = document.createElement("style");
+    P.id = "vab-global-style", P.textContent = `
       .blocklyDropDownDiv {
         background: #23272b !important;
         border-color: #3a3f44 !important;
@@ -19634,53 +19641,53 @@ class rD extends HTMLElement {
         background: #23272b !important;
         border: 1px solid #3a3f44 !important;
       }
-    `, document.head.appendChild(k);
+    `, document.head.appendChild(P);
   }
   _copyBlocklyStyles() {
-    const k = this.getRootNode();
-    if (!(!k || k === document))
+    const P = this.getRootNode();
+    if (!(!P || P === document))
       for (const i of [
         "blockly-common-style",
         "blockly-renderer-style-zelos-classic",
         "blockly-renderer-style-zelos"
       ]) {
         const c = document.getElementById(i);
-        if (!c || k.querySelector(`#${i}-shadow`)) continue;
-        const q = c.cloneNode(!0);
-        q.id = `${i}-shadow`, k.appendChild(q);
+        if (!c || P.querySelector(`#${i}-shadow`)) continue;
+        const U = c.cloneNode(!0);
+        U.id = `${i}-shadow`, P.appendChild(U);
       }
   }
   disconnectedCallback() {
     this._resizeObserver && this._resizeObserver.disconnect(), this._workspace && (this._workspace.dispose(), this._workspace = void 0, window.__VAB_WORKSPACE = void 0);
   }
-  setStatus(k) {
+  setStatus(P) {
     const i = this.querySelector("#vab-status");
-    i && (i.textContent = k);
+    i && (i.textContent = P);
   }
   buildAutomation() {
-    const k = [], i = [], c = [];
-    for (const q of this._workspace.getTopBlocks(!0)) {
-      if (q.getPreviousBlock()) continue;
-      if (iD(q.type)) {
-        const Fe = cg(q);
-        Fe && i.push(Fe);
+    const P = [], i = [], c = [];
+    for (const U of this._workspace.getTopBlocks(!0)) {
+      if (U.getPreviousBlock()) continue;
+      if (nD(U.type)) {
+        const Ce = ug(U);
+        Ce && i.push(Ce);
         continue;
       }
-      let $e = q;
-      for (; $e; ) {
-        if (oD($e.type)) {
-          const Fe = tD($e);
-          Fe && k.push(Fe);
-        } else if (sD($e.type)) {
-          const Fe = ug($e);
-          Fe && c.push(Fe);
+      let K = U;
+      for (; K; ) {
+        if (iD(K.type)) {
+          const Ce = sD(K);
+          Ce && P.push(Ce);
+        } else if (oD(K.type)) {
+          const Ce = ag(K);
+          Ce && c.push(Ce);
         }
-        $e = $e.getNextBlock();
+        K = K.getNextBlock();
       }
     }
     return {
       alias: this._alias || "Visual automation",
-      trigger: k,
+      trigger: P,
       condition: i,
       action: c,
       mode: "single"
@@ -19688,28 +19695,28 @@ class rD extends HTMLElement {
   }
   async saveAutomation() {
     if (!this._hass) {
-      this.setStatus(U("status_error"));
+      this.setStatus(F("status_error"));
       return;
     }
-    const k = this.buildAutomation();
-    if (!k.trigger.length) {
-      this.setStatus(U("status_no_trigger"));
+    const P = this.buildAutomation();
+    if (!P.trigger.length) {
+      this.setStatus(F("status_no_trigger"));
       return;
     }
-    if (!k.action.length) {
-      this.setStatus(U("status_no_action"));
+    if (!P.action.length) {
+      this.setStatus(F("status_no_action"));
       return;
     }
     const i = `vab_${Date.now().toString(36)}`;
     try {
-      await this._hass.callApi("POST", `config/automation/config/${i}`, k), this.setStatus(U("status_saved")), await this._hass.callService("persistent_notification", "create", {
+      await this._hass.callApi("POST", `config/automation/config/${i}`, P), this.setStatus(F("status_saved")), await this._hass.callService("persistent_notification", "create", {
         title: "Automation Builder",
-        message: `Automation "${k.alias}" saved.`,
+        message: `Automation "${P.alias}" saved.`,
         notification_id: `vab_${i}`
       });
     } catch (c) {
-      console.error(c), this.setStatus(`${U("status_error")}: ${c.message || c}`);
+      console.error(c), this.setStatus(`${F("status_error")}: ${c.message || c}`);
     }
   }
 }
-customElements.define("automation-builder", rD);
+customElements.define("automation-builder", lD);

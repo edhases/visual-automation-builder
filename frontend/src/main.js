@@ -110,21 +110,31 @@ function setLocaleFor(lang) {
 let entityOptions = [["(no entities)", ""]];
 window.__VAB_ENTITIES = entityOptions;
 
+let lastEntitySignature = "";
+
 function setEntityOptions(hass) {
   if (!hass || !hass.states) return;
-  entityOptions = Object.entries(hass.states)
+  const options = Object.entries(hass.states)
     .map(([id, state]) => [state?.attributes?.friendly_name || id, id])
     .sort((a, b) => a[0].localeCompare(b[0]));
-  if (!entityOptions.length) {
-    entityOptions = [["(no entities)", ""]];
+  if (!options.length) {
+    options.push(["(no entities)", ""]);
   }
+  const signature = options.map(([label, id]) => `${id}|${label}`).join("\n");
+  if (signature === lastEntitySignature) return;
+  lastEntitySignature = signature;
+  entityOptions = options;
   window.__VAB_ENTITIES = entityOptions;
+
   if (window.__VAB_WORKSPACE) {
     for (const block of window.__VAB_WORKSPACE.getAllBlocks(false)) {
-      const field = block.getField && block.getField("ENTITY");
-      if (field && field.setOptions) field.setOptions(entityOptions);
-      const target = block.getField && block.getField("TARGET");
-      if (target && target.setOptions) target.setOptions(entityOptions);
+      for (const fieldName of ["ENTITY", "TARGET"]) {
+        const field = block.getField && block.getField(fieldName);
+        if (!field || !field.setOptions) continue;
+        const value = field.getValue();
+        field.setOptions(entityOptions);
+        if (value) field.setValue(value);
+      }
     }
   }
 }
